@@ -2,12 +2,26 @@
 
 namespace Database\Factories;
 
+<<<<<<< HEAD
+=======
+use App\Models\User;
+>>>>>>> origin/them_slide
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
 class UserFactory extends Factory
 {
     /**
+<<<<<<< HEAD
+=======
+     * The name of the factory's corresponding model.
+     *
+     * @var string
+     */
+    protected $model = User::class;
+
+    /**
+>>>>>>> origin/them_slide
      * Define the model's default state.
      *
      * @return array

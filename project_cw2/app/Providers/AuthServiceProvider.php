@@ -10,7 +10,11 @@ class AuthServiceProvider extends ServiceProvider
     /**
      * The policy mappings for the application.
      *
+<<<<<<< HEAD
      * @var array<class-string, class-string>
+=======
+     * @var array
+>>>>>>> origin/them_slide
      */
     protected $policies = [
         // 'App\Models\Model' => 'App\Policies\ModelPolicy',

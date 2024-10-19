@@ -169,6 +169,11 @@ return [
         /*
          * Application Service Providers...
          */
+<<<<<<< HEAD
+=======
+        App\Providers\ViewServiceProvider::class,
+
+>>>>>>> origin/them_slide
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,
@@ -209,14 +214,20 @@ return [
         'Gate' => Illuminate\Support\Facades\Gate::class,
         'Hash' => Illuminate\Support\Facades\Hash::class,
         'Http' => Illuminate\Support\Facades\Http::class,
+<<<<<<< HEAD
         'Js' => Illuminate\Support\Js::class,
+=======
+>>>>>>> origin/them_slide
         'Lang' => Illuminate\Support\Facades\Lang::class,
         'Log' => Illuminate\Support\Facades\Log::class,
         'Mail' => Illuminate\Support\Facades\Mail::class,
         'Notification' => Illuminate\Support\Facades\Notification::class,
         'Password' => Illuminate\Support\Facades\Password::class,
         'Queue' => Illuminate\Support\Facades\Queue::class,
+<<<<<<< HEAD
         'RateLimiter' => Illuminate\Support\Facades\RateLimiter::class,
+=======
+>>>>>>> origin/them_slide
         'Redirect' => Illuminate\Support\Facades\Redirect::class,
         // 'Redis' => Illuminate\Support\Facades\Redis::class,
         'Request' => Illuminate\Support\Facades\Request::class,

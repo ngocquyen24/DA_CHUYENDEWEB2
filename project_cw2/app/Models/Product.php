@@ -2,9 +2,14 @@
 
 namespace App\Models;
 
+<<<<<<< HEAD
 use App\Models\Menu;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+=======
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+>>>>>>> origin/them_slide
 
 class Product extends Model
 {

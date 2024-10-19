@@ -1,6 +1,9 @@
 php:
   preset: laravel
+<<<<<<< HEAD
   version: 8
+=======
+>>>>>>> origin/them_slide
   disabled:
     - no_unused_imports
   finder:
