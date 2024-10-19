@@ -12,7 +12,12 @@ Homestead.yaml
 npm-debug.log
 yarn-error.log
 <<<<<<< HEAD
+<<<<<<< HEAD
 /.idea
 /.vscode
 =======
 >>>>>>> origin/them_slide
+=======
+/.idea
+/.vscode
+>>>>>>> Login_Register

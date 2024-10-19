@@ -170,10 +170,13 @@ return [
          * Application Service Providers...
          */
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         App\Providers\ViewServiceProvider::class,
 
 >>>>>>> origin/them_slide
+=======
+>>>>>>> Login_Register
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,
@@ -215,9 +218,13 @@ return [
         'Hash' => Illuminate\Support\Facades\Hash::class,
         'Http' => Illuminate\Support\Facades\Http::class,
 <<<<<<< HEAD
+<<<<<<< HEAD
         'Js' => Illuminate\Support\Js::class,
 =======
 >>>>>>> origin/them_slide
+=======
+        'Js' => Illuminate\Support\Js::class,
+>>>>>>> Login_Register
         'Lang' => Illuminate\Support\Facades\Lang::class,
         'Log' => Illuminate\Support\Facades\Log::class,
         'Mail' => Illuminate\Support\Facades\Mail::class,
@@ -225,9 +232,13 @@ return [
         'Password' => Illuminate\Support\Facades\Password::class,
         'Queue' => Illuminate\Support\Facades\Queue::class,
 <<<<<<< HEAD
+<<<<<<< HEAD
         'RateLimiter' => Illuminate\Support\Facades\RateLimiter::class,
 =======
 >>>>>>> origin/them_slide
+=======
+        'RateLimiter' => Illuminate\Support\Facades\RateLimiter::class,
+>>>>>>> Login_Register
         'Redirect' => Illuminate\Support\Facades\Redirect::class,
         // 'Redis' => Illuminate\Support\Facades\Redis::class,
         'Request' => Illuminate\Support\Facades\Request::class,

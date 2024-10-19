@@ -9,6 +9,7 @@ class Kernel extends ConsoleKernel
 {
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      * The Artisan commands provided by your application.
      *
@@ -20,6 +21,8 @@ class Kernel extends ConsoleKernel
 
     /**
 >>>>>>> origin/them_slide
+=======
+>>>>>>> Login_Register
      * Define the application's command schedule.
      *
      * @param  \Illuminate\Console\Scheduling\Schedule  $schedule

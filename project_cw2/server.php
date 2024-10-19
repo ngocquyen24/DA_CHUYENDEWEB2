@@ -9,10 +9,14 @@
 
 $uri = urldecode(
 <<<<<<< HEAD
+<<<<<<< HEAD
     parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH) ?? ''
 =======
     parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH)
 >>>>>>> origin/them_slide
+=======
+    parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH) ?? ''
+>>>>>>> Login_Register
 );
 
 // This file allows us to emulate Apache's "mod_rewrite" functionality from the

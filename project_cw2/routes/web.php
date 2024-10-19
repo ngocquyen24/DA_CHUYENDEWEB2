@@ -2,7 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use App\Http\Controllers\Admin\ProductController;
+=======
+>>>>>>> Login_Register
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +21,7 @@ use App\Http\Controllers\Admin\ProductController;
 Route::get('/', function () {
     return view('welcome');
 });
+<<<<<<< HEAD
 
   #Product
   Route::prefix('products')->group(function () {
@@ -35,10 +39,13 @@ use App\Http\Controllers\Admin\MenuController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\SliderController;
 
+=======
+>>>>>>> Login_Register
 Route::get('admin/users/login', [LoginController::class, 'index'])->name('login');
 Route::post('admin/users/login/store', [LoginController::class, 'store']);
 
 Route::get('signout', [LoginController::class, 'signOut'])->name('signout');
+<<<<<<< HEAD
 
 Route::middleware(['auth'])->group(function () {
 
@@ -98,6 +105,8 @@ Route::post('update-cart', [App\Http\Controllers\CartController::class, 'update'
 Route::get('carts/delete/{id}', [App\Http\Controllers\CartController::class, 'remove']);
 Route::post('carts', [App\Http\Controllers\CartController::class, 'addCart']);
 
+=======
+>>>>>>> Login_Register
 Route::get('admin/users/register',[LoginController::class, 'indexRegister'])->name('indexRegister');
 Route::post('admin/users/register',[LoginController::class, 'register'])->name('register');
 
@@ -106,4 +115,7 @@ Route::get('admin/users/forget-password',[LoginController::class, 'forgetPasswor
 Route::post('admin/users/forget-password',[LoginController::class, 'postForgetPass'])->name('postForgetPass'); // khi submit quen mat khau
 Route::get('admin/users/get-password',[LoginController::class, 'getPassword'])->name('getPassword');    // gui link
 Route::get('admin/users/get-password/{customer}/{token}',[LoginController::class, 'postGetPassword']);    // nhap lai mat khau 2 lan
+<<<<<<< HEAD
 >>>>>>> origin/them_slide
+=======
+>>>>>>> Login_Register

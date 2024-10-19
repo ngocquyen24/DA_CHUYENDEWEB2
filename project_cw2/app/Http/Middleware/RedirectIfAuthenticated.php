@@ -14,6 +14,7 @@ class RedirectIfAuthenticated
      *
      * @param  \Illuminate\Http\Request  $request
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  \Closure(\Illuminate\Http\Request): (\Illuminate\Http\Response|\Illuminate\Http\RedirectResponse)  $next
      * @param  string|null  ...$guards
      * @return \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse
@@ -22,6 +23,11 @@ class RedirectIfAuthenticated
      * @param  string|null  ...$guards
      * @return mixed
 >>>>>>> origin/them_slide
+=======
+     * @param  \Closure(\Illuminate\Http\Request): (\Illuminate\Http\Response|\Illuminate\Http\RedirectResponse)  $next
+     * @param  string|null  ...$guards
+     * @return \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse
+>>>>>>> Login_Register
      */
     public function handle(Request $request, Closure $next, ...$guards)
     {

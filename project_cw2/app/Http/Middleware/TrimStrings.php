@@ -10,10 +10,14 @@ class TrimStrings extends Middleware
      * The names of the attributes that should not be trimmed.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @var array<int, string>
 =======
      * @var array
 >>>>>>> origin/them_slide
+=======
+     * @var array<int, string>
+>>>>>>> Login_Register
      */
     protected $except = [
         'current_password',

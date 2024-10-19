@@ -32,10 +32,14 @@ return [
     | mechanisms used by this application to persist your user's data.
     |
 <<<<<<< HEAD
+<<<<<<< HEAD
     | Supported: "session"
 =======
     | Supported: "session", "token"
 >>>>>>> origin/them_slide
+=======
+    | Supported: "session"
+>>>>>>> Login_Register
     |
     */
 
@@ -45,6 +49,7 @@ return [
             'provider' => 'users',
         ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
         'api' => [
@@ -53,6 +58,8 @@ return [
             'hash' => false,
         ],
 >>>>>>> origin/them_slide
+=======
+>>>>>>> Login_Register
     ],
 
     /*
@@ -94,10 +101,14 @@ return [
     | separate password reset settings based on the specific user types.
     |
 <<<<<<< HEAD
+<<<<<<< HEAD
     | The expire time is the number of minutes that each reset token will be
 =======
     | The expire time is the number of minutes that the reset token should be
 >>>>>>> origin/them_slide
+=======
+    | The expire time is the number of minutes that each reset token will be
+>>>>>>> Login_Register
     | considered valid. This security feature keeps tokens short-lived so
     | they have less time to be guessed. You may change this as needed.
     |

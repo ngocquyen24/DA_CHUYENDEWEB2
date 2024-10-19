@@ -45,6 +45,7 @@ return [
 
     'argon' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
         'memory' => 65536,
         'threads' => 1,
         'time' => 4,
@@ -53,6 +54,11 @@ return [
         'threads' => 2,
         'time' => 2,
 >>>>>>> origin/them_slide
+=======
+        'memory' => 65536,
+        'threads' => 1,
+        'time' => 4,
+>>>>>>> Login_Register
     ],
 
 ];

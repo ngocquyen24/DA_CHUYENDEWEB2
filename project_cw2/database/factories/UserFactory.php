@@ -3,15 +3,19 @@
 namespace Database\Factories;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use App\Models\User;
 >>>>>>> origin/them_slide
+=======
+>>>>>>> Login_Register
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
 class UserFactory extends Factory
 {
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
      * The name of the factory's corresponding model.
@@ -22,6 +26,8 @@ class UserFactory extends Factory
 
     /**
 >>>>>>> origin/them_slide
+=======
+>>>>>>> Login_Register
      * Define the model's default state.
      *
      * @return array

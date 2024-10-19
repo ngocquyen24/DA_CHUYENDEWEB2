@@ -14,8 +14,14 @@ trim_trailing_whitespace = false
 [*.{yml,yaml}]
 indent_size = 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 [docker-compose.yml]
 indent_size = 4
 =======
 >>>>>>> origin/them_slide
+=======
+
+[docker-compose.yml]
+indent_size = 4
+>>>>>>> Login_Register

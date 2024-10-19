@@ -11,10 +11,14 @@ class Handler extends ExceptionHandler
      * A list of the exception types that are not reported.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @var array<int, class-string<Throwable>>
 =======
      * @var array
 >>>>>>> origin/them_slide
+=======
+     * @var array<int, class-string<Throwable>>
+>>>>>>> Login_Register
      */
     protected $dontReport = [
         //
@@ -24,10 +28,14 @@ class Handler extends ExceptionHandler
      * A list of the inputs that are never flashed for validation exceptions.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @var array<int, string>
 =======
      * @var array
 >>>>>>> origin/them_slide
+=======
+     * @var array<int, string>
+>>>>>>> Login_Register
      */
     protected $dontFlash = [
         'current_password',

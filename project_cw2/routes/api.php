@@ -15,9 +15,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 =======
 Route::middleware('auth:api')->get('/user', function (Request $request) {
 >>>>>>> origin/them_slide
+=======
+Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+>>>>>>> Login_Register
     return $request->user();
 });

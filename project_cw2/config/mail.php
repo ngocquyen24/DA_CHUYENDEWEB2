@@ -30,10 +30,14 @@ return [
     |
     | Supported: "smtp", "sendmail", "mailgun", "ses",
 <<<<<<< HEAD
+<<<<<<< HEAD
     |            "postmark", "log", "array", "failover"
 =======
     |            "postmark", "log", "array"
 >>>>>>> origin/them_slide
+=======
+    |            "postmark", "log", "array", "failover"
+>>>>>>> Login_Register
     |
     */
 
@@ -64,10 +68,14 @@ return [
         'sendmail' => [
             'transport' => 'sendmail',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'path' => env('MAIL_SENDMAIL_PATH', '/usr/sbin/sendmail -t -i'),
 =======
             'path' => '/usr/sbin/sendmail -bs',
 >>>>>>> origin/them_slide
+=======
+            'path' => env('MAIL_SENDMAIL_PATH', '/usr/sbin/sendmail -t -i'),
+>>>>>>> Login_Register
         ],
 
         'log' => [
@@ -79,6 +87,9 @@ return [
             'transport' => 'array',
         ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Login_Register
 
         'failover' => [
             'transport' => 'failover',
@@ -87,8 +98,11 @@ return [
                 'log',
             ],
         ],
+<<<<<<< HEAD
 =======
 >>>>>>> origin/them_slide
+=======
+>>>>>>> Login_Register
     ],
 
     /*

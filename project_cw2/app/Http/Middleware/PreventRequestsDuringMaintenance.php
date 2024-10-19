@@ -10,10 +10,14 @@ class PreventRequestsDuringMaintenance extends Middleware
      * The URIs that should be reachable while maintenance mode is enabled.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @var array<int, string>
 =======
      * @var array
 >>>>>>> origin/them_slide
+=======
+     * @var array<int, string>
+>>>>>>> Login_Register
      */
     protected $except = [
         //

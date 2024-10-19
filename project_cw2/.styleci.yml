@@ -1,9 +1,13 @@
 php:
   preset: laravel
 <<<<<<< HEAD
+<<<<<<< HEAD
   version: 8
 =======
 >>>>>>> origin/them_slide
+=======
+  version: 8
+>>>>>>> Login_Register
   disabled:
     - no_unused_imports
   finder:

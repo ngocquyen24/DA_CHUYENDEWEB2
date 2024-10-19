@@ -1,5 +1,8 @@
 * text=auto
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Login_Register
 
 *.blade.php diff=html
 *.css diff=css
@@ -8,9 +11,12 @@
 *.php diff=php
 
 /.github export-ignore
+<<<<<<< HEAD
 =======
 *.css linguist-vendored
 *.scss linguist-vendored
 *.js linguist-vendored
 >>>>>>> origin/them_slide
+=======
+>>>>>>> Login_Register
 CHANGELOG.md export-ignore

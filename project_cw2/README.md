@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Login_Register
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
@@ -63,6 +66,7 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<<<<<<< HEAD
 =======
 Laravel hiện vẫn đang là Framework được các công ty lập trình PHP tuyển dụng nhiều nhất hiện nay. Nhằm mục đích nâng cao chất lượng học viên khóa PHP, cũng như update loạt bài Laravel trước đây, Trung Tâm Khoa Phạm quyết định xuất bản loạt video "HƯỚNG DẪN LẬP TRÌNH WEB VỚI LARAVEL".
 
@@ -86,3 +90,5 @@ Loạt bài này sử dụng Laravel version mới nhất hiện nay, ngoài ra,
 
 Chúc các bạn học tốt.
 >>>>>>> origin/them_slide
+=======
+>>>>>>> Login_Register
