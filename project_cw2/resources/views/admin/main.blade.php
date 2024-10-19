@@ -81,7 +81,6 @@
 
     <!-- /.control-sidebar -->
     </div>
-    <script src="https://kit.fontawesome.com/f6dce9b617.js" crossorigin="anonymous"></script>
 <!-- ./wrapper -->
 
 @include('admin.footer')
