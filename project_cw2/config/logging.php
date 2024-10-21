@@ -23,8 +23,11 @@ return [
     |--------------------------------------------------------------------------
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Login_Register
+=======
+>>>>>>> danhmuc_list
     | Deprecations Log Channel
     |--------------------------------------------------------------------------
     |
@@ -34,6 +37,7 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'deprecations' => env('LOG_DEPRECATIONS_CHANNEL', 'null'),
 
     /*
@@ -43,6 +47,15 @@ return [
 >>>>>>> origin/them_slide
 =======
 >>>>>>> Login_Register
+=======
+    'deprecations' => [
+        'channel' => env('LOG_DEPRECATIONS_CHANNEL', 'null'),
+        'trace' => false,
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+>>>>>>> danhmuc_list
     | Log Channels
     |--------------------------------------------------------------------------
     |
@@ -87,10 +100,18 @@ return [
         'papertrail' => [
             'driver' => 'monolog',
             'level' => env('LOG_LEVEL', 'debug'),
+<<<<<<< HEAD
             'handler' => SyslogUdpHandler::class,
             'handler_with' => [
                 'host' => env('PAPERTRAIL_URL'),
                 'port' => env('PAPERTRAIL_PORT'),
+=======
+            'handler' => env('LOG_PAPERTRAIL_HANDLER', SyslogUdpHandler::class),
+            'handler_with' => [
+                'host' => env('PAPERTRAIL_URL'),
+                'port' => env('PAPERTRAIL_PORT'),
+                'connectionString' => 'tls://'.env('PAPERTRAIL_URL').':'.env('PAPERTRAIL_PORT'),
+>>>>>>> danhmuc_list
             ],
         ],
 

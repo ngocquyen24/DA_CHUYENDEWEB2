@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <!--
+<<<<<<< HEAD
 Copyright (c) 2003-2021, CKSource - Frederico Knabben. All rights reserved.
 For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+=======
+Copyright (c) 2003-2023, CKSource Holding sp. z o.o. All rights reserved.
+CKEditor 4 LTS ("Long Term Support") is available under the terms of the Extended Support Model.
+>>>>>>> danhmuc_list
 -->
 <html lang="en">
 <head>
@@ -12,7 +17,23 @@ For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
 	<meta name="description" content="Try the latest sample of CKEditor 4 and learn more about customizing your WYSIWYG editor with endless possibilities.">
 	<script>
 		// Remove advanced tabs for all editors.
+<<<<<<< HEAD
 		CKEDITOR.config.removeDialogTabs = 'image:advanced;link:advanced;flash:advanced;creatediv:advanced;editdiv:advanced';
+=======
+		CKEDITOR.config.removeDialogTabs = 'image:advanced;link:advanced;creatediv:advanced;editdiv:advanced';
+
+		CKEDITOR.on( 'instanceCreated', function( evt ) {
+			evt.editor.on( 'contentPreview',function( evt ) {
+				evt.data.dataValue = '<div style="padding: 1.5em;border: 3px #f00 solid">' +
+						'<h1>Content Preview was blocked</h1>' +
+						'<p>To ensure the highest security, the content preview in samples was blocked.</p>' +
+						'<p>Please refer to our ' +
+							'<a href="https://ckeditor.com/docs/ckeditor4/latest/guide/dev_best_practices.html#validate-preview-content">' +
+							'best practices on security</a> to learn more how to properly configure and secure the content preview.</p>' +
+					'</div>';
+			} );
+		} );
+>>>>>>> danhmuc_list
 	</script>
 </head>
 <body>
@@ -119,6 +140,16 @@ CKEDITOR.replace( <em>textarea_id</em>, {
 	<strong>allowedContent: true</strong>
 } );
 </pre>
+<<<<<<< HEAD
+=======
+		<p>
+			Please not that disabling filtering is not recommended
+			as <strong>it can result in XSS vulnerabilities</strong>.
+			It is recommended to <a
+			href="https://ckeditor.com/docs/ckeditor4/latest/guide/dev_best_practices.html#use-acf-in-default-automatic-mode">
+			rely on the automatic configuration</a>.
+		</p>
+>>>>>>> danhmuc_list
 
 		<h2>Beyond data flow: Features activation</h2>
 		<p>
@@ -334,7 +365,11 @@ CKEDITOR.replace( 'editor3', {
 			</p>
 <pre class="samples">
 CKEDITOR.replace( 'editor4', {
+<<<<<<< HEAD
 	removePlugins: 'bidi,font,forms,flash,horizontalrule,iframe,justify,table,tabletools,smiley',
+=======
+	removePlugins: 'bidi,font,forms,horizontalrule,iframe,justify,table,tabletools,smiley',
+>>>>>>> danhmuc_list
 	removeButtons: 'Anchor,Underline,Strike,Subscript,Superscript,Image',
 	format_tags: 'p;h1;h2;h3;pre;address'
 } );
@@ -356,7 +391,11 @@ CKEDITOR.replace( 'editor4', {
 		<script>
 
 			CKEDITOR.replace( 'editor4', {
+<<<<<<< HEAD
 				removePlugins: 'bidi,div,font,forms,flash,horizontalrule,iframe,justify,table,tabletools,smiley',
+=======
+				removePlugins: 'bidi,div,font,forms,horizontalrule,iframe,justify,table,tabletools,smiley',
+>>>>>>> danhmuc_list
 				removeButtons: 'Anchor,Underline,Strike,Subscript,Superscript,Image',
 				format_tags: 'p;h1;h2;h3;pre;address'
 			} );
@@ -446,6 +485,7 @@ CKEDITOR.replace( 'editor6', {
 		</script>
 	</div>
 
+<<<<<<< HEAD
 	<br>
 
 	<div>
@@ -495,14 +535,20 @@ CKEDITOR.replace( 'editor7', {
 		</script>
 	</div>
 
+=======
+>>>>>>> danhmuc_list
 	<div id="footer">
 		<hr>
 		<p>
 			CKEditor - The text editor for the Internet - <a class="samples" href="https://ckeditor.com/">https://ckeditor.com</a>
 		</p>
 		<p id="copy">
+<<<<<<< HEAD
 			Copyright &copy; 2003-2021, <a class="samples" href="https://cksource.com/">CKSource</a> - Frederico
 			Knabben. All rights reserved.
+=======
+			Copyright &copy; 2003-2023, <a class="samples" href="https://cksource.com/">CKSource</a> Holding sp. z o.o. All rights reserved.
+>>>>>>> danhmuc_list
 		</p>
 	</div>
 </body>

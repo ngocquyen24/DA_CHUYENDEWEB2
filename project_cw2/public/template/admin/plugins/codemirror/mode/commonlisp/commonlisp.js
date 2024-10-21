@@ -114,6 +114,10 @@ CodeMirror.defineMode("commonlisp", function (config) {
 
     closeBrackets: {pairs: "()[]{}\"\""},
     lineComment: ";;",
+<<<<<<< HEAD
+=======
+    fold: "brace-paren",
+>>>>>>> danhmuc_list
     blockCommentStart: "#|",
     blockCommentEnd: "|#"
   };

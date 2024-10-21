@@ -16,10 +16,37 @@ FullCalendar.globalLocales.push(function () {
       day: 'Dag',
       list: 'Program',
     },
+<<<<<<< HEAD
     weekText: 'v.',
     allDayText: 'Heldag',
     moreLinkText: 'till',
     noEventsText: 'Inga händelser att visa',
+=======
+    buttonHints: {
+      prev(buttonText) {
+        return `Föregående ${buttonText.toLocaleLowerCase()}`
+      },
+      next(buttonText) {
+        return `Nästa ${buttonText.toLocaleLowerCase()}`
+      },
+      today(buttonText) {
+        return (buttonText === 'Program' ? 'Detta' : 'Denna') + ' ' + buttonText.toLocaleLowerCase()
+      },
+    },
+    viewHint: '$0 vy',
+    navLinkHint: 'Gå till $0',
+    moreLinkHint(eventCnt) {
+      return `Visa ytterligare ${eventCnt} händelse${eventCnt === 1 ? '' : 'r'}`
+    },
+    weekText: 'v.',
+    weekTextLong: 'Vecka',
+    allDayText: 'Heldag',
+    moreLinkText: 'till',
+    noEventsText: 'Inga händelser att visa',
+    closeHint: 'Stäng',
+    timeHint: 'Klockan',
+    eventHint: 'Händelse',
+>>>>>>> danhmuc_list
   };
 
   return sv;

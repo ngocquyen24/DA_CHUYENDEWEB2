@@ -1,5 +1,6 @@
 /*!
  * 
+<<<<<<< HEAD
  * Super simple wysiwyg editor v0.8.18
  * https://summernote.org
  * 
@@ -9,6 +10,17 @@
  * 
  * Date: 2020-05-20T16:47Z
  * 
+=======
+ * Super simple WYSIWYG editor v0.8.20
+ * https://summernote.org
+ *
+ *
+ * Copyright 2013- Alan Hong and contributors
+ * Summernote may be freely distributed under the MIT license.
+ *
+ * Date: 2021-10-14T21:15Z
+ *
+>>>>>>> danhmuc_list
  */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
@@ -19,6 +31,7 @@
 		var a = factory();
 		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
 	}
+<<<<<<< HEAD
 })(window, function() {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -111,13 +124,22 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ 13:
 /***/ (function(module, exports) {
 
+=======
+})(self, function() {
+return /******/ (() => { // webpackBootstrap
+var __webpack_exports__ = {};
+>>>>>>> danhmuc_list
 (function ($) {
   $.extend($.summernote.lang, {
     'de-DE': {
       font: {
         bold: 'Fett',
         italic: 'Kursiv',
+<<<<<<< HEAD
         underline: 'Unterstreichen',
+=======
+        underline: 'Unterstrichen',
+>>>>>>> danhmuc_list
         clear: 'Zurücksetzen',
         height: 'Zeilenhöhe',
         name: 'Schriftart',
@@ -135,9 +157,15 @@ return /******/ (function(modules) { // webpackBootstrap
         floatLeft: 'Linksbündig',
         floatRight: 'Rechtsbündig',
         floatNone: 'Kein Textfluss',
+<<<<<<< HEAD
         shapeRounded: 'Abgerundeter Rahmen',
         shapeCircle: 'Kreisförmiger Rahmen',
         shapeThumbnail: 'Rahmenvorschau',
+=======
+        shapeRounded: 'Abgerundete Ecken',
+        shapeCircle: 'Kreisförmig',
+        shapeThumbnail: '"Vorschaubild"',
+>>>>>>> danhmuc_list
         shapeNone: 'Kein Rahmen',
         dragImageHere: 'Bild hierher ziehen',
         dropImage: 'Bild oder Text nehmen',
@@ -162,7 +190,12 @@ return /******/ (function(modules) { // webpackBootstrap
         edit: 'Bearbeiten',
         textToDisplay: 'Anzeigetext',
         url: 'Link URL',
+<<<<<<< HEAD
         openInNewWindow: 'In neuem Fenster öffnen'
+=======
+        openInNewWindow: 'In neuem Fenster öffnen',
+        useProtocol: 'Standardprotokoll verwenden'
+>>>>>>> danhmuc_list
       },
       table: {
         table: 'Tabelle',
@@ -170,7 +203,11 @@ return /******/ (function(modules) { // webpackBootstrap
         addRowBelow: '+ Zeile unterhalb',
         addColLeft: '+ Spalte links',
         addColRight: '+ Spalte rechts',
+<<<<<<< HEAD
         delRow: 'Reihe löschen',
+=======
+        delRow: 'Zeile löschen',
+>>>>>>> danhmuc_list
         delCol: 'Spalte löschen',
         delTable: 'Tabelle löschen'
       },
@@ -191,8 +228,13 @@ return /******/ (function(modules) { // webpackBootstrap
         h6: 'Überschrift 6'
       },
       lists: {
+<<<<<<< HEAD
         unordered: 'Unnummerierte Liste',
         ordered: 'Nummerierte Liste'
+=======
+        unordered: 'Aufzählung',
+        ordered: 'Nummerierung'
+>>>>>>> danhmuc_list
       },
       options: {
         help: 'Hilfe',
@@ -228,6 +270,7 @@ return /******/ (function(modules) { // webpackBootstrap
         extraKeys: 'Weitere Tasten'
       },
       help: {
+<<<<<<< HEAD
         'insertParagraph': 'Absatz einfügen',
         'undo': 'Letzte Anweisung rückgängig',
         'redo': 'Letzte Anweisung wiederholen',
@@ -255,6 +298,35 @@ return /******/ (function(modules) { // webpackBootstrap
         'formatH6': 'Formatiert aktuellen Block als H6',
         'insertHorizontalRule': 'Fügt eine horizontale Linie ein',
         'linkDialog.show': 'Zeigt Linkdialog'
+=======
+        insertParagraph: 'Absatz einfügen',
+        undo: 'Letzte Anweisung rückgängig',
+        redo: 'Letzte Anweisung wiederholen',
+        tab: 'Einzug hinzufügen',
+        untab: 'Einzug entfernen',
+        bold: 'Schrift Fett',
+        italic: 'Schrift Kursiv',
+        underline: 'Unterstreichen',
+        strikethrough: 'Durchstreichen',
+        removeFormat: 'Entfernt Format',
+        justifyLeft: 'Linksbündig',
+        justifyCenter: 'Mittig',
+        justifyRight: 'Rechtsbündig',
+        justifyFull: 'Blocksatz',
+        insertUnorderedList: 'Unnummerierte Liste',
+        insertOrderedList: 'Nummerierte Liste',
+        outdent: 'Aktuellen Absatz ausrücken',
+        indent: 'Aktuellen Absatz einrücken',
+        formatPara: 'Formatiert aktuellen Block als Absatz (P-Tag)',
+        formatH1: 'Formatiert aktuellen Block als H1',
+        formatH2: 'Formatiert aktuellen Block als H2',
+        formatH3: 'Formatiert aktuellen Block als H3',
+        formatH4: 'Formatiert aktuellen Block als H4',
+        formatH5: 'Formatiert aktuellen Block als H5',
+        formatH6: 'Formatiert aktuellen Block als H6',
+        insertHorizontalRule: 'Fügt eine horizontale Linie ein',
+        'linkDialog.show': 'Zeigt den Linkdialog'
+>>>>>>> danhmuc_list
       },
       history: {
         undo: 'Rückgängig',
@@ -267,8 +339,16 @@ return /******/ (function(modules) { // webpackBootstrap
     }
   });
 })(jQuery);
+<<<<<<< HEAD
 
 /***/ })
 
 /******/ });
 });
+=======
+/******/ 	return __webpack_exports__;
+/******/ })()
+;
+});
+//# sourceMappingURL=summernote-de-DE.js.map
+>>>>>>> danhmuc_list

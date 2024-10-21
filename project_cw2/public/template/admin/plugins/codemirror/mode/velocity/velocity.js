@@ -82,6 +82,10 @@ CodeMirror.defineMode("velocity", function() {
         }
         // variable?
         else if (ch == "$") {
+<<<<<<< HEAD
+=======
+            stream.eat("!");
+>>>>>>> danhmuc_list
             stream.eatWhile(/[\w\d\$_\.{}-]/);
             // is it one of the specials?
             if (specials && specials.propertyIsEnumerable(stream.current())) {

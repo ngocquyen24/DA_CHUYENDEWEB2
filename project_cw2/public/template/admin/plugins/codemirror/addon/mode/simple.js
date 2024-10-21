@@ -68,6 +68,10 @@
     var flags = "";
     if (val instanceof RegExp) {
       if (val.ignoreCase) flags = "i";
+<<<<<<< HEAD
+=======
+      if (val.unicode) flags += "u"
+>>>>>>> danhmuc_list
       val = val.source;
     } else {
       val = String(val);

@@ -1,5 +1,6 @@
 /*!
  * 
+<<<<<<< HEAD
  * Super simple wysiwyg editor v0.8.18
  * https://summernote.org
  * 
@@ -232,6 +233,42 @@ external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summe
   lang: {}
 };
 external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.extend(external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.lang, {
+=======
+ * Super simple WYSIWYG editor v0.8.20
+ * https://summernote.org
+ *
+ *
+ * Copyright 2013- Alan Hong and contributors
+ * Summernote may be freely distributed under the MIT license.
+ *
+ * Date: 2021-10-14T21:15Z
+ *
+ */
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory(require("jQuery"));
+	else if(typeof define === 'function' && define.amd)
+		define(["jQuery"], factory);
+	else {
+		var a = typeof exports === 'object' ? factory(require("jQuery")) : factory(root["jQuery"]);
+		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
+	}
+})(self, function(__WEBPACK_EXTERNAL_MODULE__1145__) {
+return /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
+/******/ 	var __webpack_modules__ = ({
+
+/***/ 9770:
+/***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
+
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1145);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+
+(jquery__WEBPACK_IMPORTED_MODULE_0___default().summernote) = (jquery__WEBPACK_IMPORTED_MODULE_0___default().summernote) || {
+  lang: {}
+};
+jquery__WEBPACK_IMPORTED_MODULE_0___default().extend((jquery__WEBPACK_IMPORTED_MODULE_0___default().summernote.lang), {
+>>>>>>> danhmuc_list
   'en-US': {
     font: {
       bold: 'Bold',
@@ -274,7 +311,11 @@ external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.exten
       videoLink: 'Video Link',
       insert: 'Insert Video',
       url: 'Video URL',
+<<<<<<< HEAD
       providers: '(YouTube, Vimeo, Vine, Instagram, DailyMotion or Youku)'
+=======
+      providers: '(YouTube, Google Drive, Vimeo, Vine, Instagram, DailyMotion, Youku, Peertube)'
+>>>>>>> danhmuc_list
     },
     link: {
       link: 'Link',
@@ -392,9 +433,102 @@ external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.exten
     }
   }
 });
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/core/env.js
 
 var isSupportAmd = typeof define === 'function' && __webpack_require__(2); // eslint-disable-line
+=======
+
+/***/ }),
+
+/***/ 1145:
+/***/ ((module) => {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE__1145__;
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+(() => {
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXTERNAL MODULE: external "jQuery"
+var external_jQuery_ = __webpack_require__(1145);
+var external_jQuery_default = /*#__PURE__*/__webpack_require__.n(external_jQuery_);
+// EXTERNAL MODULE: ./src/lang/summernote-en-US.js
+var summernote_en_US = __webpack_require__(9770);
+;// CONCATENATED MODULE: ./src/js/core/env.js
+>>>>>>> danhmuc_list
 
 /**
  * returns whether font is installed or not.
@@ -406,10 +540,17 @@ var isSupportAmd = typeof define === 'function' && __webpack_require__(2); // es
 var genericFontFamilies = ['sans-serif', 'serif', 'monospace', 'cursive', 'fantasy'];
 
 function validFontName(fontName) {
+<<<<<<< HEAD
   return external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.inArray(fontName.toLowerCase(), genericFontFamilies) === -1 ? "'".concat(fontName, "'") : fontName;
 }
 
 function env_isFontInstalled(fontName) {
+=======
+  return external_jQuery_default().inArray(fontName.toLowerCase(), genericFontFamilies) === -1 ? "'".concat(fontName, "'") : fontName;
+}
+
+function isFontInstalled(fontName) {
+>>>>>>> danhmuc_list
   var testFontName = fontName === 'Comic Sans MS' ? 'Courier New' : 'Comic Sans MS';
   var testText = 'mmmmmmmmmmwwwww';
   var testSize = '200px';
@@ -454,7 +595,11 @@ var inputEventName = isMSIE ? 'DOMCharacterDataModified DOMSubtreeModified DOMNo
  * @alternateClassName env
  */
 
+<<<<<<< HEAD
 /* harmony default export */ var env = ({
+=======
+/* harmony default export */ const env = ({
+>>>>>>> danhmuc_list
   isMac: navigator.appVersion.indexOf('Mac') > -1,
   isMSIE: isMSIE,
   isEdge: isEdge,
@@ -464,16 +609,25 @@ var inputEventName = isMSIE ? 'DOMCharacterDataModified DOMSubtreeModified DOMNo
   isChrome: !isEdge && /chrome/i.test(userAgent),
   isSafari: !isEdge && /safari/i.test(userAgent) && !/chrome/i.test(userAgent),
   browserVersion: browserVersion,
+<<<<<<< HEAD
   jqueryVersion: parseFloat(external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.fn.jquery),
   isSupportAmd: isSupportAmd,
   isSupportTouch: isSupportTouch,
   isFontInstalled: env_isFontInstalled,
+=======
+  isSupportTouch: isSupportTouch,
+  isFontInstalled: isFontInstalled,
+>>>>>>> danhmuc_list
   isW3CRangeSupport: !!document.createRange,
   inputEventName: inputEventName,
   genericFontFamilies: genericFontFamilies,
   validFontName: validFontName
 });
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/core/func.js
+=======
+;// CONCATENATED MODULE: ./src/js/core/func.js
+>>>>>>> danhmuc_list
 
 /**
  * @class core.func
@@ -524,7 +678,11 @@ function func_self(a) {
   return a;
 }
 
+<<<<<<< HEAD
 function func_invoke(obj, method) {
+=======
+function invoke(obj, method) {
+>>>>>>> danhmuc_list
   return function () {
     return obj[method].apply(obj, arguments);
   };
@@ -566,7 +724,11 @@ function uniqueId(prefix) {
 
 
 function rect2bnd(rect) {
+<<<<<<< HEAD
   var $document = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(document);
+=======
+  var $document = external_jQuery_default()(document);
+>>>>>>> danhmuc_list
   return {
     top: rect.top + $document.scrollTop(),
     left: rect.left + $document.scrollLeft(),
@@ -652,7 +814,11 @@ function isValidUrl(url) {
   return expression.test(url);
 }
 
+<<<<<<< HEAD
 /* harmony default export */ var func = ({
+=======
+/* harmony default export */ const func = ({
+>>>>>>> danhmuc_list
   eq: eq,
   eq2: eq2,
   peq2: peq2,
@@ -661,7 +827,11 @@ function isValidUrl(url) {
   self: func_self,
   not: not,
   and: and,
+<<<<<<< HEAD
   invoke: func_invoke,
+=======
+  invoke: invoke,
+>>>>>>> danhmuc_list
   resetUniqueId: resetUniqueId,
   uniqueId: uniqueId,
   rect2bnd: rect2bnd,
@@ -670,7 +840,11 @@ function isValidUrl(url) {
   debounce: debounce,
   isValidUrl: isValidUrl
 });
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/core/lists.js
+=======
+;// CONCATENATED MODULE: ./src/js/core/lists.js
+>>>>>>> danhmuc_list
 
 /**
  * returns the first item of an array.
@@ -678,7 +852,11 @@ function isValidUrl(url) {
  * @param {Array} array
  */
 
+<<<<<<< HEAD
 function lists_head(array) {
+=======
+function head(array) {
+>>>>>>> danhmuc_list
   return array[0];
 }
 /**
@@ -688,7 +866,11 @@ function lists_head(array) {
  */
 
 
+<<<<<<< HEAD
 function lists_last(array) {
+=======
+function last(array) {
+>>>>>>> danhmuc_list
   return array[array.length - 1];
 }
 /**
@@ -792,7 +974,11 @@ function from(collection) {
  */
 
 
+<<<<<<< HEAD
 function lists_isEmpty(array) {
+=======
+function isEmpty(array) {
+>>>>>>> danhmuc_list
   return !array || !array.length;
 }
 /**
@@ -811,16 +997,26 @@ function clusterBy(array, fn) {
 
   var aTail = tail(array);
   return aTail.reduce(function (memo, v) {
+<<<<<<< HEAD
     var aLast = lists_last(memo);
 
     if (fn(lists_last(aLast), v)) {
+=======
+    var aLast = last(memo);
+
+    if (fn(last(aLast), v)) {
+>>>>>>> danhmuc_list
       aLast[aLast.length] = v;
     } else {
       memo[memo.length] = [v];
     }
 
     return memo;
+<<<<<<< HEAD
   }, [[lists_head(array)]]);
+=======
+  }, [[head(array)]]);
+>>>>>>> danhmuc_list
 }
 /**
  * returns a copy of the array with all false values removed
@@ -865,7 +1061,11 @@ function unique(array) {
  */
 
 
+<<<<<<< HEAD
 function lists_next(array, item) {
+=======
+function next(array, item) {
+>>>>>>> danhmuc_list
   if (array && array.length && item) {
     var idx = array.indexOf(item);
     return idx === -1 ? null : array[idx + 1];
@@ -897,6 +1097,7 @@ function prev(array, item) {
  */
 
 
+<<<<<<< HEAD
 /* harmony default export */ var lists = ({
   head: lists_head,
   last: lists_last,
@@ -904,17 +1105,34 @@ function prev(array, item) {
   tail: tail,
   prev: prev,
   next: lists_next,
+=======
+/* harmony default export */ const lists = ({
+  head: head,
+  last: last,
+  initial: initial,
+  tail: tail,
+  prev: prev,
+  next: next,
+>>>>>>> danhmuc_list
   find: find,
   contains: contains,
   all: lists_all,
   sum: sum,
   from: from,
+<<<<<<< HEAD
   isEmpty: lists_isEmpty,
+=======
+  isEmpty: isEmpty,
+>>>>>>> danhmuc_list
   clusterBy: clusterBy,
   compact: compact,
   unique: unique
 });
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/core/dom.js
+=======
+;// CONCATENATED MODULE: ./src/js/core/dom.js
+>>>>>>> danhmuc_list
 
 
 
@@ -931,7 +1149,11 @@ var ZERO_WIDTH_NBSP_CHAR = "\uFEFF";
  */
 
 function isEditable(node) {
+<<<<<<< HEAD
   return node && external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(node).hasClass('note-editable');
+=======
+  return node && external_jQuery_default()(node).hasClass('note-editable');
+>>>>>>> danhmuc_list
 }
 /**
  * @method isControlSizing
@@ -944,7 +1166,11 @@ function isEditable(node) {
 
 
 function isControlSizing(node) {
+<<<<<<< HEAD
   return node && external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(node).hasClass('note-control-sizing');
+=======
+  return node && external_jQuery_default()(node).hasClass('note-control-sizing');
+>>>>>>> danhmuc_list
 }
 /**
  * @method makePredByNodeName
@@ -1021,7 +1247,11 @@ function isPurePara(node) {
 var isTable = makePredByNodeName('TABLE');
 var isData = makePredByNodeName('DATA');
 
+<<<<<<< HEAD
 function dom_isInline(node) {
+=======
+function isInline(node) {
+>>>>>>> danhmuc_list
   return !isBodyContainer(node) && !isList(node) && !isHr(node) && !isPara(node) && !isTable(node) && !isBlockquote(node) && !isData(node);
 }
 
@@ -1031,24 +1261,40 @@ function isList(node) {
 
 var isHr = makePredByNodeName('HR');
 
+<<<<<<< HEAD
 function dom_isCell(node) {
+=======
+function isCell(node) {
+>>>>>>> danhmuc_list
   return node && /^TD|^TH/.test(node.nodeName.toUpperCase());
 }
 
 var isBlockquote = makePredByNodeName('BLOCKQUOTE');
 
 function isBodyContainer(node) {
+<<<<<<< HEAD
   return dom_isCell(node) || isBlockquote(node) || isEditable(node);
+=======
+  return isCell(node) || isBlockquote(node) || isEditable(node);
+>>>>>>> danhmuc_list
 }
 
 var isAnchor = makePredByNodeName('A');
 
 function isParaInline(node) {
+<<<<<<< HEAD
   return dom_isInline(node) && !!dom_ancestor(node, isPara);
 }
 
 function isBodyInline(node) {
   return dom_isInline(node) && !dom_ancestor(node, isPara);
+=======
+  return isInline(node) && !!ancestor(node, isPara);
+}
+
+function isBodyInline(node) {
+  return isInline(node) && !ancestor(node, isPara);
+>>>>>>> danhmuc_list
 }
 
 var isBody = makePredByNodeName('BODY');
@@ -1171,7 +1417,11 @@ function paddingBlankHTML(node) {
  */
 
 
+<<<<<<< HEAD
 function dom_ancestor(node, pred) {
+=======
+function ancestor(node, pred) {
+>>>>>>> danhmuc_list
   while (node) {
     if (pred(node)) {
       return node;
@@ -1226,7 +1476,11 @@ function singleChildAncestor(node, pred) {
 function listAncestor(node, pred) {
   pred = pred || func.fail;
   var ancestors = [];
+<<<<<<< HEAD
   dom_ancestor(node, function (el) {
+=======
+  ancestor(node, function (el) {
+>>>>>>> danhmuc_list
     if (!isEditable(el)) {
       ancestors.push(el);
     }
@@ -1252,7 +1506,11 @@ function lastAncestor(node, pred) {
  */
 
 
+<<<<<<< HEAD
 function dom_commonAncestor(nodeA, nodeB) {
+=======
+function commonAncestor(nodeA, nodeB) {
+>>>>>>> danhmuc_list
   var ancestors = listAncestor(nodeA);
 
   for (var n = nodeB; n; n = n.parentNode) {
@@ -1342,7 +1600,11 @@ function listDescendant(node, pred) {
 
 function wrap(node, wrapperName) {
   var parent = node.parentNode;
+<<<<<<< HEAD
   var wrapper = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<' + wrapperName + '>')[0];
+=======
+  var wrapper = external_jQuery_default()('<' + wrapperName + '>')[0];
+>>>>>>> danhmuc_list
   parent.insertBefore(wrapper, node);
   wrapper.appendChild(node);
   return wrapper;
@@ -1376,7 +1638,11 @@ function insertAfter(node, preceding) {
 
 
 function appendChildNodes(node, aChild) {
+<<<<<<< HEAD
   external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(aChild, function (idx, child) {
+=======
+  external_jQuery_default().each(aChild, function (idx, child) {
+>>>>>>> danhmuc_list
     node.appendChild(child);
   });
   return node;
@@ -1423,9 +1689,15 @@ function isEdgePoint(point) {
  */
 
 
+<<<<<<< HEAD
 function dom_isLeftEdgeOf(node, ancestor) {
   while (node && node !== ancestor) {
     if (dom_position(node) !== 0) {
+=======
+function isLeftEdgeOf(node, ancestor) {
+  while (node && node !== ancestor) {
+    if (position(node) !== 0) {
+>>>>>>> danhmuc_list
       return false;
     }
 
@@ -1449,7 +1721,11 @@ function isRightEdgeOf(node, ancestor) {
   }
 
   while (node && node !== ancestor) {
+<<<<<<< HEAD
     if (dom_position(node) !== nodeLength(node.parentNode) - 1) {
+=======
+    if (position(node) !== nodeLength(node.parentNode) - 1) {
+>>>>>>> danhmuc_list
       return false;
     }
 
@@ -1467,7 +1743,11 @@ function isRightEdgeOf(node, ancestor) {
 
 
 function isLeftEdgePointOf(point, ancestor) {
+<<<<<<< HEAD
   return isLeftEdgePoint(point) && dom_isLeftEdgeOf(point.node, ancestor);
+=======
+  return isLeftEdgePoint(point) && isLeftEdgeOf(point.node, ancestor);
+>>>>>>> danhmuc_list
 }
 /**
  * returns whether point is right edge of ancestor or not.
@@ -1487,7 +1767,11 @@ function isRightEdgePointOf(point, ancestor) {
  */
 
 
+<<<<<<< HEAD
 function dom_position(node) {
+=======
+function position(node) {
+>>>>>>> danhmuc_list
   var offset = 0;
 
   while (node = node.previousSibling) {
@@ -1509,7 +1793,11 @@ function hasChildren(node) {
  */
 
 
+<<<<<<< HEAD
 function dom_prevPoint(point, isSkipInnerOffset) {
+=======
+function prevPoint(point, isSkipInnerOffset) {
+>>>>>>> danhmuc_list
   var node;
   var offset;
 
@@ -1519,7 +1807,11 @@ function dom_prevPoint(point, isSkipInnerOffset) {
     }
 
     node = point.node.parentNode;
+<<<<<<< HEAD
     offset = dom_position(point.node);
+=======
+    offset = position(point.node);
+>>>>>>> danhmuc_list
   } else if (hasChildren(point.node)) {
     node = point.node.childNodes[point.offset - 1];
     offset = nodeLength(node);
@@ -1542,7 +1834,11 @@ function dom_prevPoint(point, isSkipInnerOffset) {
  */
 
 
+<<<<<<< HEAD
 function dom_nextPoint(point, isSkipInnerOffset) {
+=======
+function nextPoint(point, isSkipInnerOffset) {
+>>>>>>> danhmuc_list
   var node, offset;
 
   if (nodeLength(point.node) === point.offset) {
@@ -1557,7 +1853,11 @@ function dom_nextPoint(point, isSkipInnerOffset) {
       offset = 0;
     } else {
       node = point.node.parentNode;
+<<<<<<< HEAD
       offset = dom_position(point.node) + 1;
+=======
+      offset = position(point.node) + 1;
+>>>>>>> danhmuc_list
     }
   } else if (hasChildren(point.node)) {
     node = point.node.childNodes[point.offset];
@@ -1582,9 +1882,20 @@ function dom_nextPoint(point, isSkipInnerOffset) {
 
 
 function nextPointWithEmptyNode(point, isSkipInnerOffset) {
+<<<<<<< HEAD
   var node, offset; // if node is empty string node, return current node's sibling.
 
   if (dom_isEmpty(point.node)) {
+=======
+  var node,
+      offset = 0; // if node is empty string node, return current node's sibling.
+
+  if (dom_isEmpty(point.node)) {
+    if (point.node === null) {
+      return null;
+    }
+
+>>>>>>> danhmuc_list
     node = point.node.nextSibling;
     offset = 0;
     return {
@@ -1598,6 +1909,7 @@ function nextPointWithEmptyNode(point, isSkipInnerOffset) {
       return null;
     }
 
+<<<<<<< HEAD
     var nextTextNode = getNextTextNode(point.node);
 
     if (nextTextNode) {
@@ -1608,6 +1920,10 @@ function nextPointWithEmptyNode(point, isSkipInnerOffset) {
       offset = dom_position(point.node) + 1;
     } // if next node is editable, return current node's sibling node.
 
+=======
+    node = point.node.parentNode;
+    offset = position(point.node) + 1; // if next node is editable ,  return current node's sibling node.
+>>>>>>> danhmuc_list
 
     if (isEditable(node)) {
       node = point.node.nextSibling;
@@ -1618,6 +1934,16 @@ function nextPointWithEmptyNode(point, isSkipInnerOffset) {
     offset = 0;
 
     if (dom_isEmpty(node)) {
+<<<<<<< HEAD
+=======
+      if (!dom_isEmpty(point.node.nextSibling)) {
+        return {
+          node: point.node.nextSibling,
+          offset: offset
+        };
+      }
+
+>>>>>>> danhmuc_list
       return null;
     }
   } else {
@@ -1642,8 +1968,12 @@ function nextPointWithEmptyNode(point, isSkipInnerOffset) {
 function getNextTextNode(actual) {
   if (!actual.nextSibling) return undefined;
   if (actual.parent !== actual.nextSibling.parent) return undefined;
+<<<<<<< HEAD
   if (isText(actual.nextSibling)) return actual.nextSibling;
   return getNextTextNode(actual.nextSibling);
+=======
+  if (isText(actual.nextSibling)) return actual.nextSibling;else return getNextTextNode(actual.nextSibling);
+>>>>>>> danhmuc_list
 }
 /**
  * returns whether pointA and pointB is same or not.
@@ -1673,7 +2003,11 @@ function isVisiblePoint(point) {
   var leftNode = point.node.childNodes[point.offset - 1];
   var rightNode = point.node.childNodes[point.offset];
 
+<<<<<<< HEAD
   if ((!leftNode || isVoid(leftNode)) && (!rightNode || isVoid(rightNode))) {
+=======
+  if ((!leftNode || isVoid(leftNode)) && (!rightNode || isVoid(rightNode)) || isTable(rightNode)) {
+>>>>>>> danhmuc_list
     return true;
   }
 
@@ -1694,7 +2028,11 @@ function prevPointUntil(point, pred) {
       return point;
     }
 
+<<<<<<< HEAD
     point = dom_prevPoint(point);
+=======
+    point = prevPoint(point);
+>>>>>>> danhmuc_list
   }
 
   return null;
@@ -1714,7 +2052,11 @@ function nextPointUntil(point, pred) {
       return point;
     }
 
+<<<<<<< HEAD
     point = dom_nextPoint(point);
+=======
+    point = nextPoint(point);
+>>>>>>> danhmuc_list
   }
 
   return null;
@@ -1787,7 +2129,11 @@ function walkPoint(startPoint, endPoint, handler, isSkipInnerOffset) {
 
 function makeOffsetPath(ancestor, node) {
   var ancestors = listAncestor(node, func.eq(ancestor));
+<<<<<<< HEAD
   return ancestors.map(dom_position).reverse();
+=======
+  return ancestors.map(position).reverse();
+>>>>>>> danhmuc_list
 }
 /**
  * @method fromOffsetPath
@@ -1902,7 +2248,11 @@ function splitTree(root, point, options) {
 
     return splitNode({
       node: parent,
+<<<<<<< HEAD
       offset: node ? dom_position(node) : nodeLength(parent)
+=======
+      offset: node ? position(node) : nodeLength(parent)
+>>>>>>> danhmuc_list
     }, options);
   });
 }
@@ -1948,7 +2298,11 @@ function splitPoint(point, isInline) {
   };
 }
 
+<<<<<<< HEAD
 function dom_create(nodeName) {
+=======
+function create(nodeName) {
+>>>>>>> danhmuc_list
   return document.createElement(nodeName);
 }
 
@@ -2020,12 +2374,20 @@ function removeWhile(node, pred) {
  */
 
 
+<<<<<<< HEAD
 function dom_replace(node, nodeName) {
+=======
+function replace(node, nodeName) {
+>>>>>>> danhmuc_list
   if (node.nodeName.toUpperCase() === nodeName.toUpperCase()) {
     return node;
   }
 
+<<<<<<< HEAD
   var newNode = dom_create(nodeName);
+=======
+  var newNode = create(nodeName);
+>>>>>>> danhmuc_list
 
   if (node.style.cssText) {
     newNode.style.cssText = node.style.cssText;
@@ -2043,7 +2405,11 @@ var isTextarea = makePredByNodeName('TEXTAREA');
  * @param {Boolean} [stripLinebreaks] - default: false
  */
 
+<<<<<<< HEAD
 function dom_value($node, stripLinebreaks) {
+=======
+function value($node, stripLinebreaks) {
+>>>>>>> danhmuc_list
   var val = isTextarea($node[0]) ? $node.val() : $node.html();
 
   if (stripLinebreaks) {
@@ -2062,8 +2428,13 @@ function dom_value($node, stripLinebreaks) {
  */
 
 
+<<<<<<< HEAD
 function dom_html($node, isNewlineOnBlock) {
   var markup = dom_value($node);
+=======
+function html($node, isNewlineOnBlock) {
+  var markup = value($node);
+>>>>>>> danhmuc_list
 
   if (isNewlineOnBlock) {
     var regexTag = /<(\/?)(\b(?!!)[^>\s]*)(.*?)(\s*\/?>)/g;
@@ -2080,7 +2451,11 @@ function dom_html($node, isNewlineOnBlock) {
 }
 
 function posFromPlaceholder(placeholder) {
+<<<<<<< HEAD
   var $placeholder = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(placeholder);
+=======
+  var $placeholder = external_jQuery_default()(placeholder);
+>>>>>>> danhmuc_list
   var pos = $placeholder.offset();
   var height = $placeholder.outerHeight(true); // include margin
 
@@ -2115,7 +2490,11 @@ function isCustomStyleTag(node) {
   return node && !isText(node) && lists.contains(node.classList, 'note-styletag');
 }
 
+<<<<<<< HEAD
 /* harmony default export */ var dom = ({
+=======
+/* harmony default export */ const dom = ({
+>>>>>>> danhmuc_list
   /** @property {String} NBSP_CHAR */
   NBSP_CHAR: NBSP_CHAR,
 
@@ -2136,8 +2515,13 @@ function isCustomStyleTag(node) {
   isPara: isPara,
   isPurePara: isPurePara,
   isHeading: isHeading,
+<<<<<<< HEAD
   isInline: dom_isInline,
   isBlock: func.not(dom_isInline),
+=======
+  isInline: isInline,
+  isBlock: func.not(isInline),
+>>>>>>> danhmuc_list
   isBodyInline: isBodyInline,
   isBody: isBody,
   isParaInline: isParaInline,
@@ -2145,7 +2529,11 @@ function isCustomStyleTag(node) {
   isList: isList,
   isTable: isTable,
   isData: isData,
+<<<<<<< HEAD
   isCell: dom_isCell,
+=======
+  isCell: isCell,
+>>>>>>> danhmuc_list
   isBlockquote: isBlockquote,
   isBodyContainer: isBodyContainer,
   isAnchor: isAnchor,
@@ -2168,12 +2556,21 @@ function isCustomStyleTag(node) {
   isLeftEdgePoint: isLeftEdgePoint,
   isRightEdgePoint: isRightEdgePoint,
   isEdgePoint: isEdgePoint,
+<<<<<<< HEAD
   isLeftEdgeOf: dom_isLeftEdgeOf,
   isRightEdgeOf: isRightEdgeOf,
   isLeftEdgePointOf: isLeftEdgePointOf,
   isRightEdgePointOf: isRightEdgePointOf,
   prevPoint: dom_prevPoint,
   nextPoint: dom_nextPoint,
+=======
+  isLeftEdgeOf: isLeftEdgeOf,
+  isRightEdgeOf: isRightEdgeOf,
+  isLeftEdgePointOf: isLeftEdgePointOf,
+  isRightEdgePointOf: isRightEdgePointOf,
+  prevPoint: prevPoint,
+  nextPoint: nextPoint,
+>>>>>>> danhmuc_list
   nextPointWithEmptyNode: nextPointWithEmptyNode,
   isSamePoint: isSamePoint,
   isVisiblePoint: isVisiblePoint,
@@ -2182,23 +2579,36 @@ function isCustomStyleTag(node) {
   isCharPoint: isCharPoint,
   isSpacePoint: isSpacePoint,
   walkPoint: walkPoint,
+<<<<<<< HEAD
   ancestor: dom_ancestor,
+=======
+  ancestor: ancestor,
+>>>>>>> danhmuc_list
   singleChildAncestor: singleChildAncestor,
   listAncestor: listAncestor,
   lastAncestor: lastAncestor,
   listNext: listNext,
   listPrev: listPrev,
   listDescendant: listDescendant,
+<<<<<<< HEAD
   commonAncestor: dom_commonAncestor,
   wrap: wrap,
   insertAfter: insertAfter,
   appendChildNodes: appendChildNodes,
   position: dom_position,
+=======
+  commonAncestor: commonAncestor,
+  wrap: wrap,
+  insertAfter: insertAfter,
+  appendChildNodes: appendChildNodes,
+  position: position,
+>>>>>>> danhmuc_list
   hasChildren: hasChildren,
   makeOffsetPath: makeOffsetPath,
   fromOffsetPath: fromOffsetPath,
   splitTree: splitTree,
   splitPoint: splitPoint,
+<<<<<<< HEAD
   create: dom_create,
   createText: createText,
   remove: remove,
@@ -2206,12 +2616,25 @@ function isCustomStyleTag(node) {
   replace: dom_replace,
   html: dom_html,
   value: dom_value,
+=======
+  create: create,
+  createText: createText,
+  remove: remove,
+  removeWhile: removeWhile,
+  replace: replace,
+  html: html,
+  value: value,
+>>>>>>> danhmuc_list
   posFromPlaceholder: posFromPlaceholder,
   attachEvents: attachEvents,
   detachEvents: detachEvents,
   isCustomStyleTag: isCustomStyleTag
 });
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/Context.js
+=======
+;// CONCATENATED MODULE: ./src/js/Context.js
+>>>>>>> danhmuc_list
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -2223,7 +2646,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 
 
+<<<<<<< HEAD
 var Context_Context = /*#__PURE__*/function () {
+=======
+var Context = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
   /**
    * @param {jQuery} $note
    * @param {Object} options
@@ -2235,10 +2662,17 @@ var Context_Context = /*#__PURE__*/function () {
     this.memos = {};
     this.modules = {};
     this.layoutInfo = {};
+<<<<<<< HEAD
     this.options = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.extend(true, {}, options); // init ui with options
 
     external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.ui = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.ui_template(this.options);
     this.ui = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.ui;
+=======
+    this.options = external_jQuery_default().extend(true, {}, options); // init ui with options
+
+    (external_jQuery_default()).summernote.ui = external_jQuery_default().summernote.ui_template(this.options);
+    this.ui = (external_jQuery_default()).summernote.ui;
+>>>>>>> danhmuc_list
     this.initialize();
   }
   /**
@@ -2292,6 +2726,7 @@ var Context_Context = /*#__PURE__*/function () {
       var _this = this;
 
       // set own id
+<<<<<<< HEAD
       this.options.id = func.uniqueId(external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.now()); // set default container for tooltips, popovers, and dialogs
 
       this.options.container = this.options.container || this.layoutInfo.editor; // add optional buttons
@@ -2301,6 +2736,17 @@ var Context_Context = /*#__PURE__*/function () {
         _this.memo('button.' + key, buttons[key]);
       });
       var modules = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.extend({}, this.options.modules, external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.plugins || {}); // add and initialize modules
+=======
+      this.options.id = func.uniqueId(external_jQuery_default().now()); // set default container for tooltips, popovers, and dialogs
+
+      this.options.container = this.options.container || this.layoutInfo.editor; // add optional buttons
+
+      var buttons = external_jQuery_default().extend({}, this.options.buttons);
+      Object.keys(buttons).forEach(function (key) {
+        _this.memo('button.' + key, buttons[key]);
+      });
+      var modules = external_jQuery_default().extend({}, this.options.modules, (external_jQuery_default()).summernote.plugins || {}); // add and initialize modules
+>>>>>>> danhmuc_list
 
       Object.keys(modules).forEach(function (key) {
         _this.module(key, modules[key], true);
@@ -2472,7 +2918,11 @@ var Context_Context = /*#__PURE__*/function () {
 
       return function (event) {
         event.preventDefault();
+<<<<<<< HEAD
         var $target = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(event.target);
+=======
+        var $target = external_jQuery_default()(event.target);
+>>>>>>> danhmuc_list
 
         _this4.invoke(namespace, value || $target.closest('[data-value]').data('value'), $target);
       };
@@ -2500,12 +2950,20 @@ var Context_Context = /*#__PURE__*/function () {
 }();
 
 
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/summernote.js
+=======
+;// CONCATENATED MODULE: ./src/js/summernote.js
+>>>>>>> danhmuc_list
 
 
 
 
+<<<<<<< HEAD
 external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.fn.extend({
+=======
+external_jQuery_default().fn.extend({
+>>>>>>> danhmuc_list
   /**
    * Summernote API
    *
@@ -2513,6 +2971,7 @@ external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.fn.ex
    * @return {this}
    */
   summernote: function summernote() {
+<<<<<<< HEAD
     var type = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.type(lists.head(arguments));
     var isExternalAPICalled = type === 'string';
     var hasInitOptions = type === 'object';
@@ -2526,6 +2985,21 @@ external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.fn.ex
 
       if (!$note.data('summernote')) {
         var context = new Context_Context($note, options);
+=======
+    var type = external_jQuery_default().type(lists.head(arguments));
+    var isExternalAPICalled = type === 'string';
+    var hasInitOptions = type === 'object';
+    var options = external_jQuery_default().extend({}, (external_jQuery_default()).summernote.options, hasInitOptions ? lists.head(arguments) : {}); // Update options
+
+    options.langInfo = external_jQuery_default().extend(true, {}, (external_jQuery_default()).summernote.lang["en-US"], (external_jQuery_default()).summernote.lang[options.lang]);
+    options.icons = external_jQuery_default().extend(true, {}, (external_jQuery_default()).summernote.options.icons, options.icons);
+    options.tooltip = options.tooltip === 'auto' ? !env.isSupportTouch : options.tooltip;
+    this.each(function (idx, note) {
+      var $note = external_jQuery_default()(note);
+
+      if (!$note.data('summernote')) {
+        var context = new Context($note, options);
+>>>>>>> danhmuc_list
         $note.data('summernote', context);
         $note.data('summernote').triggerEvent('init', context.layoutInfo);
       }
@@ -2545,7 +3019,11 @@ external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.fn.ex
     return this;
   }
 });
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/core/range.js
+=======
+;// CONCATENATED MODULE: ./src/js/core/range.js
+>>>>>>> danhmuc_list
 function range_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function range_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -2673,7 +3151,11 @@ function pointToTextRange(point) {
    */
 
 
+<<<<<<< HEAD
 var range_WrappedRange = /*#__PURE__*/function () {
+=======
+var WrappedRange = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
   function WrappedRange(sc, so, ec, eo) {
     range_classCallCheck(this, WrappedRange);
 
@@ -2772,7 +3254,11 @@ var range_WrappedRange = /*#__PURE__*/function () {
   }, {
     key: "scrollIntoView",
     value: function scrollIntoView(container) {
+<<<<<<< HEAD
       var height = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(container).height();
+=======
+      var height = external_jQuery_default()(container).height();
+>>>>>>> danhmuc_list
 
       if (container.scrollTop + height < this.sc.offsetTop) {
         container.scrollTop += Math.abs(container.scrollTop + height - this.sc.offsetTop);
@@ -3000,7 +3486,11 @@ var range_WrappedRange = /*#__PURE__*/function () {
         return !lists.contains(nodes, point.node);
       });
       var emptyParents = [];
+<<<<<<< HEAD
       external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(nodes, function (idx, node) {
+=======
+      external_jQuery_default().each(nodes, function (idx, node) {
+>>>>>>> danhmuc_list
         // find empty parents
         var parent = node.parentNode;
 
@@ -3011,7 +3501,11 @@ var range_WrappedRange = /*#__PURE__*/function () {
         dom.remove(node, false);
       }); // remove empty parents
 
+<<<<<<< HEAD
       external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(emptyParents, function (idx, node) {
+=======
+      external_jQuery_default().each(emptyParents, function (idx, node) {
+>>>>>>> danhmuc_list
         dom.remove(node, false);
       });
       return new WrappedRange(point.node, point.offset, point.node, point.offset).normalize();
@@ -3142,8 +3636,13 @@ var range_WrappedRange = /*#__PURE__*/function () {
   }, {
     key: "pasteHTML",
     value: function pasteHTML(markup) {
+<<<<<<< HEAD
       markup = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.trim(markup);
       var contentsContainer = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<div></div>').html(markup)[0];
+=======
+      markup = external_jQuery_default().trim(markup);
+      var contentsContainer = external_jQuery_default()('<div></div>').html(markup)[0];
+>>>>>>> danhmuc_list
       var childNodes = lists.from(contentsContainer.childNodes); // const rng = this.wrapBodyInlineWithPara().deleteContents();
 
       var rng = this;
@@ -3331,7 +3830,11 @@ var range_WrappedRange = /*#__PURE__*/function () {
  */
 
 
+<<<<<<< HEAD
 /* harmony default export */ var range = ({
+=======
+/* harmony default export */ const range = ({
+>>>>>>> danhmuc_list
   /**
    * create Range Object From arguments or Browser Selection
    *
@@ -3343,12 +3846,20 @@ var range_WrappedRange = /*#__PURE__*/function () {
    */
   create: function create(sc, so, ec, eo) {
     if (arguments.length === 4) {
+<<<<<<< HEAD
       return new range_WrappedRange(sc, so, ec, eo);
+=======
+      return new WrappedRange(sc, so, ec, eo);
+>>>>>>> danhmuc_list
     } else if (arguments.length === 2) {
       // collapsed
       ec = sc;
       eo = so;
+<<<<<<< HEAD
       return new range_WrappedRange(sc, so, ec, eo);
+=======
+      return new WrappedRange(sc, so, ec, eo);
+>>>>>>> danhmuc_list
     } else {
       var wrappedRange = this.createFromSelection();
 
@@ -3409,7 +3920,11 @@ var range_WrappedRange = /*#__PURE__*/function () {
       eo = endPoint.offset;
     }
 
+<<<<<<< HEAD
     return new range_WrappedRange(sc, so, ec, eo);
+=======
+    return new WrappedRange(sc, so, ec, eo);
+>>>>>>> danhmuc_list
   },
 
   /**
@@ -3476,7 +3991,11 @@ var range_WrappedRange = /*#__PURE__*/function () {
     var so = bookmark.s.offset;
     var ec = dom.fromOffsetPath(editable, bookmark.e.path);
     var eo = bookmark.e.offset;
+<<<<<<< HEAD
     return new range_WrappedRange(sc, so, ec, eo);
+=======
+    return new WrappedRange(sc, so, ec, eo);
+>>>>>>> danhmuc_list
   },
 
   /**
@@ -3493,10 +4012,17 @@ var range_WrappedRange = /*#__PURE__*/function () {
     var eo = bookmark.e.offset;
     var sc = dom.fromOffsetPath(lists.head(paras), bookmark.s.path);
     var ec = dom.fromOffsetPath(lists.last(paras), bookmark.e.path);
+<<<<<<< HEAD
     return new range_WrappedRange(sc, so, ec, eo);
   }
 });
 // CONCATENATED MODULE: ./src/js/base/core/key.js
+=======
+    return new WrappedRange(sc, so, ec, eo);
+  }
+});
+;// CONCATENATED MODULE: ./src/js/core/key.js
+>>>>>>> danhmuc_list
 
 
 var KEY_MAP = {
@@ -3553,7 +4079,11 @@ var KEY_MAP = {
  * @alternateClassName key
  */
 
+<<<<<<< HEAD
 /* harmony default export */ var core_key = ({
+=======
+/* harmony default export */ const key = ({
+>>>>>>> danhmuc_list
   /**
    * @method isEdit
    *
@@ -3591,7 +4121,11 @@ var KEY_MAP = {
   nameFromCode: func.invertObject(KEY_MAP),
   code: KEY_MAP
 });
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/core/async.js
+=======
+;// CONCATENATED MODULE: ./src/js/core/async.js
+>>>>>>> danhmuc_list
 
 /**
  * @method readFileAsDataURL
@@ -3603,8 +4137,13 @@ var KEY_MAP = {
  */
 
 function readFileAsDataURL(file) {
+<<<<<<< HEAD
   return external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.Deferred(function (deferred) {
     external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.extend(new FileReader(), {
+=======
+  return external_jQuery_default().Deferred(function (deferred) {
+    external_jQuery_default().extend(new FileReader(), {
+>>>>>>> danhmuc_list
       onload: function onload(e) {
         var dataURL = e.target.result;
         deferred.resolve(dataURL);
@@ -3625,8 +4164,13 @@ function readFileAsDataURL(file) {
  */
 
 function createImage(url) {
+<<<<<<< HEAD
   return external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.Deferred(function (deferred) {
     var $img = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<img>');
+=======
+  return external_jQuery_default().Deferred(function (deferred) {
+    var $img = external_jQuery_default()('<img>');
+>>>>>>> danhmuc_list
     $img.one('load', function () {
       $img.off('error abort');
       deferred.resolve($img);
@@ -3638,7 +4182,11 @@ function createImage(url) {
     }).appendTo(document.body).attr('src', url);
   }).promise();
 }
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/editing/History.js
+=======
+;// CONCATENATED MODULE: ./src/js/editing/History.js
+>>>>>>> danhmuc_list
 function History_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function History_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -3647,7 +4195,11 @@ function History_createClass(Constructor, protoProps, staticProps) { if (protoPr
 
 
 
+<<<<<<< HEAD
 var History_History = /*#__PURE__*/function () {
+=======
+var History = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
   function History(context) {
     History_classCallCheck(this, History);
 
@@ -3795,7 +4347,11 @@ var History_History = /*#__PURE__*/function () {
 }();
 
 
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/editing/Style.js
+=======
+;// CONCATENATED MODULE: ./src/js/editing/Style.js
+>>>>>>> danhmuc_list
 function Style_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function Style_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -3807,15 +4363,23 @@ function Style_createClass(Constructor, protoProps, staticProps) { if (protoProp
 
 
 
+<<<<<<< HEAD
 
 var Style_Style = /*#__PURE__*/function () {
+=======
+var Style = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
   function Style() {
     Style_classCallCheck(this, Style);
   }
 
   Style_createClass(Style, [{
     key: "jQueryCSS",
+<<<<<<< HEAD
 
+=======
+    value:
+>>>>>>> danhmuc_list
     /**
      * @method jQueryCSS
      *
@@ -3829,6 +4393,7 @@ var Style_Style = /*#__PURE__*/function () {
      * @param  {Array} propertyNames - An array of one or more CSS properties.
      * @return {Object}
      */
+<<<<<<< HEAD
     value: function jQueryCSS($obj, propertyNames) {
       if (env.jqueryVersion < 1.9) {
         var result = {};
@@ -3839,6 +4404,14 @@ var Style_Style = /*#__PURE__*/function () {
       }
 
       return $obj.css(propertyNames);
+=======
+    function jQueryCSS($obj, propertyNames) {
+      var result = {};
+      external_jQuery_default().each(propertyNames, function (idx, propertyName) {
+        result[propertyName] = $obj.css(propertyName);
+      });
+      return result;
+>>>>>>> danhmuc_list
     }
     /**
      * returns style object from node
@@ -3867,10 +4440,17 @@ var Style_Style = /*#__PURE__*/function () {
   }, {
     key: "stylePara",
     value: function stylePara(rng, styleInfo) {
+<<<<<<< HEAD
       external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(rng.nodes(dom.isPara, {
         includeAncestor: true
       }), function (idx, para) {
         external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(para).css(styleInfo);
+=======
+      external_jQuery_default().each(rng.nodes(dom.isPara, {
+        includeAncestor: true
+      }), function (idx, para) {
+        external_jQuery_default()(para).css(styleInfo);
+>>>>>>> danhmuc_list
       });
     }
     /**
@@ -3916,7 +4496,11 @@ var Style_Style = /*#__PURE__*/function () {
           var siblings = dom.withClosestSiblings(node, pred);
           var head = lists.head(siblings);
           var tails = lists.tail(siblings);
+<<<<<<< HEAD
           external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(tails, function (idx, elem) {
+=======
+          external_jQuery_default().each(tails, function (idx, elem) {
+>>>>>>> danhmuc_list
             dom.appendChildNodes(head, elem.childNodes);
             dom.remove(elem);
           });
@@ -3936,12 +4520,20 @@ var Style_Style = /*#__PURE__*/function () {
   }, {
     key: "current",
     value: function current(rng) {
+<<<<<<< HEAD
       var $cont = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(!dom.isElement(rng.sc) ? rng.sc.parentNode : rng.sc);
+=======
+      var $cont = external_jQuery_default()(!dom.isElement(rng.sc) ? rng.sc.parentNode : rng.sc);
+>>>>>>> danhmuc_list
       var styleInfo = this.fromNode($cont); // document.queryCommandState for toggle state
       // [workaround] prevent Firefox nsresult: "0x80004005 (NS_ERROR_FAILURE)"
 
       try {
+<<<<<<< HEAD
         styleInfo = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.extend(styleInfo, {
+=======
+        styleInfo = external_jQuery_default().extend(styleInfo, {
+>>>>>>> danhmuc_list
           'font-bold': document.queryCommandState('bold') ? 'bold' : 'normal',
           'font-italic': document.queryCommandState('italic') ? 'italic' : 'normal',
           'font-underline': document.queryCommandState('underline') ? 'underline' : 'normal',
@@ -3950,8 +4542,13 @@ var Style_Style = /*#__PURE__*/function () {
           'font-strikethrough': document.queryCommandState('strikethrough') ? 'strikethrough' : 'normal',
           'font-family': document.queryCommandValue('fontname') || styleInfo['font-family']
         });
+<<<<<<< HEAD
       } catch (e) {} // eslint-disable-next-line
       // list-style-type to list-style(unordered, ordered)
+=======
+      } catch (e) {// eslint-disable-next-line
+      } // list-style-type to list-style(unordered, ordered)
+>>>>>>> danhmuc_list
 
 
       if (!rng.isOnList()) {
@@ -3982,7 +4579,11 @@ var Style_Style = /*#__PURE__*/function () {
 }();
 
 
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/editing/Bullet.js
+=======
+;// CONCATENATED MODULE: ./src/js/editing/Bullet.js
+>>>>>>> danhmuc_list
 function Bullet_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function Bullet_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -3995,18 +4596,30 @@ function Bullet_createClass(Constructor, protoProps, staticProps) { if (protoPro
 
 
 
+<<<<<<< HEAD
 var Bullet_Bullet = /*#__PURE__*/function () {
+=======
+var Bullet = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
   function Bullet() {
     Bullet_classCallCheck(this, Bullet);
   }
 
   Bullet_createClass(Bullet, [{
     key: "insertOrderedList",
+<<<<<<< HEAD
 
     /**
      * toggle ordered list
      */
     value: function insertOrderedList(editable) {
+=======
+    value:
+    /**
+     * toggle ordered list
+     */
+    function insertOrderedList(editable) {
+>>>>>>> danhmuc_list
       this.toggleList('OL', editable);
     }
     /**
@@ -4032,7 +4645,11 @@ var Bullet_Bullet = /*#__PURE__*/function () {
         includeAncestor: true
       });
       var clustereds = lists.clusterBy(paras, func.peq2('parentNode'));
+<<<<<<< HEAD
       external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(clustereds, function (idx, paras) {
+=======
+      external_jQuery_default().each(clustereds, function (idx, paras) {
+>>>>>>> danhmuc_list
         var head = lists.head(paras);
 
         if (dom.isLi(head)) {
@@ -4052,8 +4669,13 @@ var Bullet_Bullet = /*#__PURE__*/function () {
             });
           }
         } else {
+<<<<<<< HEAD
           external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(paras, function (idx, para) {
             external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(para).css('marginLeft', function (idx, val) {
+=======
+          external_jQuery_default().each(paras, function (idx, para) {
+            external_jQuery_default()(para).css('marginLeft', function (idx, val) {
+>>>>>>> danhmuc_list
               return (parseInt(val, 10) || 0) + 25;
             });
           });
@@ -4075,14 +4697,23 @@ var Bullet_Bullet = /*#__PURE__*/function () {
         includeAncestor: true
       });
       var clustereds = lists.clusterBy(paras, func.peq2('parentNode'));
+<<<<<<< HEAD
       external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(clustereds, function (idx, paras) {
+=======
+      external_jQuery_default().each(clustereds, function (idx, paras) {
+>>>>>>> danhmuc_list
         var head = lists.head(paras);
 
         if (dom.isLi(head)) {
           _this2.releaseList([paras]);
         } else {
+<<<<<<< HEAD
           external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(paras, function (idx, para) {
             external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(para).css('marginLeft', function (idx, val) {
+=======
+          external_jQuery_default().each(paras, function (idx, para) {
+            external_jQuery_default()(para).css('marginLeft', function (idx, val) {
+>>>>>>> danhmuc_list
               val = parseInt(val, 10) || 0;
               return val > 25 ? val - 25 : '';
             });
@@ -4111,7 +4742,11 @@ var Bullet_Bullet = /*#__PURE__*/function () {
 
       if (lists.find(paras, dom.isPurePara)) {
         var wrappedParas = [];
+<<<<<<< HEAD
         external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(clustereds, function (idx, paras) {
+=======
+        external_jQuery_default().each(clustereds, function (idx, paras) {
+>>>>>>> danhmuc_list
           wrappedParas = wrappedParas.concat(_this3.wrapList(paras, listName));
         });
         paras = wrappedParas; // list to paragraph or change list style
@@ -4119,11 +4754,19 @@ var Bullet_Bullet = /*#__PURE__*/function () {
         var diffLists = rng.nodes(dom.isList, {
           includeAncestor: true
         }).filter(function (listNode) {
+<<<<<<< HEAD
           return !external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.nodeName(listNode, listName);
         });
 
         if (diffLists.length) {
           external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(diffLists, function (idx, listNode) {
+=======
+          return !external_jQuery_default().nodeName(listNode, listName);
+        });
+
+        if (diffLists.length) {
+          external_jQuery_default().each(diffLists, function (idx, listNode) {
+>>>>>>> danhmuc_list
             dom.replace(listNode, listName);
           });
         } else {
@@ -4175,7 +4818,11 @@ var Bullet_Bullet = /*#__PURE__*/function () {
       var _this4 = this;
 
       var releasedParas = [];
+<<<<<<< HEAD
       external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(clustereds, function (idx, paras) {
+=======
+      external_jQuery_default().each(clustereds, function (idx, paras) {
+>>>>>>> danhmuc_list
         var head = lists.head(paras);
         var last = lists.last(paras);
         var headList = isEscapseToBody ? dom.lastAncestor(head, dom.isList) : head.parentNode;
@@ -4226,14 +4873,24 @@ var Bullet_Bullet = /*#__PURE__*/function () {
             });
           }
 
+<<<<<<< HEAD
           external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(lists.from(paras).reverse(), function (idx, para) {
+=======
+          external_jQuery_default().each(lists.from(paras).reverse(), function (idx, para) {
+>>>>>>> danhmuc_list
             dom.insertAfter(para, headList);
           }); // remove empty lists
 
           var rootLists = lists.compact([headList, middleList, lastList]);
+<<<<<<< HEAD
           external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(rootLists, function (idx, rootList) {
             var listNodes = [rootList].concat(dom.listDescendant(rootList, dom.isList));
             external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(listNodes.reverse(), function (idx, listNode) {
+=======
+          external_jQuery_default().each(rootLists, function (idx, rootList) {
+            var listNodes = [rootList].concat(dom.listDescendant(rootList, dom.isList));
+            external_jQuery_default().each(listNodes.reverse(), function (idx, listNode) {
+>>>>>>> danhmuc_list
               if (!dom.nodeLength(listNode)) {
                 dom.remove(listNode, true);
               }
@@ -4303,7 +4960,11 @@ var Bullet_Bullet = /*#__PURE__*/function () {
 }();
 
 
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/editing/Typing.js
+=======
+;// CONCATENATED MODULE: ./src/js/editing/Typing.js
+>>>>>>> danhmuc_list
 function Typing_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function Typing_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -4321,12 +4982,20 @@ function Typing_createClass(Constructor, protoProps, staticProps) { if (protoPro
  *
  */
 
+<<<<<<< HEAD
 var Typing_Typing = /*#__PURE__*/function () {
+=======
+var Typing = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
   function Typing(context) {
     Typing_classCallCheck(this, Typing);
 
     // a Bullet instance to toggle lists off
+<<<<<<< HEAD
     this.bullet = new Bullet_Bullet();
+=======
+    this.bullet = new Bullet();
+>>>>>>> danhmuc_list
     this.options = context.options;
   }
   /**
@@ -4387,11 +5056,19 @@ var Typing_Typing = /*#__PURE__*/function () {
 
           if (blockquote) {
             // We're inside a blockquote and options ask us to break it
+<<<<<<< HEAD
             nextPara = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(dom.emptyPara)[0]; // If the split is right before a <br>, remove it so that there's no "empty line"
             // after the split in the new blockquote created
 
             if (dom.isRightEdgePoint(rng.getStartPoint()) && dom.isBR(rng.sc.nextSibling)) {
               external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(rng.sc.nextSibling).remove();
+=======
+            nextPara = external_jQuery_default()(dom.emptyPara)[0]; // If the split is right before a <br>, remove it so that there's no "empty line"
+            // after the split in the new blockquote created
+
+            if (dom.isRightEdgePoint(rng.getStartPoint()) && dom.isBR(rng.sc.nextSibling)) {
+              external_jQuery_default()(rng.sc.nextSibling).remove();
+>>>>>>> danhmuc_list
             }
 
             var split = dom.splitTree(blockquote, rng.getStartPoint(), {
@@ -4408,7 +5085,11 @@ var Typing_Typing = /*#__PURE__*/function () {
 
             var emptyAnchors = dom.listDescendant(splitRoot, dom.isEmptyAnchor);
             emptyAnchors = emptyAnchors.concat(dom.listDescendant(nextPara, dom.isEmptyAnchor));
+<<<<<<< HEAD
             external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(emptyAnchors, function (idx, anchor) {
+=======
+            external_jQuery_default().each(emptyAnchors, function (idx, anchor) {
+>>>>>>> danhmuc_list
               dom.remove(anchor);
             }); // replace empty heading, pre or custom-made styleTag with P tag
 
@@ -4420,7 +5101,11 @@ var Typing_Typing = /*#__PURE__*/function () {
 
       } else {
         var next = rng.sc.childNodes[rng.so];
+<<<<<<< HEAD
         nextPara = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(dom.emptyPara)[0];
+=======
+        nextPara = external_jQuery_default()(dom.emptyPara)[0];
+>>>>>>> danhmuc_list
 
         if (next) {
           rng.sc.insertBefore(nextPara, next);
@@ -4437,7 +5122,11 @@ var Typing_Typing = /*#__PURE__*/function () {
 }();
 
 
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/editing/Table.js
+=======
+;// CONCATENATED MODULE: ./src/js/editing/Table.js
+>>>>>>> danhmuc_list
 function Table_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function Table_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -4779,21 +5468,33 @@ TableResultAction.resultAction = {
  *
  */
 
+<<<<<<< HEAD
 var Table_Table = /*#__PURE__*/function () {
+=======
+var Table = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
   function Table() {
     Table_classCallCheck(this, Table);
   }
 
   Table_createClass(Table, [{
     key: "tab",
+<<<<<<< HEAD
 
+=======
+    value:
+>>>>>>> danhmuc_list
     /**
      * handle tab key
      *
      * @param {WrappedRange} rng
      * @param {Boolean} isShift
      */
+<<<<<<< HEAD
     value: function tab(rng, isShift) {
+=======
+    function tab(rng, isShift) {
+>>>>>>> danhmuc_list
       var cell = dom.ancestor(rng.commonAncestor(), dom.isCell);
       var table = dom.ancestor(cell, dom.isTable);
       var cells = dom.listDescendant(table, dom.isCell);
@@ -4815,10 +5516,17 @@ var Table_Table = /*#__PURE__*/function () {
     key: "addRow",
     value: function addRow(rng, position) {
       var cell = dom.ancestor(rng.commonAncestor(), dom.isCell);
+<<<<<<< HEAD
       var currentTr = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(cell).closest('tr');
       var trAttributes = this.recoverAttributes(currentTr);
       var html = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<tr' + trAttributes + '></tr>');
       var vTable = new TableResultAction(cell, TableResultAction.where.Row, TableResultAction.requestAction.Add, external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(currentTr).closest('table')[0]);
+=======
+      var currentTr = external_jQuery_default()(cell).closest('tr');
+      var trAttributes = this.recoverAttributes(currentTr);
+      var html = external_jQuery_default()('<tr' + trAttributes + '></tr>');
+      var vTable = new TableResultAction(cell, TableResultAction.where.Row, TableResultAction.requestAction.Add, external_jQuery_default()(currentTr).closest('table')[0]);
+>>>>>>> danhmuc_list
       var actions = vTable.getActionList();
 
       for (var idCell = 0; idCell < actions.length; idCell++) {
@@ -4837,7 +5545,11 @@ var Table_Table = /*#__PURE__*/function () {
                 var isTopFromRowSpan = (!baseCellTr ? 0 : currentCell.baseCell.closest('tr').rowIndex) <= currentTr[0].rowIndex;
 
                 if (isTopFromRowSpan) {
+<<<<<<< HEAD
                   var newTd = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<div></div>').append(external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<td' + tdAttributes + '>' + dom.blank + '</td>').removeAttr('rowspan')).html();
+=======
+                  var newTd = external_jQuery_default()('<div></div>').append(external_jQuery_default()('<td' + tdAttributes + '>' + dom.blank + '</td>').removeAttr('rowspan')).html();
+>>>>>>> danhmuc_list
                   html.append(newTd);
                   break;
                 }
@@ -4858,7 +5570,11 @@ var Table_Table = /*#__PURE__*/function () {
 
         if (cellHasRowspan) {
           var lastTrIndex = currentTr[0].rowIndex + (cell.rowSpan - 2);
+<<<<<<< HEAD
           external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(currentTr).parent().find('tr')[lastTrIndex]).after(external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(html));
+=======
+          external_jQuery_default()(external_jQuery_default()(currentTr).parent().find('tr')[lastTrIndex]).after(external_jQuery_default()(html));
+>>>>>>> danhmuc_list
           return;
         }
 
@@ -4877,10 +5593,17 @@ var Table_Table = /*#__PURE__*/function () {
     key: "addCol",
     value: function addCol(rng, position) {
       var cell = dom.ancestor(rng.commonAncestor(), dom.isCell);
+<<<<<<< HEAD
       var row = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(cell).closest('tr');
       var rowsGroup = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(row).siblings();
       rowsGroup.push(row);
       var vTable = new TableResultAction(cell, TableResultAction.where.Column, TableResultAction.requestAction.Add, external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(row).closest('table')[0]);
+=======
+      var row = external_jQuery_default()(cell).closest('tr');
+      var rowsGroup = external_jQuery_default()(row).siblings();
+      rowsGroup.push(row);
+      var vTable = new TableResultAction(cell, TableResultAction.where.Column, TableResultAction.requestAction.Add, external_jQuery_default()(row).closest('table')[0]);
+>>>>>>> danhmuc_list
       var actions = vTable.getActionList();
 
       for (var actionIndex = 0; actionIndex < actions.length; actionIndex++) {
@@ -4890,9 +5613,15 @@ var Table_Table = /*#__PURE__*/function () {
         switch (currentCell.action) {
           case TableResultAction.resultAction.AddCell:
             if (position === 'right') {
+<<<<<<< HEAD
               external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(currentCell.baseCell).after('<td' + tdAttributes + '>' + dom.blank + '</td>');
             } else {
               external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(currentCell.baseCell).before('<td' + tdAttributes + '>' + dom.blank + '</td>');
+=======
+              external_jQuery_default()(currentCell.baseCell).after('<td' + tdAttributes + '>' + dom.blank + '</td>');
+            } else {
+              external_jQuery_default()(currentCell.baseCell).before('<td' + tdAttributes + '>' + dom.blank + '</td>');
+>>>>>>> danhmuc_list
             }
 
             break;
@@ -4903,7 +5632,11 @@ var Table_Table = /*#__PURE__*/function () {
               colspanNumber++;
               currentCell.baseCell.setAttribute('colSpan', colspanNumber);
             } else {
+<<<<<<< HEAD
               external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(currentCell.baseCell).before('<td' + tdAttributes + '>' + dom.blank + '</td>');
+=======
+              external_jQuery_default()(currentCell.baseCell).before('<td' + tdAttributes + '>' + dom.blank + '</td>');
+>>>>>>> danhmuc_list
             }
 
             break;
@@ -4951,10 +5684,17 @@ var Table_Table = /*#__PURE__*/function () {
     key: "deleteRow",
     value: function deleteRow(rng) {
       var cell = dom.ancestor(rng.commonAncestor(), dom.isCell);
+<<<<<<< HEAD
       var row = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(cell).closest('tr');
       var cellPos = row.children('td, th').index(external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(cell));
       var rowPos = row[0].rowIndex;
       var vTable = new TableResultAction(cell, TableResultAction.where.Row, TableResultAction.requestAction.Delete, external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(row).closest('table')[0]);
+=======
+      var row = external_jQuery_default()(cell).closest('tr');
+      var cellPos = row.children('td, th').index(external_jQuery_default()(cell));
+      var rowPos = row[0].rowIndex;
+      var vTable = new TableResultAction(cell, TableResultAction.where.Row, TableResultAction.requestAction.Delete, external_jQuery_default()(row).closest('table')[0]);
+>>>>>>> danhmuc_list
       var actions = vTable.getActionList();
 
       for (var actionIndex = 0; actionIndex < actions.length; actionIndex++) {
@@ -5035,9 +5775,15 @@ var Table_Table = /*#__PURE__*/function () {
     key: "deleteCol",
     value: function deleteCol(rng) {
       var cell = dom.ancestor(rng.commonAncestor(), dom.isCell);
+<<<<<<< HEAD
       var row = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(cell).closest('tr');
       var cellPos = row.children('td, th').index(external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(cell));
       var vTable = new TableResultAction(cell, TableResultAction.where.Column, TableResultAction.requestAction.Delete, external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(row).closest('table')[0]);
+=======
+      var row = external_jQuery_default()(cell).closest('tr');
+      var cellPos = row.children('td, th').index(external_jQuery_default()(cell));
+      var vTable = new TableResultAction(cell, TableResultAction.where.Column, TableResultAction.requestAction.Delete, external_jQuery_default()(row).closest('table')[0]);
+>>>>>>> danhmuc_list
       var actions = vTable.getActionList();
 
       for (var actionIndex = 0; actionIndex < actions.length; actionIndex++) {
@@ -5108,7 +5854,11 @@ var Table_Table = /*#__PURE__*/function () {
       }
 
       trHTML = trs.join('');
+<<<<<<< HEAD
       var $table = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<table>' + trHTML + '</table>');
+=======
+      var $table = external_jQuery_default()('<table>' + trHTML + '</table>');
+>>>>>>> danhmuc_list
 
       if (options && options.tableClassName) {
         $table.addClass(options.tableClassName);
@@ -5127,7 +5877,11 @@ var Table_Table = /*#__PURE__*/function () {
     key: "deleteTable",
     value: function deleteTable(rng) {
       var cell = dom.ancestor(rng.commonAncestor(), dom.isCell);
+<<<<<<< HEAD
       external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(cell).closest('table').remove();
+=======
+      external_jQuery_default()(cell).closest('table').remove();
+>>>>>>> danhmuc_list
     }
   }]);
 
@@ -5135,7 +5889,11 @@ var Table_Table = /*#__PURE__*/function () {
 }();
 
 
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/module/Editor.js
+=======
+;// CONCATENATED MODULE: ./src/js/module/Editor.js
+>>>>>>> danhmuc_list
 function Editor_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function Editor_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -5160,7 +5918,11 @@ var KEY_BOGUS = 'bogus';
  * @class Editor
  */
 
+<<<<<<< HEAD
 var Editor_Editor = /*#__PURE__*/function () {
+=======
+var Editor = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
   function Editor(context) {
     var _this = this;
 
@@ -5175,11 +5937,19 @@ var Editor_Editor = /*#__PURE__*/function () {
     this.editable = this.$editable[0];
     this.lastRange = null;
     this.snapshot = null;
+<<<<<<< HEAD
     this.style = new Style_Style();
     this.table = new Table_Table();
     this.typing = new Typing_Typing(context);
     this.bullet = new Bullet_Bullet();
     this.history = new History_History(context);
+=======
+    this.style = new Style();
+    this.table = new Table();
+    this.typing = new Typing(context);
+    this.bullet = new Bullet();
+    this.history = new History(context);
+>>>>>>> danhmuc_list
     this.context.memo('help.escape', this.lang.help.escape);
     this.context.memo('help.undo', this.lang.help.undo);
     this.context.memo('help.redo', this.lang.help.redo);
@@ -5256,7 +6026,11 @@ var Editor_Editor = /*#__PURE__*/function () {
      */
 
     this.insertNode = this.wrapCommand(function (node) {
+<<<<<<< HEAD
       if (_this.isLimited(external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(node).text().length)) {
+=======
+      if (_this.isLimited(external_jQuery_default()(node).text().length)) {
+>>>>>>> danhmuc_list
         return;
       }
 
@@ -5371,7 +6145,11 @@ var Editor_Editor = /*#__PURE__*/function () {
 
       if (isTextChanged) {
         rng = rng.deleteContents();
+<<<<<<< HEAD
         var anchor = rng.insertNode(external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<A>' + linkText + '</A>')[0]);
+=======
+        var anchor = rng.insertNode(external_jQuery_default()('<A>' + linkText + '</A>')[0]);
+>>>>>>> danhmuc_list
         anchors.push(anchor);
       } else {
         anchors = _this.style.styleNodes(rng, {
@@ -5381,6 +6159,7 @@ var Editor_Editor = /*#__PURE__*/function () {
         });
       }
 
+<<<<<<< HEAD
       external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(anchors, function (idx, anchor) {
         external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(anchor).attr('href', linkUrl);
 
@@ -5388,6 +6167,15 @@ var Editor_Editor = /*#__PURE__*/function () {
           external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(anchor).attr('target', '_blank');
         } else {
           external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(anchor).removeAttr('target');
+=======
+      external_jQuery_default().each(anchors, function (idx, anchor) {
+        external_jQuery_default()(anchor).attr('href', linkUrl);
+
+        if (isNewWindow) {
+          external_jQuery_default()(anchor).attr('target', '_blank');
+        } else {
+          external_jQuery_default()(anchor).removeAttr('target');
+>>>>>>> danhmuc_list
         }
       });
 
@@ -5440,12 +6228,20 @@ var Editor_Editor = /*#__PURE__*/function () {
      */
 
     this.removeMedia = this.wrapCommand(function () {
+<<<<<<< HEAD
       var $target = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(_this.restoreTarget()).parent();
+=======
+      var $target = external_jQuery_default()(_this.restoreTarget()).parent();
+>>>>>>> danhmuc_list
 
       if ($target.closest('figure').length) {
         $target.closest('figure').remove();
       } else {
+<<<<<<< HEAD
         $target = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(_this.restoreTarget()).detach();
+=======
+        $target = external_jQuery_default()(_this.restoreTarget()).detach();
+>>>>>>> danhmuc_list
       }
 
       _this.context.triggerEvent('media.delete', $target, _this.$editable);
@@ -5457,7 +6253,11 @@ var Editor_Editor = /*#__PURE__*/function () {
      */
 
     this.floatMe = this.wrapCommand(function (value) {
+<<<<<<< HEAD
       var $target = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(_this.restoreTarget());
+=======
+      var $target = external_jQuery_default()(_this.restoreTarget());
+>>>>>>> danhmuc_list
       $target.toggleClass('note-float-left', value === 'left');
       $target.toggleClass('note-float-right', value === 'right');
       $target.css('float', value === 'none' ? '' : value);
@@ -5468,7 +6268,11 @@ var Editor_Editor = /*#__PURE__*/function () {
      */
 
     this.resize = this.wrapCommand(function (value) {
+<<<<<<< HEAD
       var $target = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(_this.restoreTarget());
+=======
+      var $target = external_jQuery_default()(_this.restoreTarget());
+>>>>>>> danhmuc_list
       value = parseFloat(value);
 
       if (value === 0) {
@@ -5489,7 +6293,11 @@ var Editor_Editor = /*#__PURE__*/function () {
 
       // bind custom events
       this.$editable.on('keydown', function (event) {
+<<<<<<< HEAD
         if (event.keyCode === core_key.code.ENTER) {
+=======
+        if (event.keyCode === key.code.ENTER) {
+>>>>>>> danhmuc_list
           _this2.context.triggerEvent('enter', event);
         }
 
@@ -5623,7 +6431,11 @@ var Editor_Editor = /*#__PURE__*/function () {
         keys.push('SHIFT');
       }
 
+<<<<<<< HEAD
       var keyName = core_key.nameFromCode[event.keyCode];
+=======
+      var keyName = key.nameFromCode[event.keyCode];
+>>>>>>> danhmuc_list
 
       if (keyName) {
         keys.push(keyName);
@@ -5639,7 +6451,11 @@ var Editor_Editor = /*#__PURE__*/function () {
 
           return true;
         }
+<<<<<<< HEAD
       } else if (core_key.isEdit(event.keyCode)) {
+=======
+      } else if (key.isEdit(event.keyCode)) {
+>>>>>>> danhmuc_list
         this.afterCommand();
       }
 
@@ -5659,7 +6475,11 @@ var Editor_Editor = /*#__PURE__*/function () {
       pad = pad || 0;
 
       if (typeof event !== 'undefined') {
+<<<<<<< HEAD
         if (core_key.isMove(event.keyCode) || core_key.isNavigation(event.keyCode) || event.ctrlKey || event.metaKey || lists.contains([core_key.code.BACKSPACE, core_key.code.DELETE], event.keyCode)) {
+=======
+        if (key.isMove(event.keyCode) || key.isNavigation(event.keyCode) || event.ctrlKey || event.metaKey || lists.contains([key.code.BACKSPACE, key.code.DELETE], event.keyCode)) {
+>>>>>>> danhmuc_list
           return false;
         }
       }
@@ -5717,7 +6537,11 @@ var Editor_Editor = /*#__PURE__*/function () {
       } else {
         this.lastRange = range.create(this.editable);
 
+<<<<<<< HEAD
         if (external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(this.lastRange.sc).closest('.note-editable').length === 0) {
+=======
+        if (external_jQuery_default()(this.lastRange.sc).closest('.note-editable').length === 0) {
+>>>>>>> danhmuc_list
           this.lastRange = range.createFromBodyElement(this.editable);
         }
       }
@@ -5975,7 +6799,11 @@ var Editor_Editor = /*#__PURE__*/function () {
     value: function insertImagesAsDataURL(files) {
       var _this4 = this;
 
+<<<<<<< HEAD
       external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(files, function (idx, file) {
+=======
+      external_jQuery_default().each(files, function (idx, file) {
+>>>>>>> danhmuc_list
         var filename = file.name;
 
         if (_this4.options.maximumImageFileSize && _this4.options.maximumImageFileSize < file.size) {
@@ -6034,11 +6862,21 @@ var Editor_Editor = /*#__PURE__*/function () {
         }
 
         if ($target && $target.length) {
+<<<<<<< HEAD
           var className = $target[0].className || '';
 
           if (className) {
             var currentRange = this.createRange();
             var $parent = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()([currentRange.sc, currentRange.ec]).closest(tagName);
+=======
+          var currentRange = this.createRange();
+          var $parent = external_jQuery_default()([currentRange.sc, currentRange.ec]).closest(tagName); // remove class added for current block
+
+          $parent.removeClass();
+          var className = $target[0].className || '';
+
+          if (className) {
+>>>>>>> danhmuc_list
             $parent.addClass(className);
           }
         }
@@ -6057,7 +6895,11 @@ var Editor_Editor = /*#__PURE__*/function () {
       if (rng !== '') {
         var spans = this.style.styleNodes(rng);
         this.$editor.find('.note-status-output').html('');
+<<<<<<< HEAD
         external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(spans).css(target, value); // [workaround] added styled bogus span for style
+=======
+        external_jQuery_default()(spans).css(target, value); // [workaround] added styled bogus span for style
+>>>>>>> danhmuc_list
         //  - also bogus character needed for cursor position
 
         if (rng.isCollapsed()) {
@@ -6073,10 +6915,17 @@ var Editor_Editor = /*#__PURE__*/function () {
           this.setLastRange(this.createRangeFromList(spans).select());
         }
       } else {
+<<<<<<< HEAD
         var noteStatusOutput = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.now();
         this.$editor.find('.note-status-output').html('<div id="note-status-output-' + noteStatusOutput + '" class="alert alert-info">' + this.lang.output.noSelection + '</div>');
         setTimeout(function () {
           external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('#note-status-output-' + noteStatusOutput).remove();
+=======
+        var noteStatusOutput = external_jQuery_default().now();
+        this.$editor.find('.note-status-output').html('<div id="note-status-output-' + noteStatusOutput + '" class="alert alert-info">' + this.lang.output.noSelection + '</div>');
+        setTimeout(function () {
+          external_jQuery_default()('#note-status-output-' + noteStatusOutput).remove();
+>>>>>>> danhmuc_list
         }, 5000);
       }
     }
@@ -6116,7 +6965,11 @@ var Editor_Editor = /*#__PURE__*/function () {
     value: function getLinkInfo() {
       var rng = this.getLastRange().expand(dom.isAnchor); // Get the first anchor on range(for edit).
 
+<<<<<<< HEAD
       var $anchor = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(lists.head(rng.nodes(dom.isAnchor)));
+=======
+      var $anchor = external_jQuery_default()(lists.head(rng.nodes(dom.isAnchor)));
+>>>>>>> danhmuc_list
       var linkInfo = {
         range: rng,
         text: rng.toString(),
@@ -6268,7 +7121,11 @@ var Editor_Editor = /*#__PURE__*/function () {
 }();
 
 
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/module/Clipboard.js
+=======
+;// CONCATENATED MODULE: ./src/js/module/Clipboard.js
+>>>>>>> danhmuc_list
 function Clipboard_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function Clipboard_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -6277,7 +7134,11 @@ function Clipboard_createClass(Constructor, protoProps, staticProps) { if (proto
 
 
 
+<<<<<<< HEAD
 var Clipboard_Clipboard = /*#__PURE__*/function () {
+=======
+var Clipboard = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
   function Clipboard(context) {
     Clipboard_classCallCheck(this, Clipboard);
 
@@ -6336,7 +7197,11 @@ var Clipboard_Clipboard = /*#__PURE__*/function () {
 }();
 
 
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/module/Dropzone.js
+=======
+;// CONCATENATED MODULE: ./src/js/module/Dropzone.js
+>>>>>>> danhmuc_list
 function Dropzone_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function Dropzone_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -6345,18 +7210,30 @@ function Dropzone_createClass(Constructor, protoProps, staticProps) { if (protoP
 
 
 
+<<<<<<< HEAD
 var Dropzone_Dropzone = /*#__PURE__*/function () {
+=======
+var Dropzone = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
   function Dropzone(context) {
     Dropzone_classCallCheck(this, Dropzone);
 
     this.context = context;
+<<<<<<< HEAD
     this.$eventListener = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(document);
+=======
+    this.$eventListener = external_jQuery_default()(document);
+>>>>>>> danhmuc_list
     this.$editor = context.layoutInfo.editor;
     this.$editable = context.layoutInfo.editable;
     this.options = context.options;
     this.lang = this.options.langInfo;
     this.documentEventHandlers = {};
+<<<<<<< HEAD
     this.$dropzone = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(['<div class="note-dropzone">', '<div class="note-dropzone-message"></div>', '</div>'].join('')).prependTo(this.$editor);
+=======
+    this.$dropzone = external_jQuery_default()(['<div class="note-dropzone">', '<div class="note-dropzone-message"></div>', '</div>'].join('')).prependTo(this.$editor);
+>>>>>>> danhmuc_list
   }
   /**
    * attach Drag and Drop Events
@@ -6388,7 +7265,11 @@ var Dropzone_Dropzone = /*#__PURE__*/function () {
     value: function attachDragAndDropEvent() {
       var _this = this;
 
+<<<<<<< HEAD
       var collection = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()();
+=======
+      var collection = external_jQuery_default()();
+>>>>>>> danhmuc_list
       var $dropzoneMessage = this.$dropzone.find('.note-dropzone-message');
 
       this.documentEventHandlers.onDragenter = function (e) {
@@ -6413,14 +7294,22 @@ var Dropzone_Dropzone = /*#__PURE__*/function () {
         collection = collection.not(e.target); // If nodeName is BODY, then just make it over (fix for IE)
 
         if (!collection.length || e.target.nodeName === 'BODY') {
+<<<<<<< HEAD
           collection = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()();
+=======
+          collection = external_jQuery_default()();
+>>>>>>> danhmuc_list
 
           _this.$editor.removeClass('dragover');
         }
       };
 
       this.documentEventHandlers.onDrop = function () {
+<<<<<<< HEAD
         collection = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()();
+=======
+        collection = external_jQuery_default()();
+>>>>>>> danhmuc_list
 
         _this.$editor.removeClass('dragover');
       }; // show dropzone on dragenter when dragging a object to document
@@ -6449,7 +7338,11 @@ var Dropzone_Dropzone = /*#__PURE__*/function () {
 
           _this.context.invoke('editor.insertImagesOrCallback', dataTransfer.files);
         } else {
+<<<<<<< HEAD
           external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(dataTransfer.types, function (idx, type) {
+=======
+          external_jQuery_default().each(dataTransfer.types, function (idx, type) {
+>>>>>>> danhmuc_list
             // skip moz-specific types
             if (type.toLowerCase().indexOf('_moz_') > -1) {
               return;
@@ -6460,7 +7353,11 @@ var Dropzone_Dropzone = /*#__PURE__*/function () {
             if (type.toLowerCase().indexOf('text') > -1) {
               _this.context.invoke('editor.pasteHTML', content);
             } else {
+<<<<<<< HEAD
               external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(content).each(function (idx, item) {
+=======
+              external_jQuery_default()(content).each(function (idx, item) {
+>>>>>>> danhmuc_list
                 _this.context.invoke('editor.insertNode', item);
               });
             }
@@ -6484,10 +7381,17 @@ var Dropzone_Dropzone = /*#__PURE__*/function () {
 }();
 
 
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/module/Codeview.js
 function _createForOfIteratorHelper(o) { if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (o = _unsupportedIterableToArray(o))) { var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var it, normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
 
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(n); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+=======
+;// CONCATENATED MODULE: ./src/js/module/Codeview.js
+function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+>>>>>>> danhmuc_list
 
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
@@ -6503,7 +7407,11 @@ function Codeview_createClass(Constructor, protoProps, staticProps) { if (protoP
  * @class Codeview
  */
 
+<<<<<<< HEAD
 var Codeview_CodeView = /*#__PURE__*/function () {
+=======
+var CodeView = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
   function CodeView(context) {
     Codeview_classCallCheck(this, CodeView);
 
@@ -6545,7 +7453,11 @@ var Codeview_CodeView = /*#__PURE__*/function () {
       var _this = this;
 
       this.$codable.on('keyup', function (event) {
+<<<<<<< HEAD
         if (event.keyCode === core_key.code.ESCAPE) {
+=======
+        if (event.keyCode === key.code.ESCAPE) {
+>>>>>>> danhmuc_list
           _this.deactivate();
         }
       });
@@ -6708,7 +7620,11 @@ var Codeview_CodeView = /*#__PURE__*/function () {
 }();
 
 
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/module/Statusbar.js
+=======
+;// CONCATENATED MODULE: ./src/js/module/Statusbar.js
+>>>>>>> danhmuc_list
 function Statusbar_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function Statusbar_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -6718,6 +7634,7 @@ function Statusbar_createClass(Constructor, protoProps, staticProps) { if (proto
 
 var EDITABLE_PADDING = 24;
 
+<<<<<<< HEAD
 var Statusbar_Statusbar = /*#__PURE__*/function () {
   function Statusbar(context) {
     Statusbar_classCallCheck(this, Statusbar);
@@ -6725,6 +7642,16 @@ var Statusbar_Statusbar = /*#__PURE__*/function () {
     this.$document = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(document);
     this.$statusbar = context.layoutInfo.statusbar;
     this.$editable = context.layoutInfo.editable;
+=======
+var Statusbar = /*#__PURE__*/function () {
+  function Statusbar(context) {
+    Statusbar_classCallCheck(this, Statusbar);
+
+    this.$document = external_jQuery_default()(document);
+    this.$statusbar = context.layoutInfo.statusbar;
+    this.$editable = context.layoutInfo.editable;
+    this.$codable = context.layoutInfo.codable;
+>>>>>>> danhmuc_list
     this.options = context.options;
   }
 
@@ -6744,12 +7671,28 @@ var Statusbar_Statusbar = /*#__PURE__*/function () {
 
         var editableTop = _this.$editable.offset().top - _this.$document.scrollTop();
 
+<<<<<<< HEAD
         var onMouseMove = function onMouseMove(event) {
           var height = event.clientY - (editableTop + EDITABLE_PADDING);
           height = _this.options.minheight > 0 ? Math.max(height, _this.options.minheight) : height;
           height = _this.options.maxHeight > 0 ? Math.min(height, _this.options.maxHeight) : height;
 
           _this.$editable.height(height);
+=======
+        var editableCodeTop = _this.$codable.offset().top - _this.$document.scrollTop();
+
+        var onMouseMove = function onMouseMove(event) {
+          var height = event.clientY - (editableTop + EDITABLE_PADDING);
+          var heightCode = event.clientY - (editableCodeTop + EDITABLE_PADDING);
+          height = _this.options.minheight > 0 ? Math.max(height, _this.options.minheight) : height;
+          height = _this.options.maxHeight > 0 ? Math.min(height, _this.options.maxHeight) : height;
+          heightCode = _this.options.minheight > 0 ? Math.max(heightCode, _this.options.minheight) : heightCode;
+          heightCode = _this.options.maxHeight > 0 ? Math.min(heightCode, _this.options.maxHeight) : heightCode;
+
+          _this.$editable.height(height);
+
+          _this.$codable.height(heightCode);
+>>>>>>> danhmuc_list
         };
 
         _this.$document.on('mousemove', onMouseMove).one('mouseup', function () {
@@ -6769,7 +7712,11 @@ var Statusbar_Statusbar = /*#__PURE__*/function () {
 }();
 
 
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/module/Fullscreen.js
+=======
+;// CONCATENATED MODULE: ./src/js/module/Fullscreen.js
+>>>>>>> danhmuc_list
 function Fullscreen_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function Fullscreen_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -6778,7 +7725,11 @@ function Fullscreen_createClass(Constructor, protoProps, staticProps) { if (prot
 
 
 
+<<<<<<< HEAD
 var Fullscreen_Fullscreen = /*#__PURE__*/function () {
+=======
+var Fullscreen = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
   function Fullscreen(context) {
     var _this = this;
 
@@ -6789,8 +7740,14 @@ var Fullscreen_Fullscreen = /*#__PURE__*/function () {
     this.$toolbar = context.layoutInfo.toolbar;
     this.$editable = context.layoutInfo.editable;
     this.$codable = context.layoutInfo.codable;
+<<<<<<< HEAD
     this.$window = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(window);
     this.$scrollbar = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('html, body');
+=======
+    this.$window = external_jQuery_default()(window);
+    this.$scrollbar = external_jQuery_default()('html, body');
+    this.scrollbarClassName = 'note-fullscreen-body';
+>>>>>>> danhmuc_list
 
     this.onResize = function () {
       _this.resizeTo({
@@ -6817,36 +7774,64 @@ var Fullscreen_Fullscreen = /*#__PURE__*/function () {
     key: "toggle",
     value: function toggle() {
       this.$editor.toggleClass('fullscreen');
+<<<<<<< HEAD
 
       if (this.isFullscreen()) {
+=======
+      var isFullscreen = this.isFullscreen();
+      this.$scrollbar.toggleClass(this.scrollbarClassName, isFullscreen);
+
+      if (isFullscreen) {
+>>>>>>> danhmuc_list
         this.$editable.data('orgHeight', this.$editable.css('height'));
         this.$editable.data('orgMaxHeight', this.$editable.css('maxHeight'));
         this.$editable.css('maxHeight', '');
         this.$window.on('resize', this.onResize).trigger('resize');
+<<<<<<< HEAD
         this.$scrollbar.css('overflow', 'hidden');
+=======
+>>>>>>> danhmuc_list
       } else {
         this.$window.off('resize', this.onResize);
         this.resizeTo({
           h: this.$editable.data('orgHeight')
         });
         this.$editable.css('maxHeight', this.$editable.css('orgMaxHeight'));
+<<<<<<< HEAD
         this.$scrollbar.css('overflow', 'visible');
       }
 
       this.context.invoke('toolbar.updateFullscreen', this.isFullscreen());
+=======
+      }
+
+      this.context.invoke('toolbar.updateFullscreen', isFullscreen);
+>>>>>>> danhmuc_list
     }
   }, {
     key: "isFullscreen",
     value: function isFullscreen() {
       return this.$editor.hasClass('fullscreen');
     }
+<<<<<<< HEAD
+=======
+  }, {
+    key: "destroy",
+    value: function destroy() {
+      this.$scrollbar.removeClass(this.scrollbarClassName);
+    }
+>>>>>>> danhmuc_list
   }]);
 
   return Fullscreen;
 }();
 
 
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/module/Handle.js
+=======
+;// CONCATENATED MODULE: ./src/js/module/Handle.js
+>>>>>>> danhmuc_list
 function Handle_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function Handle_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -6856,14 +7841,22 @@ function Handle_createClass(Constructor, protoProps, staticProps) { if (protoPro
 
 
 
+<<<<<<< HEAD
 var Handle_Handle = /*#__PURE__*/function () {
+=======
+var Handle = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
   function Handle(context) {
     var _this = this;
 
     Handle_classCallCheck(this, Handle);
 
     this.context = context;
+<<<<<<< HEAD
     this.$document = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(document);
+=======
+    this.$document = external_jQuery_default()(document);
+>>>>>>> danhmuc_list
     this.$editingArea = context.layoutInfo.editingArea;
     this.options = context.options;
     this.lang = this.options.langInfo;
@@ -6890,7 +7883,11 @@ var Handle_Handle = /*#__PURE__*/function () {
     value: function initialize() {
       var _this2 = this;
 
+<<<<<<< HEAD
       this.$handle = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(['<div class="note-handle">', '<div class="note-control-selection">', '<div class="note-control-selection-bg"></div>', '<div class="note-control-holder note-control-nw"></div>', '<div class="note-control-holder note-control-ne"></div>', '<div class="note-control-holder note-control-sw"></div>', '<div class="', this.options.disableResizeImage ? 'note-control-holder' : 'note-control-sizing', ' note-control-se"></div>', this.options.disableResizeImage ? '' : '<div class="note-control-selection-info"></div>', '</div>', '</div>'].join('')).prependTo(this.$editingArea);
+=======
+      this.$handle = external_jQuery_default()(['<div class="note-handle">', '<div class="note-control-selection">', '<div class="note-control-selection-bg"></div>', '<div class="note-control-holder note-control-nw"></div>', '<div class="note-control-holder note-control-ne"></div>', '<div class="note-control-holder note-control-sw"></div>', '<div class="', this.options.disableResizeImage ? 'note-control-holder' : 'note-control-sizing', ' note-control-se"></div>', this.options.disableResizeImage ? '' : '<div class="note-control-selection-info"></div>', '</div>', '</div>'].join('')).prependTo(this.$editingArea);
+>>>>>>> danhmuc_list
       this.$handle.on('mousedown', function (event) {
         if (dom.isControlSizing(event.target)) {
           event.preventDefault();
@@ -6949,7 +7946,11 @@ var Handle_Handle = /*#__PURE__*/function () {
       this.context.invoke('imagePopover.update', target, event);
 
       if (isImage) {
+<<<<<<< HEAD
         var $image = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(target);
+=======
+        var $image = external_jQuery_default()(target);
+>>>>>>> danhmuc_list
         var position = $image.position();
         var pos = {
           left: position.left + parseInt($image.css('marginLeft'), 10),
@@ -6997,7 +7998,11 @@ var Handle_Handle = /*#__PURE__*/function () {
 }();
 
 
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/module/AutoLink.js
+=======
+;// CONCATENATED MODULE: ./src/js/module/AutoLink.js
+>>>>>>> danhmuc_list
 function AutoLink_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function AutoLink_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -7008,9 +8013,15 @@ function AutoLink_createClass(Constructor, protoProps, staticProps) { if (protoP
 
 
 var defaultScheme = 'http://';
+<<<<<<< HEAD
 var linkPattern = /^([A-Za-z][A-Za-z0-9+-.]*\:[\/]{2}|tel:|mailto:[A-Z0-9._%+-]+@)?(www\.)?(.+)$/i;
 
 var AutoLink_AutoLink = /*#__PURE__*/function () {
+=======
+var linkPattern = /^([A-Za-z][A-Za-z0-9+-.]*\:[\/]{2}|tel:|mailto:[A-Z0-9._%+-]+@|xmpp:[A-Z0-9._%+-]+@)?(www\.)?(.+)$/i;
+
+var AutoLink = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
   function AutoLink(context) {
     var _this = this;
 
@@ -7052,11 +8063,19 @@ var AutoLink_AutoLink = /*#__PURE__*/function () {
 
       if (match && (match[1] || match[2])) {
         var link = match[1] ? keyword : defaultScheme + keyword;
+<<<<<<< HEAD
         var urlText = this.options.showDomainOnlyForAutolink ? keyword.replace(/^(?:https?:\/\/)?(?:tel?:?)?(?:mailto?:?)?(?:www\.)?/i, '').split('/')[0] : keyword;
         var node = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<a />').html(urlText).attr('href', link)[0];
 
         if (this.context.options.linkTargetBlank) {
           external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(node).attr('target', '_blank');
+=======
+        var urlText = this.options.showDomainOnlyForAutolink ? keyword.replace(/^(?:https?:\/\/)?(?:tel?:?)?(?:mailto?:?)?(?:xmpp?:?)?(?:www\.)?/i, '').split('/')[0] : keyword;
+        var node = external_jQuery_default()('<a></a>').html(urlText).attr('href', link)[0];
+
+        if (this.context.options.linkTargetBlank) {
+          external_jQuery_default()(node).attr('target', '_blank');
+>>>>>>> danhmuc_list
         }
 
         this.lastWordRange.insertNode(node);
@@ -7067,7 +8086,11 @@ var AutoLink_AutoLink = /*#__PURE__*/function () {
   }, {
     key: "handleKeydown",
     value: function handleKeydown(e) {
+<<<<<<< HEAD
       if (lists.contains([core_key.code.ENTER, core_key.code.SPACE], e.keyCode)) {
+=======
+      if (lists.contains([key.code.ENTER, key.code.SPACE], e.keyCode)) {
+>>>>>>> danhmuc_list
         var wordRange = this.context.invoke('editor.createRange').getWordRange();
         this.lastWordRange = wordRange;
       }
@@ -7075,7 +8098,11 @@ var AutoLink_AutoLink = /*#__PURE__*/function () {
   }, {
     key: "handleKeyup",
     value: function handleKeyup(e) {
+<<<<<<< HEAD
       if (lists.contains([core_key.code.ENTER, core_key.code.SPACE], e.keyCode)) {
+=======
+      if (lists.contains([key.code.ENTER, key.code.SPACE], e.keyCode)) {
+>>>>>>> danhmuc_list
         this.replace();
       }
     }
@@ -7085,7 +8112,11 @@ var AutoLink_AutoLink = /*#__PURE__*/function () {
 }();
 
 
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/module/AutoSync.js
+=======
+;// CONCATENATED MODULE: ./src/js/module/AutoSync.js
+>>>>>>> danhmuc_list
 function AutoSync_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function AutoSync_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -7097,7 +8128,11 @@ function AutoSync_createClass(Constructor, protoProps, staticProps) { if (protoP
  * textarea auto sync.
  */
 
+<<<<<<< HEAD
 var AutoSync_AutoSync = /*#__PURE__*/function () {
+=======
+var AutoSync = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
   function AutoSync(context) {
     var _this = this;
 
@@ -7122,7 +8157,11 @@ var AutoSync_AutoSync = /*#__PURE__*/function () {
 }();
 
 
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/module/AutoReplace.js
+=======
+;// CONCATENATED MODULE: ./src/js/module/AutoReplace.js
+>>>>>>> danhmuc_list
 function AutoReplace_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function AutoReplace_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -7133,7 +8172,11 @@ function AutoReplace_createClass(Constructor, protoProps, staticProps) { if (pro
 
 
 
+<<<<<<< HEAD
 var AutoReplace_AutoReplace = /*#__PURE__*/function () {
+=======
+var AutoReplace = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
   function AutoReplace(context) {
     var _this = this;
 
@@ -7141,7 +8184,11 @@ var AutoReplace_AutoReplace = /*#__PURE__*/function () {
 
     this.context = context;
     this.options = context.options.replace || {};
+<<<<<<< HEAD
     this.keys = [core_key.code.ENTER, core_key.code.SPACE, core_key.code.PERIOD, core_key.code.COMMA, core_key.code.SEMICOLON, core_key.code.SLASH];
+=======
+    this.keys = [key.code.ENTER, key.code.SPACE, key.code.PERIOD, key.code.COMMA, key.code.SEMICOLON, key.code.SLASH];
+>>>>>>> danhmuc_list
     this.previousKeydownCode = null;
     this.events = {
       'summernote.keyup': function summernoteKeyup(we, e) {
@@ -7228,7 +8275,11 @@ var AutoReplace_AutoReplace = /*#__PURE__*/function () {
 }();
 
 
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/module/Placeholder.js
+=======
+;// CONCATENATED MODULE: ./src/js/module/Placeholder.js
+>>>>>>> danhmuc_list
 function Placeholder_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function Placeholder_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -7237,7 +8288,11 @@ function Placeholder_createClass(Constructor, protoProps, staticProps) { if (pro
 
 
 
+<<<<<<< HEAD
 var Placeholder_Placeholder = /*#__PURE__*/function () {
+=======
+var Placeholder = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
   function Placeholder(context) {
     var _this = this;
 
@@ -7272,7 +8327,11 @@ var Placeholder_Placeholder = /*#__PURE__*/function () {
     value: function initialize() {
       var _this2 = this;
 
+<<<<<<< HEAD
       this.$placeholder = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<div class="note-placeholder">');
+=======
+      this.$placeholder = external_jQuery_default()('<div class="note-placeholder"></div>');
+>>>>>>> danhmuc_list
       this.$placeholder.on('click', function () {
         _this2.context.invoke('focus');
       }).html(this.options.placeholder).prependTo(this.$editingArea);
@@ -7295,7 +8354,11 @@ var Placeholder_Placeholder = /*#__PURE__*/function () {
 }();
 
 
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/module/Buttons.js
+=======
+;// CONCATENATED MODULE: ./src/js/module/Buttons.js
+>>>>>>> danhmuc_list
 function Buttons_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function Buttons_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -7307,11 +8370,19 @@ function Buttons_createClass(Constructor, protoProps, staticProps) { if (protoPr
 
 
 
+<<<<<<< HEAD
 var Buttons_Buttons = /*#__PURE__*/function () {
   function Buttons(context) {
     Buttons_classCallCheck(this, Buttons);
 
     this.ui = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.ui;
+=======
+var Buttons = /*#__PURE__*/function () {
+  function Buttons(context) {
+    Buttons_classCallCheck(this, Buttons);
+
+    this.ui = (external_jQuery_default()).summernote.ui;
+>>>>>>> danhmuc_list
     this.context = context;
     this.$toolbar = context.layoutInfo.toolbar;
     this.options = context.options;
@@ -7386,7 +8457,11 @@ var Buttons_Buttons = /*#__PURE__*/function () {
           contents: this.ui.icon(this.options.icons.font + ' note-recent-color'),
           tooltip: tooltip,
           click: function click(e) {
+<<<<<<< HEAD
             var $button = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(e.currentTarget);
+=======
+            var $button = external_jQuery_default()(e.currentTarget);
+>>>>>>> danhmuc_list
 
             if (backColor && foreColor) {
               _this.context.invoke('editor.color', {
@@ -7426,11 +8501,19 @@ var Buttons_Buttons = /*#__PURE__*/function () {
             toggle: 'dropdown'
           }
         }), this.ui.dropdown({
+<<<<<<< HEAD
           items: (backColor ? ['<div class="note-palette">', '<div class="note-palette-title">' + this.lang.color.background + '</div>', '<div>', '<button type="button" class="note-color-reset btn btn-light btn-default" data-event="backColor" data-value="transparent">', this.lang.color.transparent, '</button>', '</div>', '<div class="note-holder" data-event="backColor"><!-- back colors --></div>', '<div>', '<button type="button" class="note-color-select btn btn-light btn-default" data-event="openPalette" data-value="backColorPicker">', this.lang.color.cpSelect, '</button>', '<input type="color" id="backColorPicker" class="note-btn note-color-select-btn" value="' + this.options.colorButton.backColor + '" data-event="backColorPalette">', '</div>', '<div class="note-holder-custom" id="backColorPalette" data-event="backColor"></div>', '</div>'].join('') : '') + (foreColor ? ['<div class="note-palette">', '<div class="note-palette-title">' + this.lang.color.foreground + '</div>', '<div>', '<button type="button" class="note-color-reset btn btn-light btn-default" data-event="removeFormat" data-value="foreColor">', this.lang.color.resetToDefault, '</button>', '</div>', '<div class="note-holder" data-event="foreColor"><!-- fore colors --></div>', '<div>', '<button type="button" class="note-color-select btn btn-light btn-default" data-event="openPalette" data-value="foreColorPicker">', this.lang.color.cpSelect, '</button>', '<input type="color" id="foreColorPicker" class="note-btn note-color-select-btn" value="' + this.options.colorButton.foreColor + '" data-event="foreColorPalette">', '</div>', // Fix missing Div, Commented to find easily if it's wrong
           '<div class="note-holder-custom" id="foreColorPalette" data-event="foreColor"></div>', '</div>'].join('') : ''),
           callback: function callback($dropdown) {
             $dropdown.find('.note-holder').each(function (idx, item) {
               var $holder = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(item);
+=======
+          items: (backColor ? ['<div class="note-palette">', '<div class="note-palette-title">' + this.lang.color.background + '</div>', '<div>', '<button type="button" class="note-color-reset btn btn-light btn-default" data-event="backColor" data-value="transparent">', this.lang.color.transparent, '</button>', '</div>', '<div class="note-holder" data-event="backColor"><!-- back colors --></div>', '<div>', '<button type="button" class="note-color-select btn btn-light btn-default" data-event="openPalette" data-value="backColorPicker-' + this.options.id + '">', this.lang.color.cpSelect, '</button>', '<input type="color" id="backColorPicker-' + this.options.id + '" class="note-btn note-color-select-btn" value="' + this.options.colorButton.backColor + '" data-event="backColorPalette-' + this.options.id + '">', '</div>', '<div class="note-holder-custom" id="backColorPalette-' + this.options.id + '" data-event="backColor"></div>', '</div>'].join('') : '') + (foreColor ? ['<div class="note-palette">', '<div class="note-palette-title">' + this.lang.color.foreground + '</div>', '<div>', '<button type="button" class="note-color-reset btn btn-light btn-default" data-event="removeFormat" data-value="foreColor">', this.lang.color.resetToDefault, '</button>', '</div>', '<div class="note-holder" data-event="foreColor"><!-- fore colors --></div>', '<div>', '<button type="button" class="note-color-select btn btn-light btn-default" data-event="openPalette" data-value="foreColorPicker-' + this.options.id + '">', this.lang.color.cpSelect, '</button>', '<input type="color" id="foreColorPicker-' + this.options.id + '" class="note-btn note-color-select-btn" value="' + this.options.colorButton.foreColor + '" data-event="foreColorPalette-' + this.options.id + '">', '</div>', // Fix missing Div, Commented to find easily if it's wrong
+          '<div class="note-holder-custom" id="foreColorPalette-' + this.options.id + '" data-event="foreColor"></div>', '</div>'].join('') : ''),
+          callback: function callback($dropdown) {
+            $dropdown.find('.note-holder').each(function (idx, item) {
+              var $holder = external_jQuery_default()(item);
+>>>>>>> danhmuc_list
               $holder.append(_this.ui.palette({
                 colors: _this.options.colors,
                 colorsName: _this.options.colorsName,
@@ -7443,7 +8526,11 @@ var Buttons_Buttons = /*#__PURE__*/function () {
 
             var customColors = [['#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF']];
             $dropdown.find('.note-holder-custom').each(function (idx, item) {
+<<<<<<< HEAD
               var $holder = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(item);
+=======
+              var $holder = external_jQuery_default()(item);
+>>>>>>> danhmuc_list
               $holder.append(_this.ui.palette({
                 colors: customColors,
                 colorsName: customColors,
@@ -7453,8 +8540,13 @@ var Buttons_Buttons = /*#__PURE__*/function () {
               }).render());
             });
             $dropdown.find('input[type=color]').each(function (idx, item) {
+<<<<<<< HEAD
               external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(item).change(function () {
                 var $chip = $dropdown.find('#' + external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(this).data('event')).find('.note-color-btn').first();
+=======
+              external_jQuery_default()(item).change(function () {
+                var $chip = $dropdown.find('#' + external_jQuery_default()(this).data('event')).find('.note-color-btn').first();
+>>>>>>> danhmuc_list
                 var color = this.value.toUpperCase();
                 $chip.css('background-color', color).attr('aria-label', color).attr('data-value', color).attr('data-original-title', color);
                 $chip.click();
@@ -7463,14 +8555,23 @@ var Buttons_Buttons = /*#__PURE__*/function () {
           },
           click: function click(event) {
             event.stopPropagation();
+<<<<<<< HEAD
             var $parent = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('.' + className).find('.note-dropdown-menu');
             var $button = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(event.target);
+=======
+            var $parent = external_jQuery_default()('.' + className).find('.note-dropdown-menu');
+            var $button = external_jQuery_default()(event.target);
+>>>>>>> danhmuc_list
             var eventName = $button.data('event');
             var value = $button.attr('data-value');
 
             if (eventName === 'openPalette') {
               var $picker = $parent.find('#' + value);
+<<<<<<< HEAD
               var $palette = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()($parent.find('#' + $picker.data('event')).find('.note-color-row')[0]); // Shift palette chips
+=======
+              var $palette = external_jQuery_default()($parent.find('#' + $picker.data('event')).find('.note-color-row')[0]); // Shift palette chips
+>>>>>>> danhmuc_list
 
               var $chip = $palette.find('.note-color-btn').last().detach(); // Set chip attributes
 
@@ -7606,7 +8707,11 @@ var Buttons_Buttons = /*#__PURE__*/function () {
 
         if (_this2.options.addDefaultFonts) {
           // Add 'default' fonts into the fontnames array if not exist
+<<<<<<< HEAD
           external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(styleInfo['font-family'].split(','), function (idx, fontname) {
+=======
+          external_jQuery_default().each(styleInfo['font-family'].split(','), function (idx, fontname) {
+>>>>>>> danhmuc_list
             fontname = fontname.trim().replace(/['"]+/g, '');
 
             if (_this2.isFontDeservedToAdd(fontname)) {
@@ -7776,7 +8881,11 @@ var Buttons_Buttons = /*#__PURE__*/function () {
             $catcher.css({
               width: _this2.options.insertTableMaxSize.col + 'em',
               height: _this2.options.insertTableMaxSize.row + 'em'
+<<<<<<< HEAD
             }).mousedown(_this2.context.createInvokeHandler('editor.insertTable')).on('mousemove', _this2.tableMoveHandler.bind(_this2));
+=======
+            }).mouseup(_this2.context.createInvokeHandler('editor.insertTable')).on('mousemove', _this2.tableMoveHandler.bind(_this2));
+>>>>>>> danhmuc_list
           }
         }).render();
       });
@@ -8037,8 +9146,11 @@ var Buttons_Buttons = /*#__PURE__*/function () {
   }, {
     key: "updateCurrentStyle",
     value: function updateCurrentStyle($container) {
+<<<<<<< HEAD
       var _this6 = this;
 
+=======
+>>>>>>> danhmuc_list
       var $cont = $container || this.$toolbar;
       var styleInfo = this.context.invoke('editor.currentStyle');
       this.updateBtnStates($cont, {
@@ -8068,7 +9180,11 @@ var Buttons_Buttons = /*#__PURE__*/function () {
         });
         var fontName = lists.find(fontNames, this.isFontInstalled.bind(this));
         $cont.find('.dropdown-fontname a').each(function (idx, item) {
+<<<<<<< HEAD
           var $item = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(item); // always compare string to avoid creating another func.
+=======
+          var $item = external_jQuery_default()(item); // always compare string to avoid creating another func.
+>>>>>>> danhmuc_list
 
           var isChecked = $item.data('value') + '' === fontName + '';
           $item.toggleClass('checked', isChecked);
@@ -8079,7 +9195,11 @@ var Buttons_Buttons = /*#__PURE__*/function () {
       if (styleInfo['font-size']) {
         var fontSize = styleInfo['font-size'];
         $cont.find('.dropdown-fontsize a').each(function (idx, item) {
+<<<<<<< HEAD
           var $item = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(item); // always compare with string to avoid creating another func.
+=======
+          var $item = external_jQuery_default()(item); // always compare with string to avoid creating another func.
+>>>>>>> danhmuc_list
 
           var isChecked = $item.data('value') + '' === fontSize + '';
           $item.toggleClass('checked', isChecked);
@@ -8087,7 +9207,11 @@ var Buttons_Buttons = /*#__PURE__*/function () {
         $cont.find('.note-current-fontsize').text(fontSize);
         var fontSizeUnit = styleInfo['font-size-unit'];
         $cont.find('.dropdown-fontsizeunit a').each(function (idx, item) {
+<<<<<<< HEAD
           var $item = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(item);
+=======
+          var $item = external_jQuery_default()(item);
+>>>>>>> danhmuc_list
           var isChecked = $item.data('value') + '' === fontSizeUnit + '';
           $item.toggleClass('checked', isChecked);
         });
@@ -8096,27 +9220,48 @@ var Buttons_Buttons = /*#__PURE__*/function () {
 
       if (styleInfo['line-height']) {
         var lineHeight = styleInfo['line-height'];
+<<<<<<< HEAD
         $cont.find('.dropdown-line-height li a').each(function (idx, item) {
           // always compare with string to avoid creating another func.
           var isChecked = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(item).data('value') + '' === lineHeight + '';
           _this6.className = isChecked ? 'checked' : '';
         });
+=======
+        $cont.find('.dropdown-line-height a').each(function (idx, item) {
+          var $item = external_jQuery_default()(item); // always compare with string to avoid creating another func.
+
+          var isChecked = external_jQuery_default()(item).data('value') + '' === lineHeight + '';
+          $item.toggleClass('checked', isChecked);
+        });
+        $cont.find('.note-current-line-height').text(lineHeight);
+>>>>>>> danhmuc_list
       }
     }
   }, {
     key: "updateBtnStates",
     value: function updateBtnStates($container, infos) {
+<<<<<<< HEAD
       var _this7 = this;
 
       external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(infos, function (selector, pred) {
         _this7.ui.toggleBtnActive($container.find(selector), pred());
+=======
+      var _this6 = this;
+
+      external_jQuery_default().each(infos, function (selector, pred) {
+        _this6.ui.toggleBtnActive($container.find(selector), pred());
+>>>>>>> danhmuc_list
       });
     }
   }, {
     key: "tableMoveHandler",
     value: function tableMoveHandler(event) {
       var PX_PER_EM = 18;
+<<<<<<< HEAD
       var $picker = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(event.target.parentNode); // target is mousecatcher
+=======
+      var $picker = external_jQuery_default()(event.target.parentNode); // target is mousecatcher
+>>>>>>> danhmuc_list
 
       var $dimensionDisplay = $picker.next();
       var $catcher = $picker.find('.note-dimension-picker-mousecatcher');
@@ -8125,7 +9270,11 @@ var Buttons_Buttons = /*#__PURE__*/function () {
       var posOffset; // HTML5 with jQuery - e.offsetX is undefined in Firefox
 
       if (event.offsetX === undefined) {
+<<<<<<< HEAD
         var posCatcher = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(event.target).offset();
+=======
+        var posCatcher = external_jQuery_default()(event.target).offset();
+>>>>>>> danhmuc_list
         posOffset = {
           x: event.pageX - posCatcher.left,
           y: event.pageY - posCatcher.top
@@ -8167,7 +9316,11 @@ var Buttons_Buttons = /*#__PURE__*/function () {
 }();
 
 
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/module/Toolbar.js
+=======
+;// CONCATENATED MODULE: ./src/js/module/Toolbar.js
+>>>>>>> danhmuc_list
 function Toolbar_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function Toolbar_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -8176,14 +9329,24 @@ function Toolbar_createClass(Constructor, protoProps, staticProps) { if (protoPr
 
 
 
+<<<<<<< HEAD
 var Toolbar_Toolbar = /*#__PURE__*/function () {
+=======
+var Toolbar = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
   function Toolbar(context) {
     Toolbar_classCallCheck(this, Toolbar);
 
     this.context = context;
+<<<<<<< HEAD
     this.$window = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(window);
     this.$document = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(document);
     this.ui = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.ui;
+=======
+    this.$window = external_jQuery_default()(window);
+    this.$document = external_jQuery_default()(document);
+    this.ui = (external_jQuery_default()).summernote.ui;
+>>>>>>> danhmuc_list
     this.$note = context.layoutInfo.note;
     this.$editor = context.layoutInfo.editor;
     this.$toolbar = context.layoutInfo.toolbar;
@@ -8250,7 +9413,11 @@ var Toolbar_Toolbar = /*#__PURE__*/function () {
       var otherBarHeight = 0;
 
       if (this.options.otherStaticBar) {
+<<<<<<< HEAD
         otherBarHeight = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(this.options.otherStaticBar).outerHeight();
+=======
+        otherBarHeight = external_jQuery_default()(this.options.otherStaticBar).outerHeight();
+>>>>>>> danhmuc_list
       }
 
       var currentOffset = this.$document.scrollTop();
@@ -8343,7 +9510,11 @@ var Toolbar_Toolbar = /*#__PURE__*/function () {
 }();
 
 
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/module/LinkDialog.js
+=======
+;// CONCATENATED MODULE: ./src/js/module/LinkDialog.js
+>>>>>>> danhmuc_list
 function LinkDialog_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function LinkDialog_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -8355,13 +9526,22 @@ function LinkDialog_createClass(Constructor, protoProps, staticProps) { if (prot
 
 
 
+<<<<<<< HEAD
 var LinkDialog_LinkDialog = /*#__PURE__*/function () {
+=======
+var LinkDialog = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
   function LinkDialog(context) {
     LinkDialog_classCallCheck(this, LinkDialog);
 
     this.context = context;
+<<<<<<< HEAD
     this.ui = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.ui;
     this.$body = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(document.body);
+=======
+    this.ui = (external_jQuery_default()).summernote.ui;
+    this.$body = external_jQuery_default()(document.body);
+>>>>>>> danhmuc_list
     this.$editor = context.layoutInfo.editor;
     this.options = context.options;
     this.lang = this.options.langInfo;
@@ -8372,11 +9552,19 @@ var LinkDialog_LinkDialog = /*#__PURE__*/function () {
     key: "initialize",
     value: function initialize() {
       var $container = this.options.dialogsInBody ? this.$body : this.options.container;
+<<<<<<< HEAD
       var body = ['<div class="form-group note-form-group">', "<label for=\"note-dialog-link-txt-".concat(this.options.id, "\" class=\"note-form-label\">").concat(this.lang.link.textToDisplay, "</label>"), "<input id=\"note-dialog-link-txt-".concat(this.options.id, "\" class=\"note-link-text form-control note-form-control note-input\" type=\"text\"/>"), '</div>', '<div class="form-group note-form-group">', "<label for=\"note-dialog-link-url-".concat(this.options.id, "\" class=\"note-form-label\">").concat(this.lang.link.url, "</label>"), "<input id=\"note-dialog-link-url-".concat(this.options.id, "\" class=\"note-link-url form-control note-form-control note-input\" type=\"text\" value=\"http://\"/>"), '</div>', !this.options.disableLinkTarget ? external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<div/>').append(this.ui.checkbox({
         className: 'sn-checkbox-open-in-new-window',
         text: this.lang.link.openInNewWindow,
         checked: true
       }).render()).html() : '', external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<div/>').append(this.ui.checkbox({
+=======
+      var body = ['<div class="form-group note-form-group">', "<label for=\"note-dialog-link-txt-".concat(this.options.id, "\" class=\"note-form-label\">").concat(this.lang.link.textToDisplay, "</label>"), "<input id=\"note-dialog-link-txt-".concat(this.options.id, "\" class=\"note-link-text form-control note-form-control note-input\" type=\"text\"/>"), '</div>', '<div class="form-group note-form-group">', "<label for=\"note-dialog-link-url-".concat(this.options.id, "\" class=\"note-form-label\">").concat(this.lang.link.url, "</label>"), "<input id=\"note-dialog-link-url-".concat(this.options.id, "\" class=\"note-link-url form-control note-form-control note-input\" type=\"text\" value=\"http://\"/>"), '</div>', !this.options.disableLinkTarget ? external_jQuery_default()('<div></div>').append(this.ui.checkbox({
+        className: 'sn-checkbox-open-in-new-window',
+        text: this.lang.link.openInNewWindow,
+        checked: true
+      }).render()).html() : '', external_jQuery_default()('<div></div>').append(this.ui.checkbox({
+>>>>>>> danhmuc_list
         className: 'sn-checkbox-use-protocol',
         text: this.lang.link.useProtocol,
         checked: true
@@ -8401,7 +9589,11 @@ var LinkDialog_LinkDialog = /*#__PURE__*/function () {
     key: "bindEnterKey",
     value: function bindEnterKey($input, $btn) {
       $input.on('keypress', function (event) {
+<<<<<<< HEAD
         if (event.keyCode === core_key.code.ENTER) {
+=======
+        if (event.keyCode === key.code.ENTER) {
+>>>>>>> danhmuc_list
           event.preventDefault();
           $btn.trigger('click');
         }
@@ -8428,7 +9620,11 @@ var LinkDialog_LinkDialog = /*#__PURE__*/function () {
     value: function showLinkDialog(linkInfo) {
       var _this = this;
 
+<<<<<<< HEAD
       return external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.Deferred(function (deferred) {
+=======
+      return external_jQuery_default().Deferred(function (deferred) {
+>>>>>>> danhmuc_list
         var $linkText = _this.$dialog.find('.note-link-text');
 
         var $linkUrl = _this.$dialog.find('.note-link-url');
@@ -8531,7 +9727,11 @@ var LinkDialog_LinkDialog = /*#__PURE__*/function () {
 }();
 
 
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/module/LinkPopover.js
+=======
+;// CONCATENATED MODULE: ./src/js/module/LinkPopover.js
+>>>>>>> danhmuc_list
 function LinkPopover_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function LinkPopover_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -8542,21 +9742,43 @@ function LinkPopover_createClass(Constructor, protoProps, staticProps) { if (pro
 
 
 
+<<<<<<< HEAD
 var LinkPopover_LinkPopover = /*#__PURE__*/function () {
+=======
+var LinkPopover = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
   function LinkPopover(context) {
     var _this = this;
 
     LinkPopover_classCallCheck(this, LinkPopover);
 
     this.context = context;
+<<<<<<< HEAD
     this.ui = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.ui;
+=======
+    this.ui = (external_jQuery_default()).summernote.ui;
+>>>>>>> danhmuc_list
     this.options = context.options;
     this.events = {
       'summernote.keyup summernote.mouseup summernote.change summernote.scroll': function summernoteKeyupSummernoteMouseupSummernoteChangeSummernoteScroll() {
         _this.update();
       },
+<<<<<<< HEAD
       'summernote.disable summernote.dialog.shown summernote.blur': function summernoteDisableSummernoteDialogShownSummernoteBlur() {
         _this.hide();
+=======
+      'summernote.disable summernote.dialog.shown': function summernoteDisableSummernoteDialogShown() {
+        _this.hide();
+      },
+      'summernote.blur': function summernoteBlur(we, e) {
+        if (e.originalEvent && e.originalEvent.relatedTarget) {
+          if (!_this.$popover[0].contains(e.originalEvent.relatedTarget)) {
+            _this.hide();
+          }
+        } else {
+          _this.hide();
+        }
+>>>>>>> danhmuc_list
       }
     };
   }
@@ -8600,10 +9822,17 @@ var LinkPopover_LinkPopover = /*#__PURE__*/function () {
 
       if (rng.isCollapsed() && rng.isOnAnchor()) {
         var anchor = dom.ancestor(rng.sc, dom.isAnchor);
+<<<<<<< HEAD
         var href = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(anchor).attr('href');
         this.$popover.find('a').attr('href', href).text(href);
         var pos = dom.posFromPlaceholder(anchor);
         var containerOffset = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(this.options.container).offset();
+=======
+        var href = external_jQuery_default()(anchor).attr('href');
+        this.$popover.find('a').attr('href', href).text(href);
+        var pos = dom.posFromPlaceholder(anchor);
+        var containerOffset = external_jQuery_default()(this.options.container).offset();
+>>>>>>> danhmuc_list
         pos.top -= containerOffset.top;
         pos.left -= containerOffset.left;
         this.$popover.css({
@@ -8626,7 +9855,11 @@ var LinkPopover_LinkPopover = /*#__PURE__*/function () {
 }();
 
 
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/module/ImageDialog.js
+=======
+;// CONCATENATED MODULE: ./src/js/module/ImageDialog.js
+>>>>>>> danhmuc_list
 function ImageDialog_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function ImageDialog_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -8637,13 +9870,22 @@ function ImageDialog_createClass(Constructor, protoProps, staticProps) { if (pro
 
 
 
+<<<<<<< HEAD
 var ImageDialog_ImageDialog = /*#__PURE__*/function () {
+=======
+var ImageDialog = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
   function ImageDialog(context) {
     ImageDialog_classCallCheck(this, ImageDialog);
 
     this.context = context;
+<<<<<<< HEAD
     this.ui = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.ui;
     this.$body = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(document.body);
+=======
+    this.ui = (external_jQuery_default()).summernote.ui;
+    this.$body = external_jQuery_default()(document.body);
+>>>>>>> danhmuc_list
     this.$editor = context.layoutInfo.editor;
     this.options = context.options;
     this.lang = this.options.langInfo;
@@ -8661,7 +9903,11 @@ var ImageDialog_ImageDialog = /*#__PURE__*/function () {
       }
 
       var $container = this.options.dialogsInBody ? this.$body : this.options.container;
+<<<<<<< HEAD
       var body = ['<div class="form-group note-form-group note-group-select-from-files">', '<label for="note-dialog-image-file-' + this.options.id + '" class="note-form-label">' + this.lang.image.selectFromFiles + '</label>', '<input id="note-dialog-image-file-' + this.options.id + '" class="note-image-input form-control-file note-form-control note-input" ', ' type="file" name="files" accept="image/*" multiple="multiple"/>', imageLimitation, '</div>', '<div class="form-group note-group-image-url">', '<label for="note-dialog-image-url-' + this.options.id + '" class="note-form-label">' + this.lang.image.url + '</label>', '<input id="note-dialog-image-url-' + this.options.id + '" class="note-image-url form-control note-form-control note-input" type="text"/>', '</div>'].join('');
+=======
+      var body = ['<div class="form-group note-form-group note-group-select-from-files">', '<label for="note-dialog-image-file-' + this.options.id + '" class="note-form-label">' + this.lang.image.selectFromFiles + '</label>', '<input id="note-dialog-image-file-' + this.options.id + '" class="note-image-input form-control-file note-form-control note-input" ', ' type="file" name="files" accept="' + this.options.acceptImageFileTypes + '" multiple="multiple"/>', imageLimitation, '</div>', '<div class="form-group note-group-image-url">', '<label for="note-dialog-image-url-' + this.options.id + '" class="note-form-label">' + this.lang.image.url + '</label>', '<input id="note-dialog-image-url-' + this.options.id + '" class="note-image-url form-control note-form-control note-input" type="text"/>', '</div>'].join('');
+>>>>>>> danhmuc_list
       var buttonClass = 'btn btn-primary note-btn note-btn-primary note-image-btn';
       var footer = "<input type=\"button\" href=\"#\" class=\"".concat(buttonClass, "\" value=\"").concat(this.lang.image.insert, "\" disabled>");
       this.$dialog = this.ui.dialog({
@@ -8681,7 +9927,11 @@ var ImageDialog_ImageDialog = /*#__PURE__*/function () {
     key: "bindEnterKey",
     value: function bindEnterKey($input, $btn) {
       $input.on('keypress', function (event) {
+<<<<<<< HEAD
         if (event.keyCode === core_key.code.ENTER) {
+=======
+        if (event.keyCode === key.code.ENTER) {
+>>>>>>> danhmuc_list
           event.preventDefault();
           $btn.trigger('click');
         }
@@ -8727,7 +9977,11 @@ var ImageDialog_ImageDialog = /*#__PURE__*/function () {
     value: function showImageDialog() {
       var _this2 = this;
 
+<<<<<<< HEAD
       return external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.Deferred(function (deferred) {
+=======
+      return external_jQuery_default().Deferred(function (deferred) {
+>>>>>>> danhmuc_list
         var $imageInput = _this2.$dialog.find('.note-image-input');
 
         var $imageUrl = _this2.$dialog.find('.note-image-url');
@@ -8776,7 +10030,11 @@ var ImageDialog_ImageDialog = /*#__PURE__*/function () {
 }();
 
 
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/module/ImagePopover.js
+=======
+;// CONCATENATED MODULE: ./src/js/module/ImagePopover.js
+>>>>>>> danhmuc_list
 function ImagePopover_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function ImagePopover_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -8792,19 +10050,41 @@ function ImagePopover_createClass(Constructor, protoProps, staticProps) { if (pr
  *  Handle.js will receive the events and invoke 'imagePopover.update'.
  */
 
+<<<<<<< HEAD
 var ImagePopover_ImagePopover = /*#__PURE__*/function () {
+=======
+var ImagePopover = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
   function ImagePopover(context) {
     var _this = this;
 
     ImagePopover_classCallCheck(this, ImagePopover);
 
     this.context = context;
+<<<<<<< HEAD
     this.ui = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.ui;
     this.editable = context.layoutInfo.editable[0];
     this.options = context.options;
     this.events = {
       'summernote.disable summernote.blur': function summernoteDisableSummernoteBlur() {
         _this.hide();
+=======
+    this.ui = (external_jQuery_default()).summernote.ui;
+    this.editable = context.layoutInfo.editable[0];
+    this.options = context.options;
+    this.events = {
+      'summernote.disable summernote.dialog.shown': function summernoteDisableSummernoteDialogShown() {
+        _this.hide();
+      },
+      'summernote.blur': function summernoteBlur(we, e) {
+        if (e.originalEvent && e.originalEvent.relatedTarget) {
+          if (!_this.$popover[0].contains(e.originalEvent.relatedTarget)) {
+            _this.hide();
+          }
+        } else {
+          _this.hide();
+        }
+>>>>>>> danhmuc_list
       }
     };
   }
@@ -8835,8 +10115,13 @@ var ImagePopover_ImagePopover = /*#__PURE__*/function () {
     key: "update",
     value: function update(target, event) {
       if (dom.isImg(target)) {
+<<<<<<< HEAD
         var position = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(target).offset();
         var containerOffset = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(this.options.container).offset();
+=======
+        var position = external_jQuery_default()(target).offset();
+        var containerOffset = external_jQuery_default()(this.options.container).offset();
+>>>>>>> danhmuc_list
         var pos = {};
 
         if (this.options.popatmouse) {
@@ -8868,7 +10153,11 @@ var ImagePopover_ImagePopover = /*#__PURE__*/function () {
 }();
 
 
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/module/TablePopover.js
+=======
+;// CONCATENATED MODULE: ./src/js/module/TablePopover.js
+>>>>>>> danhmuc_list
 function TablePopover_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function TablePopover_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -8880,14 +10169,22 @@ function TablePopover_createClass(Constructor, protoProps, staticProps) { if (pr
 
 
 
+<<<<<<< HEAD
 var TablePopover_TablePopover = /*#__PURE__*/function () {
+=======
+var TablePopover = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
   function TablePopover(context) {
     var _this = this;
 
     TablePopover_classCallCheck(this, TablePopover);
 
     this.context = context;
+<<<<<<< HEAD
     this.ui = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.ui;
+=======
+    this.ui = (external_jQuery_default()).summernote.ui;
+>>>>>>> danhmuc_list
     this.options = context.options;
     this.events = {
       'summernote.mousedown': function summernoteMousedown(we, e) {
@@ -8896,8 +10193,22 @@ var TablePopover_TablePopover = /*#__PURE__*/function () {
       'summernote.keyup summernote.scroll summernote.change': function summernoteKeyupSummernoteScrollSummernoteChange() {
         _this.update();
       },
+<<<<<<< HEAD
       'summernote.disable summernote.blur': function summernoteDisableSummernoteBlur() {
         _this.hide();
+=======
+      'summernote.disable summernote.dialog.shown': function summernoteDisableSummernoteDialogShown() {
+        _this.hide();
+      },
+      'summernote.blur': function summernoteBlur(we, e) {
+        if (e.originalEvent && e.originalEvent.relatedTarget) {
+          if (!_this.$popover[0].contains(e.originalEvent.relatedTarget)) {
+            _this.hide();
+          }
+        } else {
+          _this.hide();
+        }
+>>>>>>> danhmuc_list
       }
     };
   }
@@ -8936,11 +10247,19 @@ var TablePopover_TablePopover = /*#__PURE__*/function () {
         return false;
       }
 
+<<<<<<< HEAD
       var isCell = dom.isCell(target);
 
       if (isCell) {
         var pos = dom.posFromPlaceholder(target);
         var containerOffset = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(this.options.container).offset();
+=======
+      var isCell = dom.isCell(target) || dom.isCell(target === null || target === void 0 ? void 0 : target.parentElement);
+
+      if (isCell) {
+        var pos = dom.posFromPlaceholder(target);
+        var containerOffset = external_jQuery_default()(this.options.container).offset();
+>>>>>>> danhmuc_list
         pos.top -= containerOffset.top;
         pos.left -= containerOffset.left;
         this.$popover.css({
@@ -8965,7 +10284,11 @@ var TablePopover_TablePopover = /*#__PURE__*/function () {
 }();
 
 
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/module/VideoDialog.js
+=======
+;// CONCATENATED MODULE: ./src/js/module/VideoDialog.js
+>>>>>>> danhmuc_list
 function VideoDialog_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function VideoDialog_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -8976,13 +10299,22 @@ function VideoDialog_createClass(Constructor, protoProps, staticProps) { if (pro
 
 
 
+<<<<<<< HEAD
 var VideoDialog_VideoDialog = /*#__PURE__*/function () {
+=======
+var VideoDialog = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
   function VideoDialog(context) {
     VideoDialog_classCallCheck(this, VideoDialog);
 
     this.context = context;
+<<<<<<< HEAD
     this.ui = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.ui;
     this.$body = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(document.body);
+=======
+    this.ui = (external_jQuery_default()).summernote.ui;
+    this.$body = external_jQuery_default()(document.body);
+>>>>>>> danhmuc_list
     this.$editor = context.layoutInfo.editor;
     this.options = context.options;
     this.lang = this.options.langInfo;
@@ -9012,7 +10344,11 @@ var VideoDialog_VideoDialog = /*#__PURE__*/function () {
     key: "bindEnterKey",
     value: function bindEnterKey($input, $btn) {
       $input.on('keypress', function (event) {
+<<<<<<< HEAD
         if (event.keyCode === core_key.code.ENTER) {
+=======
+        if (event.keyCode === key.code.ENTER) {
+>>>>>>> danhmuc_list
           event.preventDefault();
           $btn.trigger('click');
         }
@@ -9021,10 +10357,19 @@ var VideoDialog_VideoDialog = /*#__PURE__*/function () {
   }, {
     key: "createVideoNode",
     value: function createVideoNode(url) {
+<<<<<<< HEAD
       // video url patterns(youtube, instagram, vimeo, dailymotion, youku, mp4, ogg, webm)
       var ytRegExp = /\/\/(?:(?:www|m)\.)?(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))([\w|-]{11})(?:(?:[\?&]t=)(\S+))?$/;
       var ytRegExpForStart = /^(?:(\d+)h)?(?:(\d+)m)?(?:(\d+)s)?$/;
       var ytMatch = url.match(ytRegExp);
+=======
+      // video url patterns(youtube, instagram, vimeo, dailymotion, youku, peertube, mp4, ogg, webm)
+      var ytRegExp = /\/\/(?:(?:www|m)\.)?(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))([\w|-]{11})(?:(?:[\?&]t=)(\S+))?$/;
+      var ytRegExpForStart = /^(?:(\d+)h)?(?:(\d+)m)?(?:(\d+)s)?$/;
+      var ytMatch = url.match(ytRegExp);
+      var gdRegExp = /(?:\.|\/\/)drive\.google\.com\/file\/d\/(.[a-zA-Z0-9_-]*)\/view/;
+      var gdMatch = url.match(gdRegExp);
+>>>>>>> danhmuc_list
       var igRegExp = /(?:www\.|\/\/)instagram\.com\/p\/(.[a-zA-Z0-9_-]*)/;
       var igMatch = url.match(igRegExp);
       var vRegExp = /\/\/vine\.co\/v\/([a-zA-Z0-9]+)/;
@@ -9035,6 +10380,11 @@ var VideoDialog_VideoDialog = /*#__PURE__*/function () {
       var dmMatch = url.match(dmRegExp);
       var youkuRegExp = /\/\/v\.youku\.com\/v_show\/id_(\w+)=*\.html/;
       var youkuMatch = url.match(youkuRegExp);
+<<<<<<< HEAD
+=======
+      var peerTubeRegExp = /\/\/(.*)\/videos\/watch\/([^?]*)(?:\?(?:start=(\w*))?(?:&stop=(\w*))?(?:&loop=([10]))?(?:&autoplay=([10]))?(?:&muted=([10]))?)?/;
+      var peerTubeMatch = url.match(peerTubeRegExp);
+>>>>>>> danhmuc_list
       var qqRegExp = /\/\/v\.qq\.com.*?vid=(.+)/;
       var qqMatch = url.match(qqRegExp);
       var qqRegExp2 = /\/\/v\.qq\.com\/x?\/?(page|cover).*?\/([^\/]+)\.html\??.*/;
@@ -9063,6 +10413,7 @@ var VideoDialog_VideoDialog = /*#__PURE__*/function () {
           }
         }
 
+<<<<<<< HEAD
         $video = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<iframe>').attr('frameborder', 0).attr('src', '//www.youtube.com/embed/' + youtubeId + (start > 0 ? '?start=' + start : '')).attr('width', '640').attr('height', '360');
       } else if (igMatch && igMatch[0].length) {
         $video = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<iframe>').attr('frameborder', 0).attr('src', 'https://instagram.com/p/' + igMatch[1] + '/embed/').attr('width', '612').attr('height', '710').attr('scrolling', 'no').attr('allowtransparency', 'true');
@@ -9081,6 +10432,40 @@ var VideoDialog_VideoDialog = /*#__PURE__*/function () {
         $video = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<video controls>').attr('src', url).attr('width', '640').attr('height', '360');
       } else if (fbMatch && fbMatch[0].length) {
         $video = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<iframe>').attr('frameborder', 0).attr('src', 'https://www.facebook.com/plugins/video.php?href=' + encodeURIComponent(fbMatch[0]) + '&show_text=0&width=560').attr('width', '560').attr('height', '301').attr('scrolling', 'no').attr('allowtransparency', 'true');
+=======
+        $video = external_jQuery_default()('<iframe>').attr('frameborder', 0).attr('src', '//www.youtube.com/embed/' + youtubeId + (start > 0 ? '?start=' + start : '')).attr('width', '640').attr('height', '360');
+      } else if (gdMatch && gdMatch[0].length) {
+        $video = external_jQuery_default()('<iframe>').attr('frameborder', 0).attr('src', 'https://drive.google.com/file/d/' + gdMatch[1] + '/preview').attr('width', '640').attr('height', '480');
+      } else if (igMatch && igMatch[0].length) {
+        $video = external_jQuery_default()('<iframe>').attr('frameborder', 0).attr('src', 'https://instagram.com/p/' + igMatch[1] + '/embed/').attr('width', '612').attr('height', '710').attr('scrolling', 'no').attr('allowtransparency', 'true');
+      } else if (vMatch && vMatch[0].length) {
+        $video = external_jQuery_default()('<iframe>').attr('frameborder', 0).attr('src', vMatch[0] + '/embed/simple').attr('width', '600').attr('height', '600').attr('class', 'vine-embed');
+      } else if (vimMatch && vimMatch[3].length) {
+        $video = external_jQuery_default()('<iframe webkitallowfullscreen mozallowfullscreen allowfullscreen>').attr('frameborder', 0).attr('src', '//player.vimeo.com/video/' + vimMatch[3]).attr('width', '640').attr('height', '360');
+      } else if (dmMatch && dmMatch[2].length) {
+        $video = external_jQuery_default()('<iframe>').attr('frameborder', 0).attr('src', '//www.dailymotion.com/embed/video/' + dmMatch[2]).attr('width', '640').attr('height', '360');
+      } else if (youkuMatch && youkuMatch[1].length) {
+        $video = external_jQuery_default()('<iframe webkitallowfullscreen mozallowfullscreen allowfullscreen>').attr('frameborder', 0).attr('height', '498').attr('width', '510').attr('src', '//player.youku.com/embed/' + youkuMatch[1]);
+      } else if (peerTubeMatch && peerTubeMatch[0].length) {
+        var begin = 0;
+        if (peerTubeMatch[2] !== 'undefined') begin = peerTubeMatch[2];
+        var end = 0;
+        if (peerTubeMatch[3] !== 'undefined') end = peerTubeMatch[3];
+        var loop = 0;
+        if (peerTubeMatch[4] !== 'undefined') loop = peerTubeMatch[4];
+        var autoplay = 0;
+        if (peerTubeMatch[5] !== 'undefined') autoplay = peerTubeMatch[5];
+        var muted = 0;
+        if (peerTubeMatch[6] !== 'undefined') muted = peerTubeMatch[6];
+        $video = external_jQuery_default()('<iframe allowfullscreen sandbox="allow-same-origin allow-scripts allow-popups">').attr('frameborder', 0).attr('src', '//' + peerTubeMatch[1] + '/videos/embed/' + peerTubeMatch[2] + "?loop=" + loop + "&autoplay=" + autoplay + "&muted=" + muted + (begin > 0 ? '&start=' + begin : '') + (end > 0 ? '&end=' + start : '')).attr('width', '560').attr('height', '315');
+      } else if (qqMatch && qqMatch[1].length || qqMatch2 && qqMatch2[2].length) {
+        var vid = qqMatch && qqMatch[1].length ? qqMatch[1] : qqMatch2[2];
+        $video = external_jQuery_default()('<iframe webkitallowfullscreen mozallowfullscreen allowfullscreen>').attr('frameborder', 0).attr('height', '310').attr('width', '500').attr('src', 'https://v.qq.com/txp/iframe/player.html?vid=' + vid + '&amp;auto=0');
+      } else if (mp4Match || oggMatch || webmMatch) {
+        $video = external_jQuery_default()('<video controls>').attr('src', url).attr('width', '640').attr('height', '360');
+      } else if (fbMatch && fbMatch[0].length) {
+        $video = external_jQuery_default()('<iframe>').attr('frameborder', 0).attr('src', 'https://www.facebook.com/plugins/video.php?href=' + encodeURIComponent(fbMatch[0]) + '&show_text=0&width=560').attr('width', '560').attr('height', '301').attr('scrolling', 'no').attr('allowtransparency', 'true');
+>>>>>>> danhmuc_list
       } else {
         // this is not a known video link. Now what, Cat? Now what?
         return false;
@@ -9122,12 +10507,19 @@ var VideoDialog_VideoDialog = /*#__PURE__*/function () {
 
   }, {
     key: "showVideoDialog",
+<<<<<<< HEAD
     value: function showVideoDialog()
     /* text */
     {
       var _this2 = this;
 
       return external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.Deferred(function (deferred) {
+=======
+    value: function showVideoDialog() {
+      var _this2 = this;
+
+      return external_jQuery_default().Deferred(function (deferred) {
+>>>>>>> danhmuc_list
         var $videoUrl = _this2.$dialog.find('.note-video-url');
 
         var $videoBtn = _this2.$dialog.find('.note-video-btn');
@@ -9169,7 +10561,11 @@ var VideoDialog_VideoDialog = /*#__PURE__*/function () {
 }();
 
 
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/module/HelpDialog.js
+=======
+;// CONCATENATED MODULE: ./src/js/module/HelpDialog.js
+>>>>>>> danhmuc_list
 function HelpDialog_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function HelpDialog_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -9179,13 +10575,22 @@ function HelpDialog_createClass(Constructor, protoProps, staticProps) { if (prot
 
 
 
+<<<<<<< HEAD
 var HelpDialog_HelpDialog = /*#__PURE__*/function () {
+=======
+var HelpDialog = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
   function HelpDialog(context) {
     HelpDialog_classCallCheck(this, HelpDialog);
 
     this.context = context;
+<<<<<<< HEAD
     this.ui = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.ui;
     this.$body = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(document.body);
+=======
+    this.ui = (external_jQuery_default()).summernote.ui;
+    this.$body = external_jQuery_default()(document.body);
+>>>>>>> danhmuc_list
     this.$editor = context.layoutInfo.editor;
     this.options = context.options;
     this.lang = this.options.langInfo;
@@ -9195,7 +10600,11 @@ var HelpDialog_HelpDialog = /*#__PURE__*/function () {
     key: "initialize",
     value: function initialize() {
       var $container = this.options.dialogsInBody ? this.$body : this.options.container;
+<<<<<<< HEAD
       var body = ['<p class="text-center">', '<a href="http://summernote.org/" target="_blank">Summernote 0.8.18</a> · ', '<a href="https://github.com/summernote/summernote" target="_blank">Project</a> · ', '<a href="https://github.com/summernote/summernote/issues" target="_blank">Issues</a>', '</p>'].join('');
+=======
+      var body = ['<p class="text-center">', '<a href="http://summernote.org/" target="_blank" rel="noopener noreferrer">Summernote 0.8.20</a> · ', '<a href="https://github.com/summernote/summernote" target="_blank" rel="noopener noreferrer">Project</a> · ', '<a href="https://github.com/summernote/summernote/issues" target="_blank" rel="noopener noreferrer">Issues</a>', '</p>'].join('');
+>>>>>>> danhmuc_list
       this.$dialog = this.ui.dialog({
         title: this.lang.options.help,
         fade: this.options.dialogsFade,
@@ -9223,11 +10632,19 @@ var HelpDialog_HelpDialog = /*#__PURE__*/function () {
       var keyMap = this.options.keyMap[env.isMac ? 'mac' : 'pc'];
       return Object.keys(keyMap).map(function (key) {
         var command = keyMap[key];
+<<<<<<< HEAD
         var $row = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<div><div class="help-list-item"></div></div>');
         $row.append(external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<label><kbd>' + key + '</kdb></label>').css({
           'width': 180,
           'margin-right': 10
         })).append(external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<span/>').html(_this.context.memo('help.' + command) || command));
+=======
+        var $row = external_jQuery_default()('<div><div class="help-list-item"></div></div>');
+        $row.append(external_jQuery_default()('<label><kbd>' + key + '</kdb></label>').css({
+          'width': 180,
+          'margin-right': 10
+        })).append(external_jQuery_default()('<span></span>').html(_this.context.memo('help.' + command) || command));
+>>>>>>> danhmuc_list
         return $row.html();
       }).join('');
     }
@@ -9242,7 +10659,11 @@ var HelpDialog_HelpDialog = /*#__PURE__*/function () {
     value: function showHelpDialog() {
       var _this2 = this;
 
+<<<<<<< HEAD
       return external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.Deferred(function (deferred) {
+=======
+      return external_jQuery_default().Deferred(function (deferred) {
+>>>>>>> danhmuc_list
         _this2.ui.onDialogShown(_this2.$dialog, function () {
           _this2.context.triggerEvent('dialog.shown');
 
@@ -9268,7 +10689,11 @@ var HelpDialog_HelpDialog = /*#__PURE__*/function () {
 }();
 
 
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/module/AirPopover.js
+=======
+;// CONCATENATED MODULE: ./src/js/module/AirPopover.js
+>>>>>>> danhmuc_list
 function AirPopover_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function AirPopover_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -9280,14 +10705,22 @@ function AirPopover_createClass(Constructor, protoProps, staticProps) { if (prot
 var AIRMODE_POPOVER_X_OFFSET = -5;
 var AIRMODE_POPOVER_Y_OFFSET = 5;
 
+<<<<<<< HEAD
 var AirPopover_AirPopover = /*#__PURE__*/function () {
+=======
+var AirPopover = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
   function AirPopover(context) {
     var _this = this;
 
     AirPopover_classCallCheck(this, AirPopover);
 
     this.context = context;
+<<<<<<< HEAD
     this.ui = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.ui;
+=======
+    this.ui = (external_jQuery_default()).summernote.ui;
+>>>>>>> danhmuc_list
     this.options = context.options;
     this.hidable = true;
     this.onContextmenu = false;
@@ -9367,7 +10800,11 @@ var AirPopover_AirPopover = /*#__PURE__*/function () {
           left: this.pageX,
           top: this.pageY
         };
+<<<<<<< HEAD
         var containerOffset = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(this.options.container).offset();
+=======
+        var containerOffset = external_jQuery_default()(this.options.container).offset();
+>>>>>>> danhmuc_list
         rect.top -= containerOffset.top;
         rect.left -= containerOffset.left;
         this.$popover.css({
@@ -9402,7 +10839,11 @@ var AirPopover_AirPopover = /*#__PURE__*/function () {
 }();
 
 
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/module/HintPopover.js
+=======
+;// CONCATENATED MODULE: ./src/js/module/HintPopover.js
+>>>>>>> danhmuc_list
 function HintPopover_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function HintPopover_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -9417,14 +10858,22 @@ function HintPopover_createClass(Constructor, protoProps, staticProps) { if (pro
 
 var POPOVER_DIST = 5;
 
+<<<<<<< HEAD
 var HintPopover_HintPopover = /*#__PURE__*/function () {
+=======
+var HintPopover = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
   function HintPopover(context) {
     var _this = this;
 
     HintPopover_classCallCheck(this, HintPopover);
 
     this.context = context;
+<<<<<<< HEAD
     this.ui = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.ui;
+=======
+    this.ui = (external_jQuery_default()).summernote.ui;
+>>>>>>> danhmuc_list
     this.$editable = context.layoutInfo.editable;
     this.options = context.options;
     this.hint = this.options.hint || [];
@@ -9467,7 +10916,11 @@ var HintPopover_HintPopover = /*#__PURE__*/function () {
       this.$content.on('click', '.note-hint-item', function (e) {
         _this2.$content.find('.active').removeClass('active');
 
+<<<<<<< HEAD
         external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(e.currentTarget).addClass('active');
+=======
+        external_jQuery_default()(e.currentTarget).addClass('active');
+>>>>>>> danhmuc_list
 
         _this2.replace();
       });
@@ -9545,7 +10998,11 @@ var HintPopover_HintPopover = /*#__PURE__*/function () {
 
         if (this.options.hintSelect === 'next') {
           var blank = document.createTextNode('');
+<<<<<<< HEAD
           external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(node).after(blank);
+=======
+          external_jQuery_default()(node).after(blank);
+>>>>>>> danhmuc_list
           range.createFromNodeBefore(blank).select();
         } else {
           range.createFromNodeAfter(node).select();
@@ -9554,6 +11011,10 @@ var HintPopover_HintPopover = /*#__PURE__*/function () {
         this.lastWordRange = null;
         this.hide();
         this.context.invoke('editor.focus');
+<<<<<<< HEAD
+=======
+        this.context.triggerEvent('change', this.$editable.html(), this.$editable);
+>>>>>>> danhmuc_list
       }
     }
   }, {
@@ -9576,7 +11037,11 @@ var HintPopover_HintPopover = /*#__PURE__*/function () {
       return items.map(function (item
       /*, idx */
       ) {
+<<<<<<< HEAD
         var $item = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<div class="note-hint-item"/>');
+=======
+        var $item = external_jQuery_default()('<div class="note-hint-item"></div>');
+>>>>>>> danhmuc_list
         $item.append(hint.template ? hint.template(item) : item + '');
         $item.data({
           'index': hintIdx,
@@ -9592,6 +11057,7 @@ var HintPopover_HintPopover = /*#__PURE__*/function () {
         return;
       }
 
+<<<<<<< HEAD
       if (e.keyCode === core_key.code.ENTER) {
         e.preventDefault();
         this.replace();
@@ -9599,6 +11065,15 @@ var HintPopover_HintPopover = /*#__PURE__*/function () {
         e.preventDefault();
         this.moveUp();
       } else if (e.keyCode === core_key.code.DOWN) {
+=======
+      if (e.keyCode === key.code.ENTER) {
+        e.preventDefault();
+        this.replace();
+      } else if (e.keyCode === key.code.UP) {
+        e.preventDefault();
+        this.moveUp();
+      } else if (e.keyCode === key.code.DOWN) {
+>>>>>>> danhmuc_list
         e.preventDefault();
         this.moveDown();
       }
@@ -9621,7 +11096,11 @@ var HintPopover_HintPopover = /*#__PURE__*/function () {
     value: function createGroup(idx, keyword) {
       var _this3 = this;
 
+<<<<<<< HEAD
       var $group = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<div class="note-hint-group note-hint-group-' + idx + '"></div>');
+=======
+      var $group = external_jQuery_default()('<div class="note-hint-group note-hint-group-' + idx + '"></div>');
+>>>>>>> danhmuc_list
       this.searchKeyword(idx, keyword, function (items) {
         items = items || [];
 
@@ -9638,7 +11117,11 @@ var HintPopover_HintPopover = /*#__PURE__*/function () {
     value: function handleKeyup(e) {
       var _this4 = this;
 
+<<<<<<< HEAD
       if (!lists.contains([core_key.code.ENTER, core_key.code.UP, core_key.code.DOWN], e.keyCode)) {
+=======
+      if (!lists.contains([key.code.ENTER, key.code.UP, key.code.DOWN], e.keyCode)) {
+>>>>>>> danhmuc_list
         var _range = this.context.invoke('editor.getLastRange');
 
         var wordRange, keyword;
@@ -9667,7 +11150,11 @@ var HintPopover_HintPopover = /*#__PURE__*/function () {
         if (this.hints.length && keyword) {
           this.$content.empty();
           var bnd = func.rect2bnd(lists.last(wordRange.getClientRects()));
+<<<<<<< HEAD
           var containerOffset = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(this.options.container).offset();
+=======
+          var containerOffset = external_jQuery_default()(this.options.container).offset();
+>>>>>>> danhmuc_list
 
           if (bnd) {
             bnd.top -= containerOffset.top;
@@ -9715,7 +11202,11 @@ var HintPopover_HintPopover = /*#__PURE__*/function () {
 }();
 
 
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/settings.js
+=======
+;// CONCATENATED MODULE: ./src/js/settings.js
+>>>>>>> danhmuc_list
 
 
 
@@ -9744,13 +11235,19 @@ var HintPopover_HintPopover = /*#__PURE__*/function () {
 
 
 
+<<<<<<< HEAD
 external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.extend(external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote, {
   version: '0.8.18',
+=======
+(external_jQuery_default()).summernote = external_jQuery_default().extend((external_jQuery_default()).summernote, {
+  version: '0.8.20',
+>>>>>>> danhmuc_list
   plugins: {},
   dom: dom,
   range: range,
   lists: lists,
   options: {
+<<<<<<< HEAD
     langInfo: external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.lang['en-US'],
     editing: true,
     modules: {
@@ -9778,6 +11275,35 @@ external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summe
       'videoDialog': VideoDialog_VideoDialog,
       'helpDialog': HelpDialog_HelpDialog,
       'airPopover': AirPopover_AirPopover
+=======
+    langInfo: (external_jQuery_default()).summernote.lang["en-US"],
+    editing: true,
+    modules: {
+      'editor': Editor,
+      'clipboard': Clipboard,
+      'dropzone': Dropzone,
+      'codeview': CodeView,
+      'statusbar': Statusbar,
+      'fullscreen': Fullscreen,
+      'handle': Handle,
+      // FIXME: HintPopover must be front of autolink
+      //  - Script error about range when Enter key is pressed on hint popover
+      'hintPopover': HintPopover,
+      'autoLink': AutoLink,
+      'autoSync': AutoSync,
+      'autoReplace': AutoReplace,
+      'placeholder': Placeholder,
+      'buttons': Buttons,
+      'toolbar': Toolbar,
+      'linkDialog': LinkDialog,
+      'linkPopover': LinkPopover,
+      'imageDialog': ImageDialog,
+      'imagePopover': ImagePopover,
+      'tablePopover': TablePopover,
+      'videoDialog': VideoDialog,
+      'helpDialog': HelpDialog,
+      'airPopover': AirPopover
+>>>>>>> danhmuc_list
     },
     buttons: {},
     lang: 'en-US',
@@ -9851,6 +11377,10 @@ external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summe
     dialogsInBody: false,
     dialogsFade: false,
     maximumImageFileSize: null,
+<<<<<<< HEAD
+=======
+    acceptImageFileTypes: "image/*",
+>>>>>>> danhmuc_list
     callbacks: {
       onBeforeCommand: null,
       onBlur: null,
@@ -9876,11 +11406,19 @@ external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summe
       htmlMode: true,
       lineNumbers: true
     },
+<<<<<<< HEAD
     codeviewFilter: false,
     codeviewFilterRegex: /<\/*(?:applet|b(?:ase|gsound|link)|embed|frame(?:set)?|ilayer|l(?:ayer|ink)|meta|object|s(?:cript|tyle)|t(?:itle|extarea)|xml)[^>]*?>/gi,
     codeviewIframeFilter: true,
     codeviewIframeWhitelistSrc: [],
     codeviewIframeWhitelistSrcBase: ['www.youtube.com', 'www.youtube-nocookie.com', 'www.facebook.com', 'vine.co', 'instagram.com', 'player.vimeo.com', 'www.dailymotion.com', 'player.youku.com', 'v.qq.com'],
+=======
+    codeviewFilter: true,
+    codeviewFilterRegex: /<\/*(?:applet|b(?:ase|gsound|link)|embed|frame(?:set)?|ilayer|l(?:ayer|ink)|meta|object|s(?:cript|tyle)|t(?:itle|extarea)|xml)[^>]*?>/gi,
+    codeviewIframeFilter: true,
+    codeviewIframeWhitelistSrc: [],
+    codeviewIframeWhitelistSrcBase: ['www.youtube.com', 'www.youtube-nocookie.com', 'www.facebook.com', 'vine.co', 'instagram.com', 'player.vimeo.com', 'www.dailymotion.com', 'player.youku.com', 'jumpingbean.tv', 'v.qq.com'],
+>>>>>>> danhmuc_list
     keyMap: {
       pc: {
         'ESC': 'escape',
@@ -9994,6 +11532,7 @@ external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summe
     }
   }
 });
+<<<<<<< HEAD
 
 /***/ }),
 
@@ -10026,13 +11565,118 @@ var TooltipUI_TooltipUI = /*#__PURE__*/function () {
 
     this.$node = $node;
     this.options = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.extend({}, {
+=======
+;// CONCATENATED MODULE: ./src/js/renderer.js
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function renderer_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function renderer_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function renderer_createClass(Constructor, protoProps, staticProps) { if (protoProps) renderer_defineProperties(Constructor.prototype, protoProps); if (staticProps) renderer_defineProperties(Constructor, staticProps); return Constructor; }
+
+
+
+var Renderer = /*#__PURE__*/function () {
+  function Renderer(markup, children, options, callback) {
+    renderer_classCallCheck(this, Renderer);
+
+    this.markup = markup;
+    this.children = children;
+    this.options = options;
+    this.callback = callback;
+  }
+
+  renderer_createClass(Renderer, [{
+    key: "render",
+    value: function render($parent) {
+      var $node = external_jQuery_default()(this.markup);
+
+      if (this.options && this.options.contents) {
+        $node.html(this.options.contents);
+      }
+
+      if (this.options && this.options.className) {
+        $node.addClass(this.options.className);
+      }
+
+      if (this.options && this.options.data) {
+        external_jQuery_default().each(this.options.data, function (k, v) {
+          $node.attr('data-' + k, v);
+        });
+      }
+
+      if (this.options && this.options.click) {
+        $node.on('click', this.options.click);
+      }
+
+      if (this.children) {
+        var $container = $node.find('.note-children-container');
+        this.children.forEach(function (child) {
+          child.render($container.length ? $container : $node);
+        });
+      }
+
+      if (this.callback) {
+        this.callback($node, this.options);
+      }
+
+      if (this.options && this.options.callback) {
+        this.options.callback($node);
+      }
+
+      if ($parent) {
+        $parent.append($node);
+      }
+
+      return $node;
+    }
+  }]);
+
+  return Renderer;
+}();
+
+/* harmony default export */ const renderer = ({
+  create: function create(markup, callback) {
+    return function () {
+      var options = _typeof(arguments[1]) === 'object' ? arguments[1] : arguments[0];
+      var children = Array.isArray(arguments[0]) ? arguments[0] : [];
+
+      if (options && options.children) {
+        children = options.children;
+      }
+
+      return new Renderer(markup, children, options, callback);
+    };
+  }
+});
+;// CONCATENATED MODULE: ./src/styles/lite/js/TooltipUI.js
+function TooltipUI_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function TooltipUI_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function TooltipUI_createClass(Constructor, protoProps, staticProps) { if (protoProps) TooltipUI_defineProperties(Constructor.prototype, protoProps); if (staticProps) TooltipUI_defineProperties(Constructor, staticProps); return Constructor; }
+
+
+
+var TooltipUI = /*#__PURE__*/function () {
+  function TooltipUI($node, options) {
+    TooltipUI_classCallCheck(this, TooltipUI);
+
+    this.$node = $node;
+    this.options = external_jQuery_default().extend({}, {
+>>>>>>> danhmuc_list
       title: '',
       target: options.container,
       trigger: 'hover focus',
       placement: 'bottom'
     }, options); // create tooltip node
 
+<<<<<<< HEAD
     this.$tooltip = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(['<div class="note-tooltip">', '<div class="note-tooltip-arrow"></div>', '<div class="note-tooltip-content"></div>', '</div>'].join('')); // define event
+=======
+    this.$tooltip = external_jQuery_default()(['<div class="note-tooltip">', '<div class="note-tooltip-arrow"></div>', '<div class="note-tooltip-content"></div>', '</div>'].join('')); // define event
+>>>>>>> danhmuc_list
 
     if (this.options.trigger !== 'manual') {
       var showCallback = this.show.bind(this);
@@ -10051,12 +11695,20 @@ var TooltipUI_TooltipUI = /*#__PURE__*/function () {
     }
   }
 
+<<<<<<< HEAD
   _createClass(TooltipUI, [{
+=======
+  TooltipUI_createClass(TooltipUI, [{
+>>>>>>> danhmuc_list
     key: "show",
     value: function show() {
       var $node = this.$node;
       var offset = $node.offset();
+<<<<<<< HEAD
       var targetOffset = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(this.options.target).offset();
+=======
+      var targetOffset = external_jQuery_default()(this.options.target).offset();
+>>>>>>> danhmuc_list
       offset.top -= targetOffset.top;
       offset.left -= targetOffset.left;
       var $tooltip = this.$tooltip;
@@ -10118,8 +11770,13 @@ var TooltipUI_TooltipUI = /*#__PURE__*/function () {
   return TooltipUI;
 }();
 
+<<<<<<< HEAD
 /* harmony default export */ var ui_TooltipUI = (TooltipUI_TooltipUI);
 // CONCATENATED MODULE: ./src/js/lite/ui/DropdownUI.js
+=======
+/* harmony default export */ const js_TooltipUI = (TooltipUI);
+;// CONCATENATED MODULE: ./src/styles/lite/js/DropdownUI.js
+>>>>>>> danhmuc_list
 function DropdownUI_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function DropdownUI_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -10128,12 +11785,20 @@ function DropdownUI_createClass(Constructor, protoProps, staticProps) { if (prot
 
 
 
+<<<<<<< HEAD
 var DropdownUI_DropdownUI = /*#__PURE__*/function () {
+=======
+var DropdownUI = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
   function DropdownUI($node, options) {
     DropdownUI_classCallCheck(this, DropdownUI);
 
     this.$button = $node;
+<<<<<<< HEAD
     this.options = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.extend({}, {
+=======
+    this.options = external_jQuery_default().extend({}, {
+>>>>>>> danhmuc_list
       target: options.container
     }, options);
     this.setEvent();
@@ -10153,7 +11818,11 @@ var DropdownUI_DropdownUI = /*#__PURE__*/function () {
   }, {
     key: "clear",
     value: function clear() {
+<<<<<<< HEAD
       var $parent = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('.note-btn-group.open');
+=======
+      var $parent = external_jQuery_default()('.note-btn-group.open');
+>>>>>>> danhmuc_list
       $parent.find('.note-btn.active').removeClass('active');
       $parent.removeClass('open');
     }
@@ -10165,8 +11834,13 @@ var DropdownUI_DropdownUI = /*#__PURE__*/function () {
       var $dropdown = this.$button.next();
       var offset = $dropdown.offset();
       var width = $dropdown.outerWidth();
+<<<<<<< HEAD
       var windowWidth = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(window).width();
       var targetMarginRight = parseFloat(external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(this.options.target).css('margin-right'));
+=======
+      var windowWidth = external_jQuery_default()(window).width();
+      var targetMarginRight = parseFloat(external_jQuery_default()(this.options.target).css('margin-right'));
+>>>>>>> danhmuc_list
 
       if (offset.left + width > windowWidth - targetMarginRight) {
         $dropdown.css('margin-left', windowWidth - targetMarginRight - (offset.left + width));
@@ -10197,6 +11871,7 @@ var DropdownUI_DropdownUI = /*#__PURE__*/function () {
   return DropdownUI;
 }();
 
+<<<<<<< HEAD
 external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(document).on('click', function (e) {
   if (!external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(e.target).closest('.note-btn-group').length) {
     external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('.note-btn-group.open').removeClass('open');
@@ -10209,6 +11884,20 @@ external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(docum
 });
 /* harmony default export */ var ui_DropdownUI = (DropdownUI_DropdownUI);
 // CONCATENATED MODULE: ./src/js/lite/ui/ModalUI.js
+=======
+external_jQuery_default()(document).on('click', function (e) {
+  if (!external_jQuery_default()(e.target).closest('.note-btn-group').length) {
+    external_jQuery_default()('.note-btn-group.open').removeClass('open');
+    external_jQuery_default()('.note-btn-group .note-btn.active').removeClass('active');
+  }
+});
+external_jQuery_default()(document).on('click.note-dropdown-menu', function (e) {
+  external_jQuery_default()(e.target).closest('.note-dropdown-menu').parent().removeClass('open');
+  external_jQuery_default()(e.target).closest('.note-dropdown-menu').parent().find('.note-btn.active').removeClass('active');
+});
+/* harmony default export */ const js_DropdownUI = (DropdownUI);
+;// CONCATENATED MODULE: ./src/styles/lite/js/ModalUI.js
+>>>>>>> danhmuc_list
 function ModalUI_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function ModalUI_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -10217,14 +11906,22 @@ function ModalUI_createClass(Constructor, protoProps, staticProps) { if (protoPr
 
 
 
+<<<<<<< HEAD
 var ModalUI_ModalUI = /*#__PURE__*/function () {
+=======
+var ModalUI = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
   function ModalUI($node
   /*, options */
   ) {
     ModalUI_classCallCheck(this, ModalUI);
 
     this.$modal = $node;
+<<<<<<< HEAD
     this.$backdrop = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<div class="note-modal-backdrop"/>');
+=======
+    this.$backdrop = external_jQuery_default()('<div class="note-modal-backdrop"></div>');
+>>>>>>> danhmuc_list
   }
 
   ModalUI_createClass(ModalUI, [{
@@ -10257,13 +11954,19 @@ var ModalUI_ModalUI = /*#__PURE__*/function () {
   return ModalUI;
 }();
 
+<<<<<<< HEAD
 /* harmony default export */ var ui_ModalUI = (ModalUI_ModalUI);
 // CONCATENATED MODULE: ./src/js/lite/ui.js
+=======
+/* harmony default export */ const js_ModalUI = (ModalUI);
+;// CONCATENATED MODULE: ./src/styles/lite/summernote-lite.js
+>>>>>>> danhmuc_list
 
 
 
 
 
+<<<<<<< HEAD
 var editor = renderer["a" /* default */].create('<div class="note-editor note-frame"/>');
 var toolbar = renderer["a" /* default */].create('<div class="note-toolbar" role="toolbar"/>');
 var editingArea = renderer["a" /* default */].create('<div class="note-editing-area"/>');
@@ -10274,16 +11977,38 @@ var airEditor = renderer["a" /* default */].create('<div class="note-editor note
 var airEditable = renderer["a" /* default */].create(['<div class="note-editable" contentEditable="true" role="textbox" aria-multiline="true"></div>', '<output class="note-status-output" role="status" aria-live="polite"></output>'].join(''));
 var buttonGroup = renderer["a" /* default */].create('<div class="note-btn-group">');
 var ui_button = renderer["a" /* default */].create('<button type="button" class="note-btn" tabindex="-1">', function ($node, options) {
+=======
+
+
+var editor = renderer.create('<div class="note-editor note-frame"></div>');
+var toolbar = renderer.create('<div class="note-toolbar" role="toolbar"></div>');
+var editingArea = renderer.create('<div class="note-editing-area"></div>');
+var codable = renderer.create('<textarea class="note-codable" aria-multiline="true"></textarea>');
+var editable = renderer.create('<div class="note-editable" contentEditable="true" role="textbox" aria-multiline="true"></div>');
+var statusbar = renderer.create(['<output class="note-status-output" role="status" aria-live="polite"></output>', '<div class="note-statusbar" role="status">', '<div class="note-resizebar" aria-label="resize">', '<div class="note-icon-bar"></div>', '<div class="note-icon-bar"></div>', '<div class="note-icon-bar"></div>', '</div>', '</div>'].join(''));
+var airEditor = renderer.create('<div class="note-editor note-airframe"></div>');
+var airEditable = renderer.create(['<div class="note-editable" contentEditable="true" role="textbox" aria-multiline="true"></div>', '<output class="note-status-output" role="status" aria-live="polite"></output>'].join(''));
+var buttonGroup = renderer.create('<div class="note-btn-group"></div>');
+var summernote_lite_button = renderer.create('<button type="button" class="note-btn" tabindex="-1"></button>', function ($node, options) {
+>>>>>>> danhmuc_list
   // set button type
   if (options && options.tooltip) {
     $node.attr({
       'aria-label': options.tooltip
     });
+<<<<<<< HEAD
     $node.data('_lite_tooltip', new ui_TooltipUI($node, {
       title: options.tooltip,
       container: options.container
     })).on('click', function (e) {
       external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(e.currentTarget).data('_lite_tooltip').hide();
+=======
+    $node.data('_lite_tooltip', new js_TooltipUI($node, {
+      title: options.tooltip,
+      container: options.container
+    })).on('click', function (e) {
+      external_jQuery_default()(e.currentTarget).data('_lite_tooltip').hide();
+>>>>>>> danhmuc_list
     });
   }
 
@@ -10292,7 +12017,11 @@ var ui_button = renderer["a" /* default */].create('<button type="button" class=
   }
 
   if (options && options.data && options.data.toggle === 'dropdown') {
+<<<<<<< HEAD
     $node.data('_lite_dropdown', new ui_DropdownUI($node, {
+=======
+    $node.data('_lite_dropdown', new js_DropdownUI($node, {
+>>>>>>> danhmuc_list
       container: options.container
     }));
   }
@@ -10301,11 +12030,19 @@ var ui_button = renderer["a" /* default */].create('<button type="button" class=
     $node.addClass('note-codeview-keep');
   }
 });
+<<<<<<< HEAD
 var dropdown = renderer["a" /* default */].create('<div class="note-dropdown-menu" role="list">', function ($node, options) {
   var markup = Array.isArray(options.items) ? options.items.map(function (item) {
     var value = typeof item === 'string' ? item : item.value || '';
     var content = options.template ? options.template(item) : item;
     var $temp = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<a class="note-dropdown-item" href="#" data-value="' + value + '" role="listitem" aria-label="' + value + '"></a>');
+=======
+var dropdown = renderer.create('<div class="note-dropdown-menu" role="list"></div>', function ($node, options) {
+  var markup = Array.isArray(options.items) ? options.items.map(function (item) {
+    var value = typeof item === 'string' ? item : item.value || '';
+    var content = options.template ? options.template(item) : item;
+    var $temp = external_jQuery_default()('<a class="note-dropdown-item" href="#" data-value="' + value + '" role="listitem" aria-label="' + value + '"></a>');
+>>>>>>> danhmuc_list
     $temp.html(content).data('item', item);
     return $temp;
   }) : options.items;
@@ -10313,7 +12050,11 @@ var dropdown = renderer["a" /* default */].create('<div class="note-dropdown-men
     'aria-label': options.title
   });
   $node.on('click', '> .note-dropdown-item', function (e) {
+<<<<<<< HEAD
     var $a = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(this);
+=======
+    var $a = external_jQuery_default()(this);
+>>>>>>> danhmuc_list
     var item = $a.data('item');
     var value = $a.data('value');
 
@@ -10328,11 +12069,19 @@ var dropdown = renderer["a" /* default */].create('<div class="note-dropdown-men
     $node.addClass('note-codeview-keep');
   }
 });
+<<<<<<< HEAD
 var dropdownCheck = renderer["a" /* default */].create('<div class="note-dropdown-menu note-check" role="list">', function ($node, options) {
   var markup = Array.isArray(options.items) ? options.items.map(function (item) {
     var value = typeof item === 'string' ? item : item.value || '';
     var content = options.template ? options.template(item) : item;
     var $temp = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<a class="note-dropdown-item" href="#" data-value="' + value + '" role="listitem" aria-label="' + item + '"></a>');
+=======
+var dropdownCheck = renderer.create('<div class="note-dropdown-menu note-check" role="list"></div>', function ($node, options) {
+  var markup = Array.isArray(options.items) ? options.items.map(function (item) {
+    var value = typeof item === 'string' ? item : item.value || '';
+    var content = options.template ? options.template(item) : item;
+    var $temp = external_jQuery_default()('<a class="note-dropdown-item" href="#" data-value="' + value + '" role="listitem" aria-label="' + item + '"></a>');
+>>>>>>> danhmuc_list
     $temp.html([icon(options.checkClassName), ' ', content]).data('item', item);
     return $temp;
   }) : options.items;
@@ -10340,7 +12089,11 @@ var dropdownCheck = renderer["a" /* default */].create('<div class="note-dropdow
     'aria-label': options.title
   });
   $node.on('click', '> .note-dropdown-item', function (e) {
+<<<<<<< HEAD
     var $a = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(this);
+=======
+    var $a = external_jQuery_default()(this);
+>>>>>>> danhmuc_list
     var item = $a.data('item');
     var value = $a.data('value');
 
@@ -10361,7 +12114,11 @@ var dropdownButtonContents = function dropdownButtonContents(contents, options) 
 };
 
 var dropdownButton = function dropdownButton(opt, callback) {
+<<<<<<< HEAD
   return buttonGroup([ui_button({
+=======
+  return buttonGroup([summernote_lite_button({
+>>>>>>> danhmuc_list
     className: 'dropdown-toggle',
     contents: opt.title + ' ' + icon('note-icon-caret'),
     tooltip: opt.tooltip,
@@ -10379,7 +12136,11 @@ var dropdownButton = function dropdownButton(opt, callback) {
 };
 
 var dropdownCheckButton = function dropdownCheckButton(opt, callback) {
+<<<<<<< HEAD
   return buttonGroup([ui_button({
+=======
+  return buttonGroup([summernote_lite_button({
+>>>>>>> danhmuc_list
     className: 'dropdown-toggle',
     contents: opt.title + ' ' + icon('note-icon-caret'),
     tooltip: opt.tooltip,
@@ -10398,7 +12159,11 @@ var dropdownCheckButton = function dropdownCheckButton(opt, callback) {
 };
 
 var paragraphDropdownButton = function paragraphDropdownButton(opt) {
+<<<<<<< HEAD
   return buttonGroup([ui_button({
+=======
+  return buttonGroup([summernote_lite_button({
+>>>>>>> danhmuc_list
     className: 'dropdown-toggle',
     contents: opt.title + ' ' + icon('note-icon-caret'),
     tooltip: opt.tooltip,
@@ -10414,9 +12179,15 @@ var paragraphDropdownButton = function paragraphDropdownButton(opt) {
   })])]).render();
 };
 
+<<<<<<< HEAD
 var ui_tableMoveHandler = function tableMoveHandler(event, col, row) {
   var PX_PER_EM = 18;
   var $picker = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(event.target.parentNode); // target is mousecatcher
+=======
+var tableMoveHandler = function tableMoveHandler(event, col, row) {
+  var PX_PER_EM = 18;
+  var $picker = external_jQuery_default()(event.target.parentNode); // target is mousecatcher
+>>>>>>> danhmuc_list
 
   var $dimensionDisplay = $picker.next();
   var $catcher = $picker.find('.note-dimension-picker-mousecatcher');
@@ -10425,7 +12196,11 @@ var ui_tableMoveHandler = function tableMoveHandler(event, col, row) {
   var posOffset; // HTML5 with jQuery - e.offsetX is undefined in Firefox
 
   if (event.offsetX === undefined) {
+<<<<<<< HEAD
     var posCatcher = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(event.target).offset();
+=======
+    var posCatcher = external_jQuery_default()(event.target).offset();
+>>>>>>> danhmuc_list
     posOffset = {
       x: event.pageX - posCatcher.left,
       y: event.pageY - posCatcher.top
@@ -10463,7 +12238,11 @@ var ui_tableMoveHandler = function tableMoveHandler(event, col, row) {
 };
 
 var tableDropdownButton = function tableDropdownButton(opt) {
+<<<<<<< HEAD
   return buttonGroup([ui_button({
+=======
+  return buttonGroup([summernote_lite_button({
+>>>>>>> danhmuc_list
     className: 'dropdown-toggle',
     contents: opt.title + ' ' + icon('note-icon-caret'),
     tooltip: opt.tooltip,
@@ -10479,14 +12258,23 @@ var tableDropdownButton = function tableDropdownButton(opt) {
       $catcher.css({
         width: opt.col + 'em',
         height: opt.row + 'em'
+<<<<<<< HEAD
       }).mousedown(opt.itemClick).mousemove(function (e) {
         ui_tableMoveHandler(e, opt.col, opt.row);
+=======
+      }).mouseup(opt.itemClick).mousemove(function (e) {
+        tableMoveHandler(e, opt.col, opt.row);
+>>>>>>> danhmuc_list
       });
     }
   }).render();
 };
 
+<<<<<<< HEAD
 var palette = renderer["a" /* default */].create('<div class="note-color-palette"/>', function ($node, options) {
+=======
+var palette = renderer.create('<div class="note-color-palette"></div>', function ($node, options) {
+>>>>>>> danhmuc_list
   var contents = [];
 
   for (var row = 0, rowSize = options.colors.length; row < rowSize; row++) {
@@ -10506,16 +12294,27 @@ var palette = renderer["a" /* default */].create('<div class="note-color-palette
 
   $node.html(contents.join(''));
   $node.find('.note-color-btn').each(function () {
+<<<<<<< HEAD
     external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(this).data('_lite_tooltip', new ui_TooltipUI(external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(this), {
+=======
+    external_jQuery_default()(this).data('_lite_tooltip', new js_TooltipUI(external_jQuery_default()(this), {
+>>>>>>> danhmuc_list
       container: options.container
     }));
   });
 });
 
+<<<<<<< HEAD
 var ui_colorDropdownButton = function colorDropdownButton(opt, type) {
   return buttonGroup({
     className: 'note-color',
     children: [ui_button({
+=======
+var colorDropdownButton = function colorDropdownButton(opt, type) {
+  return buttonGroup({
+    className: 'note-color',
+    children: [summernote_lite_button({
+>>>>>>> danhmuc_list
       className: 'note-current-color-button',
       contents: opt.title,
       tooltip: opt.lang.color.recent,
@@ -10528,7 +12327,11 @@ var ui_colorDropdownButton = function colorDropdownButton(opt, type) {
           $button.attr('data-backColor', '#FFFF00');
         }
       }
+<<<<<<< HEAD
     }), ui_button({
+=======
+    }), summernote_lite_button({
+>>>>>>> danhmuc_list
       className: 'dropdown-toggle',
       contents: icon('note-icon-caret'),
       tooltip: opt.lang.color.more,
@@ -10539,7 +12342,11 @@ var ui_colorDropdownButton = function colorDropdownButton(opt, type) {
       items: ['<div>', '<div class="note-btn-group btn-background-color">', '<div class="note-palette-title">' + opt.lang.color.background + '</div>', '<div>', '<button type="button" class="note-color-reset note-btn note-btn-block" data-event="backColor" data-value="transparent">', opt.lang.color.transparent, '</button>', '</div>', '<div class="note-holder" data-event="backColor"></div>', '<div class="btn-sm">', '<input type="color" id="html5bcp" class="note-btn btn-default" value="#21104A" style="width:100%;" data-value="cp">', '<button type="button" class="note-color-reset btn" data-event="backColor" data-value="cpbackColor">', opt.lang.color.cpSelect, '</button>', '</div>', '</div>', '<div class="note-btn-group btn-foreground-color">', '<div class="note-palette-title">' + opt.lang.color.foreground + '</div>', '<div>', '<button type="button" class="note-color-reset note-btn note-btn-block" data-event="removeFormat" data-value="foreColor">', opt.lang.color.resetToDefault, '</button>', '</div>', '<div class="note-holder" data-event="foreColor"></div>', '<div class="btn-sm">', '<input type="color" id="html5fcp" class="note-btn btn-default" value="#21104A" style="width:100%;" data-value="cp">', '<button type="button" class="note-color-reset btn" data-event="foreColor" data-value="cpforeColor">', opt.lang.color.cpSelect, '</button>', '</div>', '</div>', '</div>'].join(''),
       callback: function callback($dropdown) {
         $dropdown.find('.note-holder').each(function () {
+<<<<<<< HEAD
           var $holder = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(this);
+=======
+          var $holder = external_jQuery_default()(this);
+>>>>>>> danhmuc_list
           $holder.append(palette({
             colors: opt.colors,
             eventName: $holder.data('event')
@@ -10559,7 +12366,11 @@ var ui_colorDropdownButton = function colorDropdownButton(opt, type) {
         }
       },
       click: function click(event) {
+<<<<<<< HEAD
         var $button = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(event.target);
+=======
+        var $button = external_jQuery_default()(event.target);
+>>>>>>> danhmuc_list
         var eventName = $button.data('event');
         var value = $button.data('value');
         var foreinput = document.getElementById('html5fcp').value;
@@ -10593,7 +12404,11 @@ var ui_colorDropdownButton = function colorDropdownButton(opt, type) {
   }).render();
 };
 
+<<<<<<< HEAD
 var dialog = renderer["a" /* default */].create('<div class="note-modal" aria-hidden="false" tabindex="-1" role="dialog"/>', function ($node, options) {
+=======
+var dialog = renderer.create('<div class="note-modal" aria-hidden="false" tabindex="-1" role="dialog"></div>', function ($node, options) {
+>>>>>>> danhmuc_list
   if (options.fade) {
     $node.addClass('fade');
   }
@@ -10602,7 +12417,11 @@ var dialog = renderer["a" /* default */].create('<div class="note-modal" aria-hi
     'aria-label': options.title
   });
   $node.html(['<div class="note-modal-content">', options.title ? '<div class="note-modal-header"><button type="button" class="close" aria-label="Close" aria-hidden="true"><i class="note-icon-close"></i></button><h4 class="note-modal-title">' + options.title + '</h4></div>' : '', '<div class="note-modal-body">' + options.body + '</div>', options.footer ? '<div class="note-modal-footer">' + options.footer + '</div>' : '', '</div>'].join(''));
+<<<<<<< HEAD
   $node.data('modal', new ui_ModalUI($node, options));
+=======
+  $node.data('modal', new js_ModalUI($node, options));
+>>>>>>> danhmuc_list
 });
 
 var videoDialog = function videoDialog(opt) {
@@ -10639,7 +12458,11 @@ var linkDialog = function linkDialog(opt) {
   }).render();
 };
 
+<<<<<<< HEAD
 var popover = renderer["a" /* default */].create(['<div class="note-popover bottom">', '<div class="note-popover-arrow"></div>', '<div class="popover-content note-children-container"></div>', '</div>'].join(''), function ($node, options) {
+=======
+var popover = renderer.create(['<div class="note-popover bottom">', '<div class="note-popover-arrow"></div>', '<div class="popover-content note-children-container"></div>', '</div>'].join(''), function ($node, options) {
+>>>>>>> danhmuc_list
   var direction = typeof options.direction !== 'undefined' ? options.direction : 'bottom';
   $node.addClass(direction).hide();
 
@@ -10647,13 +12470,26 @@ var popover = renderer["a" /* default */].create(['<div class="note-popover bott
     $node.find('.note-popover-arrow').hide();
   }
 });
+<<<<<<< HEAD
 var ui_checkbox = renderer["a" /* default */].create('<div class="checkbox"></div>', function ($node, options) {
+=======
+var summernote_lite_checkbox = renderer.create('<div class="checkbox"></div>', function ($node, options) {
+>>>>>>> danhmuc_list
   $node.html(['<label' + (options.id ? ' for="note-' + options.id + '"' : '') + '>', '<input role="checkbox" type="checkbox"' + (options.id ? ' id="note-' + options.id + '"' : ''), options.checked ? ' checked' : '', ' aria-checked="' + (options.checked ? 'true' : 'false') + '"/>', options.text ? options.text : '', '</label>'].join(''));
 });
 
 var icon = function icon(iconClassName, tagName) {
+<<<<<<< HEAD
   tagName = tagName || 'i';
   return '<' + tagName + ' class="' + iconClassName + '"/>';
+=======
+  if (iconClassName.match(/^</)) {
+    return iconClassName;
+  }
+
+  tagName = tagName || 'i';
+  return '<' + tagName + ' class="' + iconClassName + '"></' + tagName + '>';
+>>>>>>> danhmuc_list
 };
 
 var ui = function ui(editorOptions) {
@@ -10667,7 +12503,11 @@ var ui = function ui(editorOptions) {
     airEditor: airEditor,
     airEditable: airEditable,
     buttonGroup: buttonGroup,
+<<<<<<< HEAD
     button: ui_button,
+=======
+    button: summernote_lite_button,
+>>>>>>> danhmuc_list
     dropdown: dropdown,
     dropdownCheck: dropdownCheck,
     dropdownButton: dropdownButton,
@@ -10675,14 +12515,22 @@ var ui = function ui(editorOptions) {
     dropdownCheckButton: dropdownCheckButton,
     paragraphDropdownButton: paragraphDropdownButton,
     tableDropdownButton: tableDropdownButton,
+<<<<<<< HEAD
     colorDropdownButton: ui_colorDropdownButton,
+=======
+    colorDropdownButton: colorDropdownButton,
+>>>>>>> danhmuc_list
     palette: palette,
     dialog: dialog,
     videoDialog: videoDialog,
     imageDialog: imageDialog,
     linkDialog: linkDialog,
     popover: popover,
+<<<<<<< HEAD
     checkbox: ui_checkbox,
+=======
+    checkbox: summernote_lite_checkbox,
+>>>>>>> danhmuc_list
     icon: icon,
     options: editorOptions,
     toggleBtn: function toggleBtn($btn, isEnable) {
@@ -10751,6 +12599,7 @@ var ui = function ui(editorOptions) {
   };
 };
 
+<<<<<<< HEAD
 /* harmony default export */ var lite_ui = (ui);
 // EXTERNAL MODULE: ./src/js/base/settings.js + 37 modules
 var settings = __webpack_require__(3);
@@ -10778,5 +12627,16 @@ external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summe
 /***/ })
 
 /******/ });
+=======
+(external_jQuery_default()).summernote = external_jQuery_default().extend((external_jQuery_default()).summernote, {
+  ui_template: ui,
+  "interface": 'lite'
+});
+})();
+
+/******/ 	return __webpack_exports__;
+/******/ })()
+;
+>>>>>>> danhmuc_list
 });
 //# sourceMappingURL=summernote-lite.js.map

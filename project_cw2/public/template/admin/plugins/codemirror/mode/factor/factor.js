@@ -77,7 +77,11 @@
     // specific to simple modes.
     meta: {
       dontIndentStates: ["start", "vocabulary", "string", "string3", "stack"],
+<<<<<<< HEAD
       lineComment: [ "!", "#!" ]
+=======
+      lineComment: "!"
+>>>>>>> danhmuc_list
     }
   });
 

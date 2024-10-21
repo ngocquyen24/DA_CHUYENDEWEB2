@@ -1,6 +1,14 @@
 FullCalendar.globalLocales.push(function () {
   'use strict';
 
+<<<<<<< HEAD
+=======
+  function affix(buttonText) {
+    return (buttonText === 'Tag' || buttonText === 'Monat') ? 'r' :
+      buttonText === 'Jahr' ? 's' : ''
+  }
+
+>>>>>>> danhmuc_list
   var de = {
     code: 'de',
     week: {
@@ -18,11 +26,47 @@ FullCalendar.globalLocales.push(function () {
       list: 'Terminübersicht',
     },
     weekText: 'KW',
+<<<<<<< HEAD
+=======
+    weekTextLong: 'Woche',
+>>>>>>> danhmuc_list
     allDayText: 'Ganztägig',
     moreLinkText: function(n) {
       return '+ weitere ' + n
     },
     noEventsText: 'Keine Ereignisse anzuzeigen',
+<<<<<<< HEAD
+=======
+    buttonHints: {
+      prev(buttonText) {
+        return `Vorherige${affix(buttonText)} ${buttonText}`
+      },
+      next(buttonText) {
+        return `Nächste${affix(buttonText)} ${buttonText}`
+      },
+      today(buttonText) {
+        // → Heute, Diese Woche, Dieser Monat, Dieses Jahr
+        if (buttonText === 'Tag') {
+          return 'Heute'
+        }
+        return `Diese${affix(buttonText)} ${buttonText}`
+      },
+    },
+    viewHint(buttonText) {
+      // → Tagesansicht, Wochenansicht, Monatsansicht, Jahresansicht
+      const glue = buttonText === 'Woche' ? 'n' : buttonText === 'Monat' ? 's' : 'es';
+      return buttonText + glue + 'ansicht'
+    },
+    navLinkHint: 'Gehe zu $0',
+    moreLinkHint(eventCnt) {
+      return 'Zeige ' + (eventCnt === 1 ?
+        'ein weiteres Ereignis' :
+        eventCnt + ' weitere Ereignisse')
+    },
+    closeHint: 'Schließen',
+    timeHint: 'Uhrzeit',
+    eventHint: 'Ereignis',
+>>>>>>> danhmuc_list
   };
 
   return de;

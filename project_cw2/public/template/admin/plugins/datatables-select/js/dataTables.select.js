@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /*! Select for DataTables 1.3.2
+=======
+/*! Select for DataTables 1.3.4-dev
+>>>>>>> danhmuc_list
  * 2015-2021 SpryMedia Ltd - datatables.net/license/mit
  */
 
@@ -6,7 +10,11 @@
  * @summary     Select for DataTables
  * @description A collection of API methods, events and buttons for DataTables
  *   that provides selection options of the items in a DataTable
+<<<<<<< HEAD
  * @version     1.3.2
+=======
+ * @version     1.3.4-dev
+>>>>>>> danhmuc_list
  * @file        dataTables.select.js
  * @author      SpryMedia Ltd (www.sprymedia.co.uk)
  * @contact     datatables.net/forums
@@ -54,10 +62,59 @@ var DataTable = $.fn.dataTable;
 // Version information for debugger
 DataTable.select = {};
 
+<<<<<<< HEAD
 DataTable.select.version = '1.3.2';
 
 DataTable.select.init = function ( dt ) {
 	var ctx = dt.settings()[0];
+=======
+DataTable.select.version = '1.3.4-dev';
+
+DataTable.select.init = function ( dt ) {
+	var ctx = dt.settings()[0];
+
+	if (ctx._select) {
+		return;
+	}
+
+	var savedSelected = dt.state.loaded();
+
+	var selectAndSave = function(e, settings, data) {
+		if(data === null || data.select === undefined) {
+			return;
+		}
+		dt.rows().deselect();
+		dt.columns().deselect();
+		dt.cells().deselect();
+		if (data.select.rows !== undefined) {
+			dt.rows(data.select.rows).select();
+		}
+		if (data.select.columns !== undefined) {
+			dt.columns(data.select.columns).select();
+		}
+		if (data.select.cells !== undefined) {
+			for(var i = 0; i < data.select.cells.length; i++) {
+				dt.cell(data.select.cells[i].row, data.select.cells[i].column).select();
+			}
+		}
+		dt.state.save();
+	}
+	
+	dt.one('init', function() {
+		dt.on('stateSaveParams', function(e, settings, data) {
+			data.select = {};
+			data.select.rows = dt.rows({selected:true}).ids(true).toArray();
+			data.select.columns = dt.columns({selected:true})[0];
+			data.select.cells = dt.cells({selected:true})[0].map(function(coords) {
+				return {row: dt.row(coords.row).id(true), column: coords.column}
+			});
+		})
+		
+		selectAndSave(undefined, undefined, savedSelected)
+		dt.on('stateLoaded stateLoadParams', selectAndSave)
+	})
+
+>>>>>>> danhmuc_list
 	var init = ctx.oInit.select;
 	var defaults = DataTable.defaults.select;
 	var opts = init === undefined ?
@@ -529,6 +586,10 @@ function info ( api )
  */
 function init ( ctx ) {
 	var api = new DataTable.Api( ctx );
+<<<<<<< HEAD
+=======
+	ctx._select_init = true;
+>>>>>>> danhmuc_list
 
 	// Row callback so that classes can be added to rows and cells if the item
 	// was selected before the element was created. This will happen with the
@@ -597,6 +658,10 @@ function init ( ctx ) {
 	// Update the table information element with selected item summary
 	api.on( 'draw.dtSelect.dt select.dtSelect.dt deselect.dtSelect.dt info.dt', function () {
 		info( api );
+<<<<<<< HEAD
+=======
+		api.state.save();
+>>>>>>> danhmuc_list
 	} );
 
 	// Clean up and release
@@ -605,6 +670,10 @@ function init ( ctx ) {
 
 		disableMouseSelection( api );
 		api.off( '.dtSelect' );
+<<<<<<< HEAD
+=======
+		$('body').off('.dtSelect' + _safeId(api.table().node()));
+>>>>>>> danhmuc_list
 	} );
 }
 
@@ -873,12 +942,25 @@ apiRegister( 'select.style()', function ( style ) {
 	}
 
 	return this.iterator( 'table', function ( ctx ) {
+<<<<<<< HEAD
 		ctx._select.style = style;
 
 		if ( ! ctx._select_init ) {
 			init( ctx );
 		}
 
+=======
+		if ( ! ctx._select ) {
+			DataTable.select.init( new DataTable.Api(ctx) );
+		}
+
+		if ( ! ctx._select_init ) {
+			init(ctx);
+		}
+
+		ctx._select.style = style;
+
+>>>>>>> danhmuc_list
 		// Add / remove mouse event handlers. They aren't required when only
 		// API selection is available
 		var dt = new DataTable.Api( ctx );
@@ -1043,7 +1125,13 @@ apiRegisterPlural( 'cells().deselect()', 'cell().deselect()', function () {
 	this.iterator( 'cell', function ( ctx, rowIdx, colIdx ) {
 		var data = ctx.aoData[ rowIdx ];
 
+<<<<<<< HEAD
 		data._selected_cells[ colIdx ] = false;
+=======
+		if(data._selected_cells !== undefined) {
+			data._selected_cells[ colIdx ] = false;
+		}
+>>>>>>> danhmuc_list
 
 		// Remove class only if the cells exist, and the cell is not column
 		// selected, in which case the class should remain (since it is selected

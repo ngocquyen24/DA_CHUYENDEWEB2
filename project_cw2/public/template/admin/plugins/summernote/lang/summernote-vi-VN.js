@@ -1,5 +1,6 @@
 /*!
  * 
+<<<<<<< HEAD
  * Super simple wysiwyg editor v0.8.18
  * https://summernote.org
  * 
@@ -9,6 +10,17 @@
  * 
  * Date: 2020-05-20T16:47Z
  * 
+=======
+ * Super simple WYSIWYG editor v0.8.20
+ * https://summernote.org
+ *
+ *
+ * Copyright 2013- Alan Hong and contributors
+ * Summernote may be freely distributed under the MIT license.
+ *
+ * Date: 2021-10-14T21:15Z
+ *
+>>>>>>> danhmuc_list
  */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
@@ -19,6 +31,7 @@
 		var a = factory();
 		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
 	}
+<<<<<<< HEAD
 })(window, function() {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -111,6 +124,11 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ 48:
 /***/ (function(module, exports) {
 
+=======
+})(self, function() {
+return /******/ (() => { // webpackBootstrap
+var __webpack_exports__ = {};
+>>>>>>> danhmuc_list
 (function ($) {
   $.extend($.summernote.lang, {
     'vi-VN': {
@@ -153,7 +171,11 @@ return /******/ (function(modules) { // webpackBootstrap
         videoLink: 'Link đến Video',
         insert: 'Chèn Video',
         url: 'URL',
+<<<<<<< HEAD
         providers: '(YouTube, Vimeo, Vine, Instagram, DailyMotion và Youku)'
+=======
+        providers: '(Hỗ trợ YouTube, Vimeo, Vine, Instagram, DailyMotion và Youku)'
+>>>>>>> danhmuc_list
       },
       link: {
         link: 'Link',
@@ -166,6 +188,7 @@ return /******/ (function(modules) { // webpackBootstrap
       },
       table: {
         table: 'Bảng',
+<<<<<<< HEAD
         addRowAbove: 'Add row above',
         addRowBelow: 'Add row below',
         addColLeft: 'Add column left',
@@ -173,6 +196,15 @@ return /******/ (function(modules) { // webpackBootstrap
         delRow: 'Delete row',
         delCol: 'Delete column',
         delTable: 'Delete table'
+=======
+        addRowAbove: 'Chèn dòng phía trên',
+        addRowBelow: 'Chèn dòng phía dưới',
+        addColLeft: 'Chèn cột bên trái',
+        addColRight: 'Chèn cột bên phải',
+        delRow: 'Xóa dòng',
+        delCol: 'Xóa cột',
+        delTable: 'Xóa bảng'
+>>>>>>> danhmuc_list
       },
       hr: {
         insert: 'Chèn'
@@ -227,7 +259,11 @@ return /******/ (function(modules) { // webpackBootstrap
         extraKeys: 'Extra keys'
       },
       help: {
+<<<<<<< HEAD
         'insertParagraph': 'Insert Paragraph',
+=======
+        'insertParagraph': 'Chèn đo văn',
+>>>>>>> danhmuc_list
         'undo': 'Undoes the last command',
         'redo': 'Redoes the last command',
         'tab': 'Tab',
@@ -260,14 +296,27 @@ return /******/ (function(modules) { // webpackBootstrap
         redo: 'Làm lại'
       },
       specialChar: {
+<<<<<<< HEAD
         specialChar: 'SPECIAL CHARACTERS',
         select: 'Select Special characters'
+=======
+        specialChar: 'KÝ TỰ ĐẶC BIỆT',
+        select: 'Chọn ký tự đặc biệt'
+>>>>>>> danhmuc_list
       }
     }
   });
 })(jQuery);
+<<<<<<< HEAD
 
 /***/ })
 
 /******/ });
 });
+=======
+/******/ 	return __webpack_exports__;
+/******/ })()
+;
+});
+//# sourceMappingURL=summernote-vi-VN.js.map
+>>>>>>> danhmuc_list

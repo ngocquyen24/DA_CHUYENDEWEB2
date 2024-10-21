@@ -6,12 +6,17 @@ use App\Providers\RouteServiceProvider;
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+<<<<<<< HEAD
+=======
+use Symfony\Component\HttpFoundation\Response;
+>>>>>>> danhmuc_list
 
 class RedirectIfAuthenticated
 {
     /**
      * Handle an incoming request.
      *
+<<<<<<< HEAD
      * @param  \Illuminate\Http\Request  $request
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -30,6 +35,11 @@ class RedirectIfAuthenticated
 >>>>>>> Login_Register
      */
     public function handle(Request $request, Closure $next, ...$guards)
+=======
+     * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
+     */
+    public function handle(Request $request, Closure $next, string ...$guards): Response
+>>>>>>> danhmuc_list
     {
         $guards = empty($guards) ? [null] : $guards;
 

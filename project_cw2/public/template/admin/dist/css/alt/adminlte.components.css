@@ -1,5 +1,9 @@
 /*!
+<<<<<<< HEAD
  *   AdminLTE v3.1.0
+=======
+ *   AdminLTE v3.2.0
+>>>>>>> danhmuc_list
  *     Only Components
  *   Author: Colorlib
  *   Website: AdminLTE.io <https://adminlte.io>
@@ -2984,6 +2988,17 @@ body.text-sm .input-group-text {
   border-color: #6c757d;
 }
 
+<<<<<<< HEAD
+=======
+.dark-mode .custom-select {
+  background: #343a40 url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23fff' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") right 0.75rem center/8px 10px no-repeat;
+}
+
+.dark-mode .custom-select[multiple] {
+  background: #343a40;
+}
+
+>>>>>>> danhmuc_list
 .dark-mode .input-group-text {
   border-color: #6c757d;
 }
@@ -2995,6 +3010,21 @@ body.text-sm .input-group-text {
   color: #fff;
 }
 
+<<<<<<< HEAD
+=======
+.dark-mode input:-webkit-autofill,
+.dark-mode input:-webkit-autofill:hover,
+.dark-mode input:-webkit-autofill:focus,
+.dark-mode textarea:-webkit-autofill,
+.dark-mode textarea:-webkit-autofill:hover,
+.dark-mode textarea:-webkit-autofill:focus,
+.dark-mode select:-webkit-autofill,
+.dark-mode select:-webkit-autofill:hover,
+.dark-mode select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #fff;
+}
+
+>>>>>>> danhmuc_list
 .dark-mode .custom-range::-webkit-slider-runnable-track {
   background-color: #454d55;
 }
@@ -5567,7 +5597,12 @@ body.text-sm .input-group-text {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .card-primary.card-outline-tabs > .card-header a.active {
+=======
+.card-primary.card-outline-tabs > .card-header a.active,
+.card-primary.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #007bff;
 }
 
@@ -5638,7 +5673,12 @@ body.text-sm .input-group-text {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .card-secondary.card-outline-tabs > .card-header a.active {
+=======
+.card-secondary.card-outline-tabs > .card-header a.active,
+.card-secondary.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #6c757d;
 }
 
@@ -5709,7 +5749,12 @@ body.text-sm .input-group-text {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .card-success.card-outline-tabs > .card-header a.active {
+=======
+.card-success.card-outline-tabs > .card-header a.active,
+.card-success.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #28a745;
 }
 
@@ -5780,7 +5825,12 @@ body.text-sm .input-group-text {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .card-info.card-outline-tabs > .card-header a.active {
+=======
+.card-info.card-outline-tabs > .card-header a.active,
+.card-info.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #17a2b8;
 }
 
@@ -5851,7 +5901,12 @@ body.text-sm .input-group-text {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .card-warning.card-outline-tabs > .card-header a.active {
+=======
+.card-warning.card-outline-tabs > .card-header a.active,
+.card-warning.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #ffc107;
 }
 
@@ -5922,7 +5977,12 @@ body.text-sm .input-group-text {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .card-danger.card-outline-tabs > .card-header a.active {
+=======
+.card-danger.card-outline-tabs > .card-header a.active,
+.card-danger.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #dc3545;
 }
 
@@ -5993,7 +6053,12 @@ body.text-sm .input-group-text {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .card-light.card-outline-tabs > .card-header a.active {
+=======
+.card-light.card-outline-tabs > .card-header a.active,
+.card-light.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #f8f9fa;
 }
 
@@ -6064,7 +6129,12 @@ body.text-sm .input-group-text {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .card-dark.card-outline-tabs > .card-header a.active {
+=======
+.card-dark.card-outline-tabs > .card-header a.active,
+.card-dark.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #343a40;
 }
 
@@ -6135,7 +6205,12 @@ body.text-sm .input-group-text {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .card-lightblue.card-outline-tabs > .card-header a.active {
+=======
+.card-lightblue.card-outline-tabs > .card-header a.active,
+.card-lightblue.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #3c8dbc;
 }
 
@@ -6206,7 +6281,12 @@ body.text-sm .input-group-text {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .card-navy.card-outline-tabs > .card-header a.active {
+=======
+.card-navy.card-outline-tabs > .card-header a.active,
+.card-navy.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #001f3f;
 }
 
@@ -6277,7 +6357,12 @@ body.text-sm .input-group-text {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .card-olive.card-outline-tabs > .card-header a.active {
+=======
+.card-olive.card-outline-tabs > .card-header a.active,
+.card-olive.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #3d9970;
 }
 
@@ -6348,7 +6433,12 @@ body.text-sm .input-group-text {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .card-lime.card-outline-tabs > .card-header a.active {
+=======
+.card-lime.card-outline-tabs > .card-header a.active,
+.card-lime.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #01ff70;
 }
 
@@ -6419,7 +6509,12 @@ body.text-sm .input-group-text {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .card-fuchsia.card-outline-tabs > .card-header a.active {
+=======
+.card-fuchsia.card-outline-tabs > .card-header a.active,
+.card-fuchsia.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #f012be;
 }
 
@@ -6490,7 +6585,12 @@ body.text-sm .input-group-text {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .card-maroon.card-outline-tabs > .card-header a.active {
+=======
+.card-maroon.card-outline-tabs > .card-header a.active,
+.card-maroon.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #d81b60;
 }
 
@@ -6561,7 +6661,12 @@ body.text-sm .input-group-text {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .card-blue.card-outline-tabs > .card-header a.active {
+=======
+.card-blue.card-outline-tabs > .card-header a.active,
+.card-blue.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #007bff;
 }
 
@@ -6632,7 +6737,12 @@ body.text-sm .input-group-text {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .card-indigo.card-outline-tabs > .card-header a.active {
+=======
+.card-indigo.card-outline-tabs > .card-header a.active,
+.card-indigo.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #6610f2;
 }
 
@@ -6703,7 +6813,12 @@ body.text-sm .input-group-text {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .card-purple.card-outline-tabs > .card-header a.active {
+=======
+.card-purple.card-outline-tabs > .card-header a.active,
+.card-purple.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #6f42c1;
 }
 
@@ -6774,7 +6889,12 @@ body.text-sm .input-group-text {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .card-pink.card-outline-tabs > .card-header a.active {
+=======
+.card-pink.card-outline-tabs > .card-header a.active,
+.card-pink.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #e83e8c;
 }
 
@@ -6845,7 +6965,12 @@ body.text-sm .input-group-text {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .card-red.card-outline-tabs > .card-header a.active {
+=======
+.card-red.card-outline-tabs > .card-header a.active,
+.card-red.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #dc3545;
 }
 
@@ -6916,7 +7041,12 @@ body.text-sm .input-group-text {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .card-orange.card-outline-tabs > .card-header a.active {
+=======
+.card-orange.card-outline-tabs > .card-header a.active,
+.card-orange.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #fd7e14;
 }
 
@@ -6987,7 +7117,12 @@ body.text-sm .input-group-text {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .card-yellow.card-outline-tabs > .card-header a.active {
+=======
+.card-yellow.card-outline-tabs > .card-header a.active,
+.card-yellow.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #ffc107;
 }
 
@@ -7058,7 +7193,12 @@ body.text-sm .input-group-text {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .card-green.card-outline-tabs > .card-header a.active {
+=======
+.card-green.card-outline-tabs > .card-header a.active,
+.card-green.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #28a745;
 }
 
@@ -7129,7 +7269,12 @@ body.text-sm .input-group-text {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .card-teal.card-outline-tabs > .card-header a.active {
+=======
+.card-teal.card-outline-tabs > .card-header a.active,
+.card-teal.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #20c997;
 }
 
@@ -7200,7 +7345,12 @@ body.text-sm .input-group-text {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .card-cyan.card-outline-tabs > .card-header a.active {
+=======
+.card-cyan.card-outline-tabs > .card-header a.active,
+.card-cyan.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #17a2b8;
 }
 
@@ -7271,7 +7421,12 @@ body.text-sm .input-group-text {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .card-white.card-outline-tabs > .card-header a.active {
+=======
+.card-white.card-outline-tabs > .card-header a.active,
+.card-white.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #fff;
 }
 
@@ -7342,7 +7497,12 @@ body.text-sm .input-group-text {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .card-gray.card-outline-tabs > .card-header a.active {
+=======
+.card-gray.card-outline-tabs > .card-header a.active,
+.card-gray.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #6c757d;
 }
 
@@ -7413,7 +7573,12 @@ body.text-sm .input-group-text {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .card-gray-dark.card-outline-tabs > .card-header a.active {
+=======
+.card-gray-dark.card-outline-tabs > .card-header a.active,
+.card-gray-dark.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #343a40;
 }
 
@@ -7510,12 +7675,20 @@ body.text-sm .input-group-text {
   display: none;
 }
 
+<<<<<<< HEAD
 .card .nav.flex-column > li {
+=======
+.card .nav.flex-column:not(.nav-sidebar) > li {
+>>>>>>> danhmuc_list
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
   margin: 0;
 }
 
+<<<<<<< HEAD
 .card .nav.flex-column > li:last-of-type {
+=======
+.card .nav.flex-column:not(.nav-sidebar) > li:last-of-type {
+>>>>>>> danhmuc_list
   border-bottom: 0;
 }
 
@@ -7978,7 +8151,12 @@ html.maximized-card {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .dark-mode .card-primary.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-primary.card-outline-tabs > .card-header a.active,
+.dark-mode .card-primary.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #3f6791;
 }
 
@@ -8049,7 +8227,12 @@ html.maximized-card {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .dark-mode .card-secondary.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-secondary.card-outline-tabs > .card-header a.active,
+.dark-mode .card-secondary.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #6c757d;
 }
 
@@ -8120,7 +8303,12 @@ html.maximized-card {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .dark-mode .card-success.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-success.card-outline-tabs > .card-header a.active,
+.dark-mode .card-success.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #00bc8c;
 }
 
@@ -8191,7 +8379,12 @@ html.maximized-card {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .dark-mode .card-info.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-info.card-outline-tabs > .card-header a.active,
+.dark-mode .card-info.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #3498db;
 }
 
@@ -8262,7 +8455,12 @@ html.maximized-card {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .dark-mode .card-warning.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-warning.card-outline-tabs > .card-header a.active,
+.dark-mode .card-warning.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #f39c12;
 }
 
@@ -8333,7 +8531,12 @@ html.maximized-card {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .dark-mode .card-danger.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-danger.card-outline-tabs > .card-header a.active,
+.dark-mode .card-danger.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #e74c3c;
 }
 
@@ -8404,7 +8607,12 @@ html.maximized-card {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .dark-mode .card-light.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-light.card-outline-tabs > .card-header a.active,
+.dark-mode .card-light.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #f8f9fa;
 }
 
@@ -8475,7 +8683,12 @@ html.maximized-card {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .dark-mode .card-dark.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-dark.card-outline-tabs > .card-header a.active,
+.dark-mode .card-dark.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #343a40;
 }
 
@@ -8546,7 +8759,12 @@ html.maximized-card {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .dark-mode .card-lightblue.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-lightblue.card-outline-tabs > .card-header a.active,
+.dark-mode .card-lightblue.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #86bad8;
 }
 
@@ -8617,7 +8835,12 @@ html.maximized-card {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .dark-mode .card-navy.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-navy.card-outline-tabs > .card-header a.active,
+.dark-mode .card-navy.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #002c59;
 }
 
@@ -8688,7 +8911,12 @@ html.maximized-card {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .dark-mode .card-olive.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-olive.card-outline-tabs > .card-header a.active,
+.dark-mode .card-olive.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #74c8a3;
 }
 
@@ -8759,7 +8987,12 @@ html.maximized-card {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .dark-mode .card-lime.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-lime.card-outline-tabs > .card-header a.active,
+.dark-mode .card-lime.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #67ffa9;
 }
 
@@ -8830,7 +9063,12 @@ html.maximized-card {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .dark-mode .card-fuchsia.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-fuchsia.card-outline-tabs > .card-header a.active,
+.dark-mode .card-fuchsia.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #f672d8;
 }
 
@@ -8901,7 +9139,12 @@ html.maximized-card {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .dark-mode .card-maroon.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-maroon.card-outline-tabs > .card-header a.active,
+.dark-mode .card-maroon.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #ed6c9b;
 }
 
@@ -8972,7 +9215,12 @@ html.maximized-card {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .dark-mode .card-blue.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-blue.card-outline-tabs > .card-header a.active,
+.dark-mode .card-blue.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #3f6791;
 }
 
@@ -9043,7 +9291,12 @@ html.maximized-card {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .dark-mode .card-indigo.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-indigo.card-outline-tabs > .card-header a.active,
+.dark-mode .card-indigo.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #6610f2;
 }
 
@@ -9114,7 +9367,12 @@ html.maximized-card {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .dark-mode .card-purple.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-purple.card-outline-tabs > .card-header a.active,
+.dark-mode .card-purple.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #6f42c1;
 }
 
@@ -9185,7 +9443,12 @@ html.maximized-card {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .dark-mode .card-pink.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-pink.card-outline-tabs > .card-header a.active,
+.dark-mode .card-pink.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #e83e8c;
 }
 
@@ -9256,7 +9519,12 @@ html.maximized-card {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .dark-mode .card-red.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-red.card-outline-tabs > .card-header a.active,
+.dark-mode .card-red.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #e74c3c;
 }
 
@@ -9327,7 +9595,12 @@ html.maximized-card {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .dark-mode .card-orange.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-orange.card-outline-tabs > .card-header a.active,
+.dark-mode .card-orange.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #fd7e14;
 }
 
@@ -9398,7 +9671,12 @@ html.maximized-card {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .dark-mode .card-yellow.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-yellow.card-outline-tabs > .card-header a.active,
+.dark-mode .card-yellow.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #f39c12;
 }
 
@@ -9469,7 +9747,12 @@ html.maximized-card {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .dark-mode .card-green.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-green.card-outline-tabs > .card-header a.active,
+.dark-mode .card-green.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #00bc8c;
 }
 
@@ -9540,7 +9823,12 @@ html.maximized-card {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .dark-mode .card-teal.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-teal.card-outline-tabs > .card-header a.active,
+.dark-mode .card-teal.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #20c997;
 }
 
@@ -9611,7 +9899,12 @@ html.maximized-card {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .dark-mode .card-cyan.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-cyan.card-outline-tabs > .card-header a.active,
+.dark-mode .card-cyan.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #3498db;
 }
 
@@ -9682,7 +9975,12 @@ html.maximized-card {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .dark-mode .card-white.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-white.card-outline-tabs > .card-header a.active,
+.dark-mode .card-white.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #fff;
 }
 
@@ -9753,7 +10051,12 @@ html.maximized-card {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .dark-mode .card-gray.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-gray.card-outline-tabs > .card-header a.active,
+.dark-mode .card-gray.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #6c757d;
 }
 
@@ -9824,7 +10127,12 @@ html.maximized-card {
   border-top: 3px solid #dee2e6;
 }
 
+<<<<<<< HEAD
 .dark-mode .card-gray-dark.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-gray-dark.card-outline-tabs > .card-header a.active,
+.dark-mode .card-gray-dark.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
   border-top: 3px solid #343a40;
 }
 
@@ -9892,8 +10200,17 @@ html.maximized-card {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+<<<<<<< HEAD
 .dark-mode .card.card-outline-tabs .card-header a:hover {
   border-color: #6c757d;
+=======
+.dark-mode .card.card-outline-tabs {
+  border-top: 0;
+}
+
+.dark-mode .card.card-outline-tabs .card-header a:hover {
+  border-top-color: #6c757d;
+>>>>>>> danhmuc_list
   border-bottom-color: transparent;
 }
 
@@ -10028,7 +10345,10 @@ html.maximized-card {
 }
 
 .modal-dialog .overlay {
+<<<<<<< HEAD
   display: -webkit-flex;
+=======
+>>>>>>> danhmuc_list
   display: -ms-flexbox;
   display: flex;
   position: absolute;
@@ -10038,10 +10358,15 @@ html.maximized-card {
   right: 0;
   margin: -1px;
   z-index: 1052;
+<<<<<<< HEAD
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-align-items: center;
+=======
+  -ms-flex-pack: center;
+  justify-content: center;
+>>>>>>> danhmuc_list
   -ms-flex-align: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.7);
@@ -10862,6 +11187,24 @@ html.maximized-card {
   color: #2b2b2b;
 }
 
+<<<<<<< HEAD
+=======
+.btn-default.disabled, .btn-default:disabled {
+  color: #444;
+  background-color: #f8f9fa;
+}
+
+.btn-outline-light {
+  color: #bdc6d0;
+  border-color: #bdc6d0;
+}
+
+.btn-outline-light.disabled, .btn-outline-light:disabled {
+  color: #bdc6d0;
+  border-color: #bdc6d0;
+}
+
+>>>>>>> danhmuc_list
 .btn-app {
   border-radius: 3px;
   background-color: #f8f9fa;
@@ -11212,40 +11555,70 @@ html.maximized-card {
 
 .dark-mode .btn-dark {
   color: #fff;
+<<<<<<< HEAD
   background-color: #343a40;
   border-color: #343a40;
+=======
+  background-color: #292d32;
+  border-color: #4b545c;
+>>>>>>> danhmuc_list
   box-shadow: none;
 }
 
 .dark-mode .btn-dark:hover {
   color: #fff;
+<<<<<<< HEAD
   background-color: #23272b;
   border-color: #1d2124;
+=======
+  background-color: #171a1d;
+  border-color: #343a40;
+>>>>>>> danhmuc_list
 }
 
 .dark-mode .btn-dark:focus, .dark-mode .btn-dark.focus {
   color: #fff;
+<<<<<<< HEAD
   background-color: #23272b;
   border-color: #1d2124;
   box-shadow: 0 0 0 0 rgba(82, 88, 93, 0.5);
+=======
+  background-color: #171a1d;
+  border-color: #343a40;
+  box-shadow: 0 0 0 0 rgba(102, 109, 117, 0.5);
+>>>>>>> danhmuc_list
 }
 
 .dark-mode .btn-dark.disabled, .dark-mode .btn-dark:disabled {
   color: #fff;
+<<<<<<< HEAD
   background-color: #343a40;
   border-color: #343a40;
+=======
+  background-color: #292d32;
+  border-color: #4b545c;
+>>>>>>> danhmuc_list
 }
 
 .dark-mode .btn-dark:not(:disabled):not(.disabled):active, .dark-mode .btn-dark:not(:disabled):not(.disabled).active,
 .show > .dark-mode .btn-dark.dropdown-toggle {
   color: #fff;
+<<<<<<< HEAD
   background-color: #1d2124;
   border-color: #171a1d;
+=======
+  background-color: #121416;
+  border-color: #2e3439;
+>>>>>>> danhmuc_list
 }
 
 .dark-mode .btn-dark:not(:disabled):not(.disabled):active:focus, .dark-mode .btn-dark:not(:disabled):not(.disabled).active:focus,
 .show > .dark-mode .btn-dark.dropdown-toggle:focus {
+<<<<<<< HEAD
   box-shadow: 0 0 0 0 rgba(82, 88, 93, 0.5);
+=======
+  box-shadow: 0 0 0 0 rgba(102, 109, 117, 0.5);
+>>>>>>> danhmuc_list
 }
 
 .dark-mode .btn-outline-primary {
@@ -11473,12 +11846,18 @@ html.maximized-card {
 }
 
 .dark-mode .btn-outline-dark {
+<<<<<<< HEAD
   color: #343a40;
   border-color: #343a40;
+=======
+  color: #060708;
+  border-color: #060708;
+>>>>>>> danhmuc_list
 }
 
 .dark-mode .btn-outline-dark:hover {
   color: #fff;
+<<<<<<< HEAD
   background-color: #343a40;
   border-color: #343a40;
 }
@@ -11489,19 +11868,40 @@ html.maximized-card {
 
 .dark-mode .btn-outline-dark.disabled, .dark-mode .btn-outline-dark:disabled {
   color: #343a40;
+=======
+  background-color: #060708;
+  border-color: #060708;
+}
+
+.dark-mode .btn-outline-dark:focus, .dark-mode .btn-outline-dark.focus {
+  box-shadow: 0 0 0 0 rgba(6, 7, 8, 0.5);
+}
+
+.dark-mode .btn-outline-dark.disabled, .dark-mode .btn-outline-dark:disabled {
+  color: #060708;
+>>>>>>> danhmuc_list
   background-color: transparent;
 }
 
 .dark-mode .btn-outline-dark:not(:disabled):not(.disabled):active, .dark-mode .btn-outline-dark:not(:disabled):not(.disabled).active,
 .show > .dark-mode .btn-outline-dark.dropdown-toggle {
   color: #fff;
+<<<<<<< HEAD
   background-color: #343a40;
   border-color: #343a40;
+=======
+  background-color: #060708;
+  border-color: #060708;
+>>>>>>> danhmuc_list
 }
 
 .dark-mode .btn-outline-dark:not(:disabled):not(.disabled):active:focus, .dark-mode .btn-outline-dark:not(:disabled):not(.disabled).active:focus,
 .show > .dark-mode .btn-outline-dark.dropdown-toggle:focus {
+<<<<<<< HEAD
   box-shadow: 0 0 0 0 rgba(52, 58, 64, 0.5);
+=======
+  box-shadow: 0 0 0 0 rgba(6, 7, 8, 0.5);
+>>>>>>> danhmuc_list
 }
 
 .callout {
@@ -11970,12 +12370,40 @@ html.maximized-card {
   transition: transform 0.3s linear, -webkit-transform 0.3s linear;
 }
 
+<<<<<<< HEAD
 [data-widget="expandable-table"][aria-expanded="true"] td i.expandable-table-caret[class*="right"] {
+=======
+[data-widget="expandable-table"][aria-expanded="true"] i.expandable-table-caret[class*="right"] {
+>>>>>>> danhmuc_list
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
+<<<<<<< HEAD
 [data-widget="expandable-table"][aria-expanded="true"] td i.expandable-table-caret[class*="left"] {
+=======
+[data-widget="expandable-table"][aria-expanded="true"] i.expandable-table-caret[class*="left"] {
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+[aria-expanded="true"] {
+  cursor: pointer;
+}
+
+[aria-expanded="true"] i.expandable-table-caret {
+  transition: -webkit-transform 0.3s linear;
+  transition: transform 0.3s linear;
+  transition: transform 0.3s linear, -webkit-transform 0.3s linear;
+}
+
+[aria-expanded="true"] [data-widget="expandable-table"] i.expandable-table-caret[class*="right"] {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+[aria-expanded="true"] [data-widget="expandable-table"] i.expandable-table-caret[class*="left"] {
+>>>>>>> danhmuc_list
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }

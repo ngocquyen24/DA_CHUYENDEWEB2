@@ -31,6 +31,7 @@ return [
     | Supported: "smtp", "sendmail", "mailgun", "ses",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     |            "postmark", "log", "array", "failover"
 =======
     |            "postmark", "log", "array"
@@ -38,6 +39,9 @@ return [
 =======
     |            "postmark", "log", "array", "failover"
 >>>>>>> Login_Register
+=======
+    |            "postmark", "log", "array", "failover"
+>>>>>>> danhmuc_list
     |
     */
 
@@ -50,7 +54,11 @@ return [
             'username' => env('MAIL_USERNAME'),
             'password' => env('MAIL_PASSWORD'),
             'timeout' => null,
+<<<<<<< HEAD
             'auth_mode' => null,
+=======
+            'local_domain' => env('MAIL_EHLO_DOMAIN'),
+>>>>>>> danhmuc_list
         ],
 
         'ses' => [
@@ -59,14 +67,27 @@ return [
 
         'mailgun' => [
             'transport' => 'mailgun',
+<<<<<<< HEAD
+=======
+            // 'client' => [
+            //     'timeout' => 5,
+            // ],
+>>>>>>> danhmuc_list
         ],
 
         'postmark' => [
             'transport' => 'postmark',
+<<<<<<< HEAD
+=======
+            // 'client' => [
+            //     'timeout' => 5,
+            // ],
+>>>>>>> danhmuc_list
         ],
 
         'sendmail' => [
             'transport' => 'sendmail',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             'path' => env('MAIL_SENDMAIL_PATH', '/usr/sbin/sendmail -t -i'),
@@ -76,6 +97,9 @@ return [
 =======
             'path' => env('MAIL_SENDMAIL_PATH', '/usr/sbin/sendmail -t -i'),
 >>>>>>> Login_Register
+=======
+            'path' => env('MAIL_SENDMAIL_PATH', '/usr/sbin/sendmail -bs -i'),
+>>>>>>> danhmuc_list
         ],
 
         'log' => [
@@ -88,8 +112,11 @@ return [
         ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Login_Register
+=======
+>>>>>>> danhmuc_list
 
         'failover' => [
             'transport' => 'failover',
@@ -99,10 +126,13 @@ return [
             ],
         ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> origin/them_slide
 =======
 >>>>>>> Login_Register
+=======
+>>>>>>> danhmuc_list
     ],
 
     /*

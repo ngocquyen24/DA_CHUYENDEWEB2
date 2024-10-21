@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 
 use Illuminate\Support\Facades\Route;
 <<<<<<< HEAD
@@ -6,6 +7,19 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\ProductController;
 =======
 >>>>>>> Login_Register
+=======
+namespace Illuminate\Session\Middleware;
+
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Admin\Users\LoginController;
+use App\Http\Controllers\Admin\MainController;
+use App\Http\Controllers\Admin\MenuController;
+use App\Http\Controllers\Admin\ProductController;
+use App\Http\Controllers\Admin\SliderController;
+
+
+
+>>>>>>> danhmuc_list
 
 /*
 |--------------------------------------------------------------------------
@@ -13,14 +27,20 @@ use App\Http\Controllers\Admin\ProductController;
 |--------------------------------------------------------------------------
 |
 | Here is where you can register web routes for your application. These
+<<<<<<< HEAD
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
+=======
+| routes are loaded by the RouteServiceProvider and all of them will
+| be assigned to the "web" middleware group. Make something great!
+>>>>>>> danhmuc_list
 |
 */
 
 Route::get('/', function () {
     return view('welcome');
 });
+<<<<<<< HEAD
 <<<<<<< HEAD
 
   #Product
@@ -49,6 +69,18 @@ Route::get('signout', [LoginController::class, 'signOut'])->name('signout');
 
 Route::middleware(['auth'])->group(function () {
 
+=======
+
+Route::get('admin/users/login',[LoginController::class, 'index'])->name('login');
+Route::post('admin/users/login/store',[LoginController::class, 'store']);
+
+
+
+// Route::get('admin/main',[MainController::class,'index'])->name('admin')->middleware('auth');
+
+
+Route::middleware(['auth'])->group(function () {
+>>>>>>> danhmuc_list
     Route::prefix('admin')->group(function () {
 
         Route::get('/', [MainController::class, 'index'])->name('admin');
@@ -58,11 +90,16 @@ Route::middleware(['auth'])->group(function () {
         Route::prefix('menus')->group(function () {
             Route::get('add', [MenuController::class, 'create']);
             Route::post('add', [MenuController::class, 'store']);
+<<<<<<< HEAD
+=======
+
+>>>>>>> danhmuc_list
             Route::get('list', [MenuController::class, 'index']);
             Route::get('edit/{menu}', [MenuController::class, 'show']);
             Route::post('edit/{menu}', [MenuController::class, 'update']);
             Route::DELETE('destroy', [MenuController::class, 'destroy']);
         });
+<<<<<<< HEAD
 
         #Product
         Route::prefix('products')->group(function () {
@@ -119,3 +156,11 @@ Route::get('admin/users/get-password/{customer}/{token}',[LoginController::class
 >>>>>>> origin/them_slide
 =======
 >>>>>>> Login_Register
+=======
+    });
+});
+
+
+
+
+>>>>>>> danhmuc_list

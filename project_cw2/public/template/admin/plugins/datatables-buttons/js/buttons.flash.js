@@ -1,6 +1,10 @@
 /*!
  * Flash export buttons for Buttons and DataTables.
+<<<<<<< HEAD
  * 2015-2017 SpryMedia Ltd - datatables.net/license
+=======
+ * 2015 SpryMedia Ltd - datatables.net/license
+>>>>>>> danhmuc_list
  *
  * ZeroClipbaord - MIT license
  * Copyright (c) 2012 Joseph Huckaby
@@ -492,6 +496,38 @@ var _glue = function ( flash, node )
 };
 
 /**
+<<<<<<< HEAD
+=======
+ * Get the file name for an exported file.
+ *
+ * @param {object}  config       Button configuration
+ * @param {boolean} incExtension Include the file name extension
+ */
+var _filename = function ( config, incExtension )
+{
+	// Backwards compatibility
+	var filename = config.filename === '*' && config.title !== '*' && config.title !== undefined ?
+		config.title :
+		config.filename;
+
+	if ( typeof filename === 'function' ) {
+		filename = filename();
+	}
+
+	if ( filename.indexOf( '*' ) !== -1 ) {
+		filename = $.trim( filename.replace( '*', $('title').text() ) );
+	}
+
+	// Strip characters which the OS will object to
+	filename = filename.replace(/[^a-zA-Z0-9_\u00A1-\uFFFF\.,\-_ !\(\)]/g, "");
+
+	return incExtension === undefined || incExtension === true ?
+		filename+config.extension :
+		filename;
+};
+
+/**
+>>>>>>> danhmuc_list
  * Get the sheet name for Excel exports.
  *
  * @param {object}  config       Button configuration
@@ -508,6 +544,27 @@ var _sheetname = function ( config )
 };
 
 /**
+<<<<<<< HEAD
+=======
+ * Get the title for an exported file.
+ *
+ * @param {object}  config  Button configuration
+ */
+var _title = function ( config )
+{
+	var title = config.title;
+
+	if ( typeof title === 'function' ) {
+		title = title();
+	}
+
+	return title.indexOf( '*' ) !== -1 ?
+		title.replace( '*', $('title').text() || 'Exported data' ) :
+		title;
+};
+
+/**
+>>>>>>> danhmuc_list
  * Set the flash text. This has to be broken up into chunks as the Javascript /
  * Flash bridge has a size limit. There is no indication in the Flash
  * documentation what this is, and it probably depends upon the browser.
@@ -629,10 +686,13 @@ var flashButton = {
 
 	title: '*',
 
+<<<<<<< HEAD
 	messageTop: '*',
 
 	messageBottom: '*',
 
+=======
+>>>>>>> danhmuc_list
 	filename: '*',
 
 	extension: '.csv',
@@ -680,6 +740,7 @@ function _createNode( doc, nodeName, opts ){
 			$(tempNode).attr( opts.attr );
 		}
 
+<<<<<<< HEAD
 		if ( opts.children ) {
 			$.each( opts.children, function ( key, value ) {
 				tempNode.appendChild( value );
@@ -687,6 +748,15 @@ function _createNode( doc, nodeName, opts ){
 		}
 
 		if ( opts.text !== null && opts.text !== undefined ) {
+=======
+		if( opts.children ) {
+			$.each( opts.children, function ( key, value ) {
+				tempNode.appendChild( value );
+			});
+		}
+
+		if( opts.text ) {
+>>>>>>> danhmuc_list
 			tempNode.appendChild( doc.createTextNode( opts.text ) );
 		}
 	}
@@ -871,7 +941,10 @@ var excelStrings = {
 		'<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'+
 		'<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="x14ac" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac">'+
 			'<sheetData/>'+
+<<<<<<< HEAD
 			'<mergeCells count="0"/>'+
+=======
+>>>>>>> danhmuc_list
 		'</worksheet>',
 
 	"xl/styles.xml":
@@ -915,9 +988,13 @@ var excelStrings = {
 				'<fill>'+
 					'<patternFill patternType="none" />'+
 				'</fill>'+
+<<<<<<< HEAD
 				'<fill>'+ // Excel appears to use this as a dotted background regardless of values but
 					'<patternFill patternType="none" />'+ // to be valid to the schema, use a patternFill
 				'</fill>'+
+=======
+				'<fill/>'+ // Excel appears to use this as a dotted background regardless of values
+>>>>>>> danhmuc_list
 				'<fill>'+
 					'<patternFill patternType="solid">'+
 						'<fgColor rgb="FFD9D9D9" />'+
@@ -1080,7 +1157,11 @@ var _excelSpecials = [
  */
 
 // Set the default SWF path
+<<<<<<< HEAD
 DataTable.Buttons.swfPath = '//cdn.datatables.net/buttons/'+DataTable.Buttons.version+'/swf/flashExport.swf';
+=======
+DataTable.Buttons.swfPath = '//cdn.datatables.net/buttons/1.2.4/swf/flashExport.swf';
+>>>>>>> danhmuc_list
 
 // Method to allow Flash buttons to be resized when made visible - as they are
 // of zero height and width if initialised hidden
@@ -1114,6 +1195,7 @@ DataTable.ext.buttons.copyFlash = $.extend( {}, flashButton, {
 		this.processing( true );
 
 		var flash = config._flash;
+<<<<<<< HEAD
 		var exportData = _exportData( dt, config );
 		var info = dt.buttons.exportInfo( config );
 		var newline = _newLine(config);
@@ -1134,6 +1216,12 @@ DataTable.ext.buttons.copyFlash = $.extend( {}, flashButton, {
 		if ( config.customize ) {
 			output = config.customize( output, config, dt );
 		}
+=======
+		var data = _exportData( dt, config );
+		var output = config.customize ?
+			config.customize( data.str, config ) :
+			data.str;
+>>>>>>> danhmuc_list
 
 		flash.setAction( 'copy' );
 		_setText( flash, output );
@@ -1167,6 +1255,7 @@ DataTable.ext.buttons.csvFlash = $.extend( {}, flashButton, {
 		// Set the text
 		var flash = config._flash;
 		var data = _exportData( dt, config );
+<<<<<<< HEAD
 		var info = dt.buttons.exportInfo( config );
 		var output = config.customize ?
 			config.customize( data.str, config, dt ) :
@@ -1174,6 +1263,14 @@ DataTable.ext.buttons.csvFlash = $.extend( {}, flashButton, {
 
 		flash.setAction( 'csv' );
 		flash.setFileName( info.filename );
+=======
+		var output = config.customize ?
+			config.customize( data.str, config ) :
+			data.str;
+
+		flash.setAction( 'csv' );
+		flash.setFileName( _filename( config ) );
+>>>>>>> danhmuc_list
 		_setText( flash, output );
 	},
 
@@ -1227,6 +1324,7 @@ DataTable.ext.buttons.excelFlash = $.extend( {}, flashButton, {
 
 				// For null, undefined of blank cell, continue so it doesn't create the _createNode
 				if ( row[i] === null || row[i] === undefined || row[i] === '' ) {
+<<<<<<< HEAD
 					if ( config.createEmptyCells === true ) {
 						row[i] = '';
 					}
@@ -1238,6 +1336,12 @@ DataTable.ext.buttons.excelFlash = $.extend( {}, flashButton, {
 				row[i] = typeof row[i].trim === 'function'
 					? row[i].trim()
 					: row[i];
+=======
+					continue;
+				}
+
+				row[i] = $.trim( row[i] );
+>>>>>>> danhmuc_list
 
 				// Special number formatting options
 				for ( var j=0, jen=_excelSpecials.length ; j<jen ; j++ ) {
@@ -1322,6 +1426,7 @@ DataTable.ext.buttons.excelFlash = $.extend( {}, flashButton, {
 			config.customizeData( data );
 		}
 
+<<<<<<< HEAD
 		var mergeCells = function ( row, colspan ) {
 			var mergeCells = $('mergeCells', rels);
 
@@ -1350,6 +1455,11 @@ DataTable.ext.buttons.excelFlash = $.extend( {}, flashButton, {
 		if ( config.header ) {
 			addRow( data.header, rowPos );
 			$('row:last c', rels).attr( 's', '2' ); // bold
+=======
+		if ( config.header ) {
+			addRow( data.header, rowPos );
+			$('row c', rels).attr( 's', '2' ); // bold
+>>>>>>> danhmuc_list
 		}
 
 		for ( var n=0, ie=data.body.length ; n<ie ; n++ ) {
@@ -1361,12 +1471,15 @@ DataTable.ext.buttons.excelFlash = $.extend( {}, flashButton, {
 			$('row:last c', rels).attr( 's', '2' ); // bold
 		}
 
+<<<<<<< HEAD
 		// Below the table
 		if ( exportInfo.messageBottom ) {
 			addRow( [exportInfo.messageBottom], rowPos );
 			mergeCells( rowPos, data.header.length-1 );
 		}
 
+=======
+>>>>>>> danhmuc_list
 		// Set column widths
 		var cols = _createNode( rels, 'cols' );
 		$('worksheet', rels).prepend( cols );
@@ -1384,22 +1497,34 @@ DataTable.ext.buttons.excelFlash = $.extend( {}, flashButton, {
 
 		// Let the developer customise the document if they want to
 		if ( config.customize ) {
+<<<<<<< HEAD
 			config.customize( xlsx, config, dt );
+=======
+			config.customize( xlsx );
+>>>>>>> danhmuc_list
 		}
 
 		_xlsxToStrings( xlsx );
 
 		flash.setAction( 'excel' );
+<<<<<<< HEAD
 		flash.setFileName( exportInfo.filename );
+=======
+		flash.setFileName( _filename( config ) );
+>>>>>>> danhmuc_list
 		flash.setSheetData( xlsx );
 		_setText( flash, '' );
 
 		this.processing( false );
 	},
 
+<<<<<<< HEAD
 	extension: '.xlsx',
 	
 	createEmptyCells: false
+=======
+	extension: '.xlsx'
+>>>>>>> danhmuc_list
 } );
 
 
@@ -1418,7 +1543,10 @@ DataTable.ext.buttons.pdfFlash = $.extend( {}, flashButton, {
 		// Set the text
 		var flash = config._flash;
 		var data = dt.buttons.exportData( config.exportOptions );
+<<<<<<< HEAD
 		var info = dt.buttons.exportInfo( config );
+=======
+>>>>>>> danhmuc_list
 		var totalWidth = dt.table().node().offsetWidth;
 
 		// Calculate the column width ratios for layout of the table in the PDF
@@ -1427,6 +1555,7 @@ DataTable.ext.buttons.pdfFlash = $.extend( {}, flashButton, {
 		} );
 
 		flash.setAction( 'pdf' );
+<<<<<<< HEAD
 		flash.setFileName( info.filename );
 
 		_setText( flash, JSON.stringify( {
@@ -1439,6 +1568,19 @@ DataTable.ext.buttons.pdfFlash = $.extend( {}, flashButton, {
 			header:        config.header ? data.header : null,
 			footer:        config.footer ? data.footer : null,
 			body:          data.body
+=======
+		flash.setFileName( _filename( config ) );
+
+		_setText( flash, JSON.stringify( {
+			title:       _filename(config, false),
+			message: typeof config.message == 'function' ? config.message(dt, button, config) : config.message,
+			colWidth:    ratios.toArray(),
+			orientation: config.orientation,
+			size:        config.pageSize,
+			header:      config.header ? data.header : null,
+			footer:      config.footer ? data.footer : null,
+			body:        data.body
+>>>>>>> danhmuc_list
 		} ) );
 
 		this.processing( false );
@@ -1450,6 +1592,11 @@ DataTable.ext.buttons.pdfFlash = $.extend( {}, flashButton, {
 
 	pageSize: 'A4',
 
+<<<<<<< HEAD
+=======
+	message: '',
+
+>>>>>>> danhmuc_list
 	newline: '\n'
 } );
 

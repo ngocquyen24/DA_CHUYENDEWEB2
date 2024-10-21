@@ -15,6 +15,7 @@ class Menu extends Model
         'description',
         'content',
         'active',
+<<<<<<< HEAD
         'thumb',
     ];
 
@@ -22,4 +23,10 @@ class Menu extends Model
     {
         return $this->hasMany(Product::class, 'menu_id', 'id');
     }
+=======
+   
+    ];
+
+
+>>>>>>> danhmuc_list
 }

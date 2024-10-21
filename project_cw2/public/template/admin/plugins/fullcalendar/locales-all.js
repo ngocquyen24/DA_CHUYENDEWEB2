@@ -222,6 +222,32 @@
   };
 
   var l10 = {
+<<<<<<< HEAD
+=======
+    code: 'bn',
+    week: {
+      dow: 0, // Sunday is the first day of the week.
+      doy: 6, // The week that contains Jan 1st is the first week of the year.
+    },
+    buttonText: {
+      prev: 'পেছনে',
+      next: 'সামনে',
+      today: 'আজ',
+      month: 'মাস',
+      week: 'সপ্তাহ',
+      day: 'দিন',
+      list: 'তালিকা',
+    },
+    weekText: 'সপ্তাহ',
+    allDayText: 'সারাদিন',
+    moreLinkText: function(n) {
+      return '+অন্যান্য ' + n
+    },
+    noEventsText: 'কোনো ইভেন্ট নেই',
+  };
+
+  var l11 = {
+>>>>>>> danhmuc_list
     code: 'bs',
     week: {
       dow: 1, // Monday is the first day of the week.
@@ -244,7 +270,11 @@
     noEventsText: 'Nema događaja za prikazivanje',
   };
 
+<<<<<<< HEAD
   var l11 = {
+=======
+  var l12 = {
+>>>>>>> danhmuc_list
     code: 'ca',
     week: {
       dow: 1, // Monday is the first day of the week.
@@ -265,7 +295,11 @@
     noEventsText: 'No hi ha esdeveniments per mostrar',
   };
 
+<<<<<<< HEAD
   var l12 = {
+=======
+  var l13 = {
+>>>>>>> danhmuc_list
     code: 'cs',
     week: {
       dow: 1, // Monday is the first day of the week.
@@ -288,7 +322,11 @@
     noEventsText: 'Žádné akce k zobrazení',
   };
 
+<<<<<<< HEAD
   var l13 = {
+=======
+  var l14 = {
+>>>>>>> danhmuc_list
     code: 'cy',
     week: {
       dow: 1, // Monday is the first day of the week.
@@ -310,7 +348,11 @@
     noEventsText: 'Dim digwyddiadau',
   };
 
+<<<<<<< HEAD
   var l14 = {
+=======
+  var l15 = {
+>>>>>>> danhmuc_list
     code: 'da',
     week: {
       dow: 1, // Monday is the first day of the week.
@@ -331,7 +373,16 @@
     noEventsText: 'Ingen arrangementer at vise',
   };
 
+<<<<<<< HEAD
   var l15 = {
+=======
+  function affix$1(buttonText) {
+    return (buttonText === 'Tag' || buttonText === 'Monat') ? 'r' :
+      buttonText === 'Jahr' ? 's' : ''
+  }
+
+  var l16 = {
+>>>>>>> danhmuc_list
     code: 'de-at',
     week: {
       dow: 1, // Monday is the first day of the week.
@@ -348,14 +399,58 @@
       list: 'Terminübersicht',
     },
     weekText: 'KW',
+<<<<<<< HEAD
+=======
+    weekTextLong: 'Woche',
+>>>>>>> danhmuc_list
     allDayText: 'Ganztägig',
     moreLinkText: function(n) {
       return '+ weitere ' + n
     },
     noEventsText: 'Keine Ereignisse anzuzeigen',
+<<<<<<< HEAD
   };
 
   var l16 = {
+=======
+    buttonHints: {
+      prev(buttonText) {
+        return `Vorherige${affix$1(buttonText)} ${buttonText}`
+      },
+      next(buttonText) {
+        return `Nächste${affix$1(buttonText)} ${buttonText}`
+      },
+      today(buttonText) {
+        // → Heute, Diese Woche, Dieser Monat, Dieses Jahr
+        if (buttonText === 'Tag') {
+          return 'Heute'
+        }
+        return `Diese${affix$1(buttonText)} ${buttonText}`
+      },
+    },
+    viewHint(buttonText) {
+      // → Tagesansicht, Wochenansicht, Monatsansicht, Jahresansicht
+      const glue = buttonText === 'Woche' ? 'n' : buttonText === 'Monat' ? 's' : 'es';
+      return buttonText + glue + 'ansicht'
+    },
+    navLinkHint: 'Gehe zu $0',
+    moreLinkHint(eventCnt) {
+      return 'Zeige ' + (eventCnt === 1 ?
+        'ein weiteres Ereignis' :
+        eventCnt + ' weitere Ereignisse')
+    },
+    closeHint: 'Schließen',
+    timeHint: 'Uhrzeit',
+    eventHint: 'Ereignis',
+  };
+
+  function affix(buttonText) {
+    return (buttonText === 'Tag' || buttonText === 'Monat') ? 'r' :
+      buttonText === 'Jahr' ? 's' : ''
+  }
+
+  var l17 = {
+>>>>>>> danhmuc_list
     code: 'de',
     week: {
       dow: 1, // Monday is the first day of the week.
@@ -372,14 +467,53 @@
       list: 'Terminübersicht',
     },
     weekText: 'KW',
+<<<<<<< HEAD
+=======
+    weekTextLong: 'Woche',
+>>>>>>> danhmuc_list
     allDayText: 'Ganztägig',
     moreLinkText: function(n) {
       return '+ weitere ' + n
     },
     noEventsText: 'Keine Ereignisse anzuzeigen',
+<<<<<<< HEAD
   };
 
   var l17 = {
+=======
+    buttonHints: {
+      prev(buttonText) {
+        return `Vorherige${affix(buttonText)} ${buttonText}`
+      },
+      next(buttonText) {
+        return `Nächste${affix(buttonText)} ${buttonText}`
+      },
+      today(buttonText) {
+        // → Heute, Diese Woche, Dieser Monat, Dieses Jahr
+        if (buttonText === 'Tag') {
+          return 'Heute'
+        }
+        return `Diese${affix(buttonText)} ${buttonText}`
+      },
+    },
+    viewHint(buttonText) {
+      // → Tagesansicht, Wochenansicht, Monatsansicht, Jahresansicht
+      const glue = buttonText === 'Woche' ? 'n' : buttonText === 'Monat' ? 's' : 'es';
+      return buttonText + glue + 'ansicht'
+    },
+    navLinkHint: 'Gehe zu $0',
+    moreLinkHint(eventCnt) {
+      return 'Zeige ' + (eventCnt === 1 ?
+        'ein weiteres Ereignis' :
+        eventCnt + ' weitere Ereignisse')
+    },
+    closeHint: 'Schließen',
+    timeHint: 'Uhrzeit',
+    eventHint: 'Ereignis',
+  };
+
+  var l18 = {
+>>>>>>> danhmuc_list
     code: 'el',
     week: {
       dow: 1, // Monday is the first day of the week.
@@ -400,31 +534,83 @@
     noEventsText: 'Δεν υπάρχουν γεγονότα προς εμφάνιση',
   };
 
+<<<<<<< HEAD
   var l18 = {
+=======
+  var l19 = {
+>>>>>>> danhmuc_list
     code: 'en-au',
     week: {
       dow: 1, // Monday is the first day of the week.
       doy: 4, // The week that contains Jan 4th is the first week of the year.
     },
+<<<<<<< HEAD
   };
 
   var l19 = {
+=======
+    buttonHints: {
+      prev: 'Previous $0',
+      next: 'Next $0',
+      today: 'This $0',
+    },
+    viewHint: '$0 view',
+    navLinkHint: 'Go to $0',
+    moreLinkHint(eventCnt) {
+      return `Show ${eventCnt} more event${eventCnt === 1 ? '' : 's'}`
+    },
+  };
+
+  var l20 = {
+>>>>>>> danhmuc_list
     code: 'en-gb',
     week: {
       dow: 1, // Monday is the first day of the week.
       doy: 4, // The week that contains Jan 4th is the first week of the year.
     },
+<<<<<<< HEAD
   };
 
   var l20 = {
+=======
+    buttonHints: {
+      prev: 'Previous $0',
+      next: 'Next $0',
+      today: 'This $0',
+    },
+    viewHint: '$0 view',
+    navLinkHint: 'Go to $0',
+    moreLinkHint(eventCnt) {
+      return `Show ${eventCnt} more event${eventCnt === 1 ? '' : 's'}`
+    },
+  };
+
+  var l21 = {
+>>>>>>> danhmuc_list
     code: 'en-nz',
     week: {
       dow: 1, // Monday is the first day of the week.
       doy: 4, // The week that contains Jan 4th is the first week of the year.
     },
+<<<<<<< HEAD
   };
 
   var l21 = {
+=======
+    buttonHints: {
+      prev: 'Previous $0',
+      next: 'Next $0',
+      today: 'This $0',
+    },
+    viewHint: '$0 view',
+    navLinkHint: 'Go to $0',
+    moreLinkHint(eventCnt) {
+      return `Show ${eventCnt} more event${eventCnt === 1 ? '' : 's'}`
+    },
+  };
+
+  var l22 = {
+>>>>>>> danhmuc_list
     code: 'eo',
     week: {
       dow: 1, // Monday is the first day of the week.
@@ -445,7 +631,11 @@
     noEventsText: 'Neniuj eventoj por montri',
   };
 
+<<<<<<< HEAD
   var l22 = {
+=======
+  var l23 = {
+>>>>>>> danhmuc_list
     code: 'es',
     week: {
       dow: 0, // Sunday is the first day of the week.
@@ -466,7 +656,11 @@
     noEventsText: 'No hay eventos para mostrar',
   };
 
+<<<<<<< HEAD
   var l23 = {
+=======
+  var l24 = {
+>>>>>>> danhmuc_list
     code: 'es',
     week: {
       dow: 1, // Monday is the first day of the week.
@@ -481,6 +675,7 @@
       day: 'Día',
       list: 'Agenda',
     },
+<<<<<<< HEAD
     weekText: 'Sm',
     allDayText: 'Todo el día',
     moreLinkText: 'más',
@@ -488,6 +683,34 @@
   };
 
   var l24 = {
+=======
+    buttonHints: {
+      prev: '$0 antes',
+      next: '$0 siguiente',
+      today(buttonText) {
+        return (buttonText === 'Día') ? 'Hoy' :
+          ((buttonText === 'Semana') ? 'Esta' : 'Este') + ' ' + buttonText.toLocaleLowerCase()
+      },
+    },
+    viewHint(buttonText) {
+      return 'Vista ' + (buttonText === 'Semana' ? 'de la' : 'del') + ' ' + buttonText.toLocaleLowerCase()
+    },
+    weekText: 'Sm',
+    weekTextLong: 'Semana',
+    allDayText: 'Todo el día',
+    moreLinkText: 'más',
+    moreLinkHint(eventCnt) {
+      return `Mostrar ${eventCnt} eventos más`
+    },
+    noEventsText: 'No hay eventos para mostrar',
+    navLinkHint: 'Ir al $0',
+    closeHint: 'Cerrar',
+    timeHint: 'La hora',
+    eventHint: 'Evento',
+  };
+
+  var l25 = {
+>>>>>>> danhmuc_list
     code: 'et',
     week: {
       dow: 1, // Monday is the first day of the week.
@@ -510,7 +733,11 @@
     noEventsText: 'Kuvamiseks puuduvad sündmused',
   };
 
+<<<<<<< HEAD
   var l25 = {
+=======
+  var l26 = {
+>>>>>>> danhmuc_list
     code: 'eu',
     week: {
       dow: 1, // Monday is the first day of the week.
@@ -531,7 +758,11 @@
     noEventsText: 'Ez dago ekitaldirik erakusteko',
   };
 
+<<<<<<< HEAD
   var l26 = {
+=======
+  var l27 = {
+>>>>>>> danhmuc_list
     code: 'fa',
     week: {
       dow: 6, // Saturday is the first day of the week.
@@ -555,7 +786,11 @@
     noEventsText: 'هیچ رویدادی به نمایش',
   };
 
+<<<<<<< HEAD
   var l27 = {
+=======
+  var l28 = {
+>>>>>>> danhmuc_list
     code: 'fi',
     week: {
       dow: 1, // Monday is the first day of the week.
@@ -576,7 +811,11 @@
     noEventsText: 'Ei näytettäviä tapahtumia',
   };
 
+<<<<<<< HEAD
   var l28 = {
+=======
+  var l29 = {
+>>>>>>> danhmuc_list
     code: 'fr',
     buttonText: {
       prev: 'Précédent',
@@ -594,7 +833,11 @@
     noEventsText: 'Aucun événement à afficher',
   };
 
+<<<<<<< HEAD
   var l29 = {
+=======
+  var l30 = {
+>>>>>>> danhmuc_list
     code: 'fr-ch',
     week: {
       dow: 1, // Monday is the first day of the week.
@@ -616,7 +859,11 @@
     noEventsText: 'Aucun événement à afficher',
   };
 
+<<<<<<< HEAD
   var l30 = {
+=======
+  var l31 = {
+>>>>>>> danhmuc_list
     code: 'fr',
     week: {
       dow: 1, // Monday is the first day of the week.
@@ -638,7 +885,11 @@
     noEventsText: 'Aucun événement à afficher',
   };
 
+<<<<<<< HEAD
   var l31 = {
+=======
+  var l32 = {
+>>>>>>> danhmuc_list
     code: 'gl',
     week: {
       dow: 1, // Monday is the first day of the week.
@@ -659,7 +910,11 @@
     noEventsText: 'Non hai eventos para amosar',
   };
 
+<<<<<<< HEAD
   var l32 = {
+=======
+  var l33 = {
+>>>>>>> danhmuc_list
     code: 'he',
     direction: 'rtl',
     buttonText: {
@@ -677,7 +932,11 @@
     weekText: 'שבוע',
   };
 
+<<<<<<< HEAD
   var l33 = {
+=======
+  var l34 = {
+>>>>>>> danhmuc_list
     code: 'hi',
     week: {
       dow: 0, // Sunday is the first day of the week.
@@ -700,7 +959,11 @@
     noEventsText: 'कोई घटनाओं को प्रदर्शित करने के लिए',
   };
 
+<<<<<<< HEAD
   var l34 = {
+=======
+  var l35 = {
+>>>>>>> danhmuc_list
     code: 'hr',
     week: {
       dow: 1, // Monday is the first day of the week.
@@ -723,7 +986,11 @@
     noEventsText: 'Nema događaja za prikaz',
   };
 
+<<<<<<< HEAD
   var l35 = {
+=======
+  var l36 = {
+>>>>>>> danhmuc_list
     code: 'hu',
     week: {
       dow: 1, // Monday is the first day of the week.
@@ -736,7 +1003,11 @@
       month: 'Hónap',
       week: 'Hét',
       day: 'Nap',
+<<<<<<< HEAD
       list: 'Napló',
+=======
+      list: 'Lista',
+>>>>>>> danhmuc_list
     },
     weekText: 'Hét',
     allDayText: 'Egész nap',
@@ -744,7 +1015,11 @@
     noEventsText: 'Nincs megjeleníthető esemény',
   };
 
+<<<<<<< HEAD
   var l36 = {
+=======
+  var l37 = {
+>>>>>>> danhmuc_list
     code: 'hy-am',
     week: {
       dow: 1, // Monday is the first day of the week.
@@ -767,7 +1042,11 @@
     noEventsText: 'Բացակայում է իրադարձությունը ցուցադրելու',
   };
 
+<<<<<<< HEAD
   var l37 = {
+=======
+  var l38 = {
+>>>>>>> danhmuc_list
     code: 'id',
     week: {
       dow: 1, // Monday is the first day of the week.
@@ -788,7 +1067,11 @@
     noEventsText: 'Tidak ada acara untuk ditampilkan',
   };
 
+<<<<<<< HEAD
   var l38 = {
+=======
+  var l39 = {
+>>>>>>> danhmuc_list
     code: 'is',
     week: {
       dow: 1, // Monday is the first day of the week.
@@ -809,7 +1092,11 @@
     noEventsText: 'Engir viðburðir til að sýna',
   };
 
+<<<<<<< HEAD
   var l39 = {
+=======
+  var l40 = {
+>>>>>>> danhmuc_list
     code: 'it',
     week: {
       dow: 1, // Monday is the first day of the week.
@@ -832,7 +1119,11 @@
     noEventsText: 'Non ci sono eventi da visualizzare',
   };
 
+<<<<<<< HEAD
   var l40 = {
+=======
+  var l41 = {
+>>>>>>> danhmuc_list
     code: 'ja',
     buttonText: {
       prev: '前',
@@ -851,7 +1142,11 @@
     noEventsText: '表示する予定はありません',
   };
 
+<<<<<<< HEAD
   var l41 = {
+=======
+  var l42 = {
+>>>>>>> danhmuc_list
     code: 'ka',
     week: {
       dow: 1,
@@ -874,7 +1169,11 @@
     noEventsText: 'ღონისძიებები არ არის',
   };
 
+<<<<<<< HEAD
   var l42 = {
+=======
+  var l43 = {
+>>>>>>> danhmuc_list
     code: 'kk',
     week: {
       dow: 1, // Monday is the first day of the week.
@@ -897,7 +1196,33 @@
     noEventsText: 'Көрсету үшін оқиғалар жоқ',
   };
 
+<<<<<<< HEAD
   var l43 = {
+=======
+  var l44 = {
+    code: 'km',
+    week: {
+      dow: 1, // Monday is the first day of the week.
+      doy: 4, // The week that contains Jan 4th is the first week of the year.
+    },
+    buttonText: {
+      prev: 'មុន',
+      next: 'បន្ទាប់',
+      today: 'ថ្ងៃនេះ',
+      year: 'ឆ្នាំ',
+      month: 'ខែ',
+      week: 'សប្តាហ៍',
+      day: 'ថ្ងៃ',
+      list: 'បញ្ជី',
+    },
+    weekText: 'សប្តាហ៍',
+    allDayText: 'ពេញមួយថ្ងៃ',
+    moreLinkText: 'ច្រើនទៀត',
+    noEventsText: 'គ្មានព្រឹត្តិការណ៍ត្រូវបង្ហាញ',
+  };
+
+  var l45 = {
+>>>>>>> danhmuc_list
     code: 'ko',
     buttonText: {
       prev: '이전달',
@@ -914,7 +1239,33 @@
     noEventsText: '일정이 없습니다',
   };
 
+<<<<<<< HEAD
   var l44 = {
+=======
+  var l46 = {
+    code: 'ku',
+    week: {
+      dow: 6, // Saturday is the first day of the week.
+      doy: 12, // The week that contains Jan 1st is the first week of the year.
+    },
+    direction: 'rtl',
+    buttonText: {
+      prev: 'پێشتر',
+      next: 'دواتر',
+      today: 'ئەمڕو',
+      month: 'مانگ',
+      week: 'هەفتە',
+      day: 'ڕۆژ',
+      list: 'بەرنامە',
+    },
+    weekText: 'هەفتە',
+    allDayText: 'هەموو ڕۆژەکە',
+    moreLinkText: 'زیاتر',
+    noEventsText: 'هیچ ڕووداوێك نیە',
+  };
+
+  var l47 = {
+>>>>>>> danhmuc_list
     code: 'lb',
     week: {
       dow: 1, // Monday is the first day of the week.
@@ -935,7 +1286,11 @@
     noEventsText: 'Nee Evenementer ze affichéieren',
   };
 
+<<<<<<< HEAD
   var l45 = {
+=======
+  var l48 = {
+>>>>>>> danhmuc_list
     code: 'lt',
     week: {
       dow: 1, // Monday is the first day of the week.
@@ -956,7 +1311,11 @@
     noEventsText: 'Nėra įvykių rodyti',
   };
 
+<<<<<<< HEAD
   var l46 = {
+=======
+  var l49 = {
+>>>>>>> danhmuc_list
     code: 'lv',
     week: {
       dow: 1, // Monday is the first day of the week.
@@ -979,7 +1338,11 @@
     noEventsText: 'Nav notikumu',
   };
 
+<<<<<<< HEAD
   var l47 = {
+=======
+  var l50 = {
+>>>>>>> danhmuc_list
     code: 'mk',
     buttonText: {
       prev: 'претходно',
@@ -998,7 +1361,11 @@
     noEventsText: 'Нема настани за прикажување',
   };
 
+<<<<<<< HEAD
   var l48 = {
+=======
+  var l51 = {
+>>>>>>> danhmuc_list
     code: 'ms',
     week: {
       dow: 1, // Monday is the first day of the week.
@@ -1021,7 +1388,11 @@
     noEventsText: 'Tiada peristiwa untuk dipaparkan',
   };
 
+<<<<<<< HEAD
   var l49 = {
+=======
+  var l52 = {
+>>>>>>> danhmuc_list
     code: 'nb',
     week: {
       dow: 1, // Monday is the first day of the week.
@@ -1037,12 +1408,32 @@
       list: 'Agenda',
     },
     weekText: 'Uke',
+<<<<<<< HEAD
     allDayText: 'Hele dagen',
     moreLinkText: 'til',
     noEventsText: 'Ingen hendelser å vise',
   };
 
   var l50 = {
+=======
+    weekTextLong: 'Uke',
+    allDayText: 'Hele dagen',
+    moreLinkText: 'til',
+    noEventsText: 'Ingen hendelser å vise',
+    buttonHints: {
+      prev: 'Forrige $0',
+      next: 'Neste $0',
+      today: 'Nåværende $0',
+    },
+    viewHint: '$0 visning',
+    navLinkHint: 'Gå til $0',
+    moreLinkHint(eventCnt) {
+      return `Vis ${eventCnt} flere hendelse${eventCnt === 1 ? '' : 'r'}`
+    },
+  };
+
+  var l53 = {
+>>>>>>> danhmuc_list
     code: 'ne', // code for nepal
     week: {
       dow: 7, // Sunday is the first day of the week.
@@ -1063,7 +1454,11 @@
     noEventsText: 'देखाउनको लागि कुनै घटनाहरू छैनन्',
   };
 
+<<<<<<< HEAD
   var l51 = {
+=======
+  var l54 = {
+>>>>>>> danhmuc_list
     code: 'nl',
     week: {
       dow: 1, // Monday is the first day of the week.
@@ -1084,7 +1479,11 @@
     noEventsText: 'Geen evenementen om te laten zien',
   };
 
+<<<<<<< HEAD
   var l52 = {
+=======
+  var l55 = {
+>>>>>>> danhmuc_list
     code: 'nn',
     week: {
       dow: 1, // Monday is the first day of the week.
@@ -1105,7 +1504,11 @@
     noEventsText: 'Ingen hendelser å vise',
   };
 
+<<<<<<< HEAD
   var l53 = {
+=======
+  var l56 = {
+>>>>>>> danhmuc_list
     code: 'pl',
     week: {
       dow: 1, // Monday is the first day of the week.
@@ -1126,7 +1529,11 @@
     noEventsText: 'Brak wydarzeń do wyświetlenia',
   };
 
+<<<<<<< HEAD
   var l54 = {
+=======
+  var l57 = {
+>>>>>>> danhmuc_list
     code: 'pt-br',
     buttonText: {
       prev: 'Anterior',
@@ -1145,7 +1552,11 @@
     noEventsText: 'Não há eventos para mostrar',
   };
 
+<<<<<<< HEAD
   var l55 = {
+=======
+  var l58 = {
+>>>>>>> danhmuc_list
     code: 'pt',
     week: {
       dow: 1, // Monday is the first day of the week.
@@ -1166,7 +1577,11 @@
     noEventsText: 'Não há eventos para mostrar',
   };
 
+<<<<<<< HEAD
   var l56 = {
+=======
+  var l59 = {
+>>>>>>> danhmuc_list
     code: 'ro',
     week: {
       dow: 1, // Monday is the first day of the week.
@@ -1189,7 +1604,11 @@
     noEventsText: 'Nu există evenimente de afișat',
   };
 
+<<<<<<< HEAD
   var l57 = {
+=======
+  var l60 = {
+>>>>>>> danhmuc_list
     code: 'ru',
     week: {
       dow: 1, // Monday is the first day of the week.
@@ -1212,7 +1631,32 @@
     noEventsText: 'Нет событий для отображения',
   };
 
+<<<<<<< HEAD
   var l58 = {
+=======
+  var l61 = {
+    code: 'si-lk',
+    week: {
+      dow: 1, // Monday is the first day of the week.
+      doy: 4, // The week that contains Jan 4th is the first week of the year.
+    },
+    buttonText: {
+      prev: 'පෙර',
+      next: 'පසු',
+      today: 'අද',
+      month: 'මාසය',
+      week: 'සතිය',
+      day: 'දවස',
+      list: 'ලැයිස්තුව',
+    },
+    weekText: 'සති',
+    allDayText: 'සියලු',
+    moreLinkText: 'තවත්',
+    noEventsText: 'මුකුත් නැත',
+  };
+
+  var l62 = {
+>>>>>>> danhmuc_list
     code: 'sk',
     week: {
       dow: 1, // Monday is the first day of the week.
@@ -1235,7 +1679,11 @@
     noEventsText: 'Žiadne akcie na zobrazenie',
   };
 
+<<<<<<< HEAD
   var l59 = {
+=======
+  var l63 = {
+>>>>>>> danhmuc_list
     code: 'sl',
     week: {
       dow: 1, // Monday is the first day of the week.
@@ -1256,7 +1704,28 @@
     noEventsText: 'Ni dogodkov za prikaz',
   };
 
+<<<<<<< HEAD
   var l60 = {
+=======
+  var l64 = {
+    code: 'sm',
+    buttonText: {
+      prev: 'Talu ai',
+      next: 'Mulimuli atu',
+      today: 'Aso nei',
+      month: 'Masina',
+      week: 'Vaiaso',
+      day: 'Aso',
+      list: 'Faasologa',
+    },
+    weekText: 'Vaiaso',
+    allDayText: 'Aso atoa',
+    moreLinkText: 'sili atu',
+    noEventsText: 'Leai ni mea na tutupu',
+  };
+
+  var l65 = {
+>>>>>>> danhmuc_list
     code: 'sq',
     week: {
       dow: 1, // Monday is the first day of the week.
@@ -1279,7 +1748,11 @@
     noEventsText: 'Nuk ka evente për të shfaqur',
   };
 
+<<<<<<< HEAD
   var l61 = {
+=======
+  var l66 = {
+>>>>>>> danhmuc_list
     code: 'sr-cyrl',
     week: {
       dow: 1, // Monday is the first day of the week.
@@ -1302,7 +1775,11 @@
     noEventsText: 'Нема догађаја за приказ',
   };
 
+<<<<<<< HEAD
   var l62 = {
+=======
+  var l67 = {
+>>>>>>> danhmuc_list
     code: 'sr',
     week: {
       dow: 1, // Monday is the first day of the week.
@@ -1325,7 +1802,11 @@
     noEventsText: 'Nеma događaja za prikaz',
   };
 
+<<<<<<< HEAD
   var l63 = {
+=======
+  var l68 = {
+>>>>>>> danhmuc_list
     code: 'sv',
     week: {
       dow: 1, // Monday is the first day of the week.
@@ -1340,6 +1821,7 @@
       day: 'Dag',
       list: 'Program',
     },
+<<<<<<< HEAD
     weekText: 'v.',
     allDayText: 'Heldag',
     moreLinkText: 'till',
@@ -1347,6 +1829,35 @@
   };
 
   var l64 = {
+=======
+    buttonHints: {
+      prev(buttonText) {
+        return `Föregående ${buttonText.toLocaleLowerCase()}`
+      },
+      next(buttonText) {
+        return `Nästa ${buttonText.toLocaleLowerCase()}`
+      },
+      today(buttonText) {
+        return (buttonText === 'Program' ? 'Detta' : 'Denna') + ' ' + buttonText.toLocaleLowerCase()
+      },
+    },
+    viewHint: '$0 vy',
+    navLinkHint: 'Gå till $0',
+    moreLinkHint(eventCnt) {
+      return `Visa ytterligare ${eventCnt} händelse${eventCnt === 1 ? '' : 'r'}`
+    },
+    weekText: 'v.',
+    weekTextLong: 'Vecka',
+    allDayText: 'Heldag',
+    moreLinkText: 'till',
+    noEventsText: 'Inga händelser att visa',
+    closeHint: 'Stäng',
+    timeHint: 'Klockan',
+    eventHint: 'Händelse',
+  };
+
+  var l69 = {
+>>>>>>> danhmuc_list
     code: 'ta-in',
     week: {
       dow: 1, // Monday is the first day of the week.
@@ -1357,19 +1868,34 @@
       next: 'அடுத்தது',
       today: 'இன்று',
       month: 'மாதம்',
+<<<<<<< HEAD
       week: 'சனிக்கிழமை',
       day: 'நாள்',
       list: 'தினசரி கதை',
     },
     weekText: 'வார',
+=======
+      week: 'வாரம்',
+      day: 'நாள்',
+      list: 'தினசரி அட்டவணை',
+    },
+    weekText: 'வாரம்',
+>>>>>>> danhmuc_list
     allDayText: 'நாள் முழுவதும்',
     moreLinkText: function(n) {
       return '+ மேலும் ' + n
     },
+<<<<<<< HEAD
     noEventsText: 'நிகழ்வைக் காட்டவில்லை',
   };
 
   var l65 = {
+=======
+    noEventsText: 'காண்பிக்க நிகழ்வுகள் இல்லை',
+  };
+
+  var l70 = {
+>>>>>>> danhmuc_list
     code: 'th',
     week: {
       dow: 1, // Monday is the first day of the week.
@@ -1393,7 +1919,11 @@
     noEventsText: 'ไม่มีกิจกรรมที่จะแสดง',
   };
 
+<<<<<<< HEAD
   var l66 = {
+=======
+  var l71 = {
+>>>>>>> danhmuc_list
     code: 'tr',
     week: {
       dow: 1, // Monday is the first day of the week.
@@ -1414,7 +1944,11 @@
     noEventsText: 'Gösterilecek etkinlik yok',
   };
 
+<<<<<<< HEAD
   var l67 = {
+=======
+  var l72 = {
+>>>>>>> danhmuc_list
     code: 'ug',
     buttonText: {
       month: 'ئاي',
@@ -1425,7 +1959,11 @@
     allDayText: 'پۈتۈن كۈن',
   };
 
+<<<<<<< HEAD
   var l68 = {
+=======
+  var l73 = {
+>>>>>>> danhmuc_list
     code: 'uk',
     week: {
       dow: 1, // Monday is the first day of the week.
@@ -1448,7 +1986,11 @@
     noEventsText: 'Немає подій для відображення',
   };
 
+<<<<<<< HEAD
   var l69 = {
+=======
+  var l74 = {
+>>>>>>> danhmuc_list
     code: 'uz',
     buttonText: {
       month: 'Oy',
@@ -1463,7 +2005,11 @@
     noEventsText: "Ko'rsatish uchun voqealar yo'q",
   };
 
+<<<<<<< HEAD
   var l70 = {
+=======
+  var l75 = {
+>>>>>>> danhmuc_list
     code: 'vi',
     week: {
       dow: 1, // Monday is the first day of the week.
@@ -1486,7 +2032,11 @@
     noEventsText: 'Không có sự kiện để hiển thị',
   };
 
+<<<<<<< HEAD
   var l71 = {
+=======
+  var l76 = {
+>>>>>>> danhmuc_list
     code: 'zh-cn',
     week: {
       // GB/T 7408-1994《数据元和交换格式·信息交换·日期和时间表示法》与ISO 8601:1988等效
@@ -1510,7 +2060,11 @@
     noEventsText: '没有事件显示',
   };
 
+<<<<<<< HEAD
   var l72 = {
+=======
+  var l77 = {
+>>>>>>> danhmuc_list
     code: 'zh-tw',
     buttonText: {
       prev: '上月',
@@ -1530,7 +2084,11 @@
   /* eslint max-len: off */
 
   var localesAll = [
+<<<<<<< HEAD
     l0, l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, l12, l13, l14, l15, l16, l17, l18, l19, l20, l21, l22, l23, l24, l25, l26, l27, l28, l29, l30, l31, l32, l33, l34, l35, l36, l37, l38, l39, l40, l41, l42, l43, l44, l45, l46, l47, l48, l49, l50, l51, l52, l53, l54, l55, l56, l57, l58, l59, l60, l61, l62, l63, l64, l65, l66, l67, l68, l69, l70, l71, l72, 
+=======
+    l0, l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, l12, l13, l14, l15, l16, l17, l18, l19, l20, l21, l22, l23, l24, l25, l26, l27, l28, l29, l30, l31, l32, l33, l34, l35, l36, l37, l38, l39, l40, l41, l42, l43, l44, l45, l46, l47, l48, l49, l50, l51, l52, l53, l54, l55, l56, l57, l58, l59, l60, l61, l62, l63, l64, l65, l66, l67, l68, l69, l70, l71, l72, l73, l74, l75, l76, l77, 
+>>>>>>> danhmuc_list
   ];
 
   return localesAll;

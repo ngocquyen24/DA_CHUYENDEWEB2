@@ -20,7 +20,11 @@
     var options = context.options;
     var lang = options.langInfo;
 
+<<<<<<< HEAD
     self.icon = '<i class="fa fa-object-group"/>';
+=======
+    self.icon = '<i class="fa fa-object-group"></i>';
+>>>>>>> danhmuc_list
 
     // add context menu button for dialog
     context.memo('button.databasic', function() {

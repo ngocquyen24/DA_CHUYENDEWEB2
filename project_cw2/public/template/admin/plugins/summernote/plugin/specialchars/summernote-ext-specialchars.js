@@ -26,7 +26,11 @@
         RIGHT: 39,
         ENTER: 13,
       };
+<<<<<<< HEAD
       var COLUMN_LENGTH = 15;
+=======
+      var COLUMN_LENGTH = 12;
+>>>>>>> danhmuc_list
       var COLUMN_WIDTH = 35;
 
       var currentColumn = 0;
@@ -65,7 +69,11 @@
 
       context.memo('button.specialchars', function() {
         return ui.button({
+<<<<<<< HEAD
           contents: '<i class="fa fa-font fa-flip-vertical">',
+=======
+          contents: '<i class="fa fa-font fa-flip-vertical"></i>',
+>>>>>>> danhmuc_list
           tooltip: lang.specialChar.specialChar,
           click: function() {
             self.show();
@@ -81,10 +89,17 @@
        * @return {jQuery}
        */
       this.makeSpecialCharSetTable = function() {
+<<<<<<< HEAD
         var $table = $('<table/>');
         $.each(specialCharDataSet, function(idx, text) {
           var $td = $('<td/>').addClass('note-specialchar-node');
           var $tr = (idx % COLUMN_LENGTH === 0) ? $('<tr/>') : $table.find('tr').last();
+=======
+        var $table = $('<table></table>');
+        $.each(specialCharDataSet, function(idx, text) {
+          var $td = $('<td></td>').addClass('note-specialchar-node');
+          var $tr = (idx % COLUMN_LENGTH === 0) ? $('<tr></tr>') : $table.find('tr').last();
+>>>>>>> danhmuc_list
 
           var $button = ui.button({
             callback: function($node) {
@@ -294,7 +309,11 @@
           ui.onDialogHidden(self.$dialog, function() {
             $specialCharNode.off('click');
 
+<<<<<<< HEAD
             self.$dialog.find('button').tooltip('destroy');
+=======
+            self.$dialog.find('button').tooltip();
+>>>>>>> danhmuc_list
 
             $(document).off('keydown', keyDownEventHandler);
 

@@ -2,12 +2,20 @@
 
 namespace App\Http\Controllers\Admin;
 
+<<<<<<< HEAD
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Menu\CreateFormRequest;
 use App\Http\Services\Menu\MenuService;
 use App\Models\Menu;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+=======
+use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
+use App\Http\Services\Menu\MenuService;
+use App\Http\Requests\Menu\CreateFormRequest;
+
+>>>>>>> danhmuc_list
 
 class MenuController extends Controller
 {
@@ -17,6 +25,7 @@ class MenuController extends Controller
     {
         $this->menuService = $menuService;
     }
+<<<<<<< HEAD
 
     public function create()
     {
@@ -69,6 +78,27 @@ class MenuController extends Controller
 
         return response()->json([
             'error' => true
+=======
+    public function create(){
+       return view('admin.menu.add' ,[
+           'title'=> 'them danh muc ',
+           'menus' => $this->menuService->getParent()
+       ]);
+    }
+    public function store(CreateFormRequest $request)
+    {
+        $this->menuService->create($request);
+        return redirect()->back();
+
+
+    }
+    public function index()
+    {
+        return view('admin.menu.list', [
+            'title'=>'danh sách danh mục mới nhất',
+            'menus'=>$this->menuService->getAll()
+
+>>>>>>> danhmuc_list
         ]);
     }
 }

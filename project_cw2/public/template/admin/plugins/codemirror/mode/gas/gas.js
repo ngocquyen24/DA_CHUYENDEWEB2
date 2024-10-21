@@ -144,18 +144,38 @@ CodeMirror.defineMode("gas", function(_config, parserConfig) {
   function x86(_parserConfig) {
     lineCommentStartSymbol = "#";
 
+<<<<<<< HEAD
+=======
+    registers.al  = "variable";
+    registers.ah  = "variable";
+>>>>>>> danhmuc_list
     registers.ax  = "variable";
     registers.eax = "variable-2";
     registers.rax = "variable-3";
 
+<<<<<<< HEAD
+=======
+    registers.bl  = "variable";
+    registers.bh  = "variable";
+>>>>>>> danhmuc_list
     registers.bx  = "variable";
     registers.ebx = "variable-2";
     registers.rbx = "variable-3";
 
+<<<<<<< HEAD
+=======
+    registers.cl  = "variable";
+    registers.ch  = "variable";
+>>>>>>> danhmuc_list
     registers.cx  = "variable";
     registers.ecx = "variable-2";
     registers.rcx = "variable-3";
 
+<<<<<<< HEAD
+=======
+    registers.dl  = "variable";
+    registers.dh  = "variable";
+>>>>>>> danhmuc_list
     registers.dx  = "variable";
     registers.edx = "variable-2";
     registers.rdx = "variable-3";

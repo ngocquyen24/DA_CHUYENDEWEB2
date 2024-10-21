@@ -40,18 +40,47 @@ var DataTable = $.fn.dataTable;
 $.extend( DataTable.ext.buttons, {
 	// A collection of column visibility buttons
 	colvis: function ( dt, conf ) {
+<<<<<<< HEAD
 		return {
 			extend: 'collection',
+=======
+		var node = null;
+		var buttonConf = {
+			extend: 'collection',
+			init: function ( dt, n ) {
+				node = n;
+			},
+>>>>>>> danhmuc_list
 			text: function ( dt ) {
 				return dt.i18n( 'buttons.colvis', 'Column visibility' );
 			},
 			className: 'buttons-colvis',
+<<<<<<< HEAD
+=======
+			closeButton: false,
+>>>>>>> danhmuc_list
 			buttons: [ {
 				extend: 'columnsToggle',
 				columns: conf.columns,
 				columnText: conf.columnText
 			} ]
 		};
+<<<<<<< HEAD
+=======
+
+		// Rebuild the collection with the new column structure if columns are reordered
+		dt.on( 'column-reorder.dt'+conf.namespace, function (e, settings, details) {
+			// console.log(node);
+			// console.log('node', dt.button(null, node).node());
+			dt.button(null, dt.button(null, node).node()).collectionRebuild([{
+				extend: 'columnsToggle',
+				columns: conf.columns,
+				columnText: conf.columnText
+			}]);
+		});
+
+		return buttonConf;
+>>>>>>> danhmuc_list
 	},
 
 	// Selected columns with individual buttons - toggle column visibility
@@ -117,6 +146,14 @@ $.extend( DataTable.ext.buttons, {
 					}
 				} )
 				.on( 'column-reorder.dt'+conf.namespace, function (e, settings, details) {
+<<<<<<< HEAD
+=======
+					// Button has been removed from the DOM
+					if ( conf.destroying ) {
+						return;
+					}
+
+>>>>>>> danhmuc_list
 					if ( dt.columns( conf.columns ).count() !== 1 ) {
 						return;
 					}

@@ -1,11 +1,21 @@
 @extends('admin.main')
 
 @section('head')
+<<<<<<< HEAD
     <script src="/ckeditor/ckeditor.js"></script>
 @endsection
 
 @section('content')
     <form action="" method="POST" enctype="multipart/form-data">
+=======
+    <!-- <script src="{{asset('ckeditor/ckeditor.js')}}"></script> -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/41.3.1/classic/ckeditor.js"></script>
+
+@endsection
+
+@section('content')
+    <form action="" method="POST">
+>>>>>>> danhmuc_list
         <div class="card-body">
 
             <div class="form-group">
@@ -18,8 +28,16 @@
                 <select class="form-control" name="parent_id">
                     <option value="0"> Danh Mục Cha </option>
                     @foreach($menus as $menu)
+<<<<<<< HEAD
                     <option value="{{ $menu->id }}">{{ $menu->name }}</option>
                     @endforeach
+=======
+                    <option value="{{$menu->id}}"> {{$menu->name}} </option>
+                    @endforeach
+
+                    <option value=""></option>
+
+>>>>>>> danhmuc_list
                 </select>
             </div>
 
@@ -30,6 +48,7 @@
 
             <div class="form-group">
                 <label>Mô Tả Chi Tiết</label>
+<<<<<<< HEAD
                 <textarea name="content" id="content" class="form-control"></textarea>
             </div>
 
@@ -41,6 +60,11 @@
                 </div>
                 <input type="hidden" name="thumb" id="thumb">
             </div>
+=======
+                <textarea id="editor" class="form-control"></textarea>
+            </div>
+
+>>>>>>> danhmuc_list
 
 
             <div class="form-group">
@@ -65,7 +89,17 @@
 @endsection
 
 @section('footer')
+<<<<<<< HEAD
     <script>
         CKEDITOR.replace('content');
     </script>
+=======
+<script>
+    ClassicEditor
+        .create( document.querySelector( '#editor' ) )
+        .catch( error => {
+            console.error( error );
+        } );
+</script>
+>>>>>>> danhmuc_list
 @endsection

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="flag-icon-css-uz" viewBox="0 0 512 512">
+=======
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="flag-icons-uz" viewBox="0 0 512 512">
+>>>>>>> danhmuc_list
   <path fill="#1eb53a" d="M0 341.3h512V512H0z"/>
   <path fill="#0099b5" d="M0 0h512v170.7H0z"/>
   <path fill="#ce1126" d="M0 163.8h512v184.4H0z"/>
@@ -10,6 +14,7 @@
       <g id="d">
         <g id="c">
           <g id="b">
+<<<<<<< HEAD
             <path id="a" d="M0-6L-1.9-.3 1 .7"/>
             <use width="100%" height="100%" transform="scale(-1 1)" xlink:href="#a"/>
           </g>
@@ -26,5 +31,23 @@
     <use width="100%" height="100%" x="-48" xlink:href="#d"/>
     <use width="100%" height="100%" x="-24" xlink:href="#d"/>
     <use width="100%" height="100%" x="-24" y="-24" xlink:href="#d"/>
+=======
+            <path id="a" d="M0-6-1.9-.3 1 .7"/>
+            <use xlink:href="#a" width="100%" height="100%" transform="scale(-1 1)"/>
+          </g>
+          <use xlink:href="#b" width="100%" height="100%" transform="rotate(72)"/>
+        </g>
+        <use xlink:href="#b" width="100%" height="100%" transform="rotate(-72)"/>
+        <use xlink:href="#c" width="100%" height="100%" transform="rotate(144)"/>
+      </g>
+      <use xlink:href="#d" width="100%" height="100%" y="-24"/>
+      <use xlink:href="#d" width="100%" height="100%" y="-48"/>
+    </g>
+    <use xlink:href="#e" width="100%" height="100%" x="24"/>
+    <use xlink:href="#e" width="100%" height="100%" x="48"/>
+    <use xlink:href="#d" width="100%" height="100%" x="-48"/>
+    <use xlink:href="#d" width="100%" height="100%" x="-24"/>
+    <use xlink:href="#d" width="100%" height="100%" x="-24" y="-24"/>
+>>>>>>> danhmuc_list
   </g>
 </svg>

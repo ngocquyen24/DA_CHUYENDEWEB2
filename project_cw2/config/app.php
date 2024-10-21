@@ -1,5 +1,10 @@
 <?php
 
+<<<<<<< HEAD
+=======
+use Illuminate\Support\Facades\Facade;
+
+>>>>>>> danhmuc_list
 return [
 
     /*
@@ -54,7 +59,11 @@ return [
 
     'url' => env('APP_URL', 'http://localhost'),
 
+<<<<<<< HEAD
     'asset_url' => env('ASSET_URL', null),
+=======
+    'asset_url' => env('ASSET_URL', '/'),
+>>>>>>> danhmuc_list
 
     /*
     |--------------------------------------------------------------------------
@@ -125,6 +134,27 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+<<<<<<< HEAD
+=======
+    | Maintenance Mode Driver
+    |--------------------------------------------------------------------------
+    |
+    | These configuration options determine the driver used to determine and
+    | manage Laravel's "maintenance mode" status. The "cache" driver will
+    | allow maintenance mode to be controlled across multiple machines.
+    |
+    | Supported drivers: "file", "cache"
+    |
+    */
+
+    'maintenance' => [
+        'driver' => 'file',
+        // 'store'  => 'redis',
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+>>>>>>> danhmuc_list
     | Autoloaded Service Providers
     |--------------------------------------------------------------------------
     |
@@ -171,12 +201,15 @@ return [
          */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         App\Providers\ViewServiceProvider::class,
 
 >>>>>>> origin/them_slide
 =======
 >>>>>>> Login_Register
+=======
+>>>>>>> danhmuc_list
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,
@@ -196,6 +229,7 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'aliases' => [
 
         'App' => Illuminate\Support\Facades\App::class,
@@ -253,5 +287,10 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
     ],
+=======
+    'aliases' => Facade::defaultAliases()->merge([
+        // 'ExampleClass' => App\Example\ExampleClass::class,
+    ])->toArray(),
+>>>>>>> danhmuc_list
 
 ];

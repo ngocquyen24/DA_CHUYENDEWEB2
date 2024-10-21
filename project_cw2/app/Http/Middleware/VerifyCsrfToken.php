@@ -11,6 +11,7 @@ class VerifyCsrfToken extends Middleware
      *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @var array<int, string>
 =======
      * @var array
@@ -18,6 +19,9 @@ class VerifyCsrfToken extends Middleware
 =======
      * @var array<int, string>
 >>>>>>> Login_Register
+=======
+     * @var array<int, string>
+>>>>>>> danhmuc_list
      */
     protected $except = [
         //

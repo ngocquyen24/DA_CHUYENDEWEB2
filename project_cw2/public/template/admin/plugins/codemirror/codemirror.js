@@ -1311,6 +1311,10 @@
       if (span.marker == marker) { return span }
     } }
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> danhmuc_list
   // Remove a span from an array, returning undefined if no spans are
   // left (we don't store arrays for lines without spans).
   function removeMarkedSpan(spans, span) {
@@ -1319,9 +1323,22 @@
       { if (spans[i] != span) { (r || (r = [])).push(spans[i]); } }
     return r
   }
+<<<<<<< HEAD
   // Add a span to a line.
   function addMarkedSpan(line, span) {
     line.markedSpans = line.markedSpans ? line.markedSpans.concat([span]) : [span];
+=======
+
+  // Add a span to a line.
+  function addMarkedSpan(line, span, op) {
+    var inThisOp = op && window.WeakSet && (op.markedSpans || (op.markedSpans = new WeakSet));
+    if (inThisOp && inThisOp.has(line.markedSpans)) {
+      line.markedSpans.push(span);
+    } else {
+      line.markedSpans = line.markedSpans ? line.markedSpans.concat([span]) : [span];
+      if (inThisOp) { inThisOp.add(line.markedSpans); }
+    }
+>>>>>>> danhmuc_list
     span.marker.attachLine(line);
   }
 
@@ -2186,6 +2203,10 @@
     if (cm.options.lineNumbers || markers) {
       var wrap$1 = ensureLineWrapped(lineView);
       var gutterWrap = lineView.gutter = elt("div", null, "CodeMirror-gutter-wrapper", ("left: " + (cm.options.fixedGutter ? dims.fixedPos : -dims.gutterTotalWidth) + "px"));
+<<<<<<< HEAD
+=======
+      gutterWrap.setAttribute("aria-hidden", "true");
+>>>>>>> danhmuc_list
       cm.display.input.setUneditable(gutterWrap);
       wrap$1.insertBefore(gutterWrap, lineView.text);
       if (lineView.line.gutterClass)
@@ -2342,12 +2363,23 @@
   function mapFromLineView(lineView, line, lineN) {
     if (lineView.line == line)
       { return {map: lineView.measure.map, cache: lineView.measure.cache} }
+<<<<<<< HEAD
     for (var i = 0; i < lineView.rest.length; i++)
       { if (lineView.rest[i] == line)
         { return {map: lineView.measure.maps[i], cache: lineView.measure.caches[i]} } }
     for (var i$1 = 0; i$1 < lineView.rest.length; i$1++)
       { if (lineNo(lineView.rest[i$1]) > lineN)
         { return {map: lineView.measure.maps[i$1], cache: lineView.measure.caches[i$1], before: true} } }
+=======
+    if (lineView.rest) {
+      for (var i = 0; i < lineView.rest.length; i++)
+        { if (lineView.rest[i] == line)
+          { return {map: lineView.measure.maps[i], cache: lineView.measure.caches[i]} } }
+      for (var i$1 = 0; i$1 < lineView.rest.length; i$1++)
+        { if (lineNo(lineView.rest[i$1]) > lineN)
+          { return {map: lineView.measure.maps[i$1], cache: lineView.measure.caches[i$1], before: true} } }
+    }
+>>>>>>> danhmuc_list
   }
 
   // Render a line into the hidden node display.externalMeasured. Used
@@ -2574,9 +2606,17 @@
   }
 
   function widgetTopHeight(lineObj) {
+<<<<<<< HEAD
     var height = 0;
     if (lineObj.widgets) { for (var i = 0; i < lineObj.widgets.length; ++i) { if (lineObj.widgets[i].above)
       { height += widgetHeight(lineObj.widgets[i]); } } }
+=======
+    var ref = visualLine(lineObj);
+    var widgets = ref.widgets;
+    var height = 0;
+    if (widgets) { for (var i = 0; i < widgets.length; ++i) { if (widgets[i].above)
+      { height += widgetHeight(widgets[i]); } } }
+>>>>>>> danhmuc_list
     return height
   }
 
@@ -3141,13 +3181,27 @@
     var curFragment = result.cursors = document.createDocumentFragment();
     var selFragment = result.selection = document.createDocumentFragment();
 
+<<<<<<< HEAD
+=======
+    var customCursor = cm.options.$customCursor;
+    if (customCursor) { primary = true; }
+>>>>>>> danhmuc_list
     for (var i = 0; i < doc.sel.ranges.length; i++) {
       if (!primary && i == doc.sel.primIndex) { continue }
       var range = doc.sel.ranges[i];
       if (range.from().line >= cm.display.viewTo || range.to().line < cm.display.viewFrom) { continue }
       var collapsed = range.empty();
+<<<<<<< HEAD
       if (collapsed || cm.options.showCursorWhenSelecting)
         { drawSelectionCursor(cm, range.head, curFragment); }
+=======
+      if (customCursor) {
+        var head = customCursor(cm, range);
+        if (head) { drawSelectionCursor(cm, head, curFragment); }
+      } else if (collapsed || cm.options.showCursorWhenSelecting) {
+        drawSelectionCursor(cm, range.head, curFragment);
+      }
+>>>>>>> danhmuc_list
       if (!collapsed)
         { drawSelectionRange(cm, range, selFragment); }
     }
@@ -3163,6 +3217,15 @@
     cursor.style.top = pos.top + "px";
     cursor.style.height = Math.max(0, pos.bottom - pos.top) * cm.options.cursorHeight + "px";
 
+<<<<<<< HEAD
+=======
+    if (/\bcm-fat-cursor\b/.test(cm.getWrapperElement().className)) {
+      var charPos = charCoords(cm, head, "div", null, null);
+      var width = charPos.right - charPos.left;
+      cursor.style.width = (width > 0 ? width : cm.defaultCharWidth()) + "px";
+    }
+
+>>>>>>> danhmuc_list
     if (pos.other) {
       // Secondary cursor, shown when on a 'jump' in bi-directional text
       var otherCursor = output.appendChild(elt("div", "\u00a0", "CodeMirror-cursor CodeMirror-secondarycursor"));
@@ -3335,10 +3398,20 @@
   function updateHeightsInViewport(cm) {
     var display = cm.display;
     var prevBottom = display.lineDiv.offsetTop;
+<<<<<<< HEAD
+=======
+    var viewTop = Math.max(0, display.scroller.getBoundingClientRect().top);
+    var oldHeight = display.lineDiv.getBoundingClientRect().top;
+    var mustScroll = 0;
+>>>>>>> danhmuc_list
     for (var i = 0; i < display.view.length; i++) {
       var cur = display.view[i], wrapping = cm.options.lineWrapping;
       var height = (void 0), width = 0;
       if (cur.hidden) { continue }
+<<<<<<< HEAD
+=======
+      oldHeight += cur.line.height;
+>>>>>>> danhmuc_list
       if (ie && ie_version < 8) {
         var bot = cur.node.offsetTop + cur.node.offsetHeight;
         height = bot - prevBottom;
@@ -3353,6 +3426,10 @@
       }
       var diff = cur.line.height - height;
       if (diff > .005 || diff < -.005) {
+<<<<<<< HEAD
+=======
+        if (oldHeight < viewTop) { mustScroll -= diff; }
+>>>>>>> danhmuc_list
         updateLineHeight(cur.line, height);
         updateWidgetHeight(cur.line);
         if (cur.rest) { for (var j = 0; j < cur.rest.length; j++)
@@ -3367,6 +3444,10 @@
         }
       }
     }
+<<<<<<< HEAD
+=======
+    if (Math.abs(mustScroll) > 2) { display.scroller.scrollTop += mustScroll; }
+>>>>>>> danhmuc_list
   }
 
   // Read and store the height of line widgets associated with the
@@ -3430,8 +3511,13 @@
       // Set pos and end to the cursor positions around the character pos sticks to
       // If pos.sticky == "before", that is around pos.ch - 1, otherwise around pos.ch
       // If pos == Pos(_, 0, "before"), pos and end are unchanged
+<<<<<<< HEAD
       pos = pos.ch ? Pos(pos.line, pos.sticky == "before" ? pos.ch - 1 : pos.ch, "after") : pos;
       end = pos.sticky == "before" ? Pos(pos.line, pos.ch + 1, "before") : pos;
+=======
+      end = pos.sticky == "before" ? Pos(pos.line, pos.ch + 1, "before") : pos;
+      pos = pos.ch ? Pos(pos.line, pos.sticky == "before" ? pos.ch - 1 : pos.ch, "after") : pos;
+>>>>>>> danhmuc_list
     }
     for (var limit = 0; limit < 5; limit++) {
       var changed = false;
@@ -3627,6 +3713,10 @@
       this.vert.firstChild.style.height =
         Math.max(0, measure.scrollHeight - measure.clientHeight + totalHeight) + "px";
     } else {
+<<<<<<< HEAD
+=======
+      this.vert.scrollTop = 0;
+>>>>>>> danhmuc_list
       this.vert.style.display = "";
       this.vert.firstChild.style.height = "0";
     }
@@ -3782,7 +3872,12 @@
       scrollLeft: null, scrollTop: null, // Intermediate scroll position, not pushed to DOM yet
       scrollToPos: null,       // Used to scroll to a specific position
       focus: false,
+<<<<<<< HEAD
       id: ++nextOpId           // Unique ID
+=======
+      id: ++nextOpId,          // Unique ID
+      markArrays: null         // Used by addMarkedSpan
+>>>>>>> danhmuc_list
     };
     pushOperation(cm.curOp);
   }
@@ -4235,6 +4330,11 @@
   function updateGutterSpace(display) {
     var width = display.gutters.offsetWidth;
     display.sizer.style.marginLeft = width + "px";
+<<<<<<< HEAD
+=======
+    // Send an event to consumers responding to changes in gutter width.
+    signalLater(display, "gutterChanged", display);
+>>>>>>> danhmuc_list
   }
 
   function setDocumentHeight(cm, measure) {
@@ -4374,6 +4474,13 @@
     // The element in which the editor lives.
     d.wrapper = elt("div", [d.scrollbarFiller, d.gutterFiller, d.scroller], "CodeMirror");
 
+<<<<<<< HEAD
+=======
+    // This attribute is respected by automatic translation systems such as Google Translate,
+    // and may also be respected by tools used by human translators.
+    d.wrapper.setAttribute('translate', 'no');
+
+>>>>>>> danhmuc_list
     // Work around IE7 z-index bug (not perfect, hence IE7 not really being supported)
     if (ie && ie_version < 8) { d.gutters.style.zIndex = -1; d.scroller.style.paddingRight = 0; }
     if (!webkit && !(gecko && mobile)) { d.scroller.draggable = true; }
@@ -4471,6 +4578,15 @@
 
   function onScrollWheel(cm, e) {
     var delta = wheelEventDelta(e), dx = delta.x, dy = delta.y;
+<<<<<<< HEAD
+=======
+    var pixelsPerUnit = wheelPixelsPerUnit;
+    if (e.deltaMode === 0) {
+      dx = e.deltaX;
+      dy = e.deltaY;
+      pixelsPerUnit = 1;
+    }
+>>>>>>> danhmuc_list
 
     var display = cm.display, scroll = display.scroller;
     // Quit if there's nothing to scroll here
@@ -4499,10 +4615,17 @@
     // estimated pixels/delta value, we just handle horizontal
     // scrolling entirely here. It'll be slightly off from native, but
     // better than glitching out.
+<<<<<<< HEAD
     if (dx && !gecko && !presto && wheelPixelsPerUnit != null) {
       if (dy && canScrollY)
         { updateScrollTop(cm, Math.max(0, scroll.scrollTop + dy * wheelPixelsPerUnit)); }
       setScrollLeft(cm, Math.max(0, scroll.scrollLeft + dx * wheelPixelsPerUnit));
+=======
+    if (dx && !gecko && !presto && pixelsPerUnit != null) {
+      if (dy && canScrollY)
+        { updateScrollTop(cm, Math.max(0, scroll.scrollTop + dy * pixelsPerUnit)); }
+      setScrollLeft(cm, Math.max(0, scroll.scrollLeft + dx * pixelsPerUnit));
+>>>>>>> danhmuc_list
       // Only prevent default scrolling if vertical scrolling is
       // actually possible. Otherwise, it causes vertical scroll
       // jitter on OSX trackpads when deltaX is small and deltaY
@@ -4515,15 +4638,24 @@
 
     // 'Project' the visible viewport to cover the area that is being
     // scrolled into view (if we know enough to estimate it).
+<<<<<<< HEAD
     if (dy && wheelPixelsPerUnit != null) {
       var pixels = dy * wheelPixelsPerUnit;
+=======
+    if (dy && pixelsPerUnit != null) {
+      var pixels = dy * pixelsPerUnit;
+>>>>>>> danhmuc_list
       var top = cm.doc.scrollTop, bot = top + display.wrapper.clientHeight;
       if (pixels < 0) { top = Math.max(0, top + pixels - 50); }
       else { bot = Math.min(cm.doc.height, bot + pixels + 50); }
       updateDisplaySimple(cm, {top: top, bottom: bot});
     }
 
+<<<<<<< HEAD
     if (wheelSamples < 20) {
+=======
+    if (wheelSamples < 20 && e.deltaMode !== 0) {
+>>>>>>> danhmuc_list
       if (display.wheelStartX == null) {
         display.wheelStartX = scroll.scrollLeft; display.wheelStartY = scroll.scrollTop;
         display.wheelDX = dx; display.wheelDY = dy;
@@ -4782,6 +4914,10 @@
     estimateLineHeights(cm);
     loadMode(cm);
     setDirectionClass(cm);
+<<<<<<< HEAD
+=======
+    cm.options.direction = doc.direction;
+>>>>>>> danhmuc_list
     if (!cm.options.lineWrapping) { findMaxLine(cm); }
     cm.options.mode = doc.modeOption;
     regChange(cm);
@@ -5958,7 +6094,11 @@
       if (marker.collapsed && curLine != from.line) { updateLineHeight(line, 0); }
       addMarkedSpan(line, new MarkedSpan(marker,
                                          curLine == from.line ? from.ch : null,
+<<<<<<< HEAD
                                          curLine == to.line ? to.ch : null));
+=======
+                                         curLine == to.line ? to.ch : null), doc.cm && doc.cm.curOp);
+>>>>>>> danhmuc_list
       ++curLine;
     });
     // lineIsHidden depends on the presence of the spans, so needs a second pass
@@ -6130,6 +6270,10 @@
     getRange: function(from, to, lineSep) {
       var lines = getBetween(this, clipPos(this, from), clipPos(this, to));
       if (lineSep === false) { return lines }
+<<<<<<< HEAD
+=======
+      if (lineSep === '') { return lines.join('') }
+>>>>>>> danhmuc_list
       return lines.join(lineSep || this.lineSeparator())
     },
 
@@ -6684,10 +6828,16 @@
   // Very basic readline/emacs-style bindings, which are standard on Mac.
   keyMap.emacsy = {
     "Ctrl-F": "goCharRight", "Ctrl-B": "goCharLeft", "Ctrl-P": "goLineUp", "Ctrl-N": "goLineDown",
+<<<<<<< HEAD
     "Alt-F": "goWordRight", "Alt-B": "goWordLeft", "Ctrl-A": "goLineStart", "Ctrl-E": "goLineEnd",
     "Ctrl-V": "goPageDown", "Shift-Ctrl-V": "goPageUp", "Ctrl-D": "delCharAfter", "Ctrl-H": "delCharBefore",
     "Alt-D": "delWordAfter", "Alt-Backspace": "delWordBefore", "Ctrl-K": "killLine", "Ctrl-T": "transposeChars",
     "Ctrl-O": "openLine"
+=======
+    "Ctrl-A": "goLineStart", "Ctrl-E": "goLineEnd", "Ctrl-V": "goPageDown", "Shift-Ctrl-V": "goPageUp",
+    "Ctrl-D": "delCharAfter", "Ctrl-H": "delCharBefore", "Alt-Backspace": "delWordBefore", "Ctrl-K": "killLine",
+    "Ctrl-T": "transposeChars", "Ctrl-O": "openLine"
+>>>>>>> danhmuc_list
   };
   keyMap.macDefault = {
     "Cmd-A": "selectAll", "Cmd-D": "deleteLine", "Cmd-Z": "undo", "Shift-Cmd-Z": "redo", "Cmd-Y": "redo",
@@ -8199,7 +8349,11 @@
   }
 
   function hiddenTextarea() {
+<<<<<<< HEAD
     var te = elt("textarea", null, null, "position: absolute; bottom: -1em; padding: 0; width: 1px; height: 1em; outline: none");
+=======
+    var te = elt("textarea", null, null, "position: absolute; bottom: -1em; padding: 0; width: 1px; height: 1em; min-height: 1em; outline: none");
+>>>>>>> danhmuc_list
     var div = elt("div", [te], null, "overflow: hidden; position: relative; width: 3px; height: 0px;");
     // The textarea is kept positioned near the cursor to prevent the
     // fact that it'll be scrolled into view on input from scrolling
@@ -8833,7 +8987,11 @@
       var kludge = hiddenTextarea(), te = kludge.firstChild;
       cm.display.lineSpace.insertBefore(kludge, cm.display.lineSpace.firstChild);
       te.value = lastCopied.text.join("\n");
+<<<<<<< HEAD
       var hadFocus = document.activeElement;
+=======
+      var hadFocus = activeElt();
+>>>>>>> danhmuc_list
       selectInput(te);
       setTimeout(function () {
         cm.display.lineSpace.removeChild(kludge);
@@ -8856,7 +9014,11 @@
 
   ContentEditableInput.prototype.prepareSelection = function () {
     var result = prepareSelection(this.cm, false);
+<<<<<<< HEAD
     result.focus = document.activeElement == this.div;
+=======
+    result.focus = activeElt() == this.div;
+>>>>>>> danhmuc_list
     return result
   };
 
@@ -8952,7 +9114,11 @@
 
   ContentEditableInput.prototype.focus = function () {
     if (this.cm.options.readOnly != "nocursor") {
+<<<<<<< HEAD
       if (!this.selectionInEditor() || document.activeElement != this.div)
+=======
+      if (!this.selectionInEditor() || activeElt() != this.div)
+>>>>>>> danhmuc_list
         { this.showSelection(this.prepareSelection(), true); }
       this.div.focus();
     }
@@ -8963,9 +9129,17 @@
   ContentEditableInput.prototype.supportsTouch = function () { return true };
 
   ContentEditableInput.prototype.receivedFocus = function () {
+<<<<<<< HEAD
     var input = this;
     if (this.selectionInEditor())
       { this.pollSelection(); }
+=======
+      var this$1 = this;
+
+    var input = this;
+    if (this.selectionInEditor())
+      { setTimeout(function () { return this$1.pollSelection(); }, 20); }
+>>>>>>> danhmuc_list
     else
       { runInOp(this.cm, function () { return input.cm.curOp.selectionChanged = true; }); }
 
@@ -9794,7 +9968,11 @@
 
   addLegacyProps(CodeMirror);
 
+<<<<<<< HEAD
   CodeMirror.version = "5.60.0";
+=======
+  CodeMirror.version = "5.65.1";
+>>>>>>> danhmuc_list
 
   return CodeMirror;
 

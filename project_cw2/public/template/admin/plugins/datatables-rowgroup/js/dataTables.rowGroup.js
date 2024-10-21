@@ -1,15 +1,28 @@
+<<<<<<< HEAD
 /*! RowGroup 1.1.2
  * ©2017-2020 SpryMedia Ltd - datatables.net/license
+=======
+/*! RowGroup 1.1.3
+ * ©2017-2021 SpryMedia Ltd - datatables.net/license
+>>>>>>> danhmuc_list
  */
 
 /**
  * @summary     RowGroup
  * @description RowGrouping for DataTables
+<<<<<<< HEAD
  * @version     1.1.2
  * @file        dataTables.rowGroup.js
  * @author      SpryMedia Ltd (www.sprymedia.co.uk)
  * @contact     datatables.net
  * @copyright   Copyright 2017-2020 SpryMedia Ltd.
+=======
+ * @version     1.1.3
+ * @file        dataTables.rowGroup.js
+ * @author      SpryMedia Ltd (www.sprymedia.co.uk)
+ * @contact     datatables.net
+ * @copyright   Copyright 2017-2021 SpryMedia Ltd.
+>>>>>>> danhmuc_list
  *
  * This source file is free software, available under the following license:
  *   MIT license - http://datatables.net/license/mit
@@ -230,7 +243,11 @@ $.extend( RowGroup.prototype, {
 	 * @private
 	 */
 	_group: function ( level, rows ) {
+<<<<<<< HEAD
 		var fns = $.isArray( this.c.dataSrc ) ? this.c.dataSrc : [ this.c.dataSrc ];
+=======
+		var fns = Array.isArray( this.c.dataSrc ) ? this.c.dataSrc : [ this.c.dataSrc ];
+>>>>>>> danhmuc_list
 		var fn = DataTable.ext.oApi._fnGetObjectDataFn( fns[ level ] );
 		var dt = this.s.dt;
 		var group, last;
@@ -413,7 +430,11 @@ RowGroup.defaults = {
 };
 
 
+<<<<<<< HEAD
 RowGroup.version = "1.1.2";
+=======
+RowGroup.version = "1.1.3";
+>>>>>>> danhmuc_list
 
 
 $.fn.dataTable.RowGroup = RowGroup;

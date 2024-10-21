@@ -1,11 +1,19 @@
+<<<<<<< HEAD
 /*! RowReorder 1.2.7
+=======
+/*! RowReorder 1.2.8
+>>>>>>> danhmuc_list
  * 2015-2020 SpryMedia Ltd - datatables.net/license
  */
 
 /**
  * @summary     RowReorder
  * @description Row reordering extension for DataTables
+<<<<<<< HEAD
  * @version     1.2.7
+=======
+ * @version     1.2.8
+>>>>>>> danhmuc_list
  * @file        dataTables.rowReorder.js
  * @author      SpryMedia Ltd (www.sprymedia.co.uk)
  * @contact     www.sprymedia.co.uk/contact
@@ -790,7 +798,11 @@ Api.register( 'rowReorder.disable()', function () {
  * @name RowReorder.version
  * @static
  */
+<<<<<<< HEAD
 RowReorder.version = '1.2.6';
+=======
+RowReorder.version = '1.2.8';
+>>>>>>> danhmuc_list
 
 
 $.fn.dataTable.RowReorder = RowReorder;

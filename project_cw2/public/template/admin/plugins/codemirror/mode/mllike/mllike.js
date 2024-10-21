@@ -60,7 +60,11 @@ CodeMirror.defineMode('mllike', function(_config, parserConfig) {
       }
     }
     if (ch === '(') {
+<<<<<<< HEAD
       if (stream.eat('*')) {
+=======
+      if (stream.match(/^\*(?!\))/)) {
+>>>>>>> danhmuc_list
         state.commentLevel++;
         state.tokenize = tokenComment;
         return state.tokenize(stream, state);

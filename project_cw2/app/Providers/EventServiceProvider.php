@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Event;
 class EventServiceProvider extends ServiceProvider
 {
     /**
+<<<<<<< HEAD
      * The event listener mappings for the application.
      *
 <<<<<<< HEAD
@@ -21,6 +22,11 @@ class EventServiceProvider extends ServiceProvider
 =======
      * @var array<class-string, array<int, class-string>>
 >>>>>>> Login_Register
+=======
+     * The event to listener mappings for the application.
+     *
+     * @var array<class-string, array<int, class-string>>
+>>>>>>> danhmuc_list
      */
     protected $listen = [
         Registered::class => [
@@ -30,6 +36,7 @@ class EventServiceProvider extends ServiceProvider
 
     /**
      * Register any events for your application.
+<<<<<<< HEAD
      *
      * @return void
      */
@@ -37,4 +44,19 @@ class EventServiceProvider extends ServiceProvider
     {
         //
     }
+=======
+     */
+    public function boot(): void
+    {
+        //
+    }
+
+    /**
+     * Determine if events and listeners should be automatically discovered.
+     */
+    public function shouldDiscoverEvents(): bool
+    {
+        return false;
+    }
+>>>>>>> danhmuc_list
 }

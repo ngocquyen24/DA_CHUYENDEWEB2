@@ -33,6 +33,7 @@ return [
     |
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     | Supported: "session"
 =======
     | Supported: "session", "token"
@@ -40,6 +41,9 @@ return [
 =======
     | Supported: "session"
 >>>>>>> Login_Register
+=======
+    | Supported: "session"
+>>>>>>> danhmuc_list
     |
     */
 
@@ -48,6 +52,7 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -60,6 +65,8 @@ return [
 >>>>>>> origin/them_slide
 =======
 >>>>>>> Login_Register
+=======
+>>>>>>> danhmuc_list
     ],
 
     /*
@@ -102,6 +109,7 @@ return [
     |
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     | The expire time is the number of minutes that each reset token will be
 =======
     | The expire time is the number of minutes that the reset token should be
@@ -112,12 +120,26 @@ return [
     | considered valid. This security feature keeps tokens short-lived so
     | they have less time to be guessed. You may change this as needed.
     |
+=======
+    | The expire time is the number of minutes that each reset token will be
+    | considered valid. This security feature keeps tokens short-lived so
+    | they have less time to be guessed. You may change this as needed.
+    |
+    | The throttle setting is the number of seconds a user must wait before
+    | generating more password reset tokens. This prevents the user from
+    | quickly generating a very large amount of password reset tokens.
+    |
+>>>>>>> danhmuc_list
     */
 
     'passwords' => [
         'users' => [
             'provider' => 'users',
+<<<<<<< HEAD
             'table' => 'password_resets',
+=======
+            'table' => 'password_reset_tokens',
+>>>>>>> danhmuc_list
             'expire' => 60,
             'throttle' => 60,
         ],

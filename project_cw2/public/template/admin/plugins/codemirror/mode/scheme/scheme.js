@@ -3,6 +3,10 @@
 
 /**
  * Author: Koh Zi Han, based on implementation by Koh Zi Chun
+<<<<<<< HEAD
+=======
+ * Improved by: Jakub T. Jankiewicz
+>>>>>>> danhmuc_list
  */
 
 (function(mod) {
@@ -17,7 +21,11 @@
 
 CodeMirror.defineMode("scheme", function () {
     var BUILTIN = "builtin", COMMENT = "comment", STRING = "string",
+<<<<<<< HEAD
         ATOM = "atom", NUMBER = "number", BRACKET = "bracket";
+=======
+        SYMBOL = "symbol", ATOM = "atom", NUMBER = "number", BRACKET = "bracket";
+>>>>>>> danhmuc_list
     var INDENT_WORD_SKIP = 2;
 
     function makeKeywords(str) {
@@ -67,6 +75,21 @@ CodeMirror.defineMode("scheme", function () {
         return stream.match(hexMatcher);
     }
 
+<<<<<<< HEAD
+=======
+    function processEscapedSequence(stream, options) {
+        var next, escaped = false;
+        while ((next = stream.next()) != null) {
+            if (next == options.token && !escaped) {
+
+                options.state.mode = false;
+                break;
+            }
+            escaped = !escaped && next == "\\";
+        }
+    }
+
+>>>>>>> danhmuc_list
     return {
         startState: function () {
             return {
@@ -92,6 +115,7 @@ CodeMirror.defineMode("scheme", function () {
 
             switch(state.mode){
                 case "string": // multi-line string parsing mode
+<<<<<<< HEAD
                     var next, escaped = false;
                     while ((next = stream.next()) != null) {
                         if (next == "\"" && !escaped) {
@@ -103,6 +127,21 @@ CodeMirror.defineMode("scheme", function () {
                     }
                     returnType = STRING; // continue on in scheme-string mode
                     break;
+=======
+                    processEscapedSequence(stream, {
+                        token: "\"",
+                        state: state
+                    });
+                    returnType = STRING; // continue on in scheme-string mode
+                    break;
+                case "symbol": // escape symbol
+                    processEscapedSequence(stream, {
+                        token: "|",
+                        state: state
+                    });
+                    returnType = SYMBOL; // continue on in scheme-symbol mode
+                    break;
+>>>>>>> danhmuc_list
                 case "comment": // comment parsing mode
                     var next, maybeEnd = false;
                     while ((next = stream.next()) != null) {
@@ -143,6 +182,12 @@ CodeMirror.defineMode("scheme", function () {
                             stream.eatWhile(/[\w_\-!$%&*+\.\/:<=>?@\^~]/);
                             returnType = ATOM;
                         }
+<<<<<<< HEAD
+=======
+                    } else if (ch == '|') {
+                        state.mode = "symbol";
+                        returnType = SYMBOL;
+>>>>>>> danhmuc_list
                     } else if (ch == '#') {
                         if (stream.eat("|")) {                    // Multi-line comment
                             state.mode = "comment"; // toggle to comment mode
@@ -255,6 +300,10 @@ CodeMirror.defineMode("scheme", function () {
             return state.indentStack.indent;
         },
 
+<<<<<<< HEAD
+=======
+        fold: "brace-paren",
+>>>>>>> danhmuc_list
         closeBrackets: {pairs: "()[]{}\"\""},
         lineComment: ";;"
     };

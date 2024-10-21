@@ -112,7 +112,11 @@ CodeMirror.defineMode("fortran", function() {
                      "c_short", "c_signed_char", "c_size_t", "character",
                      "complex", "double", "integer", "logical", "real"]);
   var isOperatorChar = /[+\-*&=<>\/\:]/;
+<<<<<<< HEAD
   var litOperator = new RegExp("(\.and\.|\.or\.|\.eq\.|\.lt\.|\.le\.|\.gt\.|\.ge\.|\.ne\.|\.not\.|\.eqv\.|\.neqv\.)", "i");
+=======
+  var litOperator = /^\.(and|or|eq|lt|le|gt|ge|ne|not|eqv|neqv)\./i;
+>>>>>>> danhmuc_list
 
   function tokenBase(stream, state) {
 

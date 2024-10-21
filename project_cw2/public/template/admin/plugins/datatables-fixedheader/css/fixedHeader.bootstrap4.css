@@ -5,10 +5,13 @@ table.dataTable.fixedHeader-locked {
   margin-bottom: 0 !important;
 }
 
+<<<<<<< HEAD
 table.dataTable.fixedHeader-floating {
   position: fixed !important;
 }
 
+=======
+>>>>>>> danhmuc_list
 table.dataTable.fixedHeader-locked {
   position: absolute !important;
 }
