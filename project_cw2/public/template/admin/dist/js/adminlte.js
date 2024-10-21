@@ -1,7 +1,12 @@
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  * AdminLTE v3.1.0 (https://adminlte.io)
  * Copyright 2014-2021 Colorlib <https://colorlib.com>
+=======
+ * AdminLTE v3.2.0 (https://adminlte.io)
+ * Copyright 2014-2022 Colorlib <https://colorlib.com>
+>>>>>>> danhmuc_list
 =======
  * AdminLTE v3.2.0 (https://adminlte.io)
  * Copyright 2014-2022 Colorlib <https://colorlib.com>
@@ -13,7 +18,11 @@
   typeof define === 'function' && define.amd ? define(['exports', 'jquery'], factory) :
   (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.adminlte = {}, global.jQuery));
 <<<<<<< HEAD
+<<<<<<< HEAD
 }(this, (function (exports, $) { 'use strict';
+=======
+})(this, (function (exports, $) { 'use strict';
+>>>>>>> danhmuc_list
 =======
 })(this, (function (exports, $) { 'use strict';
 >>>>>>> danhmuc_list
@@ -37,7 +46,11 @@
   var DATA_KEY$e = 'lte.cardrefresh';
   var EVENT_KEY$7 = "." + DATA_KEY$e;
 <<<<<<< HEAD
+<<<<<<< HEAD
   var JQUERY_NO_CONFLICT$e = $__default['default'].fn[NAME$e];
+=======
+  var JQUERY_NO_CONFLICT$e = $__default["default"].fn[NAME$e];
+>>>>>>> danhmuc_list
 =======
   var JQUERY_NO_CONFLICT$e = $__default["default"].fn[NAME$e];
 >>>>>>> danhmuc_list
@@ -56,6 +69,7 @@
     loadInContent: true,
     loadOnInit: true,
 <<<<<<< HEAD
+<<<<<<< HEAD
     responseType: '',
     overlayTemplate: '<div class="overlay"><i class="fas fa-2x fa-sync-alt fa-spin"></i></div>',
     onLoadStart: function onLoadStart() {},
@@ -63,6 +77,8 @@
       return response;
     }
 =======
+=======
+>>>>>>> danhmuc_list
     loadErrorTemplate: true,
     responseType: '',
     overlayTemplate: '<div class="overlay"><i class="fas fa-2x fa-sync-alt fa-spin"></i></div>',
@@ -72,6 +88,9 @@
       return response;
     },
     onLoadFail: function onLoadFail(_jqXHR, _textStatus, _errorThrown) {}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   };
 
@@ -80,8 +99,13 @@
       this._element = element;
       this._parent = element.parents(SELECTOR_CARD$1).first();
 <<<<<<< HEAD
+<<<<<<< HEAD
       this._settings = $__default['default'].extend({}, Default$c, settings);
       this._overlay = $__default['default'](this._settings.overlayTemplate);
+=======
+      this._settings = $__default["default"].extend({}, Default$c, settings);
+      this._overlay = $__default["default"](this._settings.overlayTemplate);
+>>>>>>> danhmuc_list
 =======
       this._settings = $__default["default"].extend({}, Default$c, settings);
       this._overlay = $__default["default"](this._settings.overlayTemplate);
@@ -104,6 +128,7 @@
       this._addOverlay();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       this._settings.onLoadStart.call($__default['default'](this));
 
       $__default['default'].get(this._settings.source, this._settings.params, function (response) {
@@ -111,12 +136,17 @@
           if (_this._settings.sourceSelector !== '') {
             response = $__default['default'](response).find(_this._settings.sourceSelector).html();
 =======
+=======
+>>>>>>> danhmuc_list
       this._settings.onLoadStart.call($__default["default"](this));
 
       $__default["default"].get(this._settings.source, this._settings.params, function (response) {
         if (_this._settings.loadInContent) {
           if (_this._settings.sourceSelector !== '') {
             response = $__default["default"](response).find(_this._settings.sourceSelector).html();
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
           }
 
@@ -124,12 +154,15 @@
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         _this._settings.onLoadDone.call($__default['default'](_this), response);
 
         _this._removeOverlay();
       }, this._settings.responseType !== '' && this._settings.responseType);
       $__default['default'](this._element).trigger($__default['default'].Event(EVENT_LOADED));
 =======
+=======
+>>>>>>> danhmuc_list
         _this._settings.onLoadDone.call($__default["default"](_this), response);
 
         _this._removeOverlay();
@@ -145,6 +178,9 @@
         _this._settings.onLoadFail.call($__default["default"](_this), jqXHR, textStatus, errorThrown);
       });
       $__default["default"](this._element).trigger($__default["default"].Event(EVENT_LOADED));
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     };
 
@@ -152,7 +188,11 @@
       this._parent.append(this._overlay);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'](this._element).trigger($__default['default'].Event(EVENT_OVERLAY_ADDED));
+=======
+      $__default["default"](this._element).trigger($__default["default"].Event(EVENT_OVERLAY_ADDED));
+>>>>>>> danhmuc_list
 =======
       $__default["default"](this._element).trigger($__default["default"].Event(EVENT_OVERLAY_ADDED));
 >>>>>>> danhmuc_list
@@ -162,7 +202,11 @@
       this._parent.find(this._overlay).remove();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'](this._element).trigger($__default['default'].Event(EVENT_OVERLAY_REMOVED));
+=======
+      $__default["default"](this._element).trigger($__default["default"].Event(EVENT_OVERLAY_REMOVED));
+>>>>>>> danhmuc_list
 =======
       $__default["default"](this._element).trigger($__default["default"].Event(EVENT_OVERLAY_REMOVED));
 >>>>>>> danhmuc_list
@@ -173,7 +217,11 @@
       var _this2 = this;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'](this).find(this._settings.trigger).on('click', function () {
+=======
+      $__default["default"](this).find(this._settings.trigger).on('click', function () {
+>>>>>>> danhmuc_list
 =======
       $__default["default"](this).find(this._settings.trigger).on('click', function () {
 >>>>>>> danhmuc_list
@@ -188,6 +236,7 @@
 
     CardRefresh._jQueryInterface = function _jQueryInterface(config) {
 <<<<<<< HEAD
+<<<<<<< HEAD
       var data = $__default['default'](this).data(DATA_KEY$e);
 
       var _options = $__default['default'].extend({}, Default$c, $__default['default'](this).data());
@@ -196,6 +245,8 @@
         data = new CardRefresh($__default['default'](this), _options);
         $__default['default'](this).data(DATA_KEY$e, typeof config === 'string' ? data : config);
 =======
+=======
+>>>>>>> danhmuc_list
       var data = $__default["default"](this).data(DATA_KEY$e);
 
       var _options = $__default["default"].extend({}, Default$c, $__default["default"](this).data());
@@ -203,6 +254,9 @@
       if (!data) {
         data = new CardRefresh($__default["default"](this), _options);
         $__default["default"](this).data(DATA_KEY$e, typeof config === 'string' ? data : config);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       }
 
@@ -210,7 +264,11 @@
         data[config]();
       } else {
 <<<<<<< HEAD
+<<<<<<< HEAD
         data._init($__default['default'](this));
+=======
+        data._init($__default["default"](this));
+>>>>>>> danhmuc_list
 =======
         data._init($__default["default"](this));
 >>>>>>> danhmuc_list
@@ -226,7 +284,11 @@
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   $__default['default'](document).on('click', SELECTOR_DATA_REFRESH, function (event) {
+=======
+  $__default["default"](document).on('click', SELECTOR_DATA_REFRESH, function (event) {
+>>>>>>> danhmuc_list
 =======
   $__default["default"](document).on('click', SELECTOR_DATA_REFRESH, function (event) {
 >>>>>>> danhmuc_list
@@ -235,17 +297,23 @@
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     CardRefresh._jQueryInterface.call($__default['default'](this), 'load');
   });
   $__default['default'](function () {
     $__default['default'](SELECTOR_DATA_REFRESH).each(function () {
       CardRefresh._jQueryInterface.call($__default['default'](this));
 =======
+=======
+>>>>>>> danhmuc_list
     CardRefresh._jQueryInterface.call($__default["default"](this), 'load');
   });
   $__default["default"](function () {
     $__default["default"](SELECTOR_DATA_REFRESH).each(function () {
       CardRefresh._jQueryInterface.call($__default["default"](this));
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     });
   });
@@ -255,17 +323,23 @@
    */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   $__default['default'].fn[NAME$e] = CardRefresh._jQueryInterface;
   $__default['default'].fn[NAME$e].Constructor = CardRefresh;
 
   $__default['default'].fn[NAME$e].noConflict = function () {
     $__default['default'].fn[NAME$e] = JQUERY_NO_CONFLICT$e;
 =======
+=======
+>>>>>>> danhmuc_list
   $__default["default"].fn[NAME$e] = CardRefresh._jQueryInterface;
   $__default["default"].fn[NAME$e].Constructor = CardRefresh;
 
   $__default["default"].fn[NAME$e].noConflict = function () {
     $__default["default"].fn[NAME$e] = JQUERY_NO_CONFLICT$e;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     return CardRefresh._jQueryInterface;
   };
@@ -285,7 +359,11 @@
   var DATA_KEY$d = 'lte.cardwidget';
   var EVENT_KEY$6 = "." + DATA_KEY$d;
 <<<<<<< HEAD
+<<<<<<< HEAD
   var JQUERY_NO_CONFLICT$d = $__default['default'].fn[NAME$d];
+=======
+  var JQUERY_NO_CONFLICT$d = $__default["default"].fn[NAME$d];
+>>>>>>> danhmuc_list
 =======
   var JQUERY_NO_CONFLICT$d = $__default["default"].fn[NAME$d];
 >>>>>>> danhmuc_list
@@ -328,7 +406,11 @@
       }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       this._settings = $__default['default'].extend({}, Default$b, settings);
+=======
+      this._settings = $__default["default"].extend({}, Default$b, settings);
+>>>>>>> danhmuc_list
 =======
       this._settings = $__default["default"].extend({}, Default$b, settings);
 >>>>>>> danhmuc_list
@@ -346,7 +428,11 @@
       this._parent.find("> " + SELECTOR_CARD_HEADER + " " + this._settings.collapseTrigger + " ." + this._settings.collapseIcon).addClass(this._settings.expandIcon).removeClass(this._settings.collapseIcon);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       this._element.trigger($__default['default'].Event(EVENT_COLLAPSED$4), this._parent);
+=======
+      this._element.trigger($__default["default"].Event(EVENT_COLLAPSED$4), this._parent);
+>>>>>>> danhmuc_list
 =======
       this._element.trigger($__default["default"].Event(EVENT_COLLAPSED$4), this._parent);
 >>>>>>> danhmuc_list
@@ -362,7 +448,11 @@
       this._parent.find("> " + SELECTOR_CARD_HEADER + " " + this._settings.collapseTrigger + " ." + this._settings.expandIcon).addClass(this._settings.collapseIcon).removeClass(this._settings.expandIcon);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       this._element.trigger($__default['default'].Event(EVENT_EXPANDED$3), this._parent);
+=======
+      this._element.trigger($__default["default"].Event(EVENT_EXPANDED$3), this._parent);
+>>>>>>> danhmuc_list
 =======
       this._element.trigger($__default["default"].Event(EVENT_EXPANDED$3), this._parent);
 >>>>>>> danhmuc_list
@@ -372,7 +462,11 @@
       this._parent.slideUp();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       this._element.trigger($__default['default'].Event(EVENT_REMOVED$1), this._parent);
+=======
+      this._element.trigger($__default["default"].Event(EVENT_REMOVED$1), this._parent);
+>>>>>>> danhmuc_list
 =======
       this._element.trigger($__default["default"].Event(EVENT_REMOVED$1), this._parent);
 >>>>>>> danhmuc_list
@@ -396,9 +490,15 @@
         transition: 'all .15s'
       }).delay(150).queue(function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
         var $element = $__default['default'](this);
         $element.addClass(CLASS_NAME_MAXIMIZED);
         $__default['default']('html').addClass(CLASS_NAME_MAXIMIZED);
+=======
+        var $element = $__default["default"](this);
+        $element.addClass(CLASS_NAME_MAXIMIZED);
+        $__default["default"]('html').addClass(CLASS_NAME_MAXIMIZED);
+>>>>>>> danhmuc_list
 =======
         var $element = $__default["default"](this);
         $element.addClass(CLASS_NAME_MAXIMIZED);
@@ -413,7 +513,11 @@
       });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       this._element.trigger($__default['default'].Event(EVENT_MAXIMIZED), this._parent);
+=======
+      this._element.trigger($__default["default"].Event(EVENT_MAXIMIZED), this._parent);
+>>>>>>> danhmuc_list
 =======
       this._element.trigger($__default["default"].Event(EVENT_MAXIMIZED), this._parent);
 >>>>>>> danhmuc_list
@@ -424,9 +528,15 @@
 
       this._parent.css('cssText', "height: " + this._parent[0].style.height + " !important; width: " + this._parent[0].style.width + " !important; transition: all .15s;").delay(10).queue(function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
         var $element = $__default['default'](this);
         $element.removeClass(CLASS_NAME_MAXIMIZED);
         $__default['default']('html').removeClass(CLASS_NAME_MAXIMIZED);
+=======
+        var $element = $__default["default"](this);
+        $element.removeClass(CLASS_NAME_MAXIMIZED);
+        $__default["default"]('html').removeClass(CLASS_NAME_MAXIMIZED);
+>>>>>>> danhmuc_list
 =======
         var $element = $__default["default"](this);
         $element.removeClass(CLASS_NAME_MAXIMIZED);
@@ -445,7 +555,11 @@
       });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       this._element.trigger($__default['default'].Event(EVENT_MINIMIZED), this._parent);
+=======
+      this._element.trigger($__default["default"].Event(EVENT_MINIMIZED), this._parent);
+>>>>>>> danhmuc_list
 =======
       this._element.trigger($__default["default"].Event(EVENT_MINIMIZED), this._parent);
 >>>>>>> danhmuc_list
@@ -466,6 +580,7 @@
 
       this._parent = card;
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'](this).find(this._settings.collapseTrigger).click(function () {
         _this3.toggle();
       });
@@ -474,6 +589,8 @@
       });
       $__default['default'](this).find(this._settings.removeTrigger).click(function () {
 =======
+=======
+>>>>>>> danhmuc_list
       $__default["default"](this).find(this._settings.collapseTrigger).click(function () {
         _this3.toggle();
       });
@@ -481,6 +598,9 @@
         _this3.toggleMaximize();
       });
       $__default["default"](this).find(this._settings.removeTrigger).click(function () {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         _this3.remove();
       });
@@ -488,6 +608,7 @@
     ;
 
     CardWidget._jQueryInterface = function _jQueryInterface(config) {
+<<<<<<< HEAD
 <<<<<<< HEAD
       var data = $__default['default'](this).data(DATA_KEY$d);
 
@@ -497,6 +618,8 @@
         data = new CardWidget($__default['default'](this), _options);
         $__default['default'](this).data(DATA_KEY$d, typeof config === 'string' ? data : config);
 =======
+=======
+>>>>>>> danhmuc_list
       var data = $__default["default"](this).data(DATA_KEY$d);
 
       var _options = $__default["default"].extend({}, Default$b, $__default["default"](this).data());
@@ -504,6 +627,9 @@
       if (!data) {
         data = new CardWidget($__default["default"](this), _options);
         $__default["default"](this).data(DATA_KEY$d, typeof config === 'string' ? data : config);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       }
 
@@ -511,7 +637,11 @@
         data[config]();
       } else if (typeof config === 'object') {
 <<<<<<< HEAD
+<<<<<<< HEAD
         data._init($__default['default'](this));
+=======
+        data._init($__default["default"](this));
+>>>>>>> danhmuc_list
 =======
         data._init($__default["default"](this));
 >>>>>>> danhmuc_list
@@ -527,7 +657,11 @@
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   $__default['default'](document).on('click', SELECTOR_DATA_COLLAPSE, function (event) {
+=======
+  $__default["default"](document).on('click', SELECTOR_DATA_COLLAPSE, function (event) {
+>>>>>>> danhmuc_list
 =======
   $__default["default"](document).on('click', SELECTOR_DATA_COLLAPSE, function (event) {
 >>>>>>> danhmuc_list
@@ -536,9 +670,15 @@
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     CardWidget._jQueryInterface.call($__default['default'](this), 'toggle');
   });
   $__default['default'](document).on('click', SELECTOR_DATA_REMOVE, function (event) {
+=======
+    CardWidget._jQueryInterface.call($__default["default"](this), 'toggle');
+  });
+  $__default["default"](document).on('click', SELECTOR_DATA_REMOVE, function (event) {
+>>>>>>> danhmuc_list
 =======
     CardWidget._jQueryInterface.call($__default["default"](this), 'toggle');
   });
@@ -549,9 +689,15 @@
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     CardWidget._jQueryInterface.call($__default['default'](this), 'remove');
   });
   $__default['default'](document).on('click', SELECTOR_DATA_MAXIMIZE, function (event) {
+=======
+    CardWidget._jQueryInterface.call($__default["default"](this), 'remove');
+  });
+  $__default["default"](document).on('click', SELECTOR_DATA_MAXIMIZE, function (event) {
+>>>>>>> danhmuc_list
 =======
     CardWidget._jQueryInterface.call($__default["default"](this), 'remove');
   });
@@ -562,7 +708,11 @@
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     CardWidget._jQueryInterface.call($__default['default'](this), 'toggleMaximize');
+=======
+    CardWidget._jQueryInterface.call($__default["default"](this), 'toggleMaximize');
+>>>>>>> danhmuc_list
 =======
     CardWidget._jQueryInterface.call($__default["default"](this), 'toggleMaximize');
 >>>>>>> danhmuc_list
@@ -573,17 +723,23 @@
    */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   $__default['default'].fn[NAME$d] = CardWidget._jQueryInterface;
   $__default['default'].fn[NAME$d].Constructor = CardWidget;
 
   $__default['default'].fn[NAME$d].noConflict = function () {
     $__default['default'].fn[NAME$d] = JQUERY_NO_CONFLICT$d;
 =======
+=======
+>>>>>>> danhmuc_list
   $__default["default"].fn[NAME$d] = CardWidget._jQueryInterface;
   $__default["default"].fn[NAME$d].Constructor = CardWidget;
 
   $__default["default"].fn[NAME$d].noConflict = function () {
     $__default["default"].fn[NAME$d] = JQUERY_NO_CONFLICT$d;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     return CardWidget._jQueryInterface;
   };
@@ -603,8 +759,14 @@
   var DATA_KEY$c = 'lte.controlsidebar';
   var EVENT_KEY$5 = "." + DATA_KEY$c;
 <<<<<<< HEAD
+<<<<<<< HEAD
   var JQUERY_NO_CONFLICT$c = $__default['default'].fn[NAME$c];
   var EVENT_COLLAPSED$3 = "collapsed" + EVENT_KEY$5;
+=======
+  var JQUERY_NO_CONFLICT$c = $__default["default"].fn[NAME$c];
+  var EVENT_COLLAPSED$3 = "collapsed" + EVENT_KEY$5;
+  var EVENT_COLLAPSED_DONE$1 = "collapsed-done" + EVENT_KEY$5;
+>>>>>>> danhmuc_list
 =======
   var JQUERY_NO_CONFLICT$c = $__default["default"].fn[NAME$c];
   var EVENT_COLLAPSED$3 = "collapsed" + EVENT_KEY$5;
@@ -635,7 +797,12 @@
     scrollbarTheme: 'os-theme-light',
     scrollbarAutoHide: 'l',
 <<<<<<< HEAD
+<<<<<<< HEAD
     target: SELECTOR_CONTROL_SIDEBAR
+=======
+    target: SELECTOR_CONTROL_SIDEBAR,
+    animationSpeed: 300
+>>>>>>> danhmuc_list
 =======
     target: SELECTOR_CONTROL_SIDEBAR,
     animationSpeed: 300
@@ -657,23 +824,35 @@
 
     _proto.collapse = function collapse() {
 <<<<<<< HEAD
+<<<<<<< HEAD
       var $body = $__default['default']('body');
       var $html = $__default['default']('html');
       var target = this._config.target; // Show the control sidebar
 =======
+=======
+>>>>>>> danhmuc_list
       var _this = this;
 
       var $body = $__default["default"]('body');
       var $html = $__default["default"]('html'); // Show the control sidebar
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
       if (this._config.controlsidebarSlide) {
         $html.addClass(CLASS_NAME_CONTROL_SIDEBAR_ANIMATE);
         $body.removeClass(CLASS_NAME_CONTROL_SIDEBAR_SLIDE).delay(300).queue(function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
           $__default['default'](target).hide();
           $html.removeClass(CLASS_NAME_CONTROL_SIDEBAR_ANIMATE);
           $__default['default'](this).dequeue();
+=======
+          $__default["default"](SELECTOR_CONTROL_SIDEBAR).hide();
+          $html.removeClass(CLASS_NAME_CONTROL_SIDEBAR_ANIMATE);
+          $__default["default"](this).dequeue();
+>>>>>>> danhmuc_list
 =======
           $__default["default"](SELECTOR_CONTROL_SIDEBAR).hide();
           $html.removeClass(CLASS_NAME_CONTROL_SIDEBAR_ANIMATE);
@@ -684,6 +863,7 @@
         $body.removeClass(CLASS_NAME_CONTROL_SIDEBAR_OPEN$1);
       }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
       $__default['default'](this._element).trigger($__default['default'].Event(EVENT_COLLAPSED$3));
     };
@@ -701,6 +881,8 @@
           });
           $__default['default'](this).dequeue();
 =======
+=======
+>>>>>>> danhmuc_list
       $__default["default"](this._element).trigger($__default["default"].Event(EVENT_COLLAPSED$3));
       setTimeout(function () {
         $__default["default"](_this._element).trigger($__default["default"].Event(EVENT_COLLAPSED_DONE$1));
@@ -728,6 +910,9 @@
             $__default["default"](this).dequeue();
           });
           $__default["default"](this).dequeue();
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         });
       } else {
@@ -738,6 +923,7 @@
 
       this._fixScrollHeight();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
       $__default['default'](this._element).trigger($__default['default'].Event(EVENT_EXPANDED$2));
     };
@@ -753,6 +939,8 @@
         // Open the control sidebar
         this.show();
 =======
+=======
+>>>>>>> danhmuc_list
       $__default["default"](this._element).trigger($__default["default"].Event(EVENT_EXPANDED$2));
     };
 
@@ -769,12 +957,16 @@
       } else if (shouldClose) {
         // Close the control sidebar
         this.collapse();
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       }
     } // Private
     ;
 
     _proto._init = function _init() {
+<<<<<<< HEAD
 <<<<<<< HEAD
       var _this = this;
 
@@ -787,6 +979,8 @@
       } else {
         $__default['default'](SELECTOR_CONTROL_SIDEBAR).hide();
 =======
+=======
+>>>>>>> danhmuc_list
       var _this2 = this;
 
       var $body = $__default["default"]('body');
@@ -797,6 +991,9 @@
         $__default["default"](this._config.target).css('display', 'block');
       } else {
         $__default["default"](SELECTOR_CONTROL_SIDEBAR).hide();
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       }
 
@@ -804,6 +1001,7 @@
 
       this._fixScrollHeight();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
       $__default['default'](window).resize(function () {
         _this._fixHeight();
@@ -817,6 +1015,8 @@
         if (shouldFixHeight) {
           _this._fixScrollHeight();
 =======
+=======
+>>>>>>> danhmuc_list
       $__default["default"](window).resize(function () {
         _this2._fixHeight();
 
@@ -828,6 +1028,9 @@
 
         if (shouldFixHeight) {
           _this2._fixScrollHeight();
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         }
       });
@@ -835,7 +1038,11 @@
 
     _proto._isNavbarFixed = function _isNavbarFixed() {
 <<<<<<< HEAD
+<<<<<<< HEAD
       var $body = $__default['default']('body');
+=======
+      var $body = $__default["default"]('body');
+>>>>>>> danhmuc_list
 =======
       var $body = $__default["default"]('body');
 >>>>>>> danhmuc_list
@@ -844,7 +1051,11 @@
 
     _proto._isFooterFixed = function _isFooterFixed() {
 <<<<<<< HEAD
+<<<<<<< HEAD
       var $body = $__default['default']('body');
+=======
+      var $body = $__default["default"]('body');
+>>>>>>> danhmuc_list
 =======
       var $body = $__default["default"]('body');
 >>>>>>> danhmuc_list
@@ -853,8 +1064,13 @@
 
     _proto._fixScrollHeight = function _fixScrollHeight() {
 <<<<<<< HEAD
+<<<<<<< HEAD
       var $body = $__default['default']('body');
       var $controlSidebar = $__default['default'](this._config.target);
+=======
+      var $body = $__default["default"]('body');
+      var $controlSidebar = $__default["default"](this._config.target);
+>>>>>>> danhmuc_list
 =======
       var $body = $__default["default"]('body');
       var $controlSidebar = $__default["default"](this._config.target);
@@ -865,6 +1081,7 @@
       }
 
       var heights = {
+<<<<<<< HEAD
 <<<<<<< HEAD
         scroll: $__default['default'](document).height(),
         window: $__default['default'](window).height(),
@@ -879,6 +1096,8 @@
       var footerFixed = this._isFooterFixed() && $__default['default'](SELECTOR_FOOTER$1).css('position') === 'fixed';
       var $controlsidebarContent = $__default['default'](this._config.target + ", " + this._config.target + " " + SELECTOR_CONTROL_SIDEBAR_CONTENT$1);
 =======
+=======
+>>>>>>> danhmuc_list
         scroll: $__default["default"](document).height(),
         window: $__default["default"](window).height(),
         header: $__default["default"](SELECTOR_HEADER$1).outerHeight(),
@@ -891,6 +1110,9 @@
       var navbarFixed = this._isNavbarFixed() && $__default["default"](SELECTOR_HEADER$1).css('position') === 'fixed';
       var footerFixed = this._isFooterFixed() && $__default["default"](SELECTOR_FOOTER$1).css('position') === 'fixed';
       var $controlsidebarContent = $__default["default"](this._config.target + ", " + this._config.target + " " + SELECTOR_CONTROL_SIDEBAR_CONTENT$1);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
       if (positions.top === 0 && positions.bottom === 0) {
@@ -932,8 +1154,13 @@
 
     _proto._fixHeight = function _fixHeight() {
 <<<<<<< HEAD
+<<<<<<< HEAD
       var $body = $__default['default']('body');
       var $controlSidebar = $__default['default'](this._config.target + " " + SELECTOR_CONTROL_SIDEBAR_CONTENT$1);
+=======
+      var $body = $__default["default"]('body');
+      var $controlSidebar = $__default["default"](this._config.target + " " + SELECTOR_CONTROL_SIDEBAR_CONTENT$1);
+>>>>>>> danhmuc_list
 =======
       var $body = $__default["default"]('body');
       var $controlSidebar = $__default["default"](this._config.target + " " + SELECTOR_CONTROL_SIDEBAR_CONTENT$1);
@@ -946,6 +1173,7 @@
 
       var heights = {
 <<<<<<< HEAD
+<<<<<<< HEAD
         window: $__default['default'](window).height(),
         header: $__default['default'](SELECTOR_HEADER$1).outerHeight(),
         footer: $__default['default'](SELECTOR_FOOTER$1).outerHeight()
@@ -954,6 +1182,8 @@
 
       if (this._isFooterFixed() && $__default['default'](SELECTOR_FOOTER$1).css('position') === 'fixed') {
 =======
+=======
+>>>>>>> danhmuc_list
         window: $__default["default"](window).height(),
         header: $__default["default"](SELECTOR_HEADER$1).outerHeight(),
         footer: $__default["default"](SELECTOR_FOOTER$1).outerHeight()
@@ -961,6 +1191,9 @@
       var sidebarHeight = heights.window - heights.header;
 
       if (this._isFooterFixed() && $__default["default"](SELECTOR_FOOTER$1).css('position') === 'fixed') {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         sidebarHeight = heights.window - heights.header - heights.footer;
       }
@@ -968,7 +1201,11 @@
       $controlSidebar.css('height', sidebarHeight);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       if (typeof $__default['default'].fn.overlayScrollbars !== 'undefined') {
+=======
+      if (typeof $__default["default"].fn.overlayScrollbars !== 'undefined') {
+>>>>>>> danhmuc_list
 =======
       if (typeof $__default["default"].fn.overlayScrollbars !== 'undefined') {
 >>>>>>> danhmuc_list
@@ -987,6 +1224,7 @@
     ControlSidebar._jQueryInterface = function _jQueryInterface(operation) {
       return this.each(function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
         var data = $__default['default'](this).data(DATA_KEY$c);
 
         var _options = $__default['default'].extend({}, Default$a, $__default['default'](this).data());
@@ -995,6 +1233,8 @@
           data = new ControlSidebar(this, _options);
           $__default['default'](this).data(DATA_KEY$c, data);
 =======
+=======
+>>>>>>> danhmuc_list
         var data = $__default["default"](this).data(DATA_KEY$c);
 
         var _options = $__default["default"].extend({}, Default$a, $__default["default"](this).data());
@@ -1002,6 +1242,9 @@
         if (!data) {
           data = new ControlSidebar(this, _options);
           $__default["default"](this).data(DATA_KEY$c, data);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         }
 
@@ -1023,6 +1266,7 @@
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   $__default['default'](document).on('click', SELECTOR_DATA_TOGGLE$4, function (event) {
     event.preventDefault();
 
@@ -1031,6 +1275,8 @@
   $__default['default'](document).ready(function () {
     ControlSidebar._jQueryInterface.call($__default['default'](SELECTOR_DATA_TOGGLE$4), '_init');
 =======
+=======
+>>>>>>> danhmuc_list
   $__default["default"](document).on('click', SELECTOR_DATA_TOGGLE$4, function (event) {
     event.preventDefault();
 
@@ -1038,6 +1284,9 @@
   });
   $__default["default"](document).ready(function () {
     ControlSidebar._jQueryInterface.call($__default["default"](SELECTOR_DATA_TOGGLE$4), '_init');
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   });
   /**
@@ -1046,17 +1295,23 @@
    */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   $__default['default'].fn[NAME$c] = ControlSidebar._jQueryInterface;
   $__default['default'].fn[NAME$c].Constructor = ControlSidebar;
 
   $__default['default'].fn[NAME$c].noConflict = function () {
     $__default['default'].fn[NAME$c] = JQUERY_NO_CONFLICT$c;
 =======
+=======
+>>>>>>> danhmuc_list
   $__default["default"].fn[NAME$c] = ControlSidebar._jQueryInterface;
   $__default["default"].fn[NAME$c].Constructor = ControlSidebar;
 
   $__default["default"].fn[NAME$c].noConflict = function () {
     $__default["default"].fn[NAME$c] = JQUERY_NO_CONFLICT$c;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     return ControlSidebar._jQueryInterface;
   };
@@ -1076,7 +1331,11 @@
   var DATA_KEY$b = 'lte.directchat';
   var EVENT_KEY$4 = "." + DATA_KEY$b;
 <<<<<<< HEAD
+<<<<<<< HEAD
   var JQUERY_NO_CONFLICT$b = $__default['default'].fn[NAME$b];
+=======
+  var JQUERY_NO_CONFLICT$b = $__default["default"].fn[NAME$b];
+>>>>>>> danhmuc_list
 =======
   var JQUERY_NO_CONFLICT$b = $__default["default"].fn[NAME$b];
 >>>>>>> danhmuc_list
@@ -1098,8 +1357,13 @@
 
     _proto.toggle = function toggle() {
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'](this._element).parents(SELECTOR_DIRECT_CHAT).first().toggleClass(CLASS_NAME_DIRECT_CHAT_OPEN);
       $__default['default'](this._element).trigger($__default['default'].Event(EVENT_TOGGLED));
+=======
+      $__default["default"](this._element).parents(SELECTOR_DIRECT_CHAT).first().toggleClass(CLASS_NAME_DIRECT_CHAT_OPEN);
+      $__default["default"](this._element).trigger($__default["default"].Event(EVENT_TOGGLED));
+>>>>>>> danhmuc_list
 =======
       $__default["default"](this._element).parents(SELECTOR_DIRECT_CHAT).first().toggleClass(CLASS_NAME_DIRECT_CHAT_OPEN);
       $__default["default"](this._element).trigger($__default["default"].Event(EVENT_TOGGLED));
@@ -1110,17 +1374,23 @@
     DirectChat._jQueryInterface = function _jQueryInterface(config) {
       return this.each(function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
         var data = $__default['default'](this).data(DATA_KEY$b);
 
         if (!data) {
           data = new DirectChat($__default['default'](this));
           $__default['default'](this).data(DATA_KEY$b, data);
 =======
+=======
+>>>>>>> danhmuc_list
         var data = $__default["default"](this).data(DATA_KEY$b);
 
         if (!data) {
           data = new DirectChat($__default["default"](this));
           $__default["default"](this).data(DATA_KEY$b, data);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         }
 
@@ -1138,7 +1408,11 @@
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   $__default['default'](document).on('click', SELECTOR_DATA_TOGGLE$3, function (event) {
+=======
+  $__default["default"](document).on('click', SELECTOR_DATA_TOGGLE$3, function (event) {
+>>>>>>> danhmuc_list
 =======
   $__default["default"](document).on('click', SELECTOR_DATA_TOGGLE$3, function (event) {
 >>>>>>> danhmuc_list
@@ -1147,7 +1421,11 @@
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     DirectChat._jQueryInterface.call($__default['default'](this), 'toggle');
+=======
+    DirectChat._jQueryInterface.call($__default["default"](this), 'toggle');
+>>>>>>> danhmuc_list
 =======
     DirectChat._jQueryInterface.call($__default["default"](this), 'toggle');
 >>>>>>> danhmuc_list
@@ -1158,17 +1436,23 @@
    */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   $__default['default'].fn[NAME$b] = DirectChat._jQueryInterface;
   $__default['default'].fn[NAME$b].Constructor = DirectChat;
 
   $__default['default'].fn[NAME$b].noConflict = function () {
     $__default['default'].fn[NAME$b] = JQUERY_NO_CONFLICT$b;
 =======
+=======
+>>>>>>> danhmuc_list
   $__default["default"].fn[NAME$b] = DirectChat._jQueryInterface;
   $__default["default"].fn[NAME$b].Constructor = DirectChat;
 
   $__default["default"].fn[NAME$b].noConflict = function () {
     $__default["default"].fn[NAME$b] = JQUERY_NO_CONFLICT$b;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     return DirectChat._jQueryInterface;
   };
@@ -1187,7 +1471,11 @@
   var NAME$a = 'Dropdown';
   var DATA_KEY$a = 'lte.dropdown';
 <<<<<<< HEAD
+<<<<<<< HEAD
   var JQUERY_NO_CONFLICT$a = $__default['default'].fn[NAME$a];
+=======
+  var JQUERY_NO_CONFLICT$a = $__default["default"].fn[NAME$a];
+>>>>>>> danhmuc_list
 =======
   var JQUERY_NO_CONFLICT$a = $__default["default"].fn[NAME$a];
 >>>>>>> danhmuc_list
@@ -1222,7 +1510,11 @@
 
       this._element.parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
         $__default['default']('.dropdown-submenu .show').removeClass('show').hide();
+=======
+        $__default["default"]('.dropdown-submenu .show').removeClass('show').hide();
+>>>>>>> danhmuc_list
 =======
         $__default["default"]('.dropdown-submenu .show').removeClass('show').hide();
 >>>>>>> danhmuc_list
@@ -1231,7 +1523,11 @@
 
     _proto.fixPosition = function fixPosition() {
 <<<<<<< HEAD
+<<<<<<< HEAD
       var $element = $__default['default'](SELECTOR_DROPDOWN_MENU_ACTIVE);
+=======
+      var $element = $__default["default"](SELECTOR_DROPDOWN_MENU_ACTIVE);
+>>>>>>> danhmuc_list
 =======
       var $element = $__default["default"](SELECTOR_DROPDOWN_MENU_ACTIVE);
 >>>>>>> danhmuc_list
@@ -1255,7 +1551,11 @@
       var offset = $element.offset();
       var width = $element.width();
 <<<<<<< HEAD
+<<<<<<< HEAD
       var visiblePart = $__default['default'](window).width() - offset.left;
+=======
+      var visiblePart = $__default["default"](window).width() - offset.left;
+>>>>>>> danhmuc_list
 =======
       var visiblePart = $__default["default"](window).width() - offset.left;
 >>>>>>> danhmuc_list
@@ -1277,6 +1577,7 @@
     Dropdown._jQueryInterface = function _jQueryInterface(config) {
       return this.each(function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
         var data = $__default['default'](this).data(DATA_KEY$a);
 
         var _config = $__default['default'].extend({}, Default$9, $__default['default'](this).data());
@@ -1285,6 +1586,8 @@
           data = new Dropdown($__default['default'](this), _config);
           $__default['default'](this).data(DATA_KEY$a, data);
 =======
+=======
+>>>>>>> danhmuc_list
         var data = $__default["default"](this).data(DATA_KEY$a);
 
         var _config = $__default["default"].extend({}, Default$9, $__default["default"](this).data());
@@ -1292,6 +1595,9 @@
         if (!data) {
           data = new Dropdown($__default["default"](this), _config);
           $__default["default"](this).data(DATA_KEY$a, data);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         }
 
@@ -1310,6 +1616,7 @@
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   $__default['default'](SELECTOR_DROPDOWN_MENU + " " + SELECTOR_DROPDOWN_TOGGLE).on('click', function (event) {
     event.preventDefault();
     event.stopPropagation();
@@ -1321,6 +1628,8 @@
 
     if ($__default['default'](event.target).parent().hasClass(CLASS_NAME_DROPDOWN_SUBMENU)) {
 =======
+=======
+>>>>>>> danhmuc_list
   $__default["default"](SELECTOR_DROPDOWN_MENU + " " + SELECTOR_DROPDOWN_TOGGLE).on('click', function (event) {
     event.preventDefault();
     event.stopPropagation();
@@ -1331,13 +1640,20 @@
     event.preventDefault();
 
     if ($__default["default"](event.target).parent().hasClass(CLASS_NAME_DROPDOWN_SUBMENU)) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       return;
     }
 
     setTimeout(function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
       Dropdown._jQueryInterface.call($__default['default'](this), 'fixPosition');
+=======
+      Dropdown._jQueryInterface.call($__default["default"](this), 'fixPosition');
+>>>>>>> danhmuc_list
 =======
       Dropdown._jQueryInterface.call($__default["default"](this), 'fixPosition');
 >>>>>>> danhmuc_list
@@ -1349,17 +1665,23 @@
    */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   $__default['default'].fn[NAME$a] = Dropdown._jQueryInterface;
   $__default['default'].fn[NAME$a].Constructor = Dropdown;
 
   $__default['default'].fn[NAME$a].noConflict = function () {
     $__default['default'].fn[NAME$a] = JQUERY_NO_CONFLICT$a;
 =======
+=======
+>>>>>>> danhmuc_list
   $__default["default"].fn[NAME$a] = Dropdown._jQueryInterface;
   $__default["default"].fn[NAME$a].Constructor = Dropdown;
 
   $__default["default"].fn[NAME$a].noConflict = function () {
     $__default["default"].fn[NAME$a] = JQUERY_NO_CONFLICT$a;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     return Dropdown._jQueryInterface;
   };
@@ -1379,7 +1701,11 @@
   var DATA_KEY$9 = 'lte.expandableTable';
   var EVENT_KEY$3 = "." + DATA_KEY$9;
 <<<<<<< HEAD
+<<<<<<< HEAD
   var JQUERY_NO_CONFLICT$9 = $__default['default'].fn[NAME$9];
+=======
+  var JQUERY_NO_CONFLICT$9 = $__default["default"].fn[NAME$9];
+>>>>>>> danhmuc_list
 =======
   var JQUERY_NO_CONFLICT$9 = $__default["default"].fn[NAME$9];
 >>>>>>> danhmuc_list
@@ -1405,9 +1731,15 @@
 
     _proto.init = function init() {
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'](SELECTOR_DATA_TOGGLE$2).each(function (_, $header) {
         var $type = $__default['default']($header).attr(SELECTOR_ARIA_ATTR);
         var $body = $__default['default']($header).next(SELECTOR_EXPANDABLE_BODY).children().first().children();
+=======
+      $__default["default"](SELECTOR_DATA_TOGGLE$2).each(function (_, $header) {
+        var $type = $__default["default"]($header).attr(SELECTOR_ARIA_ATTR);
+        var $body = $__default["default"]($header).next(SELECTOR_EXPANDABLE_BODY).children().first().children();
+>>>>>>> danhmuc_list
 =======
       $__default["default"](SELECTOR_DATA_TOGGLE$2).each(function (_, $header) {
         var $type = $__default["default"]($header).attr(SELECTOR_ARIA_ATTR);
@@ -1426,7 +1758,10 @@
     _proto.toggleRow = function toggleRow() {
       var $element = this._element;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 
       if ($element[0].nodeName !== 'TR') {
         $element = $element.parent();
@@ -1436,6 +1771,9 @@
         }
       }
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       var time = 500;
       var $type = $element.attr(SELECTOR_ARIA_ATTR);
@@ -1448,7 +1786,11 @@
         });
         $element.attr(SELECTOR_ARIA_ATTR, 'false');
 <<<<<<< HEAD
+<<<<<<< HEAD
         $element.trigger($__default['default'].Event(EVENT_COLLAPSED$2));
+=======
+        $element.trigger($__default["default"].Event(EVENT_COLLAPSED$2));
+>>>>>>> danhmuc_list
 =======
         $element.trigger($__default["default"].Event(EVENT_COLLAPSED$2));
 >>>>>>> danhmuc_list
@@ -1457,7 +1799,11 @@
         $body.slideDown(time);
         $element.attr(SELECTOR_ARIA_ATTR, 'true');
 <<<<<<< HEAD
+<<<<<<< HEAD
         $element.trigger($__default['default'].Event(EVENT_EXPANDED$1));
+=======
+        $element.trigger($__default["default"].Event(EVENT_EXPANDED$1));
+>>>>>>> danhmuc_list
 =======
         $element.trigger($__default["default"].Event(EVENT_EXPANDED$1));
 >>>>>>> danhmuc_list
@@ -1468,17 +1814,23 @@
     ExpandableTable._jQueryInterface = function _jQueryInterface(operation) {
       return this.each(function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
         var data = $__default['default'](this).data(DATA_KEY$9);
 
         if (!data) {
           data = new ExpandableTable($__default['default'](this));
           $__default['default'](this).data(DATA_KEY$9, data);
 =======
+=======
+>>>>>>> danhmuc_list
         var data = $__default["default"](this).data(DATA_KEY$9);
 
         if (!data) {
           data = new ExpandableTable($__default["default"](this));
           $__default["default"](this).data(DATA_KEY$9, data);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         }
 
@@ -1497,17 +1849,23 @@
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   $__default['default'](SELECTOR_TABLE).ready(function () {
     ExpandableTable._jQueryInterface.call($__default['default'](this), 'init');
   });
   $__default['default'](document).on('click', SELECTOR_DATA_TOGGLE$2, function () {
     ExpandableTable._jQueryInterface.call($__default['default'](this), 'toggleRow');
 =======
+=======
+>>>>>>> danhmuc_list
   $__default["default"](SELECTOR_TABLE).ready(function () {
     ExpandableTable._jQueryInterface.call($__default["default"](this), 'init');
   });
   $__default["default"](document).on('click', SELECTOR_DATA_TOGGLE$2, function () {
     ExpandableTable._jQueryInterface.call($__default["default"](this), 'toggleRow');
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   });
   /**
@@ -1516,17 +1874,23 @@
     */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   $__default['default'].fn[NAME$9] = ExpandableTable._jQueryInterface;
   $__default['default'].fn[NAME$9].Constructor = ExpandableTable;
 
   $__default['default'].fn[NAME$9].noConflict = function () {
     $__default['default'].fn[NAME$9] = JQUERY_NO_CONFLICT$9;
 =======
+=======
+>>>>>>> danhmuc_list
   $__default["default"].fn[NAME$9] = ExpandableTable._jQueryInterface;
   $__default["default"].fn[NAME$9].Constructor = ExpandableTable;
 
   $__default["default"].fn[NAME$9].noConflict = function () {
     $__default["default"].fn[NAME$9] = JQUERY_NO_CONFLICT$9;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     return ExpandableTable._jQueryInterface;
   };
@@ -1545,14 +1909,20 @@
   var NAME$8 = 'Fullscreen';
   var DATA_KEY$8 = 'lte.fullscreen';
 <<<<<<< HEAD
+<<<<<<< HEAD
   var JQUERY_NO_CONFLICT$8 = $__default['default'].fn[NAME$8];
   var SELECTOR_DATA_WIDGET$2 = '[data-widget="fullscreen"]';
   var SELECTOR_ICON = SELECTOR_DATA_WIDGET$2 + " i";
 =======
+=======
+>>>>>>> danhmuc_list
   var JQUERY_NO_CONFLICT$8 = $__default["default"].fn[NAME$8];
   var SELECTOR_DATA_WIDGET$2 = '[data-widget="fullscreen"]';
   var SELECTOR_ICON = SELECTOR_DATA_WIDGET$2 + " i";
   var EVENT_FULLSCREEN_CHANGE = 'webkitfullscreenchange mozfullscreenchange fullscreenchange MSFullscreenChange';
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   var Default$8 = {
     minimizeIcon: 'fa-compress-arrows-alt',
@@ -1567,7 +1937,11 @@
     function Fullscreen(_element, _options) {
       this.element = _element;
 <<<<<<< HEAD
+<<<<<<< HEAD
       this.options = $__default['default'].extend({}, Default$8, _options);
+=======
+      this.options = $__default["default"].extend({}, Default$8, _options);
+>>>>>>> danhmuc_list
 =======
       this.options = $__default["default"].extend({}, Default$8, _options);
 >>>>>>> danhmuc_list
@@ -1585,7 +1959,10 @@
     };
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
     _proto.toggleIcon = function toggleIcon() {
       if (document.fullscreenElement || document.mozFullScreenElement || document.webkitFullscreenElement || document.msFullscreenElement) {
         $__default["default"](SELECTOR_ICON).removeClass(this.options.maximizeIcon).addClass(this.options.minimizeIcon);
@@ -1594,6 +1971,9 @@
       }
     };
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     _proto.fullscreen = function fullscreen() {
       if (document.documentElement.requestFullscreen) {
@@ -1604,8 +1984,11 @@
         document.documentElement.msRequestFullscreen();
       }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
       $__default['default'](SELECTOR_ICON).removeClass(this.options.maximizeIcon).addClass(this.options.minimizeIcon);
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
     };
@@ -1619,14 +2002,18 @@
         document.msExitFullscreen();
       }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
       $__default['default'](SELECTOR_ICON).removeClass(this.options.minimizeIcon).addClass(this.options.maximizeIcon);
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
     } // Static
     ;
 
     Fullscreen._jQueryInterface = function _jQueryInterface(config) {
+<<<<<<< HEAD
 <<<<<<< HEAD
       var data = $__default['default'](this).data(DATA_KEY$8);
 
@@ -1641,6 +2028,8 @@
 
       if (typeof config === 'string' && /toggle|fullscreen|windowed/.test(config)) {
 =======
+=======
+>>>>>>> danhmuc_list
       var data = $__default["default"](this).data(DATA_KEY$8);
 
       if (!data) {
@@ -1653,6 +2042,9 @@
       $__default["default"](this).data(DATA_KEY$8, typeof config === 'object' ? config : data);
 
       if (typeof config === 'string' && /toggle|toggleIcon|fullscreen|windowed/.test(config)) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         plugin[config]();
       } else {
@@ -1669,14 +2061,20 @@
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   $__default['default'](document).on('click', SELECTOR_DATA_WIDGET$2, function () {
     Fullscreen._jQueryInterface.call($__default['default'](this), 'toggle');
 =======
+=======
+>>>>>>> danhmuc_list
   $__default["default"](document).on('click', SELECTOR_DATA_WIDGET$2, function () {
     Fullscreen._jQueryInterface.call($__default["default"](this), 'toggle');
   });
   $__default["default"](document).on(EVENT_FULLSCREEN_CHANGE, function () {
     Fullscreen._jQueryInterface.call($__default["default"](SELECTOR_DATA_WIDGET$2), 'toggleIcon');
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   });
   /**
@@ -1685,17 +2083,23 @@
    */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   $__default['default'].fn[NAME$8] = Fullscreen._jQueryInterface;
   $__default['default'].fn[NAME$8].Constructor = Fullscreen;
 
   $__default['default'].fn[NAME$8].noConflict = function () {
     $__default['default'].fn[NAME$8] = JQUERY_NO_CONFLICT$8;
 =======
+=======
+>>>>>>> danhmuc_list
   $__default["default"].fn[NAME$8] = Fullscreen._jQueryInterface;
   $__default["default"].fn[NAME$8].Constructor = Fullscreen;
 
   $__default["default"].fn[NAME$8].noConflict = function () {
     $__default["default"].fn[NAME$8] = JQUERY_NO_CONFLICT$8;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     return Fullscreen._jQueryInterface;
   };
@@ -1714,7 +2118,11 @@
   var NAME$7 = 'IFrame';
   var DATA_KEY$7 = 'lte.iframe';
 <<<<<<< HEAD
+<<<<<<< HEAD
   var JQUERY_NO_CONFLICT$7 = $__default['default'].fn[NAME$7];
+=======
+  var JQUERY_NO_CONFLICT$7 = $__default["default"].fn[NAME$7];
+>>>>>>> danhmuc_list
 =======
   var JQUERY_NO_CONFLICT$7 = $__default["default"].fn[NAME$7];
 >>>>>>> danhmuc_list
@@ -1726,17 +2134,23 @@
   var SELECTOR_CONTENT_WRAPPER = '.content-wrapper';
   var SELECTOR_CONTENT_IFRAME = SELECTOR_CONTENT_WRAPPER + " iframe";
 <<<<<<< HEAD
+<<<<<<< HEAD
   var SELECTOR_TAB_NAV = SELECTOR_DATA_TOGGLE$1 + ".iframe-mode .nav";
   var SELECTOR_TAB_NAVBAR_NAV = SELECTOR_DATA_TOGGLE$1 + ".iframe-mode .navbar-nav";
   var SELECTOR_TAB_NAVBAR_NAV_ITEM = SELECTOR_TAB_NAVBAR_NAV + " .nav-item";
   var SELECTOR_TAB_NAVBAR_NAV_LINK = SELECTOR_TAB_NAVBAR_NAV + " .nav-link";
   var SELECTOR_TAB_CONTENT = SELECTOR_DATA_TOGGLE$1 + ".iframe-mode .tab-content";
 =======
+=======
+>>>>>>> danhmuc_list
   var SELECTOR_TAB_NAV = SELECTOR_CONTENT_WRAPPER + ".iframe-mode .nav";
   var SELECTOR_TAB_NAVBAR_NAV = SELECTOR_CONTENT_WRAPPER + ".iframe-mode .navbar-nav";
   var SELECTOR_TAB_NAVBAR_NAV_ITEM = SELECTOR_TAB_NAVBAR_NAV + " .nav-item";
   var SELECTOR_TAB_NAVBAR_NAV_LINK = SELECTOR_TAB_NAVBAR_NAV + " .nav-link";
   var SELECTOR_TAB_CONTENT = SELECTOR_CONTENT_WRAPPER + ".iframe-mode .tab-content";
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   var SELECTOR_TAB_EMPTY = SELECTOR_TAB_CONTENT + " .tab-empty";
   var SELECTOR_TAB_LOADING = SELECTOR_TAB_CONTENT + " .tab-loading";
@@ -1746,7 +2160,11 @@
   var SELECTOR_HEADER_MENU_ITEM = '.main-header .nav-item a.nav-link';
   var SELECTOR_HEADER_DROPDOWN_ITEM = '.main-header a.dropdown-item';
 <<<<<<< HEAD
+<<<<<<< HEAD
   var CLASS_NAME_IFRAME_MODE = 'iframe-mode';
+=======
+  var CLASS_NAME_IFRAME_MODE$1 = 'iframe-mode';
+>>>>>>> danhmuc_list
 =======
   var CLASS_NAME_IFRAME_MODE$1 = 'iframe-mode';
 >>>>>>> danhmuc_list
@@ -1765,7 +2183,13 @@
     autoItemActive: true,
     autoShowNewTab: true,
 <<<<<<< HEAD
+<<<<<<< HEAD
     allowDuplicates: false,
+=======
+    autoDarkMode: false,
+    allowDuplicates: false,
+    allowReload: true,
+>>>>>>> danhmuc_list
 =======
     autoDarkMode: false,
     allowDuplicates: false,
@@ -1819,6 +2243,7 @@
 
       var newNavItem = "<li class=\"nav-item\" role=\"presentation\"><a href=\"#\" class=\"btn-iframe-close\" data-widget=\"iframe-close\" data-type=\"only-this\"><i class=\"fas fa-times\"></i></a><a class=\"nav-link\" data-toggle=\"row\" id=\"" + navId + "\" href=\"#" + tabId + "\" role=\"tab\" aria-controls=\"" + tabId + "\" aria-selected=\"false\">" + title + "</a></li>";
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'](SELECTOR_TAB_NAVBAR_NAV).append(unescape(escape(newNavItem)));
       var newTabItem = "<div class=\"tab-pane fade\" id=\"" + tabId + "\" role=\"tabpanel\" aria-labelledby=\"" + navId + "\"><iframe src=\"" + link + "\"></iframe></div>";
       $__default['default'](SELECTOR_TAB_CONTENT).append(unescape(escape(newTabItem)));
@@ -1829,6 +2254,8 @@
           $loadingScreen.fadeIn();
           $__default['default'](tabId + " iframe").ready(function () {
 =======
+=======
+>>>>>>> danhmuc_list
       $__default["default"](SELECTOR_TAB_NAVBAR_NAV).append(unescape(escape(newNavItem)));
       var newTabItem = "<div class=\"tab-pane fade\" id=\"" + tabId + "\" role=\"tabpanel\" aria-labelledby=\"" + navId + "\"><iframe src=\"" + link + "\"></iframe></div>";
       $__default["default"](SELECTOR_TAB_CONTENT).append(unescape(escape(newTabItem)));
@@ -1838,6 +2265,9 @@
           var $loadingScreen = $__default["default"](SELECTOR_TAB_LOADING);
           $loadingScreen.fadeIn();
           $__default["default"](tabId + " iframe").ready(function () {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             if (typeof _this._config.loadingScreen === 'number') {
               _this.switchTab("#" + navId);
@@ -1857,7 +2287,11 @@
       }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       this.onTabCreated($__default['default']("#" + navId));
+=======
+      this.onTabCreated($__default["default"]("#" + navId));
+>>>>>>> danhmuc_list
 =======
       this.onTabCreated($__default["default"]("#" + navId));
 >>>>>>> danhmuc_list
@@ -1869,15 +2303,21 @@
       }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       var $item = $__default['default'](item).clone();
 
       if ($item.attr('href') === undefined) {
         $item = $__default['default'](item).parent('a').clone();
 =======
+=======
+>>>>>>> danhmuc_list
       var $item = $__default["default"](item).clone();
 
       if ($item.attr('href') === undefined) {
         $item = $__default["default"](item).parent('a').clone();
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       }
 
@@ -1895,6 +2335,7 @@
       }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       var uniqueName = link.replace('./', '').replace(/["&'./:=?[\]]/gi, '-').replace(/(--)/gi, '');
       var navId = "tab-" + uniqueName;
 
@@ -1904,6 +2345,8 @@
 
       if (!this._config.allowDuplicates && $__default['default']("#" + navId).length === 0 || this._config.allowDuplicates) {
 =======
+=======
+>>>>>>> danhmuc_list
       var uniqueName = unescape(link).replace('./', '').replace(/["#&'./:=?[\]]/gi, '-').replace(/(--)/gi, '');
       var navId = "tab-" + uniqueName;
 
@@ -1912,11 +2355,15 @@
       }
 
       if (!this._config.allowDuplicates && $__default["default"]("#" + navId).length === 0 || this._config.allowDuplicates) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         this.createTab(title, link, uniqueName, autoOpen);
       }
     };
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     _proto.switchTab = function switchTab(item) {
       var $item = $__default['default'](item);
@@ -1924,6 +2371,8 @@
       $__default['default'](SELECTOR_TAB_EMPTY).hide();
       $__default['default'](SELECTOR_TAB_NAVBAR_NAV + " .active").tab('dispose').removeClass('active');
 =======
+=======
+>>>>>>> danhmuc_list
     _proto.switchTab = function switchTab(item, reload) {
       var _this2 = this;
 
@@ -1958,6 +2407,9 @@
       }
 
       $__default["default"](SELECTOR_TAB_NAVBAR_NAV + " .active").tab('dispose').removeClass('active');
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
       this._fixHeight();
@@ -1968,7 +2420,11 @@
 
       if (this._config.autoItemActive) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         this._setItemActive($__default['default'](tabId + " iframe").attr('src'));
+=======
+        this._setItemActive($__default["default"](tabId + " iframe").attr('src'));
+>>>>>>> danhmuc_list
 =======
         this._setItemActive($__default["default"](tabId + " iframe").attr('src'));
 >>>>>>> danhmuc_list
@@ -1977,6 +2433,7 @@
 
     _proto.removeActiveTab = function removeActiveTab(type, element) {
       if (type == 'all') {
+<<<<<<< HEAD
 <<<<<<< HEAD
         $__default['default'](SELECTOR_TAB_NAVBAR_NAV_ITEM).remove();
         $__default['default'](SELECTOR_TAB_PANE).remove();
@@ -1987,6 +2444,8 @@
       } else if (type == 'only-this') {
         var $navClose = $__default['default'](element);
 =======
+=======
+>>>>>>> danhmuc_list
         $__default["default"](SELECTOR_TAB_NAVBAR_NAV_ITEM).remove();
         $__default["default"](SELECTOR_TAB_PANE).remove();
         $__default["default"](SELECTOR_TAB_EMPTY).show();
@@ -1995,6 +2454,9 @@
         $__default["default"](SELECTOR_TAB_PANE + ":not(.active)").remove();
       } else if (type == 'only-this') {
         var $navClose = $__default["default"](element);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         var $navItem = $navClose.parent('.nav-item');
         var $navItemParent = $navItem.parent();
@@ -2002,15 +2464,21 @@
         var tabId = $navClose.siblings('.nav-link').attr('aria-controls');
         $navItem.remove();
 <<<<<<< HEAD
+<<<<<<< HEAD
         $__default['default']("#" + tabId).remove();
 
         if ($__default['default'](SELECTOR_TAB_CONTENT).children().length == $__default['default'](SELECTOR_TAB_EMPTY + ", " + SELECTOR_TAB_LOADING).length) {
           $__default['default'](SELECTOR_TAB_EMPTY).show();
 =======
+=======
+>>>>>>> danhmuc_list
         $__default["default"]("#" + tabId).remove();
 
         if ($__default["default"](SELECTOR_TAB_CONTENT).children().length == $__default["default"](SELECTOR_TAB_EMPTY + ", " + SELECTOR_TAB_LOADING).length) {
           $__default["default"](SELECTOR_TAB_EMPTY).show();
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         } else {
           var prevNavItemIndex = navItemIndex - 1;
@@ -2018,7 +2486,11 @@
         }
       } else {
 <<<<<<< HEAD
+<<<<<<< HEAD
         var _$navItem = $__default['default'](SELECTOR_TAB_NAVBAR_NAV_ITEM + ".active");
+=======
+        var _$navItem = $__default["default"](SELECTOR_TAB_NAVBAR_NAV_ITEM + ".active");
+>>>>>>> danhmuc_list
 =======
         var _$navItem = $__default["default"](SELECTOR_TAB_NAVBAR_NAV_ITEM + ".active");
 >>>>>>> danhmuc_list
@@ -2030,15 +2502,21 @@
         _$navItem.remove();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $__default['default'](SELECTOR_TAB_PANE + ".active").remove();
 
         if ($__default['default'](SELECTOR_TAB_CONTENT).children().length == $__default['default'](SELECTOR_TAB_EMPTY + ", " + SELECTOR_TAB_LOADING).length) {
           $__default['default'](SELECTOR_TAB_EMPTY).show();
 =======
+=======
+>>>>>>> danhmuc_list
         $__default["default"](SELECTOR_TAB_PANE + ".active").remove();
 
         if ($__default["default"](SELECTOR_TAB_CONTENT).children().length == $__default["default"](SELECTOR_TAB_EMPTY + ", " + SELECTOR_TAB_LOADING).length) {
           $__default["default"](SELECTOR_TAB_EMPTY).show();
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         } else {
           var _prevNavItemIndex = _navItemIndex - 1;
@@ -2049,6 +2527,7 @@
     };
 
     _proto.toggleFullscreen = function toggleFullscreen() {
+<<<<<<< HEAD
 <<<<<<< HEAD
       if ($__default['default']('body').hasClass(CLASS_NAME_FULLSCREEN_MODE)) {
         $__default['default'](SELECTOR_DATA_TOGGLE_FULLSCREEN + " i").removeClass(this._config.iconMinimize).addClass(this._config.iconMaximize);
@@ -2063,6 +2542,8 @@
 
       $__default['default'](window).trigger('resize');
 =======
+=======
+>>>>>>> danhmuc_list
       if ($__default["default"]('body').hasClass(CLASS_NAME_FULLSCREEN_MODE)) {
         $__default["default"](SELECTOR_DATA_TOGGLE_FULLSCREEN + " i").removeClass(this._config.iconMinimize).addClass(this._config.iconMaximize);
         $__default["default"]('body').removeClass(CLASS_NAME_FULLSCREEN_MODE);
@@ -2075,6 +2556,9 @@
       }
 
       $__default["default"](window).trigger('resize');
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
       this._fixHeight(true);
@@ -2082,6 +2566,7 @@
     ;
 
     _proto._init = function _init() {
+<<<<<<< HEAD
 <<<<<<< HEAD
       if (window.frameElement && this._config.autoIframeMode) {
         $__default['default']('body').addClass(CLASS_NAME_IFRAME_MODE);
@@ -2097,6 +2582,8 @@
 
         this._fixHeight(true);
 =======
+=======
+>>>>>>> danhmuc_list
       var usingDefTab = $__default["default"](SELECTOR_TAB_CONTENT).children().length > 2;
 
       this._setupListeners();
@@ -2121,14 +2608,22 @@
         if (this._config.autoDarkMode) {
           $body.addClass('dark-mode');
         }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       }
     };
 
     _proto._navScroll = function _navScroll(offset) {
 <<<<<<< HEAD
+<<<<<<< HEAD
       var leftPos = $__default['default'](SELECTOR_TAB_NAVBAR_NAV).scrollLeft();
       $__default['default'](SELECTOR_TAB_NAVBAR_NAV).animate({
+=======
+      var leftPos = $__default["default"](SELECTOR_TAB_NAVBAR_NAV).scrollLeft();
+      $__default["default"](SELECTOR_TAB_NAVBAR_NAV).animate({
+>>>>>>> danhmuc_list
 =======
       var leftPos = $__default["default"](SELECTOR_TAB_NAVBAR_NAV).scrollLeft();
       $__default["default"](SELECTOR_TAB_NAVBAR_NAV).animate({
@@ -2138,6 +2633,7 @@
     };
 
     _proto._setupListeners = function _setupListeners() {
+<<<<<<< HEAD
 <<<<<<< HEAD
       var _this2 = this;
 
@@ -2176,6 +2672,8 @@
       });
       $__default['default'](document).on('click', SELECTOR_DATA_TOGGLE_CLOSE, function (e) {
 =======
+=======
+>>>>>>> danhmuc_list
       var _this3 = this;
 
       $__default["default"](window).on('resize', function () {
@@ -2215,6 +2713,9 @@
         _this3.switchTab(e.target);
       });
       $__default["default"](document).on('click', SELECTOR_DATA_TOGGLE_CLOSE, function (e) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         e.preventDefault();
         var target = e.target;
@@ -2223,6 +2724,7 @@
           target = e.target.offsetParent;
         }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         _this2.removeActiveTab(target.attributes['data-type'] ? target.attributes['data-type'].nodeValue : null, target);
       });
@@ -2240,6 +2742,8 @@
 
         if (!_this2._config.scrollBehaviorSwap) {
 =======
+=======
+>>>>>>> danhmuc_list
         _this3.removeActiveTab(target.attributes['data-type'] ? target.attributes['data-type'].nodeValue : null, target);
       });
       $__default["default"](document).on('click', SELECTOR_DATA_TOGGLE_FULLSCREEN, function (e) {
@@ -2255,12 +2759,16 @@
         var scrollOffset = _this3._config.scrollOffset;
 
         if (!_this3._config.scrollBehaviorSwap) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
           scrollOffset = -scrollOffset;
         }
 
         mousedown = true;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         _this2._navScroll(scrollOffset);
 
@@ -2275,6 +2783,8 @@
 
         if (_this2._config.scrollBehaviorSwap) {
 =======
+=======
+>>>>>>> danhmuc_list
         _this3._navScroll(scrollOffset);
 
         mousedownInterval = setInterval(function () {
@@ -2287,12 +2797,16 @@
         var scrollOffset = _this3._config.scrollOffset;
 
         if (_this3._config.scrollBehaviorSwap) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
           scrollOffset = -scrollOffset;
         }
 
         mousedown = true;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         _this2._navScroll(scrollOffset);
 
@@ -2302,6 +2816,8 @@
       });
       $__default['default'](document).on('mouseup', function () {
 =======
+=======
+>>>>>>> danhmuc_list
         _this3._navScroll(scrollOffset);
 
         mousedownInterval = setInterval(function () {
@@ -2309,6 +2825,9 @@
         }, 250);
       });
       $__default["default"](document).on('mouseup', function () {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         if (mousedown) {
           mousedown = false;
@@ -2319,6 +2838,7 @@
     };
 
     _proto._setItemActive = function _setItemActive(href) {
+<<<<<<< HEAD
 <<<<<<< HEAD
       $__default['default'](SELECTOR_SIDEBAR_MENU_ITEM + ", " + SELECTOR_HEADER_DROPDOWN_ITEM).removeClass('active');
       $__default['default'](SELECTOR_HEADER_MENU_ITEM).parent().removeClass('active');
@@ -2335,6 +2855,8 @@
         $__default['default'](e).addClass('active');
         $__default['default'](e).parents('.nav-treeview').prevAll('.nav-link').addClass('active');
 =======
+=======
+>>>>>>> danhmuc_list
       $__default["default"](SELECTOR_SIDEBAR_MENU_ITEM + ", " + SELECTOR_HEADER_DROPDOWN_ITEM).removeClass('active');
       $__default["default"](SELECTOR_HEADER_MENU_ITEM).parent().removeClass('active');
       var $headerMenuItem = $__default["default"](SELECTOR_HEADER_MENU_ITEM + "[href$=\"" + href + "\"]");
@@ -2349,6 +2871,9 @@
       $sidebarMenuItem.each(function (i, e) {
         $__default["default"](e).addClass('active');
         $__default["default"](e).parents('.nav-treeview').prevAll('.nav-link').addClass('active');
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       });
     };
@@ -2358,6 +2883,7 @@
         tabEmpty = false;
       }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
       if ($__default['default']('body').hasClass(CLASS_NAME_FULLSCREEN_MODE)) {
         var windowHeight = $__default['default'](window).height();
@@ -2376,6 +2902,8 @@
         } else {
           $__default['default'](SELECTOR_CONTENT_IFRAME).height(contentWrapperHeight - _navbarHeight);
 =======
+=======
+>>>>>>> danhmuc_list
       if ($__default["default"]('body').hasClass(CLASS_NAME_FULLSCREEN_MODE)) {
         var windowHeight = $__default["default"](window).height();
         var navbarHeight = $__default["default"](SELECTOR_TAB_NAV).outerHeight();
@@ -2392,12 +2920,16 @@
           }, 50);
         } else {
           $__default["default"](SELECTOR_CONTENT_IFRAME).height(contentWrapperHeight - _navbarHeight);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         }
       }
     } // Static
     ;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     IFrame._jQueryInterface = function _jQueryInterface(operation) {
       var data = $__default['default'](this).data(DATA_KEY$7);
@@ -2418,6 +2950,8 @@
 
         (_data = data)[operation].apply(_data, args);
 =======
+=======
+>>>>>>> danhmuc_list
     IFrame._jQueryInterface = function _jQueryInterface(config) {
       if ($__default["default"](SELECTOR_DATA_TOGGLE$1).length > 0) {
         var data = $__default["default"](this).data(DATA_KEY$7);
@@ -2437,6 +2971,9 @@
         }
       } else {
         new IFrame($__default["default"](this), JSON.parse(localStorage.getItem('AdminLTE:IFrame:Options')))._initFrameElement();
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       }
     };
@@ -2450,8 +2987,13 @@
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   $__default['default'](window).on('load', function () {
     IFrame._jQueryInterface.call($__default['default'](SELECTOR_DATA_TOGGLE$1));
+=======
+  $__default["default"](window).on('load', function () {
+    IFrame._jQueryInterface.call($__default["default"](SELECTOR_DATA_TOGGLE$1));
+>>>>>>> danhmuc_list
 =======
   $__default["default"](window).on('load', function () {
     IFrame._jQueryInterface.call($__default["default"](SELECTOR_DATA_TOGGLE$1));
@@ -2463,17 +3005,23 @@
    */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   $__default['default'].fn[NAME$7] = IFrame._jQueryInterface;
   $__default['default'].fn[NAME$7].Constructor = IFrame;
 
   $__default['default'].fn[NAME$7].noConflict = function () {
     $__default['default'].fn[NAME$7] = JQUERY_NO_CONFLICT$7;
 =======
+=======
+>>>>>>> danhmuc_list
   $__default["default"].fn[NAME$7] = IFrame._jQueryInterface;
   $__default["default"].fn[NAME$7].Constructor = IFrame;
 
   $__default["default"].fn[NAME$7].noConflict = function () {
     $__default["default"].fn[NAME$7] = JQUERY_NO_CONFLICT$7;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     return IFrame._jQueryInterface;
   };
@@ -2492,7 +3040,11 @@
   var NAME$6 = 'Layout';
   var DATA_KEY$6 = 'lte.layout';
 <<<<<<< HEAD
+<<<<<<< HEAD
   var JQUERY_NO_CONFLICT$6 = $__default['default'].fn[NAME$6];
+=======
+  var JQUERY_NO_CONFLICT$6 = $__default["default"].fn[NAME$6];
+>>>>>>> danhmuc_list
 =======
   var JQUERY_NO_CONFLICT$6 = $__default["default"].fn[NAME$6];
 >>>>>>> danhmuc_list
@@ -2513,6 +3065,10 @@
   var CLASS_NAME_CONTROL_SIDEBAR_SLIDE_OPEN = 'control-sidebar-slide-open';
   var CLASS_NAME_CONTROL_SIDEBAR_OPEN = 'control-sidebar-open';
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  var CLASS_NAME_IFRAME_MODE = 'iframe-mode';
+>>>>>>> danhmuc_list
 =======
   var CLASS_NAME_IFRAME_MODE = 'iframe-mode';
 >>>>>>> danhmuc_list
@@ -2544,6 +3100,7 @@
       }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       var $body = $__default['default']('body');
       var controlSidebar = 0;
 
@@ -2557,6 +3114,8 @@
         footer: $__default['default'](SELECTOR_FOOTER).length > 0 ? $__default['default'](SELECTOR_FOOTER).outerHeight() : 0,
         sidebar: $__default['default'](SELECTOR_SIDEBAR$1).length > 0 ? $__default['default'](SELECTOR_SIDEBAR$1).height() : 0,
 =======
+=======
+>>>>>>> danhmuc_list
       var $body = $__default["default"]('body');
       var controlSidebar = 0;
 
@@ -2569,6 +3128,9 @@
         header: $__default["default"](SELECTOR_HEADER).length > 0 ? $__default["default"](SELECTOR_HEADER).outerHeight() : 0,
         footer: $__default["default"](SELECTOR_FOOTER).length > 0 ? $__default["default"](SELECTOR_FOOTER).outerHeight() : 0,
         sidebar: $__default["default"](SELECTOR_SIDEBAR$1).length > 0 ? $__default["default"](SELECTOR_SIDEBAR$1).height() : 0,
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         controlSidebar: controlSidebar
       };
@@ -2582,7 +3144,11 @@
       }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       var $contentSelector = $__default['default'](SELECTOR_CONTENT);
+=======
+      var $contentSelector = $__default["default"](SELECTOR_CONTENT);
+>>>>>>> danhmuc_list
 =======
       var $contentSelector = $__default["default"](SELECTOR_CONTENT);
 >>>>>>> danhmuc_list
@@ -2606,8 +3172,13 @@
       }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       if (typeof $__default['default'].fn.overlayScrollbars !== 'undefined') {
         $__default['default'](SELECTOR_SIDEBAR$1).overlayScrollbars({
+=======
+      if (typeof $__default["default"].fn.overlayScrollbars !== 'undefined') {
+        $__default["default"](SELECTOR_SIDEBAR$1).overlayScrollbars({
+>>>>>>> danhmuc_list
 =======
       if (typeof $__default["default"].fn.overlayScrollbars !== 'undefined') {
         $__default["default"](SELECTOR_SIDEBAR$1).overlayScrollbars({
@@ -2621,7 +3192,11 @@
         });
       } else {
 <<<<<<< HEAD
+<<<<<<< HEAD
         $__default['default'](SELECTOR_SIDEBAR$1).css('overflow-y', 'auto');
+=======
+        $__default["default"](SELECTOR_SIDEBAR$1).css('overflow-y', 'auto');
+>>>>>>> danhmuc_list
 =======
         $__default["default"](SELECTOR_SIDEBAR$1).css('overflow-y', 'auto');
 >>>>>>> danhmuc_list
@@ -2630,6 +3205,7 @@
 
     _proto.fixLoginRegisterHeight = function fixLoginRegisterHeight() {
 <<<<<<< HEAD
+<<<<<<< HEAD
       var $body = $__default['default']('body');
       var $selector = $__default['default'](SELECTOR_LOGIN_BOX + ", " + SELECTOR_REGISTER_BOX);
 
@@ -2637,6 +3213,8 @@
         $body.css('height', 'auto');
         $__default['default']('html').css('height', 'auto');
 =======
+=======
+>>>>>>> danhmuc_list
       var $body = $__default["default"]('body');
       var $selector = $__default["default"](SELECTOR_LOGIN_BOX + ", " + SELECTOR_REGISTER_BOX);
 
@@ -2647,6 +3225,9 @@
       } else if ($selector.length === 0) {
         $body.css('height', 'auto');
         $__default["default"]('html').css('height', 'auto');
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       } else {
         var boxHeight = $selector.height();
@@ -2671,6 +3252,7 @@
       }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'](SELECTOR_SIDEBAR$1).on('collapsed.lte.treeview expanded.lte.treeview', function () {
         _this.fixLayoutHeight();
       });
@@ -2681,6 +3263,8 @@
       });
       $__default['default'](SELECTOR_PUSHMENU_BTN).on('collapsed.lte.pushmenu shown.lte.pushmenu', function () {
 =======
+=======
+>>>>>>> danhmuc_list
       $__default["default"](SELECTOR_SIDEBAR$1).on('collapsed.lte.treeview expanded.lte.treeview', function () {
         _this.fixLayoutHeight();
       });
@@ -2690,13 +3274,20 @@
         }
       });
       $__default["default"](SELECTOR_PUSHMENU_BTN).on('collapsed.lte.pushmenu shown.lte.pushmenu', function () {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         setTimeout(function () {
           _this.fixLayoutHeight();
         }, 300);
       });
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'](SELECTOR_CONTROL_SIDEBAR_BTN).on('collapsed.lte.controlsidebar', function () {
+=======
+      $__default["default"](SELECTOR_CONTROL_SIDEBAR_BTN).on('collapsed.lte.controlsidebar', function () {
+>>>>>>> danhmuc_list
 =======
       $__default["default"](SELECTOR_CONTROL_SIDEBAR_BTN).on('collapsed.lte.controlsidebar', function () {
 >>>>>>> danhmuc_list
@@ -2704,6 +3295,7 @@
       }).on('expanded.lte.controlsidebar', function () {
         _this.fixLayoutHeight('control_sidebar');
       });
+<<<<<<< HEAD
 <<<<<<< HEAD
       $__default['default'](window).resize(function () {
         _this.fixLayoutHeight();
@@ -2714,6 +3306,8 @@
       setTimeout(function () {
         var $preloader = $__default['default'](SELECTOR_PRELOADER);
 =======
+=======
+>>>>>>> danhmuc_list
       $__default["default"](window).resize(function () {
         _this.fixLayoutHeight();
       });
@@ -2722,6 +3316,9 @@
       }, 50);
       setTimeout(function () {
         var $preloader = $__default["default"](SELECTOR_PRELOADER);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
         if ($preloader) {
@@ -2746,7 +3343,11 @@
 
     _proto._isFooterFixed = function _isFooterFixed() {
 <<<<<<< HEAD
+<<<<<<< HEAD
       return $__default['default'](SELECTOR_FOOTER).css('position') === 'fixed';
+=======
+      return $__default["default"](SELECTOR_FOOTER).css('position') === 'fixed';
+>>>>>>> danhmuc_list
 =======
       return $__default["default"](SELECTOR_FOOTER).css('position') === 'fixed';
 >>>>>>> danhmuc_list
@@ -2760,6 +3361,7 @@
 
       return this.each(function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
         var data = $__default['default'](this).data(DATA_KEY$6);
 
         var _options = $__default['default'].extend({}, Default$6, $__default['default'](this).data());
@@ -2768,6 +3370,8 @@
           data = new Layout($__default['default'](this), _options);
           $__default['default'](this).data(DATA_KEY$6, data);
 =======
+=======
+>>>>>>> danhmuc_list
         var data = $__default["default"](this).data(DATA_KEY$6);
 
         var _options = $__default["default"].extend({}, Default$6, $__default["default"](this).data());
@@ -2775,6 +3379,9 @@
         if (!data) {
           data = new Layout($__default["default"](this), _options);
           $__default["default"](this).data(DATA_KEY$6, data);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         }
 
@@ -2795,6 +3402,7 @@
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   $__default['default'](window).on('load', function () {
     Layout._jQueryInterface.call($__default['default']('body'));
   });
@@ -2803,6 +3411,8 @@
   }).on('focusout', function () {
     $__default['default'](SELECTOR_MAIN_SIDEBAR).removeClass(CLASS_NAME_SIDEBAR_FOCUSED);
 =======
+=======
+>>>>>>> danhmuc_list
   $__default["default"](window).on('load', function () {
     Layout._jQueryInterface.call($__default["default"]('body'));
   });
@@ -2810,6 +3420,9 @@
     $__default["default"](SELECTOR_MAIN_SIDEBAR).addClass(CLASS_NAME_SIDEBAR_FOCUSED);
   }).on('focusout', function () {
     $__default["default"](SELECTOR_MAIN_SIDEBAR).removeClass(CLASS_NAME_SIDEBAR_FOCUSED);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   });
   /**
@@ -2818,17 +3431,23 @@
    */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   $__default['default'].fn[NAME$6] = Layout._jQueryInterface;
   $__default['default'].fn[NAME$6].Constructor = Layout;
 
   $__default['default'].fn[NAME$6].noConflict = function () {
     $__default['default'].fn[NAME$6] = JQUERY_NO_CONFLICT$6;
 =======
+=======
+>>>>>>> danhmuc_list
   $__default["default"].fn[NAME$6] = Layout._jQueryInterface;
   $__default["default"].fn[NAME$6].Constructor = Layout;
 
   $__default["default"].fn[NAME$6].noConflict = function () {
     $__default["default"].fn[NAME$6] = JQUERY_NO_CONFLICT$6;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     return Layout._jQueryInterface;
   };
@@ -2848,8 +3467,14 @@
   var DATA_KEY$5 = 'lte.pushmenu';
   var EVENT_KEY$2 = "." + DATA_KEY$5;
 <<<<<<< HEAD
+<<<<<<< HEAD
   var JQUERY_NO_CONFLICT$5 = $__default['default'].fn[NAME$5];
   var EVENT_COLLAPSED$1 = "collapsed" + EVENT_KEY$2;
+=======
+  var JQUERY_NO_CONFLICT$5 = $__default["default"].fn[NAME$5];
+  var EVENT_COLLAPSED$1 = "collapsed" + EVENT_KEY$2;
+  var EVENT_COLLAPSED_DONE = "collapsed-done" + EVENT_KEY$2;
+>>>>>>> danhmuc_list
 =======
   var JQUERY_NO_CONFLICT$5 = $__default["default"].fn[NAME$5];
   var EVENT_COLLAPSED$1 = "collapsed" + EVENT_KEY$2;
@@ -2868,7 +3493,12 @@
     autoCollapseSize: 992,
     enableRemember: false,
 <<<<<<< HEAD
+<<<<<<< HEAD
     noTransitionAfterReload: true
+=======
+    noTransitionAfterReload: true,
+    animationSpeed: 300
+>>>>>>> danhmuc_list
 =======
     noTransitionAfterReload: true,
     animationSpeed: 300
@@ -2883,9 +3513,15 @@
     function PushMenu(element, options) {
       this._element = element;
 <<<<<<< HEAD
+<<<<<<< HEAD
       this._options = $__default['default'].extend({}, Default$5, options);
 
       if ($__default['default'](SELECTOR_OVERLAY).length === 0) {
+=======
+      this._options = $__default["default"].extend({}, Default$5, options);
+
+      if ($__default["default"](SELECTOR_OVERLAY).length === 0) {
+>>>>>>> danhmuc_list
 =======
       this._options = $__default["default"].extend({}, Default$5, options);
 
@@ -2902,9 +3538,15 @@
 
     _proto.expand = function expand() {
 <<<<<<< HEAD
+<<<<<<< HEAD
       var $bodySelector = $__default['default'](SELECTOR_BODY);
 
       if (this._options.autoCollapseSize && $__default['default'](window).width() <= this._options.autoCollapseSize) {
+=======
+      var $bodySelector = $__default["default"](SELECTOR_BODY);
+
+      if (this._options.autoCollapseSize && $__default["default"](window).width() <= this._options.autoCollapseSize) {
+>>>>>>> danhmuc_list
 =======
       var $bodySelector = $__default["default"](SELECTOR_BODY);
 
@@ -2916,7 +3558,11 @@
       $bodySelector.addClass(CLASS_NAME_IS_OPENING$1).removeClass(CLASS_NAME_COLLAPSED + " " + CLASS_NAME_CLOSED).delay(50).queue(function () {
         $bodySelector.removeClass(CLASS_NAME_IS_OPENING$1);
 <<<<<<< HEAD
+<<<<<<< HEAD
         $__default['default'](this).dequeue();
+=======
+        $__default["default"](this).dequeue();
+>>>>>>> danhmuc_list
 =======
         $__default["default"](this).dequeue();
 >>>>>>> danhmuc_list
@@ -2927,6 +3573,7 @@
       }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'](this._element).trigger($__default['default'].Event(EVENT_SHOWN));
     };
 
@@ -2935,6 +3582,8 @@
 
       if (this._options.autoCollapseSize && $__default['default'](window).width() <= this._options.autoCollapseSize) {
 =======
+=======
+>>>>>>> danhmuc_list
       $__default["default"](this._element).trigger($__default["default"].Event(EVENT_SHOWN));
     };
 
@@ -2944,6 +3593,9 @@
       var $bodySelector = $__default["default"](SELECTOR_BODY);
 
       if (this._options.autoCollapseSize && $__default["default"](window).width() <= this._options.autoCollapseSize) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         $bodySelector.removeClass(CLASS_NAME_OPEN$3).addClass(CLASS_NAME_CLOSED);
       }
@@ -2955,12 +3607,15 @@
       }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'](this._element).trigger($__default['default'].Event(EVENT_COLLAPSED$1));
     };
 
     _proto.toggle = function toggle() {
       if ($__default['default'](SELECTOR_BODY).hasClass(CLASS_NAME_COLLAPSED)) {
 =======
+=======
+>>>>>>> danhmuc_list
       $__default["default"](this._element).trigger($__default["default"].Event(EVENT_COLLAPSED$1));
       setTimeout(function () {
         $__default["default"](_this._element).trigger($__default["default"].Event(EVENT_COLLAPSED_DONE));
@@ -2969,6 +3624,9 @@
 
     _proto.toggle = function toggle() {
       if ($__default["default"](SELECTOR_BODY).hasClass(CLASS_NAME_COLLAPSED)) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         this.expand();
       } else {
@@ -2986,9 +3644,15 @@
       }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       var $bodySelector = $__default['default'](SELECTOR_BODY);
 
       if ($__default['default'](window).width() <= this._options.autoCollapseSize) {
+=======
+      var $bodySelector = $__default["default"](SELECTOR_BODY);
+
+      if ($__default["default"](window).width() <= this._options.autoCollapseSize) {
+>>>>>>> danhmuc_list
 =======
       var $bodySelector = $__default["default"](SELECTOR_BODY);
 
@@ -3012,7 +3676,11 @@
       }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       var $body = $__default['default']('body');
+=======
+      var $body = $__default["default"]('body');
+>>>>>>> danhmuc_list
 =======
       var $body = $__default["default"]('body');
 >>>>>>> danhmuc_list
@@ -3022,8 +3690,13 @@
         if (this._options.noTransitionAfterReload) {
           $body.addClass('hold-transition').addClass(CLASS_NAME_COLLAPSED).delay(50).queue(function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
             $__default['default'](this).removeClass('hold-transition');
             $__default['default'](this).dequeue();
+=======
+            $__default["default"](this).removeClass('hold-transition');
+            $__default["default"](this).dequeue();
+>>>>>>> danhmuc_list
 =======
             $__default["default"](this).removeClass('hold-transition');
             $__default["default"](this).dequeue();
@@ -3035,8 +3708,13 @@
       } else if (this._options.noTransitionAfterReload) {
         $body.addClass('hold-transition').removeClass(CLASS_NAME_COLLAPSED).delay(50).queue(function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
           $__default['default'](this).removeClass('hold-transition');
           $__default['default'](this).dequeue();
+=======
+          $__default["default"](this).removeClass('hold-transition');
+          $__default["default"](this).dequeue();
+>>>>>>> danhmuc_list
 =======
           $__default["default"](this).removeClass('hold-transition');
           $__default["default"](this).dequeue();
@@ -3050,6 +3728,7 @@
 
     _proto._init = function _init() {
 <<<<<<< HEAD
+<<<<<<< HEAD
       var _this = this;
 
       this.remember();
@@ -3057,17 +3736,23 @@
       $__default['default'](window).resize(function () {
         _this.autoCollapse(true);
 =======
+=======
+>>>>>>> danhmuc_list
       var _this2 = this;
 
       this.remember();
       this.autoCollapse();
       $__default["default"](window).resize(function () {
         _this2.autoCollapse(true);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       });
     };
 
     _proto._addOverlay = function _addOverlay() {
+<<<<<<< HEAD
 <<<<<<< HEAD
       var _this2 = this;
 
@@ -3079,6 +3764,8 @@
       });
       $__default['default'](SELECTOR_WRAPPER).append(overlay);
 =======
+=======
+>>>>>>> danhmuc_list
       var _this3 = this;
 
       var overlay = $__default["default"]('<div />', {
@@ -3088,12 +3775,16 @@
         _this3.collapse();
       });
       $__default["default"](SELECTOR_WRAPPER).append(overlay);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     } // Static
     ;
 
     PushMenu._jQueryInterface = function _jQueryInterface(operation) {
       return this.each(function () {
+<<<<<<< HEAD
 <<<<<<< HEAD
         var data = $__default['default'](this).data(DATA_KEY$5);
 
@@ -3103,6 +3794,8 @@
           data = new PushMenu(this, _options);
           $__default['default'](this).data(DATA_KEY$5, data);
 =======
+=======
+>>>>>>> danhmuc_list
         var data = $__default["default"](this).data(DATA_KEY$5);
 
         var _options = $__default["default"].extend({}, Default$5, $__default["default"](this).data());
@@ -3110,6 +3803,9 @@
         if (!data) {
           data = new PushMenu(this, _options);
           $__default["default"](this).data(DATA_KEY$5, data);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         }
 
@@ -3128,6 +3824,7 @@
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   $__default['default'](document).on('click', SELECTOR_TOGGLE_BUTTON$1, function (event) {
     event.preventDefault();
     var button = event.currentTarget;
@@ -3141,6 +3838,8 @@
   $__default['default'](window).on('load', function () {
     PushMenu._jQueryInterface.call($__default['default'](SELECTOR_TOGGLE_BUTTON$1));
 =======
+=======
+>>>>>>> danhmuc_list
   $__default["default"](document).on('click', SELECTOR_TOGGLE_BUTTON$1, function (event) {
     event.preventDefault();
     var button = event.currentTarget;
@@ -3153,6 +3852,9 @@
   });
   $__default["default"](window).on('load', function () {
     PushMenu._jQueryInterface.call($__default["default"](SELECTOR_TOGGLE_BUTTON$1));
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   });
   /**
@@ -3161,17 +3863,23 @@
    */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   $__default['default'].fn[NAME$5] = PushMenu._jQueryInterface;
   $__default['default'].fn[NAME$5].Constructor = PushMenu;
 
   $__default['default'].fn[NAME$5].noConflict = function () {
     $__default['default'].fn[NAME$5] = JQUERY_NO_CONFLICT$5;
 =======
+=======
+>>>>>>> danhmuc_list
   $__default["default"].fn[NAME$5] = PushMenu._jQueryInterface;
   $__default["default"].fn[NAME$5].Constructor = PushMenu;
 
   $__default["default"].fn[NAME$5].noConflict = function () {
     $__default["default"].fn[NAME$5] = JQUERY_NO_CONFLICT$5;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     return PushMenu._jQueryInterface;
   };
@@ -3190,7 +3898,11 @@
   var NAME$4 = 'SidebarSearch';
   var DATA_KEY$4 = 'lte.sidebar-search';
 <<<<<<< HEAD
+<<<<<<< HEAD
   var JQUERY_NO_CONFLICT$4 = $__default['default'].fn[NAME$4];
+=======
+  var JQUERY_NO_CONFLICT$4 = $__default["default"].fn[NAME$4];
+>>>>>>> danhmuc_list
 =======
   var JQUERY_NO_CONFLICT$4 = $__default["default"].fn[NAME$4];
 >>>>>>> danhmuc_list
@@ -3229,7 +3941,11 @@
     function SidebarSearch(_element, _options) {
       this.element = _element;
 <<<<<<< HEAD
+<<<<<<< HEAD
       this.options = $__default['default'].extend({}, Default$4, _options);
+=======
+      this.options = $__default["default"].extend({}, Default$4, _options);
+>>>>>>> danhmuc_list
 =======
       this.options = $__default["default"].extend({}, Default$4, _options);
 >>>>>>> danhmuc_list
@@ -3243,6 +3959,7 @@
       var _this = this;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       if ($__default['default'](SELECTOR_DATA_WIDGET$1).length === 0) {
         return;
       }
@@ -3250,20 +3967,30 @@
       if ($__default['default'](SELECTOR_DATA_WIDGET$1).next(SELECTOR_SEARCH_RESULTS).length === 0) {
         $__default['default'](SELECTOR_DATA_WIDGET$1).after($__default['default']('<div />', {
 =======
+=======
+>>>>>>> danhmuc_list
       if ($__default["default"](SELECTOR_DATA_WIDGET$1).length === 0) {
         return;
       }
 
       if ($__default["default"](SELECTOR_DATA_WIDGET$1).next(SELECTOR_SEARCH_RESULTS).length === 0) {
         $__default["default"](SELECTOR_DATA_WIDGET$1).after($__default["default"]('<div />', {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
           class: CLASS_NAME_SEARCH_RESULTS
         }));
       }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       if ($__default['default'](SELECTOR_SEARCH_RESULTS).children(SELECTOR_SEARCH_LIST_GROUP).length === 0) {
         $__default['default'](SELECTOR_SEARCH_RESULTS).append($__default['default']('<div />', {
+=======
+      if ($__default["default"](SELECTOR_SEARCH_RESULTS).children(SELECTOR_SEARCH_LIST_GROUP).length === 0) {
+        $__default["default"](SELECTOR_SEARCH_RESULTS).append($__default["default"]('<div />', {
+>>>>>>> danhmuc_list
 =======
       if ($__default["default"](SELECTOR_SEARCH_RESULTS).children(SELECTOR_SEARCH_LIST_GROUP).length === 0) {
         $__default["default"](SELECTOR_SEARCH_RESULTS).append($__default["default"]('<div />', {
@@ -3275,7 +4002,11 @@
       this._addNotFound();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'](SELECTOR_SIDEBAR).children().each(function (i, child) {
+=======
+      $__default["default"](SELECTOR_SIDEBAR).children().each(function (i, child) {
+>>>>>>> danhmuc_list
 =======
       $__default["default"](SELECTOR_SIDEBAR).children().each(function (i, child) {
 >>>>>>> danhmuc_list
@@ -3287,15 +4018,21 @@
       var _this2 = this;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       var searchValue = $__default['default'](SELECTOR_SEARCH_INPUT$1).val().toLowerCase();
 
       if (searchValue.length < this.options.minLength) {
         $__default['default'](SELECTOR_SEARCH_RESULTS_GROUP).empty();
 =======
+=======
+>>>>>>> danhmuc_list
       var searchValue = $__default["default"](SELECTOR_SEARCH_INPUT$1).val().toLowerCase();
 
       if (searchValue.length < this.options.minLength) {
         $__default["default"](SELECTOR_SEARCH_RESULTS_GROUP).empty();
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
         this._addNotFound();
@@ -3308,8 +4045,13 @@
         return item.name.toLowerCase().includes(searchValue);
       });
 <<<<<<< HEAD
+<<<<<<< HEAD
       var endResults = $__default['default'](searchResults.slice(0, this.options.maxResults));
       $__default['default'](SELECTOR_SEARCH_RESULTS_GROUP).empty();
+=======
+      var endResults = $__default["default"](searchResults.slice(0, this.options.maxResults));
+      $__default["default"](SELECTOR_SEARCH_RESULTS_GROUP).empty();
+>>>>>>> danhmuc_list
 =======
       var endResults = $__default["default"](searchResults.slice(0, this.options.maxResults));
       $__default["default"](SELECTOR_SEARCH_RESULTS_GROUP).empty();
@@ -3320,7 +4062,11 @@
       } else {
         endResults.each(function (i, result) {
 <<<<<<< HEAD
+<<<<<<< HEAD
           $__default['default'](SELECTOR_SEARCH_RESULTS_GROUP).append(_this2._renderItem(escape(result.name), escape(result.link), result.path));
+=======
+          $__default["default"](SELECTOR_SEARCH_RESULTS_GROUP).append(_this2._renderItem(escape(result.name), encodeURI(result.link), result.path));
+>>>>>>> danhmuc_list
 =======
           $__default["default"](SELECTOR_SEARCH_RESULTS_GROUP).append(_this2._renderItem(escape(result.name), encodeURI(result.link), result.path));
 >>>>>>> danhmuc_list
@@ -3331,6 +4077,7 @@
     };
 
     _proto.open = function open() {
+<<<<<<< HEAD
 <<<<<<< HEAD
       $__default['default'](SELECTOR_DATA_WIDGET$1).parent().addClass(CLASS_NAME_OPEN$2);
       $__default['default'](SELECTOR_SEARCH_ICON).removeClass(CLASS_NAME_ICON_SEARCH).addClass(CLASS_NAME_ICON_CLOSE);
@@ -3344,6 +4091,8 @@
     _proto.toggle = function toggle() {
       if ($__default['default'](SELECTOR_DATA_WIDGET$1).parent().hasClass(CLASS_NAME_OPEN$2)) {
 =======
+=======
+>>>>>>> danhmuc_list
       $__default["default"](SELECTOR_DATA_WIDGET$1).parent().addClass(CLASS_NAME_OPEN$2);
       $__default["default"](SELECTOR_SEARCH_ICON).removeClass(CLASS_NAME_ICON_SEARCH).addClass(CLASS_NAME_ICON_CLOSE);
     };
@@ -3355,6 +4104,9 @@
 
     _proto.toggle = function toggle() {
       if ($__default["default"](SELECTOR_DATA_WIDGET$1).parent().hasClass(CLASS_NAME_OPEN$2)) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         this.close();
       } else {
@@ -3371,7 +4123,11 @@
       }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       if ($__default['default'](item).hasClass(CLASS_NAME_HEADER)) {
+=======
+      if ($__default["default"](item).hasClass(CLASS_NAME_HEADER)) {
+>>>>>>> danhmuc_list
 =======
       if ($__default["default"](item).hasClass(CLASS_NAME_HEADER)) {
 >>>>>>> danhmuc_list
@@ -3380,8 +4136,13 @@
 
       var itemObject = {};
 <<<<<<< HEAD
+<<<<<<< HEAD
       var navLink = $__default['default'](item).clone().find("> " + SELECTOR_NAV_LINK);
       var navTreeview = $__default['default'](item).clone().find("> " + SELECTOR_NAV_TREEVIEW);
+=======
+      var navLink = $__default["default"](item).clone().find("> " + SELECTOR_NAV_LINK);
+      var navTreeview = $__default["default"](item).clone().find("> " + SELECTOR_NAV_TREEVIEW);
+>>>>>>> danhmuc_list
 =======
       var navLink = $__default["default"](item).clone().find("> " + SELECTOR_NAV_LINK);
       var navTreeview = $__default["default"](item).clone().find("> " + SELECTOR_NAV_TREEVIEW);
@@ -3412,14 +4173,20 @@
       path = path.join(" " + this.options.arrowSign + " ");
       name = unescape(name);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
       if (this.options.highlightName || this.options.highlightPath) {
         var searchValue = $__default['default'](SELECTOR_SEARCH_INPUT$1).val().toLowerCase();
 =======
+=======
+>>>>>>> danhmuc_list
       link = decodeURI(link);
 
       if (this.options.highlightName || this.options.highlightPath) {
         var searchValue = $__default["default"](SELECTOR_SEARCH_INPUT$1).val().toLowerCase();
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         var regExp = new RegExp(searchValue, 'gi');
 
@@ -3437,6 +4204,7 @@
       }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       var groupItemElement = $__default['default']('<a/>', {
         href: link,
         class: 'list-group-item'
@@ -3446,6 +4214,8 @@
       }).html(name);
       var searchPathElement = $__default['default']('<div/>', {
 =======
+=======
+>>>>>>> danhmuc_list
       var groupItemElement = $__default["default"]('<a/>', {
         href: decodeURIComponent(link),
         class: 'list-group-item'
@@ -3454,6 +4224,9 @@
         class: 'search-title'
       }).html(name);
       var searchPathElement = $__default["default"]('<div/>', {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         class: 'search-path'
       }).html(path);
@@ -3463,7 +4236,11 @@
 
     _proto._addNotFound = function _addNotFound() {
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'](SELECTOR_SEARCH_RESULTS_GROUP).append(this._renderItem(this.options.notFoundText, '#', []));
+=======
+      $__default["default"](SELECTOR_SEARCH_RESULTS_GROUP).append(this._renderItem(this.options.notFoundText, '#', []));
+>>>>>>> danhmuc_list
 =======
       $__default["default"](SELECTOR_SEARCH_RESULTS_GROUP).append(this._renderItem(this.options.notFoundText, '#', []));
 >>>>>>> danhmuc_list
@@ -3471,6 +4248,7 @@
     ;
 
     SidebarSearch._jQueryInterface = function _jQueryInterface(config) {
+<<<<<<< HEAD
 <<<<<<< HEAD
       var data = $__default['default'](this).data(DATA_KEY$4);
 
@@ -3483,6 +4261,8 @@
       var plugin = new SidebarSearch($__default['default'](this), _options);
       $__default['default'](this).data(DATA_KEY$4, typeof config === 'object' ? config : data);
 =======
+=======
+>>>>>>> danhmuc_list
       var data = $__default["default"](this).data(DATA_KEY$4);
 
       if (!data) {
@@ -3493,6 +4273,9 @@
 
       var plugin = new SidebarSearch($__default["default"](this), _options);
       $__default["default"](this).data(DATA_KEY$4, typeof config === 'object' ? config : data);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
       if (typeof config === 'string' && /init|toggle|close|open|search/.test(config)) {
@@ -3511,6 +4294,7 @@
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   $__default['default'](document).on('click', SELECTOR_SEARCH_BUTTON, function (event) {
     event.preventDefault();
 
@@ -3521,6 +4305,8 @@
       event.preventDefault();
       $__default['default'](SELECTOR_SEARCH_RESULTS_GROUP).children().last().focus();
 =======
+=======
+>>>>>>> danhmuc_list
   $__default["default"](document).on('click', SELECTOR_SEARCH_BUTTON, function (event) {
     event.preventDefault();
 
@@ -3530,6 +4316,9 @@
     if (event.keyCode == 38) {
       event.preventDefault();
       $__default["default"](SELECTOR_SEARCH_RESULTS_GROUP).children().last().focus();
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       return;
     }
@@ -3537,7 +4326,11 @@
     if (event.keyCode == 40) {
       event.preventDefault();
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'](SELECTOR_SEARCH_RESULTS_GROUP).children().first().focus();
+=======
+      $__default["default"](SELECTOR_SEARCH_RESULTS_GROUP).children().first().focus();
+>>>>>>> danhmuc_list
 =======
       $__default["default"](SELECTOR_SEARCH_RESULTS_GROUP).children().first().focus();
 >>>>>>> danhmuc_list
@@ -3546,17 +4339,23 @@
 
     setTimeout(function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
       SidebarSearch._jQueryInterface.call($__default['default'](SELECTOR_DATA_WIDGET$1), 'search');
     }, 100);
   });
   $__default['default'](document).on('keydown', SELECTOR_SEARCH_RESULTS_GROUP, function (event) {
     var $focused = $__default['default'](':focus');
 =======
+=======
+>>>>>>> danhmuc_list
       SidebarSearch._jQueryInterface.call($__default["default"](SELECTOR_DATA_WIDGET$1), 'search');
     }, 100);
   });
   $__default["default"](document).on('keydown', SELECTOR_SEARCH_RESULTS_GROUP, function (event) {
     var $focused = $__default["default"](':focus');
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
     if (event.keyCode == 38) {
@@ -3580,8 +4379,13 @@
     }
   });
 <<<<<<< HEAD
+<<<<<<< HEAD
   $__default['default'](window).on('load', function () {
     SidebarSearch._jQueryInterface.call($__default['default'](SELECTOR_DATA_WIDGET$1), 'init');
+=======
+  $__default["default"](window).on('load', function () {
+    SidebarSearch._jQueryInterface.call($__default["default"](SELECTOR_DATA_WIDGET$1), 'init');
+>>>>>>> danhmuc_list
 =======
   $__default["default"](window).on('load', function () {
     SidebarSearch._jQueryInterface.call($__default["default"](SELECTOR_DATA_WIDGET$1), 'init');
@@ -3593,17 +4397,23 @@
    */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   $__default['default'].fn[NAME$4] = SidebarSearch._jQueryInterface;
   $__default['default'].fn[NAME$4].Constructor = SidebarSearch;
 
   $__default['default'].fn[NAME$4].noConflict = function () {
     $__default['default'].fn[NAME$4] = JQUERY_NO_CONFLICT$4;
 =======
+=======
+>>>>>>> danhmuc_list
   $__default["default"].fn[NAME$4] = SidebarSearch._jQueryInterface;
   $__default["default"].fn[NAME$4].Constructor = SidebarSearch;
 
   $__default["default"].fn[NAME$4].noConflict = function () {
     $__default["default"].fn[NAME$4] = JQUERY_NO_CONFLICT$4;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     return SidebarSearch._jQueryInterface;
   };
@@ -3622,7 +4432,11 @@
   var NAME$3 = 'NavbarSearch';
   var DATA_KEY$3 = 'lte.navbar-search';
 <<<<<<< HEAD
+<<<<<<< HEAD
   var JQUERY_NO_CONFLICT$3 = $__default['default'].fn[NAME$3];
+=======
+  var JQUERY_NO_CONFLICT$3 = $__default["default"].fn[NAME$3];
+>>>>>>> danhmuc_list
 =======
   var JQUERY_NO_CONFLICT$3 = $__default["default"].fn[NAME$3];
 >>>>>>> danhmuc_list
@@ -3643,7 +4457,11 @@
     function NavbarSearch(_element, _options) {
       this._element = _element;
 <<<<<<< HEAD
+<<<<<<< HEAD
       this._config = $__default['default'].extend({}, Default$3, _options);
+=======
+      this._config = $__default["default"].extend({}, Default$3, _options);
+>>>>>>> danhmuc_list
 =======
       this._config = $__default["default"].extend({}, Default$3, _options);
 >>>>>>> danhmuc_list
@@ -3653,6 +4471,7 @@
     var _proto = NavbarSearch.prototype;
 
     _proto.open = function open() {
+<<<<<<< HEAD
 <<<<<<< HEAD
       $__default['default'](this._config.target).css('display', 'flex').hide().fadeIn().addClass(CLASS_NAME_OPEN$1);
       $__default['default'](this._config.target + " " + SELECTOR_SEARCH_INPUT).focus();
@@ -3664,6 +4483,8 @@
       if (this._config.resetOnClose) {
         $__default['default'](this._config.target + " " + SELECTOR_SEARCH_INPUT).val('');
 =======
+=======
+>>>>>>> danhmuc_list
       $__default["default"](this._config.target).css('display', 'flex').hide().fadeIn().addClass(CLASS_NAME_OPEN$1);
       $__default["default"](this._config.target + " " + SELECTOR_SEARCH_INPUT).focus();
     };
@@ -3673,13 +4494,20 @@
 
       if (this._config.resetOnClose) {
         $__default["default"](this._config.target + " " + SELECTOR_SEARCH_INPUT).val('');
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       }
     };
 
     _proto.toggle = function toggle() {
 <<<<<<< HEAD
+<<<<<<< HEAD
       if ($__default['default'](this._config.target).hasClass(CLASS_NAME_OPEN$1)) {
+=======
+      if ($__default["default"](this._config.target).hasClass(CLASS_NAME_OPEN$1)) {
+>>>>>>> danhmuc_list
 =======
       if ($__default["default"](this._config.target).hasClass(CLASS_NAME_OPEN$1)) {
 >>>>>>> danhmuc_list
@@ -3693,6 +4521,7 @@
     NavbarSearch._jQueryInterface = function _jQueryInterface(options) {
       return this.each(function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
         var data = $__default['default'](this).data(DATA_KEY$3);
 
         var _options = $__default['default'].extend({}, Default$3, $__default['default'](this).data());
@@ -3701,6 +4530,8 @@
           data = new NavbarSearch(this, _options);
           $__default['default'](this).data(DATA_KEY$3, data);
 =======
+=======
+>>>>>>> danhmuc_list
         var data = $__default["default"](this).data(DATA_KEY$3);
 
         var _options = $__default["default"].extend({}, Default$3, $__default["default"](this).data());
@@ -3708,6 +4539,9 @@
         if (!data) {
           data = new NavbarSearch(this, _options);
           $__default["default"](this).data(DATA_KEY$3, data);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         }
 
@@ -3728,9 +4562,15 @@
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   $__default['default'](document).on('click', SELECTOR_TOGGLE_BUTTON, function (event) {
     event.preventDefault();
     var button = $__default['default'](event.currentTarget);
+=======
+  $__default["default"](document).on('click', SELECTOR_TOGGLE_BUTTON, function (event) {
+    event.preventDefault();
+    var button = $__default["default"](event.currentTarget);
+>>>>>>> danhmuc_list
 =======
   $__default["default"](document).on('click', SELECTOR_TOGGLE_BUTTON, function (event) {
     event.preventDefault();
@@ -3749,17 +4589,23 @@
    */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   $__default['default'].fn[NAME$3] = NavbarSearch._jQueryInterface;
   $__default['default'].fn[NAME$3].Constructor = NavbarSearch;
 
   $__default['default'].fn[NAME$3].noConflict = function () {
     $__default['default'].fn[NAME$3] = JQUERY_NO_CONFLICT$3;
 =======
+=======
+>>>>>>> danhmuc_list
   $__default["default"].fn[NAME$3] = NavbarSearch._jQueryInterface;
   $__default["default"].fn[NAME$3].Constructor = NavbarSearch;
 
   $__default["default"].fn[NAME$3].noConflict = function () {
     $__default["default"].fn[NAME$3] = JQUERY_NO_CONFLICT$3;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     return NavbarSearch._jQueryInterface;
   };
@@ -3779,7 +4625,11 @@
   var DATA_KEY$2 = 'lte.toasts';
   var EVENT_KEY$1 = "." + DATA_KEY$2;
 <<<<<<< HEAD
+<<<<<<< HEAD
   var JQUERY_NO_CONFLICT$2 = $__default['default'].fn[NAME$2];
+=======
+  var JQUERY_NO_CONFLICT$2 = $__default["default"].fn[NAME$2];
+>>>>>>> danhmuc_list
 =======
   var JQUERY_NO_CONFLICT$2 = $__default["default"].fn[NAME$2];
 >>>>>>> danhmuc_list
@@ -3827,7 +4677,11 @@
       this._prepareContainer();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default']('body').trigger($__default['default'].Event(EVENT_INIT));
+=======
+      $__default["default"]('body').trigger($__default["default"].Event(EVENT_INIT));
+>>>>>>> danhmuc_list
 =======
       $__default["default"]('body').trigger($__default["default"].Event(EVENT_INIT));
 >>>>>>> danhmuc_list
@@ -3838,7 +4692,11 @@
 
     _proto.create = function create() {
 <<<<<<< HEAD
+<<<<<<< HEAD
       var toast = $__default['default']('<div class="toast" role="alert" aria-live="assertive" aria-atomic="true"/>');
+=======
+      var toast = $__default["default"]('<div class="toast" role="alert" aria-live="assertive" aria-atomic="true"/>');
+>>>>>>> danhmuc_list
 =======
       var toast = $__default["default"]('<div class="toast" role="alert" aria-live="assertive" aria-atomic="true"/>');
 >>>>>>> danhmuc_list
@@ -3854,15 +4712,21 @@
       }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       var toastHeader = $__default['default']('<div class="toast-header">');
 
       if (this._config.image != null) {
         var toastImage = $__default['default']('<img />').addClass('rounded mr-2').attr('src', this._config.image).attr('alt', this._config.imageAlt);
 =======
+=======
+>>>>>>> danhmuc_list
       var toastHeader = $__default["default"]('<div class="toast-header">');
 
       if (this._config.image != null) {
         var toastImage = $__default["default"]('<img />').addClass('rounded mr-2').attr('src', this._config.image).attr('alt', this._config.imageAlt);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
         if (this._config.imageHeight != null) {
@@ -3873,6 +4737,7 @@
       }
 
       if (this._config.icon != null) {
+<<<<<<< HEAD
 <<<<<<< HEAD
         toastHeader.append($__default['default']('<i />').addClass('mr-2').addClass(this._config.icon));
       }
@@ -3888,6 +4753,8 @@
       if (this._config.close == true) {
         var toastClose = $__default['default']('<button data-dismiss="toast" />').attr('type', 'button').addClass('ml-2 mb-1 close').attr('aria-label', 'Close').append('<span aria-hidden="true">&times;</span>');
 =======
+=======
+>>>>>>> danhmuc_list
         toastHeader.append($__default["default"]('<i />').addClass('mr-2').addClass(this._config.icon));
       }
 
@@ -3901,6 +4768,9 @@
 
       if (this._config.close == true) {
         var toastClose = $__default["default"]('<button data-dismiss="toast" />').attr('type', 'button').addClass('ml-2 mb-1 close').attr('aria-label', 'Close').append('<span aria-hidden="true">&times;</span>');
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
         if (this._config.title == null) {
@@ -3914,6 +4784,7 @@
 
       if (this._config.body != null) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         toast.append($__default['default']('<div class="toast-body" />').html(this._config.body));
       }
 
@@ -3921,20 +4792,30 @@
       var $body = $__default['default']('body');
       $body.trigger($__default['default'].Event(EVENT_CREATED));
 =======
+=======
+>>>>>>> danhmuc_list
         toast.append($__default["default"]('<div class="toast-body" />').html(this._config.body));
       }
 
       $__default["default"](this._getContainerId()).prepend(toast);
       var $body = $__default["default"]('body');
       $body.trigger($__default["default"].Event(EVENT_CREATED));
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       toast.toast('show');
 
       if (this._config.autoremove) {
         toast.on('hidden.bs.toast', function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
           $__default['default'](this).delay(200).remove();
           $body.trigger($__default['default'].Event(EVENT_REMOVED));
+=======
+          $__default["default"](this).delay(200).remove();
+          $body.trigger($__default["default"].Event(EVENT_REMOVED));
+>>>>>>> danhmuc_list
 =======
           $__default["default"](this).delay(200).remove();
           $body.trigger($__default["default"].Event(EVENT_REMOVED));
@@ -3964,8 +4845,13 @@
 
     _proto._prepareContainer = function _prepareContainer() {
 <<<<<<< HEAD
+<<<<<<< HEAD
       if ($__default['default'](this._getContainerId()).length === 0) {
         var container = $__default['default']('<div />').attr('id', this._getContainerId().replace('#', ''));
+=======
+      if ($__default["default"](this._getContainerId()).length === 0) {
+        var container = $__default["default"]('<div />').attr('id', this._getContainerId().replace('#', ''));
+>>>>>>> danhmuc_list
 =======
       if ($__default["default"](this._getContainerId()).length === 0) {
         var container = $__default["default"]('<div />').attr('id', this._getContainerId().replace('#', ''));
@@ -3982,6 +4868,7 @@
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $__default['default']('body').append(container);
       }
 
@@ -3990,6 +4877,8 @@
       } else {
         $__default['default'](this._getContainerId()).removeClass('fixed');
 =======
+=======
+>>>>>>> danhmuc_list
         $__default["default"]('body').append(container);
       }
 
@@ -3997,6 +4886,9 @@
         $__default["default"](this._getContainerId()).addClass('fixed');
       } else {
         $__default["default"](this._getContainerId()).removeClass('fixed');
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       }
     } // Static
@@ -4005,9 +4897,15 @@
     Toasts._jQueryInterface = function _jQueryInterface(option, config) {
       return this.each(function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
         var _options = $__default['default'].extend({}, Default$2, config);
 
         var toast = new Toasts($__default['default'](this), _options);
+=======
+        var _options = $__default["default"].extend({}, Default$2, config);
+
+        var toast = new Toasts($__default["default"](this), _options);
+>>>>>>> danhmuc_list
 =======
         var _options = $__default["default"].extend({}, Default$2, config);
 
@@ -4029,17 +4927,23 @@
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   $__default['default'].fn[NAME$2] = Toasts._jQueryInterface;
   $__default['default'].fn[NAME$2].Constructor = Toasts;
 
   $__default['default'].fn[NAME$2].noConflict = function () {
     $__default['default'].fn[NAME$2] = JQUERY_NO_CONFLICT$2;
 =======
+=======
+>>>>>>> danhmuc_list
   $__default["default"].fn[NAME$2] = Toasts._jQueryInterface;
   $__default["default"].fn[NAME$2].Constructor = Toasts;
 
   $__default["default"].fn[NAME$2].noConflict = function () {
     $__default["default"].fn[NAME$2] = JQUERY_NO_CONFLICT$2;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     return Toasts._jQueryInterface;
   };
@@ -4058,7 +4962,11 @@
   var NAME$1 = 'TodoList';
   var DATA_KEY$1 = 'lte.todolist';
 <<<<<<< HEAD
+<<<<<<< HEAD
   var JQUERY_NO_CONFLICT$1 = $__default['default'].fn[NAME$1];
+=======
+  var JQUERY_NO_CONFLICT$1 = $__default["default"].fn[NAME$1];
+>>>>>>> danhmuc_list
 =======
   var JQUERY_NO_CONFLICT$1 = $__default["default"].fn[NAME$1];
 >>>>>>> danhmuc_list
@@ -4092,8 +5000,13 @@
       item.parents('li').toggleClass(CLASS_NAME_TODO_LIST_DONE);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       if (!$__default['default'](item).prop('checked')) {
         this.unCheck($__default['default'](item));
+=======
+      if (!$__default["default"](item).prop('checked')) {
+        this.unCheck($__default["default"](item));
+>>>>>>> danhmuc_list
 =======
       if (!$__default["default"](item).prop('checked')) {
         this.unCheck($__default["default"](item));
@@ -4120,7 +5033,11 @@
       $toggleSelector.find('input:checkbox:checked').parents('li').toggleClass(CLASS_NAME_TODO_LIST_DONE);
       $toggleSelector.on('change', 'input:checkbox', function (event) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         _this.toggle($__default['default'](event.target));
+=======
+        _this.toggle($__default["default"](event.target));
+>>>>>>> danhmuc_list
 =======
         _this.toggle($__default["default"](event.target));
 >>>>>>> danhmuc_list
@@ -4130,6 +5047,7 @@
 
     TodoList._jQueryInterface = function _jQueryInterface(config) {
       return this.each(function () {
+<<<<<<< HEAD
 <<<<<<< HEAD
         var data = $__default['default'](this).data(DATA_KEY$1);
 
@@ -4142,6 +5060,8 @@
         var plugin = new TodoList($__default['default'](this), _options);
         $__default['default'](this).data(DATA_KEY$1, typeof config === 'object' ? config : data);
 =======
+=======
+>>>>>>> danhmuc_list
         var data = $__default["default"](this).data(DATA_KEY$1);
 
         if (!data) {
@@ -4152,6 +5072,9 @@
 
         var plugin = new TodoList($__default["default"](this), _options);
         $__default["default"](this).data(DATA_KEY$1, typeof config === 'object' ? config : data);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
         if (config === 'init') {
@@ -4169,8 +5092,13 @@
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   $__default['default'](window).on('load', function () {
     TodoList._jQueryInterface.call($__default['default'](SELECTOR_DATA_TOGGLE));
+=======
+  $__default["default"](window).on('load', function () {
+    TodoList._jQueryInterface.call($__default["default"](SELECTOR_DATA_TOGGLE));
+>>>>>>> danhmuc_list
 =======
   $__default["default"](window).on('load', function () {
     TodoList._jQueryInterface.call($__default["default"](SELECTOR_DATA_TOGGLE));
@@ -4182,17 +5110,23 @@
    */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   $__default['default'].fn[NAME$1] = TodoList._jQueryInterface;
   $__default['default'].fn[NAME$1].Constructor = TodoList;
 
   $__default['default'].fn[NAME$1].noConflict = function () {
     $__default['default'].fn[NAME$1] = JQUERY_NO_CONFLICT$1;
 =======
+=======
+>>>>>>> danhmuc_list
   $__default["default"].fn[NAME$1] = TodoList._jQueryInterface;
   $__default["default"].fn[NAME$1].Constructor = TodoList;
 
   $__default["default"].fn[NAME$1].noConflict = function () {
     $__default["default"].fn[NAME$1] = JQUERY_NO_CONFLICT$1;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     return TodoList._jQueryInterface;
   };
@@ -4212,7 +5146,11 @@
   var DATA_KEY = 'lte.treeview';
   var EVENT_KEY = "." + DATA_KEY;
 <<<<<<< HEAD
+<<<<<<< HEAD
   var JQUERY_NO_CONFLICT = $__default['default'].fn[NAME];
+=======
+  var JQUERY_NO_CONFLICT = $__default["default"].fn[NAME];
+>>>>>>> danhmuc_list
 =======
   var JQUERY_NO_CONFLICT = $__default["default"].fn[NAME];
 >>>>>>> danhmuc_list
@@ -4250,7 +5188,11 @@
 
     _proto.init = function init() {
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default']("" + SELECTOR_LI + SELECTOR_OPEN + " " + SELECTOR_TREEVIEW_MENU + SELECTOR_OPEN).css('display', 'block');
+=======
+      $__default["default"]("" + SELECTOR_LI + SELECTOR_OPEN + " " + SELECTOR_TREEVIEW_MENU + SELECTOR_OPEN).css('display', 'block');
+>>>>>>> danhmuc_list
 =======
       $__default["default"]("" + SELECTOR_LI + SELECTOR_OPEN + " " + SELECTOR_TREEVIEW_MENU + SELECTOR_OPEN).css('display', 'block');
 >>>>>>> danhmuc_list
@@ -4262,7 +5204,11 @@
       var _this = this;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       var expandedEvent = $__default['default'].Event(EVENT_EXPANDED);
+=======
+      var expandedEvent = $__default["default"].Event(EVENT_EXPANDED);
+>>>>>>> danhmuc_list
 =======
       var expandedEvent = $__default["default"].Event(EVENT_EXPANDED);
 >>>>>>> danhmuc_list
@@ -4277,7 +5223,11 @@
       treeviewMenu.stop().slideDown(this._config.animationSpeed, function () {
         parentLi.addClass(CLASS_NAME_OPEN);
 <<<<<<< HEAD
+<<<<<<< HEAD
         $__default['default'](_this._element).trigger(expandedEvent);
+=======
+        $__default["default"](_this._element).trigger(expandedEvent);
+>>>>>>> danhmuc_list
 =======
         $__default["default"](_this._element).trigger(expandedEvent);
 >>>>>>> danhmuc_list
@@ -4292,6 +5242,7 @@
       var _this2 = this;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       var collapsedEvent = $__default['default'].Event(EVENT_COLLAPSED);
       parentLi.removeClass(CLASS_NAME_IS_OPENING + " " + CLASS_NAME_OPEN);
       treeviewMenu.stop().slideUp(this._config.animationSpeed, function () {
@@ -4299,19 +5250,28 @@
         treeviewMenu.find(SELECTOR_OPEN + " > " + SELECTOR_TREEVIEW_MENU).slideUp();
         treeviewMenu.find(SELECTOR_OPEN).removeClass(CLASS_NAME_OPEN);
 =======
+=======
+>>>>>>> danhmuc_list
       var collapsedEvent = $__default["default"].Event(EVENT_COLLAPSED);
       parentLi.removeClass(CLASS_NAME_IS_OPENING + " " + CLASS_NAME_OPEN);
       treeviewMenu.stop().slideUp(this._config.animationSpeed, function () {
         $__default["default"](_this2._element).trigger(collapsedEvent);
         treeviewMenu.find(SELECTOR_OPEN + " > " + SELECTOR_TREEVIEW_MENU).slideUp();
         treeviewMenu.find(SELECTOR_OPEN).removeClass(CLASS_NAME_IS_OPENING + " " + CLASS_NAME_OPEN);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       });
     };
 
     _proto.toggle = function toggle(event) {
 <<<<<<< HEAD
+<<<<<<< HEAD
       var $relativeTarget = $__default['default'](event.currentTarget);
+=======
+      var $relativeTarget = $__default["default"](event.currentTarget);
+>>>>>>> danhmuc_list
 =======
       var $relativeTarget = $__default["default"](event.currentTarget);
 >>>>>>> danhmuc_list
@@ -4334,9 +5294,15 @@
 
       if (isOpen) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         this.collapse($__default['default'](treeviewMenu), parentLi);
       } else {
         this.expand($__default['default'](treeviewMenu), parentLi);
+=======
+        this.collapse($__default["default"](treeviewMenu), parentLi);
+      } else {
+        this.expand($__default["default"](treeviewMenu), parentLi);
+>>>>>>> danhmuc_list
 =======
         this.collapse($__default["default"](treeviewMenu), parentLi);
       } else {
@@ -4351,7 +5317,11 @@
 
       var elementId = this._element.attr('id') !== undefined ? "#" + this._element.attr('id') : '';
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'](document).on('click', "" + elementId + this._config.trigger, function (event) {
+=======
+      $__default["default"](document).on('click', "" + elementId + this._config.trigger, function (event) {
+>>>>>>> danhmuc_list
 =======
       $__default["default"](document).on('click', "" + elementId + this._config.trigger, function (event) {
 >>>>>>> danhmuc_list
@@ -4361,8 +5331,13 @@
 
     _proto._expandSidebar = function _expandSidebar() {
 <<<<<<< HEAD
+<<<<<<< HEAD
       if ($__default['default']('body').hasClass(CLASS_NAME_SIDEBAR_COLLAPSED)) {
         $__default['default'](this._config.sidebarButtonSelector).PushMenu('expand');
+=======
+      if ($__default["default"]('body').hasClass(CLASS_NAME_SIDEBAR_COLLAPSED)) {
+        $__default["default"](this._config.sidebarButtonSelector).PushMenu('expand');
+>>>>>>> danhmuc_list
 =======
       if ($__default["default"]('body').hasClass(CLASS_NAME_SIDEBAR_COLLAPSED)) {
         $__default["default"](this._config.sidebarButtonSelector).PushMenu('expand');
@@ -4374,6 +5349,7 @@
     Treeview._jQueryInterface = function _jQueryInterface(config) {
       return this.each(function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
         var data = $__default['default'](this).data(DATA_KEY);
 
         var _options = $__default['default'].extend({}, Default, $__default['default'](this).data());
@@ -4382,6 +5358,8 @@
           data = new Treeview($__default['default'](this), _options);
           $__default['default'](this).data(DATA_KEY, data);
 =======
+=======
+>>>>>>> danhmuc_list
         var data = $__default["default"](this).data(DATA_KEY);
 
         var _options = $__default["default"].extend({}, Default, $__default["default"](this).data());
@@ -4389,6 +5367,9 @@
         if (!data) {
           data = new Treeview($__default["default"](this), _options);
           $__default["default"](this).data(DATA_KEY, data);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         }
 
@@ -4407,9 +5388,15 @@
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   $__default['default'](window).on(EVENT_LOAD_DATA_API, function () {
     $__default['default'](SELECTOR_DATA_WIDGET).each(function () {
       Treeview._jQueryInterface.call($__default['default'](this), 'init');
+=======
+  $__default["default"](window).on(EVENT_LOAD_DATA_API, function () {
+    $__default["default"](SELECTOR_DATA_WIDGET).each(function () {
+      Treeview._jQueryInterface.call($__default["default"](this), 'init');
+>>>>>>> danhmuc_list
 =======
   $__default["default"](window).on(EVENT_LOAD_DATA_API, function () {
     $__default["default"](SELECTOR_DATA_WIDGET).each(function () {
@@ -4423,17 +5410,23 @@
    */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   $__default['default'].fn[NAME] = Treeview._jQueryInterface;
   $__default['default'].fn[NAME].Constructor = Treeview;
 
   $__default['default'].fn[NAME].noConflict = function () {
     $__default['default'].fn[NAME] = JQUERY_NO_CONFLICT;
 =======
+=======
+>>>>>>> danhmuc_list
   $__default["default"].fn[NAME] = Treeview._jQueryInterface;
   $__default["default"].fn[NAME].Constructor = Treeview;
 
   $__default["default"].fn[NAME].noConflict = function () {
     $__default["default"].fn[NAME] = JQUERY_NO_CONFLICT;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     return Treeview._jQueryInterface;
   };
@@ -4457,7 +5450,11 @@
   Object.defineProperty(exports, '__esModule', { value: true });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 })));
+=======
+}));
+>>>>>>> danhmuc_list
 =======
 }));
 >>>>>>> danhmuc_list

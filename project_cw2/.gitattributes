@@ -1,9 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 * text=auto
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> Login_Register
+=======
+* text=auto eol=lf
+>>>>>>> danhmuc_list
 =======
 * text=auto eol=lf
 >>>>>>> danhmuc_list
@@ -17,6 +21,7 @@
 /.github export-ignore
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *.css linguist-vendored
 *.scss linguist-vendored
@@ -25,6 +30,10 @@
 =======
 >>>>>>> Login_Register
 CHANGELOG.md export-ignore
+=======
+CHANGELOG.md export-ignore
+.styleci.yml export-ignore
+>>>>>>> danhmuc_list
 =======
 CHANGELOG.md export-ignore
 .styleci.yml export-ignore

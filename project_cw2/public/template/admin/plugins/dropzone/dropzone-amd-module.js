@@ -7030,8 +7030,14 @@ var defaultOptions = {
   /**
    * The timeout for the XHR requests in milliseconds (since `v4.4.0`).
 <<<<<<< HEAD
+<<<<<<< HEAD
    */
   timeout: 30000,
+=======
+   * If set to null or 0, no timeout is going to be set.
+   */
+  timeout: null,
+>>>>>>> danhmuc_list
 =======
    * If set to null or 0, no timeout is going to be set.
    */
@@ -8908,7 +8914,11 @@ var Dropzone = /*#__PURE__*/function (_Emitter) {
 
         mockFile.dataURL = imageUrl;
 <<<<<<< HEAD
+<<<<<<< HEAD
         this.createThumbnailFromUrl(mockFile, this.options.thumbnailWidth, this.options.thumbnailHeight, this.options.resizeMethod, this.options.fixOrientation, onDone, crossOrigin);
+=======
+        this.createThumbnailFromUrl(mockFile, this.options.thumbnailWidth, this.options.thumbnailHeight, this.options.thumbnailMethod, this.options.fixOrientation, onDone, crossOrigin);
+>>>>>>> danhmuc_list
 =======
         this.createThumbnailFromUrl(mockFile, this.options.thumbnailWidth, this.options.thumbnailHeight, this.options.thumbnailMethod, this.options.fixOrientation, onDone, crossOrigin);
 >>>>>>> danhmuc_list
@@ -9228,7 +9238,11 @@ var Dropzone = /*#__PURE__*/function (_Emitter) {
           };
 
 <<<<<<< HEAD
+<<<<<<< HEAD
           file.upload.finishedChunkUpload = function (chunk) {
+=======
+          file.upload.finishedChunkUpload = function (chunk, response) {
+>>>>>>> danhmuc_list
 =======
           file.upload.finishedChunkUpload = function (chunk, response) {
 >>>>>>> danhmuc_list
@@ -9252,7 +9266,11 @@ var Dropzone = /*#__PURE__*/function (_Emitter) {
             if (allFinished) {
               _this14.options.chunksUploaded(file, function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 _this14._finished(files, "", null);
+=======
+                _this14._finished(files, response, null);
+>>>>>>> danhmuc_list
 =======
                 _this14._finished(files, response, null);
 >>>>>>> danhmuc_list
@@ -9326,7 +9344,12 @@ var Dropzone = /*#__PURE__*/function (_Emitter) {
       xhr.open(method, url, true); // Setting the timeout after open because of IE11 issue: https://gitlab.com/meno/dropzone/issues/8
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       xhr.timeout = this.resolveOption(this.options.timeout, files); // Has to be after `.open()`. See https://github.com/enyo/dropzone/issues/179
+=======
+      var timeout = this.resolveOption(this.options.timeout, files);
+      if (timeout) xhr.timeout = this.resolveOption(this.options.timeout, files); // Has to be after `.open()`. See https://github.com/enyo/dropzone/issues/179
+>>>>>>> danhmuc_list
 =======
       var timeout = this.resolveOption(this.options.timeout, files);
       if (timeout) xhr.timeout = this.resolveOption(this.options.timeout, files); // Has to be after `.open()`. See https://github.com/enyo/dropzone/issues/179
@@ -9503,6 +9526,7 @@ var Dropzone = /*#__PURE__*/function (_Emitter) {
     key: "_updateFilesUploadProgress",
     value: function _updateFilesUploadProgress(files, xhr, e) {
 <<<<<<< HEAD
+<<<<<<< HEAD
       var progress;
 
       if (typeof e !== "undefined") {
@@ -9607,6 +9631,8 @@ var Dropzone = /*#__PURE__*/function (_Emitter) {
           _iterator20.f();
         }
 =======
+=======
+>>>>>>> danhmuc_list
       if (!files[0].upload.chunked) {
         // Handle file uploads without chunking
         var _iterator17 = dropzone_createForOfIteratorHelper(files, true),
@@ -9676,6 +9702,9 @@ var Dropzone = /*#__PURE__*/function (_Emitter) {
 
         _file2.upload.progress = _file2.upload.progress / _file2.upload.totalChunkCount;
         this.emit("uploadprogress", _file2, _file2.upload.progress, _file2.upload.bytesSent);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       }
     }
@@ -9706,7 +9735,11 @@ var Dropzone = /*#__PURE__*/function (_Emitter) {
       }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       this._updateFilesUploadProgress(files);
+=======
+      this._updateFilesUploadProgress(files, xhr);
+>>>>>>> danhmuc_list
 =======
       this._updateFilesUploadProgress(files, xhr);
 >>>>>>> danhmuc_list
@@ -9716,7 +9749,11 @@ var Dropzone = /*#__PURE__*/function (_Emitter) {
       } else {
         if (files[0].upload.chunked) {
 <<<<<<< HEAD
+<<<<<<< HEAD
           files[0].upload.finishedChunkUpload(this._getChunk(files[0], xhr));
+=======
+          files[0].upload.finishedChunkUpload(this._getChunk(files[0], xhr), response);
+>>>>>>> danhmuc_list
 =======
           files[0].upload.finishedChunkUpload(this._getChunk(files[0], xhr), response);
 >>>>>>> danhmuc_list
@@ -9750,12 +9787,18 @@ var Dropzone = /*#__PURE__*/function (_Emitter) {
     key: "submitRequest",
     value: function submitRequest(xhr, formData, files) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
       if (xhr.readyState != 1) {
         console.warn("Cannot send this request because the XMLHttpRequest.readyState is not OPENED.");
         return;
       }
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       xhr.send(formData);
     } // Called internally when processing is finished.
@@ -9765,6 +9808,7 @@ var Dropzone = /*#__PURE__*/function (_Emitter) {
     key: "_finished",
     value: function _finished(files, responseText, e) {
 <<<<<<< HEAD
+<<<<<<< HEAD
       var _iterator21 = dropzone_createForOfIteratorHelper(files, true),
           _step21;
 
@@ -9772,12 +9816,17 @@ var Dropzone = /*#__PURE__*/function (_Emitter) {
         for (_iterator21.s(); !(_step21 = _iterator21.n()).done;) {
           var file = _step21.value;
 =======
+=======
+>>>>>>> danhmuc_list
       var _iterator18 = dropzone_createForOfIteratorHelper(files, true),
           _step18;
 
       try {
         for (_iterator18.s(); !(_step18 = _iterator18.n()).done;) {
           var file = _step18.value;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
           file.status = Dropzone.SUCCESS;
           this.emit("success", file, responseText, e);
@@ -9785,9 +9834,15 @@ var Dropzone = /*#__PURE__*/function (_Emitter) {
         }
       } catch (err) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         _iterator21.e(err);
       } finally {
         _iterator21.f();
+=======
+        _iterator18.e(err);
+      } finally {
+        _iterator18.f();
+>>>>>>> danhmuc_list
 =======
         _iterator18.e(err);
       } finally {
@@ -9810,6 +9865,7 @@ var Dropzone = /*#__PURE__*/function (_Emitter) {
     key: "_errorProcessing",
     value: function _errorProcessing(files, message, xhr) {
 <<<<<<< HEAD
+<<<<<<< HEAD
       var _iterator22 = dropzone_createForOfIteratorHelper(files, true),
           _step22;
 
@@ -9817,12 +9873,17 @@ var Dropzone = /*#__PURE__*/function (_Emitter) {
         for (_iterator22.s(); !(_step22 = _iterator22.n()).done;) {
           var file = _step22.value;
 =======
+=======
+>>>>>>> danhmuc_list
       var _iterator19 = dropzone_createForOfIteratorHelper(files, true),
           _step19;
 
       try {
         for (_iterator19.s(); !(_step19 = _iterator19.n()).done;) {
           var file = _step19.value;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
           file.status = Dropzone.ERROR;
           this.emit("error", file, message, xhr);
@@ -9830,9 +9891,15 @@ var Dropzone = /*#__PURE__*/function (_Emitter) {
         }
       } catch (err) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         _iterator22.e(err);
       } finally {
         _iterator22.f();
+=======
+        _iterator19.e(err);
+      } finally {
+        _iterator19.f();
+>>>>>>> danhmuc_list
 =======
         _iterator19.e(err);
       } finally {
@@ -9900,7 +9967,11 @@ var Dropzone = /*#__PURE__*/function (_Emitter) {
 
 Dropzone.initClass();
 <<<<<<< HEAD
+<<<<<<< HEAD
 Dropzone.version = "5.8.1"; // This is a map of options for your different dropzones. Add configurations
+=======
+Dropzone.version = "5.9.3"; // This is a map of options for your different dropzones. Add configurations
+>>>>>>> danhmuc_list
 =======
 Dropzone.version = "5.9.3"; // This is a map of options for your different dropzones. Add configurations
 >>>>>>> danhmuc_list
@@ -9960,6 +10031,7 @@ Dropzone.discover = function () {
         var result = [];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         var _iterator23 = dropzone_createForOfIteratorHelper(elements, true),
             _step23;
 
@@ -9967,12 +10039,17 @@ Dropzone.discover = function () {
           for (_iterator23.s(); !(_step23 = _iterator23.n()).done;) {
             var el = _step23.value;
 =======
+=======
+>>>>>>> danhmuc_list
         var _iterator20 = dropzone_createForOfIteratorHelper(elements, true),
             _step20;
 
         try {
           for (_iterator20.s(); !(_step20 = _iterator20.n()).done;) {
             var el = _step20.value;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
             if (/(^| )dropzone($| )/.test(el.className)) {
@@ -9983,9 +10060,15 @@ Dropzone.discover = function () {
           }
         } catch (err) {
 <<<<<<< HEAD
+<<<<<<< HEAD
           _iterator23.e(err);
         } finally {
           _iterator23.f();
+=======
+          _iterator20.e(err);
+        } finally {
+          _iterator20.f();
+>>>>>>> danhmuc_list
 =======
           _iterator20.e(err);
         } finally {
@@ -10005,6 +10088,7 @@ Dropzone.discover = function () {
     var result = [];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     var _iterator24 = dropzone_createForOfIteratorHelper(dropzones, true),
         _step24;
 
@@ -10012,12 +10096,17 @@ Dropzone.discover = function () {
       for (_iterator24.s(); !(_step24 = _iterator24.n()).done;) {
         var dropzone = _step24.value;
 =======
+=======
+>>>>>>> danhmuc_list
     var _iterator21 = dropzone_createForOfIteratorHelper(dropzones, true),
         _step21;
 
     try {
       for (_iterator21.s(); !(_step21 = _iterator21.n()).done;) {
         var dropzone = _step21.value;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
         // Create a dropzone unless auto discover has been disabled for specific element
@@ -10029,9 +10118,15 @@ Dropzone.discover = function () {
       }
     } catch (err) {
 <<<<<<< HEAD
+<<<<<<< HEAD
       _iterator24.e(err);
     } finally {
       _iterator24.f();
+=======
+      _iterator21.e(err);
+    } finally {
+      _iterator21.f();
+>>>>>>> danhmuc_list
 =======
       _iterator21.e(err);
     } finally {
@@ -10071,6 +10166,7 @@ Dropzone.isBrowserSupported = function () {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       var _iterator25 = dropzone_createForOfIteratorHelper(Dropzone.blockedBrowsers, true),
           _step25;
 
@@ -10078,12 +10174,17 @@ Dropzone.isBrowserSupported = function () {
         for (_iterator25.s(); !(_step25 = _iterator25.n()).done;) {
           var regex = _step25.value;
 =======
+=======
+>>>>>>> danhmuc_list
       var _iterator22 = dropzone_createForOfIteratorHelper(Dropzone.blockedBrowsers, true),
           _step22;
 
       try {
         for (_iterator22.s(); !(_step22 = _iterator22.n()).done;) {
           var regex = _step22.value;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
           if (regex.test(navigator.userAgent)) {
@@ -10093,9 +10194,15 @@ Dropzone.isBrowserSupported = function () {
         }
       } catch (err) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         _iterator25.e(err);
       } finally {
         _iterator25.f();
+=======
+        _iterator22.e(err);
+      } finally {
+        _iterator22.f();
+>>>>>>> danhmuc_list
 =======
         _iterator22.e(err);
       } finally {
@@ -10193,6 +10300,7 @@ Dropzone.getElements = function (els, name) {
 
     try {
 <<<<<<< HEAD
+<<<<<<< HEAD
       var _iterator26 = dropzone_createForOfIteratorHelper(els, true),
           _step26;
 
@@ -10206,6 +10314,8 @@ Dropzone.getElements = function (els, name) {
       } finally {
         _iterator26.f();
 =======
+=======
+>>>>>>> danhmuc_list
       var _iterator23 = dropzone_createForOfIteratorHelper(els, true),
           _step23;
 
@@ -10218,6 +10328,9 @@ Dropzone.getElements = function (els, name) {
         _iterator23.e(err);
       } finally {
         _iterator23.f();
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       }
     } catch (e) {
@@ -10226,6 +10339,7 @@ Dropzone.getElements = function (els, name) {
   } else if (typeof els === "string") {
     elements = [];
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     var _iterator27 = dropzone_createForOfIteratorHelper(document.querySelectorAll(els), true),
         _step27;
@@ -10240,6 +10354,8 @@ Dropzone.getElements = function (els, name) {
     } finally {
       _iterator27.f();
 =======
+=======
+>>>>>>> danhmuc_list
     var _iterator24 = dropzone_createForOfIteratorHelper(document.querySelectorAll(els), true),
         _step24;
 
@@ -10252,6 +10368,9 @@ Dropzone.getElements = function (els, name) {
       _iterator24.e(err);
     } finally {
       _iterator24.f();
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     }
   } else if (els.nodeType != null) {
@@ -10291,6 +10410,7 @@ Dropzone.isValidFile = function (file, acceptedFiles) {
   var baseMimeType = mimeType.replace(/\/.*$/, "");
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   var _iterator28 = dropzone_createForOfIteratorHelper(acceptedFiles, true),
       _step28;
 
@@ -10298,12 +10418,17 @@ Dropzone.isValidFile = function (file, acceptedFiles) {
     for (_iterator28.s(); !(_step28 = _iterator28.n()).done;) {
       var validType = _step28.value;
 =======
+=======
+>>>>>>> danhmuc_list
   var _iterator25 = dropzone_createForOfIteratorHelper(acceptedFiles, true),
       _step25;
 
   try {
     for (_iterator25.s(); !(_step25 = _iterator25.n()).done;) {
       var validType = _step25.value;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       validType = validType.trim();
 
@@ -10324,9 +10449,15 @@ Dropzone.isValidFile = function (file, acceptedFiles) {
     }
   } catch (err) {
 <<<<<<< HEAD
+<<<<<<< HEAD
     _iterator28.e(err);
   } finally {
     _iterator28.f();
+=======
+    _iterator25.e(err);
+  } finally {
+    _iterator25.f();
+>>>>>>> danhmuc_list
 =======
     _iterator25.e(err);
   } finally {

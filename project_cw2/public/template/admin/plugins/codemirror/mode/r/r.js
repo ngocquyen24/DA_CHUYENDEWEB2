@@ -55,9 +55,15 @@ CodeMirror.defineMode("r", function(config) {
       stream.match(/[^`]+`/);
       return "variable-3";
 <<<<<<< HEAD
+<<<<<<< HEAD
     } else if (ch == "." && stream.match(/.[.\d]+/)) {
       return "keyword";
     } else if (/[\w\.]/.test(ch) && ch != "_") {
+=======
+    } else if (ch == "." && stream.match(/.(?:[.]|\d+)/)) {
+      return "keyword";
+    } else if (/[a-zA-Z\.]/.test(ch)) {
+>>>>>>> danhmuc_list
 =======
     } else if (ch == "." && stream.match(/.(?:[.]|\d+)/)) {
       return "keyword";

@@ -1,7 +1,12 @@
 ﻿/**
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @license Copyright (c) 2003-2021, CKSource - Frederico Knabben. All rights reserved.
  * For licensing, see LICENSE.md or https://ckeditor.com/license
+=======
+ * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+ * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license/
+>>>>>>> danhmuc_list
 =======
  * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license/
@@ -19,15 +24,21 @@
  *     Visit online builder to build CKEditor from scratch.
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
  * (2) https://ckeditor.com/cke4/builder/e431e193e5a737fc50cd68589730b6df
  *     Visit online builder to build CKEditor, starting with the same setup as before.
  *
  * (3) https://ckeditor.com/cke4/builder/download/e431e193e5a737fc50cd68589730b6df
 =======
+=======
+>>>>>>> danhmuc_list
  * (2) https://ckeditor.com/cke4/builder/70ddaf4a7e7615cc69d1d00879c6f1d1
  *     Visit online builder to build CKEditor, starting with the same setup as before.
  *
  * (3) https://ckeditor.com/cke4/builder/download/70ddaf4a7e7615cc69d1d00879c6f1d1
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
  *     Straight download link to the latest version of CKEditor (Optimized) with the same setup as before.
  *
@@ -56,6 +67,10 @@ var CKBUILDER_CONFIG = {
 		'bender-err.log',
 		'bender-out.log',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+		'bender-runner.config.json',
+>>>>>>> danhmuc_list
 =======
 		'bender-runner.config.json',
 >>>>>>> danhmuc_list
@@ -90,7 +105,10 @@ var CKBUILDER_CONFIG = {
 		'filebrowser' : 1,
 		'find' : 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
 		'flash' : 1,
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 		'floatingspace' : 1,

@@ -225,6 +225,10 @@
 
   function Widget(completion, data) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    this.id = "cm-complete-" + Math.floor(Math.random(1e6))
+>>>>>>> danhmuc_list
 =======
     this.id = "cm-complete-" + Math.floor(Math.random(1e6))
 >>>>>>> danhmuc_list
@@ -237,6 +241,12 @@
 
     var hints = this.hints = ownerDocument.createElement("ul");
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    hints.setAttribute("role", "listbox")
+    hints.setAttribute("aria-expanded", "true")
+    hints.id = this.id
+>>>>>>> danhmuc_list
 =======
     hints.setAttribute("role", "listbox")
     hints.setAttribute("aria-expanded", "true")
@@ -253,6 +263,12 @@
       if (cur.className != null) className = cur.className + " " + className;
       elt.className = className;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+      if (i == this.selectedHint) elt.setAttribute("aria-selected", "true")
+      elt.id = this.id + "-" + i
+      elt.setAttribute("role", "option")
+>>>>>>> danhmuc_list
 =======
       if (i == this.selectedHint) elt.setAttribute("aria-selected", "true")
       elt.id = this.id + "-" + i
@@ -284,6 +300,12 @@
     var winH = parentWindow.innerHeight || Math.max(ownerDocument.body.offsetHeight, ownerDocument.documentElement.offsetHeight);
     container.appendChild(hints);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    cm.getInputField().setAttribute("aria-autocomplete", "list")
+    cm.getInputField().setAttribute("aria-owns", this.id)
+    cm.getInputField().setAttribute("aria-activedescendant", this.id + "-" + this.selectedHint)
+>>>>>>> danhmuc_list
 =======
     cm.getInputField().setAttribute("aria-autocomplete", "list")
     cm.getInputField().setAttribute("aria-owns", this.id)
@@ -316,6 +338,10 @@
     }
     var overlapX = box.right - winW;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    if (scrolls) overlapX += cm.display.nativeBarWidth;
+>>>>>>> danhmuc_list
 =======
     if (scrolls) overlapX += cm.display.nativeBarWidth;
 >>>>>>> danhmuc_list
@@ -348,6 +374,10 @@
     cm.on("scroll", this.onScroll = function() {
       var curScroll = cm.getScrollInfo(), editor = cm.getWrapperElement().getBoundingClientRect();
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+      if (!startScroll) startScroll = cm.getScrollInfo();
+>>>>>>> danhmuc_list
 =======
       if (!startScroll) startScroll = cm.getScrollInfo();
 >>>>>>> danhmuc_list
@@ -393,6 +423,12 @@
       if (this.hints.parentNode) this.hints.parentNode.removeChild(this.hints);
       this.completion.cm.removeKeyMap(this.keyMap);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+      var input = this.completion.cm.getInputField()
+      input.removeAttribute("aria-activedescendant")
+      input.removeAttribute("aria-owns")
+>>>>>>> danhmuc_list
 =======
       var input = this.completion.cm.getInputField()
       input.removeAttribute("aria-activedescendant")
@@ -426,10 +462,13 @@
       if (this.selectedHint == i) return;
       var node = this.hints.childNodes[this.selectedHint];
 <<<<<<< HEAD
+<<<<<<< HEAD
       if (node) node.className = node.className.replace(" " + ACTIVE_HINT_ELEMENT_CLASS, "");
       node = this.hints.childNodes[this.selectedHint = i];
       node.className += " " + ACTIVE_HINT_ELEMENT_CLASS;
 =======
+=======
+>>>>>>> danhmuc_list
       if (node) {
         node.className = node.className.replace(" " + ACTIVE_HINT_ELEMENT_CLASS, "");
         node.removeAttribute("aria-selected")
@@ -438,6 +477,9 @@
       node.className += " " + ACTIVE_HINT_ELEMENT_CLASS;
       node.setAttribute("aria-selected", "true")
       this.completion.cm.getInputField().setAttribute("aria-activedescendant", node.id)
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       this.scrollToActive()
       CodeMirror.signal(this.data, "select", this.data.list[this.selectedHint], node);

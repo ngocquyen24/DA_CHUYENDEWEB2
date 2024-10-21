@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 CKEditor 4 Changelog
 ====================
 =======
+=======
+>>>>>>> danhmuc_list
 ⚠️️️ **CKEditor 4 (the open source edition) is no longer maintained.** ⚠️
 
 If you would like to keep access to future CKEditor 4 security patches, check the [Extended Support Model](https://ckeditor.com/ckeditor-4-support/), which guarantees **security updates and critical bug fixes until December 2026**. Alternatively, [upgrade to CKEditor 5](https://ckeditor.com/docs/ckeditor5/latest/updating/ckeditor4/migration-from-ckeditor-4.html).
@@ -364,6 +367,9 @@ Fixed Issues:
 * [#4247](https://github.com/ckeditor/ckeditor4/issues/4247): Fixed: [Color Button](https://ckeditor.com/cke4/addon/colorbutton)'s incorrect rendering on the first opening.
 * [#4555](https://github.com/ckeditor/ckeditor4/issues/4555): Fixed: [Font](https://ckeditor.com/cke4/addon/font) styles with attributes are not applied correctly when used multiple times over the same selection.
 * [#4782](https://github.com/ckeditor/ckeditor4/issues/4782): [Firefox] Fixed: `TypeError` is thrown when switching to Source View and back while [Autocomplete](https://ckeditor.com/cke4/addon/autocomplete) plugin is enabled.
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 ## CKEditor 4.16.1
@@ -377,7 +383,12 @@ Fixed Issues:
 * [#4509](https://github.com/ckeditor/ckeditor4/issues/4509): Fixed: Incorrect handling of drag & drop inside [widgets](https://ckeditor.com/cke4/addon/widget) and nested editables.
 * [#4611](https://github.com/ckeditor/ckeditor4/issues/4611): [Android, iOS] Fixed: Incorrect hover styles for buttons in the toolbar on mobile devices.
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [#4652](https://github.com/ckeditor/ckeditor4/issues/4652): Fixed: [Event data](https://ckeditor.com/docs/ckeditor4/latest/api/CKEDITOR_eventInfo.html) set to `false` is treated as an event cancelation.
+=======
+* [#4652](https://github.com/ckeditor/ckeditor4/issues/4652): Fixed: [Event data](https://ckeditor.com/docs/ckeditor4/latest/api/CKEDITOR_eventInfo.html) set to `false` is treated as an event cancellation.
+* [#4659](https://github.com/ckeditor/ckeditor4/issues/4659): Fixed: [`CKEDITOR.htmlParser`](https://ckeditor.com/docs/ckeditor4/latest/api/CKEDITOR_htmlParser.html) does not treat `--!>` as a comment end tag correctly.
+>>>>>>> danhmuc_list
 =======
 * [#4652](https://github.com/ckeditor/ckeditor4/issues/4652): Fixed: [Event data](https://ckeditor.com/docs/ckeditor4/latest/api/CKEDITOR_eventInfo.html) set to `false` is treated as an event cancellation.
 * [#4659](https://github.com/ckeditor/ckeditor4/issues/4659): Fixed: [`CKEDITOR.htmlParser`](https://ckeditor.com/docs/ckeditor4/latest/api/CKEDITOR_htmlParser.html) does not treat `--!>` as a comment end tag correctly.
@@ -1880,7 +1891,11 @@ Other Changes:
 New Features:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [#11297](https://dev.ckeditor.com/ticket/11297): Styles can now be applied to widgets. The definition of a style which can be applied to a specific widget must contain two additional properties &mdash; `type` and `widget`. Read more in the [Widget Styles](https://ckeditor.com/docs/ckeditor4/latest/guide/dev_styles.html#widget-styles) section of the "Syles Drop-down" guide. Note that by default, widgets support only classes and no other attributes or styles. Related changes and features:
+=======
+* [#11297](https://dev.ckeditor.com/ticket/11297): Styles can now be applied to widgets. The definition of a style which can be applied to a specific widget must contain two additional properties &mdash; `type` and `widget`. Read more in the [Widget Styles](https://ckeditor.com/docs/ckeditor4/latest/guide/dev_styles.html#widget-styles) section of the "Styles Drop-down" guide. Note that by default, widgets support only classes and no other attributes or styles. Related changes and features:
+>>>>>>> danhmuc_list
 =======
 * [#11297](https://dev.ckeditor.com/ticket/11297): Styles can now be applied to widgets. The definition of a style which can be applied to a specific widget must contain two additional properties &mdash; `type` and `widget`. Read more in the [Widget Styles](https://ckeditor.com/docs/ckeditor4/latest/guide/dev_styles.html#widget-styles) section of the "Styles Drop-down" guide. Note that by default, widgets support only classes and no other attributes or styles. Related changes and features:
 >>>>>>> danhmuc_list

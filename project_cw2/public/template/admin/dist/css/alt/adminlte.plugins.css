@@ -1,6 +1,10 @@
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  *   AdminLTE v3.1.0
+=======
+ *   AdminLTE v3.2.0
+>>>>>>> danhmuc_list
 =======
  *   AdminLTE v3.2.0
 >>>>>>> danhmuc_list
@@ -310,7 +314,10 @@
 @media (max-width: 575.98px) {
   .fc-toolbar {
 <<<<<<< HEAD
+<<<<<<< HEAD
     -webkit-flex-direction: column;
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
     -ms-flex-direction: column;
@@ -318,7 +325,10 @@
   }
   .fc-toolbar .fc-left {
 <<<<<<< HEAD
+<<<<<<< HEAD
     -webkit-order: 1;
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
     -ms-flex-order: 1;
@@ -327,7 +337,10 @@
   }
   .fc-toolbar .fc-center {
 <<<<<<< HEAD
+<<<<<<< HEAD
     -webkit-order: 0;
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
     -ms-flex-order: 0;
@@ -336,7 +349,10 @@
   }
   .fc-toolbar .fc-right {
 <<<<<<< HEAD
+<<<<<<< HEAD
     -webkit-order: 2;
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
     -ms-flex-order: 2;
@@ -572,7 +588,11 @@
 
 select.form-control-sm ~ .select2-container--default {
 <<<<<<< HEAD
+<<<<<<< HEAD
   font-size: 0.875rem;
+=======
+  font-size: 75%;
+>>>>>>> danhmuc_list
 =======
   font-size: 75%;
 >>>>>>> danhmuc_list
@@ -4930,6 +4950,10 @@ select.form-control-sm ~ .select2-container--default .select2-selection--multipl
   height: 15px;
   width: 15px;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  padding: 1px 2px;
+>>>>>>> danhmuc_list
 =======
   padding: 1px 2px;
 >>>>>>> danhmuc_list
@@ -9046,7 +9070,10 @@ select.form-control-sm ~ .select2-container--default .select2-selection--multipl
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 .dark-mode .daterangepicker {
   background-color: #3f474e;
   border: inherit;
@@ -9114,6 +9141,9 @@ select.form-control-sm ~ .select2-container--default .select2-selection--multipl
   border-color: #4b545c;
 }
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 .jqstooltip {
   height: auto !important;

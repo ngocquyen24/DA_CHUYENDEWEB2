@@ -20,7 +20,11 @@
     {name: "C", mime: "text/x-csrc", mode: "clike", ext: ["c", "h", "ino"]},
     {name: "C++", mime: "text/x-c++src", mode: "clike", ext: ["cpp", "c++", "cc", "cxx", "hpp", "h++", "hh", "hxx"], alias: ["cpp"]},
 <<<<<<< HEAD
+<<<<<<< HEAD
     {name: "Cobol", mime: "text/x-cobol", mode: "cobol", ext: ["cob", "cpy"]},
+=======
+    {name: "Cobol", mime: "text/x-cobol", mode: "cobol", ext: ["cob", "cpy", "cbl"]},
+>>>>>>> danhmuc_list
 =======
     {name: "Cobol", mime: "text/x-cobol", mode: "cobol", ext: ["cob", "cpy", "cbl"]},
 >>>>>>> danhmuc_list
@@ -81,7 +85,11 @@
     {name: "JSX", mime: "text/jsx", mode: "jsx", ext: ["jsx"]},
     {name: "Jinja2", mime: "text/jinja2", mode: "jinja2", ext: ["j2", "jinja", "jinja2"]},
 <<<<<<< HEAD
+<<<<<<< HEAD
     {name: "Julia", mime: "text/x-julia", mode: "julia", ext: ["jl"]},
+=======
+    {name: "Julia", mime: "text/x-julia", mode: "julia", ext: ["jl"], alias: ["jl"]},
+>>>>>>> danhmuc_list
 =======
     {name: "Julia", mime: "text/x-julia", mode: "julia", ext: ["jl"], alias: ["jl"]},
 >>>>>>> danhmuc_list

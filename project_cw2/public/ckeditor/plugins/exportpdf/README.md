@@ -93,7 +93,11 @@ See the working ["Exporting editor content to PDF"](https://ckeditor.com/docs/ck
 
 **CKEditor 4 Export to PDF plugin** (https://ckeditor.com/ckeditor-4/)<br>
 <<<<<<< HEAD
+<<<<<<< HEAD
 Copyright (c) 2003-2021, [CKSource](http://cksource.com) Frederico Knabben. All rights reserved.
+=======
+Copyright (c) 2003-2022, [CKSource](http://cksource.com) Holding sp. z o.o. All rights reserved.
+>>>>>>> danhmuc_list
 =======
 Copyright (c) 2003-2022, [CKSource](http://cksource.com) Holding sp. z o.o. All rights reserved.
 >>>>>>> danhmuc_list
@@ -104,7 +108,11 @@ For more details about available licensing options please contact us at sales@ck
 ### Trademarks
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **CKEditor** is a trademark of [CKSource](http://cksource.com) Frederico Knabben. All other brand and product names are trademarks, registered trademarks or service marks of their respective holders.
+=======
+**CKEditor** is a trademark of [CKSource](http://cksource.com) Holding sp. z o.o. All other brand and product names are trademarks, registered trademarks or service marks of their respective holders.
+>>>>>>> danhmuc_list
 =======
 **CKEditor** is a trademark of [CKSource](http://cksource.com) Holding sp. z o.o. All other brand and product names are trademarks, registered trademarks or service marks of their respective holders.
 >>>>>>> danhmuc_list

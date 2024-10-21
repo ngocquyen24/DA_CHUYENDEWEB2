@@ -3,6 +3,11 @@ div.dtsp-topRow {
   flex-direction: row;
   flex-wrap: nowrap;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 3px;
+>>>>>>> danhmuc_list
 =======
   border: 2px solid rgba(0, 0, 0, 0);
   border-radius: 3px;
@@ -14,19 +19,26 @@ div.dtsp-topRow {
 div.dtsp-topRow input.dtsp-search {
   text-overflow: ellipsis;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
   min-width: 50px;
   flex-basis: 90px;
   max-width: none;
 }
 div.dtsp-topRow input.dtsp-search::placeholder {
   color: black;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 }
 div.dtsp-topRow div.dtsp-subRow1 {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+<<<<<<< HEAD
 <<<<<<< HEAD
   flex-grow: 1;
   flex-shrink: 0;
@@ -40,6 +52,8 @@ div.dtsp-topRow div.dtsp-searchCont {
   flex-shrink: 0;
   flex-basis: 0;
 =======
+=======
+>>>>>>> danhmuc_list
   flex: 1 1 auto;
 }
 div.dtsp-topRow div.dtsp-subRow1 div.dtsp-searchCont {
@@ -65,6 +79,9 @@ div.dtsp-topRow div.dtsp-subRow1 button.dtsp-searchIcon {
 div.dtsp-topRow div.dtsp-subRow2 {
   white-space: nowrap;
   flex: 0 0 auto;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 }
 div.dtsp-topRow button.dtsp-nameButton {
@@ -82,12 +99,15 @@ div.dtsp-topRow button.dtsp-countButton {
   vertical-align: bottom;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 div.dtsp-topRow button.dtsp-searchIcon {
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAABcGlDQ1BpY2MAACiRdZHNSwJBGMYftTDS8FCHkA57sOigIAXRMQzyYh3UIKvL7rirwe66zK6IdA26dBA6RF36OvQf1DXoWhAERRAR9B/0dQnZ3nEFJXSG2ffHs/O8zDwD+DM6M+yBJGCYDs+mU9JaYV0KviNMM4QoEjKzreXcUh59x88jfKI+JESv/vt6jlBRtRngGyKeYxZ3iBeIMzXHErxHPMbKcpH4hDjO6YDEt0JXPH4TXPL4SzDPZxcBv+gplbpY6WJW5gbxNHHM0KusfR5xk7BqruaoRmlNwEYWaaQgQUEVW9DhIEHVpMx6+5It3woq5GH0tVAHJ0cJZfLGSa1SV5WqRrpKU0dd5P4/T1ubnfG6h1PA4Kvrfk4CwX2g2XDd31PXbZ4BgRfg2uz4K5TT/DfpjY4WOwYiO8DlTUdTDoCrXWD82ZK53JICtPyaBnxcACMFYPQeGN7wsmr/x/kTkN+mJ7oDDo+AKdof2fwDCBRoDkL8UccAAAAJcEhZcwAAD2EAAA9hAag/p2kAAAEnSURBVCgVpdG7SgNBFIDh1RhJsBBEsDIgIhaWFjZa2GtpKb6AnU0MprKOWEjK2IuFFxCxS2lhZyOWXh5AQVER/X+zuwwywoIHvp3dM3Nm55Ik/4i+P2or5FewiBIe0cEt8ogVz9LbhEVf+cgkcew1tvAZ5PPXGm9HOMEanMAYQhunaCAazuqA1UjvILl9HGPc/n4fabjPGbzjMM2FjfkDuPw5O8JilzgA9/OKWDynyWnbsPiF7yc4SRWxmEyTN7ZhsSd7gTLW8TuGSSzBcZd2hsV+n+MNC9jGCNzjPDwsz8XCO/x02Bqeptcxhg+4gjD8YxetLOkBGRbuwcIr+NdRLMPl3uMM2YHx2gsLd+D97qKEQuGe65jCAzbgVRWOCUZuovAfs5m/AdVxL0R1AIsLAAAAAElFTkSuQmCC");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 12px;
 =======
+=======
+>>>>>>> danhmuc_list
 div.dtsp-topRow button.dtsp-collapseButton span.dtsp-caret {
   position: relative;
   top: 2px;
@@ -108,6 +128,9 @@ div.dtsp-topRow.dtsp-bordered:hover {
   border: 2px solid #cfcfcf;
   border-radius: 3px;
   cursor: pointer !important;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 }
 
@@ -120,6 +143,7 @@ div.dt-button-collection {
   z-index: 2002;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 div.dataTables_scrollBody {
   background: white !important;
@@ -134,10 +158,15 @@ div.dtsp-columns-1 {
 div.dtsp-columns-1 {
   max-width: 100%;
 >>>>>>> danhmuc_list
+=======
+div.dtsp-columns-1 {
+  max-width: 100%;
+>>>>>>> danhmuc_list
   margin: 0px !important;
 }
 
 div.dtsp-columns-2 {
+<<<<<<< HEAD
 <<<<<<< HEAD
   min-width: 48%;
   max-width: 48%;
@@ -146,10 +175,14 @@ div.dtsp-columns-2 {
 =======
   max-width: 49%;
 >>>>>>> danhmuc_list
+=======
+  max-width: 49%;
+>>>>>>> danhmuc_list
   margin: 0px !important;
 }
 
 div.dtsp-columns-3 {
+<<<<<<< HEAD
 <<<<<<< HEAD
   min-width: 30.333%;
   max-width: 30.333%;
@@ -158,10 +191,14 @@ div.dtsp-columns-3 {
 =======
   max-width: 32%;
 >>>>>>> danhmuc_list
+=======
+  max-width: 32%;
+>>>>>>> danhmuc_list
   margin: 0px !important;
 }
 
 div.dtsp-columns-4 {
+<<<<<<< HEAD
 <<<<<<< HEAD
   min-width: 23%;
   max-width: 23%;
@@ -170,10 +207,14 @@ div.dtsp-columns-4 {
 =======
   max-width: 24%;
 >>>>>>> danhmuc_list
+=======
+  max-width: 24%;
+>>>>>>> danhmuc_list
   margin: 0px !important;
 }
 
 div.dtsp-columns-5 {
+<<<<<<< HEAD
 <<<<<<< HEAD
   min-width: 18%;
   max-width: 18%;
@@ -182,10 +223,14 @@ div.dtsp-columns-5 {
 =======
   max-width: 19%;
 >>>>>>> danhmuc_list
+=======
+  max-width: 19%;
+>>>>>>> danhmuc_list
   margin: 0px !important;
 }
 
 div.dtsp-columns-6 {
+<<<<<<< HEAD
 <<<<<<< HEAD
   min-width: 15.666%;
   max-width: 15.666%;
@@ -194,10 +239,14 @@ div.dtsp-columns-6 {
 =======
   max-width: 16%;
 >>>>>>> danhmuc_list
+=======
+  max-width: 16%;
+>>>>>>> danhmuc_list
   margin: 0px !important;
 }
 
 div.dtsp-columns-7 {
+<<<<<<< HEAD
 <<<<<<< HEAD
   min-width: 13.28%;
   max-width: 13.28%;
@@ -206,10 +255,14 @@ div.dtsp-columns-7 {
 =======
   max-width: 14%;
 >>>>>>> danhmuc_list
+=======
+  max-width: 14%;
+>>>>>>> danhmuc_list
   margin: 0px !important;
 }
 
 div.dtsp-columns-8 {
+<<<<<<< HEAD
 <<<<<<< HEAD
   min-width: 11.5%;
   max-width: 11.5%;
@@ -218,15 +271,22 @@ div.dtsp-columns-8 {
 =======
   min-width: 12%;
 >>>>>>> danhmuc_list
+=======
+  min-width: 12%;
+>>>>>>> danhmuc_list
   margin: 0px !important;
 }
 
 div.dtsp-columns-9 {
 <<<<<<< HEAD
+<<<<<<< HEAD
   min-width: 11.111%;
   max-width: 11.111%;
   padding-left: 0.5%;
   padding-right: 0.5%;
+=======
+  max-width: 10.5%;
+>>>>>>> danhmuc_list
 =======
   max-width: 10.5%;
 >>>>>>> danhmuc_list
@@ -239,7 +299,11 @@ div.dt-button-collection {
 
 div.dtsp-panesContainer {
 <<<<<<< HEAD
+<<<<<<< HEAD
   width: 100%;
+=======
+  margin-bottom: 1em;
+>>>>>>> danhmuc_list
 =======
   margin-bottom: 1em;
 >>>>>>> danhmuc_list
@@ -247,6 +311,7 @@ div.dtsp-panesContainer {
 div.dtsp-panesContainer div.dataTables_wrapper {
   width: 100%;
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 div.dtsp-searchPanes {
@@ -367,6 +432,8 @@ div.dtsp-searchPane div.dataTables_scrollBody table tbody tr td.dtsp-nameColumn 
 }
 div.dtsp-searchPane div.dataTables_scrollBody table tbody tr div.dtsp-nameCont {
 =======
+=======
+>>>>>>> danhmuc_list
 div.dtsp-panesContainer div.dataTables_wrapper div.dataTables_layout_cell {
   padding: 0;
 }
@@ -391,6 +458,9 @@ div.dtsp-panesContainer div.dataTables_wrapper div.dataTables_scrollBody td.dtsp
   width: 100% !important;
 }
 div.dtsp-panesContainer div.dataTables_wrapper div.dataTables_scrollBody div.dtsp-nameCont {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   width: 100%;
   display: flex;
@@ -400,13 +470,19 @@ div.dtsp-panesContainer div.dataTables_wrapper div.dataTables_scrollBody div.dts
   align-items: flex-start;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 div.dtsp-searchPane div.dataTables_scrollBody table tbody tr div.dtsp-nameCont span.dtsp-name {
 =======
+=======
+>>>>>>> danhmuc_list
 div.dtsp-panesContainer div.dataTables_wrapper div.dataTables_scrollBody div.dtsp-nameCont span.dtsp-name,
 div.dtsp-panesContainer div.dataTables_wrapper div.dataTables_scrollBody div.dtsp-nameCont span.dtsp-pill {
   cursor: default;
 }
 div.dtsp-panesContainer div.dataTables_wrapper div.dataTables_scrollBody div.dtsp-nameCont span.dtsp-name {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   text-overflow: ellipsis;
   overflow: hidden;
@@ -415,6 +491,7 @@ div.dtsp-panesContainer div.dataTables_wrapper div.dataTables_scrollBody div.dts
   white-space: nowrap;
   flex-grow: 1;
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 div.dtsp-searchPane div.dataTables_scrollBody table tbody tr div.dtsp-nameCont span.badge {
   min-width: 30px;
@@ -464,6 +541,8 @@ div.dtsp-panes div.dtsp-title {
 div.dtsp-panes button.dtsp-clearAll {
   float: right;
 =======
+=======
+>>>>>>> danhmuc_list
 div.dtsp-panesContainer div.dataTables_wrapper div.dataTables_scrollBody div.dtsp-nameCont span.dtsp-pill {
   display: inline-block;
   background-color: #cfcfcf;
@@ -519,6 +598,9 @@ div.dtsp-panesContainer button.dtsp-showAll {
   float: right;
   padding: 10px;
   font-size: 1em;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 }
 
@@ -526,6 +608,7 @@ div.dtsp-hidden {
   display: none !important;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 @media screen and (max-width: 767px) {
   div.dtsp-columns-4,
@@ -545,6 +628,8 @@ div.dtsp-columns-6 {
     min-width: 98% !important;
   }
 =======
+=======
+>>>>>>> danhmuc_list
 div.dtsp-panesContainer button.dtsp-clearAll,
 div.dtsp-panesContainer button.dtsp-showAll {
   margin-left: 3px;
@@ -599,5 +684,8 @@ div.dtsp-panesContainer button.disabled {
 div.dt-button-collection div.dtsp-panesContainer {
   padding-left: 10px;
   padding-right: 10px;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 }

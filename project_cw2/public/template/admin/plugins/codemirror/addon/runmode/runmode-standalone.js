@@ -221,7 +221,11 @@
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   var modeMethods = ({
+=======
+  var modeMethods = {
+>>>>>>> danhmuc_list
 =======
   var modeMethods = {
 >>>>>>> danhmuc_list
@@ -238,7 +242,11 @@
     innerMode: innerMode,
     startState: startState
 <<<<<<< HEAD
+<<<<<<< HEAD
   });
+=======
+  };
+>>>>>>> danhmuc_list
 =======
   };
 >>>>>>> danhmuc_list
@@ -260,6 +268,10 @@
   CodeMirror.registerHelper = CodeMirror.registerGlobalHelper = Math.min;
   CodeMirror.splitLines = function(string) { return string.split(/\r?\n|\r/) };
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  CodeMirror.countColumn = countColumn;
+>>>>>>> danhmuc_list
 =======
   CodeMirror.countColumn = countColumn;
 >>>>>>> danhmuc_list
@@ -335,7 +347,11 @@
       while (!stream.eol()) {
         var style = mode.token(stream, state);
 <<<<<<< HEAD
+<<<<<<< HEAD
         callback(stream.current(), style, i, stream.start, state);
+=======
+        callback(stream.current(), style, i, stream.start, state, mode);
+>>>>>>> danhmuc_list
 =======
         callback(stream.current(), style, i, stream.start, state, mode);
 >>>>>>> danhmuc_list

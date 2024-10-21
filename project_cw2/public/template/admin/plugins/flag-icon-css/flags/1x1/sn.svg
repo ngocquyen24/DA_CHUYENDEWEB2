@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <svg xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-sn" viewBox="0 0 512 512">
+=======
+<svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-sn" viewBox="0 0 512 512">
+>>>>>>> danhmuc_list
 =======
 <svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-sn" viewBox="0 0 512 512">
 >>>>>>> danhmuc_list
@@ -9,7 +13,11 @@
     <path fill="#bc0000" d="M341.3 0H512v512H341.3z"/>
   </g>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <path fill="#0b7226" d="M197 351.7l22-71.7-60.4-46.5h74.5l24.2-76 22.1 76H356L295.6 280l22.1 74-60.3-46.5z"/>
+=======
+  <path fill="#0b7226" d="m197 351.7 22-71.7-60.4-46.5h74.5l24.2-76 22.1 76H356L295.6 280l22.1 74-60.3-46.5z"/>
+>>>>>>> danhmuc_list
 =======
   <path fill="#0b7226" d="m197 351.7 22-71.7-60.4-46.5h74.5l24.2-76 22.1 76H356L295.6 280l22.1 74-60.3-46.5z"/>
 >>>>>>> danhmuc_list

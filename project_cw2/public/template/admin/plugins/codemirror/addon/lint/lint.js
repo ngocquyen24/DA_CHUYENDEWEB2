@@ -12,6 +12,10 @@
   "use strict";
   var GUTTER_ID = "CodeMirror-lint-markers";
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  var LINT_LINE_ID = "CodeMirror-lint-line-";
+>>>>>>> danhmuc_list
 =======
   var LINT_LINE_ID = "CodeMirror-lint-line-";
 >>>>>>> danhmuc_list
@@ -63,10 +67,13 @@
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   function LintState(cm, options, hasGutter) {
     this.marked = [];
     this.options = options;
 =======
+=======
+>>>>>>> danhmuc_list
   function LintState(cm, conf, hasGutter) {
     this.marked = [];
     if (conf instanceof Function) conf = {getAnnotations: conf};
@@ -81,6 +88,9 @@
         this.linterOptions[prop] = conf[prop];
       }
     }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     this.timeout = null;
     this.hasGutter = hasGutter;
@@ -89,11 +99,14 @@
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   function parseOptions(_cm, options) {
     if (options instanceof Function) return {getAnnotations: options};
     if (!options || options === true) options = {};
     return options;
 =======
+=======
+>>>>>>> danhmuc_list
   var defaults = {
     highlightLines: false,
     tooltips: true,
@@ -104,6 +117,9 @@
     selfContain: null,
     formatAnnotation: null,
     onUpdateLinting: null
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   }
 
@@ -111,6 +127,10 @@
     var state = cm.state.lint;
     if (state.hasGutter) cm.clearGutter(GUTTER_ID);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    if (state.options.highlightLines) clearErrorLines(cm);
+>>>>>>> danhmuc_list
 =======
     if (state.options.highlightLines) clearErrorLines(cm);
 >>>>>>> danhmuc_list
@@ -120,7 +140,10 @@
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
   function clearErrorLines(cm) {
     cm.eachLine(function(line) {
       var has = line.wrapClass && /\bCodeMirror-lint-line-\w+\b/.exec(line.wrapClass);
@@ -128,6 +151,9 @@
     })
   }
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   function makeMarker(cm, labels, severity, multiple, tooltips) {
     var marker = document.createElement("div"), inner = marker;
@@ -172,7 +198,11 @@
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   function lintAsync(cm, getAnnotations, passOptions) {
+=======
+  function lintAsync(cm, getAnnotations) {
+>>>>>>> danhmuc_list
 =======
   function lintAsync(cm, getAnnotations) {
 >>>>>>> danhmuc_list
@@ -189,12 +219,15 @@
       if (arg2 && annotations instanceof CodeMirror) annotations = arg2
       cm.operation(function() {updateLinting(cm, annotations)})
 <<<<<<< HEAD
+<<<<<<< HEAD
     }, passOptions, cm);
   }
 
   function startLinting(cm) {
     var state = cm.state.lint, options = state.options;
 =======
+=======
+>>>>>>> danhmuc_list
     }, state.linterOptions, cm);
   }
 
@@ -202,11 +235,15 @@
     var state = cm.state.lint;
     if (!state) return;
     var options = state.options;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     /*
      * Passing rules in `options` property prevents JSHint (and other linters) from complaining
      * about unrecognized rules like `onUpdateLinting`, `delay`, `lintOnChange`, etc.
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
     var passOptions = options.options || options;
     var getAnnotations = options.getAnnotations || cm.getHelper(CodeMirror.Pos(0, 0), "lint");
@@ -216,12 +253,17 @@
     } else {
       var annotations = getAnnotations(cm.getValue(), passOptions, cm);
 =======
+=======
+>>>>>>> danhmuc_list
     var getAnnotations = options.getAnnotations || cm.getHelper(CodeMirror.Pos(0, 0), "lint");
     if (!getAnnotations) return;
     if (options.async || getAnnotations.async) {
       lintAsync(cm, getAnnotations)
     } else {
       var annotations = getAnnotations(cm.getValue(), state.linterOptions, cm);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       if (!annotations) return;
       if (annotations.then) annotations.then(function(issues) {
@@ -233,13 +275,19 @@
 
   function updateLinting(cm, annotationsNotSorted) {
 <<<<<<< HEAD
+<<<<<<< HEAD
     clearMarks(cm);
     var state = cm.state.lint, options = state.options;
 =======
+=======
+>>>>>>> danhmuc_list
     var state = cm.state.lint;
     if (!state) return;
     var options = state.options;
     clearMarks(cm);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
     var annotations = groupByLine(annotationsNotSorted);
@@ -273,12 +321,18 @@
       if (state.hasGutter)
         cm.setGutterMarker(line, GUTTER_ID, makeMarker(cm, tipLabel, maxSeverity, annotations[line].length > 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
                                                        state.options.tooltips));
 =======
+=======
+>>>>>>> danhmuc_list
                                                        options.tooltips));
 
       if (options.highlightLines)
         cm.addLineClass(line, "wrap", LINT_LINE_ID + maxSeverity);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     }
     if (options.onUpdateLinting) options.onUpdateLinting(annotationsNotSorted, annotations, cm);
@@ -289,7 +343,11 @@
     if (!state) return;
     clearTimeout(state.timeout);
 <<<<<<< HEAD
+<<<<<<< HEAD
     state.timeout = setTimeout(function(){startLinting(cm);}, state.options.delay || 500);
+=======
+    state.timeout = setTimeout(function(){startLinting(cm);}, state.options.delay);
+>>>>>>> danhmuc_list
 =======
     state.timeout = setTimeout(function(){startLinting(cm);}, state.options.delay);
 >>>>>>> danhmuc_list
@@ -333,8 +391,13 @@
       var gutters = cm.getOption("gutters"), hasLintGutter = false;
       for (var i = 0; i < gutters.length; ++i) if (gutters[i] == GUTTER_ID) hasLintGutter = true;
 <<<<<<< HEAD
+<<<<<<< HEAD
       var state = cm.state.lint = new LintState(cm, parseOptions(cm, val), hasLintGutter);
       if (state.options.lintOnChange !== false)
+=======
+      var state = cm.state.lint = new LintState(cm, val, hasLintGutter);
+      if (state.options.lintOnChange)
+>>>>>>> danhmuc_list
 =======
       var state = cm.state.lint = new LintState(cm, val, hasLintGutter);
       if (state.options.lintOnChange)
@@ -349,7 +412,11 @@
 
   CodeMirror.defineExtension("performLint", function() {
 <<<<<<< HEAD
+<<<<<<< HEAD
     if (this.state.lint) startLinting(this);
+=======
+    startLinting(this);
+>>>>>>> danhmuc_list
 =======
     startLinting(this);
 >>>>>>> danhmuc_list

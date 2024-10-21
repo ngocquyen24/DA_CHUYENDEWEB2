@@ -190,6 +190,7 @@
   });}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
   function getQueryDialog(cm)  {
     return '<span class="CodeMirror-search-label">' + cm.phrase("Search:") + '</span> <input type="text" style="width: 10em" class="CodeMirror-search-field"/> <span style="color: #888" class="CodeMirror-search-hint">' + cm.phrase("(Use /re/ syntax for regexp search)") + '</span>';
@@ -203,6 +204,8 @@
   function getDoReplaceConfirm(cm) {
     return '<span class="CodeMirror-search-label">' + cm.phrase("Replace?") + '</span> <button>' + cm.phrase("Yes") + '</button> <button>' + cm.phrase("No") + '</button> <button>' + cm.phrase("All") + '</button> <button>' + cm.phrase("Stop") + '</button> ';
 =======
+=======
+>>>>>>> danhmuc_list
   function el(tag, attrs) {
     var element = tag ? document.createElement(tag) : document.createDocumentFragment();
     for (var key in attrs) {
@@ -240,6 +243,9 @@
               el("button", {}, cm.phrase("No")), " ",
               el("button", {}, cm.phrase("All")), " ",
               el("button", {}, cm.phrase("Stop")));
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   }
 
@@ -258,14 +264,20 @@
     if (cm.getOption("readOnly")) return;
     var query = cm.getSelection() || getSearchState(cm).lastQuery;
 <<<<<<< HEAD
+<<<<<<< HEAD
     var dialogText = '<span class="CodeMirror-search-label">' + (all ? cm.phrase("Replace all:") : cm.phrase("Replace:")) + '</span>';
     dialog(cm, dialogText + getReplaceQueryDialog(cm), dialogText, query, function(query) {
 =======
+=======
+>>>>>>> danhmuc_list
     var dialogText = all ? cm.phrase("Replace all:") : cm.phrase("Replace:")
     var fragment = el("", null,
                       el("span", {className: "CodeMirror-search-label"}, dialogText),
                       getReplaceQueryDialog(cm))
     dialog(cm, fragment, dialogText, query, function(query) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       if (!query) return;
       query = parseQuery(query);

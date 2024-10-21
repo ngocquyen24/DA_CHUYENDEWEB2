@@ -1,6 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*! Buttons for DataTables 1.7.0
  * ©2016-2021 SpryMedia Ltd - datatables.net/license
+=======
+/*! Buttons for DataTables 2.2.2
+ * ©2016-2022 SpryMedia Ltd - datatables.net/license
+>>>>>>> danhmuc_list
 =======
 /*! Buttons for DataTables 2.2.2
  * ©2016-2022 SpryMedia Ltd - datatables.net/license
@@ -53,6 +58,10 @@ function _fadeIn(el, duration, fn) {
 			.stop()
 			.fadeIn( duration, fn );
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> danhmuc_list
 =======
 
 >>>>>>> danhmuc_list
@@ -189,15 +198,21 @@ $.extend( Buttons.prototype, {
 	 * @param {object} config Button configuration object, base string name or function
 	 * @param {int|string} [idx] Button index for where to insert the button
 <<<<<<< HEAD
+<<<<<<< HEAD
 	 * @return {Buttons} Self for chaining
 	 */
 	add: function ( config, idx )
 =======
+=======
+>>>>>>> danhmuc_list
 	 * @param {boolean} [draw=true] Trigger a draw. Set a false when adding
 	 *   lots of buttons, until the last button.
 	 * @return {Buttons} Self for chaining
 	 */
 	add: function ( config, idx, draw )
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	{
 		var buttons = this.s.buttons;
@@ -215,10 +230,13 @@ $.extend( Buttons.prototype, {
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		this._expandButton( buttons, config, base !== undefined, idx );
 		this._draw();
 
 =======
+=======
+>>>>>>> danhmuc_list
 		this._expandButton(
 			buttons,
 			config,
@@ -232,13 +250,19 @@ $.extend( Buttons.prototype, {
 			this._draw();
 		}
 	
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		return this;
 	},
 
 	/**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 	 * Clear buttons from a collection and then insert new buttons
 	 */
 	collectionRebuild: function ( node, newButtons )
@@ -271,6 +295,9 @@ $.extend( Buttons.prototype, {
 	},
 
 	/**
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	 * Get the container node for the buttons
 	 * @return {jQuery} Buttons node
@@ -352,7 +379,10 @@ $.extend( Buttons.prototype, {
 
 	/**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 	 * Get a button's index
 	 * 
 	 * This is internally recursive
@@ -387,6 +417,9 @@ $.extend( Buttons.prototype, {
 
 
 	/**
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	 * Get the instance name for the button set selector
 	 * @return {string} Instance name
@@ -454,6 +487,11 @@ $.extend( Buttons.prototype, {
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+		button.conf.destroying = true;
+
+>>>>>>> danhmuc_list
 =======
 		button.conf.destroying = true;
 
@@ -506,13 +544,19 @@ $.extend( Buttons.prototype, {
 
 		if ( linerTag ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 			jqNode.children( linerTag ).html( text(label) );
 =======
+=======
+>>>>>>> danhmuc_list
 			jqNode
 				.children( linerTag )
 				.eq(0)
 				.filter(':not(.dt-down-arrow)')
 				.html( text(label) );
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		}
 		else {
@@ -623,6 +667,7 @@ $.extend( Buttons.prototype, {
 	 * @private
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	_expandButton: function ( attachTo, button, inCollection, attachPoint )
 	{
 		var dt = this.s.dt;
@@ -632,6 +677,8 @@ $.extend( Buttons.prototype, {
 			button;
 
 =======
+=======
+>>>>>>> danhmuc_list
 	_expandButton: function ( attachTo, button, split, inCollection, inSplit, attachPoint, parentConf )
 	{
 		var dt = this.s.dt;
@@ -651,6 +698,9 @@ $.extend( Buttons.prototype, {
 			isSplit = true;
 		}
 			
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		for ( var i=0, ien=buttons.length ; i<ien ; i++ ) {
 			var conf = this._resolveExtends( buttons[i] );
@@ -659,6 +709,7 @@ $.extend( Buttons.prototype, {
 				continue;
 			}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 			// If the configuration is an array, then expand the buttons at this
 			// point
@@ -669,6 +720,8 @@ $.extend( Buttons.prototype, {
 
 			var built = this._buildButton( conf, inCollection );
 =======
+=======
+>>>>>>> danhmuc_list
 			if( conf.config !== undefined && conf.config.split) {
 				isSplit = true;
 			}
@@ -684,6 +737,9 @@ $.extend( Buttons.prototype, {
 			}
 
 			var built = this._buildButton( conf, inCollection, conf.split !== undefined || (conf.config !== undefined && conf.config.split !== undefined), inSplit );
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			if ( ! built ) {
 				continue;
@@ -698,6 +754,7 @@ $.extend( Buttons.prototype, {
 			}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			if ( built.conf.buttons ) {
 				built.collection = $('<'+this.c.dom.collection.tag+'/>');
 
@@ -706,6 +763,8 @@ $.extend( Buttons.prototype, {
 				this._expandButton( built.buttons, built.conf.buttons, true, attachPoint );
 			}
 =======
+=======
+>>>>>>> danhmuc_list
 			
 			if ( built.conf.buttons || built.conf.split ) {
 				built.collection = $('<'+(isSplit ? this.c.dom.splitCollection.tag : this.c.dom.collection.tag)+'/>');
@@ -735,6 +794,9 @@ $.extend( Buttons.prototype, {
 				this._expandButton( built.buttons, built.conf.buttons, built.conf.split, !isSplit, isSplit, attachPoint, built.conf );
 			}
 			built.conf.parent = parentConf;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 			// init call is made here, rather than buildButton as it needs to
@@ -755,7 +817,11 @@ $.extend( Buttons.prototype, {
 	 * @private
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	_buildButton: function ( config, inCollection )
+=======
+	_buildButton: function ( config, inCollection, isSplit, inSplit )
+>>>>>>> danhmuc_list
 =======
 	_buildButton: function ( config, inCollection, isSplit, inSplit )
 >>>>>>> danhmuc_list
@@ -764,6 +830,12 @@ $.extend( Buttons.prototype, {
 		var linerDom = this.c.dom.buttonLiner;
 		var collectionDom = this.c.dom.collection;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+		var splitDom = this.c.dom.split;
+		var splitCollectionDom = this.c.dom.splitCollection;
+		var splitDropdownButton = this.c.dom.splitDropdownButton;
+>>>>>>> danhmuc_list
 =======
 		var splitDom = this.c.dom.split;
 		var splitCollectionDom = this.c.dom.splitCollection;
@@ -777,12 +849,15 @@ $.extend( Buttons.prototype, {
 		};
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( inCollection && collectionDom.button ) {
 			buttonDom = collectionDom.button;
 		}
 
 		if ( inCollection && collectionDom.buttonLiner ) {
 =======
+=======
+>>>>>>> danhmuc_list
 		// Spacers don't do much other than insert an element into the DOM
 		if (config.spacer) {
 			var spacer = $('<span></span>')
@@ -812,12 +887,16 @@ $.extend( Buttons.prototype, {
 			linerDom = splitCollectionDom.buttonLiner
 		}
 		else if ( !isSplit && inCollection && collectionDom.buttonLiner ) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			linerDom = collectionDom.buttonLiner;
 		}
 
 		// Make sure that the button is available based on whatever requirements
 		// it has. For example, PDF button require pdfmake
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( config.available && ! config.available( dt, config ) ) {
 			return false;
@@ -901,6 +980,8 @@ $.extend( Buttons.prototype, {
 		}
 
 =======
+=======
+>>>>>>> danhmuc_list
 		if ( config.available && ! config.available( dt, config ) && !config.hasOwnProperty('html') ) {
 			return false;
 		}
@@ -998,6 +1079,9 @@ $.extend( Buttons.prototype, {
 			button = $(config.html)
 		}
 	
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		var buttonContainer = this.c.dom.buttonContainer;
 		var inserter;
@@ -1020,6 +1104,7 @@ $.extend( Buttons.prototype, {
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		return {
 			conf:         config,
 			node:         button.get(0),
@@ -1027,6 +1112,8 @@ $.extend( Buttons.prototype, {
 			buttons:      [],
 			inCollection: inCollection,
 =======
+=======
+>>>>>>> danhmuc_list
 		var splitDiv;
 		if(isSplit) {
 			splitDiv = $('<div/>').addClass(this.c.dom.splitWrapper.className)
@@ -1092,6 +1179,9 @@ $.extend( Buttons.prototype, {
 			inCollection: inCollection,
 			isSplit:	  isSplit,
 			inSplit:	  inSplit,
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			collection:   null
 		};
@@ -1247,6 +1337,10 @@ $.extend( Buttons.prototype, {
 	_resolveExtends: function ( conf )
 	{
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+		var that = this;
+>>>>>>> danhmuc_list
 =======
 		var that = this;
 >>>>>>> danhmuc_list
@@ -1265,7 +1359,11 @@ $.extend( Buttons.prototype, {
 
 				if ( typeof base === 'function' ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 					base = base( dt, conf );
+=======
+					base = base.call( that, dt, conf );
+>>>>>>> danhmuc_list
 =======
 					base = base.call( that, dt, conf );
 >>>>>>> danhmuc_list
@@ -1277,7 +1375,11 @@ $.extend( Buttons.prototype, {
 				else if ( typeof base === 'string' ) {
 					if ( ! _dtButtons[ base ] ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 						throw 'Unknown button type: '+base;
+=======
+						return {html: base}
+>>>>>>> danhmuc_list
 =======
 						return {html: base}
 >>>>>>> danhmuc_list
@@ -1322,11 +1424,17 @@ $.extend( Buttons.prototype, {
 			var originalClassName = objArray.className;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 			if (conf.config !== undefined && objArray.config !== undefined) {
 				conf.config = $.extend({}, objArray.config, conf.config)
 			}
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			conf = $.extend( {}, objArray, conf );
 
@@ -1381,6 +1489,7 @@ $.extend( Buttons.prototype, {
 	 * @param {object} inOpts Options (see object below for all options)
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	_popover: function ( content, hostButton, inOpts ) {
 		var dt = hostButton;
 		var buttonsSettings = this.c;
@@ -1390,6 +1499,8 @@ $.extend( Buttons.prototype, {
 			background: true,
 			backgroundClassName: 'dt-button-background',
 =======
+=======
+>>>>>>> danhmuc_list
 	_popover: function ( content, hostButton, inOpts, e ) {
 		var dt = hostButton;
 		var buttonsSettings = this.c;
@@ -1400,12 +1511,16 @@ $.extend( Buttons.prototype, {
 			background: true,
 			backgroundClassName: 'dt-button-background',
 			closeButton: true,
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			contentClassName: buttonsSettings.dom.collection.className,
 			collectionLayout: '',
 			collectionTitle: '',
 			dropup: false,
 			fade: 400,
+<<<<<<< HEAD
 <<<<<<< HEAD
 			rightAlignClassName: 'dt-button-right',
 			tag: buttonsSettings.dom.collection.tag
@@ -1414,6 +1529,8 @@ $.extend( Buttons.prototype, {
 
 		var close = function () {
 =======
+=======
+>>>>>>> danhmuc_list
 			popoverTitle: '',
 			rightAlignClassName: 'dt-button-right',
 			tag: buttonsSettings.dom.collection.tag
@@ -1424,6 +1541,9 @@ $.extend( Buttons.prototype, {
 		var close = function () {
 			closed = true;
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			_fadeOut(
 				$('.dt-button-collection'),
@@ -1440,19 +1560,29 @@ $.extend( Buttons.prototype, {
 			Buttons.background( false, options.backgroundClassName, options.fade, hostNode );
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			$('body').off( '.dtb-collection' );
 			dt.off( 'buttons-action.b-internal' );
 =======
+=======
+>>>>>>> danhmuc_list
 			$(window).off('resize.resize.dtb-collection');
 			$('body').off( '.dtb-collection' );
 			dt.off( 'buttons-action.b-internal' );
 			dt.off( 'destroy' );
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		};
 
 		if (content === false) {
 			close();
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+			return;
+>>>>>>> danhmuc_list
 =======
 			return;
 >>>>>>> danhmuc_list
@@ -1461,22 +1591,31 @@ $.extend( Buttons.prototype, {
 		var existingExpanded = $(dt.buttons( '[aria-haspopup="true"][aria-expanded="true"]' ).nodes());
 		if ( existingExpanded.length ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 			hostNode = existingExpanded.eq(0);
 =======
+=======
+>>>>>>> danhmuc_list
 			// Reuse the current position if the button that was triggered is inside an existing collection
 			if (hostNode.closest('div.dt-button-collection').length) {
 				hostNode = existingExpanded.eq(0);
 			}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 			close();
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		var display = $('<div/>')
 			.addClass('dt-button-collection')
 			.addClass(options.collectionLayout)
 =======
+=======
+>>>>>>> danhmuc_list
 		// Try to be smart about the layout
 		var cnt = $('.dt-button', content).length;
 		var mod = '';
@@ -1496,6 +1635,9 @@ $.extend( Buttons.prototype, {
 			.addClass(options.collectionLayout)
 			.addClass(options.splitAlignClass)
 			.addClass(mod)
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			.css('display', 'none');
 
@@ -1511,11 +1653,14 @@ $.extend( Buttons.prototype, {
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( options.collectionTitle ) {
 			display.prepend('<div class="dt-button-collection-title">'+options.collectionTitle+'</div>');
 		}
 
 =======
+=======
+>>>>>>> danhmuc_list
 		if ( options.popoverTitle ) {
 			display.prepend('<div class="dt-button-collection-title">'+options.popoverTitle+'</div>');
 		}
@@ -1527,6 +1672,9 @@ $.extend( Buttons.prototype, {
 			display.prepend('<div class="dtb-popover-close">x</div>').addClass('dtb-collection-closeable')
 		}
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		_fadeIn( display.insertAfter( hostNode ), options.fade );
 
@@ -1534,7 +1682,11 @@ $.extend( Buttons.prototype, {
 		var position = display.css( 'position' );
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( options.align === 'dt-container' ) {
+=======
+		if ( options.span === 'container' || options.align === 'dt-container' ) {
+>>>>>>> danhmuc_list
 =======
 		if ( options.span === 'container' || options.align === 'dt-container' ) {
 >>>>>>> danhmuc_list
@@ -1544,6 +1696,7 @@ $.extend( Buttons.prototype, {
 
 		// Align the popover relative to the DataTables container
 		// Useful for wide popovers such as SearchPanes
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if (
 			position === 'absolute' &&
@@ -1693,6 +1846,8 @@ $.extend( Buttons.prototype, {
 		if ( options.background ) {
 			Buttons.background( true, options.backgroundClassName, options.fade, hostNode );
 =======
+=======
+>>>>>>> danhmuc_list
 		if (position === 'absolute') {
 			// Align relative to the host button
 			var offsetParent = $(hostNode[0].offsetParent);
@@ -1801,6 +1956,9 @@ $.extend( Buttons.prototype, {
 				options.fade,
 				options.backgroundHost || hostNode
 			);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		}
 
@@ -1810,6 +1968,7 @@ $.extend( Buttons.prototype, {
 		// required to make it work...
 		$('div.dt-button-background').on( 'click.dtb-collection', function () {} );
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		$('body')
 			.on( 'click.dtb-collection', function (e) {
@@ -1829,6 +1988,8 @@ $.extend( Buttons.prototype, {
 
 =======
 >>>>>>> danhmuc_list
+=======
+>>>>>>> danhmuc_list
 		if ( options.autoClose ) {
 			setTimeout( function () {
 				dt.on( 'buttons-action.b-internal', function (e, btn, dt, node) {
@@ -1840,9 +2001,12 @@ $.extend( Buttons.prototype, {
 			}, 0);
 		}
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 		$(display).trigger('buttons-popover.dt');
 =======
+=======
+>>>>>>> danhmuc_list
 		
 		$(display).trigger('buttons-popover.dt');
 
@@ -1871,6 +2035,9 @@ $.extend( Buttons.prototype, {
 					}
 				} );
 		}, 0);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	}
 } );
@@ -1970,11 +2137,17 @@ Buttons.instanceSelector = function ( group, buttons )
 			ret.push( buttons[ input ].inst );
 		}
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 		else if ( typeof input === 'object' ) {
 			// Actual instance selector
 			ret.push( input );
 		}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	};
 	
@@ -2049,17 +2222,23 @@ Buttons.buttonSelector = function ( insts, selector )
 		else if ( typeof selector === 'number' ) {
 			// Main button index selector
 <<<<<<< HEAD
+<<<<<<< HEAD
 			ret.push( {
 				inst: inst,
 				node: inst.s.buttons[ selector ].node
 			} );
 =======
+=======
+>>>>>>> danhmuc_list
 			if (inst.s.buttons[ selector ]) {
 				ret.push( {
 					inst: inst,
 					node: inst.s.buttons[ selector ].node
 				} );
 			}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		}
 		else if ( typeof selector === 'string' ) {
@@ -2144,6 +2323,7 @@ Buttons.stripData = function ( str, config ) {
 	str = str.replace( /<!\-\-.*?\-\->/g, '' );
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	if ( config.stripHtml ) {
 		str = str.replace( /<[^>]*>/g, '' );
 	}
@@ -2158,6 +2338,8 @@ Buttons.stripData = function ( str, config ) {
 
 	if ( config.decodeEntities ) {
 =======
+=======
+>>>>>>> danhmuc_list
 	if ( ! config || config.stripHtml ) {
 		str = str.replace( /<[^>]*>/g, '' );
 	}
@@ -2171,6 +2353,9 @@ Buttons.stripData = function ( str, config ) {
 	}
 
 	if ( ! config || config.decodeEntities ) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		_exportTextarea.innerHTML = str;
 		str = _exportTextarea.value;
@@ -2204,7 +2389,12 @@ Buttons.defaults = {
 			className: 'dt-button',
 			active: 'active',
 <<<<<<< HEAD
+<<<<<<< HEAD
 			disabled: 'disabled'
+=======
+			disabled: 'disabled',
+			spacerClass: ''
+>>>>>>> danhmuc_list
 =======
 			disabled: 'disabled',
 			spacerClass: ''
@@ -2214,7 +2404,10 @@ Buttons.defaults = {
 			tag: 'span',
 			className: ''
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 		},
 		split: {
 			tag: 'div',
@@ -2238,6 +2431,9 @@ Buttons.defaults = {
 		splitCollection: {
 			tag: 'div',
 			className: 'dt-button-split-collection',
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		}
 	}
@@ -2249,7 +2445,11 @@ Buttons.defaults = {
  * @static
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 Buttons.version = '1.7.0';
+=======
+Buttons.version = '2.2.2';
+>>>>>>> danhmuc_list
 =======
 Buttons.version = '2.2.2';
 >>>>>>> danhmuc_list
@@ -2262,6 +2462,10 @@ $.extend( _dtButtons, {
 		},
 		className: 'buttons-collection',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+		closeButton: false,
+>>>>>>> danhmuc_list
 =======
 		closeButton: false,
 >>>>>>> danhmuc_list
@@ -2270,8 +2474,11 @@ $.extend( _dtButtons, {
 		},
 		action: function ( e, dt, button, config ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 			e.stopPropagation();
 
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 			if ( config._collection.parents('body').length ) {
@@ -2287,7 +2494,10 @@ $.extend( _dtButtons, {
 		// Also the popover options, defined in Buttons.popover
 	},
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 	split: {
 		text: function ( dt ) {
 			return dt.i18n( 'buttons.split', 'Split' );
@@ -2305,6 +2515,9 @@ $.extend( _dtButtons, {
 		}
 		// Also the popover options, defined in Buttons.popover
 	},
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	copy: function ( dt, conf ) {
 		if ( _dtButtons.copyHtml5 ) {
@@ -2395,7 +2608,10 @@ $.extend( _dtButtons, {
 			}
 		};
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 	},
 	spacer: {
 		style: 'empty',
@@ -2403,6 +2619,9 @@ $.extend( _dtButtons, {
 		text: function ( dt ) {
 			return dt.i18n( 'buttons.spacer', '' );
 		}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	}
 } );
@@ -2477,7 +2696,10 @@ DataTable.Api.registerPlural( 'buttons().action()', 'button().action()', functio
 } );
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 // Collection control
 DataTable.Api.registerPlural( 'buttons().collectionRebuild()', 'button().collectionRebuild()', function ( buttons ) {
 	return this.each( function ( set ) {
@@ -2490,6 +2712,9 @@ DataTable.Api.registerPlural( 'buttons().collectionRebuild()', 'button().collect
 	} );
 } );
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 // Enable / disable buttons
 DataTable.Api.register( ['buttons().enable()', 'button().enable()'], function ( flag ) {
@@ -2506,7 +2731,10 @@ DataTable.Api.register( ['buttons().disable()', 'button().disable()'], function 
 } );
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 // Button index
 DataTable.Api.register( 'button().index()', function () {
 	var idx = null;
@@ -2522,6 +2750,9 @@ DataTable.Api.register( 'button().index()', function () {
 	return idx;
 } );
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 // Get button nodes
 DataTable.Api.registerPlural( 'buttons().nodes()', 'button().node()', function () {
@@ -2602,7 +2833,11 @@ DataTable.Api.register( 'buttons().container()', function () {
 
 // Add a new button
 <<<<<<< HEAD
+<<<<<<< HEAD
 DataTable.Api.register( 'button().add()', function ( idx, conf ) {
+=======
+DataTable.Api.register( 'button().add()', function ( idx, conf, draw ) {
+>>>>>>> danhmuc_list
 =======
 DataTable.Api.register( 'button().add()', function ( idx, conf, draw ) {
 >>>>>>> danhmuc_list
@@ -2614,7 +2849,11 @@ DataTable.Api.register( 'button().add()', function ( idx, conf, draw ) {
 
 		if ( inst.length ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 			inst[0].add( conf, idx );
+=======
+			inst[0].add( conf, idx , draw);
+>>>>>>> danhmuc_list
 =======
 			inst[0].add( conf, idx , draw);
 >>>>>>> danhmuc_list

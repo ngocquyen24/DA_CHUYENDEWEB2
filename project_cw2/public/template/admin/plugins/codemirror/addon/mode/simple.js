@@ -69,6 +69,10 @@
     if (val instanceof RegExp) {
       if (val.ignoreCase) flags = "i";
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+      if (val.unicode) flags += "u"
+>>>>>>> danhmuc_list
 =======
       if (val.unicode) flags += "u"
 >>>>>>> danhmuc_list

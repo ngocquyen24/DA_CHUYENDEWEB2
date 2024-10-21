@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*! Bootstrap 4 styling wrapper for FixedColumns
  * ©2018 SpryMedia Ltd - datatables.net/license
  */
@@ -38,6 +39,8 @@ return $.fn.dataTable;
 
 }));
 =======
+=======
+>>>>>>> danhmuc_list
 /*! FixedColumns 4.0.1
  * 2019-2021 SpryMedia Ltd - datatables.net/license
  */
@@ -81,4 +84,7 @@ return $.fn.dataTable;
     }));
 
 }());
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list

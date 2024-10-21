@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 window._ = require('lodash');
 
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 /**
@@ -10,7 +13,12 @@ window._ = require('lodash');
  */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 window.axios = require('axios');
+=======
+import axios from 'axios';
+window.axios = axios;
+>>>>>>> danhmuc_list
 =======
 import axios from 'axios';
 window.axios = axios;
@@ -27,6 +35,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 // import Echo from 'laravel-echo';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // window.Pusher = require('pusher-js');
 
 // window.Echo = new Echo({
@@ -35,6 +44,8 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 =======
+=======
+>>>>>>> danhmuc_list
 // import Pusher from 'pusher-js';
 // window.Pusher = Pusher;
 
@@ -47,5 +58,8 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     wssPort: import.meta.env.VITE_PUSHER_PORT ?? 443,
 //     forceTLS: (import.meta.env.VITE_PUSHER_SCHEME ?? 'https') === 'https',
 //     enabledTransports: ['ws', 'wss'],
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 // });

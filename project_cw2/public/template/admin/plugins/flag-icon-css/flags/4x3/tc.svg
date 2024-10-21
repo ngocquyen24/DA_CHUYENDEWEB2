@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <svg xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-tc" viewBox="0 0 640 480">
   <path fill="#006" d="M640 480V0H0v480h640z"/>
   <path fill="#006" fill-rule="evenodd" d="M0 0h373.7v232.2H0z"/>
@@ -66,6 +67,8 @@
     <path stroke="#000" stroke-width="6.4" d="M779.5 32.9C903.7 33 957.3 135.3 957 133.2l-35.7 33.3c-19 17.8-141.8 17.8-140.2 17.7l-1.6-151.3z" transform="matrix(-.06216 0 0 .06555 606.2 249.3)"/>
   </g>
 =======
+=======
+>>>>>>> danhmuc_list
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="flag-icons-tc" version="1.1" viewBox="0 0 640 480">
   <path id="path314" fill="#006" d="M640 480V0H0v480h640z" style="fill:#002868;fill-opacity:1"/>
   <g id="g90" fill="none" stroke="#000" transform="matrix(.125 0 0 .125 485 299.6)">
@@ -117,5 +120,8 @@
   <path id="path223" fill="#c8102e" d="M212 140.5 320 220v20l-135.5-99.5Zm-92 10 3 17.5-96 72H0ZM320 0v1.5l-124.5 94 1-22L295 0ZM0 0l119.5 88h-30L0 21Z" style="stroke-width:.5"/>
   <path id="path225" fill="#fff" d="M120.5 0v240h80V0ZM0 80v80h320V80Z" style="stroke-width:.5"/>
   <path id="path227" fill="#c8102e" d="M0 96.5v48h320v-48zM136.5 0v240h48V0Z" style="stroke-width:.5"/>
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 </svg>

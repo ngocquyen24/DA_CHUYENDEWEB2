@@ -203,6 +203,10 @@
   function SearchCursor(doc, query, pos, options) {
     this.atOccurrence = false
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    this.afterEmptyMatch = false
+>>>>>>> danhmuc_list
 =======
     this.afterEmptyMatch = false
 >>>>>>> danhmuc_list
@@ -242,6 +246,7 @@
 
     find: function(reverse) {
 <<<<<<< HEAD
+<<<<<<< HEAD
       var result = this.matches(reverse, this.doc.clipPos(reverse ? this.pos.from : this.pos.to))
 
       // Implements weird auto-growing behavior on null-matches for
@@ -258,6 +263,8 @@
         }
       }
 =======
+=======
+>>>>>>> danhmuc_list
       var head = this.doc.clipPos(reverse ? this.pos.from : this.pos.to);
       if (this.afterEmptyMatch && this.atOccurrence) {
         // do not return the same 0 width match twice
@@ -281,6 +288,9 @@
       }
       var result = this.matches(reverse, head)
       this.afterEmptyMatch = result && CodeMirror.cmpPos(result.from, result.to) == 0
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
       if (result) {

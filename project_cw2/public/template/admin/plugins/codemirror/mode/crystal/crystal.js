@@ -165,15 +165,21 @@
           if(delim = stream.match(/^%([^\w\s=])/)) {
             delim = delim[1];
 <<<<<<< HEAD
+<<<<<<< HEAD
           } else if (stream.match(/^%[a-zA-Z0-9_\u009F-\uFFFF]*/)) {
             // Macro variables
             return "meta";
           } else {
 =======
+=======
+>>>>>>> danhmuc_list
           } else if (stream.match(/^%[a-zA-Z_\u009F-\uFFFF][\w\u009F-\uFFFF]*/)) {
             // Macro variables
             return "meta";
           } else if (stream.eat('%')) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             // '%' operator
             return "operator";

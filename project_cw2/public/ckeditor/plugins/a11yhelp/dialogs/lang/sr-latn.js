@@ -1,5 +1,6 @@
 ﻿/*
 <<<<<<< HEAD
+<<<<<<< HEAD
  Copyright (c) 2003-2021, CKSource - Frederico Knabben. All rights reserved.
  For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
 */
@@ -7,6 +8,8 @@ CKEDITOR.plugins.setLang("a11yhelp","sr-latn",{title:"Uputstva za pomoć",conten
 {name:"Uređivač dijaloga",legend:"U prozoru dijalog pritisnite TAB da bi došli do sledećeg polja dijaloga, pritisnite ENTER za prihvatanje dijaloga, pritisnite ESC za odbijanje dijaloga. Kada dijalog ima više kartica, do njih možete doći pritiskom na ALT + F10 ili  TAB. Zatim sa TAB ili STRELICA  DESNO dolazite do naredne kartice."},{name:"Uređivač lokalnog menija",legend:"Pritisnite  ${contextMenu} ili APPLICATION TASTER za otvaranje lokalnog menija. Zatim sa TAB ili STRELICA DOLE možete preći na sledeću tačku menija.  Prethodnu opciju možete postići sa SHIFT+TAB ili STRELICA GORE. Pritisnite SPACE ili ENTER za odabir tačke menija. Pritisnite SPACE ili ENTER  da bi ste otvorili podmeni trenutne stavke menija. Za povratak u glavni meni pritisnite ESC ili STRELICA DESNO. Zatvorite lokalni meni pomoću tastera ESC."},
 {name:"Uređjivač liste",legend:"Do sledećеg elementa liste možete doći sa TAB ili STERLICA DOLE. Za odabir prethodnog elementa  pritisnite SHIFT+TAB ili STREKICA DOLE. Za odabir elementa pritisnite SPACE ili ENTER. Sa pritiskom ESC zatvarate listu. "},{name:"Uredjivač trake puta elemenata",legend:"Pritisnite $ {elementsPathFocus} da bi ste označili traku puta elenementa. Do sledećеg elementa  možete doći sa TAB ili STRELICA DESNO. Do prethodnоg dolazite sa SHIFT+TAB ili STRELICA DESNO. Sa SPACE ili ENTER možete odbrati element u uredjivaču."}]},
 =======
+=======
+>>>>>>> danhmuc_list
  Copyright (c) 2003-2023, CKSource Holding sp. z o.o. All rights reserved.
  CKEditor 4 LTS ("Long Term Support") is available under the terms of the Extended Support Model.
 */
@@ -14,6 +17,9 @@ CKEDITOR.plugins.setLang("a11yhelp","sr-latn",{title:"Uputstva za pomoć",conten
 {name:"Uređivač dijaloga",legend:"Unutar dijaloga pritisnite TAB da pređjete na sledeći element dijaloga, pritisnite SHIFT+TAB da pređjete na prethodni element dijaloga, pritisnite ENTER da pošaljete dijalog, pritisnite ESC da otkažete dijalog. Kada dijalog ima više kartica, do liste kartica se može doći ili sa ALT+F10 ili sa TAB kao deo redosleda tabulatora dijaloga. Sa fokusiranom listom kartica, pređjite na sledeću i prethodnu karticu pomoću STRELICE NADESNO, odnosno NALEVO. Pritisnite ESC da odbacite promene i zatvorite dijalog. Fokus će se vratiti na oblast za uređivanje nakon napuštanja dijaloga."},
 {name:"Uređivač lokalnog menija",legend:"Pritisnite  ${contextMenu} ili APPLICATION TASTER za otvaranje lokalnog menija. Zatim sa TAB ili STRELICA DOLE možete preći na sledeću tačku menija.  Prethodnu opciju možete postići sa SHIFT+TAB ili STRELICA GORE. Pritisnite SPACE ili ENTER za odabir tačke menija. Pritisnite SPACE ili ENTER  da bi ste otvorili podmeni trenutne stavke menija. Za povratak u glavni meni pritisnite ESC ili STRELICA DESNO. Zatvorite lokalni meni pomoću tastera ESC."},{name:"Uređjivač liste",
 legend:"Do sledećеg elementa liste možete doći sa TAB ili STERLICA DOLE. Za odabir prethodnog elementa  pritisnite SHIFT+TAB ili STREKICA DOLE. Za odabir elementa pritisnite SPACE ili ENTER. Sa pritiskom ESC zatvarate listu. "},{name:"Uredjivač trake puta elemenata",legend:"Pritisnite $ {elementsPathFocus} da bi ste označili traku puta elenementa. Do sledećеg elementa  možete doći sa TAB ili STRELICA DESNO. Do prethodnоg dolazite sa SHIFT+TAB ili STRELICA DESNO. Sa SPACE ili ENTER možete odbrati element u uredjivaču."}]},
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 {name:"Komanda",items:[{name:"Otkaži komandu",legend:"Pritisni ${undo}"},{name:"Prepoznavanje komande",legend:"Pritisni ${redo}"},{name:"Podebljana komanda",legend:"Pritisni ${bold}"},{name:"Kurziv komanda",legend:"Pritisni ${italic}"},{name:"Precrtana komanda",legend:"Pritisni ${underline}"},{name:"Link komanda",legend:"Pritisni ${link}"},{name:"Zatvori traku uredjivača komanda ",legend:"Pritisni ${toolbarCollapse}"},{name:"Pristup prethodnom fokus mestu komanda ",legend:"Pritisni ${accessNextSpace} da bi pristupio najbližem nedostupnom fokus mestu pre znaka hiányjel, na primer: dva susedna HR elementa.Ponovi kombinaciju tastera da pronadješ fokus mesto koje se nalazi dalje."},
 {name:"Pristup sledećem fokus mestu komanda ",legend:"Pritisni ${accessNextSpace} da bi pristupio najbližem nedostupnom fokus mestu posle znaka hiányjel, na primer: dva susedna HR elementa.Ponovi kombinaciju tastera da pronadješ fokus mesto koje se nalazi dalje."},{name:"Pomoć pristupačnosti",legend:"Pritisni ${a11yHelp}"},{name:"Nalepi kao običan tekst",legend:"Pritisnite: ${pastetext}",legendEdge:"Pritisnite ${pastetext}-t, zatim ${paste}-t"}]}],tab:"Tab",pause:"Pause",capslock:"Caps Lock",escape:"Escape",

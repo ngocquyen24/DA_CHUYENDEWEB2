@@ -1,6 +1,7 @@
 /*!
  * 
 <<<<<<< HEAD
+<<<<<<< HEAD
  * Super simple wysiwyg editor v0.8.18
  * https://summernote.org
  * 
@@ -234,6 +235,8 @@ external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summe
 };
 external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.extend(external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.lang, {
 =======
+=======
+>>>>>>> danhmuc_list
  * Super simple WYSIWYG editor v0.8.20
  * https://summernote.org
  *
@@ -268,6 +271,9 @@ return /******/ (() => { // webpackBootstrap
   lang: {}
 };
 jquery__WEBPACK_IMPORTED_MODULE_0___default().extend((jquery__WEBPACK_IMPORTED_MODULE_0___default().summernote.lang), {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   'en-US': {
     font: {
@@ -312,7 +318,11 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default().extend((jquery__WEBPACK_IMPORTED_M
       insert: 'Insert Video',
       url: 'Video URL',
 <<<<<<< HEAD
+<<<<<<< HEAD
       providers: '(YouTube, Vimeo, Vine, Instagram, DailyMotion or Youku)'
+=======
+      providers: '(YouTube, Google Drive, Vimeo, Vine, Instagram, DailyMotion, Youku, Peertube)'
+>>>>>>> danhmuc_list
 =======
       providers: '(YouTube, Google Drive, Vimeo, Vine, Instagram, DailyMotion, Youku, Peertube)'
 >>>>>>> danhmuc_list
@@ -434,10 +444,13 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default().extend((jquery__WEBPACK_IMPORTED_M
   }
 });
 <<<<<<< HEAD
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/core/env.js
 
 var isSupportAmd = typeof define === 'function' && __webpack_require__(2); // eslint-disable-line
 =======
+=======
+>>>>>>> danhmuc_list
 
 /***/ }),
 
@@ -528,6 +541,9 @@ var external_jQuery_default = /*#__PURE__*/__webpack_require__.n(external_jQuery
 // EXTERNAL MODULE: ./src/lang/summernote-en-US.js
 var summernote_en_US = __webpack_require__(9770);
 ;// CONCATENATED MODULE: ./src/js/core/env.js
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 /**
@@ -541,15 +557,21 @@ var genericFontFamilies = ['sans-serif', 'serif', 'monospace', 'cursive', 'fanta
 
 function validFontName(fontName) {
 <<<<<<< HEAD
+<<<<<<< HEAD
   return external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.inArray(fontName.toLowerCase(), genericFontFamilies) === -1 ? "'".concat(fontName, "'") : fontName;
 }
 
 function env_isFontInstalled(fontName) {
 =======
+=======
+>>>>>>> danhmuc_list
   return external_jQuery_default().inArray(fontName.toLowerCase(), genericFontFamilies) === -1 ? "'".concat(fontName, "'") : fontName;
 }
 
 function isFontInstalled(fontName) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   var testFontName = fontName === 'Comic Sans MS' ? 'Courier New' : 'Comic Sans MS';
   var testText = 'mmmmmmmmmmwwwww';
@@ -596,7 +618,11 @@ var inputEventName = isMSIE ? 'DOMCharacterDataModified DOMSubtreeModified DOMNo
  */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* harmony default export */ var env = ({
+=======
+/* harmony default export */ const env = ({
+>>>>>>> danhmuc_list
 =======
 /* harmony default export */ const env = ({
 >>>>>>> danhmuc_list
@@ -610,10 +636,15 @@ var inputEventName = isMSIE ? 'DOMCharacterDataModified DOMSubtreeModified DOMNo
   isSafari: !isEdge && /safari/i.test(userAgent) && !/chrome/i.test(userAgent),
   browserVersion: browserVersion,
 <<<<<<< HEAD
+<<<<<<< HEAD
   jqueryVersion: parseFloat(external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.fn.jquery),
   isSupportAmd: isSupportAmd,
   isSupportTouch: isSupportTouch,
   isFontInstalled: env_isFontInstalled,
+=======
+  isSupportTouch: isSupportTouch,
+  isFontInstalled: isFontInstalled,
+>>>>>>> danhmuc_list
 =======
   isSupportTouch: isSupportTouch,
   isFontInstalled: isFontInstalled,
@@ -624,7 +655,11 @@ var inputEventName = isMSIE ? 'DOMCharacterDataModified DOMSubtreeModified DOMNo
   validFontName: validFontName
 });
 <<<<<<< HEAD
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/core/func.js
+=======
+;// CONCATENATED MODULE: ./src/js/core/func.js
+>>>>>>> danhmuc_list
 =======
 ;// CONCATENATED MODULE: ./src/js/core/func.js
 >>>>>>> danhmuc_list
@@ -679,7 +714,11 @@ function func_self(a) {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 function func_invoke(obj, method) {
+=======
+function invoke(obj, method) {
+>>>>>>> danhmuc_list
 =======
 function invoke(obj, method) {
 >>>>>>> danhmuc_list
@@ -725,7 +764,11 @@ function uniqueId(prefix) {
 
 function rect2bnd(rect) {
 <<<<<<< HEAD
+<<<<<<< HEAD
   var $document = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(document);
+=======
+  var $document = external_jQuery_default()(document);
+>>>>>>> danhmuc_list
 =======
   var $document = external_jQuery_default()(document);
 >>>>>>> danhmuc_list
@@ -815,7 +858,11 @@ function isValidUrl(url) {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* harmony default export */ var func = ({
+=======
+/* harmony default export */ const func = ({
+>>>>>>> danhmuc_list
 =======
 /* harmony default export */ const func = ({
 >>>>>>> danhmuc_list
@@ -828,7 +875,11 @@ function isValidUrl(url) {
   not: not,
   and: and,
 <<<<<<< HEAD
+<<<<<<< HEAD
   invoke: func_invoke,
+=======
+  invoke: invoke,
+>>>>>>> danhmuc_list
 =======
   invoke: invoke,
 >>>>>>> danhmuc_list
@@ -841,7 +892,11 @@ function isValidUrl(url) {
   isValidUrl: isValidUrl
 });
 <<<<<<< HEAD
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/core/lists.js
+=======
+;// CONCATENATED MODULE: ./src/js/core/lists.js
+>>>>>>> danhmuc_list
 =======
 ;// CONCATENATED MODULE: ./src/js/core/lists.js
 >>>>>>> danhmuc_list
@@ -853,7 +908,11 @@ function isValidUrl(url) {
  */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 function lists_head(array) {
+=======
+function head(array) {
+>>>>>>> danhmuc_list
 =======
 function head(array) {
 >>>>>>> danhmuc_list
@@ -867,7 +926,11 @@ function head(array) {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 function lists_last(array) {
+=======
+function last(array) {
+>>>>>>> danhmuc_list
 =======
 function last(array) {
 >>>>>>> danhmuc_list
@@ -975,7 +1038,11 @@ function from(collection) {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 function lists_isEmpty(array) {
+=======
+function isEmpty(array) {
+>>>>>>> danhmuc_list
 =======
 function isEmpty(array) {
 >>>>>>> danhmuc_list
@@ -998,9 +1065,15 @@ function clusterBy(array, fn) {
   var aTail = tail(array);
   return aTail.reduce(function (memo, v) {
 <<<<<<< HEAD
+<<<<<<< HEAD
     var aLast = lists_last(memo);
 
     if (fn(lists_last(aLast), v)) {
+=======
+    var aLast = last(memo);
+
+    if (fn(last(aLast), v)) {
+>>>>>>> danhmuc_list
 =======
     var aLast = last(memo);
 
@@ -1013,7 +1086,11 @@ function clusterBy(array, fn) {
 
     return memo;
 <<<<<<< HEAD
+<<<<<<< HEAD
   }, [[lists_head(array)]]);
+=======
+  }, [[head(array)]]);
+>>>>>>> danhmuc_list
 =======
   }, [[head(array)]]);
 >>>>>>> danhmuc_list
@@ -1062,7 +1139,11 @@ function unique(array) {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 function lists_next(array, item) {
+=======
+function next(array, item) {
+>>>>>>> danhmuc_list
 =======
 function next(array, item) {
 >>>>>>> danhmuc_list
@@ -1098,6 +1179,7 @@ function prev(array, item) {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* harmony default export */ var lists = ({
   head: lists_head,
   last: lists_last,
@@ -1106,6 +1188,8 @@ function prev(array, item) {
   prev: prev,
   next: lists_next,
 =======
+=======
+>>>>>>> danhmuc_list
 /* harmony default export */ const lists = ({
   head: head,
   last: last,
@@ -1113,6 +1197,9 @@ function prev(array, item) {
   tail: tail,
   prev: prev,
   next: next,
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   find: find,
   contains: contains,
@@ -1120,7 +1207,11 @@ function prev(array, item) {
   sum: sum,
   from: from,
 <<<<<<< HEAD
+<<<<<<< HEAD
   isEmpty: lists_isEmpty,
+=======
+  isEmpty: isEmpty,
+>>>>>>> danhmuc_list
 =======
   isEmpty: isEmpty,
 >>>>>>> danhmuc_list
@@ -1129,7 +1220,11 @@ function prev(array, item) {
   unique: unique
 });
 <<<<<<< HEAD
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/core/dom.js
+=======
+;// CONCATENATED MODULE: ./src/js/core/dom.js
+>>>>>>> danhmuc_list
 =======
 ;// CONCATENATED MODULE: ./src/js/core/dom.js
 >>>>>>> danhmuc_list
@@ -1150,7 +1245,11 @@ var ZERO_WIDTH_NBSP_CHAR = "\uFEFF";
 
 function isEditable(node) {
 <<<<<<< HEAD
+<<<<<<< HEAD
   return node && external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(node).hasClass('note-editable');
+=======
+  return node && external_jQuery_default()(node).hasClass('note-editable');
+>>>>>>> danhmuc_list
 =======
   return node && external_jQuery_default()(node).hasClass('note-editable');
 >>>>>>> danhmuc_list
@@ -1167,7 +1266,11 @@ function isEditable(node) {
 
 function isControlSizing(node) {
 <<<<<<< HEAD
+<<<<<<< HEAD
   return node && external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(node).hasClass('note-control-sizing');
+=======
+  return node && external_jQuery_default()(node).hasClass('note-control-sizing');
+>>>>>>> danhmuc_list
 =======
   return node && external_jQuery_default()(node).hasClass('note-control-sizing');
 >>>>>>> danhmuc_list
@@ -1248,7 +1351,11 @@ var isTable = makePredByNodeName('TABLE');
 var isData = makePredByNodeName('DATA');
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 function dom_isInline(node) {
+=======
+function isInline(node) {
+>>>>>>> danhmuc_list
 =======
 function isInline(node) {
 >>>>>>> danhmuc_list
@@ -1262,7 +1369,11 @@ function isList(node) {
 var isHr = makePredByNodeName('HR');
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 function dom_isCell(node) {
+=======
+function isCell(node) {
+>>>>>>> danhmuc_list
 =======
 function isCell(node) {
 >>>>>>> danhmuc_list
@@ -1273,7 +1384,11 @@ var isBlockquote = makePredByNodeName('BLOCKQUOTE');
 
 function isBodyContainer(node) {
 <<<<<<< HEAD
+<<<<<<< HEAD
   return dom_isCell(node) || isBlockquote(node) || isEditable(node);
+=======
+  return isCell(node) || isBlockquote(node) || isEditable(node);
+>>>>>>> danhmuc_list
 =======
   return isCell(node) || isBlockquote(node) || isEditable(node);
 >>>>>>> danhmuc_list
@@ -1283,17 +1398,23 @@ var isAnchor = makePredByNodeName('A');
 
 function isParaInline(node) {
 <<<<<<< HEAD
+<<<<<<< HEAD
   return dom_isInline(node) && !!dom_ancestor(node, isPara);
 }
 
 function isBodyInline(node) {
   return dom_isInline(node) && !dom_ancestor(node, isPara);
 =======
+=======
+>>>>>>> danhmuc_list
   return isInline(node) && !!ancestor(node, isPara);
 }
 
 function isBodyInline(node) {
   return isInline(node) && !ancestor(node, isPara);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 }
 
@@ -1418,7 +1539,11 @@ function paddingBlankHTML(node) {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 function dom_ancestor(node, pred) {
+=======
+function ancestor(node, pred) {
+>>>>>>> danhmuc_list
 =======
 function ancestor(node, pred) {
 >>>>>>> danhmuc_list
@@ -1477,7 +1602,11 @@ function listAncestor(node, pred) {
   pred = pred || func.fail;
   var ancestors = [];
 <<<<<<< HEAD
+<<<<<<< HEAD
   dom_ancestor(node, function (el) {
+=======
+  ancestor(node, function (el) {
+>>>>>>> danhmuc_list
 =======
   ancestor(node, function (el) {
 >>>>>>> danhmuc_list
@@ -1507,7 +1636,11 @@ function lastAncestor(node, pred) {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 function dom_commonAncestor(nodeA, nodeB) {
+=======
+function commonAncestor(nodeA, nodeB) {
+>>>>>>> danhmuc_list
 =======
 function commonAncestor(nodeA, nodeB) {
 >>>>>>> danhmuc_list
@@ -1601,7 +1734,11 @@ function listDescendant(node, pred) {
 function wrap(node, wrapperName) {
   var parent = node.parentNode;
 <<<<<<< HEAD
+<<<<<<< HEAD
   var wrapper = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<' + wrapperName + '>')[0];
+=======
+  var wrapper = external_jQuery_default()('<' + wrapperName + '>')[0];
+>>>>>>> danhmuc_list
 =======
   var wrapper = external_jQuery_default()('<' + wrapperName + '>')[0];
 >>>>>>> danhmuc_list
@@ -1639,7 +1776,11 @@ function insertAfter(node, preceding) {
 
 function appendChildNodes(node, aChild) {
 <<<<<<< HEAD
+<<<<<<< HEAD
   external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(aChild, function (idx, child) {
+=======
+  external_jQuery_default().each(aChild, function (idx, child) {
+>>>>>>> danhmuc_list
 =======
   external_jQuery_default().each(aChild, function (idx, child) {
 >>>>>>> danhmuc_list
@@ -1690,9 +1831,15 @@ function isEdgePoint(point) {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 function dom_isLeftEdgeOf(node, ancestor) {
   while (node && node !== ancestor) {
     if (dom_position(node) !== 0) {
+=======
+function isLeftEdgeOf(node, ancestor) {
+  while (node && node !== ancestor) {
+    if (position(node) !== 0) {
+>>>>>>> danhmuc_list
 =======
 function isLeftEdgeOf(node, ancestor) {
   while (node && node !== ancestor) {
@@ -1722,7 +1869,11 @@ function isRightEdgeOf(node, ancestor) {
 
   while (node && node !== ancestor) {
 <<<<<<< HEAD
+<<<<<<< HEAD
     if (dom_position(node) !== nodeLength(node.parentNode) - 1) {
+=======
+    if (position(node) !== nodeLength(node.parentNode) - 1) {
+>>>>>>> danhmuc_list
 =======
     if (position(node) !== nodeLength(node.parentNode) - 1) {
 >>>>>>> danhmuc_list
@@ -1744,7 +1895,11 @@ function isRightEdgeOf(node, ancestor) {
 
 function isLeftEdgePointOf(point, ancestor) {
 <<<<<<< HEAD
+<<<<<<< HEAD
   return isLeftEdgePoint(point) && dom_isLeftEdgeOf(point.node, ancestor);
+=======
+  return isLeftEdgePoint(point) && isLeftEdgeOf(point.node, ancestor);
+>>>>>>> danhmuc_list
 =======
   return isLeftEdgePoint(point) && isLeftEdgeOf(point.node, ancestor);
 >>>>>>> danhmuc_list
@@ -1768,7 +1923,11 @@ function isRightEdgePointOf(point, ancestor) {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 function dom_position(node) {
+=======
+function position(node) {
+>>>>>>> danhmuc_list
 =======
 function position(node) {
 >>>>>>> danhmuc_list
@@ -1794,7 +1953,11 @@ function hasChildren(node) {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 function dom_prevPoint(point, isSkipInnerOffset) {
+=======
+function prevPoint(point, isSkipInnerOffset) {
+>>>>>>> danhmuc_list
 =======
 function prevPoint(point, isSkipInnerOffset) {
 >>>>>>> danhmuc_list
@@ -1808,7 +1971,11 @@ function prevPoint(point, isSkipInnerOffset) {
 
     node = point.node.parentNode;
 <<<<<<< HEAD
+<<<<<<< HEAD
     offset = dom_position(point.node);
+=======
+    offset = position(point.node);
+>>>>>>> danhmuc_list
 =======
     offset = position(point.node);
 >>>>>>> danhmuc_list
@@ -1835,7 +2002,11 @@ function prevPoint(point, isSkipInnerOffset) {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 function dom_nextPoint(point, isSkipInnerOffset) {
+=======
+function nextPoint(point, isSkipInnerOffset) {
+>>>>>>> danhmuc_list
 =======
 function nextPoint(point, isSkipInnerOffset) {
 >>>>>>> danhmuc_list
@@ -1854,7 +2025,11 @@ function nextPoint(point, isSkipInnerOffset) {
     } else {
       node = point.node.parentNode;
 <<<<<<< HEAD
+<<<<<<< HEAD
       offset = dom_position(point.node) + 1;
+=======
+      offset = position(point.node) + 1;
+>>>>>>> danhmuc_list
 =======
       offset = position(point.node) + 1;
 >>>>>>> danhmuc_list
@@ -1883,10 +2058,13 @@ function nextPoint(point, isSkipInnerOffset) {
 
 function nextPointWithEmptyNode(point, isSkipInnerOffset) {
 <<<<<<< HEAD
+<<<<<<< HEAD
   var node, offset; // if node is empty string node, return current node's sibling.
 
   if (dom_isEmpty(point.node)) {
 =======
+=======
+>>>>>>> danhmuc_list
   var node,
       offset = 0; // if node is empty string node, return current node's sibling.
 
@@ -1895,6 +2073,9 @@ function nextPointWithEmptyNode(point, isSkipInnerOffset) {
       return null;
     }
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     node = point.node.nextSibling;
     offset = 0;
@@ -1910,6 +2091,7 @@ function nextPointWithEmptyNode(point, isSkipInnerOffset) {
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     var nextTextNode = getNextTextNode(point.node);
 
     if (nextTextNode) {
@@ -1920,6 +2102,10 @@ function nextPointWithEmptyNode(point, isSkipInnerOffset) {
       offset = dom_position(point.node) + 1;
     } // if next node is editable, return current node's sibling node.
 
+=======
+    node = point.node.parentNode;
+    offset = position(point.node) + 1; // if next node is editable ,  return current node's sibling node.
+>>>>>>> danhmuc_list
 =======
     node = point.node.parentNode;
     offset = position(point.node) + 1; // if next node is editable ,  return current node's sibling node.
@@ -1935,7 +2121,10 @@ function nextPointWithEmptyNode(point, isSkipInnerOffset) {
 
     if (dom_isEmpty(node)) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
       if (!dom_isEmpty(point.node.nextSibling)) {
         return {
           node: point.node.nextSibling,
@@ -1943,6 +2132,9 @@ function nextPointWithEmptyNode(point, isSkipInnerOffset) {
         };
       }
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       return null;
     }
@@ -1969,8 +2161,12 @@ function getNextTextNode(actual) {
   if (!actual.nextSibling) return undefined;
   if (actual.parent !== actual.nextSibling.parent) return undefined;
 <<<<<<< HEAD
+<<<<<<< HEAD
   if (isText(actual.nextSibling)) return actual.nextSibling;
   return getNextTextNode(actual.nextSibling);
+=======
+  if (isText(actual.nextSibling)) return actual.nextSibling;else return getNextTextNode(actual.nextSibling);
+>>>>>>> danhmuc_list
 =======
   if (isText(actual.nextSibling)) return actual.nextSibling;else return getNextTextNode(actual.nextSibling);
 >>>>>>> danhmuc_list
@@ -2004,7 +2200,11 @@ function isVisiblePoint(point) {
   var rightNode = point.node.childNodes[point.offset];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   if ((!leftNode || isVoid(leftNode)) && (!rightNode || isVoid(rightNode))) {
+=======
+  if ((!leftNode || isVoid(leftNode)) && (!rightNode || isVoid(rightNode)) || isTable(rightNode)) {
+>>>>>>> danhmuc_list
 =======
   if ((!leftNode || isVoid(leftNode)) && (!rightNode || isVoid(rightNode)) || isTable(rightNode)) {
 >>>>>>> danhmuc_list
@@ -2029,7 +2229,11 @@ function prevPointUntil(point, pred) {
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     point = dom_prevPoint(point);
+=======
+    point = prevPoint(point);
+>>>>>>> danhmuc_list
 =======
     point = prevPoint(point);
 >>>>>>> danhmuc_list
@@ -2053,7 +2257,11 @@ function nextPointUntil(point, pred) {
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     point = dom_nextPoint(point);
+=======
+    point = nextPoint(point);
+>>>>>>> danhmuc_list
 =======
     point = nextPoint(point);
 >>>>>>> danhmuc_list
@@ -2130,7 +2338,11 @@ function walkPoint(startPoint, endPoint, handler, isSkipInnerOffset) {
 function makeOffsetPath(ancestor, node) {
   var ancestors = listAncestor(node, func.eq(ancestor));
 <<<<<<< HEAD
+<<<<<<< HEAD
   return ancestors.map(dom_position).reverse();
+=======
+  return ancestors.map(position).reverse();
+>>>>>>> danhmuc_list
 =======
   return ancestors.map(position).reverse();
 >>>>>>> danhmuc_list
@@ -2249,7 +2461,11 @@ function splitTree(root, point, options) {
     return splitNode({
       node: parent,
 <<<<<<< HEAD
+<<<<<<< HEAD
       offset: node ? dom_position(node) : nodeLength(parent)
+=======
+      offset: node ? position(node) : nodeLength(parent)
+>>>>>>> danhmuc_list
 =======
       offset: node ? position(node) : nodeLength(parent)
 >>>>>>> danhmuc_list
@@ -2299,7 +2515,11 @@ function splitPoint(point, isInline) {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 function dom_create(nodeName) {
+=======
+function create(nodeName) {
+>>>>>>> danhmuc_list
 =======
 function create(nodeName) {
 >>>>>>> danhmuc_list
@@ -2375,7 +2595,11 @@ function removeWhile(node, pred) {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 function dom_replace(node, nodeName) {
+=======
+function replace(node, nodeName) {
+>>>>>>> danhmuc_list
 =======
 function replace(node, nodeName) {
 >>>>>>> danhmuc_list
@@ -2384,7 +2608,11 @@ function replace(node, nodeName) {
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   var newNode = dom_create(nodeName);
+=======
+  var newNode = create(nodeName);
+>>>>>>> danhmuc_list
 =======
   var newNode = create(nodeName);
 >>>>>>> danhmuc_list
@@ -2406,7 +2634,11 @@ var isTextarea = makePredByNodeName('TEXTAREA');
  */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 function dom_value($node, stripLinebreaks) {
+=======
+function value($node, stripLinebreaks) {
+>>>>>>> danhmuc_list
 =======
 function value($node, stripLinebreaks) {
 >>>>>>> danhmuc_list
@@ -2429,8 +2661,13 @@ function value($node, stripLinebreaks) {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 function dom_html($node, isNewlineOnBlock) {
   var markup = dom_value($node);
+=======
+function html($node, isNewlineOnBlock) {
+  var markup = value($node);
+>>>>>>> danhmuc_list
 =======
 function html($node, isNewlineOnBlock) {
   var markup = value($node);
@@ -2452,7 +2689,11 @@ function html($node, isNewlineOnBlock) {
 
 function posFromPlaceholder(placeholder) {
 <<<<<<< HEAD
+<<<<<<< HEAD
   var $placeholder = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(placeholder);
+=======
+  var $placeholder = external_jQuery_default()(placeholder);
+>>>>>>> danhmuc_list
 =======
   var $placeholder = external_jQuery_default()(placeholder);
 >>>>>>> danhmuc_list
@@ -2491,7 +2732,11 @@ function isCustomStyleTag(node) {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* harmony default export */ var dom = ({
+=======
+/* harmony default export */ const dom = ({
+>>>>>>> danhmuc_list
 =======
 /* harmony default export */ const dom = ({
 >>>>>>> danhmuc_list
@@ -2516,8 +2761,13 @@ function isCustomStyleTag(node) {
   isPurePara: isPurePara,
   isHeading: isHeading,
 <<<<<<< HEAD
+<<<<<<< HEAD
   isInline: dom_isInline,
   isBlock: func.not(dom_isInline),
+=======
+  isInline: isInline,
+  isBlock: func.not(isInline),
+>>>>>>> danhmuc_list
 =======
   isInline: isInline,
   isBlock: func.not(isInline),
@@ -2530,7 +2780,11 @@ function isCustomStyleTag(node) {
   isTable: isTable,
   isData: isData,
 <<<<<<< HEAD
+<<<<<<< HEAD
   isCell: dom_isCell,
+=======
+  isCell: isCell,
+>>>>>>> danhmuc_list
 =======
   isCell: isCell,
 >>>>>>> danhmuc_list
@@ -2557,6 +2811,7 @@ function isCustomStyleTag(node) {
   isRightEdgePoint: isRightEdgePoint,
   isEdgePoint: isEdgePoint,
 <<<<<<< HEAD
+<<<<<<< HEAD
   isLeftEdgeOf: dom_isLeftEdgeOf,
   isRightEdgeOf: isRightEdgeOf,
   isLeftEdgePointOf: isLeftEdgePointOf,
@@ -2564,12 +2819,17 @@ function isCustomStyleTag(node) {
   prevPoint: dom_prevPoint,
   nextPoint: dom_nextPoint,
 =======
+=======
+>>>>>>> danhmuc_list
   isLeftEdgeOf: isLeftEdgeOf,
   isRightEdgeOf: isRightEdgeOf,
   isLeftEdgePointOf: isLeftEdgePointOf,
   isRightEdgePointOf: isRightEdgePointOf,
   prevPoint: prevPoint,
   nextPoint: nextPoint,
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   nextPointWithEmptyNode: nextPointWithEmptyNode,
   isSamePoint: isSamePoint,
@@ -2580,7 +2840,11 @@ function isCustomStyleTag(node) {
   isSpacePoint: isSpacePoint,
   walkPoint: walkPoint,
 <<<<<<< HEAD
+<<<<<<< HEAD
   ancestor: dom_ancestor,
+=======
+  ancestor: ancestor,
+>>>>>>> danhmuc_list
 =======
   ancestor: ancestor,
 >>>>>>> danhmuc_list
@@ -2591,23 +2855,30 @@ function isCustomStyleTag(node) {
   listPrev: listPrev,
   listDescendant: listDescendant,
 <<<<<<< HEAD
+<<<<<<< HEAD
   commonAncestor: dom_commonAncestor,
   wrap: wrap,
   insertAfter: insertAfter,
   appendChildNodes: appendChildNodes,
   position: dom_position,
 =======
+=======
+>>>>>>> danhmuc_list
   commonAncestor: commonAncestor,
   wrap: wrap,
   insertAfter: insertAfter,
   appendChildNodes: appendChildNodes,
   position: position,
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   hasChildren: hasChildren,
   makeOffsetPath: makeOffsetPath,
   fromOffsetPath: fromOffsetPath,
   splitTree: splitTree,
   splitPoint: splitPoint,
+<<<<<<< HEAD
 <<<<<<< HEAD
   create: dom_create,
   createText: createText,
@@ -2617,6 +2888,8 @@ function isCustomStyleTag(node) {
   html: dom_html,
   value: dom_value,
 =======
+=======
+>>>>>>> danhmuc_list
   create: create,
   createText: createText,
   remove: remove,
@@ -2624,6 +2897,9 @@ function isCustomStyleTag(node) {
   replace: replace,
   html: html,
   value: value,
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   posFromPlaceholder: posFromPlaceholder,
   attachEvents: attachEvents,
@@ -2631,7 +2907,11 @@ function isCustomStyleTag(node) {
   isCustomStyleTag: isCustomStyleTag
 });
 <<<<<<< HEAD
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/Context.js
+=======
+;// CONCATENATED MODULE: ./src/js/Context.js
+>>>>>>> danhmuc_list
 =======
 ;// CONCATENATED MODULE: ./src/js/Context.js
 >>>>>>> danhmuc_list
@@ -2647,7 +2927,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 var Context_Context = /*#__PURE__*/function () {
+=======
+var Context = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
 =======
 var Context = /*#__PURE__*/function () {
 >>>>>>> danhmuc_list
@@ -2663,15 +2947,21 @@ var Context = /*#__PURE__*/function () {
     this.modules = {};
     this.layoutInfo = {};
 <<<<<<< HEAD
+<<<<<<< HEAD
     this.options = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.extend(true, {}, options); // init ui with options
 
     external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.ui = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.ui_template(this.options);
     this.ui = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.ui;
 =======
+=======
+>>>>>>> danhmuc_list
     this.options = external_jQuery_default().extend(true, {}, options); // init ui with options
 
     (external_jQuery_default()).summernote.ui = external_jQuery_default().summernote.ui_template(this.options);
     this.ui = (external_jQuery_default()).summernote.ui;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     this.initialize();
   }
@@ -2727,6 +3017,7 @@ var Context = /*#__PURE__*/function () {
 
       // set own id
 <<<<<<< HEAD
+<<<<<<< HEAD
       this.options.id = func.uniqueId(external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.now()); // set default container for tooltips, popovers, and dialogs
 
       this.options.container = this.options.container || this.layoutInfo.editor; // add optional buttons
@@ -2737,6 +3028,8 @@ var Context = /*#__PURE__*/function () {
       });
       var modules = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.extend({}, this.options.modules, external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.plugins || {}); // add and initialize modules
 =======
+=======
+>>>>>>> danhmuc_list
       this.options.id = func.uniqueId(external_jQuery_default().now()); // set default container for tooltips, popovers, and dialogs
 
       this.options.container = this.options.container || this.layoutInfo.editor; // add optional buttons
@@ -2746,6 +3039,9 @@ var Context = /*#__PURE__*/function () {
         _this.memo('button.' + key, buttons[key]);
       });
       var modules = external_jQuery_default().extend({}, this.options.modules, (external_jQuery_default()).summernote.plugins || {}); // add and initialize modules
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
       Object.keys(modules).forEach(function (key) {
@@ -2919,7 +3215,11 @@ var Context = /*#__PURE__*/function () {
       return function (event) {
         event.preventDefault();
 <<<<<<< HEAD
+<<<<<<< HEAD
         var $target = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(event.target);
+=======
+        var $target = external_jQuery_default()(event.target);
+>>>>>>> danhmuc_list
 =======
         var $target = external_jQuery_default()(event.target);
 >>>>>>> danhmuc_list
@@ -2951,7 +3251,11 @@ var Context = /*#__PURE__*/function () {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/summernote.js
+=======
+;// CONCATENATED MODULE: ./src/js/summernote.js
+>>>>>>> danhmuc_list
 =======
 ;// CONCATENATED MODULE: ./src/js/summernote.js
 >>>>>>> danhmuc_list
@@ -2960,7 +3264,11 @@ var Context = /*#__PURE__*/function () {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.fn.extend({
+=======
+external_jQuery_default().fn.extend({
+>>>>>>> danhmuc_list
 =======
 external_jQuery_default().fn.extend({
 >>>>>>> danhmuc_list
@@ -2971,6 +3279,7 @@ external_jQuery_default().fn.extend({
    * @return {this}
    */
   summernote: function summernote() {
+<<<<<<< HEAD
 <<<<<<< HEAD
     var type = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.type(lists.head(arguments));
     var isExternalAPICalled = type === 'string';
@@ -2986,6 +3295,8 @@ external_jQuery_default().fn.extend({
       if (!$note.data('summernote')) {
         var context = new Context_Context($note, options);
 =======
+=======
+>>>>>>> danhmuc_list
     var type = external_jQuery_default().type(lists.head(arguments));
     var isExternalAPICalled = type === 'string';
     var hasInitOptions = type === 'object';
@@ -2999,6 +3310,9 @@ external_jQuery_default().fn.extend({
 
       if (!$note.data('summernote')) {
         var context = new Context($note, options);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         $note.data('summernote', context);
         $note.data('summernote').triggerEvent('init', context.layoutInfo);
@@ -3020,7 +3334,11 @@ external_jQuery_default().fn.extend({
   }
 });
 <<<<<<< HEAD
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/core/range.js
+=======
+;// CONCATENATED MODULE: ./src/js/core/range.js
+>>>>>>> danhmuc_list
 =======
 ;// CONCATENATED MODULE: ./src/js/core/range.js
 >>>>>>> danhmuc_list
@@ -3152,7 +3470,11 @@ function pointToTextRange(point) {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 var range_WrappedRange = /*#__PURE__*/function () {
+=======
+var WrappedRange = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
 =======
 var WrappedRange = /*#__PURE__*/function () {
 >>>>>>> danhmuc_list
@@ -3255,7 +3577,11 @@ var WrappedRange = /*#__PURE__*/function () {
     key: "scrollIntoView",
     value: function scrollIntoView(container) {
 <<<<<<< HEAD
+<<<<<<< HEAD
       var height = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(container).height();
+=======
+      var height = external_jQuery_default()(container).height();
+>>>>>>> danhmuc_list
 =======
       var height = external_jQuery_default()(container).height();
 >>>>>>> danhmuc_list
@@ -3487,7 +3813,11 @@ var WrappedRange = /*#__PURE__*/function () {
       });
       var emptyParents = [];
 <<<<<<< HEAD
+<<<<<<< HEAD
       external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(nodes, function (idx, node) {
+=======
+      external_jQuery_default().each(nodes, function (idx, node) {
+>>>>>>> danhmuc_list
 =======
       external_jQuery_default().each(nodes, function (idx, node) {
 >>>>>>> danhmuc_list
@@ -3502,7 +3832,11 @@ var WrappedRange = /*#__PURE__*/function () {
       }); // remove empty parents
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(emptyParents, function (idx, node) {
+=======
+      external_jQuery_default().each(emptyParents, function (idx, node) {
+>>>>>>> danhmuc_list
 =======
       external_jQuery_default().each(emptyParents, function (idx, node) {
 >>>>>>> danhmuc_list
@@ -3637,8 +3971,13 @@ var WrappedRange = /*#__PURE__*/function () {
     key: "pasteHTML",
     value: function pasteHTML(markup) {
 <<<<<<< HEAD
+<<<<<<< HEAD
       markup = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.trim(markup);
       var contentsContainer = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<div></div>').html(markup)[0];
+=======
+      markup = external_jQuery_default().trim(markup);
+      var contentsContainer = external_jQuery_default()('<div></div>').html(markup)[0];
+>>>>>>> danhmuc_list
 =======
       markup = external_jQuery_default().trim(markup);
       var contentsContainer = external_jQuery_default()('<div></div>').html(markup)[0];
@@ -3831,7 +4170,11 @@ var WrappedRange = /*#__PURE__*/function () {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* harmony default export */ var range = ({
+=======
+/* harmony default export */ const range = ({
+>>>>>>> danhmuc_list
 =======
 /* harmony default export */ const range = ({
 >>>>>>> danhmuc_list
@@ -3847,7 +4190,11 @@ var WrappedRange = /*#__PURE__*/function () {
   create: function create(sc, so, ec, eo) {
     if (arguments.length === 4) {
 <<<<<<< HEAD
+<<<<<<< HEAD
       return new range_WrappedRange(sc, so, ec, eo);
+=======
+      return new WrappedRange(sc, so, ec, eo);
+>>>>>>> danhmuc_list
 =======
       return new WrappedRange(sc, so, ec, eo);
 >>>>>>> danhmuc_list
@@ -3856,7 +4203,11 @@ var WrappedRange = /*#__PURE__*/function () {
       ec = sc;
       eo = so;
 <<<<<<< HEAD
+<<<<<<< HEAD
       return new range_WrappedRange(sc, so, ec, eo);
+=======
+      return new WrappedRange(sc, so, ec, eo);
+>>>>>>> danhmuc_list
 =======
       return new WrappedRange(sc, so, ec, eo);
 >>>>>>> danhmuc_list
@@ -3921,7 +4272,11 @@ var WrappedRange = /*#__PURE__*/function () {
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     return new range_WrappedRange(sc, so, ec, eo);
+=======
+    return new WrappedRange(sc, so, ec, eo);
+>>>>>>> danhmuc_list
 =======
     return new WrappedRange(sc, so, ec, eo);
 >>>>>>> danhmuc_list
@@ -3992,7 +4347,11 @@ var WrappedRange = /*#__PURE__*/function () {
     var ec = dom.fromOffsetPath(editable, bookmark.e.path);
     var eo = bookmark.e.offset;
 <<<<<<< HEAD
+<<<<<<< HEAD
     return new range_WrappedRange(sc, so, ec, eo);
+=======
+    return new WrappedRange(sc, so, ec, eo);
+>>>>>>> danhmuc_list
 =======
     return new WrappedRange(sc, so, ec, eo);
 >>>>>>> danhmuc_list
@@ -4013,15 +4372,21 @@ var WrappedRange = /*#__PURE__*/function () {
     var sc = dom.fromOffsetPath(lists.head(paras), bookmark.s.path);
     var ec = dom.fromOffsetPath(lists.last(paras), bookmark.e.path);
 <<<<<<< HEAD
+<<<<<<< HEAD
     return new range_WrappedRange(sc, so, ec, eo);
   }
 });
 // CONCATENATED MODULE: ./src/js/base/core/key.js
 =======
+=======
+>>>>>>> danhmuc_list
     return new WrappedRange(sc, so, ec, eo);
   }
 });
 ;// CONCATENATED MODULE: ./src/js/core/key.js
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 
@@ -4080,7 +4445,11 @@ var KEY_MAP = {
  */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* harmony default export */ var core_key = ({
+=======
+/* harmony default export */ const key = ({
+>>>>>>> danhmuc_list
 =======
 /* harmony default export */ const key = ({
 >>>>>>> danhmuc_list
@@ -4122,7 +4491,11 @@ var KEY_MAP = {
   code: KEY_MAP
 });
 <<<<<<< HEAD
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/core/async.js
+=======
+;// CONCATENATED MODULE: ./src/js/core/async.js
+>>>>>>> danhmuc_list
 =======
 ;// CONCATENATED MODULE: ./src/js/core/async.js
 >>>>>>> danhmuc_list
@@ -4138,8 +4511,13 @@ var KEY_MAP = {
 
 function readFileAsDataURL(file) {
 <<<<<<< HEAD
+<<<<<<< HEAD
   return external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.Deferred(function (deferred) {
     external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.extend(new FileReader(), {
+=======
+  return external_jQuery_default().Deferred(function (deferred) {
+    external_jQuery_default().extend(new FileReader(), {
+>>>>>>> danhmuc_list
 =======
   return external_jQuery_default().Deferred(function (deferred) {
     external_jQuery_default().extend(new FileReader(), {
@@ -4165,8 +4543,13 @@ function readFileAsDataURL(file) {
 
 function createImage(url) {
 <<<<<<< HEAD
+<<<<<<< HEAD
   return external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.Deferred(function (deferred) {
     var $img = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<img>');
+=======
+  return external_jQuery_default().Deferred(function (deferred) {
+    var $img = external_jQuery_default()('<img>');
+>>>>>>> danhmuc_list
 =======
   return external_jQuery_default().Deferred(function (deferred) {
     var $img = external_jQuery_default()('<img>');
@@ -4183,7 +4566,11 @@ function createImage(url) {
   }).promise();
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/editing/History.js
+=======
+;// CONCATENATED MODULE: ./src/js/editing/History.js
+>>>>>>> danhmuc_list
 =======
 ;// CONCATENATED MODULE: ./src/js/editing/History.js
 >>>>>>> danhmuc_list
@@ -4196,7 +4583,11 @@ function History_createClass(Constructor, protoProps, staticProps) { if (protoPr
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 var History_History = /*#__PURE__*/function () {
+=======
+var History = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
 =======
 var History = /*#__PURE__*/function () {
 >>>>>>> danhmuc_list
@@ -4348,7 +4739,11 @@ var History = /*#__PURE__*/function () {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/editing/Style.js
+=======
+;// CONCATENATED MODULE: ./src/js/editing/Style.js
+>>>>>>> danhmuc_list
 =======
 ;// CONCATENATED MODULE: ./src/js/editing/Style.js
 >>>>>>> danhmuc_list
@@ -4364,8 +4759,12 @@ function Style_createClass(Constructor, protoProps, staticProps) { if (protoProp
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 var Style_Style = /*#__PURE__*/function () {
+=======
+var Style = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
 =======
 var Style = /*#__PURE__*/function () {
 >>>>>>> danhmuc_list
@@ -4376,7 +4775,11 @@ var Style = /*#__PURE__*/function () {
   Style_createClass(Style, [{
     key: "jQueryCSS",
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+    value:
+>>>>>>> danhmuc_list
 =======
     value:
 >>>>>>> danhmuc_list
@@ -4394,6 +4797,7 @@ var Style = /*#__PURE__*/function () {
      * @return {Object}
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     value: function jQueryCSS($obj, propertyNames) {
       if (env.jqueryVersion < 1.9) {
         var result = {};
@@ -4405,12 +4809,17 @@ var Style = /*#__PURE__*/function () {
 
       return $obj.css(propertyNames);
 =======
+=======
+>>>>>>> danhmuc_list
     function jQueryCSS($obj, propertyNames) {
       var result = {};
       external_jQuery_default().each(propertyNames, function (idx, propertyName) {
         result[propertyName] = $obj.css(propertyName);
       });
       return result;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     }
     /**
@@ -4441,15 +4850,21 @@ var Style = /*#__PURE__*/function () {
     key: "stylePara",
     value: function stylePara(rng, styleInfo) {
 <<<<<<< HEAD
+<<<<<<< HEAD
       external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(rng.nodes(dom.isPara, {
         includeAncestor: true
       }), function (idx, para) {
         external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(para).css(styleInfo);
 =======
+=======
+>>>>>>> danhmuc_list
       external_jQuery_default().each(rng.nodes(dom.isPara, {
         includeAncestor: true
       }), function (idx, para) {
         external_jQuery_default()(para).css(styleInfo);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       });
     }
@@ -4497,7 +4912,11 @@ var Style = /*#__PURE__*/function () {
           var head = lists.head(siblings);
           var tails = lists.tail(siblings);
 <<<<<<< HEAD
+<<<<<<< HEAD
           external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(tails, function (idx, elem) {
+=======
+          external_jQuery_default().each(tails, function (idx, elem) {
+>>>>>>> danhmuc_list
 =======
           external_jQuery_default().each(tails, function (idx, elem) {
 >>>>>>> danhmuc_list
@@ -4521,7 +4940,11 @@ var Style = /*#__PURE__*/function () {
     key: "current",
     value: function current(rng) {
 <<<<<<< HEAD
+<<<<<<< HEAD
       var $cont = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(!dom.isElement(rng.sc) ? rng.sc.parentNode : rng.sc);
+=======
+      var $cont = external_jQuery_default()(!dom.isElement(rng.sc) ? rng.sc.parentNode : rng.sc);
+>>>>>>> danhmuc_list
 =======
       var $cont = external_jQuery_default()(!dom.isElement(rng.sc) ? rng.sc.parentNode : rng.sc);
 >>>>>>> danhmuc_list
@@ -4530,7 +4953,11 @@ var Style = /*#__PURE__*/function () {
 
       try {
 <<<<<<< HEAD
+<<<<<<< HEAD
         styleInfo = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.extend(styleInfo, {
+=======
+        styleInfo = external_jQuery_default().extend(styleInfo, {
+>>>>>>> danhmuc_list
 =======
         styleInfo = external_jQuery_default().extend(styleInfo, {
 >>>>>>> danhmuc_list
@@ -4543,8 +4970,13 @@ var Style = /*#__PURE__*/function () {
           'font-family': document.queryCommandValue('fontname') || styleInfo['font-family']
         });
 <<<<<<< HEAD
+<<<<<<< HEAD
       } catch (e) {} // eslint-disable-next-line
       // list-style-type to list-style(unordered, ordered)
+=======
+      } catch (e) {// eslint-disable-next-line
+      } // list-style-type to list-style(unordered, ordered)
+>>>>>>> danhmuc_list
 =======
       } catch (e) {// eslint-disable-next-line
       } // list-style-type to list-style(unordered, ordered)
@@ -4580,7 +5012,11 @@ var Style = /*#__PURE__*/function () {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/editing/Bullet.js
+=======
+;// CONCATENATED MODULE: ./src/js/editing/Bullet.js
+>>>>>>> danhmuc_list
 =======
 ;// CONCATENATED MODULE: ./src/js/editing/Bullet.js
 >>>>>>> danhmuc_list
@@ -4597,7 +5033,11 @@ function Bullet_createClass(Constructor, protoProps, staticProps) { if (protoPro
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 var Bullet_Bullet = /*#__PURE__*/function () {
+=======
+var Bullet = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
 =======
 var Bullet = /*#__PURE__*/function () {
 >>>>>>> danhmuc_list
@@ -4608,17 +5048,23 @@ var Bullet = /*#__PURE__*/function () {
   Bullet_createClass(Bullet, [{
     key: "insertOrderedList",
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     /**
      * toggle ordered list
      */
     value: function insertOrderedList(editable) {
 =======
+=======
+>>>>>>> danhmuc_list
     value:
     /**
      * toggle ordered list
      */
     function insertOrderedList(editable) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       this.toggleList('OL', editable);
     }
@@ -4646,7 +5092,11 @@ var Bullet = /*#__PURE__*/function () {
       });
       var clustereds = lists.clusterBy(paras, func.peq2('parentNode'));
 <<<<<<< HEAD
+<<<<<<< HEAD
       external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(clustereds, function (idx, paras) {
+=======
+      external_jQuery_default().each(clustereds, function (idx, paras) {
+>>>>>>> danhmuc_list
 =======
       external_jQuery_default().each(clustereds, function (idx, paras) {
 >>>>>>> danhmuc_list
@@ -4670,8 +5120,13 @@ var Bullet = /*#__PURE__*/function () {
           }
         } else {
 <<<<<<< HEAD
+<<<<<<< HEAD
           external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(paras, function (idx, para) {
             external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(para).css('marginLeft', function (idx, val) {
+=======
+          external_jQuery_default().each(paras, function (idx, para) {
+            external_jQuery_default()(para).css('marginLeft', function (idx, val) {
+>>>>>>> danhmuc_list
 =======
           external_jQuery_default().each(paras, function (idx, para) {
             external_jQuery_default()(para).css('marginLeft', function (idx, val) {
@@ -4698,7 +5153,11 @@ var Bullet = /*#__PURE__*/function () {
       });
       var clustereds = lists.clusterBy(paras, func.peq2('parentNode'));
 <<<<<<< HEAD
+<<<<<<< HEAD
       external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(clustereds, function (idx, paras) {
+=======
+      external_jQuery_default().each(clustereds, function (idx, paras) {
+>>>>>>> danhmuc_list
 =======
       external_jQuery_default().each(clustereds, function (idx, paras) {
 >>>>>>> danhmuc_list
@@ -4708,8 +5167,13 @@ var Bullet = /*#__PURE__*/function () {
           _this2.releaseList([paras]);
         } else {
 <<<<<<< HEAD
+<<<<<<< HEAD
           external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(paras, function (idx, para) {
             external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(para).css('marginLeft', function (idx, val) {
+=======
+          external_jQuery_default().each(paras, function (idx, para) {
+            external_jQuery_default()(para).css('marginLeft', function (idx, val) {
+>>>>>>> danhmuc_list
 =======
           external_jQuery_default().each(paras, function (idx, para) {
             external_jQuery_default()(para).css('marginLeft', function (idx, val) {
@@ -4743,7 +5207,11 @@ var Bullet = /*#__PURE__*/function () {
       if (lists.find(paras, dom.isPurePara)) {
         var wrappedParas = [];
 <<<<<<< HEAD
+<<<<<<< HEAD
         external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(clustereds, function (idx, paras) {
+=======
+        external_jQuery_default().each(clustereds, function (idx, paras) {
+>>>>>>> danhmuc_list
 =======
         external_jQuery_default().each(clustereds, function (idx, paras) {
 >>>>>>> danhmuc_list
@@ -4755,17 +5223,23 @@ var Bullet = /*#__PURE__*/function () {
           includeAncestor: true
         }).filter(function (listNode) {
 <<<<<<< HEAD
+<<<<<<< HEAD
           return !external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.nodeName(listNode, listName);
         });
 
         if (diffLists.length) {
           external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(diffLists, function (idx, listNode) {
 =======
+=======
+>>>>>>> danhmuc_list
           return !external_jQuery_default().nodeName(listNode, listName);
         });
 
         if (diffLists.length) {
           external_jQuery_default().each(diffLists, function (idx, listNode) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             dom.replace(listNode, listName);
           });
@@ -4819,7 +5293,11 @@ var Bullet = /*#__PURE__*/function () {
 
       var releasedParas = [];
 <<<<<<< HEAD
+<<<<<<< HEAD
       external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(clustereds, function (idx, paras) {
+=======
+      external_jQuery_default().each(clustereds, function (idx, paras) {
+>>>>>>> danhmuc_list
 =======
       external_jQuery_default().each(clustereds, function (idx, paras) {
 >>>>>>> danhmuc_list
@@ -4874,7 +5352,11 @@ var Bullet = /*#__PURE__*/function () {
           }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
           external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(lists.from(paras).reverse(), function (idx, para) {
+=======
+          external_jQuery_default().each(lists.from(paras).reverse(), function (idx, para) {
+>>>>>>> danhmuc_list
 =======
           external_jQuery_default().each(lists.from(paras).reverse(), function (idx, para) {
 >>>>>>> danhmuc_list
@@ -4883,9 +5365,15 @@ var Bullet = /*#__PURE__*/function () {
 
           var rootLists = lists.compact([headList, middleList, lastList]);
 <<<<<<< HEAD
+<<<<<<< HEAD
           external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(rootLists, function (idx, rootList) {
             var listNodes = [rootList].concat(dom.listDescendant(rootList, dom.isList));
             external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(listNodes.reverse(), function (idx, listNode) {
+=======
+          external_jQuery_default().each(rootLists, function (idx, rootList) {
+            var listNodes = [rootList].concat(dom.listDescendant(rootList, dom.isList));
+            external_jQuery_default().each(listNodes.reverse(), function (idx, listNode) {
+>>>>>>> danhmuc_list
 =======
           external_jQuery_default().each(rootLists, function (idx, rootList) {
             var listNodes = [rootList].concat(dom.listDescendant(rootList, dom.isList));
@@ -4961,7 +5449,11 @@ var Bullet = /*#__PURE__*/function () {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/editing/Typing.js
+=======
+;// CONCATENATED MODULE: ./src/js/editing/Typing.js
+>>>>>>> danhmuc_list
 =======
 ;// CONCATENATED MODULE: ./src/js/editing/Typing.js
 >>>>>>> danhmuc_list
@@ -4983,7 +5475,11 @@ function Typing_createClass(Constructor, protoProps, staticProps) { if (protoPro
  */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 var Typing_Typing = /*#__PURE__*/function () {
+=======
+var Typing = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
 =======
 var Typing = /*#__PURE__*/function () {
 >>>>>>> danhmuc_list
@@ -4992,7 +5488,11 @@ var Typing = /*#__PURE__*/function () {
 
     // a Bullet instance to toggle lists off
 <<<<<<< HEAD
+<<<<<<< HEAD
     this.bullet = new Bullet_Bullet();
+=======
+    this.bullet = new Bullet();
+>>>>>>> danhmuc_list
 =======
     this.bullet = new Bullet();
 >>>>>>> danhmuc_list
@@ -5057,17 +5557,23 @@ var Typing = /*#__PURE__*/function () {
           if (blockquote) {
             // We're inside a blockquote and options ask us to break it
 <<<<<<< HEAD
+<<<<<<< HEAD
             nextPara = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(dom.emptyPara)[0]; // If the split is right before a <br>, remove it so that there's no "empty line"
             // after the split in the new blockquote created
 
             if (dom.isRightEdgePoint(rng.getStartPoint()) && dom.isBR(rng.sc.nextSibling)) {
               external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(rng.sc.nextSibling).remove();
 =======
+=======
+>>>>>>> danhmuc_list
             nextPara = external_jQuery_default()(dom.emptyPara)[0]; // If the split is right before a <br>, remove it so that there's no "empty line"
             // after the split in the new blockquote created
 
             if (dom.isRightEdgePoint(rng.getStartPoint()) && dom.isBR(rng.sc.nextSibling)) {
               external_jQuery_default()(rng.sc.nextSibling).remove();
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             }
 
@@ -5086,7 +5592,11 @@ var Typing = /*#__PURE__*/function () {
             var emptyAnchors = dom.listDescendant(splitRoot, dom.isEmptyAnchor);
             emptyAnchors = emptyAnchors.concat(dom.listDescendant(nextPara, dom.isEmptyAnchor));
 <<<<<<< HEAD
+<<<<<<< HEAD
             external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(emptyAnchors, function (idx, anchor) {
+=======
+            external_jQuery_default().each(emptyAnchors, function (idx, anchor) {
+>>>>>>> danhmuc_list
 =======
             external_jQuery_default().each(emptyAnchors, function (idx, anchor) {
 >>>>>>> danhmuc_list
@@ -5102,7 +5612,11 @@ var Typing = /*#__PURE__*/function () {
       } else {
         var next = rng.sc.childNodes[rng.so];
 <<<<<<< HEAD
+<<<<<<< HEAD
         nextPara = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(dom.emptyPara)[0];
+=======
+        nextPara = external_jQuery_default()(dom.emptyPara)[0];
+>>>>>>> danhmuc_list
 =======
         nextPara = external_jQuery_default()(dom.emptyPara)[0];
 >>>>>>> danhmuc_list
@@ -5123,7 +5637,11 @@ var Typing = /*#__PURE__*/function () {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/editing/Table.js
+=======
+;// CONCATENATED MODULE: ./src/js/editing/Table.js
+>>>>>>> danhmuc_list
 =======
 ;// CONCATENATED MODULE: ./src/js/editing/Table.js
 >>>>>>> danhmuc_list
@@ -5469,7 +5987,11 @@ TableResultAction.resultAction = {
  */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 var Table_Table = /*#__PURE__*/function () {
+=======
+var Table = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
 =======
 var Table = /*#__PURE__*/function () {
 >>>>>>> danhmuc_list
@@ -5480,7 +6002,11 @@ var Table = /*#__PURE__*/function () {
   Table_createClass(Table, [{
     key: "tab",
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+    value:
+>>>>>>> danhmuc_list
 =======
     value:
 >>>>>>> danhmuc_list
@@ -5491,7 +6017,11 @@ var Table = /*#__PURE__*/function () {
      * @param {Boolean} isShift
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     value: function tab(rng, isShift) {
+=======
+    function tab(rng, isShift) {
+>>>>>>> danhmuc_list
 =======
     function tab(rng, isShift) {
 >>>>>>> danhmuc_list
@@ -5517,15 +6047,21 @@ var Table = /*#__PURE__*/function () {
     value: function addRow(rng, position) {
       var cell = dom.ancestor(rng.commonAncestor(), dom.isCell);
 <<<<<<< HEAD
+<<<<<<< HEAD
       var currentTr = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(cell).closest('tr');
       var trAttributes = this.recoverAttributes(currentTr);
       var html = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<tr' + trAttributes + '></tr>');
       var vTable = new TableResultAction(cell, TableResultAction.where.Row, TableResultAction.requestAction.Add, external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(currentTr).closest('table')[0]);
 =======
+=======
+>>>>>>> danhmuc_list
       var currentTr = external_jQuery_default()(cell).closest('tr');
       var trAttributes = this.recoverAttributes(currentTr);
       var html = external_jQuery_default()('<tr' + trAttributes + '></tr>');
       var vTable = new TableResultAction(cell, TableResultAction.where.Row, TableResultAction.requestAction.Add, external_jQuery_default()(currentTr).closest('table')[0]);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       var actions = vTable.getActionList();
 
@@ -5546,7 +6082,11 @@ var Table = /*#__PURE__*/function () {
 
                 if (isTopFromRowSpan) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                   var newTd = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<div></div>').append(external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<td' + tdAttributes + '>' + dom.blank + '</td>').removeAttr('rowspan')).html();
+=======
+                  var newTd = external_jQuery_default()('<div></div>').append(external_jQuery_default()('<td' + tdAttributes + '>' + dom.blank + '</td>').removeAttr('rowspan')).html();
+>>>>>>> danhmuc_list
 =======
                   var newTd = external_jQuery_default()('<div></div>').append(external_jQuery_default()('<td' + tdAttributes + '>' + dom.blank + '</td>').removeAttr('rowspan')).html();
 >>>>>>> danhmuc_list
@@ -5571,7 +6111,11 @@ var Table = /*#__PURE__*/function () {
         if (cellHasRowspan) {
           var lastTrIndex = currentTr[0].rowIndex + (cell.rowSpan - 2);
 <<<<<<< HEAD
+<<<<<<< HEAD
           external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(currentTr).parent().find('tr')[lastTrIndex]).after(external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(html));
+=======
+          external_jQuery_default()(external_jQuery_default()(currentTr).parent().find('tr')[lastTrIndex]).after(external_jQuery_default()(html));
+>>>>>>> danhmuc_list
 =======
           external_jQuery_default()(external_jQuery_default()(currentTr).parent().find('tr')[lastTrIndex]).after(external_jQuery_default()(html));
 >>>>>>> danhmuc_list
@@ -5594,15 +6138,21 @@ var Table = /*#__PURE__*/function () {
     value: function addCol(rng, position) {
       var cell = dom.ancestor(rng.commonAncestor(), dom.isCell);
 <<<<<<< HEAD
+<<<<<<< HEAD
       var row = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(cell).closest('tr');
       var rowsGroup = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(row).siblings();
       rowsGroup.push(row);
       var vTable = new TableResultAction(cell, TableResultAction.where.Column, TableResultAction.requestAction.Add, external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(row).closest('table')[0]);
 =======
+=======
+>>>>>>> danhmuc_list
       var row = external_jQuery_default()(cell).closest('tr');
       var rowsGroup = external_jQuery_default()(row).siblings();
       rowsGroup.push(row);
       var vTable = new TableResultAction(cell, TableResultAction.where.Column, TableResultAction.requestAction.Add, external_jQuery_default()(row).closest('table')[0]);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       var actions = vTable.getActionList();
 
@@ -5614,9 +6164,15 @@ var Table = /*#__PURE__*/function () {
           case TableResultAction.resultAction.AddCell:
             if (position === 'right') {
 <<<<<<< HEAD
+<<<<<<< HEAD
               external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(currentCell.baseCell).after('<td' + tdAttributes + '>' + dom.blank + '</td>');
             } else {
               external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(currentCell.baseCell).before('<td' + tdAttributes + '>' + dom.blank + '</td>');
+=======
+              external_jQuery_default()(currentCell.baseCell).after('<td' + tdAttributes + '>' + dom.blank + '</td>');
+            } else {
+              external_jQuery_default()(currentCell.baseCell).before('<td' + tdAttributes + '>' + dom.blank + '</td>');
+>>>>>>> danhmuc_list
 =======
               external_jQuery_default()(currentCell.baseCell).after('<td' + tdAttributes + '>' + dom.blank + '</td>');
             } else {
@@ -5633,7 +6189,11 @@ var Table = /*#__PURE__*/function () {
               currentCell.baseCell.setAttribute('colSpan', colspanNumber);
             } else {
 <<<<<<< HEAD
+<<<<<<< HEAD
               external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(currentCell.baseCell).before('<td' + tdAttributes + '>' + dom.blank + '</td>');
+=======
+              external_jQuery_default()(currentCell.baseCell).before('<td' + tdAttributes + '>' + dom.blank + '</td>');
+>>>>>>> danhmuc_list
 =======
               external_jQuery_default()(currentCell.baseCell).before('<td' + tdAttributes + '>' + dom.blank + '</td>');
 >>>>>>> danhmuc_list
@@ -5685,15 +6245,21 @@ var Table = /*#__PURE__*/function () {
     value: function deleteRow(rng) {
       var cell = dom.ancestor(rng.commonAncestor(), dom.isCell);
 <<<<<<< HEAD
+<<<<<<< HEAD
       var row = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(cell).closest('tr');
       var cellPos = row.children('td, th').index(external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(cell));
       var rowPos = row[0].rowIndex;
       var vTable = new TableResultAction(cell, TableResultAction.where.Row, TableResultAction.requestAction.Delete, external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(row).closest('table')[0]);
 =======
+=======
+>>>>>>> danhmuc_list
       var row = external_jQuery_default()(cell).closest('tr');
       var cellPos = row.children('td, th').index(external_jQuery_default()(cell));
       var rowPos = row[0].rowIndex;
       var vTable = new TableResultAction(cell, TableResultAction.where.Row, TableResultAction.requestAction.Delete, external_jQuery_default()(row).closest('table')[0]);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       var actions = vTable.getActionList();
 
@@ -5776,9 +6342,15 @@ var Table = /*#__PURE__*/function () {
     value: function deleteCol(rng) {
       var cell = dom.ancestor(rng.commonAncestor(), dom.isCell);
 <<<<<<< HEAD
+<<<<<<< HEAD
       var row = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(cell).closest('tr');
       var cellPos = row.children('td, th').index(external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(cell));
       var vTable = new TableResultAction(cell, TableResultAction.where.Column, TableResultAction.requestAction.Delete, external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(row).closest('table')[0]);
+=======
+      var row = external_jQuery_default()(cell).closest('tr');
+      var cellPos = row.children('td, th').index(external_jQuery_default()(cell));
+      var vTable = new TableResultAction(cell, TableResultAction.where.Column, TableResultAction.requestAction.Delete, external_jQuery_default()(row).closest('table')[0]);
+>>>>>>> danhmuc_list
 =======
       var row = external_jQuery_default()(cell).closest('tr');
       var cellPos = row.children('td, th').index(external_jQuery_default()(cell));
@@ -5855,7 +6427,11 @@ var Table = /*#__PURE__*/function () {
 
       trHTML = trs.join('');
 <<<<<<< HEAD
+<<<<<<< HEAD
       var $table = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<table>' + trHTML + '</table>');
+=======
+      var $table = external_jQuery_default()('<table>' + trHTML + '</table>');
+>>>>>>> danhmuc_list
 =======
       var $table = external_jQuery_default()('<table>' + trHTML + '</table>');
 >>>>>>> danhmuc_list
@@ -5878,7 +6454,11 @@ var Table = /*#__PURE__*/function () {
     value: function deleteTable(rng) {
       var cell = dom.ancestor(rng.commonAncestor(), dom.isCell);
 <<<<<<< HEAD
+<<<<<<< HEAD
       external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(cell).closest('table').remove();
+=======
+      external_jQuery_default()(cell).closest('table').remove();
+>>>>>>> danhmuc_list
 =======
       external_jQuery_default()(cell).closest('table').remove();
 >>>>>>> danhmuc_list
@@ -5890,7 +6470,11 @@ var Table = /*#__PURE__*/function () {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/module/Editor.js
+=======
+;// CONCATENATED MODULE: ./src/js/module/Editor.js
+>>>>>>> danhmuc_list
 =======
 ;// CONCATENATED MODULE: ./src/js/module/Editor.js
 >>>>>>> danhmuc_list
@@ -5919,7 +6503,11 @@ var KEY_BOGUS = 'bogus';
  */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 var Editor_Editor = /*#__PURE__*/function () {
+=======
+var Editor = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
 =======
 var Editor = /*#__PURE__*/function () {
 >>>>>>> danhmuc_list
@@ -5938,17 +6526,23 @@ var Editor = /*#__PURE__*/function () {
     this.lastRange = null;
     this.snapshot = null;
 <<<<<<< HEAD
+<<<<<<< HEAD
     this.style = new Style_Style();
     this.table = new Table_Table();
     this.typing = new Typing_Typing(context);
     this.bullet = new Bullet_Bullet();
     this.history = new History_History(context);
 =======
+=======
+>>>>>>> danhmuc_list
     this.style = new Style();
     this.table = new Table();
     this.typing = new Typing(context);
     this.bullet = new Bullet();
     this.history = new History(context);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     this.context.memo('help.escape', this.lang.help.escape);
     this.context.memo('help.undo', this.lang.help.undo);
@@ -6027,7 +6621,11 @@ var Editor = /*#__PURE__*/function () {
 
     this.insertNode = this.wrapCommand(function (node) {
 <<<<<<< HEAD
+<<<<<<< HEAD
       if (_this.isLimited(external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(node).text().length)) {
+=======
+      if (_this.isLimited(external_jQuery_default()(node).text().length)) {
+>>>>>>> danhmuc_list
 =======
       if (_this.isLimited(external_jQuery_default()(node).text().length)) {
 >>>>>>> danhmuc_list
@@ -6146,7 +6744,11 @@ var Editor = /*#__PURE__*/function () {
       if (isTextChanged) {
         rng = rng.deleteContents();
 <<<<<<< HEAD
+<<<<<<< HEAD
         var anchor = rng.insertNode(external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<A>' + linkText + '</A>')[0]);
+=======
+        var anchor = rng.insertNode(external_jQuery_default()('<A>' + linkText + '</A>')[0]);
+>>>>>>> danhmuc_list
 =======
         var anchor = rng.insertNode(external_jQuery_default()('<A>' + linkText + '</A>')[0]);
 >>>>>>> danhmuc_list
@@ -6160,6 +6762,7 @@ var Editor = /*#__PURE__*/function () {
       }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(anchors, function (idx, anchor) {
         external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(anchor).attr('href', linkUrl);
 
@@ -6168,6 +6771,8 @@ var Editor = /*#__PURE__*/function () {
         } else {
           external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(anchor).removeAttr('target');
 =======
+=======
+>>>>>>> danhmuc_list
       external_jQuery_default().each(anchors, function (idx, anchor) {
         external_jQuery_default()(anchor).attr('href', linkUrl);
 
@@ -6175,6 +6780,9 @@ var Editor = /*#__PURE__*/function () {
           external_jQuery_default()(anchor).attr('target', '_blank');
         } else {
           external_jQuery_default()(anchor).removeAttr('target');
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         }
       });
@@ -6229,7 +6837,11 @@ var Editor = /*#__PURE__*/function () {
 
     this.removeMedia = this.wrapCommand(function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
       var $target = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(_this.restoreTarget()).parent();
+=======
+      var $target = external_jQuery_default()(_this.restoreTarget()).parent();
+>>>>>>> danhmuc_list
 =======
       var $target = external_jQuery_default()(_this.restoreTarget()).parent();
 >>>>>>> danhmuc_list
@@ -6238,7 +6850,11 @@ var Editor = /*#__PURE__*/function () {
         $target.closest('figure').remove();
       } else {
 <<<<<<< HEAD
+<<<<<<< HEAD
         $target = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(_this.restoreTarget()).detach();
+=======
+        $target = external_jQuery_default()(_this.restoreTarget()).detach();
+>>>>>>> danhmuc_list
 =======
         $target = external_jQuery_default()(_this.restoreTarget()).detach();
 >>>>>>> danhmuc_list
@@ -6254,7 +6870,11 @@ var Editor = /*#__PURE__*/function () {
 
     this.floatMe = this.wrapCommand(function (value) {
 <<<<<<< HEAD
+<<<<<<< HEAD
       var $target = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(_this.restoreTarget());
+=======
+      var $target = external_jQuery_default()(_this.restoreTarget());
+>>>>>>> danhmuc_list
 =======
       var $target = external_jQuery_default()(_this.restoreTarget());
 >>>>>>> danhmuc_list
@@ -6269,7 +6889,11 @@ var Editor = /*#__PURE__*/function () {
 
     this.resize = this.wrapCommand(function (value) {
 <<<<<<< HEAD
+<<<<<<< HEAD
       var $target = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(_this.restoreTarget());
+=======
+      var $target = external_jQuery_default()(_this.restoreTarget());
+>>>>>>> danhmuc_list
 =======
       var $target = external_jQuery_default()(_this.restoreTarget());
 >>>>>>> danhmuc_list
@@ -6294,7 +6918,11 @@ var Editor = /*#__PURE__*/function () {
       // bind custom events
       this.$editable.on('keydown', function (event) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (event.keyCode === core_key.code.ENTER) {
+=======
+        if (event.keyCode === key.code.ENTER) {
+>>>>>>> danhmuc_list
 =======
         if (event.keyCode === key.code.ENTER) {
 >>>>>>> danhmuc_list
@@ -6432,7 +7060,11 @@ var Editor = /*#__PURE__*/function () {
       }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       var keyName = core_key.nameFromCode[event.keyCode];
+=======
+      var keyName = key.nameFromCode[event.keyCode];
+>>>>>>> danhmuc_list
 =======
       var keyName = key.nameFromCode[event.keyCode];
 >>>>>>> danhmuc_list
@@ -6452,7 +7084,11 @@ var Editor = /*#__PURE__*/function () {
           return true;
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
       } else if (core_key.isEdit(event.keyCode)) {
+=======
+      } else if (key.isEdit(event.keyCode)) {
+>>>>>>> danhmuc_list
 =======
       } else if (key.isEdit(event.keyCode)) {
 >>>>>>> danhmuc_list
@@ -6476,7 +7112,11 @@ var Editor = /*#__PURE__*/function () {
 
       if (typeof event !== 'undefined') {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (core_key.isMove(event.keyCode) || core_key.isNavigation(event.keyCode) || event.ctrlKey || event.metaKey || lists.contains([core_key.code.BACKSPACE, core_key.code.DELETE], event.keyCode)) {
+=======
+        if (key.isMove(event.keyCode) || key.isNavigation(event.keyCode) || event.ctrlKey || event.metaKey || lists.contains([key.code.BACKSPACE, key.code.DELETE], event.keyCode)) {
+>>>>>>> danhmuc_list
 =======
         if (key.isMove(event.keyCode) || key.isNavigation(event.keyCode) || event.ctrlKey || event.metaKey || lists.contains([key.code.BACKSPACE, key.code.DELETE], event.keyCode)) {
 >>>>>>> danhmuc_list
@@ -6538,7 +7178,11 @@ var Editor = /*#__PURE__*/function () {
         this.lastRange = range.create(this.editable);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(this.lastRange.sc).closest('.note-editable').length === 0) {
+=======
+        if (external_jQuery_default()(this.lastRange.sc).closest('.note-editable').length === 0) {
+>>>>>>> danhmuc_list
 =======
         if (external_jQuery_default()(this.lastRange.sc).closest('.note-editable').length === 0) {
 >>>>>>> danhmuc_list
@@ -6800,7 +7444,11 @@ var Editor = /*#__PURE__*/function () {
       var _this4 = this;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(files, function (idx, file) {
+=======
+      external_jQuery_default().each(files, function (idx, file) {
+>>>>>>> danhmuc_list
 =======
       external_jQuery_default().each(files, function (idx, file) {
 >>>>>>> danhmuc_list
@@ -6863,12 +7511,15 @@ var Editor = /*#__PURE__*/function () {
 
         if ($target && $target.length) {
 <<<<<<< HEAD
+<<<<<<< HEAD
           var className = $target[0].className || '';
 
           if (className) {
             var currentRange = this.createRange();
             var $parent = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()([currentRange.sc, currentRange.ec]).closest(tagName);
 =======
+=======
+>>>>>>> danhmuc_list
           var currentRange = this.createRange();
           var $parent = external_jQuery_default()([currentRange.sc, currentRange.ec]).closest(tagName); // remove class added for current block
 
@@ -6876,6 +7527,9 @@ var Editor = /*#__PURE__*/function () {
           var className = $target[0].className || '';
 
           if (className) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             $parent.addClass(className);
           }
@@ -6896,7 +7550,11 @@ var Editor = /*#__PURE__*/function () {
         var spans = this.style.styleNodes(rng);
         this.$editor.find('.note-status-output').html('');
 <<<<<<< HEAD
+<<<<<<< HEAD
         external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(spans).css(target, value); // [workaround] added styled bogus span for style
+=======
+        external_jQuery_default()(spans).css(target, value); // [workaround] added styled bogus span for style
+>>>>>>> danhmuc_list
 =======
         external_jQuery_default()(spans).css(target, value); // [workaround] added styled bogus span for style
 >>>>>>> danhmuc_list
@@ -6916,15 +7574,21 @@ var Editor = /*#__PURE__*/function () {
         }
       } else {
 <<<<<<< HEAD
+<<<<<<< HEAD
         var noteStatusOutput = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.now();
         this.$editor.find('.note-status-output').html('<div id="note-status-output-' + noteStatusOutput + '" class="alert alert-info">' + this.lang.output.noSelection + '</div>');
         setTimeout(function () {
           external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('#note-status-output-' + noteStatusOutput).remove();
 =======
+=======
+>>>>>>> danhmuc_list
         var noteStatusOutput = external_jQuery_default().now();
         this.$editor.find('.note-status-output').html('<div id="note-status-output-' + noteStatusOutput + '" class="alert alert-info">' + this.lang.output.noSelection + '</div>');
         setTimeout(function () {
           external_jQuery_default()('#note-status-output-' + noteStatusOutput).remove();
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         }, 5000);
       }
@@ -6966,7 +7630,11 @@ var Editor = /*#__PURE__*/function () {
       var rng = this.getLastRange().expand(dom.isAnchor); // Get the first anchor on range(for edit).
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       var $anchor = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(lists.head(rng.nodes(dom.isAnchor)));
+=======
+      var $anchor = external_jQuery_default()(lists.head(rng.nodes(dom.isAnchor)));
+>>>>>>> danhmuc_list
 =======
       var $anchor = external_jQuery_default()(lists.head(rng.nodes(dom.isAnchor)));
 >>>>>>> danhmuc_list
@@ -7122,7 +7790,11 @@ var Editor = /*#__PURE__*/function () {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/module/Clipboard.js
+=======
+;// CONCATENATED MODULE: ./src/js/module/Clipboard.js
+>>>>>>> danhmuc_list
 =======
 ;// CONCATENATED MODULE: ./src/js/module/Clipboard.js
 >>>>>>> danhmuc_list
@@ -7135,7 +7807,11 @@ function Clipboard_createClass(Constructor, protoProps, staticProps) { if (proto
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 var Clipboard_Clipboard = /*#__PURE__*/function () {
+=======
+var Clipboard = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
 =======
 var Clipboard = /*#__PURE__*/function () {
 >>>>>>> danhmuc_list
@@ -7198,7 +7874,11 @@ var Clipboard = /*#__PURE__*/function () {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/module/Dropzone.js
+=======
+;// CONCATENATED MODULE: ./src/js/module/Dropzone.js
+>>>>>>> danhmuc_list
 =======
 ;// CONCATENATED MODULE: ./src/js/module/Dropzone.js
 >>>>>>> danhmuc_list
@@ -7211,7 +7891,11 @@ function Dropzone_createClass(Constructor, protoProps, staticProps) { if (protoP
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 var Dropzone_Dropzone = /*#__PURE__*/function () {
+=======
+var Dropzone = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
 =======
 var Dropzone = /*#__PURE__*/function () {
 >>>>>>> danhmuc_list
@@ -7220,7 +7904,11 @@ var Dropzone = /*#__PURE__*/function () {
 
     this.context = context;
 <<<<<<< HEAD
+<<<<<<< HEAD
     this.$eventListener = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(document);
+=======
+    this.$eventListener = external_jQuery_default()(document);
+>>>>>>> danhmuc_list
 =======
     this.$eventListener = external_jQuery_default()(document);
 >>>>>>> danhmuc_list
@@ -7230,7 +7918,11 @@ var Dropzone = /*#__PURE__*/function () {
     this.lang = this.options.langInfo;
     this.documentEventHandlers = {};
 <<<<<<< HEAD
+<<<<<<< HEAD
     this.$dropzone = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(['<div class="note-dropzone">', '<div class="note-dropzone-message"></div>', '</div>'].join('')).prependTo(this.$editor);
+=======
+    this.$dropzone = external_jQuery_default()(['<div class="note-dropzone">', '<div class="note-dropzone-message"></div>', '</div>'].join('')).prependTo(this.$editor);
+>>>>>>> danhmuc_list
 =======
     this.$dropzone = external_jQuery_default()(['<div class="note-dropzone">', '<div class="note-dropzone-message"></div>', '</div>'].join('')).prependTo(this.$editor);
 >>>>>>> danhmuc_list
@@ -7266,7 +7958,11 @@ var Dropzone = /*#__PURE__*/function () {
       var _this = this;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       var collection = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()();
+=======
+      var collection = external_jQuery_default()();
+>>>>>>> danhmuc_list
 =======
       var collection = external_jQuery_default()();
 >>>>>>> danhmuc_list
@@ -7295,7 +7991,11 @@ var Dropzone = /*#__PURE__*/function () {
 
         if (!collection.length || e.target.nodeName === 'BODY') {
 <<<<<<< HEAD
+<<<<<<< HEAD
           collection = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()();
+=======
+          collection = external_jQuery_default()();
+>>>>>>> danhmuc_list
 =======
           collection = external_jQuery_default()();
 >>>>>>> danhmuc_list
@@ -7306,7 +8006,11 @@ var Dropzone = /*#__PURE__*/function () {
 
       this.documentEventHandlers.onDrop = function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
         collection = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()();
+=======
+        collection = external_jQuery_default()();
+>>>>>>> danhmuc_list
 =======
         collection = external_jQuery_default()();
 >>>>>>> danhmuc_list
@@ -7339,7 +8043,11 @@ var Dropzone = /*#__PURE__*/function () {
           _this.context.invoke('editor.insertImagesOrCallback', dataTransfer.files);
         } else {
 <<<<<<< HEAD
+<<<<<<< HEAD
           external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(dataTransfer.types, function (idx, type) {
+=======
+          external_jQuery_default().each(dataTransfer.types, function (idx, type) {
+>>>>>>> danhmuc_list
 =======
           external_jQuery_default().each(dataTransfer.types, function (idx, type) {
 >>>>>>> danhmuc_list
@@ -7354,7 +8062,11 @@ var Dropzone = /*#__PURE__*/function () {
               _this.context.invoke('editor.pasteHTML', content);
             } else {
 <<<<<<< HEAD
+<<<<<<< HEAD
               external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(content).each(function (idx, item) {
+=======
+              external_jQuery_default()(content).each(function (idx, item) {
+>>>>>>> danhmuc_list
 =======
               external_jQuery_default()(content).each(function (idx, item) {
 >>>>>>> danhmuc_list
@@ -7382,15 +8094,21 @@ var Dropzone = /*#__PURE__*/function () {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/module/Codeview.js
 function _createForOfIteratorHelper(o) { if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (o = _unsupportedIterableToArray(o))) { var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var it, normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
 
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(n); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
 =======
+=======
+>>>>>>> danhmuc_list
 ;// CONCATENATED MODULE: ./src/js/module/Codeview.js
 function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
 
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
@@ -7408,7 +8126,11 @@ function Codeview_createClass(Constructor, protoProps, staticProps) { if (protoP
  */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 var Codeview_CodeView = /*#__PURE__*/function () {
+=======
+var CodeView = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
 =======
 var CodeView = /*#__PURE__*/function () {
 >>>>>>> danhmuc_list
@@ -7454,7 +8176,11 @@ var CodeView = /*#__PURE__*/function () {
 
       this.$codable.on('keyup', function (event) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (event.keyCode === core_key.code.ESCAPE) {
+=======
+        if (event.keyCode === key.code.ESCAPE) {
+>>>>>>> danhmuc_list
 =======
         if (event.keyCode === key.code.ESCAPE) {
 >>>>>>> danhmuc_list
@@ -7621,7 +8347,11 @@ var CodeView = /*#__PURE__*/function () {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/module/Statusbar.js
+=======
+;// CONCATENATED MODULE: ./src/js/module/Statusbar.js
+>>>>>>> danhmuc_list
 =======
 ;// CONCATENATED MODULE: ./src/js/module/Statusbar.js
 >>>>>>> danhmuc_list
@@ -7635,6 +8365,7 @@ function Statusbar_createClass(Constructor, protoProps, staticProps) { if (proto
 var EDITABLE_PADDING = 24;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 var Statusbar_Statusbar = /*#__PURE__*/function () {
   function Statusbar(context) {
     Statusbar_classCallCheck(this, Statusbar);
@@ -7643,6 +8374,8 @@ var Statusbar_Statusbar = /*#__PURE__*/function () {
     this.$statusbar = context.layoutInfo.statusbar;
     this.$editable = context.layoutInfo.editable;
 =======
+=======
+>>>>>>> danhmuc_list
 var Statusbar = /*#__PURE__*/function () {
   function Statusbar(context) {
     Statusbar_classCallCheck(this, Statusbar);
@@ -7651,6 +8384,9 @@ var Statusbar = /*#__PURE__*/function () {
     this.$statusbar = context.layoutInfo.statusbar;
     this.$editable = context.layoutInfo.editable;
     this.$codable = context.layoutInfo.codable;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     this.options = context.options;
   }
@@ -7672,6 +8408,7 @@ var Statusbar = /*#__PURE__*/function () {
         var editableTop = _this.$editable.offset().top - _this.$document.scrollTop();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         var onMouseMove = function onMouseMove(event) {
           var height = event.clientY - (editableTop + EDITABLE_PADDING);
           height = _this.options.minheight > 0 ? Math.max(height, _this.options.minheight) : height;
@@ -7679,6 +8416,8 @@ var Statusbar = /*#__PURE__*/function () {
 
           _this.$editable.height(height);
 =======
+=======
+>>>>>>> danhmuc_list
         var editableCodeTop = _this.$codable.offset().top - _this.$document.scrollTop();
 
         var onMouseMove = function onMouseMove(event) {
@@ -7692,6 +8431,9 @@ var Statusbar = /*#__PURE__*/function () {
           _this.$editable.height(height);
 
           _this.$codable.height(heightCode);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         };
 
@@ -7713,7 +8455,11 @@ var Statusbar = /*#__PURE__*/function () {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/module/Fullscreen.js
+=======
+;// CONCATENATED MODULE: ./src/js/module/Fullscreen.js
+>>>>>>> danhmuc_list
 =======
 ;// CONCATENATED MODULE: ./src/js/module/Fullscreen.js
 >>>>>>> danhmuc_list
@@ -7726,7 +8472,11 @@ function Fullscreen_createClass(Constructor, protoProps, staticProps) { if (prot
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 var Fullscreen_Fullscreen = /*#__PURE__*/function () {
+=======
+var Fullscreen = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
 =======
 var Fullscreen = /*#__PURE__*/function () {
 >>>>>>> danhmuc_list
@@ -7741,8 +8491,14 @@ var Fullscreen = /*#__PURE__*/function () {
     this.$editable = context.layoutInfo.editable;
     this.$codable = context.layoutInfo.codable;
 <<<<<<< HEAD
+<<<<<<< HEAD
     this.$window = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(window);
     this.$scrollbar = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('html, body');
+=======
+    this.$window = external_jQuery_default()(window);
+    this.$scrollbar = external_jQuery_default()('html, body');
+    this.scrollbarClassName = 'note-fullscreen-body';
+>>>>>>> danhmuc_list
 =======
     this.$window = external_jQuery_default()(window);
     this.$scrollbar = external_jQuery_default()('html, body');
@@ -7775,20 +8531,29 @@ var Fullscreen = /*#__PURE__*/function () {
     value: function toggle() {
       this.$editor.toggleClass('fullscreen');
 <<<<<<< HEAD
+<<<<<<< HEAD
 
       if (this.isFullscreen()) {
 =======
+=======
+>>>>>>> danhmuc_list
       var isFullscreen = this.isFullscreen();
       this.$scrollbar.toggleClass(this.scrollbarClassName, isFullscreen);
 
       if (isFullscreen) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         this.$editable.data('orgHeight', this.$editable.css('height'));
         this.$editable.data('orgMaxHeight', this.$editable.css('maxHeight'));
         this.$editable.css('maxHeight', '');
         this.$window.on('resize', this.onResize).trigger('resize');
 <<<<<<< HEAD
+<<<<<<< HEAD
         this.$scrollbar.css('overflow', 'hidden');
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
       } else {
@@ -7798,10 +8563,16 @@ var Fullscreen = /*#__PURE__*/function () {
         });
         this.$editable.css('maxHeight', this.$editable.css('orgMaxHeight'));
 <<<<<<< HEAD
+<<<<<<< HEAD
         this.$scrollbar.css('overflow', 'visible');
       }
 
       this.context.invoke('toolbar.updateFullscreen', this.isFullscreen());
+=======
+      }
+
+      this.context.invoke('toolbar.updateFullscreen', isFullscreen);
+>>>>>>> danhmuc_list
 =======
       }
 
@@ -7814,12 +8585,18 @@ var Fullscreen = /*#__PURE__*/function () {
       return this.$editor.hasClass('fullscreen');
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
   }, {
     key: "destroy",
     value: function destroy() {
       this.$scrollbar.removeClass(this.scrollbarClassName);
     }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   }]);
 
@@ -7828,7 +8605,11 @@ var Fullscreen = /*#__PURE__*/function () {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/module/Handle.js
+=======
+;// CONCATENATED MODULE: ./src/js/module/Handle.js
+>>>>>>> danhmuc_list
 =======
 ;// CONCATENATED MODULE: ./src/js/module/Handle.js
 >>>>>>> danhmuc_list
@@ -7842,7 +8623,11 @@ function Handle_createClass(Constructor, protoProps, staticProps) { if (protoPro
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 var Handle_Handle = /*#__PURE__*/function () {
+=======
+var Handle = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
 =======
 var Handle = /*#__PURE__*/function () {
 >>>>>>> danhmuc_list
@@ -7853,7 +8638,11 @@ var Handle = /*#__PURE__*/function () {
 
     this.context = context;
 <<<<<<< HEAD
+<<<<<<< HEAD
     this.$document = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(document);
+=======
+    this.$document = external_jQuery_default()(document);
+>>>>>>> danhmuc_list
 =======
     this.$document = external_jQuery_default()(document);
 >>>>>>> danhmuc_list
@@ -7884,7 +8673,11 @@ var Handle = /*#__PURE__*/function () {
       var _this2 = this;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       this.$handle = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(['<div class="note-handle">', '<div class="note-control-selection">', '<div class="note-control-selection-bg"></div>', '<div class="note-control-holder note-control-nw"></div>', '<div class="note-control-holder note-control-ne"></div>', '<div class="note-control-holder note-control-sw"></div>', '<div class="', this.options.disableResizeImage ? 'note-control-holder' : 'note-control-sizing', ' note-control-se"></div>', this.options.disableResizeImage ? '' : '<div class="note-control-selection-info"></div>', '</div>', '</div>'].join('')).prependTo(this.$editingArea);
+=======
+      this.$handle = external_jQuery_default()(['<div class="note-handle">', '<div class="note-control-selection">', '<div class="note-control-selection-bg"></div>', '<div class="note-control-holder note-control-nw"></div>', '<div class="note-control-holder note-control-ne"></div>', '<div class="note-control-holder note-control-sw"></div>', '<div class="', this.options.disableResizeImage ? 'note-control-holder' : 'note-control-sizing', ' note-control-se"></div>', this.options.disableResizeImage ? '' : '<div class="note-control-selection-info"></div>', '</div>', '</div>'].join('')).prependTo(this.$editingArea);
+>>>>>>> danhmuc_list
 =======
       this.$handle = external_jQuery_default()(['<div class="note-handle">', '<div class="note-control-selection">', '<div class="note-control-selection-bg"></div>', '<div class="note-control-holder note-control-nw"></div>', '<div class="note-control-holder note-control-ne"></div>', '<div class="note-control-holder note-control-sw"></div>', '<div class="', this.options.disableResizeImage ? 'note-control-holder' : 'note-control-sizing', ' note-control-se"></div>', this.options.disableResizeImage ? '' : '<div class="note-control-selection-info"></div>', '</div>', '</div>'].join('')).prependTo(this.$editingArea);
 >>>>>>> danhmuc_list
@@ -7947,7 +8740,11 @@ var Handle = /*#__PURE__*/function () {
 
       if (isImage) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         var $image = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(target);
+=======
+        var $image = external_jQuery_default()(target);
+>>>>>>> danhmuc_list
 =======
         var $image = external_jQuery_default()(target);
 >>>>>>> danhmuc_list
@@ -7999,7 +8796,11 @@ var Handle = /*#__PURE__*/function () {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/module/AutoLink.js
+=======
+;// CONCATENATED MODULE: ./src/js/module/AutoLink.js
+>>>>>>> danhmuc_list
 =======
 ;// CONCATENATED MODULE: ./src/js/module/AutoLink.js
 >>>>>>> danhmuc_list
@@ -8014,9 +8815,15 @@ function AutoLink_createClass(Constructor, protoProps, staticProps) { if (protoP
 
 var defaultScheme = 'http://';
 <<<<<<< HEAD
+<<<<<<< HEAD
 var linkPattern = /^([A-Za-z][A-Za-z0-9+-.]*\:[\/]{2}|tel:|mailto:[A-Z0-9._%+-]+@)?(www\.)?(.+)$/i;
 
 var AutoLink_AutoLink = /*#__PURE__*/function () {
+=======
+var linkPattern = /^([A-Za-z][A-Za-z0-9+-.]*\:[\/]{2}|tel:|mailto:[A-Z0-9._%+-]+@|xmpp:[A-Z0-9._%+-]+@)?(www\.)?(.+)$/i;
+
+var AutoLink = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
 =======
 var linkPattern = /^([A-Za-z][A-Za-z0-9+-.]*\:[\/]{2}|tel:|mailto:[A-Z0-9._%+-]+@|xmpp:[A-Z0-9._%+-]+@)?(www\.)?(.+)$/i;
 
@@ -8064,17 +8871,23 @@ var AutoLink = /*#__PURE__*/function () {
       if (match && (match[1] || match[2])) {
         var link = match[1] ? keyword : defaultScheme + keyword;
 <<<<<<< HEAD
+<<<<<<< HEAD
         var urlText = this.options.showDomainOnlyForAutolink ? keyword.replace(/^(?:https?:\/\/)?(?:tel?:?)?(?:mailto?:?)?(?:www\.)?/i, '').split('/')[0] : keyword;
         var node = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<a />').html(urlText).attr('href', link)[0];
 
         if (this.context.options.linkTargetBlank) {
           external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(node).attr('target', '_blank');
 =======
+=======
+>>>>>>> danhmuc_list
         var urlText = this.options.showDomainOnlyForAutolink ? keyword.replace(/^(?:https?:\/\/)?(?:tel?:?)?(?:mailto?:?)?(?:xmpp?:?)?(?:www\.)?/i, '').split('/')[0] : keyword;
         var node = external_jQuery_default()('<a></a>').html(urlText).attr('href', link)[0];
 
         if (this.context.options.linkTargetBlank) {
           external_jQuery_default()(node).attr('target', '_blank');
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         }
 
@@ -8087,7 +8900,11 @@ var AutoLink = /*#__PURE__*/function () {
     key: "handleKeydown",
     value: function handleKeydown(e) {
 <<<<<<< HEAD
+<<<<<<< HEAD
       if (lists.contains([core_key.code.ENTER, core_key.code.SPACE], e.keyCode)) {
+=======
+      if (lists.contains([key.code.ENTER, key.code.SPACE], e.keyCode)) {
+>>>>>>> danhmuc_list
 =======
       if (lists.contains([key.code.ENTER, key.code.SPACE], e.keyCode)) {
 >>>>>>> danhmuc_list
@@ -8099,7 +8916,11 @@ var AutoLink = /*#__PURE__*/function () {
     key: "handleKeyup",
     value: function handleKeyup(e) {
 <<<<<<< HEAD
+<<<<<<< HEAD
       if (lists.contains([core_key.code.ENTER, core_key.code.SPACE], e.keyCode)) {
+=======
+      if (lists.contains([key.code.ENTER, key.code.SPACE], e.keyCode)) {
+>>>>>>> danhmuc_list
 =======
       if (lists.contains([key.code.ENTER, key.code.SPACE], e.keyCode)) {
 >>>>>>> danhmuc_list
@@ -8113,7 +8934,11 @@ var AutoLink = /*#__PURE__*/function () {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/module/AutoSync.js
+=======
+;// CONCATENATED MODULE: ./src/js/module/AutoSync.js
+>>>>>>> danhmuc_list
 =======
 ;// CONCATENATED MODULE: ./src/js/module/AutoSync.js
 >>>>>>> danhmuc_list
@@ -8129,7 +8954,11 @@ function AutoSync_createClass(Constructor, protoProps, staticProps) { if (protoP
  */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 var AutoSync_AutoSync = /*#__PURE__*/function () {
+=======
+var AutoSync = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
 =======
 var AutoSync = /*#__PURE__*/function () {
 >>>>>>> danhmuc_list
@@ -8158,7 +8987,11 @@ var AutoSync = /*#__PURE__*/function () {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/module/AutoReplace.js
+=======
+;// CONCATENATED MODULE: ./src/js/module/AutoReplace.js
+>>>>>>> danhmuc_list
 =======
 ;// CONCATENATED MODULE: ./src/js/module/AutoReplace.js
 >>>>>>> danhmuc_list
@@ -8173,7 +9006,11 @@ function AutoReplace_createClass(Constructor, protoProps, staticProps) { if (pro
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 var AutoReplace_AutoReplace = /*#__PURE__*/function () {
+=======
+var AutoReplace = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
 =======
 var AutoReplace = /*#__PURE__*/function () {
 >>>>>>> danhmuc_list
@@ -8185,7 +9022,11 @@ var AutoReplace = /*#__PURE__*/function () {
     this.context = context;
     this.options = context.options.replace || {};
 <<<<<<< HEAD
+<<<<<<< HEAD
     this.keys = [core_key.code.ENTER, core_key.code.SPACE, core_key.code.PERIOD, core_key.code.COMMA, core_key.code.SEMICOLON, core_key.code.SLASH];
+=======
+    this.keys = [key.code.ENTER, key.code.SPACE, key.code.PERIOD, key.code.COMMA, key.code.SEMICOLON, key.code.SLASH];
+>>>>>>> danhmuc_list
 =======
     this.keys = [key.code.ENTER, key.code.SPACE, key.code.PERIOD, key.code.COMMA, key.code.SEMICOLON, key.code.SLASH];
 >>>>>>> danhmuc_list
@@ -8276,7 +9117,11 @@ var AutoReplace = /*#__PURE__*/function () {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/module/Placeholder.js
+=======
+;// CONCATENATED MODULE: ./src/js/module/Placeholder.js
+>>>>>>> danhmuc_list
 =======
 ;// CONCATENATED MODULE: ./src/js/module/Placeholder.js
 >>>>>>> danhmuc_list
@@ -8289,7 +9134,11 @@ function Placeholder_createClass(Constructor, protoProps, staticProps) { if (pro
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 var Placeholder_Placeholder = /*#__PURE__*/function () {
+=======
+var Placeholder = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
 =======
 var Placeholder = /*#__PURE__*/function () {
 >>>>>>> danhmuc_list
@@ -8328,7 +9177,11 @@ var Placeholder = /*#__PURE__*/function () {
       var _this2 = this;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       this.$placeholder = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<div class="note-placeholder">');
+=======
+      this.$placeholder = external_jQuery_default()('<div class="note-placeholder"></div>');
+>>>>>>> danhmuc_list
 =======
       this.$placeholder = external_jQuery_default()('<div class="note-placeholder"></div>');
 >>>>>>> danhmuc_list
@@ -8355,7 +9208,11 @@ var Placeholder = /*#__PURE__*/function () {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/module/Buttons.js
+=======
+;// CONCATENATED MODULE: ./src/js/module/Buttons.js
+>>>>>>> danhmuc_list
 =======
 ;// CONCATENATED MODULE: ./src/js/module/Buttons.js
 >>>>>>> danhmuc_list
@@ -8371,17 +9228,23 @@ function Buttons_createClass(Constructor, protoProps, staticProps) { if (protoPr
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 var Buttons_Buttons = /*#__PURE__*/function () {
   function Buttons(context) {
     Buttons_classCallCheck(this, Buttons);
 
     this.ui = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.ui;
 =======
+=======
+>>>>>>> danhmuc_list
 var Buttons = /*#__PURE__*/function () {
   function Buttons(context) {
     Buttons_classCallCheck(this, Buttons);
 
     this.ui = (external_jQuery_default()).summernote.ui;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     this.context = context;
     this.$toolbar = context.layoutInfo.toolbar;
@@ -8458,7 +9321,11 @@ var Buttons = /*#__PURE__*/function () {
           tooltip: tooltip,
           click: function click(e) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             var $button = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(e.currentTarget);
+=======
+            var $button = external_jQuery_default()(e.currentTarget);
+>>>>>>> danhmuc_list
 =======
             var $button = external_jQuery_default()(e.currentTarget);
 >>>>>>> danhmuc_list
@@ -8502,17 +9369,23 @@ var Buttons = /*#__PURE__*/function () {
           }
         }), this.ui.dropdown({
 <<<<<<< HEAD
+<<<<<<< HEAD
           items: (backColor ? ['<div class="note-palette">', '<div class="note-palette-title">' + this.lang.color.background + '</div>', '<div>', '<button type="button" class="note-color-reset btn btn-light btn-default" data-event="backColor" data-value="transparent">', this.lang.color.transparent, '</button>', '</div>', '<div class="note-holder" data-event="backColor"><!-- back colors --></div>', '<div>', '<button type="button" class="note-color-select btn btn-light btn-default" data-event="openPalette" data-value="backColorPicker">', this.lang.color.cpSelect, '</button>', '<input type="color" id="backColorPicker" class="note-btn note-color-select-btn" value="' + this.options.colorButton.backColor + '" data-event="backColorPalette">', '</div>', '<div class="note-holder-custom" id="backColorPalette" data-event="backColor"></div>', '</div>'].join('') : '') + (foreColor ? ['<div class="note-palette">', '<div class="note-palette-title">' + this.lang.color.foreground + '</div>', '<div>', '<button type="button" class="note-color-reset btn btn-light btn-default" data-event="removeFormat" data-value="foreColor">', this.lang.color.resetToDefault, '</button>', '</div>', '<div class="note-holder" data-event="foreColor"><!-- fore colors --></div>', '<div>', '<button type="button" class="note-color-select btn btn-light btn-default" data-event="openPalette" data-value="foreColorPicker">', this.lang.color.cpSelect, '</button>', '<input type="color" id="foreColorPicker" class="note-btn note-color-select-btn" value="' + this.options.colorButton.foreColor + '" data-event="foreColorPalette">', '</div>', // Fix missing Div, Commented to find easily if it's wrong
           '<div class="note-holder-custom" id="foreColorPalette" data-event="foreColor"></div>', '</div>'].join('') : ''),
           callback: function callback($dropdown) {
             $dropdown.find('.note-holder').each(function (idx, item) {
               var $holder = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(item);
 =======
+=======
+>>>>>>> danhmuc_list
           items: (backColor ? ['<div class="note-palette">', '<div class="note-palette-title">' + this.lang.color.background + '</div>', '<div>', '<button type="button" class="note-color-reset btn btn-light btn-default" data-event="backColor" data-value="transparent">', this.lang.color.transparent, '</button>', '</div>', '<div class="note-holder" data-event="backColor"><!-- back colors --></div>', '<div>', '<button type="button" class="note-color-select btn btn-light btn-default" data-event="openPalette" data-value="backColorPicker-' + this.options.id + '">', this.lang.color.cpSelect, '</button>', '<input type="color" id="backColorPicker-' + this.options.id + '" class="note-btn note-color-select-btn" value="' + this.options.colorButton.backColor + '" data-event="backColorPalette-' + this.options.id + '">', '</div>', '<div class="note-holder-custom" id="backColorPalette-' + this.options.id + '" data-event="backColor"></div>', '</div>'].join('') : '') + (foreColor ? ['<div class="note-palette">', '<div class="note-palette-title">' + this.lang.color.foreground + '</div>', '<div>', '<button type="button" class="note-color-reset btn btn-light btn-default" data-event="removeFormat" data-value="foreColor">', this.lang.color.resetToDefault, '</button>', '</div>', '<div class="note-holder" data-event="foreColor"><!-- fore colors --></div>', '<div>', '<button type="button" class="note-color-select btn btn-light btn-default" data-event="openPalette" data-value="foreColorPicker-' + this.options.id + '">', this.lang.color.cpSelect, '</button>', '<input type="color" id="foreColorPicker-' + this.options.id + '" class="note-btn note-color-select-btn" value="' + this.options.colorButton.foreColor + '" data-event="foreColorPalette-' + this.options.id + '">', '</div>', // Fix missing Div, Commented to find easily if it's wrong
           '<div class="note-holder-custom" id="foreColorPalette-' + this.options.id + '" data-event="foreColor"></div>', '</div>'].join('') : ''),
           callback: function callback($dropdown) {
             $dropdown.find('.note-holder').each(function (idx, item) {
               var $holder = external_jQuery_default()(item);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
               $holder.append(_this.ui.palette({
                 colors: _this.options.colors,
@@ -8527,7 +9400,11 @@ var Buttons = /*#__PURE__*/function () {
             var customColors = [['#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF']];
             $dropdown.find('.note-holder-custom').each(function (idx, item) {
 <<<<<<< HEAD
+<<<<<<< HEAD
               var $holder = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(item);
+=======
+              var $holder = external_jQuery_default()(item);
+>>>>>>> danhmuc_list
 =======
               var $holder = external_jQuery_default()(item);
 >>>>>>> danhmuc_list
@@ -8541,8 +9418,13 @@ var Buttons = /*#__PURE__*/function () {
             });
             $dropdown.find('input[type=color]').each(function (idx, item) {
 <<<<<<< HEAD
+<<<<<<< HEAD
               external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(item).change(function () {
                 var $chip = $dropdown.find('#' + external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(this).data('event')).find('.note-color-btn').first();
+=======
+              external_jQuery_default()(item).change(function () {
+                var $chip = $dropdown.find('#' + external_jQuery_default()(this).data('event')).find('.note-color-btn').first();
+>>>>>>> danhmuc_list
 =======
               external_jQuery_default()(item).change(function () {
                 var $chip = $dropdown.find('#' + external_jQuery_default()(this).data('event')).find('.note-color-btn').first();
@@ -8556,8 +9438,13 @@ var Buttons = /*#__PURE__*/function () {
           click: function click(event) {
             event.stopPropagation();
 <<<<<<< HEAD
+<<<<<<< HEAD
             var $parent = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('.' + className).find('.note-dropdown-menu');
             var $button = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(event.target);
+=======
+            var $parent = external_jQuery_default()('.' + className).find('.note-dropdown-menu');
+            var $button = external_jQuery_default()(event.target);
+>>>>>>> danhmuc_list
 =======
             var $parent = external_jQuery_default()('.' + className).find('.note-dropdown-menu');
             var $button = external_jQuery_default()(event.target);
@@ -8568,7 +9455,11 @@ var Buttons = /*#__PURE__*/function () {
             if (eventName === 'openPalette') {
               var $picker = $parent.find('#' + value);
 <<<<<<< HEAD
+<<<<<<< HEAD
               var $palette = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()($parent.find('#' + $picker.data('event')).find('.note-color-row')[0]); // Shift palette chips
+=======
+              var $palette = external_jQuery_default()($parent.find('#' + $picker.data('event')).find('.note-color-row')[0]); // Shift palette chips
+>>>>>>> danhmuc_list
 =======
               var $palette = external_jQuery_default()($parent.find('#' + $picker.data('event')).find('.note-color-row')[0]); // Shift palette chips
 >>>>>>> danhmuc_list
@@ -8708,7 +9599,11 @@ var Buttons = /*#__PURE__*/function () {
         if (_this2.options.addDefaultFonts) {
           // Add 'default' fonts into the fontnames array if not exist
 <<<<<<< HEAD
+<<<<<<< HEAD
           external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(styleInfo['font-family'].split(','), function (idx, fontname) {
+=======
+          external_jQuery_default().each(styleInfo['font-family'].split(','), function (idx, fontname) {
+>>>>>>> danhmuc_list
 =======
           external_jQuery_default().each(styleInfo['font-family'].split(','), function (idx, fontname) {
 >>>>>>> danhmuc_list
@@ -8882,7 +9777,11 @@ var Buttons = /*#__PURE__*/function () {
               width: _this2.options.insertTableMaxSize.col + 'em',
               height: _this2.options.insertTableMaxSize.row + 'em'
 <<<<<<< HEAD
+<<<<<<< HEAD
             }).mousedown(_this2.context.createInvokeHandler('editor.insertTable')).on('mousemove', _this2.tableMoveHandler.bind(_this2));
+=======
+            }).mouseup(_this2.context.createInvokeHandler('editor.insertTable')).on('mousemove', _this2.tableMoveHandler.bind(_this2));
+>>>>>>> danhmuc_list
 =======
             }).mouseup(_this2.context.createInvokeHandler('editor.insertTable')).on('mousemove', _this2.tableMoveHandler.bind(_this2));
 >>>>>>> danhmuc_list
@@ -9147,8 +10046,11 @@ var Buttons = /*#__PURE__*/function () {
     key: "updateCurrentStyle",
     value: function updateCurrentStyle($container) {
 <<<<<<< HEAD
+<<<<<<< HEAD
       var _this6 = this;
 
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
       var $cont = $container || this.$toolbar;
@@ -9181,7 +10083,11 @@ var Buttons = /*#__PURE__*/function () {
         var fontName = lists.find(fontNames, this.isFontInstalled.bind(this));
         $cont.find('.dropdown-fontname a').each(function (idx, item) {
 <<<<<<< HEAD
+<<<<<<< HEAD
           var $item = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(item); // always compare string to avoid creating another func.
+=======
+          var $item = external_jQuery_default()(item); // always compare string to avoid creating another func.
+>>>>>>> danhmuc_list
 =======
           var $item = external_jQuery_default()(item); // always compare string to avoid creating another func.
 >>>>>>> danhmuc_list
@@ -9196,7 +10102,11 @@ var Buttons = /*#__PURE__*/function () {
         var fontSize = styleInfo['font-size'];
         $cont.find('.dropdown-fontsize a').each(function (idx, item) {
 <<<<<<< HEAD
+<<<<<<< HEAD
           var $item = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(item); // always compare with string to avoid creating another func.
+=======
+          var $item = external_jQuery_default()(item); // always compare with string to avoid creating another func.
+>>>>>>> danhmuc_list
 =======
           var $item = external_jQuery_default()(item); // always compare with string to avoid creating another func.
 >>>>>>> danhmuc_list
@@ -9208,7 +10118,11 @@ var Buttons = /*#__PURE__*/function () {
         var fontSizeUnit = styleInfo['font-size-unit'];
         $cont.find('.dropdown-fontsizeunit a').each(function (idx, item) {
 <<<<<<< HEAD
+<<<<<<< HEAD
           var $item = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(item);
+=======
+          var $item = external_jQuery_default()(item);
+>>>>>>> danhmuc_list
 =======
           var $item = external_jQuery_default()(item);
 >>>>>>> danhmuc_list
@@ -9221,12 +10135,15 @@ var Buttons = /*#__PURE__*/function () {
       if (styleInfo['line-height']) {
         var lineHeight = styleInfo['line-height'];
 <<<<<<< HEAD
+<<<<<<< HEAD
         $cont.find('.dropdown-line-height li a').each(function (idx, item) {
           // always compare with string to avoid creating another func.
           var isChecked = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(item).data('value') + '' === lineHeight + '';
           _this6.className = isChecked ? 'checked' : '';
         });
 =======
+=======
+>>>>>>> danhmuc_list
         $cont.find('.dropdown-line-height a').each(function (idx, item) {
           var $item = external_jQuery_default()(item); // always compare with string to avoid creating another func.
 
@@ -9234,6 +10151,9 @@ var Buttons = /*#__PURE__*/function () {
           $item.toggleClass('checked', isChecked);
         });
         $cont.find('.note-current-line-height').text(lineHeight);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       }
     }
@@ -9241,15 +10161,21 @@ var Buttons = /*#__PURE__*/function () {
     key: "updateBtnStates",
     value: function updateBtnStates($container, infos) {
 <<<<<<< HEAD
+<<<<<<< HEAD
       var _this7 = this;
 
       external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(infos, function (selector, pred) {
         _this7.ui.toggleBtnActive($container.find(selector), pred());
 =======
+=======
+>>>>>>> danhmuc_list
       var _this6 = this;
 
       external_jQuery_default().each(infos, function (selector, pred) {
         _this6.ui.toggleBtnActive($container.find(selector), pred());
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       });
     }
@@ -9258,7 +10184,11 @@ var Buttons = /*#__PURE__*/function () {
     value: function tableMoveHandler(event) {
       var PX_PER_EM = 18;
 <<<<<<< HEAD
+<<<<<<< HEAD
       var $picker = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(event.target.parentNode); // target is mousecatcher
+=======
+      var $picker = external_jQuery_default()(event.target.parentNode); // target is mousecatcher
+>>>>>>> danhmuc_list
 =======
       var $picker = external_jQuery_default()(event.target.parentNode); // target is mousecatcher
 >>>>>>> danhmuc_list
@@ -9271,7 +10201,11 @@ var Buttons = /*#__PURE__*/function () {
 
       if (event.offsetX === undefined) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         var posCatcher = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(event.target).offset();
+=======
+        var posCatcher = external_jQuery_default()(event.target).offset();
+>>>>>>> danhmuc_list
 =======
         var posCatcher = external_jQuery_default()(event.target).offset();
 >>>>>>> danhmuc_list
@@ -9317,7 +10251,11 @@ var Buttons = /*#__PURE__*/function () {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/module/Toolbar.js
+=======
+;// CONCATENATED MODULE: ./src/js/module/Toolbar.js
+>>>>>>> danhmuc_list
 =======
 ;// CONCATENATED MODULE: ./src/js/module/Toolbar.js
 >>>>>>> danhmuc_list
@@ -9330,7 +10268,11 @@ function Toolbar_createClass(Constructor, protoProps, staticProps) { if (protoPr
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 var Toolbar_Toolbar = /*#__PURE__*/function () {
+=======
+var Toolbar = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
 =======
 var Toolbar = /*#__PURE__*/function () {
 >>>>>>> danhmuc_list
@@ -9339,9 +10281,15 @@ var Toolbar = /*#__PURE__*/function () {
 
     this.context = context;
 <<<<<<< HEAD
+<<<<<<< HEAD
     this.$window = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(window);
     this.$document = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(document);
     this.ui = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.ui;
+=======
+    this.$window = external_jQuery_default()(window);
+    this.$document = external_jQuery_default()(document);
+    this.ui = (external_jQuery_default()).summernote.ui;
+>>>>>>> danhmuc_list
 =======
     this.$window = external_jQuery_default()(window);
     this.$document = external_jQuery_default()(document);
@@ -9414,7 +10362,11 @@ var Toolbar = /*#__PURE__*/function () {
 
       if (this.options.otherStaticBar) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         otherBarHeight = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(this.options.otherStaticBar).outerHeight();
+=======
+        otherBarHeight = external_jQuery_default()(this.options.otherStaticBar).outerHeight();
+>>>>>>> danhmuc_list
 =======
         otherBarHeight = external_jQuery_default()(this.options.otherStaticBar).outerHeight();
 >>>>>>> danhmuc_list
@@ -9511,7 +10463,11 @@ var Toolbar = /*#__PURE__*/function () {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/module/LinkDialog.js
+=======
+;// CONCATENATED MODULE: ./src/js/module/LinkDialog.js
+>>>>>>> danhmuc_list
 =======
 ;// CONCATENATED MODULE: ./src/js/module/LinkDialog.js
 >>>>>>> danhmuc_list
@@ -9527,7 +10483,11 @@ function LinkDialog_createClass(Constructor, protoProps, staticProps) { if (prot
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 var LinkDialog_LinkDialog = /*#__PURE__*/function () {
+=======
+var LinkDialog = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
 =======
 var LinkDialog = /*#__PURE__*/function () {
 >>>>>>> danhmuc_list
@@ -9536,8 +10496,13 @@ var LinkDialog = /*#__PURE__*/function () {
 
     this.context = context;
 <<<<<<< HEAD
+<<<<<<< HEAD
     this.ui = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.ui;
     this.$body = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(document.body);
+=======
+    this.ui = (external_jQuery_default()).summernote.ui;
+    this.$body = external_jQuery_default()(document.body);
+>>>>>>> danhmuc_list
 =======
     this.ui = (external_jQuery_default()).summernote.ui;
     this.$body = external_jQuery_default()(document.body);
@@ -9553,17 +10518,23 @@ var LinkDialog = /*#__PURE__*/function () {
     value: function initialize() {
       var $container = this.options.dialogsInBody ? this.$body : this.options.container;
 <<<<<<< HEAD
+<<<<<<< HEAD
       var body = ['<div class="form-group note-form-group">', "<label for=\"note-dialog-link-txt-".concat(this.options.id, "\" class=\"note-form-label\">").concat(this.lang.link.textToDisplay, "</label>"), "<input id=\"note-dialog-link-txt-".concat(this.options.id, "\" class=\"note-link-text form-control note-form-control note-input\" type=\"text\"/>"), '</div>', '<div class="form-group note-form-group">', "<label for=\"note-dialog-link-url-".concat(this.options.id, "\" class=\"note-form-label\">").concat(this.lang.link.url, "</label>"), "<input id=\"note-dialog-link-url-".concat(this.options.id, "\" class=\"note-link-url form-control note-form-control note-input\" type=\"text\" value=\"http://\"/>"), '</div>', !this.options.disableLinkTarget ? external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<div/>').append(this.ui.checkbox({
         className: 'sn-checkbox-open-in-new-window',
         text: this.lang.link.openInNewWindow,
         checked: true
       }).render()).html() : '', external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<div/>').append(this.ui.checkbox({
 =======
+=======
+>>>>>>> danhmuc_list
       var body = ['<div class="form-group note-form-group">', "<label for=\"note-dialog-link-txt-".concat(this.options.id, "\" class=\"note-form-label\">").concat(this.lang.link.textToDisplay, "</label>"), "<input id=\"note-dialog-link-txt-".concat(this.options.id, "\" class=\"note-link-text form-control note-form-control note-input\" type=\"text\"/>"), '</div>', '<div class="form-group note-form-group">', "<label for=\"note-dialog-link-url-".concat(this.options.id, "\" class=\"note-form-label\">").concat(this.lang.link.url, "</label>"), "<input id=\"note-dialog-link-url-".concat(this.options.id, "\" class=\"note-link-url form-control note-form-control note-input\" type=\"text\" value=\"http://\"/>"), '</div>', !this.options.disableLinkTarget ? external_jQuery_default()('<div></div>').append(this.ui.checkbox({
         className: 'sn-checkbox-open-in-new-window',
         text: this.lang.link.openInNewWindow,
         checked: true
       }).render()).html() : '', external_jQuery_default()('<div></div>').append(this.ui.checkbox({
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         className: 'sn-checkbox-use-protocol',
         text: this.lang.link.useProtocol,
@@ -9590,7 +10561,11 @@ var LinkDialog = /*#__PURE__*/function () {
     value: function bindEnterKey($input, $btn) {
       $input.on('keypress', function (event) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (event.keyCode === core_key.code.ENTER) {
+=======
+        if (event.keyCode === key.code.ENTER) {
+>>>>>>> danhmuc_list
 =======
         if (event.keyCode === key.code.ENTER) {
 >>>>>>> danhmuc_list
@@ -9621,7 +10596,11 @@ var LinkDialog = /*#__PURE__*/function () {
       var _this = this;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       return external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.Deferred(function (deferred) {
+=======
+      return external_jQuery_default().Deferred(function (deferred) {
+>>>>>>> danhmuc_list
 =======
       return external_jQuery_default().Deferred(function (deferred) {
 >>>>>>> danhmuc_list
@@ -9728,7 +10707,11 @@ var LinkDialog = /*#__PURE__*/function () {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/module/LinkPopover.js
+=======
+;// CONCATENATED MODULE: ./src/js/module/LinkPopover.js
+>>>>>>> danhmuc_list
 =======
 ;// CONCATENATED MODULE: ./src/js/module/LinkPopover.js
 >>>>>>> danhmuc_list
@@ -9743,7 +10726,11 @@ function LinkPopover_createClass(Constructor, protoProps, staticProps) { if (pro
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 var LinkPopover_LinkPopover = /*#__PURE__*/function () {
+=======
+var LinkPopover = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
 =======
 var LinkPopover = /*#__PURE__*/function () {
 >>>>>>> danhmuc_list
@@ -9754,7 +10741,11 @@ var LinkPopover = /*#__PURE__*/function () {
 
     this.context = context;
 <<<<<<< HEAD
+<<<<<<< HEAD
     this.ui = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.ui;
+=======
+    this.ui = (external_jQuery_default()).summernote.ui;
+>>>>>>> danhmuc_list
 =======
     this.ui = (external_jQuery_default()).summernote.ui;
 >>>>>>> danhmuc_list
@@ -9764,9 +10755,12 @@ var LinkPopover = /*#__PURE__*/function () {
         _this.update();
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
       'summernote.disable summernote.dialog.shown summernote.blur': function summernoteDisableSummernoteDialogShownSummernoteBlur() {
         _this.hide();
 =======
+=======
+>>>>>>> danhmuc_list
       'summernote.disable summernote.dialog.shown': function summernoteDisableSummernoteDialogShown() {
         _this.hide();
       },
@@ -9778,6 +10772,9 @@ var LinkPopover = /*#__PURE__*/function () {
         } else {
           _this.hide();
         }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       }
     };
@@ -9823,15 +10820,21 @@ var LinkPopover = /*#__PURE__*/function () {
       if (rng.isCollapsed() && rng.isOnAnchor()) {
         var anchor = dom.ancestor(rng.sc, dom.isAnchor);
 <<<<<<< HEAD
+<<<<<<< HEAD
         var href = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(anchor).attr('href');
         this.$popover.find('a').attr('href', href).text(href);
         var pos = dom.posFromPlaceholder(anchor);
         var containerOffset = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(this.options.container).offset();
 =======
+=======
+>>>>>>> danhmuc_list
         var href = external_jQuery_default()(anchor).attr('href');
         this.$popover.find('a').attr('href', href).text(href);
         var pos = dom.posFromPlaceholder(anchor);
         var containerOffset = external_jQuery_default()(this.options.container).offset();
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         pos.top -= containerOffset.top;
         pos.left -= containerOffset.left;
@@ -9856,7 +10859,11 @@ var LinkPopover = /*#__PURE__*/function () {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/module/ImageDialog.js
+=======
+;// CONCATENATED MODULE: ./src/js/module/ImageDialog.js
+>>>>>>> danhmuc_list
 =======
 ;// CONCATENATED MODULE: ./src/js/module/ImageDialog.js
 >>>>>>> danhmuc_list
@@ -9871,7 +10878,11 @@ function ImageDialog_createClass(Constructor, protoProps, staticProps) { if (pro
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 var ImageDialog_ImageDialog = /*#__PURE__*/function () {
+=======
+var ImageDialog = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
 =======
 var ImageDialog = /*#__PURE__*/function () {
 >>>>>>> danhmuc_list
@@ -9880,8 +10891,13 @@ var ImageDialog = /*#__PURE__*/function () {
 
     this.context = context;
 <<<<<<< HEAD
+<<<<<<< HEAD
     this.ui = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.ui;
     this.$body = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(document.body);
+=======
+    this.ui = (external_jQuery_default()).summernote.ui;
+    this.$body = external_jQuery_default()(document.body);
+>>>>>>> danhmuc_list
 =======
     this.ui = (external_jQuery_default()).summernote.ui;
     this.$body = external_jQuery_default()(document.body);
@@ -9904,7 +10920,11 @@ var ImageDialog = /*#__PURE__*/function () {
 
       var $container = this.options.dialogsInBody ? this.$body : this.options.container;
 <<<<<<< HEAD
+<<<<<<< HEAD
       var body = ['<div class="form-group note-form-group note-group-select-from-files">', '<label for="note-dialog-image-file-' + this.options.id + '" class="note-form-label">' + this.lang.image.selectFromFiles + '</label>', '<input id="note-dialog-image-file-' + this.options.id + '" class="note-image-input form-control-file note-form-control note-input" ', ' type="file" name="files" accept="image/*" multiple="multiple"/>', imageLimitation, '</div>', '<div class="form-group note-group-image-url">', '<label for="note-dialog-image-url-' + this.options.id + '" class="note-form-label">' + this.lang.image.url + '</label>', '<input id="note-dialog-image-url-' + this.options.id + '" class="note-image-url form-control note-form-control note-input" type="text"/>', '</div>'].join('');
+=======
+      var body = ['<div class="form-group note-form-group note-group-select-from-files">', '<label for="note-dialog-image-file-' + this.options.id + '" class="note-form-label">' + this.lang.image.selectFromFiles + '</label>', '<input id="note-dialog-image-file-' + this.options.id + '" class="note-image-input form-control-file note-form-control note-input" ', ' type="file" name="files" accept="' + this.options.acceptImageFileTypes + '" multiple="multiple"/>', imageLimitation, '</div>', '<div class="form-group note-group-image-url">', '<label for="note-dialog-image-url-' + this.options.id + '" class="note-form-label">' + this.lang.image.url + '</label>', '<input id="note-dialog-image-url-' + this.options.id + '" class="note-image-url form-control note-form-control note-input" type="text"/>', '</div>'].join('');
+>>>>>>> danhmuc_list
 =======
       var body = ['<div class="form-group note-form-group note-group-select-from-files">', '<label for="note-dialog-image-file-' + this.options.id + '" class="note-form-label">' + this.lang.image.selectFromFiles + '</label>', '<input id="note-dialog-image-file-' + this.options.id + '" class="note-image-input form-control-file note-form-control note-input" ', ' type="file" name="files" accept="' + this.options.acceptImageFileTypes + '" multiple="multiple"/>', imageLimitation, '</div>', '<div class="form-group note-group-image-url">', '<label for="note-dialog-image-url-' + this.options.id + '" class="note-form-label">' + this.lang.image.url + '</label>', '<input id="note-dialog-image-url-' + this.options.id + '" class="note-image-url form-control note-form-control note-input" type="text"/>', '</div>'].join('');
 >>>>>>> danhmuc_list
@@ -9928,7 +10948,11 @@ var ImageDialog = /*#__PURE__*/function () {
     value: function bindEnterKey($input, $btn) {
       $input.on('keypress', function (event) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (event.keyCode === core_key.code.ENTER) {
+=======
+        if (event.keyCode === key.code.ENTER) {
+>>>>>>> danhmuc_list
 =======
         if (event.keyCode === key.code.ENTER) {
 >>>>>>> danhmuc_list
@@ -9978,7 +11002,11 @@ var ImageDialog = /*#__PURE__*/function () {
       var _this2 = this;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       return external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.Deferred(function (deferred) {
+=======
+      return external_jQuery_default().Deferred(function (deferred) {
+>>>>>>> danhmuc_list
 =======
       return external_jQuery_default().Deferred(function (deferred) {
 >>>>>>> danhmuc_list
@@ -10031,7 +11059,11 @@ var ImageDialog = /*#__PURE__*/function () {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/module/ImagePopover.js
+=======
+;// CONCATENATED MODULE: ./src/js/module/ImagePopover.js
+>>>>>>> danhmuc_list
 =======
 ;// CONCATENATED MODULE: ./src/js/module/ImagePopover.js
 >>>>>>> danhmuc_list
@@ -10051,7 +11083,11 @@ function ImagePopover_createClass(Constructor, protoProps, staticProps) { if (pr
  */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 var ImagePopover_ImagePopover = /*#__PURE__*/function () {
+=======
+var ImagePopover = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
 =======
 var ImagePopover = /*#__PURE__*/function () {
 >>>>>>> danhmuc_list
@@ -10062,6 +11098,7 @@ var ImagePopover = /*#__PURE__*/function () {
 
     this.context = context;
 <<<<<<< HEAD
+<<<<<<< HEAD
     this.ui = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.ui;
     this.editable = context.layoutInfo.editable[0];
     this.options = context.options;
@@ -10069,6 +11106,8 @@ var ImagePopover = /*#__PURE__*/function () {
       'summernote.disable summernote.blur': function summernoteDisableSummernoteBlur() {
         _this.hide();
 =======
+=======
+>>>>>>> danhmuc_list
     this.ui = (external_jQuery_default()).summernote.ui;
     this.editable = context.layoutInfo.editable[0];
     this.options = context.options;
@@ -10084,6 +11123,9 @@ var ImagePopover = /*#__PURE__*/function () {
         } else {
           _this.hide();
         }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       }
     };
@@ -10116,8 +11158,13 @@ var ImagePopover = /*#__PURE__*/function () {
     value: function update(target, event) {
       if (dom.isImg(target)) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         var position = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(target).offset();
         var containerOffset = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(this.options.container).offset();
+=======
+        var position = external_jQuery_default()(target).offset();
+        var containerOffset = external_jQuery_default()(this.options.container).offset();
+>>>>>>> danhmuc_list
 =======
         var position = external_jQuery_default()(target).offset();
         var containerOffset = external_jQuery_default()(this.options.container).offset();
@@ -10154,7 +11201,11 @@ var ImagePopover = /*#__PURE__*/function () {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/module/TablePopover.js
+=======
+;// CONCATENATED MODULE: ./src/js/module/TablePopover.js
+>>>>>>> danhmuc_list
 =======
 ;// CONCATENATED MODULE: ./src/js/module/TablePopover.js
 >>>>>>> danhmuc_list
@@ -10170,7 +11221,11 @@ function TablePopover_createClass(Constructor, protoProps, staticProps) { if (pr
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 var TablePopover_TablePopover = /*#__PURE__*/function () {
+=======
+var TablePopover = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
 =======
 var TablePopover = /*#__PURE__*/function () {
 >>>>>>> danhmuc_list
@@ -10181,7 +11236,11 @@ var TablePopover = /*#__PURE__*/function () {
 
     this.context = context;
 <<<<<<< HEAD
+<<<<<<< HEAD
     this.ui = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.ui;
+=======
+    this.ui = (external_jQuery_default()).summernote.ui;
+>>>>>>> danhmuc_list
 =======
     this.ui = (external_jQuery_default()).summernote.ui;
 >>>>>>> danhmuc_list
@@ -10194,9 +11253,12 @@ var TablePopover = /*#__PURE__*/function () {
         _this.update();
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
       'summernote.disable summernote.blur': function summernoteDisableSummernoteBlur() {
         _this.hide();
 =======
+=======
+>>>>>>> danhmuc_list
       'summernote.disable summernote.dialog.shown': function summernoteDisableSummernoteDialogShown() {
         _this.hide();
       },
@@ -10208,6 +11270,9 @@ var TablePopover = /*#__PURE__*/function () {
         } else {
           _this.hide();
         }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       }
     };
@@ -10248,17 +11313,23 @@ var TablePopover = /*#__PURE__*/function () {
       }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       var isCell = dom.isCell(target);
 
       if (isCell) {
         var pos = dom.posFromPlaceholder(target);
         var containerOffset = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(this.options.container).offset();
 =======
+=======
+>>>>>>> danhmuc_list
       var isCell = dom.isCell(target) || dom.isCell(target === null || target === void 0 ? void 0 : target.parentElement);
 
       if (isCell) {
         var pos = dom.posFromPlaceholder(target);
         var containerOffset = external_jQuery_default()(this.options.container).offset();
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         pos.top -= containerOffset.top;
         pos.left -= containerOffset.left;
@@ -10285,7 +11356,11 @@ var TablePopover = /*#__PURE__*/function () {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/module/VideoDialog.js
+=======
+;// CONCATENATED MODULE: ./src/js/module/VideoDialog.js
+>>>>>>> danhmuc_list
 =======
 ;// CONCATENATED MODULE: ./src/js/module/VideoDialog.js
 >>>>>>> danhmuc_list
@@ -10300,7 +11375,11 @@ function VideoDialog_createClass(Constructor, protoProps, staticProps) { if (pro
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 var VideoDialog_VideoDialog = /*#__PURE__*/function () {
+=======
+var VideoDialog = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
 =======
 var VideoDialog = /*#__PURE__*/function () {
 >>>>>>> danhmuc_list
@@ -10309,8 +11388,13 @@ var VideoDialog = /*#__PURE__*/function () {
 
     this.context = context;
 <<<<<<< HEAD
+<<<<<<< HEAD
     this.ui = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.ui;
     this.$body = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(document.body);
+=======
+    this.ui = (external_jQuery_default()).summernote.ui;
+    this.$body = external_jQuery_default()(document.body);
+>>>>>>> danhmuc_list
 =======
     this.ui = (external_jQuery_default()).summernote.ui;
     this.$body = external_jQuery_default()(document.body);
@@ -10345,7 +11429,11 @@ var VideoDialog = /*#__PURE__*/function () {
     value: function bindEnterKey($input, $btn) {
       $input.on('keypress', function (event) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (event.keyCode === core_key.code.ENTER) {
+=======
+        if (event.keyCode === key.code.ENTER) {
+>>>>>>> danhmuc_list
 =======
         if (event.keyCode === key.code.ENTER) {
 >>>>>>> danhmuc_list
@@ -10358,17 +11446,23 @@ var VideoDialog = /*#__PURE__*/function () {
     key: "createVideoNode",
     value: function createVideoNode(url) {
 <<<<<<< HEAD
+<<<<<<< HEAD
       // video url patterns(youtube, instagram, vimeo, dailymotion, youku, mp4, ogg, webm)
       var ytRegExp = /\/\/(?:(?:www|m)\.)?(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))([\w|-]{11})(?:(?:[\?&]t=)(\S+))?$/;
       var ytRegExpForStart = /^(?:(\d+)h)?(?:(\d+)m)?(?:(\d+)s)?$/;
       var ytMatch = url.match(ytRegExp);
 =======
+=======
+>>>>>>> danhmuc_list
       // video url patterns(youtube, instagram, vimeo, dailymotion, youku, peertube, mp4, ogg, webm)
       var ytRegExp = /\/\/(?:(?:www|m)\.)?(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))([\w|-]{11})(?:(?:[\?&]t=)(\S+))?$/;
       var ytRegExpForStart = /^(?:(\d+)h)?(?:(\d+)m)?(?:(\d+)s)?$/;
       var ytMatch = url.match(ytRegExp);
       var gdRegExp = /(?:\.|\/\/)drive\.google\.com\/file\/d\/(.[a-zA-Z0-9_-]*)\/view/;
       var gdMatch = url.match(gdRegExp);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       var igRegExp = /(?:www\.|\/\/)instagram\.com\/p\/(.[a-zA-Z0-9_-]*)/;
       var igMatch = url.match(igRegExp);
@@ -10381,6 +11475,11 @@ var VideoDialog = /*#__PURE__*/function () {
       var youkuRegExp = /\/\/v\.youku\.com\/v_show\/id_(\w+)=*\.html/;
       var youkuMatch = url.match(youkuRegExp);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+      var peerTubeRegExp = /\/\/(.*)\/videos\/watch\/([^?]*)(?:\?(?:start=(\w*))?(?:&stop=(\w*))?(?:&loop=([10]))?(?:&autoplay=([10]))?(?:&muted=([10]))?)?/;
+      var peerTubeMatch = url.match(peerTubeRegExp);
+>>>>>>> danhmuc_list
 =======
       var peerTubeRegExp = /\/\/(.*)\/videos\/watch\/([^?]*)(?:\?(?:start=(\w*))?(?:&stop=(\w*))?(?:&loop=([10]))?(?:&autoplay=([10]))?(?:&muted=([10]))?)?/;
       var peerTubeMatch = url.match(peerTubeRegExp);
@@ -10414,6 +11513,7 @@ var VideoDialog = /*#__PURE__*/function () {
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $video = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<iframe>').attr('frameborder', 0).attr('src', '//www.youtube.com/embed/' + youtubeId + (start > 0 ? '?start=' + start : '')).attr('width', '640').attr('height', '360');
       } else if (igMatch && igMatch[0].length) {
         $video = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<iframe>').attr('frameborder', 0).attr('src', 'https://instagram.com/p/' + igMatch[1] + '/embed/').attr('width', '612').attr('height', '710').attr('scrolling', 'no').attr('allowtransparency', 'true');
@@ -10433,6 +11533,8 @@ var VideoDialog = /*#__PURE__*/function () {
       } else if (fbMatch && fbMatch[0].length) {
         $video = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<iframe>').attr('frameborder', 0).attr('src', 'https://www.facebook.com/plugins/video.php?href=' + encodeURIComponent(fbMatch[0]) + '&show_text=0&width=560').attr('width', '560').attr('height', '301').attr('scrolling', 'no').attr('allowtransparency', 'true');
 =======
+=======
+>>>>>>> danhmuc_list
         $video = external_jQuery_default()('<iframe>').attr('frameborder', 0).attr('src', '//www.youtube.com/embed/' + youtubeId + (start > 0 ? '?start=' + start : '')).attr('width', '640').attr('height', '360');
       } else if (gdMatch && gdMatch[0].length) {
         $video = external_jQuery_default()('<iframe>').attr('frameborder', 0).attr('src', 'https://drive.google.com/file/d/' + gdMatch[1] + '/preview').attr('width', '640').attr('height', '480');
@@ -10465,6 +11567,9 @@ var VideoDialog = /*#__PURE__*/function () {
         $video = external_jQuery_default()('<video controls>').attr('src', url).attr('width', '640').attr('height', '360');
       } else if (fbMatch && fbMatch[0].length) {
         $video = external_jQuery_default()('<iframe>').attr('frameborder', 0).attr('src', 'https://www.facebook.com/plugins/video.php?href=' + encodeURIComponent(fbMatch[0]) + '&show_text=0&width=560').attr('width', '560').attr('height', '301').attr('scrolling', 'no').attr('allowtransparency', 'true');
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       } else {
         // this is not a known video link. Now what, Cat? Now what?
@@ -10508,6 +11613,7 @@ var VideoDialog = /*#__PURE__*/function () {
   }, {
     key: "showVideoDialog",
 <<<<<<< HEAD
+<<<<<<< HEAD
     value: function showVideoDialog()
     /* text */
     {
@@ -10515,10 +11621,15 @@ var VideoDialog = /*#__PURE__*/function () {
 
       return external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.Deferred(function (deferred) {
 =======
+=======
+>>>>>>> danhmuc_list
     value: function showVideoDialog() {
       var _this2 = this;
 
       return external_jQuery_default().Deferred(function (deferred) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         var $videoUrl = _this2.$dialog.find('.note-video-url');
 
@@ -10562,7 +11673,11 @@ var VideoDialog = /*#__PURE__*/function () {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/module/HelpDialog.js
+=======
+;// CONCATENATED MODULE: ./src/js/module/HelpDialog.js
+>>>>>>> danhmuc_list
 =======
 ;// CONCATENATED MODULE: ./src/js/module/HelpDialog.js
 >>>>>>> danhmuc_list
@@ -10576,7 +11691,11 @@ function HelpDialog_createClass(Constructor, protoProps, staticProps) { if (prot
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 var HelpDialog_HelpDialog = /*#__PURE__*/function () {
+=======
+var HelpDialog = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
 =======
 var HelpDialog = /*#__PURE__*/function () {
 >>>>>>> danhmuc_list
@@ -10585,8 +11704,13 @@ var HelpDialog = /*#__PURE__*/function () {
 
     this.context = context;
 <<<<<<< HEAD
+<<<<<<< HEAD
     this.ui = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.ui;
     this.$body = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(document.body);
+=======
+    this.ui = (external_jQuery_default()).summernote.ui;
+    this.$body = external_jQuery_default()(document.body);
+>>>>>>> danhmuc_list
 =======
     this.ui = (external_jQuery_default()).summernote.ui;
     this.$body = external_jQuery_default()(document.body);
@@ -10601,7 +11725,11 @@ var HelpDialog = /*#__PURE__*/function () {
     value: function initialize() {
       var $container = this.options.dialogsInBody ? this.$body : this.options.container;
 <<<<<<< HEAD
+<<<<<<< HEAD
       var body = ['<p class="text-center">', '<a href="http://summernote.org/" target="_blank">Summernote 0.8.18</a> · ', '<a href="https://github.com/summernote/summernote" target="_blank">Project</a> · ', '<a href="https://github.com/summernote/summernote/issues" target="_blank">Issues</a>', '</p>'].join('');
+=======
+      var body = ['<p class="text-center">', '<a href="http://summernote.org/" target="_blank" rel="noopener noreferrer">Summernote 0.8.20</a> · ', '<a href="https://github.com/summernote/summernote" target="_blank" rel="noopener noreferrer">Project</a> · ', '<a href="https://github.com/summernote/summernote/issues" target="_blank" rel="noopener noreferrer">Issues</a>', '</p>'].join('');
+>>>>>>> danhmuc_list
 =======
       var body = ['<p class="text-center">', '<a href="http://summernote.org/" target="_blank" rel="noopener noreferrer">Summernote 0.8.20</a> · ', '<a href="https://github.com/summernote/summernote" target="_blank" rel="noopener noreferrer">Project</a> · ', '<a href="https://github.com/summernote/summernote/issues" target="_blank" rel="noopener noreferrer">Issues</a>', '</p>'].join('');
 >>>>>>> danhmuc_list
@@ -10633,17 +11761,23 @@ var HelpDialog = /*#__PURE__*/function () {
       return Object.keys(keyMap).map(function (key) {
         var command = keyMap[key];
 <<<<<<< HEAD
+<<<<<<< HEAD
         var $row = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<div><div class="help-list-item"></div></div>');
         $row.append(external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<label><kbd>' + key + '</kdb></label>').css({
           'width': 180,
           'margin-right': 10
         })).append(external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<span/>').html(_this.context.memo('help.' + command) || command));
 =======
+=======
+>>>>>>> danhmuc_list
         var $row = external_jQuery_default()('<div><div class="help-list-item"></div></div>');
         $row.append(external_jQuery_default()('<label><kbd>' + key + '</kdb></label>').css({
           'width': 180,
           'margin-right': 10
         })).append(external_jQuery_default()('<span></span>').html(_this.context.memo('help.' + command) || command));
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         return $row.html();
       }).join('');
@@ -10660,7 +11794,11 @@ var HelpDialog = /*#__PURE__*/function () {
       var _this2 = this;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       return external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.Deferred(function (deferred) {
+=======
+      return external_jQuery_default().Deferred(function (deferred) {
+>>>>>>> danhmuc_list
 =======
       return external_jQuery_default().Deferred(function (deferred) {
 >>>>>>> danhmuc_list
@@ -10690,7 +11828,11 @@ var HelpDialog = /*#__PURE__*/function () {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/module/AirPopover.js
+=======
+;// CONCATENATED MODULE: ./src/js/module/AirPopover.js
+>>>>>>> danhmuc_list
 =======
 ;// CONCATENATED MODULE: ./src/js/module/AirPopover.js
 >>>>>>> danhmuc_list
@@ -10706,7 +11848,11 @@ var AIRMODE_POPOVER_X_OFFSET = -5;
 var AIRMODE_POPOVER_Y_OFFSET = 5;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 var AirPopover_AirPopover = /*#__PURE__*/function () {
+=======
+var AirPopover = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
 =======
 var AirPopover = /*#__PURE__*/function () {
 >>>>>>> danhmuc_list
@@ -10717,7 +11863,11 @@ var AirPopover = /*#__PURE__*/function () {
 
     this.context = context;
 <<<<<<< HEAD
+<<<<<<< HEAD
     this.ui = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.ui;
+=======
+    this.ui = (external_jQuery_default()).summernote.ui;
+>>>>>>> danhmuc_list
 =======
     this.ui = (external_jQuery_default()).summernote.ui;
 >>>>>>> danhmuc_list
@@ -10801,7 +11951,11 @@ var AirPopover = /*#__PURE__*/function () {
           top: this.pageY
         };
 <<<<<<< HEAD
+<<<<<<< HEAD
         var containerOffset = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(this.options.container).offset();
+=======
+        var containerOffset = external_jQuery_default()(this.options.container).offset();
+>>>>>>> danhmuc_list
 =======
         var containerOffset = external_jQuery_default()(this.options.container).offset();
 >>>>>>> danhmuc_list
@@ -10840,7 +11994,11 @@ var AirPopover = /*#__PURE__*/function () {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/module/HintPopover.js
+=======
+;// CONCATENATED MODULE: ./src/js/module/HintPopover.js
+>>>>>>> danhmuc_list
 =======
 ;// CONCATENATED MODULE: ./src/js/module/HintPopover.js
 >>>>>>> danhmuc_list
@@ -10859,7 +12017,11 @@ function HintPopover_createClass(Constructor, protoProps, staticProps) { if (pro
 var POPOVER_DIST = 5;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 var HintPopover_HintPopover = /*#__PURE__*/function () {
+=======
+var HintPopover = /*#__PURE__*/function () {
+>>>>>>> danhmuc_list
 =======
 var HintPopover = /*#__PURE__*/function () {
 >>>>>>> danhmuc_list
@@ -10870,7 +12032,11 @@ var HintPopover = /*#__PURE__*/function () {
 
     this.context = context;
 <<<<<<< HEAD
+<<<<<<< HEAD
     this.ui = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.ui;
+=======
+    this.ui = (external_jQuery_default()).summernote.ui;
+>>>>>>> danhmuc_list
 =======
     this.ui = (external_jQuery_default()).summernote.ui;
 >>>>>>> danhmuc_list
@@ -10917,7 +12083,11 @@ var HintPopover = /*#__PURE__*/function () {
         _this2.$content.find('.active').removeClass('active');
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(e.currentTarget).addClass('active');
+=======
+        external_jQuery_default()(e.currentTarget).addClass('active');
+>>>>>>> danhmuc_list
 =======
         external_jQuery_default()(e.currentTarget).addClass('active');
 >>>>>>> danhmuc_list
@@ -10999,7 +12169,11 @@ var HintPopover = /*#__PURE__*/function () {
         if (this.options.hintSelect === 'next') {
           var blank = document.createTextNode('');
 <<<<<<< HEAD
+<<<<<<< HEAD
           external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(node).after(blank);
+=======
+          external_jQuery_default()(node).after(blank);
+>>>>>>> danhmuc_list
 =======
           external_jQuery_default()(node).after(blank);
 >>>>>>> danhmuc_list
@@ -11012,6 +12186,10 @@ var HintPopover = /*#__PURE__*/function () {
         this.hide();
         this.context.invoke('editor.focus');
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        this.context.triggerEvent('change', this.$editable.html(), this.$editable);
+>>>>>>> danhmuc_list
 =======
         this.context.triggerEvent('change', this.$editable.html(), this.$editable);
 >>>>>>> danhmuc_list
@@ -11038,7 +12216,11 @@ var HintPopover = /*#__PURE__*/function () {
       /*, idx */
       ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         var $item = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<div class="note-hint-item"/>');
+=======
+        var $item = external_jQuery_default()('<div class="note-hint-item"></div>');
+>>>>>>> danhmuc_list
 =======
         var $item = external_jQuery_default()('<div class="note-hint-item"></div>');
 >>>>>>> danhmuc_list
@@ -11058,6 +12240,7 @@ var HintPopover = /*#__PURE__*/function () {
       }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       if (e.keyCode === core_key.code.ENTER) {
         e.preventDefault();
         this.replace();
@@ -11066,6 +12249,8 @@ var HintPopover = /*#__PURE__*/function () {
         this.moveUp();
       } else if (e.keyCode === core_key.code.DOWN) {
 =======
+=======
+>>>>>>> danhmuc_list
       if (e.keyCode === key.code.ENTER) {
         e.preventDefault();
         this.replace();
@@ -11073,6 +12258,9 @@ var HintPopover = /*#__PURE__*/function () {
         e.preventDefault();
         this.moveUp();
       } else if (e.keyCode === key.code.DOWN) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         e.preventDefault();
         this.moveDown();
@@ -11097,7 +12285,11 @@ var HintPopover = /*#__PURE__*/function () {
       var _this3 = this;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       var $group = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<div class="note-hint-group note-hint-group-' + idx + '"></div>');
+=======
+      var $group = external_jQuery_default()('<div class="note-hint-group note-hint-group-' + idx + '"></div>');
+>>>>>>> danhmuc_list
 =======
       var $group = external_jQuery_default()('<div class="note-hint-group note-hint-group-' + idx + '"></div>');
 >>>>>>> danhmuc_list
@@ -11118,7 +12310,11 @@ var HintPopover = /*#__PURE__*/function () {
       var _this4 = this;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       if (!lists.contains([core_key.code.ENTER, core_key.code.UP, core_key.code.DOWN], e.keyCode)) {
+=======
+      if (!lists.contains([key.code.ENTER, key.code.UP, key.code.DOWN], e.keyCode)) {
+>>>>>>> danhmuc_list
 =======
       if (!lists.contains([key.code.ENTER, key.code.UP, key.code.DOWN], e.keyCode)) {
 >>>>>>> danhmuc_list
@@ -11151,7 +12347,11 @@ var HintPopover = /*#__PURE__*/function () {
           this.$content.empty();
           var bnd = func.rect2bnd(lists.last(wordRange.getClientRects()));
 <<<<<<< HEAD
+<<<<<<< HEAD
           var containerOffset = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(this.options.container).offset();
+=======
+          var containerOffset = external_jQuery_default()(this.options.container).offset();
+>>>>>>> danhmuc_list
 =======
           var containerOffset = external_jQuery_default()(this.options.container).offset();
 >>>>>>> danhmuc_list
@@ -11203,7 +12403,11 @@ var HintPopover = /*#__PURE__*/function () {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // CONCATENATED MODULE: ./src/js/base/settings.js
+=======
+;// CONCATENATED MODULE: ./src/js/settings.js
+>>>>>>> danhmuc_list
 =======
 ;// CONCATENATED MODULE: ./src/js/settings.js
 >>>>>>> danhmuc_list
@@ -11236,8 +12440,13 @@ var HintPopover = /*#__PURE__*/function () {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.extend(external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote, {
   version: '0.8.18',
+=======
+(external_jQuery_default()).summernote = external_jQuery_default().extend((external_jQuery_default()).summernote, {
+  version: '0.8.20',
+>>>>>>> danhmuc_list
 =======
 (external_jQuery_default()).summernote = external_jQuery_default().extend((external_jQuery_default()).summernote, {
   version: '0.8.20',
@@ -11247,6 +12456,7 @@ external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summe
   range: range,
   lists: lists,
   options: {
+<<<<<<< HEAD
 <<<<<<< HEAD
     langInfo: external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.lang['en-US'],
     editing: true,
@@ -11276,6 +12486,8 @@ external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summe
       'helpDialog': HelpDialog_HelpDialog,
       'airPopover': AirPopover_AirPopover
 =======
+=======
+>>>>>>> danhmuc_list
     langInfo: (external_jQuery_default()).summernote.lang["en-US"],
     editing: true,
     modules: {
@@ -11303,6 +12515,9 @@ external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summe
       'videoDialog': VideoDialog,
       'helpDialog': HelpDialog,
       'airPopover': AirPopover
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     },
     buttons: {},
@@ -11378,6 +12593,10 @@ external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summe
     dialogsFade: false,
     maximumImageFileSize: null,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    acceptImageFileTypes: "image/*",
+>>>>>>> danhmuc_list
 =======
     acceptImageFileTypes: "image/*",
 >>>>>>> danhmuc_list
@@ -11407,17 +12626,23 @@ external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summe
       lineNumbers: true
     },
 <<<<<<< HEAD
+<<<<<<< HEAD
     codeviewFilter: false,
     codeviewFilterRegex: /<\/*(?:applet|b(?:ase|gsound|link)|embed|frame(?:set)?|ilayer|l(?:ayer|ink)|meta|object|s(?:cript|tyle)|t(?:itle|extarea)|xml)[^>]*?>/gi,
     codeviewIframeFilter: true,
     codeviewIframeWhitelistSrc: [],
     codeviewIframeWhitelistSrcBase: ['www.youtube.com', 'www.youtube-nocookie.com', 'www.facebook.com', 'vine.co', 'instagram.com', 'player.vimeo.com', 'www.dailymotion.com', 'player.youku.com', 'v.qq.com'],
 =======
+=======
+>>>>>>> danhmuc_list
     codeviewFilter: true,
     codeviewFilterRegex: /<\/*(?:applet|b(?:ase|gsound|link)|embed|frame(?:set)?|ilayer|l(?:ayer|ink)|meta|object|s(?:cript|tyle)|t(?:itle|extarea)|xml)[^>]*?>/gi,
     codeviewIframeFilter: true,
     codeviewIframeWhitelistSrc: [],
     codeviewIframeWhitelistSrcBase: ['www.youtube.com', 'www.youtube-nocookie.com', 'www.facebook.com', 'vine.co', 'instagram.com', 'player.vimeo.com', 'www.dailymotion.com', 'player.youku.com', 'jumpingbean.tv', 'v.qq.com'],
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     keyMap: {
       pc: {
@@ -11533,6 +12758,7 @@ external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summe
   }
 });
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 /***/ }),
 
@@ -11577,6 +12803,8 @@ var dropdown = renderer["a" /* default */].create('<ul class="note-dropdown-menu
     var content = options.template ? options.template(item) : item;
     var option = _typeof(item) === 'object' ? item.option : undefined;
 =======
+=======
+>>>>>>> danhmuc_list
 ;// CONCATENATED MODULE: ./src/js/renderer.js
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -11682,6 +12910,9 @@ var dropdown = renderer.create('<ul class="note-dropdown-menu dropdown-menu"></u
     var value = typeof item === 'string' ? item : item.value || '';
     var content = options.template ? options.template(item) : item;
     var option = summernote_bs3_typeof(item) === 'object' ? item.option : undefined;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     var dataValue = 'data-value="' + value + '"';
     var dataOption = option !== undefined ? ' data-option="' + option + '"' : '';
@@ -11701,7 +12932,11 @@ var dropdownButtonContents = function dropdownButtonContents(contents, options) 
 };
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 var dropdownCheck = renderer["a" /* default */].create('<ul class="note-dropdown-menu dropdown-menu note-check">', function ($node, options) {
+=======
+var dropdownCheck = renderer.create('<ul class="note-dropdown-menu dropdown-menu note-check"></ul>', function ($node, options) {
+>>>>>>> danhmuc_list
 =======
 var dropdownCheck = renderer.create('<ul class="note-dropdown-menu dropdown-menu note-check"></ul>', function ($node, options) {
 >>>>>>> danhmuc_list
@@ -11719,7 +12954,11 @@ var dropdownCheck = renderer.create('<ul class="note-dropdown-menu dropdown-menu
   }
 });
 <<<<<<< HEAD
+<<<<<<< HEAD
 var dialog = renderer["a" /* default */].create('<div class="modal note-modal" aria-hidden="false" tabindex="-1" role="dialog"/>', function ($node, options) {
+=======
+var dialog = renderer.create('<div class="modal note-modal" aria-hidden="false" tabindex="-1" role="dialog"></div>', function ($node, options) {
+>>>>>>> danhmuc_list
 =======
 var dialog = renderer.create('<div class="modal note-modal" aria-hidden="false" tabindex="-1" role="dialog"></div>', function ($node, options) {
 >>>>>>> danhmuc_list
@@ -11733,7 +12972,11 @@ var dialog = renderer.create('<div class="modal note-modal" aria-hidden="false" 
   $node.html(['<div class="modal-dialog">', '<div class="modal-content">', options.title ? '<div class="modal-header">' + '<button type="button" class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true">&times;</button>' + '<h4 class="modal-title">' + options.title + '</h4>' + '</div>' : '', '<div class="modal-body">' + options.body + '</div>', options.footer ? '<div class="modal-footer">' + options.footer + '</div>' : '', '</div>', '</div>'].join(''));
 });
 <<<<<<< HEAD
+<<<<<<< HEAD
 var popover = renderer["a" /* default */].create(['<div class="note-popover popover in">', '<div class="arrow"></div>', '<div class="popover-content note-children-container"></div>', '</div>'].join(''), function ($node, options) {
+=======
+var popover = renderer.create(['<div class="note-popover popover in">', '<div class="arrow"></div>', '<div class="popover-content note-children-container"></div>', '</div>'].join(''), function ($node, options) {
+>>>>>>> danhmuc_list
 =======
 var popover = renderer.create(['<div class="note-popover popover in">', '<div class="arrow"></div>', '<div class="popover-content note-children-container"></div>', '</div>'].join(''), function ($node, options) {
 >>>>>>> danhmuc_list
@@ -11745,7 +12988,11 @@ var popover = renderer.create(['<div class="note-popover popover in">', '<div cl
   }
 });
 <<<<<<< HEAD
+<<<<<<< HEAD
 var ui_checkbox = renderer["a" /* default */].create('<div class="checkbox"></div>', function ($node, options) {
+=======
+var summernote_bs3_checkbox = renderer.create('<div class="checkbox"></div>', function ($node, options) {
+>>>>>>> danhmuc_list
 =======
 var summernote_bs3_checkbox = renderer.create('<div class="checkbox"></div>', function ($node, options) {
 >>>>>>> danhmuc_list
@@ -11754,18 +13001,28 @@ var summernote_bs3_checkbox = renderer.create('<div class="checkbox"></div>', fu
 
 var icon = function icon(iconClassName, tagName) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
   if (iconClassName.match(/^</)) {
     return iconClassName;
   }
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   tagName = tagName || 'i';
   return '<' + tagName + ' class="' + iconClassName + '"></' + tagName + '>';
 };
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 var ui_ui = function ui(editorOptions) {
+=======
+var ui = function ui(editorOptions) {
+>>>>>>> danhmuc_list
 =======
 var ui = function ui(editorOptions) {
 >>>>>>> danhmuc_list
@@ -11785,17 +13042,23 @@ var ui = function ui(editorOptions) {
     dialog: dialog,
     popover: popover,
 <<<<<<< HEAD
+<<<<<<< HEAD
     checkbox: ui_checkbox,
     icon: icon,
     options: editorOptions,
     palette: function palette($node, options) {
       return renderer["a" /* default */].create('<div class="note-color-palette"/>', function ($node, options) {
 =======
+=======
+>>>>>>> danhmuc_list
     checkbox: summernote_bs3_checkbox,
     icon: icon,
     options: editorOptions,
     palette: function palette($node, options) {
       return renderer.create('<div class="note-color-palette"></div>', function ($node, options) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         var contents = [];
 
@@ -11827,7 +13090,11 @@ var ui = function ui(editorOptions) {
     },
     button: function button($node, options) {
 <<<<<<< HEAD
+<<<<<<< HEAD
       return renderer["a" /* default */].create('<button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1">', function ($node, options) {
+=======
+      return renderer.create('<button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1"></button>', function ($node, options) {
+>>>>>>> danhmuc_list
 =======
       return renderer.create('<button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1"></button>', function ($node, options) {
 >>>>>>> danhmuc_list
@@ -11841,7 +13108,11 @@ var ui = function ui(editorOptions) {
             placement: 'bottom'
           }).on('click', function (e) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(e.currentTarget).tooltip('hide');
+=======
+            external_jQuery_default()(e.currentTarget).tooltip('hide');
+>>>>>>> danhmuc_list
 =======
             external_jQuery_default()(e.currentTarget).tooltip('hide');
 >>>>>>> danhmuc_list
@@ -11894,6 +13165,7 @@ var ui = function ui(editorOptions) {
 };
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* harmony default export */ var bs3_ui = (ui_ui);
 // EXTERNAL MODULE: ./src/js/base/settings.js + 37 modules
 var settings = __webpack_require__(3);
@@ -11915,6 +13187,8 @@ external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summe
 
 /******/ });
 =======
+=======
+>>>>>>> danhmuc_list
 (external_jQuery_default()).summernote = external_jQuery_default().extend((external_jQuery_default()).summernote, {
   ui_template: ui,
   "interface": 'bs3'
@@ -11924,6 +13198,9 @@ external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summe
 /******/ 	return __webpack_exports__;
 /******/ })()
 ;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 });
 //# sourceMappingURL=summernote.js.map

@@ -8,7 +8,10 @@ FullCalendar.globalLocales.push(function () {
       doy: 4, // The week that contains Jan 4th is the first week of the year.
     },
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
     buttonHints: {
       prev: 'Previous $0',
       next: 'Next $0',
@@ -19,6 +22,9 @@ FullCalendar.globalLocales.push(function () {
     moreLinkHint(eventCnt) {
       return `Show ${eventCnt} more event${eventCnt === 1 ? '' : 's'}`
     },
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   };
 

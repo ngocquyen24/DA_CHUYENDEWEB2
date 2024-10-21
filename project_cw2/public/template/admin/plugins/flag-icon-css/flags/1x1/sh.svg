@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <svg xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-sh" viewBox="0 0 512 512">
   <defs>
     <clipPath id="a">
@@ -80,6 +81,8 @@
     <path fill="none" stroke="#000" stroke-width=".3" d="M399.7 640.8c0 16.3-2.6 33.9-23.8 42.3-21.1-8.4-23.7-26-23.8-42.3h47.6zm0 0c0-6.2-.3-12.2-.2-17.4a63.6 63.6 0 00-23.6-4.3c-5.3 0-15.7.8-23.6 4.3.2 5.2-.2 11.2-.2 17.4h47.6z" transform="matrix(4.9436 0 0 4.9441 -1482.9 -2891.1)"/>
   </g>
 =======
+=======
+>>>>>>> danhmuc_list
 <svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-sh" viewBox="0 0 512 512">
   <defs id="defs361">
     <clipPath id="sh-a">
@@ -160,5 +163,8 @@
   <path id="path799" fill="#c8102e" d="m92 162 5.5 17L21 256H0v-1.5zm62-6 27 4 75 73.5V256ZM256 0l-96 98-2-22 75-76ZM0 .5 96.5 95 67 91 0 24.5Z" style="stroke-width:.5"/>
   <path id="path801" fill="#fff" d="M88 0v256h80V0ZM0 88v80h256V88Z" style="stroke-width:.5"/>
   <path id="path803" fill="#c8102e" d="M0 104v48h256v-48ZM104 0v256h48V0Z" style="stroke-width:.5"/>
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 </svg>

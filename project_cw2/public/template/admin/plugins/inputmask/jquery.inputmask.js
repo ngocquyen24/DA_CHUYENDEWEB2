@@ -2,6 +2,7 @@
  * dist/jquery.inputmask
  * https://github.com/RobinHerbots/Inputmask
 <<<<<<< HEAD
+<<<<<<< HEAD
  * Copyright (c) 2010 - 2020 Robin Herbots
  * Licensed under the MIT license
  * Version: 5.0.5-beta.0
@@ -2952,6 +2953,8 @@
     var modules, installedModules;
 });
 =======
+=======
+>>>>>>> danhmuc_list
  * Copyright (c) 2010 - 2021 Robin Herbots
  * Licensed under the MIT license
  * Version: 5.0.7
@@ -5933,5 +5936,9 @@
             e.default = r;
         }(), n;
     }();
+<<<<<<< HEAD
+}));
+>>>>>>> danhmuc_list
+=======
 }));
 >>>>>>> danhmuc_list

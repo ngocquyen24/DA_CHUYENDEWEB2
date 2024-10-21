@@ -32,6 +32,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     |            "postmark", "log", "array", "failover"
 =======
     |            "postmark", "log", "array"
@@ -39,6 +40,9 @@ return [
 =======
     |            "postmark", "log", "array", "failover"
 >>>>>>> Login_Register
+=======
+    |            "postmark", "log", "array", "failover"
+>>>>>>> danhmuc_list
 =======
     |            "postmark", "log", "array", "failover"
 >>>>>>> danhmuc_list
@@ -55,7 +59,11 @@ return [
             'password' => env('MAIL_PASSWORD'),
             'timeout' => null,
 <<<<<<< HEAD
+<<<<<<< HEAD
             'auth_mode' => null,
+=======
+            'local_domain' => env('MAIL_EHLO_DOMAIN'),
+>>>>>>> danhmuc_list
 =======
             'local_domain' => env('MAIL_EHLO_DOMAIN'),
 >>>>>>> danhmuc_list
@@ -68,6 +76,12 @@ return [
         'mailgun' => [
             'transport' => 'mailgun',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            // 'client' => [
+            //     'timeout' => 5,
+            // ],
+>>>>>>> danhmuc_list
 =======
             // 'client' => [
             //     'timeout' => 5,
@@ -78,6 +92,12 @@ return [
         'postmark' => [
             'transport' => 'postmark',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            // 'client' => [
+            //     'timeout' => 5,
+            // ],
+>>>>>>> danhmuc_list
 =======
             // 'client' => [
             //     'timeout' => 5,
@@ -90,6 +110,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'path' => env('MAIL_SENDMAIL_PATH', '/usr/sbin/sendmail -t -i'),
 =======
             'path' => '/usr/sbin/sendmail -bs',
@@ -97,6 +118,9 @@ return [
 =======
             'path' => env('MAIL_SENDMAIL_PATH', '/usr/sbin/sendmail -t -i'),
 >>>>>>> Login_Register
+=======
+            'path' => env('MAIL_SENDMAIL_PATH', '/usr/sbin/sendmail -bs -i'),
+>>>>>>> danhmuc_list
 =======
             'path' => env('MAIL_SENDMAIL_PATH', '/usr/sbin/sendmail -bs -i'),
 >>>>>>> danhmuc_list
@@ -113,8 +137,11 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Login_Register
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 
@@ -127,10 +154,13 @@ return [
         ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> origin/them_slide
 =======
 >>>>>>> Login_Register
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
     ],

@@ -1,5 +1,6 @@
 .swal2-popup.swal2-toast {
 <<<<<<< HEAD
+<<<<<<< HEAD
   flex-direction: row;
   align-items: center;
   width: auto;
@@ -17,6 +18,8 @@
   justify-content: flex-start;
   margin: 0 0.6em;
 =======
+=======
+>>>>>>> danhmuc_list
   box-sizing: border-box;
   grid-column: 1/4 !important;
   grid-row: 1/4 !important;
@@ -45,6 +48,9 @@
   font-size: 1em;
 }
 .swal2-popup.swal2-toast .swal2-validation-message {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   font-size: 1em;
 }
@@ -54,6 +60,7 @@
   font-size: 0.8em;
 }
 .swal2-popup.swal2-toast .swal2-close {
+<<<<<<< HEAD
 <<<<<<< HEAD
   position: static;
   width: 0.8em;
@@ -71,6 +78,8 @@
   height: 2em;
   margin: 0;
 =======
+=======
+>>>>>>> danhmuc_list
   grid-column: 3/3;
   grid-row: 1/99;
   align-self: center;
@@ -104,6 +113,9 @@
   min-width: 2em;
   height: 2em;
   margin: 0 0.5em 0 0;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 }
 .swal2-popup.swal2-toast .swal2-icon .swal2-icon-content {
@@ -113,11 +125,14 @@
   font-weight: bold;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .swal2-popup.swal2-toast .swal2-icon .swal2-icon-content {
     font-size: 0.25em;
   }
 }
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 .swal2-popup.swal2-toast .swal2-icon.swal2-success .swal2-success-ring {
@@ -136,6 +151,7 @@
 }
 .swal2-popup.swal2-toast .swal2-actions {
 <<<<<<< HEAD
+<<<<<<< HEAD
   flex-basis: auto !important;
   width: auto;
   height: auto;
@@ -151,6 +167,8 @@
   box-shadow: 0 0 0 1px #fff, 0 0 0 3px rgba(100, 150, 200, 0.5);
 }
 =======
+=======
+>>>>>>> danhmuc_list
   justify-content: flex-start;
   height: auto;
   margin: 0;
@@ -162,6 +180,9 @@
   padding: 0.4em 0.6em;
   font-size: 1em;
 }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 .swal2-popup.swal2-toast .swal2-success {
   border-color: #a5dc86;
@@ -228,7 +249,11 @@
 
 .swal2-container {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: flex;
+=======
+  display: grid;
+>>>>>>> danhmuc_list
 =======
   display: grid;
 >>>>>>> danhmuc_list
@@ -239,15 +264,21 @@
   bottom: 0;
   left: 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
   flex-direction: row;
   align-items: center;
   justify-content: center;
 =======
+=======
+>>>>>>> danhmuc_list
   box-sizing: border-box;
   grid-template-areas: "top-start     top            top-end" "center-start  center         center-end" "bottom-start  bottom-center  bottom-end";
   grid-template-rows: minmax(-webkit-min-content, auto) minmax(-webkit-min-content, auto) minmax(-webkit-min-content, auto);
   grid-template-rows: minmax(min-content, auto) minmax(min-content, auto) minmax(min-content, auto);
   height: 100%;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   padding: 0.625em;
   overflow-x: hidden;
@@ -260,6 +291,7 @@
 .swal2-container.swal2-backdrop-hide {
   background: transparent !important;
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 .swal2-container.swal2-top {
   align-items: flex-start;
@@ -328,6 +360,8 @@
   align-content: center;
   justify-content: center;
 =======
+=======
+>>>>>>> danhmuc_list
 .swal2-container.swal2-top-start, .swal2-container.swal2-center-start, .swal2-container.swal2-bottom-start {
   grid-template-columns: minmax(0, 1fr) auto auto;
 }
@@ -390,11 +424,15 @@
 .swal2-container.swal2-grow-column > .swal2-popup, .swal2-container.swal2-grow-fullscreen > .swal2-popup {
   grid-row: 1/4;
   align-self: stretch;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 }
 .swal2-container.swal2-no-transition {
   transition: none !important;
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 .swal2-container:not(.swal2-top):not(.swal2-top-start):not(.swal2-top-end):not(.swal2-top-left):not(.swal2-top-right):not(.swal2-center-start):not(.swal2-center-end):not(.swal2-center-left):not(.swal2-center-right):not(.swal2-bottom):not(.swal2-bottom-start):not(.swal2-bottom-end):not(.swal2-bottom-left):not(.swal2-bottom-right):not(.swal2-grow-fullscreen) > .swal2-modal {
   margin: auto;
@@ -406,11 +444,14 @@
 }
 =======
 >>>>>>> danhmuc_list
+=======
+>>>>>>> danhmuc_list
 
 .swal2-popup {
   display: none;
   position: relative;
   box-sizing: border-box;
+<<<<<<< HEAD
 <<<<<<< HEAD
   flex-direction: column;
   justify-content: center;
@@ -421,6 +462,8 @@
   border-radius: 5px;
   background: #fff;
 =======
+=======
+>>>>>>> danhmuc_list
   grid-template-columns: minmax(0, 100%);
   width: 32em;
   max-width: 100%;
@@ -429,6 +472,9 @@
   border-radius: 5px;
   background: #fff;
   color: #545454;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   font-family: inherit;
   font-size: 1rem;
@@ -440,6 +486,7 @@
   overflow-y: hidden;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 .swal2-header {
   display: flex;
@@ -455,12 +502,17 @@
   padding: 0;
   color: #595959;
 =======
+=======
+>>>>>>> danhmuc_list
 .swal2-title {
   position: relative;
   max-width: 100%;
   margin: 0;
   padding: 0.8em 1em 0;
   color: inherit;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   font-size: 1.875em;
   font-weight: 600;
@@ -477,9 +529,15 @@
   align-items: center;
   justify-content: center;
 <<<<<<< HEAD
+<<<<<<< HEAD
   width: 100%;
   margin: 1.25em auto 0;
   padding: 0 1.6em;
+=======
+  width: auto;
+  margin: 1.25em auto 0;
+  padding: 0;
+>>>>>>> danhmuc_list
 =======
   width: auto;
   margin: 1.25em auto 0;
@@ -515,7 +573,12 @@
   margin: 0.3125em;
   padding: 0.625em 1.1em;
 <<<<<<< HEAD
+<<<<<<< HEAD
   box-shadow: none;
+=======
+  transition: box-shadow 0.1s;
+  box-shadow: 0 0 0 3px transparent;
+>>>>>>> danhmuc_list
 =======
   transition: box-shadow 0.1s;
   box-shadow: 0 0 0 3px transparent;
@@ -530,16 +593,22 @@
   border-radius: 0.25em;
   background: initial;
 <<<<<<< HEAD
+<<<<<<< HEAD
   background-color: #2778c4;
   color: #fff;
   font-size: 1.0625em;
 =======
+=======
+>>>>>>> danhmuc_list
   background-color: #7066e0;
   color: #fff;
   font-size: 1em;
 }
 .swal2-styled.swal2-confirm:focus {
   box-shadow: 0 0 0 3px rgba(112, 102, 224, 0.5);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 }
 .swal2-styled.swal2-deny {
@@ -547,22 +616,29 @@
   border-radius: 0.25em;
   background: initial;
 <<<<<<< HEAD
+<<<<<<< HEAD
   background-color: #d14529;
   color: #fff;
   font-size: 1.0625em;
 =======
+=======
+>>>>>>> danhmuc_list
   background-color: #dc3741;
   color: #fff;
   font-size: 1em;
 }
 .swal2-styled.swal2-deny:focus {
   box-shadow: 0 0 0 3px rgba(220, 55, 65, 0.5);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 }
 .swal2-styled.swal2-cancel {
   border: 0;
   border-radius: 0.25em;
   background: initial;
+<<<<<<< HEAD
 <<<<<<< HEAD
   background-color: #757575;
   color: #fff;
@@ -572,6 +648,8 @@
   outline: none;
   box-shadow: 0 0 0 3px rgba(100, 150, 200, 0.5);
 =======
+=======
+>>>>>>> danhmuc_list
   background-color: #6e7881;
   color: #fff;
   font-size: 1em;
@@ -584,6 +662,9 @@
 }
 .swal2-styled:focus {
   outline: none;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 }
 .swal2-styled::-moz-focus-inner {
@@ -593,15 +674,21 @@
 .swal2-footer {
   justify-content: center;
 <<<<<<< HEAD
+<<<<<<< HEAD
   margin: 1.25em 0 0;
   padding: 1em 0 0;
   border-top: 1px solid #eee;
   color: #545454;
 =======
+=======
+>>>>>>> danhmuc_list
   margin: 1em 0 0;
   padding: 1em 1em 0;
   border-top: 1px solid #eee;
   color: inherit;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   font-size: 1em;
 }
@@ -612,7 +699,11 @@
   bottom: 0;
   left: 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
   height: 0.25em;
+=======
+  grid-column: auto !important;
+>>>>>>> danhmuc_list
 =======
   grid-column: auto !important;
 >>>>>>> danhmuc_list
@@ -630,6 +721,7 @@
 .swal2-image {
   max-width: 100%;
 <<<<<<< HEAD
+<<<<<<< HEAD
   margin: 1.25em auto;
 }
 
@@ -639,16 +731,22 @@
   top: 0;
   right: 0;
 =======
+=======
+>>>>>>> danhmuc_list
   margin: 2em auto 1em;
 }
 
 .swal2-close {
   z-index: 2;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   align-items: center;
   justify-content: center;
   width: 1.2em;
   height: 1.2em;
+<<<<<<< HEAD
 <<<<<<< HEAD
   padding: 0;
   overflow: hidden;
@@ -662,6 +760,8 @@
   line-height: 1.2;
   cursor: pointer;
 =======
+=======
+>>>>>>> danhmuc_list
   margin-top: 0;
   margin-right: 0;
   margin-bottom: -1.2em;
@@ -677,6 +777,9 @@
   font-size: 2.5em;
   cursor: pointer;
   justify-self: end;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 }
 .swal2-close:hover {
@@ -693,6 +796,7 @@
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .swal2-content {
   z-index: 1;
   justify-content: center;
@@ -700,6 +804,8 @@
   padding: 0 1.6em;
   color: #545454;
 =======
+=======
+>>>>>>> danhmuc_list
 .swal2-html-container {
   z-index: 1;
   justify-content: center;
@@ -707,6 +813,9 @@
   padding: 0;
   overflow: auto;
   color: inherit;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   font-size: 1.125em;
   font-weight: normal;
@@ -714,6 +823,10 @@
   text-align: center;
   word-wrap: break-word;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  word-break: break-word;
+>>>>>>> danhmuc_list
 =======
   word-break: break-word;
 >>>>>>> danhmuc_list
@@ -726,7 +839,11 @@
 .swal2-radio,
 .swal2-checkbox {
 <<<<<<< HEAD
+<<<<<<< HEAD
   margin: 1em auto;
+=======
+  margin: 1em 2em 3px;
+>>>>>>> danhmuc_list
 =======
   margin: 1em 2em 3px;
 >>>>>>> danhmuc_list
@@ -737,6 +854,7 @@
 .swal2-textarea {
   box-sizing: border-box;
 <<<<<<< HEAD
+<<<<<<< HEAD
   width: 100%;
   transition: border-color 0.3s, box-shadow 0.3s;
   border: 1px solid #d9d9d9;
@@ -744,12 +862,17 @@
   background: inherit;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.06);
 =======
+=======
+>>>>>>> danhmuc_list
   width: auto;
   transition: border-color 0.1s, box-shadow 0.1s;
   border: 1px solid #d9d9d9;
   border-radius: 0.1875em;
   background: inherit;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.06), 0 0 0 3px transparent;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   color: inherit;
   font-size: 1.125em;
@@ -766,6 +889,7 @@
   border: 1px solid #b4dbed;
   outline: none;
 <<<<<<< HEAD
+<<<<<<< HEAD
   box-shadow: 0 0 0 3px rgba(100, 150, 200, 0.5);
 }
 .swal2-input::-moz-placeholder, .swal2-file::-moz-placeholder, .swal2-textarea::-moz-placeholder {
@@ -774,6 +898,8 @@
 .swal2-input:-ms-input-placeholder, .swal2-file:-ms-input-placeholder, .swal2-textarea:-ms-input-placeholder {
   color: #cccccc;
 =======
+=======
+>>>>>>> danhmuc_list
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.06), 0 0 0 3px rgba(100, 150, 200, 0.5);
 }
 .swal2-input::-moz-placeholder, .swal2-file::-moz-placeholder, .swal2-textarea::-moz-placeholder {
@@ -781,11 +907,15 @@
 }
 .swal2-input:-ms-input-placeholder, .swal2-file:-ms-input-placeholder, .swal2-textarea:-ms-input-placeholder {
   color: #ccc;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 }
 .swal2-input::placeholder,
 .swal2-file::placeholder,
 .swal2-textarea::placeholder {
+<<<<<<< HEAD
 <<<<<<< HEAD
   color: #cccccc;
 }
@@ -793,11 +923,16 @@
 .swal2-range {
   margin: 1em auto;
 =======
+=======
+>>>>>>> danhmuc_list
   color: #ccc;
 }
 
 .swal2-range {
   margin: 1em 2em 3px;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   background: #fff;
 }
@@ -823,17 +958,23 @@
   padding: 0 0.75em;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 .swal2-input[type=number] {
   max-width: 10em;
 }
 
 .swal2-file {
 =======
+=======
+>>>>>>> danhmuc_list
 
 .swal2-file {
   width: 75%;
   margin-right: auto;
   margin-left: auto;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   background: inherit;
   font-size: 1.125em;
@@ -868,6 +1009,10 @@
 .swal2-radio input,
 .swal2-checkbox input {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  flex-shrink: 0;
+>>>>>>> danhmuc_list
 =======
   flex-shrink: 0;
 >>>>>>> danhmuc_list
@@ -878,7 +1023,11 @@
   display: flex;
   justify-content: center;
 <<<<<<< HEAD
+<<<<<<< HEAD
   margin: 1em auto;
+=======
+  margin: 1em auto 0;
+>>>>>>> danhmuc_list
 =======
   margin: 1em auto 0;
 >>>>>>> danhmuc_list
@@ -888,7 +1037,11 @@
   align-items: center;
   justify-content: center;
 <<<<<<< HEAD
+<<<<<<< HEAD
   margin: 0 -2.7em;
+=======
+  margin: 1em 0 0;
+>>>>>>> danhmuc_list
 =======
   margin: 1em 0 0;
 >>>>>>> danhmuc_list
@@ -921,7 +1074,11 @@
   width: 5em;
   height: 5em;
 <<<<<<< HEAD
+<<<<<<< HEAD
   margin: 1.25em auto 1.875em;
+=======
+  margin: 2.5em auto 0.6em;
+>>>>>>> danhmuc_list
 =======
   margin: 2.5em auto 0.6em;
 >>>>>>> danhmuc_list
@@ -979,7 +1136,10 @@
   color: #f8bb86;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 .swal2-icon.swal2-warning.swal2-icon-show {
   -webkit-animation: swal2-animate-error-icon 0.5s;
           animation: swal2-animate-error-icon 0.5s;
@@ -988,13 +1148,19 @@
   -webkit-animation: swal2-animate-i-mark 0.5s;
           animation: swal2-animate-i-mark 0.5s;
 }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 .swal2-icon.swal2-info {
   border-color: #9de0f6;
   color: #3fc3ee;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 .swal2-icon.swal2-info.swal2-icon-show {
   -webkit-animation: swal2-animate-error-icon 0.5s;
           animation: swal2-animate-error-icon 0.5s;
@@ -1003,13 +1169,19 @@
   -webkit-animation: swal2-animate-i-mark 0.8s;
           animation: swal2-animate-i-mark 0.8s;
 }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 .swal2-icon.swal2-question {
   border-color: #c9dae1;
   color: #87adbd;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 .swal2-icon.swal2-question.swal2-icon-show {
   -webkit-animation: swal2-animate-error-icon 0.5s;
           animation: swal2-animate-error-icon 0.5s;
@@ -1018,6 +1190,9 @@
   -webkit-animation: swal2-animate-question-mark 0.8s;
           animation: swal2-animate-question-mark 0.8s;
 }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 .swal2-icon.swal2-success {
   border-color: #a5dc86;
@@ -1102,7 +1277,11 @@
   align-items: center;
   max-width: 100%;
 <<<<<<< HEAD
+<<<<<<< HEAD
   margin: 0 0 1.25em;
+=======
+  margin: 1.25em auto;
+>>>>>>> danhmuc_list
 =======
   margin: 1.25em auto;
 >>>>>>> danhmuc_list
@@ -1172,8 +1351,13 @@
 
 .swal2-rtl .swal2-close {
 <<<<<<< HEAD
+<<<<<<< HEAD
   right: auto;
   left: 0;
+=======
+  margin-right: initial;
+  margin-left: 0;
+>>>>>>> danhmuc_list
 =======
   margin-right: initial;
   margin-left: 0;
@@ -1184,6 +1368,7 @@
   left: auto;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 @supports (-ms-accelerator: true) {
   .swal2-range input {
@@ -1203,6 +1388,8 @@
 }
 =======
 >>>>>>> danhmuc_list
+=======
+>>>>>>> danhmuc_list
 @-webkit-keyframes swal2-toast-show {
   0% {
     transform: translateY(-0.625em) rotateZ(2deg);
@@ -1218,6 +1405,10 @@
   }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> danhmuc_list
 =======
 
 >>>>>>> danhmuc_list
@@ -1598,7 +1789,10 @@
   }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 @-webkit-keyframes swal2-animate-question-mark {
   0% {
     transform: rotateY(-360deg);
@@ -1659,6 +1853,9 @@
     opacity: 1;
   }
 }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
   overflow: hidden;
@@ -1667,6 +1864,7 @@ body.swal2-height-auto {
   height: auto !important;
 }
 body.swal2-no-backdrop .swal2-container {
+<<<<<<< HEAD
 <<<<<<< HEAD
   top: auto;
   right: auto;
@@ -1720,6 +1918,8 @@ body.swal2-no-backdrop .swal2-container.swal2-bottom-end, body.swal2-no-backdrop
   bottom: 0;
 }
 =======
+=======
+>>>>>>> danhmuc_list
   background-color: transparent !important;
   pointer-events: none;
 }
@@ -1729,6 +1929,9 @@ body.swal2-no-backdrop .swal2-container .swal2-popup {
 body.swal2-no-backdrop .swal2-container .swal2-modal {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 @media print {
   body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
@@ -1743,13 +1946,19 @@ body.swal2-no-backdrop .swal2-container .swal2-modal {
 }
 body.swal2-toast-shown .swal2-container {
 <<<<<<< HEAD
+<<<<<<< HEAD
   background-color: transparent;
 =======
+=======
+>>>>>>> danhmuc_list
   box-sizing: border-box;
   width: 360px;
   max-width: 100%;
   background-color: transparent;
   pointer-events: none;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 }
 body.swal2-toast-shown .swal2-container.swal2-top {
@@ -1811,6 +2020,7 @@ body.swal2-toast-shown .swal2-container.swal2-bottom-end, body.swal2-toast-shown
   bottom: 0;
   left: auto;
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 body.swal2-toast-column .swal2-toast {
   flex-direction: column;
@@ -1832,6 +2042,8 @@ body.swal2-toast-column .swal2-toast .swal2-input {
 }
 body.swal2-toast-column .swal2-toast .swal2-validation-message {
   font-size: 1em;
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 }

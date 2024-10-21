@@ -184,10 +184,13 @@ div.dtr-bs-modal table.table tr:first-child td {
   border-top: none;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 table.dataTable.dtr-inline.collapsed.table-sm > tbody > tr > td:first-child:before,
 table.dataTable.dtr-inline.collapsed.table-sm > tbody > tr > th:first-child:before {
   top: 5px;
 }
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list

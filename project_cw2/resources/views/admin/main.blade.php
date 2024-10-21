@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,6 +31,8 @@
 
     @include('admin.sidebar')
 =======
+=======
+>>>>>>> danhmuc_list
 
 <!DOCTYPE html>
 <html lang="en">
@@ -65,11 +68,15 @@
   <!-- /.navbar -->
 
   @include('admin.sidebar')
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 
     <div class="content-wrapper">
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         <!-- Main content -->
         <section class="content">
@@ -115,6 +122,8 @@
 </div>
 <!-- ./wrapper -->
 =======
+=======
+>>>>>>> danhmuc_list
 
 
 
@@ -161,6 +170,9 @@
     </div>
 <!-- ./wrapper -->
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 @include('admin.footer')
 </body>

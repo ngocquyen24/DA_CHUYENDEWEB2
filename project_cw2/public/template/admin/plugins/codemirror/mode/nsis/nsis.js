@@ -25,6 +25,7 @@ CodeMirror.defineSimpleMode("nsis",{
 
     // Compile Time Commands
 <<<<<<< HEAD
+<<<<<<< HEAD
     {regex: /^\s*(?:\!(include|addincludedir|addplugindir|appendfile|cd|delfile|echo|error|execute|packhdr|pragma|finalize|getdllversion|gettlbversion|system|tempfile|warning|verbose|define|undef|insertmacro|macro|macroend|makensis|searchparse|searchreplace))\b/, token: "keyword"},
 
     // Conditional Compilation
@@ -62,6 +63,8 @@ CodeMirror.defineSimpleMode("nsis",{
     {regex: /\$\{(?:RunningX64)\}/, token: "variable", dedent: true},
     {regex: /\$\{(?:Disable|Enable)X64FSRedirection\}/, token: "variable-2", dedent: true},
 =======
+=======
+>>>>>>> danhmuc_list
     {regex: /^\s*(?:\!(addincludedir|addplugindir|appendfile|cd|define|delfile|echo|error|execute|finalize|getdllversion|gettlbversion|include|insertmacro|macro|macroend|makensis|packhdr|pragma|searchparse|searchreplace|system|tempfile|undef|uninstfinalize|verbose|warning))\b/i, token: "keyword"},
 
     // Conditional Compilation
@@ -98,6 +101,9 @@ CodeMirror.defineSimpleMode("nsis",{
     // x64.nsh
     {regex: /\$\{(?:RunningX64)\}/i, token: "variable", dedent: true},
     {regex: /\$\{(?:Disable|Enable)X64FSRedirection\}/i, token: "variable-2", dedent: true},
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
     // Line Comment
@@ -111,6 +117,7 @@ CodeMirror.defineSimpleMode("nsis",{
 
     // Variable
 <<<<<<< HEAD
+<<<<<<< HEAD
     {regex: /\$\w+/, token: "variable"},
 
     // Constant
@@ -119,6 +126,8 @@ CodeMirror.defineSimpleMode("nsis",{
     // Language String
     {regex: /\$\([\w\.:-]+\)/, token: "variable-3"}
 =======
+=======
+>>>>>>> danhmuc_list
     {regex: /\$\w[\w\.]*/, token: "variable"},
 
     // Constant
@@ -126,6 +135,9 @@ CodeMirror.defineSimpleMode("nsis",{
 
     // Language String
     {regex: /\$\([\!\w\.:-]+\)/, token: "variable-3"}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   ],
   comment: [
@@ -134,7 +146,11 @@ CodeMirror.defineSimpleMode("nsis",{
   ],
   meta: {
 <<<<<<< HEAD
+<<<<<<< HEAD
     electricInput: /^\s*((Function|PageEx|Section|Section(Group)?)End|(\!(endif|macroend))|\$\{(End(If|Unless|While)|Loop(Until)|Next)\})$/,
+=======
+    electricInput: /^\s*((Function|PageEx|Section|Section(Group)?)End|(\!(endif|macroend))|\$\{(End(If|Unless|While)|Loop(Until)|Next)\})$/i,
+>>>>>>> danhmuc_list
 =======
     electricInput: /^\s*((Function|PageEx|Section|Section(Group)?)End|(\!(endif|macroend))|\$\{(End(If|Unless|While)|Loop(Until)|Next)\})$/i,
 >>>>>>> danhmuc_list

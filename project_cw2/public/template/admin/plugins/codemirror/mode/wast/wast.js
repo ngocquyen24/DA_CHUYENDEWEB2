@@ -19,6 +19,11 @@ var kKeywords = [
     "current_memory",
     "\\bdata\\b",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    "catch(_all)?",
+    "delegate",
+>>>>>>> danhmuc_list
 =======
     "catch(_all)?",
     "delegate",
@@ -42,6 +47,10 @@ var kKeywords = [
     "param",
     "result",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    "rethrow",
+>>>>>>> danhmuc_list
 =======
     "rethrow",
 >>>>>>> danhmuc_list
@@ -51,14 +60,20 @@ var kKeywords = [
     "table(\\.(size|get|set|size|grow|fill|init|copy))?",
     "then",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "type",
     "unreachable",
 =======
+=======
+>>>>>>> danhmuc_list
     "throw",
     "try",
     "type",
     "unreachable",
     "unwind",
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
     // Numeric opcodes.

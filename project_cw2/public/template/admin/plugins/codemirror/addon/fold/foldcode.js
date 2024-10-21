@@ -25,15 +25,21 @@
       var range = finder(cm, pos);
       if (!range || range.to.line - range.from.line < minSize) return null;
 <<<<<<< HEAD
+<<<<<<< HEAD
       var marks = cm.findMarksAt(range.from);
       for (var i = 0; i < marks.length; ++i) {
         if (marks[i].__isFold && force !== "fold") {
 =======
+=======
+>>>>>>> danhmuc_list
       if (force === "fold") return range;
 
       var marks = cm.findMarksAt(range.from);
       for (var i = 0; i < marks.length; ++i) {
         if (marks[i].__isFold) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
           if (!allowFolded) return null;
           range.cleared = true;
@@ -108,7 +114,11 @@
   };
   CodeMirror.commands.unfold = function(cm) {
 <<<<<<< HEAD
+<<<<<<< HEAD
     cm.foldCode(cm.getCursor(), null, "unfold");
+=======
+    cm.foldCode(cm.getCursor(), { scanUp: false }, "unfold");
+>>>>>>> danhmuc_list
 =======
     cm.foldCode(cm.getCursor(), { scanUp: false }, "unfold");
 >>>>>>> danhmuc_list
@@ -117,7 +127,11 @@
     cm.operation(function() {
       for (var i = cm.firstLine(), e = cm.lastLine(); i <= e; i++)
 <<<<<<< HEAD
+<<<<<<< HEAD
         cm.foldCode(CodeMirror.Pos(i, 0), null, "fold");
+=======
+        cm.foldCode(CodeMirror.Pos(i, 0), { scanUp: false }, "fold");
+>>>>>>> danhmuc_list
 =======
         cm.foldCode(CodeMirror.Pos(i, 0), { scanUp: false }, "fold");
 >>>>>>> danhmuc_list
@@ -127,7 +141,11 @@
     cm.operation(function() {
       for (var i = cm.firstLine(), e = cm.lastLine(); i <= e; i++)
 <<<<<<< HEAD
+<<<<<<< HEAD
         cm.foldCode(CodeMirror.Pos(i, 0), null, "unfold");
+=======
+        cm.foldCode(CodeMirror.Pos(i, 0), { scanUp: false }, "unfold");
+>>>>>>> danhmuc_list
 =======
         cm.foldCode(CodeMirror.Pos(i, 0), { scanUp: false }, "unfold");
 >>>>>>> danhmuc_list

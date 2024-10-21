@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*! DataTables 1.10.24
+=======
+/*! DataTables 1.11.4
+>>>>>>> danhmuc_list
 =======
 /*! DataTables 1.11.4
 >>>>>>> danhmuc_list
@@ -10,7 +14,11 @@
  * @summary     DataTables
  * @description Paginate, search and order HTML tables
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @version     1.10.24
+=======
+ * @version     1.11.4
+>>>>>>> danhmuc_list
 =======
  * @version     1.11.4
 >>>>>>> danhmuc_list
@@ -62,7 +70,11 @@
 	else {
 		// Browser
 <<<<<<< HEAD
+<<<<<<< HEAD
 		factory( jQuery, window, document );
+=======
+		window.DataTable = factory( jQuery, window, document );
+>>>>>>> danhmuc_list
 =======
 		window.DataTable = factory( jQuery, window, document );
 >>>>>>> danhmuc_list
@@ -104,9 +116,12 @@
 	 *    } );
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	var DataTable = function ( options )
 	{
 =======
+=======
+>>>>>>> danhmuc_list
 	var DataTable = function ( selector, options )
 	{
 		// When creating with `new`, create a new DataTable, returning the API instance
@@ -118,6 +133,9 @@
 			options = selector;
 		}
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		/**
 		 * Perform a jQuery selector action on the table's TR elements (from the tbody) and
@@ -1112,8 +1130,13 @@
 					url: oLanguage.sUrl,
 					success: function ( json ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 						_fnLanguageCompat( json );
 						_fnCamelToHungarian( defaults.oLanguage, json );
+=======
+						_fnCamelToHungarian( defaults.oLanguage, json );
+						_fnLanguageCompat( json );
+>>>>>>> danhmuc_list
 =======
 						_fnCamelToHungarian( defaults.oLanguage, json );
 						_fnLanguageCompat( json );
@@ -1285,7 +1308,11 @@
 				var tbody = $this.children('tbody');
 				if ( tbody.length === 0 ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 					tbody = $('<tbody/>').appendTo($this);
+=======
+					tbody = $('<tbody/>').insertAfter(thead);
+>>>>>>> danhmuc_list
 =======
 					tbody = $('<tbody/>').insertAfter(thead);
 >>>>>>> danhmuc_list
@@ -1337,16 +1364,22 @@
 			
 			/* Must be done after everything which can be overridden by the state saving! */
 <<<<<<< HEAD
+<<<<<<< HEAD
 			if ( oInit.bStateSave )
 			{
 				features.bStateSave = true;
 				_fnCallbackReg( oSettings, 'aoDrawCallback', _fnSaveState, 'state_save' );
 =======
+=======
+>>>>>>> danhmuc_list
 			_fnCallbackReg( oSettings, 'aoDrawCallback', _fnSaveState, 'state_save' );
 			
 			if ( oInit.bStateSave )
 			{
 				features.bStateSave = true;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 				_fnLoadState( oSettings, oInit, loadedInit );
 			}
@@ -1648,7 +1681,10 @@
 	}
 	
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 	var _includes = function (search, start) {
 		if (start === undefined) {
 			start = 0;
@@ -1657,6 +1693,9 @@
 		return this.indexOf(search, start) !== -1;	
 	};
 	
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	// Array.isArray polyfill.
 	// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray
@@ -1667,11 +1706,17 @@
 	}
 	
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 	if (! Array.prototype.includes) {
 		Array.prototype.includes = _includes;
 	}
 	
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	// .trim() polyfill
 	// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trim
@@ -1682,11 +1727,17 @@
 	}
 	
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 	if (! String.prototype.includes) {
 		String.prototype.includes = _includes;
 	}
 	
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	/**
 	 * DataTables utility methods
@@ -1744,7 +1795,10 @@
 		escapeRegex: function ( val ) {
 			return val.replace( _re_escape_regex, '\\$1' );
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 		},
 	
 		/**
@@ -1966,6 +2020,9 @@
 					return data[source];
 				};
 			}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		}
 	};
@@ -2482,7 +2539,11 @@
 	
 	/**
 <<<<<<< HEAD
+<<<<<<< HEAD
 	 * Covert the index of a visible column to the index in the data array (take account
+=======
+	 * Convert the index of a visible column to the index in the data array (take account
+>>>>>>> danhmuc_list
 =======
 	 * Convert the index of a visible column to the index in the data array (take account
 >>>>>>> danhmuc_list
@@ -2504,7 +2565,11 @@
 	
 	/**
 <<<<<<< HEAD
+<<<<<<< HEAD
 	 * Covert the index of an index in the data array and convert it to the visible
+=======
+	 * Convert the index of an index in the data array and convert it to the visible
+>>>>>>> danhmuc_list
 =======
 	 * Convert the index of an index in the data array and convert it to the visible
 >>>>>>> danhmuc_list
@@ -2609,8 +2674,14 @@
 	
 						// Only a single match is needed for html type since it is
 <<<<<<< HEAD
+<<<<<<< HEAD
 						// bottom of the pile and very similar to string
 						if ( detectedType === 'html' ) {
+=======
+						// bottom of the pile and very similar to string - but it
+						// must not be empty
+						if ( detectedType === 'html' && ! _empty(cache[k]) ) {
+>>>>>>> danhmuc_list
 =======
 						// bottom of the pile and very similar to string - but it
 						// must not be empty
@@ -2827,7 +2898,11 @@
 	 *  @param {int} rowIdx aoData row id
 	 *  @param {int} colIdx Column index
 <<<<<<< HEAD
+<<<<<<< HEAD
 	 *  @param {string} type data get type ('display', 'type' 'filter' 'sort')
+=======
+	 *  @param {string} type data get type ('display', 'type' 'filter|search' 'sort|order')
+>>>>>>> danhmuc_list
 =======
 	 *  @param {string} type data get type ('display', 'type' 'filter|search' 'sort|order')
 >>>>>>> danhmuc_list
@@ -2837,7 +2912,10 @@
 	function _fnGetCellData( settings, rowIdx, colIdx, type )
 	{
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 		if (type === 'search') {
 			type = 'filter';
 		}
@@ -2845,6 +2923,9 @@
 			type = 'sort';
 		}
 	
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		var draw           = settings.iDraw;
 		var col            = settings.aoColumns[colIdx];
@@ -2878,10 +2959,13 @@
 		}
 	
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( cellData === null && type == 'display' ) {
 			return '';
 		}
 =======
+=======
+>>>>>>> danhmuc_list
 		if ( cellData === null && type === 'display' ) {
 			return '';
 		}
@@ -2894,6 +2978,9 @@
 			}
 		}
 	
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		return cellData;
 	}
@@ -2944,6 +3031,7 @@
 	 *  @returns {function} Data get function
 	 *  @memberof DataTable#oApi
 	 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 	function _fnGetObjectDataFn( mSource )
 	{
@@ -3064,6 +3152,9 @@
 =======
 	var _fnGetObjectDataFn = DataTable.util.get;
 >>>>>>> danhmuc_list
+=======
+	var _fnGetObjectDataFn = DataTable.util.get;
+>>>>>>> danhmuc_list
 	
 	
 	/**
@@ -3073,6 +3164,7 @@
 	 *  @returns {function} Data set function
 	 *  @memberof DataTable#oApi
 	 */
+<<<<<<< HEAD
 <<<<<<< HEAD
 	function _fnSetObjectDataFn( mSource )
 	{
@@ -3190,6 +3282,9 @@
 			};
 		}
 	}
+=======
+	var _fnSetObjectDataFn = DataTable.util.set;
+>>>>>>> danhmuc_list
 =======
 	var _fnSetObjectDataFn = DataTable.util.set;
 >>>>>>> danhmuc_list
@@ -3622,9 +3717,12 @@
 			_fnDetectHeader( oSettings.aoHeader, thead );
 		}
 <<<<<<< HEAD
+<<<<<<< HEAD
 		
 		/* ARIA role for the rows */
 		$(thead).children('tr').attr('role', 'row');
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 	
@@ -3761,11 +3859,14 @@
 	 * Insert the required TR nodes into the table for display
 	 *  @param {object} oSettings dataTables settings object
 <<<<<<< HEAD
+<<<<<<< HEAD
 	 *  @memberof DataTable#oApi
 	 */
 	function _fnDraw( oSettings )
 	{
 =======
+=======
+>>>>>>> danhmuc_list
 	 *  @param ajaxComplete true after ajax call to complete rendering
 	 *  @memberof DataTable#oApi
 	 */
@@ -3774,6 +3875,9 @@
 		// Allow for state saving and a custom start position
 		_fnStart( oSettings );
 	
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		/* Provide a pre-callback function which can be used to cancel the draw is false is returned */
 		var aPreDraw = _fnCallbackFire( oSettings, 'aoPreDrawCallback', 'preDraw', [oSettings] );
@@ -3784,13 +3888,17 @@
 		}
 	
 <<<<<<< HEAD
+<<<<<<< HEAD
 		var i, iLen, n;
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 		var anRows = [];
 		var iRowCount = 0;
 		var asStripeClasses = oSettings.asStripeClasses;
 		var iStripes = asStripeClasses.length;
+<<<<<<< HEAD
 <<<<<<< HEAD
 		var iOpenRows = oSettings.aoOpenRows.length;
 		var oLang = oSettings.oLanguage;
@@ -3816,6 +3924,8 @@
 		var iDisplayEnd = oSettings.fnDisplayEnd();
 	
 =======
+=======
+>>>>>>> danhmuc_list
 		var oLang = oSettings.oLanguage;
 		var bServerSide = _fnDataSource( oSettings ) == 'ssp';
 		var aiDisplay = oSettings.aiDisplay;
@@ -3824,6 +3934,9 @@
 	
 		oSettings.bDrawing = true;
 	
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		/* Server-side processing draw intercept */
 		if ( oSettings.bDeferLoading )
@@ -3837,8 +3950,14 @@
 			oSettings.iDraw++;
 		}
 <<<<<<< HEAD
+<<<<<<< HEAD
 		else if ( !oSettings.bDestroying && !_fnAjaxUpdate( oSettings ) )
 		{
+=======
+		else if ( !oSettings.bDestroying && !ajaxComplete)
+		{
+			_fnAjaxUpdate( oSettings );
+>>>>>>> danhmuc_list
 =======
 		else if ( !oSettings.bDestroying && !ajaxComplete)
 		{
@@ -4233,7 +4352,10 @@
 	
 	/**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 	 * Set the start position for draw
 	 *  @param {object} oSettings dataTables settings object
 	 */
@@ -4256,6 +4378,9 @@
 	}
 	
 	/**
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	 * Create an Ajax call based on the table's settings, taking into account that
 	 * parameters can have multiple forms, and backwards compatibility.
@@ -4300,7 +4425,10 @@
 		var instance = oSettings.oInstance;
 		var callback = function ( json ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 			var status = oSettings.jqXHR
 				? oSettings.jqXHR.status
 				: null;
@@ -4317,6 +4445,9 @@
 	
 			oSettings.json = json;
 	
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			_fnCallbackFire( oSettings, null, 'xhr', [oSettings, json, oSettings.jqXHR] );
 			fn( json );
@@ -4343,6 +4474,7 @@
 		var baseAjax = {
 			"data": data,
 <<<<<<< HEAD
+<<<<<<< HEAD
 			"success": function (json) {
 				var error = json.error || json.sError;
 				if ( error ) {
@@ -4352,6 +4484,9 @@
 				oSettings.json = json;
 				callback( json );
 			},
+=======
+			"success": callback,
+>>>>>>> danhmuc_list
 =======
 			"success": callback,
 >>>>>>> danhmuc_list
@@ -4424,6 +4559,7 @@
 	function _fnAjaxUpdate( settings )
 	{
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( settings.bAjaxDataGet ) {
 			settings.iDraw++;
 			_fnProcessingDisplay( settings, true );
@@ -4440,6 +4576,8 @@
 		}
 		return true;
 =======
+=======
+>>>>>>> danhmuc_list
 		settings.iDraw++;
 		_fnProcessingDisplay( settings, true );
 	
@@ -4450,6 +4588,9 @@
 				_fnAjaxUpdateDraw( settings, json );
 			}
 		);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	}
 	
@@ -4595,12 +4736,18 @@
 		}
 	
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 		// No data in returned object, so rather than an array, we show an empty table
 		if ( ! data ) {
 			data = [];
 		}
 	
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		_fnClearTable( settings );
 		settings._iRecordsTotal   = parseInt(recordsTotal, 10);
@@ -4612,8 +4759,12 @@
 		settings.aiDisplay = settings.aiDisplayMaster.slice();
 	
 <<<<<<< HEAD
+<<<<<<< HEAD
 		settings.bAjaxDataGet = false;
 		_fnDraw( settings );
+=======
+		_fnDraw( settings, true );
+>>>>>>> danhmuc_list
 =======
 		_fnDraw( settings, true );
 >>>>>>> danhmuc_list
@@ -4623,7 +4774,10 @@
 		}
 	
 <<<<<<< HEAD
+<<<<<<< HEAD
 		settings.bAjaxDataGet = true;
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 		_fnProcessingDisplay( settings, false );
@@ -4639,8 +4793,13 @@
 	 *  @return {array} Array of data to use
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	function _fnAjaxDataSrc ( oSettings, json )
 	{
+=======
+	 function _fnAjaxDataSrc ( oSettings, json, write )
+	 {
+>>>>>>> danhmuc_list
 =======
 	 function _fnAjaxDataSrc ( oSettings, json, write )
 	 {
@@ -4649,6 +4808,7 @@
 			oSettings.ajax.dataSrc :
 			oSettings.sAjaxDataProp; // Compatibility with 1.9-.
 	
+<<<<<<< HEAD
 <<<<<<< HEAD
 		// Compatibility with 1.9-. In order to read from aaData, check if the
 		// default has been changed, if not, check for aaData
@@ -4660,6 +4820,8 @@
 			_fnGetObjectDataFn( dataSrc )( json ) :
 			json;
 =======
+=======
+>>>>>>> danhmuc_list
 		if ( ! write ) {
 			if ( dataSrc === 'data' ) {
 				// If the default, then we still want to support the old style, and safely ignore
@@ -4674,6 +4836,9 @@
 	
 		// set
 		_fnSetObjectDataFn( dataSrc )( json, write );
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	}
 	
@@ -4704,12 +4869,15 @@
 			.append( $('<label/>' ).append( str ) );
 	
 <<<<<<< HEAD
+<<<<<<< HEAD
 		var searchFn = function() {
 			/* Update all other filter input elements for the new display */
 			var n = features.f;
 			var val = !this.value ? "" : this.value; // mental IE8 fix :-(
 	
 =======
+=======
+>>>>>>> danhmuc_list
 		var searchFn = function(event) {
 			/* Update all other filter input elements for the new display */
 			var n = features.f;
@@ -4717,6 +4885,9 @@
 			if(previousSearch.return && event.key !== "Enter") {
 				return;
 			}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			/* Now do the filter */
 			if ( val != previousSearch.sSearch ) {
@@ -4725,7 +4896,12 @@
 					"bRegex": previousSearch.bRegex,
 					"bSmart": previousSearch.bSmart ,
 <<<<<<< HEAD
+<<<<<<< HEAD
 					"bCaseInsensitive": previousSearch.bCaseInsensitive
+=======
+					"bCaseInsensitive": previousSearch.bCaseInsensitive,
+					"return": previousSearch.return
+>>>>>>> danhmuc_list
 =======
 					"bCaseInsensitive": previousSearch.bCaseInsensitive,
 					"return": previousSearch.return
@@ -4759,7 +4935,11 @@
 				// checks the value to see if it has changed. In other browsers it won't have.
 				setTimeout( function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
 					searchFn.call(jqFilter[0]);
+=======
+					searchFn.call(jqFilter[0], e);
+>>>>>>> danhmuc_list
 =======
 					searchFn.call(jqFilter[0], e);
 >>>>>>> danhmuc_list
@@ -4809,6 +4989,10 @@
 			oPrevSearch.bSmart = oFilter.bSmart;
 			oPrevSearch.bCaseInsensitive = oFilter.bCaseInsensitive;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+			oPrevSearch.return = oFilter.return;
+>>>>>>> danhmuc_list
 =======
 			oPrevSearch.return = oFilter.return;
 >>>>>>> danhmuc_list
@@ -4827,7 +5011,11 @@
 		{
 			/* Global filter */
 <<<<<<< HEAD
+<<<<<<< HEAD
 			_fnFilter( oSettings, oInput.sSearch, iForce, fnRegex(oInput), oInput.bSmart, oInput.bCaseInsensitive );
+=======
+			_fnFilter( oSettings, oInput.sSearch, iForce, fnRegex(oInput), oInput.bSmart, oInput.bCaseInsensitive, oInput.return );
+>>>>>>> danhmuc_list
 =======
 			_fnFilter( oSettings, oInput.sSearch, iForce, fnRegex(oInput), oInput.bSmart, oInput.bCaseInsensitive, oInput.return );
 >>>>>>> danhmuc_list
@@ -4894,7 +5082,11 @@
 	 *  @param {bool} bRegex treat search string as a regular expression or not
 	 *  @param {bool} bSmart use smart filtering or not
 <<<<<<< HEAD
+<<<<<<< HEAD
 	 *  @param {bool} bCaseInsensitive Do case insenstive matching or not
+=======
+	 *  @param {bool} bCaseInsensitive Do case insensitive matching or not
+>>>>>>> danhmuc_list
 =======
 	 *  @param {bool} bCaseInsensitive Do case insensitive matching or not
 >>>>>>> danhmuc_list
@@ -4931,7 +5123,11 @@
 	 *  @param {bool} regex treat as a regular expression or not
 	 *  @param {bool} smart perform smart filtering or not
 <<<<<<< HEAD
+<<<<<<< HEAD
 	 *  @param {bool} caseInsensitive Do case insenstive matching or not
+=======
+	 *  @param {bool} caseInsensitive Do case insensitive matching or not
+>>>>>>> danhmuc_list
 =======
 	 *  @param {bool} caseInsensitive Do case insensitive matching or not
 >>>>>>> danhmuc_list
@@ -5041,7 +5237,10 @@
 		var column;
 		var i, j, ien, jen, filterData, cellData, row;
 <<<<<<< HEAD
+<<<<<<< HEAD
 		var fomatters = DataTable.ext.type.search;
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 		var wasInvalidated = false;
@@ -5059,10 +5258,13 @@
 						cellData = _fnGetCellData( settings, i, j, 'filter' );
 	
 <<<<<<< HEAD
+<<<<<<< HEAD
 						if ( fomatters[ column.sType ] ) {
 							cellData = fomatters[ column.sType ]( cellData );
 						}
 	
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 						// Search in DataTables 1.10 is string based. In 1.11 this
@@ -5602,9 +5804,12 @@
 		var table = $(settings.nTable);
 	
 <<<<<<< HEAD
+<<<<<<< HEAD
 		// Add the ARIA grid role to the table
 		table.attr( 'role', 'grid' );
 	
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 		// Scrolling from here on in
@@ -5895,26 +6100,36 @@
 		// Read all widths in next pass
 		_fnApplyToChildren( function(nSizer) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 			headerContent.push( nSizer.innerHTML );
 			headerWidths.push( _fnStringToCss( $(nSizer).css('width') ) );
 =======
+=======
+>>>>>>> danhmuc_list
 			var style = window.getComputedStyle ?
 				window.getComputedStyle(nSizer).width :
 				_fnStringToCss( $(nSizer).width() );
 	
 			headerContent.push( nSizer.innerHTML );
 			headerWidths.push( style );
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		}, headerSrcEls );
 	
 		// Apply all widths in final pass
 		_fnApplyToChildren( function(nToSize, i) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 			// Only apply widths to the DataTables detected header cells - this
 			// prevents complex headers from having contradictory sizes applied
 			if ( $.inArray( nToSize, dtHeaderCells ) !== -1 ) {
 				nToSize.style.width = headerWidths[i];
 			}
+=======
+			nToSize.style.width = headerWidths[i];
+>>>>>>> danhmuc_list
 =======
 			nToSize.style.width = headerWidths[i];
 >>>>>>> danhmuc_list
@@ -5968,7 +6183,11 @@
 		// Sanity check that the table is of a sensible width. If not then we are going to get
 		// misalignment - try to prevent this by not allowing the table to shrink below its min width
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( table.outerWidth() < sanityWidth )
+=======
+		if ( Math.round(table.outerWidth()) < Math.round(sanityWidth) )
+>>>>>>> danhmuc_list
 =======
 		if ( Math.round(table.outerWidth()) < Math.round(sanityWidth) )
 >>>>>>> danhmuc_list
@@ -6638,7 +6857,11 @@
 			var col = columns[i];
 			var asSorting = col.asSorting;
 <<<<<<< HEAD
+<<<<<<< HEAD
 			var sTitle = col.sTitle.replace( /<.*?>/g, "" );
+=======
+			var sTitle = col.ariaTitle || col.sTitle.replace( /<.*?>/g, "" );
+>>>>>>> danhmuc_list
 =======
 			var sTitle = col.ariaTitle || col.sTitle.replace( /<.*?>/g, "" );
 >>>>>>> danhmuc_list
@@ -6883,8 +7106,12 @@
 	function _fnSaveState ( settings )
 	{
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( !settings.oFeatures.bStateSave || settings.bDestroying )
 		{
+=======
+		if (settings._bLoadingState) {
+>>>>>>> danhmuc_list
 =======
 		if (settings._bLoadingState) {
 >>>>>>> danhmuc_list
@@ -6907,11 +7134,14 @@
 		};
 	
 <<<<<<< HEAD
+<<<<<<< HEAD
 		_fnCallbackFire( settings, "aoStateSaveParams", 'stateSaveParams', [settings, state] );
 	
 		settings.oSavedState = state;
 		settings.fnStateSaveCallback.call( settings.oInstance, settings, state );
 =======
+=======
+>>>>>>> danhmuc_list
 		settings.oSavedState = state;
 		_fnCallbackFire( settings, "aoStateSaveParams", 'stateSaveParams', [settings, state] );
 		
@@ -6919,6 +7149,9 @@
 		{
 			settings.fnStateSaveCallback.call( settings.oInstance, settings, state );
 		}	
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	}
 	
@@ -6932,6 +7165,7 @@
 	 */
 	function _fnLoadState ( settings, oInit, callback )
 	{
+<<<<<<< HEAD
 <<<<<<< HEAD
 		var i, ien;
 		var columns = settings.aoColumns;
@@ -7015,11 +7249,14 @@
 	
 =======
 >>>>>>> danhmuc_list
+=======
+>>>>>>> danhmuc_list
 		if ( ! settings.oFeatures.bStateSave ) {
 			callback();
 			return;
 		}
 	
+<<<<<<< HEAD
 <<<<<<< HEAD
 		var state = settings.fnStateLoadCallback.call( settings.oInstance, settings, loaded );
 	
@@ -7030,6 +7267,8 @@
 	}
 	
 =======
+=======
+>>>>>>> danhmuc_list
 		var loaded = function(state) {
 			_fnImplementState(settings, state, callback);
 		}
@@ -7152,6 +7391,9 @@
 		callback();
 	};
 	
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	
 	/**
@@ -8547,7 +8789,11 @@
 		}
 		else if ( page == 'current' ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 			// Current page implies that order=current and fitler=applied, since it is
+=======
+			// Current page implies that order=current and filter=applied, since it is
+>>>>>>> danhmuc_list
 =======
 			// Current page implies that order=current and filter=applied, since it is
 >>>>>>> danhmuc_list
@@ -8932,7 +9178,10 @@
 	
 	
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 	$(document).on('plugin-init.dt', function (e, context) {
 		var api = new _Api( context );
 		api.on( 'stateSaveParams', function ( e, settings, data ) {
@@ -8951,6 +9200,9 @@
 			})
 		}
 	})
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	
 	var __details_add = function ( ctx, row, data, klass )
@@ -9011,6 +9263,11 @@
 				row._detailsShow = undefined;
 				row._details = undefined;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+				$( row.nTr ).removeClass( 'dt-hasChild' );
+				_fnSaveState( ctx[0] );
+>>>>>>> danhmuc_list
 =======
 				$( row.nTr ).removeClass( 'dt-hasChild' );
 				_fnSaveState( ctx[0] );
@@ -9032,6 +9289,7 @@
 				if ( show ) {
 					row._details.insertAfter( row.nTr );
 <<<<<<< HEAD
+<<<<<<< HEAD
 				}
 				else {
 					row._details.detach();
@@ -9039,6 +9297,8 @@
 	
 				__details_events( ctx[0] );
 =======
+=======
+>>>>>>> danhmuc_list
 					$( row.nTr ).addClass( 'dt-hasChild' );
 				}
 				else {
@@ -9050,6 +9310,9 @@
 	
 				__details_events( ctx[0] );
 				_fnSaveState( ctx[0] );
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			}
 		}
@@ -10262,7 +10525,11 @@
 	 *  @default Version number
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	DataTable.version = "1.10.24";
+=======
+	DataTable.version = "1.11.4";
+>>>>>>> danhmuc_list
 =======
 	DataTable.version = "1.11.4";
 >>>>>>> danhmuc_list
@@ -10326,8 +10593,11 @@
 		 *  @default true
 		 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 		"bSmart": true
 =======
+=======
+>>>>>>> danhmuc_list
 		"bSmart": true,
 	
 		/**
@@ -10337,6 +10607,9 @@
 		 *  @default false
 		 */
 		"return": false
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	};
 	
@@ -13234,7 +13507,11 @@
 		 *            if (type === 'set') {
 		 *              source.price = val;
 <<<<<<< HEAD
+<<<<<<< HEAD
 		 *              // Store the computed dislay and filter values for efficiency
+=======
+		 *              // Store the computed display and filter values for efficiency
+>>>>>>> danhmuc_list
 =======
 		 *              // Store the computed display and filter values for efficiency
 >>>>>>> danhmuc_list
@@ -13787,7 +14064,11 @@
 			 * needed by a driven page draw. This can give a significant speed
 			 * increase for Ajax source and Javascript source data, but makes no
 <<<<<<< HEAD
+<<<<<<< HEAD
 			 * difference at all fro DOM and server-side processing tables.
+=======
+			 * difference at all for DOM and server-side processing tables.
+>>>>>>> danhmuc_list
 =======
 			 * difference at all for DOM and server-side processing tables.
 >>>>>>> danhmuc_list
@@ -14368,6 +14649,7 @@
 	
 		/**
 <<<<<<< HEAD
+<<<<<<< HEAD
 		 * Note if draw should be blocked while getting data
 		 *  @type boolean
 		 *  @default true
@@ -14375,6 +14657,8 @@
 		"bAjaxDataGet": true,
 	
 		/**
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 		 * The last jQuery XHR object that was used for server-side data gathering.
@@ -15159,7 +15443,11 @@
 		//
 		// Depreciated
 <<<<<<< HEAD
+<<<<<<< HEAD
 		// The following properties are retained for backwards compatiblity only.
+=======
+		// The following properties are retained for backwards compatibility only.
+>>>>>>> danhmuc_list
 =======
 		// The following properties are retained for backwards compatibility only.
 >>>>>>> danhmuc_list
@@ -15750,11 +16038,17 @@
 	
 	var __htmlEscapeEntities = function ( d ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 		if (Array.isArray(d)) {
 			d = d.join(',');
 		}
 	
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		return typeof d === 'string' ?
 			d
@@ -15818,12 +16112,18 @@
 						'';
 	
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 					// If zero, then can't have a negative prefix
 					if (intPart === 0 && parseFloat(floatPart) === 0) {
 						negative = '';
 					}
 	
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 					return negative + (prefix||'') +
 						intPart.toString().replace(
@@ -15954,6 +16254,10 @@
 		_fnSaveState: _fnSaveState,
 		_fnLoadState: _fnLoadState,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+		_fnImplementState: _fnImplementState,
+>>>>>>> danhmuc_list
 =======
 		_fnImplementState: _fnImplementState,
 >>>>>>> danhmuc_list
@@ -15996,6 +16300,7 @@
 		$.fn.DataTable[ prop ] = val;
 	} );
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 	// Information about events fired by DataTables - for documentation.
@@ -16161,6 +16466,9 @@
 	 */
 
 	return $.fn.dataTable;
+=======
+	return DataTable;
+>>>>>>> danhmuc_list
 =======
 	return DataTable;
 >>>>>>> danhmuc_list

@@ -2,8 +2,13 @@
 <?php
 /*
 <<<<<<< HEAD
+<<<<<<< HEAD
 Copyright (c) 2003-2021, CKSource - Frederico Knabben. All rights reserved.
 For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+=======
+Copyright (c) 2003-2023, CKSource Holding sp. z o.o. All rights reserved.
+CKEditor 4 LTS ("Long Term Support") is available under the terms of the Extended Support Model.
+>>>>>>> danhmuc_list
 =======
 Copyright (c) 2003-2023, CKSource Holding sp. z o.o. All rights reserved.
 CKEditor 4 LTS ("Long Term Support") is available under the terms of the Extended Support Model.
@@ -59,7 +64,11 @@ if (!empty($_POST))
 		</p>
 		<p id="copy">
 <<<<<<< HEAD
+<<<<<<< HEAD
 			Copyright &copy; 2003-2021, <a class="samples" href="https://cksource.com/">CKSource</a> - Frederico Knabben. All rights reserved.
+=======
+			Copyright &copy; 2003-2023, <a class="samples" href="https://cksource.com/">CKSource</a> Holding sp. z o.o. All rights reserved.
+>>>>>>> danhmuc_list
 =======
 			Copyright &copy; 2003-2023, <a class="samples" href="https://cksource.com/">CKSource</a> Holding sp. z o.o. All rights reserved.
 >>>>>>> danhmuc_list

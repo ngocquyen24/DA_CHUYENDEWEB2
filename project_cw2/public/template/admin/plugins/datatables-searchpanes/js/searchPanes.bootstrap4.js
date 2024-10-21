@@ -1,4 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+/*! Bootstrap integration for DataTables' SearchPanes
+ * ©2016 SpryMedia Ltd - datatables.net/license
+ */
+>>>>>>> danhmuc_list
 =======
 /*! Bootstrap integration for DataTables' SearchPanes
  * ©2016 SpryMedia Ltd - datatables.net/license
@@ -19,17 +25,23 @@
             }
             if (!$ || !$.fn.dataTable) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 $ = require('datatables.net-bs4')(root, $).$;
             }
             console.log($.fn.dataTable);
             if (!$.fn.dataTable.SearchPanes) {
                 console.log("not present");
 =======
+=======
+>>>>>>> danhmuc_list
                 // eslint-disable-next-line @typescript-eslint/no-var-requires
                 $ = require('datatables.net-bs4')(root, $).$;
             }
             if (!$.fn.dataTable.SearchPanes) {
                 // eslint-disable-next-line @typescript-eslint/no-var-requires
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                 require('datatables.net-searchpanes')(root, $);
             }
@@ -43,16 +55,22 @@
 }(function ($, window, document) {
     'use strict';
 <<<<<<< HEAD
+<<<<<<< HEAD
     var DataTable = $.fn.dataTable;
     $.extend(true, DataTable.SearchPane.classes, {
         buttonGroup: 'btn-group col justify-content-end',
         disabledButton: 'disabled',
         dull: '',
 =======
+=======
+>>>>>>> danhmuc_list
     var dataTable = $.fn.dataTable;
     $.extend(true, dataTable.SearchPane.classes, {
         buttonGroup: 'btn-group',
         disabledButton: 'disabled',
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         narrow: 'col',
         pane: {
@@ -61,8 +79,13 @@
         paneButton: 'btn btn-light',
         pill: 'pill badge badge-pill badge-secondary',
 <<<<<<< HEAD
+<<<<<<< HEAD
         search: 'col-sm form-control search',
         searchCont: 'input-group col-sm',
+=======
+        search: 'form-control search',
+        searchCont: 'input-group',
+>>>>>>> danhmuc_list
 =======
         search: 'form-control search',
         searchCont: 'input-group',
@@ -71,6 +94,7 @@
         subRow1: 'dtsp-subRow1',
         subRow2: 'dtsp-subRow2',
         table: 'table table-sm table-borderless',
+<<<<<<< HEAD
 <<<<<<< HEAD
         topRow: 'dtsp-topRow row'
     });
@@ -83,6 +107,8 @@
     });
     return DataTable.searchPanes;
 =======
+=======
+>>>>>>> danhmuc_list
         topRow: 'dtsp-topRow'
     });
     $.extend(true, dataTable.SearchPanes.classes, {
@@ -96,5 +122,8 @@
         titleRow: 'dtsp-titleRow'
     });
     return dataTable.searchPanes;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 }));

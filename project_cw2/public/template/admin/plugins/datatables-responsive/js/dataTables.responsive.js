@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*! Responsive 2.2.7
+=======
+/*! Responsive 2.2.9
+>>>>>>> danhmuc_list
 =======
 /*! Responsive 2.2.9
 >>>>>>> danhmuc_list
@@ -10,7 +14,11 @@
  * @summary     Responsive
  * @description Responsive tables plug-in for DataTables
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @version     2.2.7
+=======
+ * @version     2.2.9
+>>>>>>> danhmuc_list
 =======
  * @version     2.2.9
 >>>>>>> danhmuc_list
@@ -1452,7 +1460,11 @@ Api.registerPlural( 'columns().responsiveHidden()', 'column().responsiveHidden()
  * @static
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 Responsive.version = '2.2.7';
+=======
+Responsive.version = '2.2.9';
+>>>>>>> danhmuc_list
 =======
 Responsive.version = '2.2.9';
 >>>>>>> danhmuc_list

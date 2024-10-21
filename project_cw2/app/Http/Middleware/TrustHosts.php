@@ -12,6 +12,7 @@ class TrustHosts extends Middleware
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return array<int, string|null>
 =======
      * @return array
@@ -21,6 +22,11 @@ class TrustHosts extends Middleware
 >>>>>>> Login_Register
      */
     public function hosts()
+=======
+     * @return array<int, string|null>
+     */
+    public function hosts(): array
+>>>>>>> danhmuc_list
 =======
      * @return array<int, string|null>
      */

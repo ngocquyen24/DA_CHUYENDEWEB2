@@ -1,6 +1,7 @@
 /*!
  * 
 <<<<<<< HEAD
+<<<<<<< HEAD
  * Super simple wysiwyg editor v0.8.18
  * https://summernote.org
  * 
@@ -11,6 +12,8 @@
  * Date: 2020-05-20T16:47Z
  * 
 =======
+=======
+>>>>>>> danhmuc_list
  * Super simple WYSIWYG editor v0.8.20
  * https://summernote.org
  *
@@ -20,6 +23,9 @@
  *
  * Date: 2021-10-14T21:15Z
  *
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
  */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -31,6 +37,7 @@
 		var a = factory();
 		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
 	}
+<<<<<<< HEAD
 <<<<<<< HEAD
 })(window, function() {
 return /******/ (function(modules) { // webpackBootstrap
@@ -129,6 +136,11 @@ return /******/ (function(modules) { // webpackBootstrap
 return /******/ (() => { // webpackBootstrap
 var __webpack_exports__ = {};
 >>>>>>> danhmuc_list
+=======
+})(self, function() {
+return /******/ (() => { // webpackBootstrap
+var __webpack_exports__ = {};
+>>>>>>> danhmuc_list
 (function ($) {
   $.extend($.summernote.lang, {
     'de-DE': {
@@ -136,7 +148,11 @@ var __webpack_exports__ = {};
         bold: 'Fett',
         italic: 'Kursiv',
 <<<<<<< HEAD
+<<<<<<< HEAD
         underline: 'Unterstreichen',
+=======
+        underline: 'Unterstrichen',
+>>>>>>> danhmuc_list
 =======
         underline: 'Unterstrichen',
 >>>>>>> danhmuc_list
@@ -158,9 +174,15 @@ var __webpack_exports__ = {};
         floatRight: 'Rechtsbündig',
         floatNone: 'Kein Textfluss',
 <<<<<<< HEAD
+<<<<<<< HEAD
         shapeRounded: 'Abgerundeter Rahmen',
         shapeCircle: 'Kreisförmiger Rahmen',
         shapeThumbnail: 'Rahmenvorschau',
+=======
+        shapeRounded: 'Abgerundete Ecken',
+        shapeCircle: 'Kreisförmig',
+        shapeThumbnail: '"Vorschaubild"',
+>>>>>>> danhmuc_list
 =======
         shapeRounded: 'Abgerundete Ecken',
         shapeCircle: 'Kreisförmig',
@@ -191,7 +213,12 @@ var __webpack_exports__ = {};
         textToDisplay: 'Anzeigetext',
         url: 'Link URL',
 <<<<<<< HEAD
+<<<<<<< HEAD
         openInNewWindow: 'In neuem Fenster öffnen'
+=======
+        openInNewWindow: 'In neuem Fenster öffnen',
+        useProtocol: 'Standardprotokoll verwenden'
+>>>>>>> danhmuc_list
 =======
         openInNewWindow: 'In neuem Fenster öffnen',
         useProtocol: 'Standardprotokoll verwenden'
@@ -204,7 +231,11 @@ var __webpack_exports__ = {};
         addColLeft: '+ Spalte links',
         addColRight: '+ Spalte rechts',
 <<<<<<< HEAD
+<<<<<<< HEAD
         delRow: 'Reihe löschen',
+=======
+        delRow: 'Zeile löschen',
+>>>>>>> danhmuc_list
 =======
         delRow: 'Zeile löschen',
 >>>>>>> danhmuc_list
@@ -229,8 +260,13 @@ var __webpack_exports__ = {};
       },
       lists: {
 <<<<<<< HEAD
+<<<<<<< HEAD
         unordered: 'Unnummerierte Liste',
         ordered: 'Nummerierte Liste'
+=======
+        unordered: 'Aufzählung',
+        ordered: 'Nummerierung'
+>>>>>>> danhmuc_list
 =======
         unordered: 'Aufzählung',
         ordered: 'Nummerierung'
@@ -271,6 +307,7 @@ var __webpack_exports__ = {};
       },
       help: {
 <<<<<<< HEAD
+<<<<<<< HEAD
         'insertParagraph': 'Absatz einfügen',
         'undo': 'Letzte Anweisung rückgängig',
         'redo': 'Letzte Anweisung wiederholen',
@@ -299,6 +336,8 @@ var __webpack_exports__ = {};
         'insertHorizontalRule': 'Fügt eine horizontale Linie ein',
         'linkDialog.show': 'Zeigt Linkdialog'
 =======
+=======
+>>>>>>> danhmuc_list
         insertParagraph: 'Absatz einfügen',
         undo: 'Letzte Anweisung rückgängig',
         redo: 'Letzte Anweisung wiederholen',
@@ -326,6 +365,9 @@ var __webpack_exports__ = {};
         formatH6: 'Formatiert aktuellen Block als H6',
         insertHorizontalRule: 'Fügt eine horizontale Linie ein',
         'linkDialog.show': 'Zeigt den Linkdialog'
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       },
       history: {
@@ -340,15 +382,22 @@ var __webpack_exports__ = {};
   });
 })(jQuery);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 /***/ })
 
 /******/ });
 });
 =======
+=======
+>>>>>>> danhmuc_list
 /******/ 	return __webpack_exports__;
 /******/ })()
 ;
 });
+<<<<<<< HEAD
+//# sourceMappingURL=summernote-de-DE.js.map
+>>>>>>> danhmuc_list
+=======
 //# sourceMappingURL=summernote-de-DE.js.map
 >>>>>>> danhmuc_list

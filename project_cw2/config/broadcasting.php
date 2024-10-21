@@ -37,9 +37,12 @@ return [
             'app_id' => env('PUSHER_APP_ID'),
             'options' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'cluster' => env('PUSHER_APP_CLUSTER'),
                 'useTLS' => true,
 =======
+=======
+>>>>>>> danhmuc_list
                 'host' => env('PUSHER_HOST') ?: 'api-'.env('PUSHER_APP_CLUSTER', 'mt1').'.pusher.com',
                 'port' => env('PUSHER_PORT', 443),
                 'scheme' => env('PUSHER_SCHEME', 'https'),
@@ -48,6 +51,9 @@ return [
             ],
             'client_options' => [
                 // Guzzle client options: https://docs.guzzlephp.org/en/stable/request-options.html
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             ],
         ],

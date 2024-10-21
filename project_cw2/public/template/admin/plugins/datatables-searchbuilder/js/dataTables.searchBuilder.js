@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 (function () {
 	'use strict';
 
@@ -4374,6 +4375,8 @@
 	    }
 	}));
 =======
+=======
+>>>>>>> danhmuc_list
 /*! SearchBuilder 1.3.1
  * ©SpryMedia Ltd - datatables.net/license/mit
  */
@@ -8169,6 +8172,9 @@
             dataTable.ext.features.register('searchBuilder', _init);
         }
     }));
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 }());

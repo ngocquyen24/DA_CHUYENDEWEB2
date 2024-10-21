@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <svg xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-bm" viewBox="0 0 512 512">
   <path fill="#cf142b" d="M0 0h512v512H0z"/>
   <path fill="#00247d" d="M0 0h256v128H0z"/>
@@ -97,6 +98,8 @@
   <ellipse cx="381.3" cy="197.6" rx=".3" ry=".5"/>
   <path fill="none" stroke="#000" d="M443.3 182.6V291c0 29-58 38.4-58 38.4s-57.8-9.4-57.8-38.4V182.6h115.8z"/>
 =======
+=======
+>>>>>>> danhmuc_list
 <svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-bm" viewBox="0 0 512 512">
   <path id="path2027" fill="#cf142b" stroke-width="1" d="M0 0h512v512H0z"/>
   <path id="path1560" fill="#006" stroke-width=".5" d="M0 0h256v256H0z"/>
@@ -195,5 +198,8 @@
   <ellipse id="ellipse741" cx="375" cy="168.8" fill="#784421" stroke-width="1.2" rx=".8" ry="1.1"/>
   <ellipse id="ellipse743" cx="375" cy="168.8" stroke-width="1.2" rx=".5" ry=".7"/>
   <path id="path745" fill="none" stroke="#000" stroke-width="1.2" d="M467.3 146.6v161.6c0 43.1-86.2 57.2-86.2 57.2s-86.3-14-86.3-57.2V146.6h172.6z"/>
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 </svg>

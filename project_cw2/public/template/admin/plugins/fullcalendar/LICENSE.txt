@@ -1,7 +1,11 @@
 MIT License
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Copyright (c) 2020 Adam Shaw
+=======
+Copyright (c) 2021 Adam Shaw
+>>>>>>> danhmuc_list
 =======
 Copyright (c) 2021 Adam Shaw
 >>>>>>> danhmuc_list

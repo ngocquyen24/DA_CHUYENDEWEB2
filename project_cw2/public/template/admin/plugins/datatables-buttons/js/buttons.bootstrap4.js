@@ -47,6 +47,10 @@ $.extend( true, DataTable.Buttons.defaults, {
 			tag: 'div',
 			className: 'dropdown-menu',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+			closeButton: false,
+>>>>>>> danhmuc_list
 =======
 			closeButton: false,
 >>>>>>> danhmuc_list
@@ -57,8 +61,11 @@ $.extend( true, DataTable.Buttons.defaults, {
 				disabled: 'disabled'
 			}
 <<<<<<< HEAD
+<<<<<<< HEAD
 		}
 =======
+=======
+>>>>>>> danhmuc_list
 		},
 		splitWrapper: {
 			tag: 'div',
@@ -78,6 +85,9 @@ $.extend( true, DataTable.Buttons.defaults, {
 			className: 'dt-btn-split-drop-button btn btn-secondary',
 			closeButton: false
 		} 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	},
 	buttonCreated: function ( config, button ) {

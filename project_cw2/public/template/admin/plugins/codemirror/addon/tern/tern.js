@@ -232,8 +232,12 @@
         if (content) {
           tooltip = makeTooltip(node.parentNode.getBoundingClientRect().right + window.pageXOffset,
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 node.getBoundingClientRect().top + window.pageYOffset, content, cm);
           tooltip.className += " " + cls + "hint-doc";
+=======
+                                node.getBoundingClientRect().top + window.pageYOffset, content, cm, cls + "hint-doc");
+>>>>>>> danhmuc_list
 =======
                                 node.getBoundingClientRect().top + window.pageYOffset, content, cm, cls + "hint-doc");
 >>>>>>> danhmuc_list
@@ -642,8 +646,13 @@
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   function makeTooltip(x, y, content, cm) {
     var node = elt("div", cls + "tooltip", content);
+=======
+  function makeTooltip(x, y, content, cm, className) {
+    var node = elt("div", cls + "tooltip" + " " + (className || ""), content);
+>>>>>>> danhmuc_list
 =======
   function makeTooltip(x, y, content, cm, className) {
     var node = elt("div", cls + "tooltip" + " " + (className || ""), content);
@@ -653,7 +662,10 @@
     var container = ((cm.options || {}).hintOptions || {}).container || document.body;
     container.appendChild(node);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 
     var pos = cm.cursorCoords();
     var winW = window.innerWidth;
@@ -686,6 +698,9 @@
       node.style.left = (x - overlapX) + "px";
     }
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     return node;
   }

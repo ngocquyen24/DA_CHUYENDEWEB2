@@ -5,6 +5,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 class CreateUsersTable extends Migration
 {
     /**
@@ -36,6 +37,8 @@ class CreateUsersTable extends Migration
 =======
 >>>>>>> Login_Register
 =======
+=======
+>>>>>>> danhmuc_list
 return new class extends Migration
 {
     /**
@@ -49,6 +52,9 @@ return new class extends Migration
             $table->string('email',100)->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password',100);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             $table->rememberToken();
             $table->timestamps();
@@ -57,6 +63,7 @@ return new class extends Migration
 
     /**
      * Reverse the migrations.
+<<<<<<< HEAD
 <<<<<<< HEAD
      *
      * @return void
@@ -67,10 +74,15 @@ return new class extends Migration
     }
 }
 =======
+=======
+>>>>>>> danhmuc_list
      */
     public function down(): void
     {
         Schema::dropIfExists('users');
     }
 };
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list

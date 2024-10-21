@@ -773,7 +773,11 @@ var excelStrings = {
 //   https://www.ecma-international.org/news/TC45_current_work/Office%20Open%20XML%20Part%204%20-%20Markup%20Language%20Reference.pdf
 var _excelSpecials = [
 <<<<<<< HEAD
+<<<<<<< HEAD
 	{ match: /^\-?\d+\.\d%$/,               style: 60, fmt: function (d) { return d/100; } }, // Precent with d.p.
+=======
+	{ match: /^\-?\d+\.\d%$/,               style: 60, fmt: function (d) { return d/100; } }, // Percent with d.p.
+>>>>>>> danhmuc_list
 =======
 	{ match: /^\-?\d+\.\d%$/,               style: 60, fmt: function (d) { return d/100; } }, // Percent with d.p.
 >>>>>>> danhmuc_list
@@ -967,7 +971,11 @@ DataTable.ext.buttons.csvHtml5 = {
 
 		if ( config.bom ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 			output = '\ufeff' + output;
+=======
+			output = String.fromCharCode(0xFEFF) + output;
+>>>>>>> danhmuc_list
 =======
 			output = String.fromCharCode(0xFEFF) + output;
 >>>>>>> danhmuc_list
@@ -1107,7 +1115,11 @@ DataTable.ext.buttons.excelHtml5 = {
 					if ( typeof row[i] === 'number' || (
 						row[i].match &&
 <<<<<<< HEAD
+<<<<<<< HEAD
 						row[i].match(/^-?\d+(\.\d+)?$/) &&
+=======
+						row[i].match(/^-?\d+(\.\d+)?([eE]\-?\d+)?$/) && // Includes exponential format
+>>>>>>> danhmuc_list
 =======
 						row[i].match(/^-?\d+(\.\d+)?([eE]\-?\d+)?$/) && // Includes exponential format
 >>>>>>> danhmuc_list

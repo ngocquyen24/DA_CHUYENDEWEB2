@@ -21,7 +21,11 @@
     var lang = options.langInfo;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     self.icon = '<i class="fa fa-object-group"/>';
+=======
+    self.icon = '<i class="fa fa-object-group"></i>';
+>>>>>>> danhmuc_list
 =======
     self.icon = '<i class="fa fa-object-group"></i>';
 >>>>>>> danhmuc_list

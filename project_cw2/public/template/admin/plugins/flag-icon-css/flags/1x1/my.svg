@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="flag-icon-css-my" viewBox="0 0 512 512">
   <path fill="#cc0001" d="M0 0h512v512H0z"/>
   <path id="a" fill="#fff" d="M0 475.5h512V512H0z"/>
@@ -14,6 +15,8 @@
     <path d="M278.4 193.2L239 172.7l11.6 41.9-26.2-35-8.2 42.6-8-42.7-26.5 35 11.8-41.9-39.3 20.4 29.2-32.8-44.5 1.7 40.9-17.1-40.9-17.3 44.5 1.8-29-32.9 39.2 20.5L182 75l26.2 35 8.2-42.6 8 42.7L251 75l-11.8 42 39.3-20.4-29.2 32.8 44.5-1.7-40.9 17.2 40.9 17.2-44.5-1.8z"/>
   </g>
 =======
+=======
+>>>>>>> danhmuc_list
 <svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-my" viewBox="0 0 512 512">
   <path id="rect2186" d="M0 0h512v512H0z" style="fill:#c00;fill-opacity:1;stroke:none;stroke-width:.92376"/>
   <path id="rect2188-1" d="M.4 42.5h511.2v41H.4z" style="fill:#fff;fill-opacity:1;stroke:none;stroke-width:.904416"/>
@@ -24,5 +27,8 @@
   <path id="rect2188-1-9-1-4" d="M.4 294.6h511.2v41H.4z" style="fill:#fff;fill-opacity:1;stroke:none;stroke-width:.904416"/>
   <path id="rect2188-1-9-1-4-4" d="M.4 378.1h511.2v41H.4z" style="fill:#fff;fill-opacity:1;stroke:none;stroke-width:.904416"/>
   <path id="rect2188-1-9-1-4-4-6" d="M0 471h511.2v41H0z" style="fill:#fff;fill-opacity:1;stroke:none;stroke-width:.904416"/>
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 </svg>

@@ -63,7 +63,11 @@
       myKeywords = myKeywords.concat(["nonlocal", "False", "True", "None", "async", "await"]);
       myBuiltins = myBuiltins.concat(["ascii", "bytes", "exec", "print"]);
 <<<<<<< HEAD
+<<<<<<< HEAD
       var stringPrefixes = new RegExp("^(([rbuf]|(br)|(fr))?('{3}|\"{3}|['\"]))", "i");
+=======
+      var stringPrefixes = new RegExp("^(([rbuf]|(br)|(rb)|(fr)|(rf))?('{3}|\"{3}|['\"]))", "i");
+>>>>>>> danhmuc_list
 =======
       var stringPrefixes = new RegExp("^(([rbuf]|(br)|(rb)|(fr)|(rf))?('{3}|\"{3}|['\"]))", "i");
 >>>>>>> danhmuc_list
@@ -303,12 +307,18 @@
 
     function tokenLexer(stream, state) {
 <<<<<<< HEAD
+<<<<<<< HEAD
       if (stream.sol()) state.beginningOfLine = true;
 =======
+=======
+>>>>>>> danhmuc_list
       if (stream.sol()) {
         state.beginningOfLine = true;
         state.dedent = false;
       }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
       var style = state.tokenize(stream, state);
@@ -327,15 +337,21 @@
       // Handle scope changes.
       if (current == "pass" || current == "return")
 <<<<<<< HEAD
+<<<<<<< HEAD
         state.dedent += 1;
 
       if (current == "lambda") state.lambda = true;
       if (current == ":" && !state.lambda && top(state).type == "py")
 =======
+=======
+>>>>>>> danhmuc_list
         state.dedent = true;
 
       if (current == "lambda") state.lambda = true;
       if (current == ":" && !state.lambda && top(state).type == "py" && stream.match(/^\s*(?:#|$)/, false))
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         pushPyScope(state);
 
@@ -351,10 +367,15 @@
         }
       }
 <<<<<<< HEAD
+<<<<<<< HEAD
       if (state.dedent > 0 && stream.eol() && top(state).type == "py") {
         if (state.scopes.length > 1) state.scopes.pop();
         state.dedent -= 1;
       }
+=======
+      if (state.dedent && stream.eol() && top(state).type == "py" && state.scopes.length > 1)
+        state.scopes.pop();
+>>>>>>> danhmuc_list
 =======
       if (state.dedent && stream.eol() && top(state).type == "py" && state.scopes.length > 1)
         state.scopes.pop();
@@ -394,7 +415,13 @@
           return state.tokenize.isString ? CodeMirror.Pass : 0;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         var scope = top(state), closing = scope.type == textAfter.charAt(0)
+=======
+        var scope = top(state)
+        var closing = scope.type == textAfter.charAt(0) ||
+            scope.type == "py" && !state.dedent && /^(else:|elif |except |finally:)/.test(textAfter)
+>>>>>>> danhmuc_list
 =======
         var scope = top(state)
         var closing = scope.type == textAfter.charAt(0) ||
@@ -407,7 +434,11 @@
       },
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       electricInput: /^\s*[\}\]\)]$/,
+=======
+      electricInput: /^\s*([\}\]\)]|else:|elif |except |finally:)$/,
+>>>>>>> danhmuc_list
 =======
       electricInput: /^\s*([\}\]\)]|else:|elif |except |finally:)$/,
 >>>>>>> danhmuc_list

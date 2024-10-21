@@ -14,7 +14,11 @@ return [
     */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     'default' => env('FILESYSTEM_DRIVER', 'local'),
+=======
+    'default' => env('FILESYSTEM_DISK', 'local'),
+>>>>>>> danhmuc_list
 =======
     'default' => env('FILESYSTEM_DISK', 'local'),
 >>>>>>> danhmuc_list
@@ -27,7 +31,11 @@ return [
     | Here you may configure as many filesystem "disks" as you wish, and you
     | may even configure multiple disks of the same driver. Defaults have
 <<<<<<< HEAD
+<<<<<<< HEAD
     | been setup for each driver as an example of the required options.
+=======
+    | been set up for each driver as an example of the required values.
+>>>>>>> danhmuc_list
 =======
     | been set up for each driver as an example of the required values.
 >>>>>>> danhmuc_list
@@ -42,6 +50,10 @@ return [
             'driver' => 'local',
             'root' => storage_path('app'),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            'throw' => false,
+>>>>>>> danhmuc_list
 =======
             'throw' => false,
 >>>>>>> danhmuc_list
@@ -53,6 +65,10 @@ return [
             'url' => env('APP_URL').'/storage',
             'visibility' => 'public',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            'throw' => false,
+>>>>>>> danhmuc_list
 =======
             'throw' => false,
 >>>>>>> danhmuc_list
@@ -69,12 +85,17 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'use_path_style_endpoint' => env('AWS_USE_PATH_STYLE_ENDPOINT', false),
 =======
 >>>>>>> origin/them_slide
 =======
             'use_path_style_endpoint' => env('AWS_USE_PATH_STYLE_ENDPOINT', false),
 >>>>>>> Login_Register
+=======
+            'use_path_style_endpoint' => env('AWS_USE_PATH_STYLE_ENDPOINT', false),
+            'throw' => false,
+>>>>>>> danhmuc_list
 =======
             'use_path_style_endpoint' => env('AWS_USE_PATH_STYLE_ENDPOINT', false),
             'throw' => false,

@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="flag-icon-css-gd" viewBox="0 0 640 480">
+=======
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="flag-icons-gd" viewBox="0 0 640 480">
+>>>>>>> danhmuc_list
 =======
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="flag-icons-gd" viewBox="0 0 640 480">
 >>>>>>> danhmuc_list
@@ -8,6 +12,7 @@
       <g id="b">
         <path id="a" fill="#fcd116" d="M0-1v1h.5" transform="rotate(18 0 -1)"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <use transform="scale(-1 1)" xlink:href="#a"/>
       </g>
       <use transform="rotate(72)" xlink:href="#b"/>
@@ -15,12 +20,17 @@
       <use transform="rotate(216)" xlink:href="#b"/>
       <use transform="rotate(288)" xlink:href="#b"/>
 =======
+=======
+>>>>>>> danhmuc_list
         <use xlink:href="#a" transform="scale(-1 1)"/>
       </g>
       <use xlink:href="#b" transform="rotate(72)"/>
       <use xlink:href="#b" transform="rotate(144)"/>
       <use xlink:href="#b" transform="rotate(216)"/>
       <use xlink:href="#b" transform="rotate(288)"/>
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     </g>
   </defs>
@@ -28,6 +38,7 @@
   <path fill="#007a5e" d="M67.2 67.2h505.6v345.6H67.2z"/>
   <path fill="#fcd116" d="M67.2 67.3h505.6L67.2 412.9h505.6z"/>
   <circle cx="319.9" cy="240.1" r="57.6" fill="#ce1126"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
   <use width="100%" height="100%" transform="matrix(52.8 0 0 52.8 320 240)" xlink:href="#c"/>
   <use width="100%" height="100%" x="-100" transform="translate(-30.3)" xlink:href="#d"/>
@@ -39,6 +50,8 @@
   <use width="100%" height="100%" transform="matrix(31.2 0 0 31.2 320 448.2)" xlink:href="#c"/>
   <use width="100%" height="100%" x="100" transform="translate(30.3 414.6)" xlink:href="#d"/>
 =======
+=======
+>>>>>>> danhmuc_list
   <use xlink:href="#c" width="100%" height="100%" transform="matrix(52.8 0 0 52.8 320 240)"/>
   <use xlink:href="#d" width="100%" height="100%" x="-100" transform="translate(-30.3)"/>
   <use xlink:href="#c" id="d" width="100%" height="100%" transform="matrix(31.2 0 0 31.2 320 33.6)"/>
@@ -48,5 +61,8 @@
   <use xlink:href="#d" width="100%" height="100%" x="-100" transform="translate(-30.3 414.6)"/>
   <use xlink:href="#c" width="100%" height="100%" transform="matrix(31.2 0 0 31.2 320 448.2)"/>
   <use xlink:href="#d" width="100%" height="100%" x="100" transform="translate(30.3 414.6)"/>
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 </svg>

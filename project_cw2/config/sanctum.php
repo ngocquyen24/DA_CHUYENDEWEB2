@@ -1,6 +1,11 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+use Laravel\Sanctum\Sanctum;
+
+>>>>>>> danhmuc_list
 =======
 use Laravel\Sanctum\Sanctum;
 
@@ -22,7 +27,11 @@ return [
         '%s%s',
         'localhost,localhost:3000,127.0.0.1,127.0.0.1:8000,::1',
 <<<<<<< HEAD
+<<<<<<< HEAD
         env('APP_URL') ? ','.parse_url(env('APP_URL'), PHP_URL_HOST) : ''
+=======
+        Sanctum::currentApplicationUrlWithPort()
+>>>>>>> danhmuc_list
 =======
         Sanctum::currentApplicationUrlWithPort()
 >>>>>>> danhmuc_list

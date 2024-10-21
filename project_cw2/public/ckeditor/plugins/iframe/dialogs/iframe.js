@@ -1,5 +1,6 @@
 ﻿/*
 <<<<<<< HEAD
+<<<<<<< HEAD
  Copyright (c) 2003-2021, CKSource - Frederico Knabben. All rights reserved.
  For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
 */
@@ -11,6 +12,8 @@ requiredContent:"iframe[align]","default":"",items:[[a.notSet,""],[a.left,"left"
 type:"checkbox",requiredContent:"iframe[scrolling]",label:e.scrolling,setup:d,commit:f},{id:"frameborder",type:"checkbox",requiredContent:"iframe[frameborder]",label:e.border,setup:d,commit:f},{id:"tabindex",type:"checkbox",requiredContent:"iframe[tabindex]",label:e.tabindex,setup:d,commit:f}]},{type:"hbox",widths:["50%","50%"],children:[{id:"name",type:"text",requiredContent:"iframe[name]",label:a.name,setup:d,commit:f},{id:"title",type:"text",requiredContent:"iframe[title]",label:a.advisoryTitle,
 setup:d,commit:f}]},{id:"longdesc",type:"text",requiredContent:"iframe[longdesc]",label:a.longDescr,setup:d,commit:f}]},g&&g.createAdvancedTab(c,{id:1,classes:1,styles:1},"iframe")]}})})();
 =======
+=======
+>>>>>>> danhmuc_list
  Copyright (c) 2003-2023, CKSource Holding sp. z o.o. All rights reserved.
  CKEditor 4 LTS ("Long Term Support") is available under the terms of the Extended Support Model.
 */
@@ -20,5 +23,9 @@ onOk:function(){var b;b=this.fakeImage?this.iframeNode:new CKEDITOR.dom.element(
 required:!0,validate:CKEDITOR.dialog.validate.notEmpty(e.noUrl),setup:d,commit:f}]},{type:"hbox",children:[{id:"width",type:"text",requiredContent:"iframe[width]",style:"width:100%",labelLayout:"vertical",label:a.width,validate:CKEDITOR.dialog.validate.htmlLength(a.invalidHtmlLength.replace("%1",a.width)),setup:d,commit:f},{id:"height",type:"text",requiredContent:"iframe[height]",style:"width:100%",labelLayout:"vertical",label:a.height,validate:CKEDITOR.dialog.validate.htmlLength(a.invalidHtmlLength.replace("%1",
 a.height)),setup:d,commit:f},{id:"align",type:"select",requiredContent:"iframe[align]","default":"",items:[[a.notSet,""],[a.left,"left"],[a.right,"right"],[a.alignTop,"top"],[a.alignMiddle,"middle"],[a.alignBottom,"bottom"]],style:"width:100%",labelLayout:"vertical",label:a.align,setup:function(b,a){d.apply(this,arguments);if(a){var c=a.getAttribute("align");this.setValue(c&&c.toLowerCase()||"")}},commit:function(a,c,d){f.apply(this,arguments);this.getValue()&&(d.align=this.getValue())}}]},{type:"hbox",
 widths:["33%","33%","33%"],children:[{id:"scrolling",type:"checkbox",requiredContent:"iframe[scrolling]",label:e.scrolling,setup:d,commit:f},{id:"frameborder",type:"checkbox",requiredContent:"iframe[frameborder]",label:e.border,setup:d,commit:f},{id:"tabindex",type:"checkbox",requiredContent:"iframe[tabindex]",label:e.tabindex,setup:d,commit:f}]},{type:"hbox",widths:["50%","50%"],children:[{id:"name",type:"text",requiredContent:"iframe[name]",label:a.name,setup:d,commit:f},{id:"title",type:"text",
+<<<<<<< HEAD
+requiredContent:"iframe[title]",label:a.advisoryTitle,setup:d,commit:f}]},{id:"longdesc",type:"text",requiredContent:"iframe[longdesc]",label:a.longDescr,setup:d,commit:f}]},g&&g.createAdvancedTab(c,{id:1,classes:1,styles:1},"iframe")]}})})();
+>>>>>>> danhmuc_list
+=======
 requiredContent:"iframe[title]",label:a.advisoryTitle,setup:d,commit:f}]},{id:"longdesc",type:"text",requiredContent:"iframe[longdesc]",label:a.longDescr,setup:d,commit:f}]},g&&g.createAdvancedTab(c,{id:1,classes:1,styles:1},"iframe")]}})})();
 >>>>>>> danhmuc_list

@@ -1,5 +1,6 @@
 <meta charset="utf-8">
 <<<<<<< HEAD
+<<<<<<< HEAD
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ $title }}</title>
 
@@ -23,6 +24,8 @@
     }
 </style>
 =======
+=======
+>>>>>>> danhmuc_list
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ $title }}</title>
 
@@ -35,4 +38,7 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="/template/admin/dist/css/adminlte.min.css">
 @yield('head')
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list

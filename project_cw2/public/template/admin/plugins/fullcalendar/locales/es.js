@@ -17,11 +17,14 @@ FullCalendar.globalLocales.push(function () {
       list: 'Agenda',
     },
 <<<<<<< HEAD
+<<<<<<< HEAD
     weekText: 'Sm',
     allDayText: 'Todo el día',
     moreLinkText: 'más',
     noEventsText: 'No hay eventos para mostrar',
 =======
+=======
+>>>>>>> danhmuc_list
     buttonHints: {
       prev: '$0 antes',
       next: '$0 siguiente',
@@ -45,6 +48,9 @@ FullCalendar.globalLocales.push(function () {
     closeHint: 'Cerrar',
     timeHint: 'La hora',
     eventHint: 'Evento',
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   };
 

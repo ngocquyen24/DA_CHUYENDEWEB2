@@ -485,7 +485,11 @@ CodeMirror.defineMode("clike", function(config, parserConfig) {
                     "return static strictfp super switch synchronized this throw throws transient " +
                     "try volatile while @interface"),
 <<<<<<< HEAD
+<<<<<<< HEAD
     types: words("byte short int long float double boolean char void Boolean Byte Character Double Float " +
+=======
+    types: words("var byte short int long float double boolean char void Boolean Byte Character Double Float " +
+>>>>>>> danhmuc_list
 =======
     types: words("var byte short int long float double boolean char void Boolean Byte Character Double Float " +
 >>>>>>> danhmuc_list
@@ -664,7 +668,11 @@ CodeMirror.defineMode("clike", function(config, parserConfig) {
       "protected catch finally out final vararg reified dynamic companion constructor init " +
       "sealed field property receiver param sparam lateinit data inline noinline tailrec " +
 <<<<<<< HEAD
+<<<<<<< HEAD
       "external annotation crossinline const operator infix suspend actual expect setparam"
+=======
+      "external annotation crossinline const operator infix suspend actual expect setparam value"
+>>>>>>> danhmuc_list
 =======
       "external annotation crossinline const operator infix suspend actual expect setparam value"
 >>>>>>> danhmuc_list

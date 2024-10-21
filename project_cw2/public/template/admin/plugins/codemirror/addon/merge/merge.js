@@ -509,6 +509,10 @@
       copy.chunk = chunk;
       copy.style.top = (chunk.origTo > chunk.origFrom ? top : dv.edit.heightAtLine(chunk.editFrom, "local") - sTopEdit) + "px";
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+      copy.setAttribute("role", "button");
+>>>>>>> danhmuc_list
 =======
       copy.setAttribute("role", "button");
 >>>>>>> danhmuc_list
@@ -523,6 +527,10 @@
         copyReverse.style.top = topReverse + "px";
         dv.type == "right" ? copyReverse.style.left = "2px" : copyReverse.style.right = "2px";
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        copyReverse.setAttribute("role", "button");
+>>>>>>> danhmuc_list
 =======
         copyReverse.setAttribute("role", "button");
 >>>>>>> danhmuc_list
@@ -608,6 +616,10 @@
   function buildGap(dv) {
     var lock = dv.lockButton = elt("div", null, "CodeMirror-merge-scrolllock");
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    lock.setAttribute("role", "button");
+>>>>>>> danhmuc_list
 =======
     lock.setAttribute("role", "button");
 >>>>>>> danhmuc_list

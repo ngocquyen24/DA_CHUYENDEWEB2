@@ -2,6 +2,7 @@
     "private": true,
     "scripts": {
 <<<<<<< HEAD
+<<<<<<< HEAD
         "dev": "npm run development",
         "development": "mix",
         "watch": "mix watch",
@@ -16,6 +17,8 @@
         "lodash": "^4.17.19",
         "postcss": "^8.1.14"
 =======
+=======
+>>>>>>> danhmuc_list
         "dev": "vite",
         "build": "vite build"
     },
@@ -23,6 +26,9 @@
         "axios": "^1.1.2",
         "laravel-vite-plugin": "^0.7.2",
         "vite": "^4.0.0"
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     }
 }

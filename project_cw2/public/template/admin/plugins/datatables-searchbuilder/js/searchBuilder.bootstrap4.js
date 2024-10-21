@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 (function () {
     'use strict';
 
@@ -51,6 +52,8 @@
 
 }());
 =======
+=======
+>>>>>>> danhmuc_list
 (function (factory) {
     if (typeof define === 'function' && define.amd) {
         // AMD
@@ -100,4 +103,7 @@
     });
     return dataTable.searchPanes;
 }));
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list

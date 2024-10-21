@@ -75,7 +75,11 @@ return [
             'prefix' => '',
             'prefix_indexes' => true,
 <<<<<<< HEAD
+<<<<<<< HEAD
             'schema' => 'public',
+=======
+            'search_path' => 'public',
+>>>>>>> danhmuc_list
 =======
             'search_path' => 'public',
 >>>>>>> danhmuc_list
@@ -94,6 +98,11 @@ return [
             'prefix' => '',
             'prefix_indexes' => true,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            // 'encrypt' => env('DB_ENCRYPT', 'yes'),
+            // 'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'false'),
+>>>>>>> danhmuc_list
 =======
             // 'encrypt' => env('DB_ENCRYPT', 'yes'),
             // 'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'false'),
@@ -139,7 +148,12 @@ return [
             'url' => env('REDIS_URL'),
             'host' => env('REDIS_HOST', '127.0.0.1'),
 <<<<<<< HEAD
+<<<<<<< HEAD
             'password' => env('REDIS_PASSWORD', null),
+=======
+            'username' => env('REDIS_USERNAME'),
+            'password' => env('REDIS_PASSWORD'),
+>>>>>>> danhmuc_list
 =======
             'username' => env('REDIS_USERNAME'),
             'password' => env('REDIS_PASSWORD'),
@@ -152,7 +166,12 @@ return [
             'url' => env('REDIS_URL'),
             'host' => env('REDIS_HOST', '127.0.0.1'),
 <<<<<<< HEAD
+<<<<<<< HEAD
             'password' => env('REDIS_PASSWORD', null),
+=======
+            'username' => env('REDIS_USERNAME'),
+            'password' => env('REDIS_PASSWORD'),
+>>>>>>> danhmuc_list
 =======
             'username' => env('REDIS_USERNAME'),
             'password' => env('REDIS_PASSWORD'),

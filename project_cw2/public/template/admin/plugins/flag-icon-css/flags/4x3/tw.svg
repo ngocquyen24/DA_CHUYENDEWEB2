@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <svg xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-tw" viewBox="0 0 640 480">
   <defs>
     <clipPath id="tw-a">
@@ -12,6 +13,8 @@
     <path fill="#000095" d="M238.5 175l-15 7.9-14.5 8.6-17-.6-16.9.2-14.3-9L146 174l-8-15-8.6-14.5.6-16.8-.2-17 9-14.2 8.3-14.8 14.9-7.9 14.6-8.6 16.9.6 17-.2 14.3 9 14.7 8.2 8 14.9 8.6 14.5-.6 16.9.2 16.9-9 14.3z"/>
     <path fill="#fff" d="M244.6 128.3a51.9 51.9 0 11-103.7 0 51.9 51.9 0 01103.7 0z"/>
 =======
+=======
+>>>>>>> danhmuc_list
 <svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-tw" viewBox="0 0 640 480">
   <clipPath id="tw-a">
     <path d="M0 0h640v480H0z"/>
@@ -44,6 +47,9 @@
     </g>
     <circle cx="180" cy="120" r="51.1" fill="#000095"/>
     <circle cx="180" cy="120" r="45.1" fill="#fff"/>
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   </g>
 </svg>

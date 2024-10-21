@@ -11,6 +11,7 @@ class EventServiceProvider extends ServiceProvider
 {
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * The event listener mappings for the application.
      *
 <<<<<<< HEAD
@@ -27,6 +28,11 @@ class EventServiceProvider extends ServiceProvider
      *
      * @var array<class-string, array<int, class-string>>
 >>>>>>> danhmuc_list
+=======
+     * The event to listener mappings for the application.
+     *
+     * @var array<class-string, array<int, class-string>>
+>>>>>>> danhmuc_list
      */
     protected $listen = [
         Registered::class => [
@@ -37,6 +43,7 @@ class EventServiceProvider extends ServiceProvider
     /**
      * Register any events for your application.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return void
      */
@@ -45,6 +52,8 @@ class EventServiceProvider extends ServiceProvider
         //
     }
 =======
+=======
+>>>>>>> danhmuc_list
      */
     public function boot(): void
     {
@@ -58,5 +67,8 @@ class EventServiceProvider extends ServiceProvider
     {
         return false;
     }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 }

@@ -1,7 +1,12 @@
 ﻿/**
 <<<<<<< HEAD
+<<<<<<< HEAD
  * Copyright (c) 2003-2021, CKSource - Frederico Knabben. All rights reserved.
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+=======
+ * Copyright (c) 2003-2023, CKSource Holding sp. z o.o. All rights reserved.
+ * CKEditor 4 LTS ("Long Term Support") is available under the terms of the Extended Support Model.
+>>>>>>> danhmuc_list
 =======
  * Copyright (c) 2003-2023, CKSource Holding sp. z o.o. All rights reserved.
  * CKEditor 4 LTS ("Long Term Support") is available under the terms of the Extended Support Model.
@@ -36,11 +41,14 @@ var initSample = ( function() {
 		// Depending on the wysiwygarea plugin availability initialize classic or inline editor.
 		if ( wysiwygareaAvailable ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 			CKEDITOR.replace( 'editor' );
 		} else {
 			editorElement.setAttribute( 'contenteditable', 'true' );
 			CKEDITOR.inline( 'editor' );
 =======
+=======
+>>>>>>> danhmuc_list
 			CKEDITOR.replace( 'editor', {
 				on: {
 					contentPreview: function( evt ) {
@@ -69,6 +77,9 @@ var initSample = ( function() {
 					}
 				}
 			} );
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 			// TODO we can consider displaying some info box that

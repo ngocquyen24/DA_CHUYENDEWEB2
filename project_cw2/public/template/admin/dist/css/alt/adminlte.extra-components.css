@@ -1,6 +1,10 @@
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  *   AdminLTE v3.1.0
+=======
+ *   AdminLTE v3.2.0
+>>>>>>> danhmuc_list
 =======
  *   AdminLTE v3.2.0
 >>>>>>> danhmuc_list
@@ -393,7 +397,10 @@
   border-radius: 0.25rem;
   background-color: #fff;
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-flex;
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
   display: -ms-flexbox;
@@ -418,6 +425,7 @@
 .info-box .info-box-icon {
   border-radius: 0.25rem;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
@@ -427,11 +435,16 @@
   font-size: 1.875rem;
   -webkit-justify-content: center;
 =======
+=======
+>>>>>>> danhmuc_list
   -ms-flex-align: center;
   align-items: center;
   display: -ms-flexbox;
   display: flex;
   font-size: 1.875rem;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   -ms-flex-pack: center;
   justify-content: center;
@@ -444,6 +457,7 @@
 }
 
 .info-box .info-box-content {
+<<<<<<< HEAD
 <<<<<<< HEAD
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -460,6 +474,8 @@
   flex: 1;
   padding: 0 10px;
 =======
+=======
+>>>>>>> danhmuc_list
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -471,6 +487,9 @@
   flex: 1;
   padding: 0 10px;
   overflow: hidden;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 }
 

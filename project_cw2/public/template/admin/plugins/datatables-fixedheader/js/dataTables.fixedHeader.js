@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*! FixedHeader 3.1.8
+=======
+/*! FixedHeader 3.2.1
+>>>>>>> danhmuc_list
 =======
 /*! FixedHeader 3.2.1
 >>>>>>> danhmuc_list
@@ -11,7 +15,11 @@
  * @description Fix a table's header or footer, so it is always visible while
  *              scrolling
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @version     3.1.8
+=======
+ * @version     3.2.1
+>>>>>>> danhmuc_list
 =======
  * @version     3.2.1
 >>>>>>> danhmuc_list
@@ -111,6 +119,10 @@ var FixedHeader = function ( dt, config ) {
 			host: null,
 			floating: null,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+			floatingParent: $('<div class="dtfh-floatingparent">'),
+>>>>>>> danhmuc_list
 =======
 			floatingParent: $('<div class="dtfh-floatingparent">'),
 >>>>>>> danhmuc_list
@@ -120,6 +132,10 @@ var FixedHeader = function ( dt, config ) {
 			host: null,
 			floating: null,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+			floatingParent: $('<div class="dtfh-floatingparent">'),
+>>>>>>> danhmuc_list
 =======
 			floatingParent: $('<div class="dtfh-floatingparent">'),
 >>>>>>> danhmuc_list
@@ -225,7 +241,11 @@ $.extend( FixedHeader.prototype, {
 	 * Recalculate the position of the fixed elements and force them into place
 	 */
 <<<<<<< HEAD
+<<<<<<< HEAD
 	update: function ()
+=======
+	update: function (force)
+>>>>>>> danhmuc_list
 =======
 	update: function (force)
 >>>>>>> danhmuc_list
@@ -240,9 +260,12 @@ $.extend( FixedHeader.prototype, {
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		this._positions();
 		this._scroll( true );
 =======
+=======
+>>>>>>> danhmuc_list
 		// Don't update if header is not in the document atm (due to
 		// async events)
 		if ($(table).children('thead').length === 0) {
@@ -251,6 +274,9 @@ $.extend( FixedHeader.prototype, {
 
 		this._positions();
 		this._scroll( force !== undefined ? force : true );
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	},
 
@@ -290,10 +316,13 @@ $.extend( FixedHeader.prototype, {
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		dt.on( 'column-reorder.dt.dtfc column-visibility.dt.dtfc draw.dt.dtfc column-sizing.dt.dtfc responsive-display.dt.dtfc', function () {
 			that.update();
 		} );
 =======
+=======
+>>>>>>> danhmuc_list
 		dt
 			.on( 'column-reorder.dt.dtfc column-visibility.dt.dtfc column-sizing.dt.dtfc responsive-display.dt.dtfc', function (e, ctx) {
 				that.update();
@@ -302,6 +331,9 @@ $.extend( FixedHeader.prototype, {
 				// For updates from our own table, don't reclone, but for all others, do
 				that.update(ctx === dt.settings()[0] ? false : true);
 			} );
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 		dt.on( 'destroy.dtfc', function () {
@@ -336,13 +368,19 @@ $.extend( FixedHeader.prototype, {
 			this.dom.tfoot;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 		// If footer and scrolling is enabled then we don't clone
 		// Instead the table's height is decreased accordingly - see `_scroll()`
 		if (item === 'footer' && this._scrollEnabled()) {
 			return;
 		}	
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		if ( ! force && itemDom.floating ) {
 			// existing floating element - reuse it
@@ -351,7 +389,13 @@ $.extend( FixedHeader.prototype, {
 		else {
 			if ( itemDom.floating ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 				itemDom.placeholder.remove();
+=======
+				if(itemDom.placeholder !== null) {
+					itemDom.placeholder.remove();
+				}
+>>>>>>> danhmuc_list
 =======
 				if(itemDom.placeholder !== null) {
 					itemDom.placeholder.remove();
@@ -363,6 +407,7 @@ $.extend( FixedHeader.prototype, {
 			}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			itemDom.floating = $( dt.table().node().cloneNode( false ) )
 				.css( 'table-layout', 'fixed' )
 				.attr( 'aria-hidden', 'true' )
@@ -371,6 +416,8 @@ $.extend( FixedHeader.prototype, {
 				.appendTo( 'body' );
 
 =======
+=======
+>>>>>>> danhmuc_list
 			var tableNode = $(dt.table().node()); 
 			var scrollBody = $(tableNode.parent());
 			var scrollEnabled = this._scrollEnabled();
@@ -419,6 +466,9 @@ $.extend( FixedHeader.prototype, {
 			scrollLeftUpdate();
 			scrollBody.scroll(scrollLeftUpdate)
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			// Insert a fake thead/tfoot into the DataTable to stop it jumping around
 			itemDom.placeholder = itemElement.clone( false );
@@ -435,7 +485,10 @@ $.extend( FixedHeader.prototype, {
 
 	/**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 	 * This method sets the sticky position of the header elements to match fixed columns
 	 * @param {JQuery<HTMLElement>} el 
 	 * @param {string} sign 
@@ -465,6 +518,9 @@ $.extend( FixedHeader.prototype, {
 	},
 
 	/**
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	 * Copy widths from the cells in one element to another. This is required
 	 * for the footer as the footer in the main table takes its sizes from the
@@ -539,14 +595,20 @@ $.extend( FixedHeader.prototype, {
 
 		if ( itemDom.floating && lastScrollLeft[ item ] !== scrollLeft ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 			itemDom.floating.css( 'left', position.left - scrollLeft );
 =======
+=======
+>>>>>>> danhmuc_list
 			// If scrolling is enabled we need to match the floating header to the body
 			if (this._scrollEnabled()) {
 				var newScrollLeft = $($(this.s.dt.table().node()).parent()).scrollLeft()
 				itemDom.floating.scrollLeft(newScrollLeft);
 				itemDom.floatingParent.scrollLeft(newScrollLeft);
 			}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 			lastScrollLeft[ item ] = scrollLeft;
@@ -575,7 +637,10 @@ $.extend( FixedHeader.prototype, {
 		var position = this.s.position;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 		// Just determine if scroll is enabled once
 		var scrollEnabled = this._scrollEnabled();
 
@@ -585,6 +650,9 @@ $.extend( FixedHeader.prototype, {
 			return;
 		}		
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		// It isn't trivial to add a !important css attribute...
 		var importantWidth = function (w) {
@@ -592,7 +660,10 @@ $.extend( FixedHeader.prototype, {
 				return (s || '') + 'width: '+w+'px !important;';
 			});
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 
 			// If not scrolling also have to update the floatingParent
 			if (!scrollEnabled) {
@@ -600,6 +671,9 @@ $.extend( FixedHeader.prototype, {
 					return (s || '') + 'width: '+w+'px !important;';
 				});
 			}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		};
 
@@ -610,10 +684,14 @@ $.extend( FixedHeader.prototype, {
 			document.activeElement :
 			null;
 <<<<<<< HEAD
+<<<<<<< HEAD
 		
 		if ( focus ) {
 			focus.blur();
 		}
+=======
+		var scrollBody = $($(this.s.dt.table().node()).parent());
+>>>>>>> danhmuc_list
 =======
 		var scrollBody = $($(this.s.dt.table().node()).parent());
 >>>>>>> danhmuc_list
@@ -638,8 +716,11 @@ $.extend( FixedHeader.prototype, {
 				itemDom.floating.remove();
 				itemDom.floating = null;
 <<<<<<< HEAD
+<<<<<<< HEAD
 			}
 =======
+=======
+>>>>>>> danhmuc_list
 				this._stickyPosition(itemDom.host, '+');
 			}
 
@@ -648,6 +729,9 @@ $.extend( FixedHeader.prototype, {
 			}
 
 			$($(itemDom.host.parent()).parent()).scrollLeft(scrollBody.scrollLeft())
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		}
 		else if ( mode === 'in' ) {
@@ -656,11 +740,14 @@ $.extend( FixedHeader.prototype, {
 			this._clone( item, forceChange );
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			itemDom.floating
 				.addClass( 'fixedHeader-floating' )
 				.css( item === 'header' ? 'top' : 'bottom', this.c[item+'Offset'] )
 				.css( 'left', position.left+'px' );
 =======
+=======
+>>>>>>> danhmuc_list
 			// Get useful position values
 			var scrollOffset = scrollBody.offset();
 			var windowTop = $(document).scrollTop();
@@ -694,6 +781,9 @@ $.extend( FixedHeader.prototype, {
 					'z-index': 2
 				})
 				.append(itemDom.floating);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 			importantWidth(position.width);
@@ -707,17 +797,23 @@ $.extend( FixedHeader.prototype, {
 			this._clone( item, forceChange );
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			itemDom.floating
 				.addClass( 'fixedHeader-locked' )
 				.css( 'top', position.tfootTop - position.theadHeight )
 				.css( 'left', position.left+'px' );
 =======
+=======
+>>>>>>> danhmuc_list
 			itemDom.floating.addClass( 'fixedHeader-locked' );
 			itemDom.floatingParent.css({
 				position: 'absolute',
 				top: position.tfootTop - position.theadHeight,
 				left: position.left+'px'
 			});
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 			importantWidth(position.width);
@@ -727,17 +823,23 @@ $.extend( FixedHeader.prototype, {
 			this._clone( item, forceChange );
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			itemDom.floating
 				.addClass( 'fixedHeader-locked' )
 				.css( 'top', position.tbodyTop )
 				.css( 'left', position.left+'px' );
 =======
+=======
+>>>>>>> danhmuc_list
 			itemDom.floating.addClass( 'fixedHeader-locked' );
 			itemDom.floatingParent.css({
 				position: 'absolute',
 				top: position.tbodyTop,
 				left: position.left+'px'
 			});
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 			importantWidth(position.width);
@@ -769,6 +871,10 @@ $.extend( FixedHeader.prototype, {
 		var dom = this.dom;
 		var tableNode = $(table.node());
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+		var scrollEnabled = this._scrollEnabled();
+>>>>>>> danhmuc_list
 =======
 		var scrollEnabled = this._scrollEnabled();
 >>>>>>> danhmuc_list
@@ -777,20 +883,27 @@ $.extend( FixedHeader.prototype, {
 		// regardless of if they are clones, since they hold the positions we
 		// want to measure from
 <<<<<<< HEAD
+<<<<<<< HEAD
 		var thead = tableNode.children('thead');
 		var tfoot = tableNode.children('tfoot');
 		var tbody = dom.tbody;
 =======
+=======
+>>>>>>> danhmuc_list
 		var thead = $(dt.table().header());
 		var tfoot = $(dt.table().footer());
 		var tbody = dom.tbody;
 		var scrollBody = tableNode.parent();
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 		position.visible = tableNode.is(':visible');
 		position.width = tableNode.outerWidth();
 		position.left = tableNode.offset().left;
 		position.theadTop = thead.offset().top;
+<<<<<<< HEAD
 <<<<<<< HEAD
 		position.tbodyTop = tbody.offset().top;
 		position.tbodyHeight = tbody.outerHeight();
@@ -801,6 +914,8 @@ $.extend( FixedHeader.prototype, {
 			position.tfootBottom = position.tfootTop + tfoot.outerHeight();
 			position.tfootHeight = position.tfootBottom - position.tfootTop;
 =======
+=======
+>>>>>>> danhmuc_list
 		position.tbodyTop = scrollEnabled ? scrollBody.offset().top : tbody.offset().top;
 		position.tbodyHeight = scrollEnabled ? scrollBody.outerHeight() : tbody.outerHeight();
 		position.theadHeight = thead.outerHeight();
@@ -810,6 +925,9 @@ $.extend( FixedHeader.prototype, {
 			position.tfootTop = position.tbodyTop + position.tbodyHeight; //tfoot.offset().top;
 			position.tfootBottom = position.tfootTop + tfoot.outerHeight();
 			position.tfootHeight = tfoot.outerHeight();
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		}
 		else {
@@ -831,12 +949,15 @@ $.extend( FixedHeader.prototype, {
 	_scroll: function ( forceChange )
 	{
 <<<<<<< HEAD
+<<<<<<< HEAD
 		var windowTop = $(document).scrollTop();
 		var windowLeft = $(document).scrollLeft();
 		var position = this.s.position;
 		var headerMode, footerMode;
 
 =======
+=======
+>>>>>>> danhmuc_list
 		// ScrollBody details
 		var scrollEnabled = this._scrollEnabled();
 		var scrollBody = $(this.s.dt.table().node()).parent();
@@ -861,11 +982,15 @@ $.extend( FixedHeader.prototype, {
 
 		var windowBottom = windowTop + windowHeight;
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		if ( this.c.header ) {
 			if ( ! this.s.enable ) {
 				headerMode = 'in-place';
 			}
+<<<<<<< HEAD
 <<<<<<< HEAD
 			else if ( ! position.visible || windowTop <= position.theadTop - this.c.headerOffset ) {
 				headerMode = 'in-place';
@@ -874,6 +999,8 @@ $.extend( FixedHeader.prototype, {
 				headerMode = 'in';
 			}
 =======
+=======
+>>>>>>> danhmuc_list
 			// The header is in it's normal place if the body top is lower than
 			//  the scroll of the window plus the headerOffset and the height of the header
 			else if ( ! position.visible || windowTop + this.c.headerOffset + position.theadHeight <= bodyTop) {
@@ -904,6 +1031,9 @@ $.extend( FixedHeader.prototype, {
 				}
 			}
 			// Anything else and the view is below the table
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			else {
 				headerMode = 'below';
@@ -917,7 +1047,10 @@ $.extend( FixedHeader.prototype, {
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 		var header = {
 			offset: {top: 0, left: 0},
 			height: 0
@@ -927,11 +1060,15 @@ $.extend( FixedHeader.prototype, {
 			height: 0
 		}
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		if ( this.c.footer && this.dom.tfoot.length ) {
 			if ( ! this.s.enable ) {
 				footerMode = 'in-place';
 			}
+<<<<<<< HEAD
 <<<<<<< HEAD
 			else if ( ! position.visible || windowTop + position.windowHeight >= position.tfootBottom + this.c.footerOffset ) {
 				footerMode = 'in-place';
@@ -939,6 +1076,8 @@ $.extend( FixedHeader.prototype, {
 			else if ( position.windowHeight + windowTop > position.tbodyTop + position.tfootHeight + this.c.footerOffset ) {
 				footerMode = 'in';
 =======
+=======
+>>>>>>> danhmuc_list
 			else if ( ! position.visible || position.tfootBottom + this.c.footerOffset <= windowBottom ) {
 				footerMode = 'in-place';
 			}
@@ -948,13 +1087,20 @@ $.extend( FixedHeader.prototype, {
 			) {
 				footerMode = 'in';
 				forceChange = true;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			}
 			else {
 				footerMode = 'above';
 			}
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+			
+>>>>>>> danhmuc_list
 =======
 			
 >>>>>>> danhmuc_list
@@ -964,8 +1110,11 @@ $.extend( FixedHeader.prototype, {
 
 			this._horizontal( 'footer', windowLeft );
 <<<<<<< HEAD
+<<<<<<< HEAD
 		}
 =======
+=======
+>>>>>>> danhmuc_list
 			
 			var getOffsetHeight = (el) => {
 				return {
@@ -1064,6 +1213,9 @@ $.extend( FixedHeader.prototype, {
 			return true;
 		}
 		return false
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	}
 } );
@@ -1075,7 +1227,11 @@ $.extend( FixedHeader.prototype, {
  * @static
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 FixedHeader.version = "3.1.8";
+=======
+FixedHeader.version = "3.2.1";
+>>>>>>> danhmuc_list
 =======
 FixedHeader.version = "3.2.1";
 >>>>>>> danhmuc_list

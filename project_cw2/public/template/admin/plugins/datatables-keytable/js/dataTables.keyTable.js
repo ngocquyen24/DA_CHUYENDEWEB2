@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*! KeyTable 2.6.1
+=======
+/*! KeyTable 2.6.4
+>>>>>>> danhmuc_list
 =======
 /*! KeyTable 2.6.4
 >>>>>>> danhmuc_list
@@ -10,7 +14,11 @@
  * @summary     KeyTable
  * @description Spreadsheet like keyboard navigation for DataTables
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @version     2.6.1
+=======
+ * @version     2.6.4
+>>>>>>> danhmuc_list
 =======
  * @version     2.6.4
 >>>>>>> danhmuc_list
@@ -480,13 +488,19 @@ $.extend( KeyTable.prototype, {
 					// Got Editor - need to activate inline editing,
 					// set the value and submit
 <<<<<<< HEAD
+<<<<<<< HEAD
 					editor
 						.inline( focused.cell.index() )
 =======
+=======
+>>>>>>> danhmuc_list
 					var options = that._inlineOptions(focused.cell.index());
 
 					editor
 						.inline(options.cell, options.field, options.options)
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 						.set( editor.displayed()[0], pastedText )
 						.submit();
@@ -578,6 +592,11 @@ $.extend( KeyTable.prototype, {
 
 		var editInline = function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+			var options = that._inlineOptions(editCell.index());
+
+>>>>>>> danhmuc_list
 =======
 			var options = that._inlineOptions(editCell.index());
 
@@ -637,7 +656,11 @@ $.extend( KeyTable.prototype, {
 					editor.off( namespace );
 				} )
 <<<<<<< HEAD
+<<<<<<< HEAD
 				.inline( editCell.index() );
+=======
+				.inline(options.cell, options.field, options.options);
+>>>>>>> danhmuc_list
 =======
 				.inline(options.cell, options.field, options.options);
 >>>>>>> danhmuc_list
@@ -660,7 +683,10 @@ $.extend( KeyTable.prototype, {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 	_inlineOptions: function (cellIdx)
 	{
 		if (this.c.editorOptions) {
@@ -675,6 +701,9 @@ $.extend( KeyTable.prototype, {
 	},
 
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	/**
 	 * Emit an event on the DataTable for listeners
@@ -883,7 +912,11 @@ $.extend( KeyTable.prototype, {
 
 			case 27: // esc
 <<<<<<< HEAD
+<<<<<<< HEAD
 				if ( this.s.blurable && enable === true ) {
+=======
+				if ( this.c.blurable && enable === true ) {
+>>>>>>> danhmuc_list
 =======
 				if ( this.c.blurable && enable === true ) {
 >>>>>>> danhmuc_list
@@ -1069,7 +1102,10 @@ $.extend( KeyTable.prototype, {
 			column = columns[ currCol ]; // row is the display, column is an index
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 		// If the direction is rtl then the logic needs to be inverted from this point forwards
 		if($(dt.table().node()).css('direction') === 'rtl') {
 			if(direction === 'right') {
@@ -1080,6 +1116,9 @@ $.extend( KeyTable.prototype, {
 			}
 		}
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		if ( direction === 'right' ) {
 			if ( currCol >= columns.length - 1 ) {
@@ -1248,13 +1287,19 @@ KeyTable.defaults = {
 
 	/**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 	 * Options to pass to Editor's inline method
 	 * @type {function}
 	 */
 	editorOptions: null,
 
 	/**
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	 * Select a cell to automatically select on start up. `null` for no
 	 * automatic selection
@@ -1278,7 +1323,11 @@ KeyTable.defaults = {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 KeyTable.version = "2.6.1";
+=======
+KeyTable.version = "2.6.4";
+>>>>>>> danhmuc_list
 =======
 KeyTable.version = "2.6.4";
 >>>>>>> danhmuc_list

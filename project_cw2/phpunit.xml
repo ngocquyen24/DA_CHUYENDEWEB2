@@ -13,7 +13,11 @@
         </testsuite>
     </testsuites>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <coverage processUncoveredFiles="true">
+=======
+    <coverage>
+>>>>>>> danhmuc_list
 =======
     <coverage>
 >>>>>>> danhmuc_list
@@ -22,6 +26,7 @@
         </include>
     </coverage>
     <php>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <server name="APP_ENV" value="testing"/>
         <server name="BCRYPT_ROUNDS" value="4"/>
@@ -33,6 +38,8 @@
         <server name="SESSION_DRIVER" value="array"/>
         <server name="TELESCOPE_ENABLED" value="false"/>
 =======
+=======
+>>>>>>> danhmuc_list
         <env name="APP_ENV" value="testing"/>
         <env name="BCRYPT_ROUNDS" value="4"/>
         <env name="CACHE_DRIVER" value="array"/>
@@ -42,6 +49,9 @@
         <env name="QUEUE_CONNECTION" value="sync"/>
         <env name="SESSION_DRIVER" value="array"/>
         <env name="TELESCOPE_ENABLED" value="false"/>
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     </php>
 </phpunit>

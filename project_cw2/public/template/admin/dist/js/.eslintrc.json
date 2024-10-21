@@ -15,11 +15,17 @@
   "rules": {
     "capitalized-comments": "off",
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
     "comma-dangle": [
       "error",
       "never"
     ],
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     "indent": [
       "error",
@@ -34,6 +40,10 @@
       "always-multiline"
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    "no-var": "off",
+>>>>>>> danhmuc_list
 =======
     "no-var": "off",
 >>>>>>> danhmuc_list
@@ -42,6 +52,11 @@
       "always"
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    "object-shorthand": "off",
+    "prefer-arrow-callback": "off",
+>>>>>>> danhmuc_list
 =======
     "object-shorthand": "off",
     "prefer-arrow-callback": "off",
@@ -55,13 +70,19 @@
     "unicorn/no-for-loop": "off",
     "unicorn/no-null": "off",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "unicorn/prefer-dataset": "off",
     "unicorn/prefer-includes": "off",
 =======
+=======
+>>>>>>> danhmuc_list
     "unicorn/numeric-separators-style": "off",
     "unicorn/prefer-dataset": "off",
     "unicorn/prefer-includes": "off",
     "unicorn/prefer-module": "off",
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     "unicorn/prefer-node-append": "off",
     "unicorn/prefer-query-selector": "off",

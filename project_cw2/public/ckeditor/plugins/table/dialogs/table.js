@@ -1,5 +1,6 @@
 ﻿/*
 <<<<<<< HEAD
+<<<<<<< HEAD
  Copyright (c) 2003-2021, CKSource - Frederico Knabben. All rights reserved.
  For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
 */
@@ -21,6 +22,8 @@ controlStyle:"width:3em",label:a.lang.table.cellSpace,"default":a.filter.check("
 a.getItem(0);var e=a.getFirst(CKEDITOR.dom.walker.nodeType(CKEDITOR.NODE_ELEMENT));e&&!e.equals(a.getBogus())?(this.disable(),this.setValue(a.getText())):(a=CKEDITOR.tools.trim(a.getText()),this.setValue(a))}},commit:function(d,e){if(this.isEnabled()){var b=this.getValue(),c=e.getElementsByTag("caption");if(b)0<c.count()?(c=c.getItem(0),c.setHtml("")):(c=new CKEDITOR.dom.element("caption",a.document),e.append(c,!0)),c.append(new CKEDITOR.dom.text(b,a.document));else if(0<c.count())for(b=c.count()-
 1;0<=b;b--)c.getItem(b).remove()}}},{type:"text",id:"txtSummary",bidi:!0,requiredContent:"table[summary]",label:a.lang.table.summary,setup:function(a){this.setValue(a.getAttribute("summary")||"")},commit:function(a,e){this.getValue()?e.setAttribute("summary",this.getValue()):e.removeAttribute("summary")}}]}]},q&&q.createAdvancedTab(a,null,"table")]}}var v=CKEDITOR.tools.cssLength,n=function(a){var f=this.id;a.info||(a.info={});a.info[f]=this.getValue()};CKEDITOR.dialog.add("table",function(a){return r(a,
 =======
+=======
+>>>>>>> danhmuc_list
  Copyright (c) 2003-2023, CKSource Holding sp. z o.o. All rights reserved.
  CKEditor 4 LTS ("Long Term Support") is available under the terms of the Extended Support Model.
 */
@@ -41,5 +44,8 @@ controlStyle:"width:3em",label:a.lang.table.cellSpace,"default":a.filter.check("
 1:0,validate:CKEDITOR.dialog.validate.number(a.lang.table.invalidCellPadding),setup:function(a){this.setValue(a.getAttribute("cellPadding")||"")},commit:function(a,b){this.getValue()?b.setAttribute("cellPadding",this.getValue()):b.removeAttribute("cellPadding")}}]}]},{type:"html",align:"right",html:""},{type:"vbox",padding:0,children:[{type:"text",id:"txtCaption",requiredContent:"caption",label:a.lang.table.caption,setup:function(a){this.enable();a=a.getElementsByTag("caption");if(0<a.count()){a=
 a.getItem(0);var b=a.getFirst(CKEDITOR.dom.walker.nodeType(CKEDITOR.NODE_ELEMENT));b&&!b.equals(a.getBogus())?(this.disable(),this.setValue(a.getText())):(a=CKEDITOR.tools.trim(a.getText()),this.setValue(a))}},commit:function(b,l){if(this.isEnabled()){var c=this.getValue(),d=l.getElementsByTag("caption");if(c)0<d.count()?(d=d.getItem(0),d.setHtml("")):(d=new CKEDITOR.dom.element("caption",a.document),l.append(d,!0)),d.append(new CKEDITOR.dom.text(c,a.document));else if(0<d.count())for(c=d.count()-
 1;0<=c;c--)d.getItem(c).remove()}}},{type:"text",id:"txtSummary",bidi:!0,requiredContent:"table[summary]",label:a.lang.table.summary,setup:function(a){this.setValue(a.getAttribute("summary")||"")},commit:function(a,b){this.getValue()?b.setAttribute("summary",this.getValue()):b.removeAttribute("summary")}}]}]},q&&q.createAdvancedTab(a,null,"table")]}}var v=CKEDITOR.tools.cssLength,n=function(a){var b=this.id;a.info||(a.info={});a.info[b]=this.getValue()};CKEDITOR.dialog.add("table",function(a){return r(a,
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 "table")});CKEDITOR.dialog.add("tableProperties",function(a){return r(a,"tableProperties")})})();

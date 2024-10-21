@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*! FixedColumns 3.3.2
  * ©2010-2020 SpryMedia Ltd - datatables.net/license
  */
@@ -1688,6 +1689,8 @@ $.fn.DataTable.FixedColumns = FixedColumns;
 return FixedColumns;
 }));
 =======
+=======
+>>>>>>> danhmuc_list
 /*! FixedColumns 4.0.0
  * 2019-2020 SpryMedia Ltd - datatables.net/license
  */
@@ -2245,4 +2248,7 @@ return FixedColumns;
     }));
 
 }());
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list

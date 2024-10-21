@@ -2,7 +2,11 @@
  * Bootstrap Colorpicker - Bootstrap Colorpicker is a modular color picker plugin for Bootstrap 4.
  * @package bootstrap-colorpicker
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @version v3.2.0
+=======
+ * @version v3.4.0
+>>>>>>> danhmuc_list
 =======
  * @version v3.4.0
 >>>>>>> danhmuc_list
@@ -431,6 +435,10 @@ var ColorItem = function () {
      * @param {ColorItem|HSVAColor|QixColor|String|*|null} color Color data
      * @param {String|null} format Color model to convert to by default. Supported: 'rgb', 'hsl', 'hex'.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+     * @param {boolean} disableHexInputFallback Disable fixing hex3 format
+>>>>>>> danhmuc_list
 =======
      * @param {boolean} disableHexInputFallback Disable fixing hex3 format
 >>>>>>> danhmuc_list
@@ -456,16 +464,22 @@ var ColorItem = function () {
     var color = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
     var format = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     _classCallCheck(this, ColorItem);
 
     this.replace(color, format);
 =======
+=======
+>>>>>>> danhmuc_list
     var disableHexInputFallback = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
 
     _classCallCheck(this, ColorItem);
 
     this.replace(color, format, disableHexInputFallback);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   }
 
@@ -476,6 +490,10 @@ var ColorItem = function () {
    * @param {ColorItem|HSVAColor|QixColor|String|*|null} color Color data to be parsed (if needed)
    * @param {String|null} format Color model to convert to by default. Supported: 'rgb', 'hsl', 'hex'.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+   * @param {boolean} disableHexInputFallback Disable fixing hex3 format
+>>>>>>> danhmuc_list
 =======
    * @param {boolean} disableHexInputFallback Disable fixing hex3 format
 >>>>>>> danhmuc_list
@@ -489,6 +507,10 @@ var ColorItem = function () {
     value: function replace(color) {
       var format = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+      var disableHexInputFallback = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+>>>>>>> danhmuc_list
 =======
       var disableHexInputFallback = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
 >>>>>>> danhmuc_list
@@ -509,7 +531,11 @@ var ColorItem = function () {
        * @private
        */
 <<<<<<< HEAD
+<<<<<<< HEAD
       this._color = ColorItem.parse(color);
+=======
+      this._color = ColorItem.parse(color, disableHexInputFallback);
+>>>>>>> danhmuc_list
 =======
       this._color = ColorItem.parse(color, disableHexInputFallback);
 >>>>>>> danhmuc_list
@@ -533,6 +559,10 @@ var ColorItem = function () {
      *
      * @param {ColorItem|HSVAColor|QixColor|String|*|null} color Color data
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+     * @param {boolean} disableHexInputFallback Disable fixing hex3 format
+>>>>>>> danhmuc_list
 =======
      * @param {boolean} disableHexInputFallback Disable fixing hex3 format
 >>>>>>> danhmuc_list
@@ -1006,6 +1036,11 @@ var ColorItem = function () {
     key: 'parse',
     value: function parse(color) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+      var disableHexInputFallback = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+
+>>>>>>> danhmuc_list
 =======
       var disableHexInputFallback = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
 
@@ -1035,11 +1070,17 @@ var ColorItem = function () {
       }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
       if (ColorItem.isHex(color) && color.length !== 6 && color.length !== 7 && disableHexInputFallback) {
         return null;
       }
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       try {
         return (0, _color2.default)(color, format);
@@ -1294,7 +1335,10 @@ exports.default = {
   autoInputFallback: true,
   /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
    * If true, valid HEX3 colors will be converted to HEX6, even with
    *    autoInputFallback set to false
    * if false, HEX3 colors will not be converted to HEX6, when autoInputFallback is false
@@ -1307,6 +1351,9 @@ exports.default = {
    */
   autoHexInputFallback: true,
   /**
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
    * If true a hash will be prepended to hexadecimal colors.
    * If false, the hash will be removed.
@@ -3073,7 +3120,11 @@ var Colorpicker = function () {
       this.pickerHandler.unbind();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       this.element.removeClass('colorpicker-element').removeData('colorpicker', 'color').off('.colorpicker');
+=======
+      this.element.removeClass('colorpicker-element').removeData('colorpicker').removeData('color').off('.colorpicker');
+>>>>>>> danhmuc_list
 =======
       this.element.removeClass('colorpicker-element').removeData('colorpicker').removeData('color').off('.colorpicker');
 >>>>>>> danhmuc_list
@@ -3171,7 +3222,11 @@ var Colorpicker = function () {
       }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       ch.color = val ? ch.createColor(val, this.options.autoInputFallback) : null;
+=======
+      ch.color = val ? ch.createColor(val, this.options.autoInputFallback, this.options.autoHexInputFallback) : null;
+>>>>>>> danhmuc_list
 =======
       ch.color = val ? ch.createColor(val, this.options.autoInputFallback, this.options.autoHexInputFallback) : null;
 >>>>>>> danhmuc_list
@@ -4232,14 +4287,20 @@ var PopupHandler = function () {
       this.popoverTarget.popover(_jquery2.default.extend(true, {}, _options2.default.popover, cp.options.popover, { trigger: 'manual', content: cp.picker, html: true }));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       this.popoverTip = (0, _jquery2.default)(this.popoverTarget.popover('getTipElement').data('bs.popover').tip);
 =======
+=======
+>>>>>>> danhmuc_list
       /* Bootstrap 5 added an official method to get the popover instance */
       /* global bootstrap */
       var useGetInstance = window.bootstrap && window.bootstrap.Popover && window.bootstrap.Popover.getInstance;
 
       this.popoverTip = useGetInstance ? (0, _jquery2.default)(bootstrap.Popover.getInstance(this.popoverTarget[0]).getTipElement()) : (0, _jquery2.default)(this.popoverTarget.popover('getTipElement').data('bs.popover').tip);
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       this.popoverTip.addClass('colorpicker-bs-popover');
 
@@ -5891,6 +5952,10 @@ var ColorHandler = function () {
      * @param {*} val
      * @param {boolean} fallbackOnInvalid
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+     * @param {boolean} autoHexInputFallback
+>>>>>>> danhmuc_list
 =======
      * @param {boolean} autoHexInputFallback
 >>>>>>> danhmuc_list
@@ -5902,14 +5967,20 @@ var ColorHandler = function () {
     value: function createColor(val) {
       var fallbackOnInvalid = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
       var color = new _ColorItem2.default(this.resolveColorDelegate(val), this.format);
 =======
+=======
+>>>>>>> danhmuc_list
       var autoHexInputFallback = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
 
       var disableHexInputFallback = !fallbackOnInvalid && !autoHexInputFallback;
 
       var color = new _ColorItem2.default(this.resolveColorDelegate(val), this.format, disableHexInputFallback);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
       if (!color.isValid()) {

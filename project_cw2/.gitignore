@@ -1,5 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /node_modules
+=======
+/.phpunit.cache
+/node_modules
+/public/build
+>>>>>>> danhmuc_list
 =======
 /.phpunit.cache
 /node_modules
@@ -11,6 +17,7 @@
 /vendor
 .env
 .env.backup
+<<<<<<< HEAD
 <<<<<<< HEAD
 .phpunit.result.cache
 docker-compose.override.yml
@@ -29,6 +36,8 @@ yarn-error.log
 /.vscode
 >>>>>>> Login_Register
 =======
+=======
+>>>>>>> danhmuc_list
 .env.production
 Homestead.json
 Homestead.yaml
@@ -38,4 +47,7 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list

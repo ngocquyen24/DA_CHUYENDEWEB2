@@ -12,6 +12,7 @@ class PreventRequestsDuringMaintenance extends Middleware
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @var array<int, string>
 =======
      * @var array
@@ -19,6 +20,9 @@ class PreventRequestsDuringMaintenance extends Middleware
 =======
      * @var array<int, string>
 >>>>>>> Login_Register
+=======
+     * @var array<int, string>
+>>>>>>> danhmuc_list
 =======
      * @var array<int, string>
 >>>>>>> danhmuc_list

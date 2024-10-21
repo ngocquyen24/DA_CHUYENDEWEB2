@@ -11,6 +11,7 @@ use Illuminate\Support\Str;
 class MenuService
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getParent()
     {
         return Menu::where('parent_id', 0)->get();
@@ -27,12 +28,21 @@ class MenuService
     public function getParent(){
         return Menu:: where('parent_id',0)->get();
 >>>>>>> danhmuc_list
+=======
+
+    public function getParent(){
+        return Menu:: where('parent_id',0)->get();
+>>>>>>> danhmuc_list
     }
 
     public function getAll()
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return Menu::orderbyDesc('id')->paginate(20);
+=======
+        return Menu::orderbyDesc('id')->paginate(10);
+>>>>>>> danhmuc_list
 =======
         return Menu::orderbyDesc('id')->paginate(10);
 >>>>>>> danhmuc_list
@@ -41,6 +51,7 @@ class MenuService
     public function create($request)
     {
         try {
+<<<<<<< HEAD
 <<<<<<< HEAD
 
             $menu = new Menu();
@@ -62,6 +73,8 @@ class MenuService
 
             $menu->save();
 =======
+=======
+>>>>>>> danhmuc_list
             Menu::create([
                 'name' => (string)$request->input('name'),
                 'parent_id' => (int)$request->input('parent_id'),
@@ -69,6 +82,9 @@ class MenuService
                 'content' => (string)$request->input('content'),
                 'active' => (string)$request->input('active'),
             ]);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
             Session::flash('success', 'Tạo Danh Mục Thành Công');
@@ -80,6 +96,7 @@ class MenuService
         return true;
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     public function update($request, $menu): bool
     {
@@ -129,6 +146,8 @@ class MenuService
             ->paginate(12)
             ->withQueryString();
     }
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 }

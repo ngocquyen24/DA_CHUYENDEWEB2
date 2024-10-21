@@ -1,6 +1,7 @@
 /*!
  * 
 <<<<<<< HEAD
+<<<<<<< HEAD
  * Super simple wysiwyg editor v0.8.18
  * https://summernote.org
  * 
@@ -11,6 +12,8 @@
  * Date: 2020-05-20T16:47Z
  * 
 =======
+=======
+>>>>>>> danhmuc_list
  * Super simple WYSIWYG editor v0.8.20
  * https://summernote.org
  *
@@ -20,6 +23,9 @@
  *
  * Date: 2021-10-14T21:15Z
  *
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
  */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -31,6 +37,7 @@
 		var a = factory();
 		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
 	}
+<<<<<<< HEAD
 <<<<<<< HEAD
 })(window, function() {
 return /******/ (function(modules) { // webpackBootstrap
@@ -129,6 +136,11 @@ return /******/ (function(modules) { // webpackBootstrap
 return /******/ (() => { // webpackBootstrap
 var __webpack_exports__ = {};
 >>>>>>> danhmuc_list
+=======
+})(self, function() {
+return /******/ (() => { // webpackBootstrap
+var __webpack_exports__ = {};
+>>>>>>> danhmuc_list
 (function ($) {
   $.extend($.summernote.lang, {
     'cs-CZ': {
@@ -151,6 +163,7 @@ var __webpack_exports__ = {};
         floatRight: 'Umístit doprava',
         floatNone: 'Neobtékat textem',
 <<<<<<< HEAD
+<<<<<<< HEAD
         shapeRounded: 'Shape: Rounded',
         shapeCircle: 'Shape: Circle',
         shapeThumbnail: 'Shape: Thumbnail',
@@ -162,6 +175,8 @@ var __webpack_exports__ = {};
         remove: 'Remove Image',
         original: 'Original'
 =======
+=======
+>>>>>>> danhmuc_list
         shapeRounded: 'Tvar: zaoblený',
         shapeCircle: 'Tvar: kruh',
         shapeThumbnail: 'Tvar: náhled',
@@ -172,6 +187,9 @@ var __webpack_exports__ = {};
         url: 'URL obrázku',
         remove: 'Odebrat obrázek',
         original: 'Originál'
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       },
       video: {
@@ -193,6 +211,7 @@ var __webpack_exports__ = {};
       table: {
         table: 'Tabulka',
 <<<<<<< HEAD
+<<<<<<< HEAD
         addRowAbove: 'Add row above',
         addRowBelow: 'Add row below',
         addColLeft: 'Add column left',
@@ -201,6 +220,8 @@ var __webpack_exports__ = {};
         delCol: 'Delete column',
         delTable: 'Delete table'
 =======
+=======
+>>>>>>> danhmuc_list
         addRowAbove: 'Přidat řádek nad',
         addRowBelow: 'Přidat řádek pod',
         addColLeft: 'Přidat sloupec vlevo',
@@ -208,6 +229,9 @@ var __webpack_exports__ = {};
         delRow: 'Smazat řádek',
         delCol: 'Smazat sloupec',
         delTable: 'Smazat tabulku'
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       },
       hr: {
@@ -264,6 +288,7 @@ var __webpack_exports__ = {};
       },
       help: {
 <<<<<<< HEAD
+<<<<<<< HEAD
         'insertParagraph': 'Insert Paragraph',
         'undo': 'Undoes the last command',
         'redo': 'Redoes the last command',
@@ -292,6 +317,8 @@ var __webpack_exports__ = {};
         'insertHorizontalRule': 'Insert horizontal rule',
         'linkDialog.show': 'Show Link Dialog'
 =======
+=======
+>>>>>>> danhmuc_list
         'insertParagraph': 'Vložit odstavec',
         'undo': 'Vrátit poslední příkaz',
         'redo': 'Opakovat poslední příkaz',
@@ -319,6 +346,9 @@ var __webpack_exports__ = {};
         'formatH6': 'Změnit formátování aktuálního bloku na Nadpis 6',
         'insertHorizontalRule': 'Vložit horizontální čáru',
         'linkDialog.show': 'Zobrazit dialog pro odkaz'
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       },
       history: {
@@ -327,8 +357,13 @@ var __webpack_exports__ = {};
       },
       specialChar: {
 <<<<<<< HEAD
+<<<<<<< HEAD
         specialChar: 'SPECIAL CHARACTERS',
         select: 'Select Special characters'
+=======
+        specialChar: 'SPECIÁLNÍ ZNAKY',
+        select: 'Vyberte speciální znaky'
+>>>>>>> danhmuc_list
 =======
         specialChar: 'SPECIÁLNÍ ZNAKY',
         select: 'Vyberte speciální znaky'
@@ -338,15 +373,22 @@ var __webpack_exports__ = {};
   });
 })(jQuery);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 /***/ })
 
 /******/ });
 });
 =======
+=======
+>>>>>>> danhmuc_list
 /******/ 	return __webpack_exports__;
 /******/ })()
 ;
 });
+<<<<<<< HEAD
+//# sourceMappingURL=summernote-cs-CZ.js.map
+>>>>>>> danhmuc_list
+=======
 //# sourceMappingURL=summernote-cs-CZ.js.map
 >>>>>>> danhmuc_list

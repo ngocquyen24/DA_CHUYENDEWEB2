@@ -5,6 +5,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 class CreateFailedJobsTable extends Migration
 {
     /**
@@ -26,6 +27,8 @@ class CreateFailedJobsTable extends Migration
             $table->string('uuid')->unique();
 >>>>>>> Login_Register
 =======
+=======
+>>>>>>> danhmuc_list
 return new class extends Migration
 {
     /**
@@ -36,6 +39,9 @@ return new class extends Migration
         Schema::create('failed_jobs', function (Blueprint $table) {
             $table->id();
             $table->string('uuid',100)->unique();
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             $table->text('connection');
             $table->text('queue');
@@ -48,6 +54,7 @@ return new class extends Migration
     /**
      * Reverse the migrations.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return void
      */
@@ -57,10 +64,15 @@ return new class extends Migration
     }
 }
 =======
+=======
+>>>>>>> danhmuc_list
      */
     public function down(): void
     {
         Schema::dropIfExists('failed_jobs');
     }
 };
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list

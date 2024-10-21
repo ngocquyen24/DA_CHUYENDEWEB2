@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*! Select for DataTables 1.3.2
+=======
+/*! Select for DataTables 1.3.4-dev
+>>>>>>> danhmuc_list
 =======
 /*! Select for DataTables 1.3.4-dev
 >>>>>>> danhmuc_list
@@ -11,7 +15,11 @@
  * @description A collection of API methods, events and buttons for DataTables
  *   that provides selection options of the items in a DataTable
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @version     1.3.2
+=======
+ * @version     1.3.4-dev
+>>>>>>> danhmuc_list
 =======
  * @version     1.3.4-dev
 >>>>>>> danhmuc_list
@@ -63,11 +71,14 @@ var DataTable = $.fn.dataTable;
 DataTable.select = {};
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 DataTable.select.version = '1.3.2';
 
 DataTable.select.init = function ( dt ) {
 	var ctx = dt.settings()[0];
 =======
+=======
+>>>>>>> danhmuc_list
 DataTable.select.version = '1.3.4-dev';
 
 DataTable.select.init = function ( dt ) {
@@ -114,6 +125,9 @@ DataTable.select.init = function ( dt ) {
 		dt.on('stateLoaded stateLoadParams', selectAndSave)
 	})
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	var init = ctx.oInit.select;
 	var defaults = DataTable.defaults.select;
@@ -587,6 +601,10 @@ function info ( api )
 function init ( ctx ) {
 	var api = new DataTable.Api( ctx );
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+	ctx._select_init = true;
+>>>>>>> danhmuc_list
 =======
 	ctx._select_init = true;
 >>>>>>> danhmuc_list
@@ -659,6 +677,10 @@ function init ( ctx ) {
 	api.on( 'draw.dtSelect.dt select.dtSelect.dt deselect.dtSelect.dt info.dt', function () {
 		info( api );
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+		api.state.save();
+>>>>>>> danhmuc_list
 =======
 		api.state.save();
 >>>>>>> danhmuc_list
@@ -671,6 +693,10 @@ function init ( ctx ) {
 		disableMouseSelection( api );
 		api.off( '.dtSelect' );
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+		$('body').off('.dtSelect' + _safeId(api.table().node()));
+>>>>>>> danhmuc_list
 =======
 		$('body').off('.dtSelect' + _safeId(api.table().node()));
 >>>>>>> danhmuc_list
@@ -943,6 +969,7 @@ apiRegister( 'select.style()', function ( style ) {
 
 	return this.iterator( 'table', function ( ctx ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 		ctx._select.style = style;
 
 		if ( ! ctx._select_init ) {
@@ -950,6 +977,8 @@ apiRegister( 'select.style()', function ( style ) {
 		}
 
 =======
+=======
+>>>>>>> danhmuc_list
 		if ( ! ctx._select ) {
 			DataTable.select.init( new DataTable.Api(ctx) );
 		}
@@ -960,6 +989,9 @@ apiRegister( 'select.style()', function ( style ) {
 
 		ctx._select.style = style;
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		// Add / remove mouse event handlers. They aren't required when only
 		// API selection is available
@@ -1126,7 +1158,13 @@ apiRegisterPlural( 'cells().deselect()', 'cell().deselect()', function () {
 		var data = ctx.aoData[ rowIdx ];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		data._selected_cells[ colIdx ] = false;
+=======
+		if(data._selected_cells !== undefined) {
+			data._selected_cells[ colIdx ] = false;
+		}
+>>>>>>> danhmuc_list
 =======
 		if(data._selected_cells !== undefined) {
 			data._selected_cells[ colIdx ] = false;

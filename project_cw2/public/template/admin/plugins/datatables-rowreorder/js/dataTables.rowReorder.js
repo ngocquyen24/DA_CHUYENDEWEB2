@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*! RowReorder 1.2.7
+=======
+/*! RowReorder 1.2.8
+>>>>>>> danhmuc_list
 =======
 /*! RowReorder 1.2.8
 >>>>>>> danhmuc_list
@@ -10,7 +14,11 @@
  * @summary     RowReorder
  * @description Row reordering extension for DataTables
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @version     1.2.7
+=======
+ * @version     1.2.8
+>>>>>>> danhmuc_list
 =======
  * @version     1.2.8
 >>>>>>> danhmuc_list
@@ -799,7 +807,11 @@ Api.register( 'rowReorder.disable()', function () {
  * @static
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 RowReorder.version = '1.2.6';
+=======
+RowReorder.version = '1.2.8';
+>>>>>>> danhmuc_list
 =======
 RowReorder.version = '1.2.8';
 >>>>>>> danhmuc_list

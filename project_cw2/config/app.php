@@ -1,6 +1,11 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+use Illuminate\Support\Facades\Facade;
+
+>>>>>>> danhmuc_list
 =======
 use Illuminate\Support\Facades\Facade;
 
@@ -60,7 +65,11 @@ return [
     'url' => env('APP_URL', 'http://localhost'),
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     'asset_url' => env('ASSET_URL', null),
+=======
+    'asset_url' => env('ASSET_URL', '/'),
+>>>>>>> danhmuc_list
 =======
     'asset_url' => env('ASSET_URL', '/'),
 >>>>>>> danhmuc_list
@@ -135,7 +144,10 @@ return [
     /*
     |--------------------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
     | Maintenance Mode Driver
     |--------------------------------------------------------------------------
     |
@@ -154,6 +166,9 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     | Autoloaded Service Providers
     |--------------------------------------------------------------------------
@@ -202,12 +217,15 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         App\Providers\ViewServiceProvider::class,
 
 >>>>>>> origin/them_slide
 =======
 >>>>>>> Login_Register
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
         App\Providers\AppServiceProvider::class,
@@ -229,6 +247,7 @@ return [
     |
     */
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     'aliases' => [
 
@@ -287,6 +306,11 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
     ],
+=======
+    'aliases' => Facade::defaultAliases()->merge([
+        // 'ExampleClass' => App\Example\ExampleClass::class,
+    ])->toArray(),
+>>>>>>> danhmuc_list
 =======
     'aliases' => Facade::defaultAliases()->merge([
         // 'ExampleClass' => App\Example\ExampleClass::class,

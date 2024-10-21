@@ -1,7 +1,11 @@
 
 /* classes attached to <body> */
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+/* TODO: make fc-event selector work when calender in shadow DOM */
+>>>>>>> danhmuc_list
 =======
 /* TODO: make fc-event selector work when calender in shadow DOM */
 >>>>>>> danhmuc_list
@@ -11,6 +15,10 @@
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+/* TODO: not attached to body. attached to specific els. move */
+>>>>>>> danhmuc_list
 =======
 /* TODO: not attached to body. attached to specific els. move */
 >>>>>>> danhmuc_list
@@ -376,10 +384,13 @@ When it's NOT activated, the fc-button classes won't even be in the DOM.
         /* serves as a min-height. harmless */
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 .fc .fc-scrollgrid-section-liquid {
     height: auto
 
   }
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 .fc .fc-scrollgrid-section-liquid > td {
@@ -406,9 +417,14 @@ When it's NOT activated, the fc-button classes won't even be in the DOM.
     background: #fff;
     background: var(--fc-page-bg-color, #fff);
 <<<<<<< HEAD
+<<<<<<< HEAD
     position: -webkit-sticky;
     position: sticky;
     z-index: 2; /* TODO: var */
+=======
+    position: sticky;
+    z-index: 3; /* TODO: var */
+>>>>>>> danhmuc_list
 =======
     position: sticky;
     z-index: 3; /* TODO: var */
@@ -428,7 +444,10 @@ When it's NOT activated, the fc-button classes won't even be in the DOM.
   }
 .fc-sticky { /* no .fc wrap because used as child of body */
 <<<<<<< HEAD
+<<<<<<< HEAD
   position: -webkit-sticky;
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
   position: sticky;
@@ -555,14 +574,20 @@ a.fc-event:hover {
     }
 /* selecting (always TOUCH) */
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* ---------------------------------------------------------------------------------------------------- */
 .fc-event-selected {
 =======
+=======
+>>>>>>> danhmuc_list
 /* OR, focused by tab-index */
 /* (TODO: maybe not the best focus-styling for .fc-daygrid-dot-event) */
 /* ---------------------------------------------------------------------------------------------------- */
 .fc-event-selected,
 .fc-event:focus {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2)
 
@@ -570,7 +595,11 @@ a.fc-event:hover {
 
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 .fc-event-selected:before {
+=======
+.fc-event-selected:before, .fc-event:focus:before {
+>>>>>>> danhmuc_list
 =======
 .fc-event-selected:before, .fc-event:focus:before {
 >>>>>>> danhmuc_list
@@ -583,7 +612,12 @@ a.fc-event:hover {
     bottom: 0;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 .fc-event-selected {
+=======
+.fc-event-selected,
+.fc-event:focus {
+>>>>>>> danhmuc_list
 =======
 .fc-event-selected,
 .fc-event:focus {
@@ -593,7 +627,11 @@ a.fc-event:hover {
 
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 .fc-event-selected:after {
+=======
+.fc-event-selected:after, .fc-event:focus:after {
+>>>>>>> danhmuc_list
 =======
 .fc-event-selected:after, .fc-event:focus:after {
 >>>>>>> danhmuc_list
@@ -676,7 +714,11 @@ A HORIZONTAL event
   cursor: w-resize;
   left: -4px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   left: calc(var(--fc-event-resizer-thickness, 8px) / -2);
+=======
+  left: calc(-0.5 * var(--fc-event-resizer-thickness, 8px));
+>>>>>>> danhmuc_list
 =======
   left: calc(-0.5 * var(--fc-event-resizer-thickness, 8px));
 >>>>>>> danhmuc_list
@@ -686,7 +728,11 @@ A HORIZONTAL event
   cursor: e-resize;
   right: -4px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   right: calc(var(--fc-event-resizer-thickness, 8px) / -2);
+=======
+  right: calc(-0.5 * var(--fc-event-resizer-thickness, 8px));
+>>>>>>> danhmuc_list
 =======
   right: calc(-0.5 * var(--fc-event-resizer-thickness, 8px));
 >>>>>>> danhmuc_list
@@ -696,7 +742,11 @@ A HORIZONTAL event
   top: 50%;
   margin-top: -4px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   margin-top: calc(var(--fc-event-resizer-dot-total-width, 8px) / -2);
+=======
+  margin-top: calc(-0.5 * var(--fc-event-resizer-dot-total-width, 8px));
+>>>>>>> danhmuc_list
 =======
   margin-top: calc(-0.5 * var(--fc-event-resizer-dot-total-width, 8px));
 >>>>>>> danhmuc_list
@@ -705,7 +755,11 @@ A HORIZONTAL event
 .fc-direction-rtl .fc-h-event.fc-event-selected .fc-event-resizer-end {
   left: -4px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   left: calc(var(--fc-event-resizer-dot-total-width, 8px) / -2);
+=======
+  left: calc(-0.5 * var(--fc-event-resizer-dot-total-width, 8px));
+>>>>>>> danhmuc_list
 =======
   left: calc(-0.5 * var(--fc-event-resizer-dot-total-width, 8px));
 >>>>>>> danhmuc_list
@@ -713,6 +767,7 @@ A HORIZONTAL event
 .fc-direction-ltr .fc-h-event.fc-event-selected .fc-event-resizer-end,
 .fc-direction-rtl .fc-h-event.fc-event-selected .fc-event-resizer-start {
   right: -4px;
+<<<<<<< HEAD
 <<<<<<< HEAD
   right: calc(var(--fc-event-resizer-dot-total-width, 8px) / -2);
 }
@@ -725,11 +780,16 @@ A HORIZONTAL event
     position: fixed;
     top: 0; /* for when not positioned yet */
 =======
+=======
+>>>>>>> danhmuc_list
   right: calc(-0.5 * var(--fc-event-resizer-dot-total-width, 8px));
 }
 .fc .fc-popover {
     position: absolute;
     z-index: 9999;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     box-shadow: 0 2px 6px rgba(0,0,0,.15);
   }
@@ -759,12 +819,18 @@ A HORIZONTAL event
     background: var(--fc-neutral-bg-color, rgba(208, 208, 208, 0.3));
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 
 
 :root {
   --fc-daygrid-event-dot-width: 8px;
 }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 /* help things clear margins of inner content */
 .fc-daygrid-day-frame,
@@ -887,15 +953,21 @@ A HORIZONTAL event
 .fc .fc-daygrid-day-bottom {
     font-size: .85em;
 <<<<<<< HEAD
+<<<<<<< HEAD
     margin: 2px 3px 0;
   }
 =======
+=======
+>>>>>>> danhmuc_list
     padding: 2px 3px 0
   }
 .fc .fc-daygrid-day-bottom:before {
   content: "";
   clear: both;
   display: table; }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 .fc .fc-daygrid-more-link {
     position: relative;
@@ -925,9 +997,12 @@ A HORIZONTAL event
 
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 .fc .fc-more-popover {
     z-index: 8;
   }
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 .fc .fc-more-popover .fc-popover-body {
@@ -1224,7 +1299,11 @@ A VERTICAL event
     position: relative;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 .fc-liquid-hack .fc-timegrid-col-frame {
+=======
+.fc-media-screen.fc-liquid-hack .fc-timegrid-col-frame {
+>>>>>>> danhmuc_list
 =======
 .fc-media-screen.fc-liquid-hack .fc-timegrid-col-frame {
 >>>>>>> danhmuc_list
@@ -1235,7 +1314,11 @@ A VERTICAL event
   bottom: 0;
   left: 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
   }
+=======
+    }
+>>>>>>> danhmuc_list
 =======
     }
 >>>>>>> danhmuc_list
@@ -1258,9 +1341,12 @@ A VERTICAL event
     right: 0;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 .fc-media-screen .fc-timegrid-event-harness {
     position: absolute; /* top/left/right/bottom will all be set by JS */
   }
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 .fc {
@@ -1307,6 +1393,7 @@ A VERTICAL event
     margin: 0 2px 0 2.5%;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 .fc-timegrid-event-harness-inset .fc-timegrid-event,
 .fc-timegrid-event.fc-event-mirror {
   box-shadow: 0px 0px 0px 1px #fff;
@@ -1320,6 +1407,8 @@ A VERTICAL event
   border-radius: 3px
 
 =======
+=======
+>>>>>>> danhmuc_list
 .fc-timegrid-event-harness {
   position: absolute /* top/left/right/bottom will all be set by JS */
 }
@@ -1344,6 +1433,9 @@ A VERTICAL event
 }
 .fc-timegrid-event { /* events need to be root */
   margin-bottom: 1px /* give some space from bottom */
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 }
 .fc-timegrid-event .fc-event-main {
@@ -1355,6 +1447,7 @@ A VERTICAL event
     font-size: var(--fc-small-font-size, .85em);
     margin-bottom: 1px;
   }
+<<<<<<< HEAD
 <<<<<<< HEAD
 .fc-timegrid-event-condensed .fc-event-main-frame {
     flex-direction: row;
@@ -1375,6 +1468,8 @@ A VERTICAL event
     right: 0;
   }
 =======
+=======
+>>>>>>> danhmuc_list
 .fc-timegrid-event-short .fc-event-main-frame {
     flex-direction: row;
     overflow: hidden;
@@ -1406,6 +1501,9 @@ A VERTICAL event
 .fc-direction-rtl .fc-timegrid-more-link {
     left: 0;
   }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 .fc {
 
@@ -1493,7 +1591,10 @@ A VERTICAL event
   }
 .fc .fc-list-sticky .fc-list-day > * { /* the cells */
 <<<<<<< HEAD
+<<<<<<< HEAD
       position: -webkit-sticky;
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
       position: sticky;
@@ -1502,7 +1603,10 @@ A VERTICAL event
       background: var(--fc-page-bg-color, #fff); /* for when headers are styled to be transparent and sticky */
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 .fc {
 
   /* only exists for aria reasons, hide for non-screen-readers */
@@ -1520,6 +1624,9 @@ A VERTICAL event
 .fc .fc-list-table tbody > tr:first-child th {
     border-top: 0;
   }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 .fc .fc-list-table th {
     padding: 0; /* uses an inner-wrapper instead... */

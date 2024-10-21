@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <svg xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-ki" viewBox="0 0 512 512">
   <defs>
     <clipPath id="a">
@@ -7,6 +8,8 @@
   </defs>
   <g clip-path="url(#a)" transform="translate(-168.5 -6) scale(1.0413)">
 =======
+=======
+>>>>>>> danhmuc_list
 <svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-ki" viewBox="0 0 512 512">
   <defs>
     <clipPath id="ki-a">
@@ -14,6 +17,9 @@
     </clipPath>
   </defs>
   <g clip-path="url(#ki-a)" transform="translate(-168.5 -6) scale(1.0413)">
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     <path fill="#e73e2d" fill-rule="evenodd" d="M4 5.8h802.6V300H4z"/>
     <path fill="#fec74a" fill-rule="evenodd" stroke="#d8aa3f" stroke-width="1.6" d="M358 276.6c-18.7-14.5-53.5-9.6-59.2-49.2 26.6 20.6 21.8-1.2 61.6 18.5l-2.4 30.7z"/>
@@ -24,6 +30,7 @@
     <path fill="#fec74a" fill-rule="evenodd" stroke="#d8aa3f" stroke-width="1.6" d="M413.5 226.9c17.8-15.6 19.5-50.6 59.5-48.8-25.3 22.2-3 21.6-29.7 57l-29.8-8.2z"/>
     <path fill="#fec74a" fill-rule="evenodd" stroke="#d8aa3f" stroke-width="1.6" d="M429.4 236c21.6-9.6 33.5-42.6 71.2-29.1-30.7 13.8-9.2 19.8-45.2 45.7l-26-16.5z"/>
     <path fill="#fec74a" fill-rule="evenodd" stroke="#d8aa3f" stroke-width="1.6" d="M442.6 250.6c23.5-3.2 44.2-31.6 76.6-8-33.4 4.6-14.4 16.4-56.2 31.2l-20.4-23.2z"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <path fill="#fec74a" fill-rule="evenodd" stroke="#d8aa3f" stroke-width="1.6" d="M526.2 255l-107.6 2.4 4.5 29 103.1-31.3z"/>
     <path fill="#fec74a" fill-rule="evenodd" stroke="#d8aa3f" stroke-width="1.6" d="M510.4 215.5l-99.7 38.3 16.7 32 83-70.3z"/>
@@ -44,6 +51,8 @@
     <path fill="#ffc84b" fill-rule="evenodd" stroke="#d8aa3f" stroke-width="1.7" d="M378.4 109.3c43.1-52 80.8-45.7 130-49.2 1.6 6 1 15-22.4 23-32 4.8-89.5 38.6-89.7 38.6-10.7-.5-18.2-11.7-18-12.4z"/>
     <path fill="none" stroke="#d9a43e" stroke-linecap="round" stroke-width="1.7" d="M467 75.4l31.8 1.4m-35.2 3.8l23.2 1.9"/>
 =======
+=======
+>>>>>>> danhmuc_list
     <path fill="#fec74a" fill-rule="evenodd" stroke="#d8aa3f" stroke-width="1.6" d="m526.2 255-107.6 2.4 4.5 29 103.1-31.3z"/>
     <path fill="#fec74a" fill-rule="evenodd" stroke="#d8aa3f" stroke-width="1.6" d="m510.4 215.5-99.7 38.3 16.7 32 83-70.3z"/>
     <path fill="#fec74a" fill-rule="evenodd" stroke="#d8aa3f" stroke-width="1.6" d="m431.2 275.3 51.6-93.7-79.1 73.6 27.5 20z"/>
@@ -62,6 +71,9 @@
     <path fill="#ffc84b" fill-rule="evenodd" stroke="#d8aa3f" stroke-width="1.6" d="M358.7 100.7a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
     <path fill="#ffc84b" fill-rule="evenodd" stroke="#d8aa3f" stroke-width="1.7" d="M378.4 109.3c43.1-52 80.8-45.7 130-49.2 1.6 6 1 15-22.4 23-32 4.8-89.5 38.6-89.7 38.6-10.7-.5-18.2-11.7-18-12.4z"/>
     <path fill="none" stroke="#d9a43e" stroke-linecap="round" stroke-width="1.7" d="m467 75.4 31.8 1.4m-35.2 3.8 23.2 1.9"/>
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   </g>
 </svg>

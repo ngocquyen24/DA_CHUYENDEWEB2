@@ -196,7 +196,11 @@ CodeMirror.defineMode("cobol", function () {
         var next = false;
         while ((next = stream.next()) != null) {
 <<<<<<< HEAD
+<<<<<<< HEAD
           if (next == "\"" || next == "\'") {
+=======
+          if ((next == "\"" || next == "\'") && !stream.match(/['"]/, false)) {
+>>>>>>> danhmuc_list
 =======
           if ((next == "\"" || next == "\'") && !stream.match(/['"]/, false)) {
 >>>>>>> danhmuc_list

@@ -17,11 +17,14 @@ FullCalendar.globalLocales.push(function () {
       list: 'Program',
     },
 <<<<<<< HEAD
+<<<<<<< HEAD
     weekText: 'v.',
     allDayText: 'Heldag',
     moreLinkText: 'till',
     noEventsText: 'Inga händelser att visa',
 =======
+=======
+>>>>>>> danhmuc_list
     buttonHints: {
       prev(buttonText) {
         return `Föregående ${buttonText.toLocaleLowerCase()}`
@@ -46,6 +49,9 @@ FullCalendar.globalLocales.push(function () {
     closeHint: 'Stäng',
     timeHint: 'Klockan',
     eventHint: 'Händelse',
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   };
 

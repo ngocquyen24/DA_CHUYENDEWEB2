@@ -12,6 +12,10 @@
   "use strict";
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  var cmds = CodeMirror.commands;
+>>>>>>> danhmuc_list
 =======
   var cmds = CodeMirror.commands;
 >>>>>>> danhmuc_list
@@ -35,7 +39,12 @@
   var lastKill = null;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   function kill(cm, from, to, ring, text) {
+=======
+  // Internal generic kill function, used by several mapped kill "family" functions.
+  function _kill(cm, from, to, ring, text) {
+>>>>>>> danhmuc_list
 =======
   // Internal generic kill function, used by several mapped kill "family" functions.
   function _kill(cm, from, to, ring, text) {
@@ -166,17 +175,23 @@
     while (i--) {
       cursor = selections[i].head;
 <<<<<<< HEAD
+<<<<<<< HEAD
       kill(cm, cursor, findEnd(cm, cursor, by, dir), ring);
     }
   }
 
   function killRegion(cm, ring) {
 =======
+=======
+>>>>>>> danhmuc_list
       _kill(cm, cursor, findEnd(cm, cursor, by, dir), ring);
     }
   }
 
   function _killRegion(cm, ring) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     if (cm.somethingSelected()) {
       var selections = cm.listSelections(), selection;
@@ -184,7 +199,11 @@
       while (i--) {
         selection = selections[i];
 <<<<<<< HEAD
+<<<<<<< HEAD
         kill(cm, selection.anchor, selection.head, ring);
+=======
+        _kill(cm, selection.anchor, selection.head, ring);
+>>>>>>> danhmuc_list
 =======
         _kill(cm, selection.anchor, selection.head, ring);
 >>>>>>> danhmuc_list
@@ -227,6 +246,7 @@
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   function addPrefixMap(cm) {
     cm.state.emacsPrefixMap = true;
     cm.addKeyMap(prefixMap);
@@ -234,6 +254,8 @@
     cm.on("inputRead", maybeRemovePrefixMap);
   }
 
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
   function maybeRemovePrefixMap(cm, arg) {
@@ -247,7 +269,11 @@
   // Utilities
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   function setMark(cm) {
+=======
+  cmds.setMark = function (cm) {
+>>>>>>> danhmuc_list
 =======
   cmds.setMark = function (cm) {
 >>>>>>> danhmuc_list
@@ -305,8 +331,11 @@
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   function quit(cm) {
 =======
+=======
+>>>>>>> danhmuc_list
   // Commands. Names should match emacs function names (albeit in camelCase)
   // except where emacs function names collide with code mirror core commands.
 
@@ -447,11 +476,15 @@
   cmds.undoRepeatable = repeated("undo");
 
   cmds.keyboardQuit = function(cm) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     cm.execCommand("clearSearch");
     clearMark(cm);
   }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   CodeMirror.emacs = {kill: kill, killRegion: killRegion, repeated: repeated};
 
@@ -577,6 +610,8 @@
       cm.setSelection(cm.getCursor("head"), cm.getCursor("anchor"));
     },
 =======
+=======
+>>>>>>> danhmuc_list
   cmds.newline = repeated(function(cm) { cm.replaceSelection("\n", "end"); });
 
   cmds.gotoLine = function(cm) {
@@ -685,11 +720,15 @@
     "Alt-G G": "gotoLine",
     "Ctrl-X Tab": "indentRigidly",
     "Ctrl-X Ctrl-X": "exchangePointAndMark",
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     "Ctrl-X Ctrl-S": "save",
     "Ctrl-X Ctrl-W": "save",
     "Ctrl-X S": "saveAll",
     "Ctrl-X F": "open",
+<<<<<<< HEAD
 <<<<<<< HEAD
     "Ctrl-X U": repeated("undo"),
     "Ctrl-X K": "close",
@@ -699,10 +738,15 @@
     "Ctrl-Q Tab": repeated("insertTab"),
     "Ctrl-U": addPrefixMap,
 =======
+=======
+>>>>>>> danhmuc_list
     "Ctrl-X K": "close",
     "Ctrl-X H": "selectAll",
     "Ctrl-Q Tab": "quotedInsertTab",
     "Ctrl-U": "universalArgument",
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     "fallthrough": "default"
   });

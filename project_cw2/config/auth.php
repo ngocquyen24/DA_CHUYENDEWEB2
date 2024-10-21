@@ -34,6 +34,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     | Supported: "session"
 =======
     | Supported: "session", "token"
@@ -41,6 +42,9 @@ return [
 =======
     | Supported: "session"
 >>>>>>> Login_Register
+=======
+    | Supported: "session"
+>>>>>>> danhmuc_list
 =======
     | Supported: "session"
 >>>>>>> danhmuc_list
@@ -55,6 +59,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
         'api' => [
@@ -65,6 +70,8 @@ return [
 >>>>>>> origin/them_slide
 =======
 >>>>>>> Login_Register
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
     ],
@@ -110,6 +117,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     | The expire time is the number of minutes that each reset token will be
 =======
     | The expire time is the number of minutes that the reset token should be
@@ -121,6 +129,8 @@ return [
     | they have less time to be guessed. You may change this as needed.
     |
 =======
+=======
+>>>>>>> danhmuc_list
     | The expire time is the number of minutes that each reset token will be
     | considered valid. This security feature keeps tokens short-lived so
     | they have less time to be guessed. You may change this as needed.
@@ -129,6 +139,9 @@ return [
     | generating more password reset tokens. This prevents the user from
     | quickly generating a very large amount of password reset tokens.
     |
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     */
 
@@ -136,7 +149,11 @@ return [
         'users' => [
             'provider' => 'users',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'table' => 'password_resets',
+=======
+            'table' => 'password_reset_tokens',
+>>>>>>> danhmuc_list
 =======
             'table' => 'password_reset_tokens',
 >>>>>>> danhmuc_list

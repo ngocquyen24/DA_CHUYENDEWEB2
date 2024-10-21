@@ -9,7 +9,10 @@
 @endif
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 @if (Session::has('error'))
@@ -19,7 +22,10 @@
 @endif
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 @if (Session::has('success'))

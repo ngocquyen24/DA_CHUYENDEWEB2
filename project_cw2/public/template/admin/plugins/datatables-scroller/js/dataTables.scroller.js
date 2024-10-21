@@ -1,6 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*! Scroller 2.0.3
  * ©2011-2020 SpryMedia Ltd - datatables.net/license
+=======
+/*! Scroller 2.0.5
+ * ©2011-2021 SpryMedia Ltd - datatables.net/license
+>>>>>>> danhmuc_list
 =======
 /*! Scroller 2.0.5
  * ©2011-2021 SpryMedia Ltd - datatables.net/license
@@ -11,17 +16,23 @@
  * @summary     Scroller
  * @description Virtual rendering for DataTables
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @version     2.0.3
  * @file        dataTables.scroller.js
  * @author      SpryMedia Ltd (www.sprymedia.co.uk)
  * @contact     www.sprymedia.co.uk/contact
  * @copyright   Copyright 2011-2020 SpryMedia Ltd.
 =======
+=======
+>>>>>>> danhmuc_list
  * @version     2.0.5
  * @file        dataTables.scroller.js
  * @author      SpryMedia Ltd (www.sprymedia.co.uk)
  * @contact     www.sprymedia.co.uk/contact
  * @copyright   Copyright 2011-2021 SpryMedia Ltd.
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
  *
  * This source file is free software, available under the following license:
@@ -96,7 +107,11 @@ var DataTable = $.fn.dataTable;
  *  @global
  *  @param {object} dt DataTables settings object or API instance
 <<<<<<< HEAD
+<<<<<<< HEAD
  *  @param {object} [opts={}] Configuration object for FixedColumns. Options 
+=======
+ *  @param {object} [opts={}] Configuration object for Scroller. Options 
+>>>>>>> danhmuc_list
 =======
  *  @param {object} [opts={}] Configuration object for Scroller. Options 
 >>>>>>> danhmuc_list
@@ -234,7 +249,12 @@ var Scroller = function ( dt, opts ) {
 			 */
 			viewport: null,
 <<<<<<< HEAD
+<<<<<<< HEAD
 			labelFactor: 1
+=======
+			labelHeight: 0,
+			xbar: 0
+>>>>>>> danhmuc_list
 =======
 			labelHeight: 0,
 			xbar: 0
@@ -318,7 +338,13 @@ $.extend( Scroller.prototype, {
 
 		var label = this.dom.label.outerHeight();
 <<<<<<< HEAD
+<<<<<<< HEAD
 		heights.labelFactor = (heights.viewport-label) / heights.scroll;
+=======
+		
+		heights.xbar = this.dom.scroller.offsetHeight - this.dom.scroller.clientHeight;
+		heights.labelHeight = label;
+>>>>>>> danhmuc_list
 =======
 		
 		heights.xbar = this.dom.scroller.offsetHeight - this.dom.scroller.clientHeight;
@@ -777,6 +803,11 @@ $.extend( Scroller.prototype, {
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+		$(this.s.dt.nTable).triggerHandler('position.dts.dt', tableTop);
+
+>>>>>>> danhmuc_list
 =======
 		$(this.s.dt.nTable).triggerHandler('position.dts.dt', tableTop);
 
@@ -1100,15 +1131,21 @@ $.extend( Scroller.prototype, {
 		}
 		if (this.s.labelVisible) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 			this.dom.label
 				.html( this.s.dt.fnFormatNumber( parseInt( this.s.topRowFloat, 10 )+1 ) )
 				.css( 'top', iScrollTop + (iScrollTop * heights.labelFactor ) )
 =======
+=======
+>>>>>>> danhmuc_list
 			var labelFactor = (heights.viewport-heights.labelHeight - heights.xbar) / heights.scroll;
 
 			this.dom.label
 				.html( this.s.dt.fnFormatNumber( parseInt( this.s.topRowFloat, 10 )+1 ) )
 				.css( 'top', iScrollTop + (iScrollTop * labelFactor) )
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 				.css( 'display', 'block' );
 		}
@@ -1233,7 +1270,11 @@ Scroller.oDefaults = Scroller.defaults;
  *  @static
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 Scroller.version = "2.0.3";
+=======
+Scroller.version = "2.0.5";
+>>>>>>> danhmuc_list
 =======
 Scroller.version = "2.0.5";
 >>>>>>> danhmuc_list

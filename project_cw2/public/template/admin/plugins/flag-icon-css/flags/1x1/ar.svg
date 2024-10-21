@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="flag-icon-css-ar" viewBox="0 0 512 512">
   <path fill="#74acdf" d="M0 0h512v512H0z"/>
   <path fill="#fff" d="M0 170.7h512v170.6H0z"/>
@@ -28,6 +29,8 @@
   <path id="d" fill="#85340a" d="M246.2 248.6c2.8 0 3.5.6 4.8 1.7 1.3 1.1 2 .9 2.2 1.1.2.2 0 .9-.5.7-.4-.3-1.2-.7-2.6-1.8-1.3-1-2.6-1-4-1-3.8 0-6 3.2-6.5 3-.4-.2 2.2-3.7 6.6-3.7z"/>
   <use width="100%" height="100%" transform="translate(-19.6)" xlink:href="#h"/>
 =======
+=======
+>>>>>>> danhmuc_list
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="flag-icons-ar" viewBox="0 0 512 512">
   <path fill="#74acdf" d="M0 0h512v512H0z"/>
   <path fill="#fff" d="M0 170.7h512v170.6H0z"/>
@@ -56,6 +59,9 @@
   <path id="e" fill="#85340a" d="M238.3 249.9c5-4.4 11.4-5 14.9-1.8a8.6 8.6 0 0 1 1.6 3.7c.5 2.5-.3 5.2-2.3 8 .3 0 .7.1 1 .4 1.6-3.4 2.3-6.8 1.7-10a14.2 14.2 0 0 0-.7-2.5c-4.8-4-11.4-4.4-16.2 2.2z"/>
   <path id="d" fill="#85340a" d="M246.2 248.6c2.8 0 3.5.6 4.8 1.7 1.3 1.1 2 .9 2.2 1.1.2.2 0 .9-.5.7-.4-.3-1.2-.7-2.6-1.8-1.3-1-2.6-1-4-1-3.8 0-6 3.2-6.5 3-.4-.2 2.2-3.7 6.6-3.7z"/>
   <use xlink:href="#h" width="100%" height="100%" transform="translate(-19.6)"/>
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   <circle id="f" cx="246.3" cy="252.1" r="2" fill="#85340a"/>
   <path id="g" fill="#85340a" d="M241 253.4c3.7 2.8 7.4 2.6 9.6 1.3 2.2-1.3 2.2-1.8 1.7-1.8-.4 0-.9.5-2.6 1.3-1.8 1-4.4 1-8.8-.8z"/>

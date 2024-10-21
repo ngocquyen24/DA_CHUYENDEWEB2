@@ -1,6 +1,10 @@
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  * jQuery UI CSS Framework 1.12.1
+=======
+ * jQuery UI CSS Framework 1.13.0
+>>>>>>> danhmuc_list
 =======
  * jQuery UI CSS Framework 1.13.0
 >>>>>>> danhmuc_list
@@ -177,7 +181,11 @@ a.ui-button:active,
 .ui-widget-header .ui-priority-secondary {
 	opacity: .7;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	filter:Alpha(Opacity=70); /* support: IE8 */
+=======
+	-ms-filter: "alpha(opacity=70)"; /* support: IE8 */
+>>>>>>> danhmuc_list
 =======
 	-ms-filter: "alpha(opacity=70)"; /* support: IE8 */
 >>>>>>> danhmuc_list
@@ -188,17 +196,23 @@ a.ui-button:active,
 .ui-widget-header .ui-state-disabled {
 	opacity: .35;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	filter:Alpha(Opacity=35); /* support: IE8 */
 	background-image: none;
 }
 .ui-state-disabled .ui-icon {
 	filter:Alpha(Opacity=35); /* support: IE8 - See #6059 */
 =======
+=======
+>>>>>>> danhmuc_list
 	-ms-filter: "alpha(opacity=35)"; /* support: IE8 */
 	background-image: none;
 }
 .ui-state-disabled .ui-icon {
 	-ms-filter: "alpha(opacity=35)"; /* support: IE8 - See #6059 */
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 }
 
@@ -241,12 +255,18 @@ a.ui-button:active,
 
 /* positioning */
 <<<<<<< HEAD
+<<<<<<< HEAD
 .ui-icon-blank { background-position: 16px 16px; }
 =======
+=======
+>>>>>>> danhmuc_list
 /* Three classes needed to override `.ui-button:hover .ui-icon` */
 .ui-icon-blank.ui-icon-blank.ui-icon-blank {
 	background-image: none;
 }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 .ui-icon-caret-1-n { background-position: 0 0; }
 .ui-icon-caret-1-ne { background-position: -16px 0; }
@@ -459,7 +479,11 @@ a.ui-button:active,
 	background: #aaaaaa;
 	opacity: .003;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	filter: Alpha(Opacity=.3); /* support: IE8 */
+=======
+	-ms-filter: Alpha(Opacity=.3); /* support: IE8 */
+>>>>>>> danhmuc_list
 =======
 	-ms-filter: Alpha(Opacity=.3); /* support: IE8 */
 >>>>>>> danhmuc_list

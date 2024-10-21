@@ -6,6 +6,7 @@
     "license": "MIT",
     "require": {
 <<<<<<< HEAD
+<<<<<<< HEAD
         "php": "^7.3|^8.0",
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -44,6 +45,8 @@
 =======
 >>>>>>> Login_Register
 =======
+=======
+>>>>>>> danhmuc_list
         "php": "^8.1",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^10.0",
@@ -58,6 +61,9 @@
         "nunomaduro/collision": "^7.0",
         "phpunit/phpunit": "^10.0",
         "spatie/laravel-ignition": "^2.0"
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     },
     "autoload": {
@@ -65,6 +71,7 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -79,10 +86,15 @@
         }
 >>>>>>> Login_Register
 =======
+=======
+>>>>>>> danhmuc_list
         },
         "files":[
             "app/Helpers/Helper.php"
         ]
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     },
     "autoload-dev": {
@@ -98,6 +110,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         "post-update-cmd": [
             "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
         ],
@@ -113,6 +126,11 @@
             "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
         ],
 >>>>>>> danhmuc_list
+=======
+        "post-update-cmd": [
+            "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
+        ],
+>>>>>>> danhmuc_list
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ],
@@ -122,6 +140,12 @@
     },
     "extra": {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        "branch-alias": {
+            "dev-master": "10.x-dev"
+        },
+>>>>>>> danhmuc_list
 =======
         "branch-alias": {
             "dev-master": "10.x-dev"
@@ -135,16 +159,22 @@
         "optimize-autoloader": true,
         "preferred-install": "dist",
 <<<<<<< HEAD
+<<<<<<< HEAD
         "sort-packages": true
     },
     "minimum-stability": "dev",
 =======
+=======
+>>>>>>> danhmuc_list
         "sort-packages": true,
         "allow-plugins": {
             "pestphp/pest-plugin": true
         }
     },
     "minimum-stability": "stable",
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     "prefer-stable": true
 }

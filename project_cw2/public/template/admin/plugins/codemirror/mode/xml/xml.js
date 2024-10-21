@@ -188,11 +188,17 @@ CodeMirror.defineMode("xml", function(editorConf, config_) {
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
   function lower(tagName) {
     return tagName && tagName.toLowerCase();
   }
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   function Context(state, tagName, startOfLine) {
     this.prev = state.context;
@@ -213,8 +219,13 @@ CodeMirror.defineMode("xml", function(editorConf, config_) {
       }
       parentTagName = state.context.tagName;
 <<<<<<< HEAD
+<<<<<<< HEAD
       if (!config.contextGrabbers.hasOwnProperty(parentTagName) ||
           !config.contextGrabbers[parentTagName].hasOwnProperty(nextTagName)) {
+=======
+      if (!config.contextGrabbers.hasOwnProperty(lower(parentTagName)) ||
+          !config.contextGrabbers[lower(parentTagName)].hasOwnProperty(lower(nextTagName))) {
+>>>>>>> danhmuc_list
 =======
       if (!config.contextGrabbers.hasOwnProperty(lower(parentTagName)) ||
           !config.contextGrabbers[lower(parentTagName)].hasOwnProperty(lower(nextTagName))) {
@@ -253,7 +264,11 @@ CodeMirror.defineMode("xml", function(editorConf, config_) {
       var tagName = stream.current();
       if (state.context && state.context.tagName != tagName &&
 <<<<<<< HEAD
+<<<<<<< HEAD
           config.implicitlyClosed.hasOwnProperty(state.context.tagName))
+=======
+          config.implicitlyClosed.hasOwnProperty(lower(state.context.tagName)))
+>>>>>>> danhmuc_list
 =======
           config.implicitlyClosed.hasOwnProperty(lower(state.context.tagName)))
 >>>>>>> danhmuc_list
@@ -296,7 +311,11 @@ CodeMirror.defineMode("xml", function(editorConf, config_) {
       state.tagName = state.tagStart = null;
       if (type == "selfcloseTag" ||
 <<<<<<< HEAD
+<<<<<<< HEAD
           config.autoSelfClosers.hasOwnProperty(tagName)) {
+=======
+          config.autoSelfClosers.hasOwnProperty(lower(tagName))) {
+>>>>>>> danhmuc_list
 =======
           config.autoSelfClosers.hasOwnProperty(lower(tagName))) {
 >>>>>>> danhmuc_list
@@ -380,7 +399,11 @@ CodeMirror.defineMode("xml", function(editorConf, config_) {
             context = context.prev;
             break;
 <<<<<<< HEAD
+<<<<<<< HEAD
           } else if (config.implicitlyClosed.hasOwnProperty(context.tagName)) {
+=======
+          } else if (config.implicitlyClosed.hasOwnProperty(lower(context.tagName))) {
+>>>>>>> danhmuc_list
 =======
           } else if (config.implicitlyClosed.hasOwnProperty(lower(context.tagName))) {
 >>>>>>> danhmuc_list
@@ -392,8 +415,13 @@ CodeMirror.defineMode("xml", function(editorConf, config_) {
       } else if (tagAfter) { // Opening tag spotted
         while (context) {
 <<<<<<< HEAD
+<<<<<<< HEAD
           var grabbers = config.contextGrabbers[context.tagName];
           if (grabbers && grabbers.hasOwnProperty(tagAfter[2]))
+=======
+          var grabbers = config.contextGrabbers[lower(context.tagName)];
+          if (grabbers && grabbers.hasOwnProperty(lower(tagAfter[2])))
+>>>>>>> danhmuc_list
 =======
           var grabbers = config.contextGrabbers[lower(context.tagName)];
           if (grabbers && grabbers.hasOwnProperty(lower(tagAfter[2])))

@@ -15,7 +15,11 @@ FullCalendar.globalLocales.push(function () {
       week: 'Hét',
       day: 'Nap',
 <<<<<<< HEAD
+<<<<<<< HEAD
       list: 'Napló',
+=======
+      list: 'Lista',
+>>>>>>> danhmuc_list
 =======
       list: 'Lista',
 >>>>>>> danhmuc_list

@@ -78,7 +78,11 @@
     meta: {
       dontIndentStates: ["start", "vocabulary", "string", "string3", "stack"],
 <<<<<<< HEAD
+<<<<<<< HEAD
       lineComment: [ "!", "#!" ]
+=======
+      lineComment: "!"
+>>>>>>> danhmuc_list
 =======
       lineComment: "!"
 >>>>>>> danhmuc_list

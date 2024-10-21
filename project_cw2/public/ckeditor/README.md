@@ -2,8 +2,13 @@ CKEditor 4
 ==========
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Copyright (c) 2003-2021, CKSource - Frederico Knabben. All rights reserved.
 https://ckeditor.com - See LICENSE.md for license information.
+=======
+Copyright (c) 2003-2023, CKSource Holding sp. z o.o. All rights reserved.
+https://ckeditor.com - See https://ckeditor.com/legal/ckeditor-oss-license for license information.
+>>>>>>> danhmuc_list
 =======
 Copyright (c) 2003-2023, CKSource Holding sp. z o.o. All rights reserved.
 https://ckeditor.com - See https://ckeditor.com/legal/ckeditor-oss-license for license information.

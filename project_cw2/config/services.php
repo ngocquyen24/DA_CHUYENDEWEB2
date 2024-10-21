@@ -19,6 +19,10 @@ return [
         'secret' => env('MAILGUN_SECRET'),
         'endpoint' => env('MAILGUN_ENDPOINT', 'api.mailgun.net'),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        'scheme' => 'https',
+>>>>>>> danhmuc_list
 =======
         'scheme' => 'https',
 >>>>>>> danhmuc_list

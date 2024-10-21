@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="flag-icon-css-gg" viewBox="0 0 512 512">
   <path fill="#fff" d="M0 0h512v512H0z"/>
   <path fill="#e8112d" d="M192 0h128v512H192z"/>
@@ -8,6 +9,8 @@
   <use width="36" height="24" transform="matrix(0 -1.06667 .9375 0 16 529)" xlink:href="#a"/>
   <use width="36" height="24" transform="rotate(180 256 256)" xlink:href="#a"/>
 =======
+=======
+>>>>>>> danhmuc_list
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="flag-icons-gg" viewBox="0 0 512 512">
   <path fill="#fff" d="M0 0h512v512H0z"/>
   <path fill="#e8112d" d="M192 0h128v512H192z"/>
@@ -16,5 +19,8 @@
   <use xlink:href="#a" width="36" height="24" transform="matrix(0 1.06667 -.9375 0 496 -17)"/>
   <use xlink:href="#a" width="36" height="24" transform="matrix(0 -1.06667 .9375 0 16 529)"/>
   <use xlink:href="#a" width="36" height="24" transform="rotate(180 256 256)"/>
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 </svg>

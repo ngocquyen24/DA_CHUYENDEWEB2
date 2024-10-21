@@ -220,7 +220,11 @@ function startState(mode, a1, a2) {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 var modeMethods = ({
+=======
+var modeMethods = {
+>>>>>>> danhmuc_list
 =======
 var modeMethods = {
 >>>>>>> danhmuc_list
@@ -237,7 +241,11 @@ var modeMethods = {
   innerMode: innerMode,
   startState: startState
 <<<<<<< HEAD
+<<<<<<< HEAD
 });
+=======
+};
+>>>>>>> danhmuc_list
 =======
 };
 >>>>>>> danhmuc_list
@@ -329,7 +337,11 @@ CodeMirror.runMode = function(string, modespec, callback, options) {
     while (!stream.eol()) {
       var style = mode.token(stream, state);
 <<<<<<< HEAD
+<<<<<<< HEAD
       callback(stream.current(), style, i, stream.start, state);
+=======
+      callback(stream.current(), style, i, stream.start, state, mode);
+>>>>>>> danhmuc_list
 =======
       callback(stream.current(), style, i, stream.start, state, mode);
 >>>>>>> danhmuc_list

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*! jQuery UI - v1.12.1 - 2016-09-14
 * http://jqueryui.com
 * Includes: widget.js, position.js, data.js, disable-selection.js, effect.js, effects/effect-blind.js, effects/effect-bounce.js, effects/effect-clip.js, effects/effect-drop.js, effects/effect-explode.js, effects/effect-fade.js, effects/effect-fold.js, effects/effect-highlight.js, effects/effect-puff.js, effects/effect-pulsate.js, effects/effect-scale.js, effects/effect-shake.js, effects/effect-size.js, effects/effect-slide.js, effects/effect-transfer.js, focusable.js, form-reset-mixin.js, jquery-1-7.js, keycode.js, labels.js, scroll-parent.js, tabbable.js, unique-id.js, widgets/accordion.js, widgets/autocomplete.js, widgets/button.js, widgets/checkboxradio.js, widgets/controlgroup.js, widgets/datepicker.js, widgets/dialog.js, widgets/draggable.js, widgets/droppable.js, widgets/menu.js, widgets/mouse.js, widgets/progressbar.js, widgets/resizable.js, widgets/selectable.js, widgets/selectmenu.js, widgets/slider.js, widgets/sortable.js, widgets/spinner.js, widgets/tabs.js, widgets/tooltip.js
@@ -10,6 +11,8 @@
 		// AMD. Register as an anonymous module.
 		define([ "jquery" ], factory );
 =======
+=======
+>>>>>>> danhmuc_list
 /*! jQuery UI - v1.13.0 - 2021-10-07
 * http://jqueryui.com
 * Includes: widget.js, position.js, data.js, disable-selection.js, effect.js, effects/effect-blind.js, effects/effect-bounce.js, effects/effect-clip.js, effects/effect-drop.js, effects/effect-explode.js, effects/effect-fade.js, effects/effect-fold.js, effects/effect-highlight.js, effects/effect-puff.js, effects/effect-pulsate.js, effects/effect-scale.js, effects/effect-shake.js, effects/effect-size.js, effects/effect-slide.js, effects/effect-transfer.js, focusable.js, form-reset-mixin.js, jquery-patch.js, keycode.js, labels.js, scroll-parent.js, tabbable.js, unique-id.js, widgets/accordion.js, widgets/autocomplete.js, widgets/button.js, widgets/checkboxradio.js, widgets/controlgroup.js, widgets/datepicker.js, widgets/dialog.js, widgets/draggable.js, widgets/droppable.js, widgets/menu.js, widgets/mouse.js, widgets/progressbar.js, widgets/resizable.js, widgets/selectable.js, widgets/selectmenu.js, widgets/slider.js, widgets/sortable.js, widgets/spinner.js, widgets/tabs.js, widgets/tooltip.js
@@ -22,12 +25,16 @@
 
 		// AMD. Register as an anonymous module.
 		define( [ "jquery" ], factory );
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	} else {
 
 		// Browser globals
 		factory( jQuery );
 	}
+<<<<<<< HEAD
 <<<<<<< HEAD
 }(function( $ ) {
 
@@ -39,6 +46,8 @@ var version = $.ui.version = "1.12.1";
 /*!
  * jQuery UI Widget 1.12.1
 =======
+=======
+>>>>>>> danhmuc_list
 } )( function( $ ) {
 "use strict";
 
@@ -49,6 +58,9 @@ var version = $.ui.version = "1.13.0";
 
 /*!
  * jQuery UI Widget 1.13.0
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
  * http://jqueryui.com
  *
@@ -65,8 +77,13 @@ var version = $.ui.version = "1.13.0";
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 var widgetUuid = 0;
+=======
+var widgetUuid = 0;
+var widgetHasOwnProperty = Array.prototype.hasOwnProperty;
+>>>>>>> danhmuc_list
 =======
 var widgetUuid = 0;
 var widgetHasOwnProperty = Array.prototype.hasOwnProperty;
@@ -77,6 +94,7 @@ $.cleanData = ( function( orig ) {
 	return function( elems ) {
 		var events, elem, i;
 		for ( i = 0; ( elem = elems[ i ] ) != null; i++ ) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 			try {
 
@@ -89,12 +107,17 @@ $.cleanData = ( function( orig ) {
 			// Http://bugs.jquery.com/ticket/8235
 			} catch ( e ) {}
 =======
+=======
+>>>>>>> danhmuc_list
 
 			// Only trigger remove when necessary to save time
 			events = $._data( elem, "events" );
 			if ( events && events.remove ) {
 				$( elem ).triggerHandler( "remove" );
 			}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		}
 		orig( elems );
@@ -118,7 +141,11 @@ $.widget = function( name, base, prototype ) {
 	}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	if ( $.isArray( prototype ) ) {
+=======
+	if ( Array.isArray( prototype ) ) {
+>>>>>>> danhmuc_list
 =======
 	if ( Array.isArray( prototype ) ) {
 >>>>>>> danhmuc_list
@@ -127,7 +154,11 @@ $.widget = function( name, base, prototype ) {
 
 	// Create selector for plugin
 <<<<<<< HEAD
+<<<<<<< HEAD
 	$.expr[ ":" ][ fullName.toLowerCase() ] = function( elem ) {
+=======
+	$.expr.pseudos[ fullName.toLowerCase() ] = function( elem ) {
+>>>>>>> danhmuc_list
 =======
 	$.expr.pseudos[ fullName.toLowerCase() ] = function( elem ) {
 >>>>>>> danhmuc_list
@@ -171,7 +202,11 @@ $.widget = function( name, base, prototype ) {
 	basePrototype.options = $.widget.extend( {}, basePrototype.options );
 	$.each( prototype, function( prop, value ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( !$.isFunction( value ) ) {
+=======
+		if ( typeof value !== "function" ) {
+>>>>>>> danhmuc_list
 =======
 		if ( typeof value !== "function" ) {
 >>>>>>> danhmuc_list
@@ -254,7 +289,11 @@ $.widget.extend = function( target ) {
 		for ( key in input[ inputIndex ] ) {
 			value = input[ inputIndex ][ key ];
 <<<<<<< HEAD
+<<<<<<< HEAD
 			if ( input[ inputIndex ].hasOwnProperty( key ) && value !== undefined ) {
+=======
+			if ( widgetHasOwnProperty.call( input[ inputIndex ], key ) && value !== undefined ) {
+>>>>>>> danhmuc_list
 =======
 			if ( widgetHasOwnProperty.call( input[ inputIndex ], key ) && value !== undefined ) {
 >>>>>>> danhmuc_list
@@ -307,7 +346,12 @@ $.widget.bridge = function( name, object ) {
 					}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 					if ( !$.isFunction( instance[ options ] ) || options.charAt( 0 ) === "_" ) {
+=======
+					if ( typeof instance[ options ] !== "function" ||
+						options.charAt( 0 ) === "_" ) {
+>>>>>>> danhmuc_list
 =======
 					if ( typeof instance[ options ] !== "function" ||
 						options.charAt( 0 ) === "_" ) {
@@ -573,7 +617,10 @@ $.Widget.prototype = {
 		}, options );
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 		function bindRemoveEvent() {
 			options.element.each( function( _, element ) {
 				var isTracked = $.map( that.classesElementLookup, function( elements ) {
@@ -591,6 +638,9 @@ $.Widget.prototype = {
 			} );
 		}
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		function processClassString( classes, checkOption ) {
 			var current, i;
@@ -598,7 +648,12 @@ $.Widget.prototype = {
 				current = that.classesElementLookup[ classes[ i ] ] || $();
 				if ( options.add ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 					current = $( $.unique( current.get().concat( options.element.get() ) ) );
+=======
+					bindRemoveEvent();
+					current = $( $.uniqueSort( current.get().concat( options.element.get() ) ) );
+>>>>>>> danhmuc_list
 =======
 					bindRemoveEvent();
 					current = $( $.uniqueSort( current.get().concat( options.element.get() ) ) );
@@ -615,10 +670,13 @@ $.Widget.prototype = {
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		this._on( options.element, {
 			"remove": "_untrackClassesElement"
 		} );
 
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 		if ( options.keys ) {
@@ -639,6 +697,11 @@ $.Widget.prototype = {
 			}
 		} );
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+		this._off( $( event.target ) );
+>>>>>>> danhmuc_list
 =======
 
 		this._off( $( event.target ) );
@@ -724,7 +787,11 @@ $.Widget.prototype = {
 		eventName = ( eventName || "" ).split( " " ).join( this.eventNamespace + " " ) +
 			this.eventNamespace;
 <<<<<<< HEAD
+<<<<<<< HEAD
 		element.off( eventName ).off( eventName );
+=======
+		element.off( eventName );
+>>>>>>> danhmuc_list
 =======
 		element.off( eventName );
 >>>>>>> danhmuc_list
@@ -794,7 +861,11 @@ $.Widget.prototype = {
 
 		this.element.trigger( event, data );
 <<<<<<< HEAD
+<<<<<<< HEAD
 		return !( $.isFunction( callback ) &&
+=======
+		return !( typeof callback === "function" &&
+>>>>>>> danhmuc_list
 =======
 		return !( typeof callback === "function" &&
 >>>>>>> danhmuc_list
@@ -820,6 +891,11 @@ $.each( { show: "fadeIn", hide: "fadeOut" }, function( method, defaultEffect ) {
 		if ( typeof options === "number" ) {
 			options = { duration: options };
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+		} else if ( options === true ) {
+			options = {};
+>>>>>>> danhmuc_list
 =======
 		} else if ( options === true ) {
 			options = {};
@@ -854,7 +930,11 @@ var widget = $.widget;
 
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  * jQuery UI Position 1.12.1
+=======
+ * jQuery UI Position 1.13.0
+>>>>>>> danhmuc_list
 =======
  * jQuery UI Position 1.13.0
 >>>>>>> danhmuc_list
@@ -897,11 +977,17 @@ function parseCss( element, property ) {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 function isWindow( obj ) {
 	return obj != null && obj === obj.window;
 }
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 function getDimensions( elem ) {
 	var raw = elem[ 0 ];
@@ -913,7 +999,11 @@ function getDimensions( elem ) {
 		};
 	}
 <<<<<<< HEAD
+<<<<<<< HEAD
 	if ( $.isWindow( raw ) ) {
+=======
+	if ( isWindow( raw ) ) {
+>>>>>>> danhmuc_list
 =======
 	if ( isWindow( raw ) ) {
 >>>>>>> danhmuc_list
@@ -944,9 +1034,15 @@ $.position = {
 		}
 		var w1, w2,
 <<<<<<< HEAD
+<<<<<<< HEAD
 			div = $( "<div " +
 				"style='display:block;position:absolute;width:50px;height:50px;overflow:hidden;'>" +
 				"<div style='height:100px;width:auto;'></div></div>" ),
+=======
+			div = $( "<div style=" +
+				"'display:block;position:absolute;width:200px;height:200px;overflow:hidden;'>" +
+				"<div style='height:300px;width:auto;'></div></div>" ),
+>>>>>>> danhmuc_list
 =======
 			div = $( "<div style=" +
 				"'display:block;position:absolute;width:200px;height:200px;overflow:hidden;'>" +
@@ -985,6 +1081,7 @@ $.position = {
 	getWithinInfo: function( element ) {
 		var withinElement = $( element || window ),
 <<<<<<< HEAD
+<<<<<<< HEAD
 			isWindow = $.isWindow( withinElement[ 0 ] ),
 			isDocument = !!withinElement[ 0 ] && withinElement[ 0 ].nodeType === 9,
 			hasOffset = !isWindow && !isDocument;
@@ -992,12 +1089,17 @@ $.position = {
 			element: withinElement,
 			isWindow: isWindow,
 =======
+=======
+>>>>>>> danhmuc_list
 			isElemWindow = isWindow( withinElement[ 0 ] ),
 			isDocument = !!withinElement[ 0 ] && withinElement[ 0 ].nodeType === 9,
 			hasOffset = !isElemWindow && !isDocument;
 		return {
 			element: withinElement,
 			isWindow: isElemWindow,
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			isDocument: isDocument,
 			offset: hasOffset ? $( element ).offset() : { left: 0, top: 0 },
@@ -1019,14 +1121,20 @@ $.fn.position = function( options ) {
 
 	var atOffset, targetWidth, targetHeight, targetOffset, basePosition, dimensions,
 <<<<<<< HEAD
+<<<<<<< HEAD
 		target = $( options.of ),
 =======
+=======
+>>>>>>> danhmuc_list
 
 		// Make sure string options are treated as CSS selectors
 		target = typeof options.of === "string" ?
 			$( document ).find( options.of ) :
 			$( options.of ),
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		within = $.position.getWithinInfo( options.within ),
 		scrollInfo = $.position.getScrollInfo( within ),
@@ -1381,7 +1489,11 @@ var position = $.ui.position;
 
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  * jQuery UI :data 1.12.1
+=======
+ * jQuery UI :data 1.13.0
+>>>>>>> danhmuc_list
 =======
  * jQuery UI :data 1.13.0
 >>>>>>> danhmuc_list
@@ -1399,7 +1511,11 @@ var position = $.ui.position;
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 var data = $.extend( $.expr[ ":" ], {
+=======
+var data = $.extend( $.expr.pseudos, {
+>>>>>>> danhmuc_list
 =======
 var data = $.extend( $.expr.pseudos, {
 >>>>>>> danhmuc_list
@@ -1418,7 +1534,11 @@ var data = $.extend( $.expr.pseudos, {
 
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  * jQuery UI Disable Selection 1.12.1
+=======
+ * jQuery UI Disable Selection 1.13.0
+>>>>>>> danhmuc_list
 =======
  * jQuery UI Disable Selection 1.13.0
 >>>>>>> danhmuc_list
@@ -1437,7 +1557,10 @@ var data = $.extend( $.expr.pseudos, {
 // This file is deprecated
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 var disableSelection = $.fn.extend( {
@@ -1459,6 +1582,7 @@ var disableSelection = $.fn.extend( {
 } );
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 /*!
  * jQuery UI Effects 1.12.1
@@ -1503,6 +1627,8 @@ $.effects = {
  */
 ( function( jQuery, undefined ) {
 =======
+=======
+>>>>>>> danhmuc_list
 
 // Create a local jQuery because jQuery Color relies on it and the
 // global may not exist with AMD and a custom build (#10199).
@@ -1523,17 +1649,23 @@ var jQuery = $;
  */
 
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 	var stepHooks = "backgroundColor borderBottomColor borderLeftColor borderRightColor " +
 		"borderTopColor color columnRuleColor outlineColor textDecorationColor textEmphasisColor",
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	// Plusequals test for += 100 -= 100
 	rplusequals = /^([\-+])=\s*(\d+\.?\d*)/,
 
 	// A set of RE's that can match strings and generate color tuples.
 =======
+=======
+>>>>>>> danhmuc_list
 	class2type = {},
 	toString = class2type.toString,
 
@@ -1541,6 +1673,9 @@ var jQuery = $;
 	rplusequals = /^([\-+])=\s*(\d+\.?\d*)/,
 
 	// a set of RE's that can match strings and generate color tuples.
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	stringParsers = [ {
 			re: /rgba?\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})\s*(?:,\s*(\d?(?:\.\d+)?)\s*)?\)/,
@@ -1565,8 +1700,13 @@ var jQuery = $;
 		}, {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			// This regex ignores A-F because it's compared against an already lowercased string
 			re: /#([a-f0-9]{2})([a-f0-9]{2})([a-f0-9]{2})/,
+=======
+			// this regex ignores A-F because it's compared against an already lowercased string
+			re: /#([a-f0-9]{2})([a-f0-9]{2})([a-f0-9]{2})([a-f0-9]{2})?/,
+>>>>>>> danhmuc_list
 =======
 			// this regex ignores A-F because it's compared against an already lowercased string
 			re: /#([a-f0-9]{2})([a-f0-9]{2})([a-f0-9]{2})([a-f0-9]{2})?/,
@@ -1576,20 +1716,31 @@ var jQuery = $;
 					parseInt( execResult[ 1 ], 16 ),
 					parseInt( execResult[ 2 ], 16 ),
 <<<<<<< HEAD
+<<<<<<< HEAD
 					parseInt( execResult[ 3 ], 16 )
 =======
+=======
+>>>>>>> danhmuc_list
 					parseInt( execResult[ 3 ], 16 ),
 					execResult[ 4 ] ?
 						( parseInt( execResult[ 4 ], 16 ) / 255 ).toFixed( 2 ) :
 						1
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 				];
 			}
 		}, {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			// This regex ignores A-F because it's compared against an already lowercased string
 			re: /#([a-f0-9])([a-f0-9])([a-f0-9])/,
+=======
+			// this regex ignores A-F because it's compared against an already lowercased string
+			re: /#([a-f0-9])([a-f0-9])([a-f0-9])([a-f0-9])?/,
+>>>>>>> danhmuc_list
 =======
 			// this regex ignores A-F because it's compared against an already lowercased string
 			re: /#([a-f0-9])([a-f0-9])([a-f0-9])([a-f0-9])?/,
@@ -1599,13 +1750,19 @@ var jQuery = $;
 					parseInt( execResult[ 1 ] + execResult[ 1 ], 16 ),
 					parseInt( execResult[ 2 ] + execResult[ 2 ], 16 ),
 <<<<<<< HEAD
+<<<<<<< HEAD
 					parseInt( execResult[ 3 ] + execResult[ 3 ], 16 )
 =======
+=======
+>>>>>>> danhmuc_list
 					parseInt( execResult[ 3 ] + execResult[ 3 ], 16 ),
 					execResult[ 4 ] ?
 						( parseInt( execResult[ 4 ] + execResult[ 4 ], 16 ) / 255 )
 							.toFixed( 2 ) :
 						1
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 				];
 			}
@@ -1623,7 +1780,11 @@ var jQuery = $;
 		} ],
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	// JQuery.Color( )
+=======
+	// jQuery.Color( )
+>>>>>>> danhmuc_list
 =======
 	// jQuery.Color( )
 >>>>>>> danhmuc_list
@@ -1681,6 +1842,7 @@ var jQuery = $;
 	support = color.support = {},
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	// Element for support tests
 	supportElem = jQuery( "<p>" )[ 0 ],
 
@@ -1696,6 +1858,8 @@ support.rgba = supportElem.style.backgroundColor.indexOf( "rgba" ) > -1;
 
 // Define cache name and alpha properties
 =======
+=======
+>>>>>>> danhmuc_list
 	// element for support tests
 	supportElem = jQuery( "<p>" )[ 0 ],
 
@@ -1710,6 +1874,9 @@ supportElem.style.cssText = "background-color:rgba(1,1,1,.5)";
 support.rgba = supportElem.style.backgroundColor.indexOf( "rgba" ) > -1;
 
 // define cache name and alpha properties
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 // for rgba and hsla spaces
 each( spaces, function( spaceName, space ) {
@@ -1722,7 +1889,10 @@ each( spaces, function( spaceName, space ) {
 } );
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 // Populate the class2type map
 jQuery.each( "Boolean Number String Function Array Date RegExp Object Error Symbol".split( " " ),
 	function( _i, name ) {
@@ -1739,6 +1909,9 @@ function getType( obj ) {
 		typeof obj;
 }
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 function clamp( value, prop, allowEmpty ) {
 	var type = propTypes[ prop.type ] || {};
@@ -1759,7 +1932,11 @@ function clamp( value, prop, allowEmpty ) {
 	if ( type.mod ) {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		// We add mod before modding to make sure that negatives values
+=======
+		// we add mod before modding to make sure that negatives values
+>>>>>>> danhmuc_list
 =======
 		// we add mod before modding to make sure that negatives values
 >>>>>>> danhmuc_list
@@ -1768,8 +1945,13 @@ function clamp( value, prop, allowEmpty ) {
 	}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	// For now all property types without mod have min and max
 	return 0 > value ? 0 : type.max < value ? type.max : value;
+=======
+	// for now all property types without mod have min and max
+	return Math.min( type.max, Math.max( 0, value ) );
+>>>>>>> danhmuc_list
 =======
 	// for now all property types without mod have min and max
 	return Math.min( type.max, Math.max( 0, value ) );
@@ -1783,7 +1965,11 @@ function stringParse( string ) {
 	string = string.toLowerCase();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	each( stringParsers, function( i, parser ) {
+=======
+	each( stringParsers, function( _i, parser ) {
+>>>>>>> danhmuc_list
 =======
 	each( stringParsers, function( _i, parser ) {
 >>>>>>> danhmuc_list
@@ -1796,7 +1982,11 @@ function stringParse( string ) {
 			parsed = inst[ spaceName ]( values );
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			// If this was an rgba parse the assignment might happen twice
+=======
+			// if this was an rgba parse the assignment might happen twice
+>>>>>>> danhmuc_list
 =======
 			// if this was an rgba parse the assignment might happen twice
 >>>>>>> danhmuc_list
@@ -1805,7 +1995,11 @@ function stringParse( string ) {
 			rgba = inst._rgba = parsed._rgba;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			// Exit each( stringParsers ) here because we matched
+=======
+			// exit each( stringParsers ) here because we matched
+>>>>>>> danhmuc_list
 =======
 			// exit each( stringParsers ) here because we matched
 >>>>>>> danhmuc_list
@@ -1817,7 +2011,11 @@ function stringParse( string ) {
 	if ( rgba.length ) {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		// If this came from a parsed string, force "transparent" when alpha is 0
+=======
+		// if this came from a parsed string, force "transparent" when alpha is 0
+>>>>>>> danhmuc_list
 =======
 		// if this came from a parsed string, force "transparent" when alpha is 0
 >>>>>>> danhmuc_list
@@ -1829,7 +2027,11 @@ function stringParse( string ) {
 	}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	// Named colors
+=======
+	// named colors
+>>>>>>> danhmuc_list
 =======
 	// named colors
 >>>>>>> danhmuc_list
@@ -1849,15 +2051,21 @@ color.fn = jQuery.extend( color.prototype, {
 
 		var inst = this,
 <<<<<<< HEAD
+<<<<<<< HEAD
 			type = jQuery.type( red ),
 			rgba = this._rgba = [];
 
 		// More than 1 argument specified - assume ( red, green, blue, alpha )
 =======
+=======
+>>>>>>> danhmuc_list
 			type = getType( red ),
 			rgba = this._rgba = [];
 
 		// more than 1 argument specified - assume ( red, green, blue, alpha )
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		if ( green !== undefined ) {
 			red = [ red, green, blue, alpha ];
@@ -1870,7 +2078,11 @@ color.fn = jQuery.extend( color.prototype, {
 
 		if ( type === "array" ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 			each( spaces.rgba.props, function( key, prop ) {
+=======
+			each( spaces.rgba.props, function( _key, prop ) {
+>>>>>>> danhmuc_list
 =======
 			each( spaces.rgba.props, function( _key, prop ) {
 >>>>>>> danhmuc_list
@@ -1882,7 +2094,11 @@ color.fn = jQuery.extend( color.prototype, {
 		if ( type === "object" ) {
 			if ( red instanceof color ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 				each( spaces, function( spaceName, space ) {
+=======
+				each( spaces, function( _spaceName, space ) {
+>>>>>>> danhmuc_list
 =======
 				each( spaces, function( _spaceName, space ) {
 >>>>>>> danhmuc_list
@@ -1891,6 +2107,7 @@ color.fn = jQuery.extend( color.prototype, {
 					}
 				} );
 			} else {
+<<<<<<< HEAD
 <<<<<<< HEAD
 				each( spaces, function( spaceName, space ) {
 					var cache = space.cache;
@@ -1901,6 +2118,8 @@ color.fn = jQuery.extend( color.prototype, {
 
 							// If the value was null, we don't need to copy it
 =======
+=======
+>>>>>>> danhmuc_list
 				each( spaces, function( _spaceName, space ) {
 					var cache = space.cache;
 					each( space.props, function( key, prop ) {
@@ -1909,6 +2128,9 @@ color.fn = jQuery.extend( color.prototype, {
 						if ( !inst[ cache ] && space.to ) {
 
 							// if the value was null, we don't need to copy it
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 							// if the key was alpha, we don't need to copy it either
 							if ( key === "alpha" || red[ key ] == null ) {
@@ -1918,7 +2140,11 @@ color.fn = jQuery.extend( color.prototype, {
 						}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 						// This is the only case where we allow nulls for ALL properties.
+=======
+						// this is the only case where we allow nulls for ALL properties.
+>>>>>>> danhmuc_list
 =======
 						// this is the only case where we allow nulls for ALL properties.
 >>>>>>> danhmuc_list
@@ -1927,6 +2153,7 @@ color.fn = jQuery.extend( color.prototype, {
 					} );
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 					// Everything defined but alpha?
 					if ( inst[ cache ] &&
 							jQuery.inArray( null, inst[ cache ].slice( 0, 3 ) ) < 0 ) {
@@ -1934,6 +2161,8 @@ color.fn = jQuery.extend( color.prototype, {
 						// Use the default of 1
 						inst[ cache ][ 3 ] = 1;
 =======
+=======
+>>>>>>> danhmuc_list
 					// everything defined but alpha?
 					if ( inst[ cache ] && jQuery.inArray( null, inst[ cache ].slice( 0, 3 ) ) < 0 ) {
 
@@ -1942,6 +2171,9 @@ color.fn = jQuery.extend( color.prototype, {
 							inst[ cache ][ 3 ] = 1;
 						}
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 						if ( space.from ) {
 							inst._rgba = space.from( inst[ cache ] );
@@ -1993,7 +2225,11 @@ color.fn = jQuery.extend( color.prototype, {
 
 		end = end[ space.cache ];
 <<<<<<< HEAD
+<<<<<<< HEAD
 		each( space.props, function( key, prop ) {
+=======
+		each( space.props, function( _key, prop ) {
+>>>>>>> danhmuc_list
 =======
 		each( space.props, function( _key, prop ) {
 >>>>>>> danhmuc_list
@@ -2003,7 +2239,11 @@ color.fn = jQuery.extend( color.prototype, {
 				type = propTypes[ prop.type ] || {};
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			// If null, don't override start value
+=======
+			// if null, don't override start value
+>>>>>>> danhmuc_list
 =======
 			// if null, don't override start value
 >>>>>>> danhmuc_list
@@ -2012,7 +2252,11 @@ color.fn = jQuery.extend( color.prototype, {
 			}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			// If null - use end
+=======
+			// if null - use end
+>>>>>>> danhmuc_list
 =======
 			// if null - use end
 >>>>>>> danhmuc_list
@@ -2034,7 +2278,11 @@ color.fn = jQuery.extend( color.prototype, {
 	blend: function( opaque ) {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		// If we are already opaque - return ourself
+=======
+		// if we are already opaque - return ourself
+>>>>>>> danhmuc_list
 =======
 		// if we are already opaque - return ourself
 >>>>>>> danhmuc_list
@@ -2054,12 +2302,18 @@ color.fn = jQuery.extend( color.prototype, {
 		var prefix = "rgba(",
 			rgba = jQuery.map( this._rgba, function( v, i ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 				return v == null ? ( i > 2 ? 1 : 0 ) : v;
 =======
+=======
+>>>>>>> danhmuc_list
 				if ( v != null ) {
 					return v;
 				}
 				return i > 2 ? 1 : 0;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			} );
 
@@ -2078,7 +2332,11 @@ color.fn = jQuery.extend( color.prototype, {
 				}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 				// Catch 1 and 2
+=======
+				// catch 1 and 2
+>>>>>>> danhmuc_list
 =======
 				// catch 1 and 2
 >>>>>>> danhmuc_list
@@ -2105,7 +2363,11 @@ color.fn = jQuery.extend( color.prototype, {
 		return "#" + jQuery.map( rgba, function( v ) {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			// Default to 0 when nulls exist
+=======
+			// default to 0 when nulls exist
+>>>>>>> danhmuc_list
 =======
 			// default to 0 when nulls exist
 >>>>>>> danhmuc_list
@@ -2120,7 +2382,11 @@ color.fn = jQuery.extend( color.prototype, {
 color.fn.parse.prototype = color.fn;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Hsla conversions adapted from:
+=======
+// hsla conversions adapted from:
+>>>>>>> danhmuc_list
 =======
 // hsla conversions adapted from:
 >>>>>>> danhmuc_list
@@ -2166,7 +2432,11 @@ spaces.hsla.to = function( rgba ) {
 	}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	// Chroma (diff) == 0 means greyscale which, by definition, saturation = 0%
+=======
+	// chroma (diff) == 0 means greyscale which, by definition, saturation = 0%
+>>>>>>> danhmuc_list
 =======
 	// chroma (diff) == 0 means greyscale which, by definition, saturation = 0%
 >>>>>>> danhmuc_list
@@ -2201,6 +2471,10 @@ spaces.hsla.from = function( hsla ) {
 };
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> danhmuc_list
 =======
 
 >>>>>>> danhmuc_list
@@ -2211,15 +2485,21 @@ each( spaces, function( spaceName, space ) {
 		from = space.from;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	// Makes rgba() and hsla()
 	color.fn[ spaceName ] = function( value ) {
 
 		// Generate a cache for this space if it doesn't exist
 =======
+=======
+>>>>>>> danhmuc_list
 	// makes rgba() and hsla()
 	color.fn[ spaceName ] = function( value ) {
 
 		// generate a cache for this space if it doesn't exist
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		if ( to && !this[ cache ] ) {
 			this[ cache ] = to( this._rgba );
@@ -2230,7 +2510,11 @@ each( spaces, function( spaceName, space ) {
 
 		var ret,
 <<<<<<< HEAD
+<<<<<<< HEAD
 			type = jQuery.type( value ),
+=======
+			type = getType( value ),
+>>>>>>> danhmuc_list
 =======
 			type = getType( value ),
 >>>>>>> danhmuc_list
@@ -2255,20 +2539,27 @@ each( spaces, function( spaceName, space ) {
 	};
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	// Makes red() green() blue() alpha() hue() saturation() lightness()
 	each( props, function( key, prop ) {
 
 		// Alpha is included in more than one space
 =======
+=======
+>>>>>>> danhmuc_list
 	// makes red() green() blue() alpha() hue() saturation() lightness()
 	each( props, function( key, prop ) {
 
 		// alpha is included in more than one space
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		if ( color.fn[ key ] ) {
 			return;
 		}
 		color.fn[ key ] = function( value ) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 			var vtype = jQuery.type( value ),
 				fn = ( key === "alpha" ? ( this._hsla ? "hsla" : "rgba" ) : spaceName ),
@@ -2276,6 +2567,8 @@ each( spaces, function( spaceName, space ) {
 				cur = local[ prop.idx ],
 				match;
 =======
+=======
+>>>>>>> danhmuc_list
 			var local, cur, match, fn,
 				vtype = getType( value );
 
@@ -2286,6 +2579,9 @@ each( spaces, function( spaceName, space ) {
 			}
 			local = this[ fn ]();
 			cur = local[ prop.idx ];
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 			if ( vtype === "undefined" ) {
@@ -2295,7 +2591,11 @@ each( spaces, function( spaceName, space ) {
 			if ( vtype === "function" ) {
 				value = value.call( this, cur );
 <<<<<<< HEAD
+<<<<<<< HEAD
 				vtype = jQuery.type( value );
+=======
+				vtype = getType( value );
+>>>>>>> danhmuc_list
 =======
 				vtype = getType( value );
 >>>>>>> danhmuc_list
@@ -2316,17 +2616,23 @@ each( spaces, function( spaceName, space ) {
 } );
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Add cssHook and .fx.step function for each named hook.
 // accept a space separated string of properties
 color.hook = function( hook ) {
 	var hooks = hook.split( " " );
 	each( hooks, function( i, hook ) {
 =======
+=======
+>>>>>>> danhmuc_list
 // add cssHook and .fx.step function for each named hook.
 // accept a space separated string of properties
 color.hook = function( hook ) {
 	var hooks = hook.split( " " );
 	each( hooks, function( _i, hook ) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		jQuery.cssHooks[ hook ] = {
 			set: function( elem, value ) {
@@ -2334,8 +2640,12 @@ color.hook = function( hook ) {
 					backgroundColor = "";
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 				if ( value !== "transparent" && ( jQuery.type( value ) !== "string" ||
 						( parsed = stringParse( value ) ) ) ) {
+=======
+				if ( value !== "transparent" && ( getType( value ) !== "string" || ( parsed = stringParse( value ) ) ) ) {
+>>>>>>> danhmuc_list
 =======
 				if ( value !== "transparent" && ( getType( value ) !== "string" || ( parsed = stringParse( value ) ) ) ) {
 >>>>>>> danhmuc_list
@@ -2365,8 +2675,12 @@ color.hook = function( hook ) {
 				} catch ( e ) {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 					// Wrapped to prevent IE from throwing errors on "invalid" values like
 					// 'auto' or 'inherit'
+=======
+					// wrapped to prevent IE from throwing errors on "invalid" values like 'auto' or 'inherit'
+>>>>>>> danhmuc_list
 =======
 					// wrapped to prevent IE from throwing errors on "invalid" values like 'auto' or 'inherit'
 >>>>>>> danhmuc_list
@@ -2392,7 +2706,11 @@ jQuery.cssHooks.borderColor = {
 		var expanded = {};
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		each( [ "Top", "Right", "Bottom", "Left" ], function( i, part ) {
+=======
+		each( [ "Top", "Right", "Bottom", "Left" ], function( _i, part ) {
+>>>>>>> danhmuc_list
 =======
 		each( [ "Top", "Right", "Bottom", "Left" ], function( _i, part ) {
 >>>>>>> danhmuc_list
@@ -2432,8 +2750,11 @@ colors = jQuery.Color.names = {
 };
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 } )( jQuery );
 =======
+=======
+>>>>>>> danhmuc_list
 
 /*!
  * jQuery UI Effects 1.13.0
@@ -2460,6 +2781,9 @@ var dataSpace = "ui-effects-",
 $.effects = {
 	effect: {}
 };
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 /******************************************************************************/
@@ -2493,13 +2817,19 @@ $.each(
 );
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 function camelCase( string ) {
 	return string.replace( /-([\da-z])/gi, function( all, letter ) {
 		return letter.toUpperCase();
 	} );
 }
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 function getElementStyles( elem ) {
 	var key, len,
@@ -2514,7 +2844,11 @@ function getElementStyles( elem ) {
 			key = style[ len ];
 			if ( typeof style[ key ] === "string" ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 				styles[ $.camelCase( key ) ] = style[ key ];
+=======
+				styles[ camelCase( key ) ] = style[ key ];
+>>>>>>> danhmuc_list
 =======
 				styles[ camelCase( key ) ] = style[ key ];
 >>>>>>> danhmuc_list
@@ -2692,6 +3026,7 @@ $.fn.extend( {
 ( function() {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 if ( $.expr && $.expr.filters && $.expr.filters.animated ) {
 	$.expr.filters.animated = ( function( orig ) {
 		return function( elem ) {
@@ -2699,12 +3034,17 @@ if ( $.expr && $.expr.filters && $.expr.filters.animated ) {
 		};
 	} )( $.expr.filters.animated );
 =======
+=======
+>>>>>>> danhmuc_list
 if ( $.expr && $.expr.pseudos && $.expr.pseudos.animated ) {
 	$.expr.pseudos.animated = ( function( orig ) {
 		return function( elem ) {
 			return !!$( elem ).data( dataSpaceAnimated ) || orig( elem );
 		};
 	} )( $.expr.pseudos.animated );
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 }
 
@@ -2775,6 +3115,10 @@ if ( $.uiBackCompat !== false ) {
 			// https://bugzilla.mozilla.org/show_bug.cgi?id=561664
 			try {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+				// eslint-disable-next-line no-unused-expressions
+>>>>>>> danhmuc_list
 =======
 				// eslint-disable-next-line no-unused-expressions
 >>>>>>> danhmuc_list
@@ -2841,7 +3185,11 @@ if ( $.uiBackCompat !== false ) {
 
 $.extend( $.effects, {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	version: "1.12.1",
+=======
+	version: "1.13.0",
+>>>>>>> danhmuc_list
 =======
 	version: "1.13.0",
 >>>>>>> danhmuc_list
@@ -3061,7 +3409,11 @@ function _normalizeArguments( effect, options, speed, callback ) {
 
 	// Catch (effect, callback)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	if ( $.isFunction( options ) ) {
+=======
+	if ( typeof options === "function" ) {
+>>>>>>> danhmuc_list
 =======
 	if ( typeof options === "function" ) {
 >>>>>>> danhmuc_list
@@ -3079,7 +3431,11 @@ function _normalizeArguments( effect, options, speed, callback ) {
 
 	// Catch (effect, options, callback)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	if ( $.isFunction( speed ) ) {
+=======
+	if ( typeof speed === "function" ) {
+>>>>>>> danhmuc_list
 =======
 	if ( typeof speed === "function" ) {
 >>>>>>> danhmuc_list
@@ -3117,7 +3473,11 @@ function standardAnimationOption( option ) {
 
 	// Complete callback
 <<<<<<< HEAD
+<<<<<<< HEAD
 	if ( $.isFunction( option ) ) {
+=======
+	if ( typeof option === "function" ) {
+>>>>>>> danhmuc_list
 =======
 	if ( typeof option === "function" ) {
 >>>>>>> danhmuc_list
@@ -3148,7 +3508,11 @@ $.fn.extend( {
 					normalizedMode = $.effects.mode( el, mode ) || defaultMode;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 				// Sentinel for duck-punching the :animated psuedo-selector
+=======
+				// Sentinel for duck-punching the :animated pseudo-selector
+>>>>>>> danhmuc_list
 =======
 				// Sentinel for duck-punching the :animated pseudo-selector
 >>>>>>> danhmuc_list
@@ -3160,7 +3524,11 @@ $.fn.extend( {
 				modes.push( normalizedMode );
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 				// See $.uiBackCompat inside of run() for removal of defaultMode in 1.13
+=======
+				// See $.uiBackCompat inside of run() for removal of defaultMode in 1.14
+>>>>>>> danhmuc_list
 =======
 				// See $.uiBackCompat inside of run() for removal of defaultMode in 1.14
 >>>>>>> danhmuc_list
@@ -3174,7 +3542,11 @@ $.fn.extend( {
 				}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 				if ( $.isFunction( next ) ) {
+=======
+				if ( typeof next === "function" ) {
+>>>>>>> danhmuc_list
 =======
 				if ( typeof next === "function" ) {
 >>>>>>> danhmuc_list
@@ -3213,17 +3585,23 @@ $.fn.extend( {
 
 			function done() {
 <<<<<<< HEAD
+<<<<<<< HEAD
 				if ( $.isFunction( complete ) ) {
 					complete.call( elem[ 0 ] );
 				}
 
 				if ( $.isFunction( next ) ) {
 =======
+=======
+>>>>>>> danhmuc_list
 				if ( typeof complete === "function" ) {
 					complete.call( elem[ 0 ] );
 				}
 
 				if ( typeof next === "function" ) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 					next();
 				}
@@ -3334,6 +3712,7 @@ $.fn.extend( {
 			},
 			startPosition = element.offset(),
 <<<<<<< HEAD
+<<<<<<< HEAD
 			transfer = $( "<div class='ui-effects-transfer'></div>" )
 				.appendTo( "body" )
 				.addClass( options.className )
@@ -3351,6 +3730,8 @@ $.fn.extend( {
 					}
 				} );
 =======
+=======
+>>>>>>> danhmuc_list
 			transfer = $( "<div class='ui-effects-transfer'></div>" );
 
 		transfer
@@ -3369,6 +3750,9 @@ $.fn.extend( {
 					done();
 				}
 			} );
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	}
 } );
@@ -3464,7 +3848,11 @@ var effect = $.effects;
 
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  * jQuery UI Effects Blind 1.12.1
+=======
+ * jQuery UI Effects Blind 1.13.0
+>>>>>>> danhmuc_list
 =======
  * jQuery UI Effects Blind 1.13.0
 >>>>>>> danhmuc_list
@@ -3483,7 +3871,10 @@ var effect = $.effects;
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 var effectsEffectBlind = $.effects.define( "blind", "hide", function( options, done ) {
@@ -3527,7 +3918,11 @@ var effectsEffectBlind = $.effects.define( "blind", "hide", function( options, d
 
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  * jQuery UI Effects Bounce 1.12.1
+=======
+ * jQuery UI Effects Bounce 1.13.0
+>>>>>>> danhmuc_list
 =======
  * jQuery UI Effects Bounce 1.13.0
 >>>>>>> danhmuc_list
@@ -3546,7 +3941,10 @@ var effectsEffectBlind = $.effects.define( "blind", "hide", function( options, d
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 var effectsEffectBounce = $.effects.define( "bounce", function( options, done ) {
@@ -3630,7 +4028,11 @@ var effectsEffectBounce = $.effects.define( "bounce", function( options, done ) 
 
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  * jQuery UI Effects Clip 1.12.1
+=======
+ * jQuery UI Effects Clip 1.13.0
+>>>>>>> danhmuc_list
 =======
  * jQuery UI Effects Clip 1.13.0
 >>>>>>> danhmuc_list
@@ -3649,7 +4051,10 @@ var effectsEffectBounce = $.effects.define( "bounce", function( options, done ) 
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 var effectsEffectClip = $.effects.define( "clip", "hide", function( options, done ) {
@@ -3688,7 +4093,11 @@ var effectsEffectClip = $.effects.define( "clip", "hide", function( options, don
 
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  * jQuery UI Effects Drop 1.12.1
+=======
+ * jQuery UI Effects Drop 1.13.0
+>>>>>>> danhmuc_list
 =======
  * jQuery UI Effects Drop 1.13.0
 >>>>>>> danhmuc_list
@@ -3707,7 +4116,10 @@ var effectsEffectClip = $.effects.define( "clip", "hide", function( options, don
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 var effectsEffectDrop = $.effects.define( "drop", "hide", function( options, done ) {
@@ -3750,7 +4162,11 @@ var effectsEffectDrop = $.effects.define( "drop", "hide", function( options, don
 
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  * jQuery UI Effects Explode 1.12.1
+=======
+ * jQuery UI Effects Explode 1.13.0
+>>>>>>> danhmuc_list
 =======
  * jQuery UI Effects Explode 1.13.0
 >>>>>>> danhmuc_list
@@ -3764,9 +4180,15 @@ var effectsEffectDrop = $.effects.define( "drop", "hide", function( options, don
 //>>label: Explode Effect
 //>>group: Effects
 <<<<<<< HEAD
+<<<<<<< HEAD
 // jscs:disable maximumLineLength
 //>>description: Explodes an element in all directions into n pieces. Implodes an element to its original wholeness.
 // jscs:enable maximumLineLength
+=======
+/* eslint-disable max-len */
+//>>description: Explodes an element in all directions into n pieces. Implodes an element to its original wholeness.
+/* eslint-enable max-len */
+>>>>>>> danhmuc_list
 =======
 /* eslint-disable max-len */
 //>>description: Explodes an element in all directions into n pieces. Implodes an element to its original wholeness.
@@ -3777,7 +4199,10 @@ var effectsEffectDrop = $.effects.define( "drop", "hide", function( options, don
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 var effectsEffectExplode = $.effects.define( "explode", "hide", function( options, done ) {
@@ -3860,7 +4285,11 @@ var effectsEffectExplode = $.effects.define( "explode", "hide", function( option
 
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  * jQuery UI Effects Fade 1.12.1
+=======
+ * jQuery UI Effects Fade 1.13.0
+>>>>>>> danhmuc_list
 =======
  * jQuery UI Effects Fade 1.13.0
 >>>>>>> danhmuc_list
@@ -3879,7 +4308,10 @@ var effectsEffectExplode = $.effects.define( "explode", "hide", function( option
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 var effectsEffectFade = $.effects.define( "fade", "toggle", function( options, done ) {
@@ -3900,7 +4332,11 @@ var effectsEffectFade = $.effects.define( "fade", "toggle", function( options, d
 
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  * jQuery UI Effects Fold 1.12.1
+=======
+ * jQuery UI Effects Fold 1.13.0
+>>>>>>> danhmuc_list
 =======
  * jQuery UI Effects Fold 1.13.0
 >>>>>>> danhmuc_list
@@ -3919,7 +4355,10 @@ var effectsEffectFade = $.effects.define( "fade", "toggle", function( options, d
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 var effectsEffectFold = $.effects.define( "fold", "hide", function( options, done ) {
@@ -3982,7 +4421,11 @@ var effectsEffectFold = $.effects.define( "fold", "hide", function( options, don
 
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  * jQuery UI Effects Highlight 1.12.1
+=======
+ * jQuery UI Effects Highlight 1.13.0
+>>>>>>> danhmuc_list
 =======
  * jQuery UI Effects Highlight 1.13.0
 >>>>>>> danhmuc_list
@@ -4001,7 +4444,10 @@ var effectsEffectFold = $.effects.define( "fold", "hide", function( options, don
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 var effectsEffectHighlight = $.effects.define( "highlight", "show", function( options, done ) {
@@ -4032,7 +4478,11 @@ var effectsEffectHighlight = $.effects.define( "highlight", "show", function( op
 
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  * jQuery UI Effects Size 1.12.1
+=======
+ * jQuery UI Effects Size 1.13.0
+>>>>>>> danhmuc_list
 =======
  * jQuery UI Effects Size 1.13.0
 >>>>>>> danhmuc_list
@@ -4051,7 +4501,10 @@ var effectsEffectHighlight = $.effects.define( "highlight", "show", function( op
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 var effectsEffectSize = $.effects.define( "size", function( options, done ) {
@@ -4131,6 +4584,11 @@ var effectsEffectSize = $.effects.define( "size", function( options, done ) {
 		to.left = ( original.outerWidth - to.outerWidth ) * baseline.x + pos.left;
 	}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+	delete from.outerHeight;
+	delete from.outerWidth;
+>>>>>>> danhmuc_list
 =======
 	delete from.outerHeight;
 	delete from.outerWidth;
@@ -4221,7 +4679,11 @@ var effectsEffectSize = $.effects.define( "size", function( options, done ) {
 
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  * jQuery UI Effects Scale 1.12.1
+=======
+ * jQuery UI Effects Scale 1.13.0
+>>>>>>> danhmuc_list
 =======
  * jQuery UI Effects Scale 1.13.0
 >>>>>>> danhmuc_list
@@ -4240,7 +4702,10 @@ var effectsEffectSize = $.effects.define( "size", function( options, done ) {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 var effectsEffectScale = $.effects.define( "scale", function( options, done ) {
@@ -4269,7 +4734,11 @@ var effectsEffectScale = $.effects.define( "scale", function( options, done ) {
 
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  * jQuery UI Effects Puff 1.12.1
+=======
+ * jQuery UI Effects Puff 1.13.0
+>>>>>>> danhmuc_list
 =======
  * jQuery UI Effects Puff 1.13.0
 >>>>>>> danhmuc_list
@@ -4288,7 +4757,10 @@ var effectsEffectScale = $.effects.define( "scale", function( options, done ) {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 var effectsEffectPuff = $.effects.define( "puff", "hide", function( options, done ) {
@@ -4303,7 +4775,11 @@ var effectsEffectPuff = $.effects.define( "puff", "hide", function( options, don
 
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  * jQuery UI Effects Pulsate 1.12.1
+=======
+ * jQuery UI Effects Pulsate 1.13.0
+>>>>>>> danhmuc_list
 =======
  * jQuery UI Effects Pulsate 1.13.0
 >>>>>>> danhmuc_list
@@ -4322,7 +4798,10 @@ var effectsEffectPuff = $.effects.define( "puff", "hide", function( options, don
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 var effectsEffectPulsate = $.effects.define( "pulsate", "show", function( options, done ) {
@@ -4360,7 +4839,11 @@ var effectsEffectPulsate = $.effects.define( "pulsate", "show", function( option
 
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  * jQuery UI Effects Shake 1.12.1
+=======
+ * jQuery UI Effects Shake 1.13.0
+>>>>>>> danhmuc_list
 =======
  * jQuery UI Effects Shake 1.13.0
 >>>>>>> danhmuc_list
@@ -4379,7 +4862,10 @@ var effectsEffectPulsate = $.effects.define( "pulsate", "show", function( option
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 var effectsEffectShake = $.effects.define( "shake", function( options, done ) {
@@ -4427,7 +4913,11 @@ var effectsEffectShake = $.effects.define( "shake", function( options, done ) {
 
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  * jQuery UI Effects Slide 1.12.1
+=======
+ * jQuery UI Effects Slide 1.13.0
+>>>>>>> danhmuc_list
 =======
  * jQuery UI Effects Slide 1.13.0
 >>>>>>> danhmuc_list
@@ -4446,7 +4936,10 @@ var effectsEffectShake = $.effects.define( "shake", function( options, done ) {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 var effectsEffectSlide = $.effects.define( "slide", "show", function( options, done ) {
@@ -4496,7 +4989,11 @@ var effectsEffectSlide = $.effects.define( "slide", "show", function( options, d
 
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  * jQuery UI Effects Transfer 1.12.1
+=======
+ * jQuery UI Effects Transfer 1.13.0
+>>>>>>> danhmuc_list
 =======
  * jQuery UI Effects Transfer 1.13.0
 >>>>>>> danhmuc_list
@@ -4515,7 +5012,10 @@ var effectsEffectSlide = $.effects.define( "slide", "show", function( options, d
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 var effect;
@@ -4529,7 +5029,11 @@ var effectsEffectTransfer = effect;
 
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  * jQuery UI Focusable 1.12.1
+=======
+ * jQuery UI Focusable 1.13.0
+>>>>>>> danhmuc_list
 =======
  * jQuery UI Focusable 1.13.0
 >>>>>>> danhmuc_list
@@ -4547,7 +5051,10 @@ var effectsEffectTransfer = effect;
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 // Selectors
@@ -4597,15 +5104,21 @@ function visible( element ) {
 		visibility = element.css( "visibility" );
 	}
 <<<<<<< HEAD
+<<<<<<< HEAD
 	return visibility !== "hidden";
 }
 
 $.extend( $.expr[ ":" ], {
 =======
+=======
+>>>>>>> danhmuc_list
 	return visibility === "visible";
 }
 
 $.extend( $.expr.pseudos, {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	focusable: function( element ) {
 		return $.ui.focusable( element, $.attr( element, "tabindex" ) != null );
@@ -4617,16 +5130,22 @@ var focusable = $.ui.focusable;
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 // Support: IE8 Only
 // IE8 does not support the form attribute and when it is supplied. It overwrites the form prop
 // with a string, so we need to find the proper form.
 var form = $.fn.form = function() {
 =======
+=======
+>>>>>>> danhmuc_list
 // Support: IE8 Only
 // IE8 does not support the form attribute and when it is supplied. It overwrites the form prop
 // with a string, so we need to find the proper form.
 var form = $.fn._form = function() {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	return typeof this[ 0 ].form === "string" ? this.closest( "form" ) : $( this[ 0 ].form );
 };
@@ -4634,7 +5153,11 @@ var form = $.fn._form = function() {
 
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  * jQuery UI Form Reset Mixin 1.12.1
+=======
+ * jQuery UI Form Reset Mixin 1.13.0
+>>>>>>> danhmuc_list
 =======
  * jQuery UI Form Reset Mixin 1.13.0
 >>>>>>> danhmuc_list
@@ -4652,7 +5175,10 @@ var form = $.fn._form = function() {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 var formResetMixin = $.ui.formResetMixin = {
@@ -4670,7 +5196,11 @@ var formResetMixin = $.ui.formResetMixin = {
 
 	_bindFormResetHandler: function() {
 <<<<<<< HEAD
+<<<<<<< HEAD
 		this.form = this.element.form();
+=======
+		this.form = this.element._form();
+>>>>>>> danhmuc_list
 =======
 		this.form = this.element._form();
 >>>>>>> danhmuc_list
@@ -4708,7 +5238,11 @@ var formResetMixin = $.ui.formResetMixin = {
 
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  * jQuery UI Support for jQuery core 1.7.x 1.12.1
+=======
+ * jQuery UI Support for jQuery core 1.8.x and newer 1.13.0
+>>>>>>> danhmuc_list
 =======
  * jQuery UI Support for jQuery core 1.8.x and newer 1.13.0
 >>>>>>> danhmuc_list
@@ -4720,6 +5254,7 @@ var formResetMixin = $.ui.formResetMixin = {
  *
  */
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 //>>label: jQuery 1.7 Support
 //>>group: Core
@@ -4788,6 +5323,8 @@ if ( $.fn.jquery.substring( 0, 3 ) === "1.7" ) {
 		);
 	};
 =======
+=======
+>>>>>>> danhmuc_list
 //>>label: jQuery 1.8+ Support
 //>>group: Core
 //>>description: Support version 1.8.x and newer of jQuery core
@@ -4850,13 +5387,20 @@ if ( !$.fn.even || !$.fn.odd ) {
 			} );
 		}
 	} );
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 }
 
 ;
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  * jQuery UI Keycode 1.12.1
+=======
+ * jQuery UI Keycode 1.13.0
+>>>>>>> danhmuc_list
 =======
  * jQuery UI Keycode 1.13.0
 >>>>>>> danhmuc_list
@@ -4894,6 +5438,7 @@ var keycode = $.ui.keyCode = {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 // Internal use only
@@ -4907,6 +5452,10 @@ var escapeSelector = $.ui.escapeSelector = ( function() {
 
 /*!
  * jQuery UI Labels 1.12.1
+=======
+/*!
+ * jQuery UI Labels 1.13.0
+>>>>>>> danhmuc_list
 =======
 /*!
  * jQuery UI Labels 1.13.0
@@ -4925,11 +5474,14 @@ var escapeSelector = $.ui.escapeSelector = ( function() {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 var labels = $.fn.labels = function() {
 	var ancestor, selector, id, labels, ancestors;
 
 =======
+=======
+>>>>>>> danhmuc_list
 var labels = $.fn.labels = function() {
 	var ancestor, selector, id, labels, ancestors;
 
@@ -4937,6 +5489,9 @@ var labels = $.fn.labels = function() {
 		return this.pushStack( [] );
 	}
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	// Check control.labels first
 	if ( this[ 0 ].labels && this[ 0 ].labels.length ) {
@@ -4961,7 +5516,11 @@ var labels = $.fn.labels = function() {
 
 		// Create a selector for the label based on the id
 <<<<<<< HEAD
+<<<<<<< HEAD
 		selector = "label[for='" + $.ui.escapeSelector( id ) + "']";
+=======
+		selector = "label[for='" + $.escapeSelector( id ) + "']";
+>>>>>>> danhmuc_list
 =======
 		selector = "label[for='" + $.escapeSelector( id ) + "']";
 >>>>>>> danhmuc_list
@@ -4977,7 +5536,11 @@ var labels = $.fn.labels = function() {
 
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  * jQuery UI Scroll Parent 1.12.1
+=======
+ * jQuery UI Scroll Parent 1.13.0
+>>>>>>> danhmuc_list
 =======
  * jQuery UI Scroll Parent 1.13.0
 >>>>>>> danhmuc_list
@@ -4995,7 +5558,10 @@ var labels = $.fn.labels = function() {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 var scrollParent = $.fn.scrollParent = function( includeHidden ) {
@@ -5019,7 +5585,11 @@ var scrollParent = $.fn.scrollParent = function( includeHidden ) {
 
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  * jQuery UI Tabbable 1.12.1
+=======
+ * jQuery UI Tabbable 1.13.0
+>>>>>>> danhmuc_list
 =======
  * jQuery UI Tabbable 1.13.0
 >>>>>>> danhmuc_list
@@ -5037,8 +5607,12 @@ var scrollParent = $.fn.scrollParent = function( includeHidden ) {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 var tabbable = $.extend( $.expr[ ":" ], {
+=======
+var tabbable = $.extend( $.expr.pseudos, {
+>>>>>>> danhmuc_list
 =======
 var tabbable = $.extend( $.expr.pseudos, {
 >>>>>>> danhmuc_list
@@ -5052,7 +5626,11 @@ var tabbable = $.extend( $.expr.pseudos, {
 
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  * jQuery UI Unique ID 1.12.1
+=======
+ * jQuery UI Unique ID 1.13.0
+>>>>>>> danhmuc_list
 =======
  * jQuery UI Unique ID 1.13.0
 >>>>>>> danhmuc_list
@@ -5070,7 +5648,10 @@ var tabbable = $.extend( $.expr.pseudos, {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 var uniqueId = $.fn.extend( {
@@ -5098,7 +5679,11 @@ var uniqueId = $.fn.extend( {
 
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  * jQuery UI Accordion 1.12.1
+=======
+ * jQuery UI Accordion 1.13.0
+>>>>>>> danhmuc_list
 =======
  * jQuery UI Accordion 1.13.0
 >>>>>>> danhmuc_list
@@ -5112,9 +5697,15 @@ var uniqueId = $.fn.extend( {
 //>>label: Accordion
 //>>group: Widgets
 <<<<<<< HEAD
+<<<<<<< HEAD
 // jscs:disable maximumLineLength
 //>>description: Displays collapsible content panels for presenting information in a limited amount of space.
 // jscs:enable maximumLineLength
+=======
+/* eslint-disable max-len */
+//>>description: Displays collapsible content panels for presenting information in a limited amount of space.
+/* eslint-enable max-len */
+>>>>>>> danhmuc_list
 =======
 /* eslint-disable max-len */
 //>>description: Displays collapsible content panels for presenting information in a limited amount of space.
@@ -5128,9 +5719,14 @@ var uniqueId = $.fn.extend( {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 var widgetsAccordion = $.widget( "ui.accordion", {
 	version: "1.12.1",
+=======
+var widgetsAccordion = $.widget( "ui.accordion", {
+	version: "1.13.0",
+>>>>>>> danhmuc_list
 =======
 var widgetsAccordion = $.widget( "ui.accordion", {
 	version: "1.13.0",
@@ -5146,7 +5742,13 @@ var widgetsAccordion = $.widget( "ui.accordion", {
 		collapsible: false,
 		event: "click",
 <<<<<<< HEAD
+<<<<<<< HEAD
 		header: "> li > :first-child, > :not(li):even",
+=======
+		header: function( elem ) {
+			return elem.find( "> li > :first-child" ).add( elem.find( "> :not(li)" ).even() );
+		},
+>>>>>>> danhmuc_list
 =======
 		header: function( elem ) {
 			return elem.find( "> li > :first-child" ).add( elem.find( "> :not(li)" ).even() );
@@ -5383,13 +5985,19 @@ var widgetsAccordion = $.widget( "ui.accordion", {
 			prevPanels = this.panels;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		this.headers = this.element.find( this.options.header );
 =======
+=======
+>>>>>>> danhmuc_list
 		if ( typeof this.options.header === "function" ) {
 			this.headers = this.options.header( this.element );
 		} else {
 			this.headers = this.element.find( this.options.header );
 		}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		this._addClass( this.headers, "ui-accordion-header ui-accordion-header-collapsed",
 			"ui-state-default" );
@@ -5754,7 +6362,11 @@ var safeActiveElement = $.ui.safeActiveElement = function( document ) {
 
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  * jQuery UI Menu 1.12.1
+=======
+ * jQuery UI Menu 1.13.0
+>>>>>>> danhmuc_list
 =======
  * jQuery UI Menu 1.13.0
 >>>>>>> danhmuc_list
@@ -5776,9 +6388,14 @@ var safeActiveElement = $.ui.safeActiveElement = function( document ) {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 var widgetsMenu = $.widget( "ui.menu", {
 	version: "1.12.1",
+=======
+var widgetsMenu = $.widget( "ui.menu", {
+	version: "1.13.0",
+>>>>>>> danhmuc_list
 =======
 var widgetsMenu = $.widget( "ui.menu", {
 	version: "1.13.0",
@@ -5810,6 +6427,10 @@ var widgetsMenu = $.widget( "ui.menu", {
 		// as the event bubbles up through nested menus
 		this.mouseHandled = false;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+		this.lastMousePosition = { x: null, y: null };
+>>>>>>> danhmuc_list
 =======
 		this.lastMousePosition = { x: null, y: null };
 >>>>>>> danhmuc_list
@@ -5828,6 +6449,11 @@ var widgetsMenu = $.widget( "ui.menu", {
 			"mousedown .ui-menu-item": function( event ) {
 				event.preventDefault();
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+				this._activateItem( event );
+>>>>>>> danhmuc_list
 =======
 
 				this._activateItem( event );
@@ -5862,6 +6488,7 @@ var widgetsMenu = $.widget( "ui.menu", {
 				}
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			"mouseenter .ui-menu-item": function( event ) {
 
 				// Ignore mouse events while typeahead is active, see #10458.
@@ -5889,6 +6516,10 @@ var widgetsMenu = $.widget( "ui.menu", {
 			"mouseenter .ui-menu-item": "_activateItem",
 			"mousemove .ui-menu-item": "_activateItem",
 >>>>>>> danhmuc_list
+=======
+			"mouseenter .ui-menu-item": "_activateItem",
+			"mousemove .ui-menu-item": "_activateItem",
+>>>>>>> danhmuc_list
 			mouseleave: "collapseAll",
 			"mouseleave .ui-menu": "collapseAll",
 			focus: function( event, keepActiveItem ) {
@@ -5896,7 +6527,11 @@ var widgetsMenu = $.widget( "ui.menu", {
 				// If there's already an active item, keep it active
 				// If not, activate the first item
 <<<<<<< HEAD
+<<<<<<< HEAD
 				var item = this.active || this.element.find( this.options.items ).eq( 0 );
+=======
+				var item = this.active || this._menuItems().first();
+>>>>>>> danhmuc_list
 =======
 				var item = this.active || this._menuItems().first();
 >>>>>>> danhmuc_list
@@ -5926,7 +6561,11 @@ var widgetsMenu = $.widget( "ui.menu", {
 			click: function( event ) {
 				if ( this._closeOnDocumentClick( event ) ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 					this.collapseAll( event );
+=======
+					this.collapseAll( event, true );
+>>>>>>> danhmuc_list
 =======
 					this.collapseAll( event, true );
 >>>>>>> danhmuc_list
@@ -5939,7 +6578,10 @@ var widgetsMenu = $.widget( "ui.menu", {
 	},
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 	_activateItem: function( event ) {
 
 		// Ignore mouse events while typeahead is active, see #10458.
@@ -5980,6 +6622,9 @@ var widgetsMenu = $.widget( "ui.menu", {
 		this.focus( event, target );
 	},
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	_destroy: function() {
 		var items = this.element.find( ".ui-menu-item" )
@@ -6313,7 +6958,11 @@ var widgetsMenu = $.widget( "ui.menu", {
 
 			this.activeMenu = currentMenu;
 <<<<<<< HEAD
+<<<<<<< HEAD
 		}, this.delay );
+=======
+		}, all ? 0 : this.delay );
+>>>>>>> danhmuc_list
 =======
 		}, all ? 0 : this.delay );
 >>>>>>> danhmuc_list
@@ -6353,11 +7002,15 @@ var widgetsMenu = $.widget( "ui.menu", {
 
 	expand: function( event ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 		var newItem = this.active &&
 			this.active
 				.children( ".ui-menu " )
 					.find( this.options.items )
 						.first();
+=======
+		var newItem = this.active && this._menuItems( this.active.children( ".ui-menu" ) ).first();
+>>>>>>> danhmuc_list
 =======
 		var newItem = this.active && this._menuItems( this.active.children( ".ui-menu" ) ).first();
 >>>>>>> danhmuc_list
@@ -6389,13 +7042,19 @@ var widgetsMenu = $.widget( "ui.menu", {
 	},
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 	_menuItems: function( menu ) {
 		return ( menu || this.element )
 			.find( this.options.items )
 			.filter( ".ui-menu-item" );
 	},
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	_move: function( direction, filter, event ) {
 		var next;
@@ -6403,6 +7062,7 @@ var widgetsMenu = $.widget( "ui.menu", {
 			if ( direction === "first" || direction === "last" ) {
 				next = this.active
 					[ direction === "first" ? "prevAll" : "nextAll" ]( ".ui-menu-item" )
+<<<<<<< HEAD
 <<<<<<< HEAD
 					.eq( -1 );
 			} else {
@@ -6414,6 +7074,8 @@ var widgetsMenu = $.widget( "ui.menu", {
 		if ( !next || !next.length || !this.active ) {
 			next = this.activeMenu.find( this.options.items )[ filter ]();
 =======
+=======
+>>>>>>> danhmuc_list
 					.last();
 			} else {
 				next = this.active
@@ -6423,6 +7085,9 @@ var widgetsMenu = $.widget( "ui.menu", {
 		}
 		if ( !next || !next.length || !this.active ) {
 			next = this._menuItems( this.activeMenu )[ filter ]();
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		}
 
@@ -6442,8 +7107,11 @@ var widgetsMenu = $.widget( "ui.menu", {
 		if ( this._hasScroll() ) {
 			base = this.active.offset().top;
 <<<<<<< HEAD
+<<<<<<< HEAD
 			height = this.element.height();
 =======
+=======
+>>>>>>> danhmuc_list
 			height = this.element.innerHeight();
 
 			// jQuery 3.2 doesn't include scrollbars in innerHeight, add it back.
@@ -6451,6 +7119,9 @@ var widgetsMenu = $.widget( "ui.menu", {
 				height += this.element[ 0 ].offsetHeight - this.element.outerHeight();
 			}
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			this.active.nextAll( ".ui-menu-item" ).each( function() {
 				item = $( this );
@@ -6460,7 +7131,11 @@ var widgetsMenu = $.widget( "ui.menu", {
 			this.focus( event, item );
 		} else {
 <<<<<<< HEAD
+<<<<<<< HEAD
 			this.focus( event, this.activeMenu.find( this.options.items )
+=======
+			this.focus( event, this._menuItems( this.activeMenu )
+>>>>>>> danhmuc_list
 =======
 			this.focus( event, this._menuItems( this.activeMenu )
 >>>>>>> danhmuc_list
@@ -6480,8 +7155,11 @@ var widgetsMenu = $.widget( "ui.menu", {
 		if ( this._hasScroll() ) {
 			base = this.active.offset().top;
 <<<<<<< HEAD
+<<<<<<< HEAD
 			height = this.element.height();
 =======
+=======
+>>>>>>> danhmuc_list
 			height = this.element.innerHeight();
 
 			// jQuery 3.2 doesn't include scrollbars in innerHeight, add it back.
@@ -6489,6 +7167,9 @@ var widgetsMenu = $.widget( "ui.menu", {
 				height += this.element[ 0 ].offsetHeight - this.element.outerHeight();
 			}
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			this.active.prevAll( ".ui-menu-item" ).each( function() {
 				item = $( this );
@@ -6498,7 +7179,11 @@ var widgetsMenu = $.widget( "ui.menu", {
 			this.focus( event, item );
 		} else {
 <<<<<<< HEAD
+<<<<<<< HEAD
 			this.focus( event, this.activeMenu.find( this.options.items ).first() );
+=======
+			this.focus( event, this._menuItems( this.activeMenu ).first() );
+>>>>>>> danhmuc_list
 =======
 			this.focus( event, this._menuItems( this.activeMenu ).first() );
 >>>>>>> danhmuc_list
@@ -6533,7 +7218,12 @@ var widgetsMenu = $.widget( "ui.menu", {
 					.filter( function() {
 						return regex.test(
 <<<<<<< HEAD
+<<<<<<< HEAD
 							$.trim( $( this ).children( ".ui-menu-item-wrapper" ).text() ) );
+=======
+							String.prototype.trim.call(
+								$( this ).children( ".ui-menu-item-wrapper" ).text() ) );
+>>>>>>> danhmuc_list
 =======
 							String.prototype.trim.call(
 								$( this ).children( ".ui-menu-item-wrapper" ).text() ) );
@@ -6545,7 +7235,11 @@ var widgetsMenu = $.widget( "ui.menu", {
 
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  * jQuery UI Autocomplete 1.12.1
+=======
+ * jQuery UI Autocomplete 1.13.0
+>>>>>>> danhmuc_list
 =======
  * jQuery UI Autocomplete 1.13.0
 >>>>>>> danhmuc_list
@@ -6567,9 +7261,14 @@ var widgetsMenu = $.widget( "ui.menu", {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 $.widget( "ui.autocomplete", {
 	version: "1.12.1",
+=======
+$.widget( "ui.autocomplete", {
+	version: "1.13.0",
+>>>>>>> danhmuc_list
 =======
 $.widget( "ui.autocomplete", {
 	version: "1.13.0",
@@ -6737,11 +7436,14 @@ $.widget( "ui.autocomplete", {
 			},
 			blur: function( event ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 				if ( this.cancelBlur ) {
 					delete this.cancelBlur;
 					return;
 				}
 
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 				clearTimeout( this.searching );
@@ -6760,7 +7462,10 @@ $.widget( "ui.autocomplete", {
 			} )
 			.hide()
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 
 			// Support: IE 11 only, Edge <= 14
 			// For other browsers, we preventDefault() on the mousedown event
@@ -6771,6 +7476,9 @@ $.widget( "ui.autocomplete", {
 			.attr( {
 				"unselectable": "on"
 			} )
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			.menu( "instance" );
 
@@ -6778,6 +7486,7 @@ $.widget( "ui.autocomplete", {
 		this._on( this.menu.element, {
 			mousedown: function( event ) {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 				// prevent moving focus out of the text field
 				event.preventDefault();
@@ -6798,6 +7507,10 @@ $.widget( "ui.autocomplete", {
 						this.element.trigger( "focus" );
 					}
 				} );
+=======
+				// Prevent moving focus out of the text field
+				event.preventDefault();
+>>>>>>> danhmuc_list
 =======
 				// Prevent moving focus out of the text field
 				event.preventDefault();
@@ -6833,7 +7546,11 @@ $.widget( "ui.autocomplete", {
 				// Announce the value in the liveRegion
 				label = ui.item.attr( "aria-label" ) || item.value;
 <<<<<<< HEAD
+<<<<<<< HEAD
 				if ( label && $.trim( label ).length ) {
+=======
+				if ( label && String.prototype.trim.call( label ).length ) {
+>>>>>>> danhmuc_list
 =======
 				if ( label && String.prototype.trim.call( label ).length ) {
 >>>>>>> danhmuc_list
@@ -6949,7 +7666,11 @@ $.widget( "ui.autocomplete", {
 		var array, url,
 			that = this;
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( $.isArray( this.options.source ) ) {
+=======
+		if ( Array.isArray( this.options.source ) ) {
+>>>>>>> danhmuc_list
 =======
 		if ( Array.isArray( this.options.source ) ) {
 >>>>>>> danhmuc_list
@@ -7025,7 +7746,11 @@ $.widget( "ui.autocomplete", {
 		var index = ++this.requestIndex;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		return $.proxy( function( content ) {
+=======
+		return function( content ) {
+>>>>>>> danhmuc_list
 =======
 		return function( content ) {
 >>>>>>> danhmuc_list
@@ -7038,7 +7763,11 @@ $.widget( "ui.autocomplete", {
 				this._removeClass( "ui-autocomplete-loading" );
 			}
 <<<<<<< HEAD
+<<<<<<< HEAD
 		}, this );
+=======
+		}.bind( this );
+>>>>>>> danhmuc_list
 =======
 		}.bind( this );
 >>>>>>> danhmuc_list
@@ -7202,7 +7931,11 @@ $.widget( "ui.autocomplete", {
 
 		if ( editable === "inherit" ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 		  return this._isContentEditable( element.parent() );
+=======
+			return this._isContentEditable( element.parent() );
+>>>>>>> danhmuc_list
 =======
 			return this._isContentEditable( element.parent() );
 >>>>>>> danhmuc_list
@@ -7259,7 +7992,11 @@ var widgetsAutocomplete = $.ui.autocomplete;
 
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  * jQuery UI Controlgroup 1.12.1
+=======
+ * jQuery UI Controlgroup 1.13.0
+>>>>>>> danhmuc_list
 =======
  * jQuery UI Controlgroup 1.13.0
 >>>>>>> danhmuc_list
@@ -7284,7 +8021,11 @@ var controlgroupCornerRegex = /ui-corner-([a-z]){2,6}/g;
 
 var widgetsControlgroup = $.widget( "ui.controlgroup", {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	version: "1.12.1",
+=======
+	version: "1.13.0",
+>>>>>>> danhmuc_list
 =======
 	version: "1.13.0",
 >>>>>>> danhmuc_list
@@ -7405,7 +8146,11 @@ var widgetsControlgroup = $.widget( "ui.controlgroup", {
 		} );
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		this.childWidgets = $( $.unique( childWidgets ) );
+=======
+		this.childWidgets = $( $.uniqueSort( childWidgets ) );
+>>>>>>> danhmuc_list
 =======
 		this.childWidgets = $( $.uniqueSort( childWidgets ) );
 >>>>>>> danhmuc_list
@@ -7493,7 +8238,11 @@ var widgetsControlgroup = $.widget( "ui.controlgroup", {
 		$.each( classes, function( key ) {
 			var current = instance.options.classes[ key ] || "";
 <<<<<<< HEAD
+<<<<<<< HEAD
 			current = $.trim( current.replace( controlgroupCornerRegex, "" ) );
+=======
+			current = String.prototype.trim.call( current.replace( controlgroupCornerRegex, "" ) );
+>>>>>>> danhmuc_list
 =======
 			current = String.prototype.trim.call( current.replace( controlgroupCornerRegex, "" ) );
 >>>>>>> danhmuc_list
@@ -7560,7 +8309,11 @@ var widgetsControlgroup = $.widget( "ui.controlgroup", {
 
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  * jQuery UI Checkboxradio 1.12.1
+=======
+ * jQuery UI Checkboxradio 1.13.0
+>>>>>>> danhmuc_list
 =======
  * jQuery UI Checkboxradio 1.13.0
 >>>>>>> danhmuc_list
@@ -7583,9 +8336,14 @@ var widgetsControlgroup = $.widget( "ui.controlgroup", {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 $.widget( "ui.checkboxradio", [ $.ui.formResetMixin, {
 	version: "1.12.1",
+=======
+$.widget( "ui.checkboxradio", [ $.ui.formResetMixin, {
+	version: "1.13.0",
+>>>>>>> danhmuc_list
 =======
 $.widget( "ui.checkboxradio", [ $.ui.formResetMixin, {
 	version: "1.13.0",
@@ -7669,9 +8427,12 @@ $.widget( "ui.checkboxradio", [ $.ui.formResetMixin, {
 		if ( checked ) {
 			this._addClass( this.label, "ui-checkboxradio-checked", "ui-state-active" );
 <<<<<<< HEAD
+<<<<<<< HEAD
 			if ( this.icon ) {
 				this._addClass( this.icon, null, "ui-state-hover" );
 			}
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 		}
@@ -7709,7 +8470,11 @@ $.widget( "ui.checkboxradio", [ $.ui.formResetMixin, {
 		var group;
 		var name = this.element[ 0 ].name;
 <<<<<<< HEAD
+<<<<<<< HEAD
 		var nameSelector = "input[name='" + $.ui.escapeSelector( name ) + "']";
+=======
+		var nameSelector = "input[name='" + $.escapeSelector( name ) + "']";
+>>>>>>> danhmuc_list
 =======
 		var nameSelector = "input[name='" + $.escapeSelector( name ) + "']";
 >>>>>>> danhmuc_list
@@ -7725,7 +8490,11 @@ $.widget( "ui.checkboxradio", [ $.ui.formResetMixin, {
 			// Not inside a form, check all inputs that also are not inside a form
 			group = $( nameSelector ).filter( function() {
 <<<<<<< HEAD
+<<<<<<< HEAD
 				return $( this ).form().length === 0;
+=======
+				return $( this )._form().length === 0;
+>>>>>>> danhmuc_list
 =======
 				return $( this )._form().length === 0;
 >>>>>>> danhmuc_list
@@ -7850,7 +8619,11 @@ var widgetsCheckboxradio = $.ui.checkboxradio;
 
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  * jQuery UI Button 1.12.1
+=======
+ * jQuery UI Button 1.13.0
+>>>>>>> danhmuc_list
 =======
  * jQuery UI Button 1.13.0
 >>>>>>> danhmuc_list
@@ -7872,9 +8645,14 @@ var widgetsCheckboxradio = $.ui.checkboxradio;
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 $.widget( "ui.button", {
 	version: "1.12.1",
+=======
+$.widget( "ui.button", {
+	version: "1.13.0",
+>>>>>>> danhmuc_list
 =======
 $.widget( "ui.button", {
 	version: "1.13.0",
@@ -8103,7 +8881,11 @@ $.widget( "ui.button", {
 			this.element[ 0 ].disabled = value;
 			if ( value ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 				this.element.blur();
+=======
+				this.element.trigger( "blur" );
+>>>>>>> danhmuc_list
 =======
 				this.element.trigger( "blur" );
 >>>>>>> danhmuc_list
@@ -8186,6 +8968,7 @@ if ( $.uiBackCompat !== false ) {
 
 	$.fn.button = ( function( orig ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 		return function() {
 			if ( !this.length || ( this.length && this[ 0 ].tagName !== "INPUT" ) ||
 					( this.length && this[ 0 ].tagName === "INPUT" && (
@@ -8203,6 +8986,8 @@ if ( $.uiBackCompat !== false ) {
 			}
 			return this.checkboxradio.apply( this, arguments );
 =======
+=======
+>>>>>>> danhmuc_list
 		return function( options ) {
 			var isMethodCall = typeof options === "string";
 			var args = Array.prototype.slice.call( arguments, 1 );
@@ -8279,6 +9064,9 @@ if ( $.uiBackCompat !== false ) {
 			}
 
 			return returnValue;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		};
 	} )( $.fn.button );
@@ -8307,10 +9095,16 @@ var widgetsButton = $.ui.button;
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // jscs:disable maximumLineLength
 /* jscs:disable requireCamelCaseOrUpperCaseIdentifiers */
 /*!
  * jQuery UI Datepicker 1.12.1
+=======
+/* eslint-disable max-len, camelcase */
+/*!
+ * jQuery UI Datepicker 1.13.0
+>>>>>>> danhmuc_list
 =======
 /* eslint-disable max-len, camelcase */
 /*!
@@ -8334,8 +9128,12 @@ var widgetsButton = $.ui.button;
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 $.extend( $.ui, { datepicker: { version: "1.12.1" } } );
+=======
+$.extend( $.ui, { datepicker: { version: "1.13.0" } } );
+>>>>>>> danhmuc_list
 =======
 $.extend( $.ui, { datepicker: { version: "1.13.0" } } );
 >>>>>>> danhmuc_list
@@ -8367,6 +9165,10 @@ function datepicker_getZindex( elem ) {
 	return 0;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> danhmuc_list
 =======
 
 >>>>>>> danhmuc_list
@@ -8397,6 +9199,7 @@ function Datepicker() {
 		nextText: "Next", // Display text for next month link
 		currentText: "Today", // Display text for current month link
 <<<<<<< HEAD
+<<<<<<< HEAD
 		monthNames: [ "January","February","March","April","May","June",
 			"July","August","September","October","November","December" ], // Names of months for drop-down and formatting
 		monthNamesShort: [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ], // For formatting
@@ -8404,12 +9207,17 @@ function Datepicker() {
 		dayNamesShort: [ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ], // For formatting
 		dayNamesMin: [ "Su","Mo","Tu","We","Th","Fr","Sa" ], // Column headings for days starting at Sunday
 =======
+=======
+>>>>>>> danhmuc_list
 		monthNames: [ "January", "February", "March", "April", "May", "June",
 			"July", "August", "September", "October", "November", "December" ], // Names of months for drop-down and formatting
 		monthNamesShort: [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ], // For formatting
 		dayNames: [ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" ], // For formatting
 		dayNamesShort: [ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ], // For formatting
 		dayNamesMin: [ "Su", "Mo", "Tu", "We", "Th", "Fr", "Sa" ], // Column headings for days starting at Sunday
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		weekHeader: "Wk", // Column header for week of the year
 		dateFormat: "mm/dd/yy", // See format options on parseDate
@@ -8417,7 +9225,13 @@ function Datepicker() {
 		isRTL: false, // True if right-to-left language, false if left-to-right
 		showMonthAfterYear: false, // True if the year select precedes month, false for month then year
 <<<<<<< HEAD
+<<<<<<< HEAD
 		yearSuffix: "" // Additional text to append to the year in the month headers
+=======
+		yearSuffix: "", // Additional text to append to the year in the month headers,
+		selectMonthLabel: "Select month", // Invisible label for month selector
+		selectYearLabel: "Select year" // Invisible label for year selector
+>>>>>>> danhmuc_list
 =======
 		yearSuffix: "", // Additional text to append to the year in the month headers,
 		selectMonthLabel: "Select month", // Invisible label for month selector
@@ -8464,6 +9278,10 @@ function Datepicker() {
 		onChangeMonthYear: null, // Define a callback function when the month or year is changed
 		onClose: null, // Define a callback function when the datepicker is closed
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+		onUpdateDatepicker: null, // Define a callback function when the datepicker is updated
+>>>>>>> danhmuc_list
 =======
 		onUpdateDatepicker: null, // Define a callback function when the datepicker is updated
 >>>>>>> danhmuc_list
@@ -8486,6 +9304,10 @@ function Datepicker() {
 
 $.extend( Datepicker.prototype, {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> danhmuc_list
 =======
 
 >>>>>>> danhmuc_list
@@ -8572,7 +9394,13 @@ $.extend( Datepicker.prototype, {
 		}
 		if ( appendText ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 			inst.append = $( "<span class='" + this._appendClass + "'>" + appendText + "</span>" );
+=======
+			inst.append = $( "<span>" )
+				.addClass( this._appendClass )
+				.text( appendText );
+>>>>>>> danhmuc_list
 =======
 			inst.append = $( "<span>" )
 				.addClass( this._appendClass )
@@ -8595,6 +9423,7 @@ $.extend( Datepicker.prototype, {
 			buttonText = this._get( inst, "buttonText" );
 			buttonImage = this._get( inst, "buttonImage" );
 <<<<<<< HEAD
+<<<<<<< HEAD
 			inst.trigger = $( this._get( inst, "buttonImageOnly" ) ?
 				$( "<img/>" ).addClass( this._triggerClass ).
 					attr( { src: buttonImage, alt: buttonText, title: buttonText } ) :
@@ -8602,6 +9431,8 @@ $.extend( Datepicker.prototype, {
 					html( !buttonImage ? buttonText : $( "<img/>" ).attr(
 					{ src:buttonImage, alt:buttonText, title:buttonText } ) ) );
 =======
+=======
+>>>>>>> danhmuc_list
 
 			if ( this._get( inst, "buttonImageOnly" ) ) {
 				inst.trigger = $( "<img>" )
@@ -8628,6 +9459,9 @@ $.extend( Datepicker.prototype, {
 				}
 			}
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			input[ isRTL ? "before" : "after" ]( inst.trigger );
 			inst.trigger.on( "click", function() {
@@ -8775,6 +9609,10 @@ $.extend( Datepicker.prototype, {
 		if ( datepicker_instActive === inst ) {
 			datepicker_instActive = null;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+			this._curInst = null;
+>>>>>>> danhmuc_list
 =======
 			this._curInst = null;
 >>>>>>> danhmuc_list
@@ -8798,7 +9636,13 @@ $.extend( Datepicker.prototype, {
 			target.disabled = false;
 			inst.trigger.filter( "button" ).
 <<<<<<< HEAD
+<<<<<<< HEAD
 				each( function() { this.disabled = false; } ).end().
+=======
+				each( function() {
+					this.disabled = false;
+				} ).end().
+>>>>>>> danhmuc_list
 =======
 				each( function() {
 					this.disabled = false;
@@ -8813,13 +9657,19 @@ $.extend( Datepicker.prototype, {
 		}
 		this._disabledInputs = $.map( this._disabledInputs,
 <<<<<<< HEAD
+<<<<<<< HEAD
 			function( value ) { return ( value === target ? null : value ); } ); // delete entry
 =======
+=======
+>>>>>>> danhmuc_list
 
 			// Delete entry
 			function( value ) {
 				return ( value === target ? null : value );
 			} );
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	},
 
@@ -8840,7 +9690,13 @@ $.extend( Datepicker.prototype, {
 			target.disabled = true;
 			inst.trigger.filter( "button" ).
 <<<<<<< HEAD
+<<<<<<< HEAD
 				each( function() { this.disabled = true; } ).end().
+=======
+				each( function() {
+					this.disabled = true;
+				} ).end().
+>>>>>>> danhmuc_list
 =======
 				each( function() {
 					this.disabled = true;
@@ -8855,13 +9711,19 @@ $.extend( Datepicker.prototype, {
 		}
 		this._disabledInputs = $.map( this._disabledInputs,
 <<<<<<< HEAD
+<<<<<<< HEAD
 			function( value ) { return ( value === target ? null : value ); } ); // delete entry
 =======
+=======
+>>>>>>> danhmuc_list
 
 			// Delete entry
 			function( value ) {
 				return ( value === target ? null : value );
 			} );
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		this._disabledInputs[ this._disabledInputs.length ] = target;
 	},
@@ -8891,8 +9753,12 @@ $.extend( Datepicker.prototype, {
 		try {
 			return $.data( target, "datepicker" );
 <<<<<<< HEAD
+<<<<<<< HEAD
 		}
 		catch ( err ) {
+=======
+		} catch ( err ) {
+>>>>>>> danhmuc_list
 =======
 		} catch ( err ) {
 >>>>>>> danhmuc_list
@@ -9129,8 +9995,12 @@ $.extend( Datepicker.prototype, {
 					$.datepicker._updateDatepicker( inst );
 				}
 <<<<<<< HEAD
+<<<<<<< HEAD
 			}
 			catch ( err ) {
+=======
+			} catch ( err ) {
+>>>>>>> danhmuc_list
 =======
 			} catch ( err ) {
 >>>>>>> danhmuc_list
@@ -9239,7 +10109,12 @@ $.extend( Datepicker.prototype, {
 			cols = numMonths[ 1 ],
 			width = 17,
 <<<<<<< HEAD
+<<<<<<< HEAD
 			activeCell = inst.dpDiv.find( "." + this._dayOverClass + " a" );
+=======
+			activeCell = inst.dpDiv.find( "." + this._dayOverClass + " a" ),
+			onUpdateDatepicker = $.datepicker._get( inst, "onUpdateDatepicker" );
+>>>>>>> danhmuc_list
 =======
 			activeCell = inst.dpDiv.find( "." + this._dayOverClass + " a" ),
 			onUpdateDatepicker = $.datepicker._get( inst, "onUpdateDatepicker" );
@@ -9270,7 +10145,11 @@ $.extend( Datepicker.prototype, {
 				//assure that inst.yearshtml didn't change.
 				if ( origyearshtml === inst.yearshtml && inst.yearshtml ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 					inst.dpDiv.find( "select.ui-datepicker-year:first" ).replaceWith( inst.yearshtml );
+=======
+					inst.dpDiv.find( "select.ui-datepicker-year" ).first().replaceWith( inst.yearshtml );
+>>>>>>> danhmuc_list
 =======
 					inst.dpDiv.find( "select.ui-datepicker-year" ).first().replaceWith( inst.yearshtml );
 >>>>>>> danhmuc_list
@@ -9279,11 +10158,17 @@ $.extend( Datepicker.prototype, {
 			}, 0 );
 		}
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 
 		if ( onUpdateDatepicker ) {
 			onUpdateDatepicker.apply( ( inst.input ? inst.input[ 0 ] : null ), [ inst ] );
 		}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	},
 
@@ -9323,7 +10208,11 @@ $.extend( Datepicker.prototype, {
 			isRTL = this._get( inst, "isRTL" );
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		while ( obj && ( obj.type === "hidden" || obj.nodeType !== 1 || $.expr.filters.hidden( obj ) ) ) {
+=======
+		while ( obj && ( obj.type === "hidden" || obj.nodeType !== 1 || $.expr.pseudos.hidden( obj ) ) ) {
+>>>>>>> danhmuc_list
 =======
 		while ( obj && ( obj.type === "hidden" || obj.nodeType !== 1 || $.expr.pseudos.hidden( obj ) ) ) {
 >>>>>>> danhmuc_list
@@ -9415,9 +10304,13 @@ $.extend( Datepicker.prototype, {
 			return;
 		}
 <<<<<<< HEAD
+<<<<<<< HEAD
 		this._adjustInstDate( inst, offset +
 			( period === "M" ? this._get( inst, "showCurrentAtPos" ) : 0 ), // undo positioning
 			period );
+=======
+		this._adjustInstDate( inst, offset, period );
+>>>>>>> danhmuc_list
 =======
 		this._adjustInstDate( inst, offset, period );
 >>>>>>> danhmuc_list
@@ -9468,7 +10361,11 @@ $.extend( Datepicker.prototype, {
 
 		inst = this._getInst( target[ 0 ] );
 <<<<<<< HEAD
+<<<<<<< HEAD
 		inst.selectedDay = inst.currentDay = $( "a", td ).html();
+=======
+		inst.selectedDay = inst.currentDay = parseInt( $( "a", td ).attr( "data-date" ) );
+>>>>>>> danhmuc_list
 =======
 		inst.selectedDay = inst.currentDay = parseInt( $( "a", td ).attr( "data-date" ) );
 >>>>>>> danhmuc_list
@@ -9525,7 +10422,11 @@ $.extend( Datepicker.prototype, {
 			date = this._getDate( inst );
 			dateStr = this.formatDate( altFormat, date, this._getFormatConfig( inst ) );
 <<<<<<< HEAD
+<<<<<<< HEAD
 			$( altField ).val( dateStr );
+=======
+			$( document ).find( altField ).val( dateStr );
+>>>>>>> danhmuc_list
 =======
 			$( document ).find( altField ).val( dateStr );
 >>>>>>> danhmuc_list
@@ -9968,8 +10869,12 @@ $.extend( Datepicker.prototype, {
 					return $.datepicker.parseDate( $.datepicker._get( inst, "dateFormat" ),
 						offset, $.datepicker._getFormatConfig( inst ) );
 <<<<<<< HEAD
+<<<<<<< HEAD
 				}
 				catch ( e ) {
+=======
+				} catch ( e ) {
+>>>>>>> danhmuc_list
 =======
 				} catch ( e ) {
 >>>>>>> danhmuc_list
@@ -10147,11 +11052,14 @@ $.extend( Datepicker.prototype, {
 			this._getFormatConfig( inst ) ) );
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		prev = ( this._canAdjustMonth( inst, -1, drawYear, drawMonth ) ?
 			"<a class='ui-datepicker-prev ui-corner-all' data-handler='prev' data-event='click'" +
 			" title='" + prevText + "'><span class='ui-icon ui-icon-circle-triangle-" + ( isRTL ? "e" : "w" ) + "'>" + prevText + "</span></a>" :
 			( hideIfNoPrevNext ? "" : "<a class='ui-datepicker-prev ui-corner-all ui-state-disabled' title='" + prevText + "'><span class='ui-icon ui-icon-circle-triangle-" + ( isRTL ? "e" : "w" ) + "'>" + prevText + "</span></a>" ) );
 =======
+=======
+>>>>>>> danhmuc_list
 		if ( this._canAdjustMonth( inst, -1, drawYear, drawMonth ) ) {
 			prev = $( "<a>" )
 				.attr( {
@@ -10181,6 +11089,9 @@ $.extend( Datepicker.prototype, {
 						.text( prevText )
 				)[ 0 ].outerHTML;
 		}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 		nextText = this._get( inst, "nextText" );
@@ -10189,11 +11100,14 @@ $.extend( Datepicker.prototype, {
 			this._getFormatConfig( inst ) ) );
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		next = ( this._canAdjustMonth( inst, +1, drawYear, drawMonth ) ?
 			"<a class='ui-datepicker-next ui-corner-all' data-handler='next' data-event='click'" +
 			" title='" + nextText + "'><span class='ui-icon ui-icon-circle-triangle-" + ( isRTL ? "w" : "e" ) + "'>" + nextText + "</span></a>" :
 			( hideIfNoPrevNext ? "" : "<a class='ui-datepicker-next ui-corner-all ui-state-disabled' title='" + nextText + "'><span class='ui-icon ui-icon-circle-triangle-" + ( isRTL ? "w" : "e" ) + "'>" + nextText + "</span></a>" ) );
 =======
+=======
+>>>>>>> danhmuc_list
 		if ( this._canAdjustMonth( inst, +1, drawYear, drawMonth ) ) {
 			next = $( "<a>" )
 				.attr( {
@@ -10223,6 +11137,9 @@ $.extend( Datepicker.prototype, {
 						.text( nextText )
 				)[ 0 ].outerHTML;
 		}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 		currentText = this._get( inst, "currentText" );
@@ -10231,6 +11148,7 @@ $.extend( Datepicker.prototype, {
 			this.formatDate( currentText, gotoDate, this._getFormatConfig( inst ) ) );
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		controls = ( !inst.inline ? "<button type='button' class='ui-datepicker-close ui-state-default ui-priority-primary ui-corner-all' data-handler='hide' data-event='click'>" +
 			this._get( inst, "closeText" ) + "</button>" : "" );
 
@@ -10238,6 +11156,8 @@ $.extend( Datepicker.prototype, {
 			( this._isInRange( inst, gotoDate ) ? "<button type='button' class='ui-datepicker-current ui-state-default ui-priority-secondary ui-corner-all' data-handler='today' data-event='click'" +
 			">" + currentText + "</button>" : "" ) + ( isRTL ? "" : controls ) + "</div>" : "";
 =======
+=======
+>>>>>>> danhmuc_list
 		controls = "";
 		if ( !inst.inline ) {
 			controls = $( "<button>" )
@@ -10266,6 +11186,9 @@ $.extend( Datepicker.prototype, {
 					"" )
 				.append( isRTL ? "" : controls )[ 0 ].outerHTML;
 		}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 		firstDay = parseInt( this._get( inst, "firstDay" ), 10 );
@@ -10355,7 +11278,13 @@ $.extend( Datepicker.prototype, {
 							( printDate.getTime() === currentDate.getTime() ? " ui-state-active" : "" ) + // highlight selected day
 							( otherMonth ? " ui-priority-secondary" : "" ) + // distinguish dates from other months
 <<<<<<< HEAD
+<<<<<<< HEAD
 							"' href='#'>" + printDate.getDate() + "</a>" ) ) + "</td>"; // display selectable date
+=======
+							"' href='#' aria-current='" + ( printDate.getTime() === currentDate.getTime() ? "true" : "false" ) + // mark date as selected for screen reader
+							"' data-date='" + printDate.getDate() + // store date as data
+							"'>" + printDate.getDate() + "</a>" ) ) + "</td>"; // display selectable date
+>>>>>>> danhmuc_list
 =======
 							"' href='#' aria-current='" + ( printDate.getTime() === currentDate.getTime() ? "true" : "false" ) + // mark date as selected for screen reader
 							"' data-date='" + printDate.getDate() + // store date as data
@@ -10391,6 +11320,11 @@ $.extend( Datepicker.prototype, {
 			changeYear = this._get( inst, "changeYear" ),
 			showMonthAfterYear = this._get( inst, "showMonthAfterYear" ),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+			selectMonthLabel = this._get( inst, "selectMonthLabel" ),
+			selectYearLabel = this._get( inst, "selectYearLabel" ),
+>>>>>>> danhmuc_list
 =======
 			selectMonthLabel = this._get( inst, "selectMonthLabel" ),
 			selectYearLabel = this._get( inst, "selectYearLabel" ),
@@ -10405,7 +11339,11 @@ $.extend( Datepicker.prototype, {
 			inMinYear = ( minDate && minDate.getFullYear() === drawYear );
 			inMaxYear = ( maxDate && maxDate.getFullYear() === drawYear );
 <<<<<<< HEAD
+<<<<<<< HEAD
 			monthHtml += "<select class='ui-datepicker-month' data-handler='selectMonth' data-event='change'>";
+=======
+			monthHtml += "<select class='ui-datepicker-month' aria-label='" + selectMonthLabel + "' data-handler='selectMonth' data-event='change'>";
+>>>>>>> danhmuc_list
 =======
 			monthHtml += "<select class='ui-datepicker-month' aria-label='" + selectMonthLabel + "' data-handler='selectMonth' data-event='change'>";
 >>>>>>> danhmuc_list
@@ -10444,7 +11382,11 @@ $.extend( Datepicker.prototype, {
 				year = ( minDate ? Math.max( year, minDate.getFullYear() ) : year );
 				endYear = ( maxDate ? Math.min( endYear, maxDate.getFullYear() ) : endYear );
 <<<<<<< HEAD
+<<<<<<< HEAD
 				inst.yearshtml += "<select class='ui-datepicker-year' data-handler='selectYear' data-event='change'>";
+=======
+				inst.yearshtml += "<select class='ui-datepicker-year' aria-label='" + selectYearLabel + "' data-handler='selectYear' data-event='change'>";
+>>>>>>> danhmuc_list
 =======
 				inst.yearshtml += "<select class='ui-datepicker-year' aria-label='" + selectYearLabel + "' data-handler='selectYear' data-event='change'>";
 >>>>>>> danhmuc_list
@@ -10660,17 +11602,23 @@ $.fn.datepicker = function( options ) {
 	}
 	return this.each( function() {
 <<<<<<< HEAD
+<<<<<<< HEAD
 		typeof options === "string" ?
 			$.datepicker[ "_" + options + "Datepicker" ].
 				apply( $.datepicker, [ this ].concat( otherArgs ) ) :
 			$.datepicker._attachDatepicker( this, options );
 =======
+=======
+>>>>>>> danhmuc_list
 		if ( typeof options === "string" ) {
 			$.datepicker[ "_" + options + "Datepicker" ]
 				.apply( $.datepicker, [ this ].concat( otherArgs ) );
 		} else {
 			$.datepicker._attachDatepicker( this, options );
 		}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	} );
 };
@@ -10679,7 +11627,11 @@ $.datepicker = new Datepicker(); // singleton instance
 $.datepicker.initialized = false;
 $.datepicker.uuid = new Date().getTime();
 <<<<<<< HEAD
+<<<<<<< HEAD
 $.datepicker.version = "1.12.1";
+=======
+$.datepicker.version = "1.13.0";
+>>>>>>> danhmuc_list
 =======
 $.datepicker.version = "1.13.0";
 >>>>>>> danhmuc_list
@@ -10689,7 +11641,10 @@ var widgetsDatepicker = $.datepicker;
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 // This file is deprecated
@@ -10697,7 +11652,11 @@ var ie = $.ui.ie = !!/msie [\w.]+/.exec( navigator.userAgent.toLowerCase() );
 
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  * jQuery UI Mouse 1.12.1
+=======
+ * jQuery UI Mouse 1.13.0
+>>>>>>> danhmuc_list
 =======
  * jQuery UI Mouse 1.13.0
 >>>>>>> danhmuc_list
@@ -10715,7 +11674,10 @@ var ie = $.ui.ie = !!/msie [\w.]+/.exec( navigator.userAgent.toLowerCase() );
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 var mouseHandled = false;
@@ -10725,7 +11687,11 @@ $( document ).on( "mouseup", function() {
 
 var widgetsMouse = $.widget( "ui.mouse", {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	version: "1.12.1",
+=======
+	version: "1.13.0",
+>>>>>>> danhmuc_list
 =======
 	version: "1.13.0",
 >>>>>>> danhmuc_list
@@ -10774,7 +11740,13 @@ var widgetsMouse = $.widget( "ui.mouse", {
 
 		// We may have missed mouseup (out of window)
 <<<<<<< HEAD
+<<<<<<< HEAD
 		( this._mouseStarted && this._mouseUp( event ) );
+=======
+		if ( this._mouseStarted ) {
+			this._mouseUp( event );
+		}
+>>>>>>> danhmuc_list
 =======
 		if ( this._mouseStarted ) {
 			this._mouseUp( event );
@@ -10873,13 +11845,19 @@ var widgetsMouse = $.widget( "ui.mouse", {
 			this._mouseStarted =
 				( this._mouseStart( this._mouseDownEvent, event ) !== false );
 <<<<<<< HEAD
+<<<<<<< HEAD
 			( this._mouseStarted ? this._mouseDrag( event ) : this._mouseUp( event ) );
 =======
+=======
+>>>>>>> danhmuc_list
 			if ( this._mouseStarted ) {
 				this._mouseDrag( event );
 			} else {
 				this._mouseUp( event );
 			}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		}
 
@@ -10928,7 +11906,13 @@ var widgetsMouse = $.widget( "ui.mouse", {
 	_mouseDrag: function( /* event */ ) {},
 	_mouseStop: function( /* event */ ) {},
 <<<<<<< HEAD
+<<<<<<< HEAD
 	_mouseCapture: function( /* event */ ) { return true; }
+=======
+	_mouseCapture: function( /* event */ ) {
+		return true;
+	}
+>>>>>>> danhmuc_list
 =======
 	_mouseCapture: function( /* event */ ) {
 		return true;
@@ -10939,7 +11923,10 @@ var widgetsMouse = $.widget( "ui.mouse", {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 // $.ui.plugin is deprecated. Use $.widget() extensions instead.
@@ -10987,7 +11974,11 @@ var safeBlur = $.ui.safeBlur = function( element ) {
 
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  * jQuery UI Draggable 1.12.1
+=======
+ * jQuery UI Draggable 1.13.0
+>>>>>>> danhmuc_list
 =======
  * jQuery UI Draggable 1.13.0
 >>>>>>> danhmuc_list
@@ -11007,9 +11998,14 @@ var safeBlur = $.ui.safeBlur = function( element ) {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 $.widget( "ui.draggable", $.ui.mouse, {
 	version: "1.12.1",
+=======
+$.widget( "ui.draggable", $.ui.mouse, {
+	version: "1.13.0",
+>>>>>>> danhmuc_list
 =======
 $.widget( "ui.draggable", $.ui.mouse, {
 	version: "1.13.0",
@@ -11178,7 +12174,13 @@ $.widget( "ui.draggable", $.ui.mouse, {
 
 		//Adjust the mouse offset relative to the helper if "cursorAt" is supplied
 <<<<<<< HEAD
+<<<<<<< HEAD
 		( o.cursorAt && this._adjustOffsetFromHelper( o.cursorAt ) );
+=======
+		if ( o.cursorAt ) {
+			this._adjustOffsetFromHelper( o.cursorAt );
+		}
+>>>>>>> danhmuc_list
 =======
 		if ( o.cursorAt ) {
 			this._adjustOffsetFromHelper( o.cursorAt );
@@ -11279,7 +12281,11 @@ $.widget( "ui.draggable", $.ui.mouse, {
 		if ( ( this.options.revert === "invalid" && !dropped ) ||
 				( this.options.revert === "valid" && dropped ) ||
 <<<<<<< HEAD
+<<<<<<< HEAD
 				this.options.revert === true || ( $.isFunction( this.options.revert ) &&
+=======
+				this.options.revert === true || ( typeof this.options.revert === "function" &&
+>>>>>>> danhmuc_list
 =======
 				this.options.revert === true || ( typeof this.options.revert === "function" &&
 >>>>>>> danhmuc_list
@@ -11355,7 +12361,11 @@ $.widget( "ui.draggable", $.ui.mouse, {
 
 		var o = this.options,
 <<<<<<< HEAD
+<<<<<<< HEAD
 			helperIsFunction = $.isFunction( o.helper ),
+=======
+			helperIsFunction = typeof o.helper === "function",
+>>>>>>> danhmuc_list
 =======
 			helperIsFunction = typeof o.helper === "function",
 >>>>>>> danhmuc_list
@@ -11398,7 +12408,11 @@ $.widget( "ui.draggable", $.ui.mouse, {
 			obj = obj.split( " " );
 		}
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( $.isArray( obj ) ) {
+=======
+		if ( Array.isArray( obj ) ) {
+>>>>>>> danhmuc_list
 =======
 		if ( Array.isArray( obj ) ) {
 >>>>>>> danhmuc_list
@@ -12111,7 +13125,11 @@ $.ui.plugin.add( "draggable", "snap", {
 					inst.snapElements[ i ].item ) ) {
 				if ( inst.snapElements[ i ].snapping ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 					( inst.options.snap.release &&
+=======
+					if ( inst.options.snap.release ) {
+>>>>>>> danhmuc_list
 =======
 					if ( inst.options.snap.release ) {
 >>>>>>> danhmuc_list
@@ -12120,7 +13138,12 @@ $.ui.plugin.add( "draggable", "snap", {
 							event,
 							$.extend( inst._uiHash(), { snapItem: inst.snapElements[ i ].item } )
 <<<<<<< HEAD
+<<<<<<< HEAD
 						) );
+=======
+						);
+					}
+>>>>>>> danhmuc_list
 =======
 						);
 					}
@@ -12196,7 +13219,11 @@ $.ui.plugin.add( "draggable", "snap", {
 
 			if ( !inst.snapElements[ i ].snapping && ( ts || bs || ls || rs || first ) ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 				( inst.options.snap.snap &&
+=======
+				if ( inst.options.snap.snap ) {
+>>>>>>> danhmuc_list
 =======
 				if ( inst.options.snap.snap ) {
 >>>>>>> danhmuc_list
@@ -12206,7 +13233,12 @@ $.ui.plugin.add( "draggable", "snap", {
 						$.extend( inst._uiHash(), {
 							snapItem: inst.snapElements[ i ].item
 <<<<<<< HEAD
+<<<<<<< HEAD
 						} ) ) );
+=======
+						} ) );
+				}
+>>>>>>> danhmuc_list
 =======
 						} ) );
 				}
@@ -12229,7 +13261,13 @@ $.ui.plugin.add( "draggable", "stack", {
 			} );
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( !group.length ) { return; }
+=======
+		if ( !group.length ) {
+			return;
+		}
+>>>>>>> danhmuc_list
 =======
 		if ( !group.length ) {
 			return;
@@ -12268,7 +13306,11 @@ var widgetsDraggable = $.ui.draggable;
 
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  * jQuery UI Resizable 1.12.1
+=======
+ * jQuery UI Resizable 1.13.0
+>>>>>>> danhmuc_list
 =======
  * jQuery UI Resizable 1.13.0
 >>>>>>> danhmuc_list
@@ -12290,9 +13332,14 @@ var widgetsDraggable = $.ui.draggable;
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 $.widget( "ui.resizable", $.ui.mouse, {
 	version: "1.12.1",
+=======
+$.widget( "ui.resizable", $.ui.mouse, {
+	version: "1.13.0",
+>>>>>>> danhmuc_list
 =======
 $.widget( "ui.resizable", $.ui.mouse, {
 	version: "1.13.0",
@@ -12352,10 +13399,13 @@ $.widget( "ui.resizable", $.ui.mouse, {
 		// if the element doesn't have the scroll set, see if it's possible to
 		// set the scroll
 <<<<<<< HEAD
+<<<<<<< HEAD
 		el[ scroll ] = 1;
 		has = ( el[ scroll ] > 0 );
 		el[ scroll ] = 0;
 =======
+=======
+>>>>>>> danhmuc_list
 		try {
 			el[ scroll ] = 1;
 			has = ( el[ scroll ] > 0 );
@@ -12365,6 +13415,9 @@ $.widget( "ui.resizable", $.ui.mouse, {
 			// `el` might be a string, then setting `scroll` will throw
 			// an error in strict mode; ignore it.
 		}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		return has;
 	},
@@ -12389,7 +13442,12 @@ $.widget( "ui.resizable", $.ui.mouse, {
 
 			this.element.wrap(
 <<<<<<< HEAD
+<<<<<<< HEAD
 				$( "<div class='ui-wrapper' style='overflow: hidden;'></div>" ).css( {
+=======
+				$( "<div class='ui-wrapper'></div>" ).css( {
+					overflow: "hidden",
+>>>>>>> danhmuc_list
 =======
 				$( "<div class='ui-wrapper'></div>" ).css( {
 					overflow: "hidden",
@@ -12465,6 +13523,10 @@ $.widget( "ui.resizable", $.ui.mouse, {
 
 		this._mouseDestroy();
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+		this._addedHandles.remove();
+>>>>>>> danhmuc_list
 =======
 		this._addedHandles.remove();
 >>>>>>> danhmuc_list
@@ -12475,9 +13537,13 @@ $.widget( "ui.resizable", $.ui.mouse, {
 					.removeData( "resizable" )
 					.removeData( "ui-resizable" )
 <<<<<<< HEAD
+<<<<<<< HEAD
 					.off( ".resizable" )
 					.find( ".ui-resizable-handle" )
 						.remove();
+=======
+					.off( ".resizable" );
+>>>>>>> danhmuc_list
 =======
 					.off( ".resizable" );
 >>>>>>> danhmuc_list
@@ -12512,6 +13578,12 @@ $.widget( "ui.resizable", $.ui.mouse, {
 			this._setupHandles();
 			break;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+		case "aspectRatio":
+			this._aspectRatio = !!value;
+			break;
+>>>>>>> danhmuc_list
 =======
 		case "aspectRatio":
 			this._aspectRatio = !!value;
@@ -12539,6 +13611,10 @@ $.widget( "ui.resizable", $.ui.mouse, {
 
 		this._handles = $();
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+		this._addedHandles = $();
+>>>>>>> danhmuc_list
 =======
 		this._addedHandles = $();
 >>>>>>> danhmuc_list
@@ -12554,7 +13630,11 @@ $.widget( "ui.resizable", $.ui.mouse, {
 			for ( i = 0; i < n.length; i++ ) {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 				handle = $.trim( n[ i ] );
+=======
+				handle = String.prototype.trim.call( n[ i ] );
+>>>>>>> danhmuc_list
 =======
 				handle = String.prototype.trim.call( n[ i ] );
 >>>>>>> danhmuc_list
@@ -12566,12 +13646,18 @@ $.widget( "ui.resizable", $.ui.mouse, {
 
 				this.handles[ handle ] = ".ui-resizable-" + handle;
 <<<<<<< HEAD
+<<<<<<< HEAD
 				this.element.append( axis );
 =======
+=======
+>>>>>>> danhmuc_list
 				if ( !this.element.children( this.handles[ handle ] ).length ) {
 					this.element.append( axis );
 					this._addedHandles = this._addedHandles.add( axis );
 				}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			}
 
@@ -12639,7 +13725,11 @@ $.widget( "ui.resizable", $.ui.mouse, {
 
 	_removeHandles: function() {
 <<<<<<< HEAD
+<<<<<<< HEAD
 		this._handles.remove();
+=======
+		this._addedHandles.remove();
+>>>>>>> danhmuc_list
 =======
 		this._addedHandles.remove();
 >>>>>>> danhmuc_list
@@ -13023,7 +14113,11 @@ $.widget( "ui.resizable", $.ui.mouse, {
 		if ( this._helper ) {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			this.helper = this.helper || $( "<div style='overflow:hidden;'></div>" );
+=======
+			this.helper = this.helper || $( "<div></div>" ).css( { overflow: "hidden" } );
+>>>>>>> danhmuc_list
 =======
 			this.helper = this.helper || $( "<div></div>" ).css( { overflow: "hidden" } );
 >>>>>>> danhmuc_list
@@ -13084,7 +14178,13 @@ $.widget( "ui.resizable", $.ui.mouse, {
 	_propagate: function( n, event ) {
 		$.ui.plugin.call( this, n, [ event, this.ui() ] );
 <<<<<<< HEAD
+<<<<<<< HEAD
 		( n !== "resize" && this._trigger( n, event, this.ui() ) );
+=======
+		if ( n !== "resize" ) {
+			this._trigger( n, event, this.ui() );
+		}
+>>>>>>> danhmuc_list
 =======
 		if ( n !== "resize" ) {
 			this._trigger( n, event, this.ui() );
@@ -13211,8 +14311,13 @@ $.ui.plugin.add( "resizable", "containment", {
 			ch = that.containerSize.height;
 			cw = that.containerSize.width;
 <<<<<<< HEAD
+<<<<<<< HEAD
 			width = ( that._hasScroll ( ce, "left" ) ? ce.scrollWidth : cw );
 			height = ( that._hasScroll ( ce ) ? ce.scrollHeight : ch ) ;
+=======
+			width = ( that._hasScroll( ce, "left" ) ? ce.scrollWidth : cw );
+			height = ( that._hasScroll( ce ) ? ce.scrollHeight : ch );
+>>>>>>> danhmuc_list
 =======
 			width = ( that._hasScroll( ce, "left" ) ? ce.scrollWidth : cw );
 			height = ( that._hasScroll( ce ) ? ce.scrollHeight : ch );
@@ -13526,7 +14631,11 @@ var widgetsResizable = $.ui.resizable;
 
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  * jQuery UI Dialog 1.12.1
+=======
+ * jQuery UI Dialog 1.13.0
+>>>>>>> danhmuc_list
 =======
  * jQuery UI Dialog 1.13.0
 >>>>>>> danhmuc_list
@@ -13548,9 +14657,14 @@ var widgetsResizable = $.ui.resizable;
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 $.widget( "ui.dialog", {
 	version: "1.12.1",
+=======
+$.widget( "ui.dialog", {
+	version: "1.13.0",
+>>>>>>> danhmuc_list
 =======
 $.widget( "ui.dialog", {
 	version: "1.13.0",
@@ -13800,7 +14914,11 @@ $.widget( "ui.dialog", {
 		} );
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		// Track the dialog immediately upon openening in case a focus event
+=======
+		// Track the dialog immediately upon opening in case a focus event
+>>>>>>> danhmuc_list
 =======
 		// Track the dialog immediately upon opening in case a focus event
 >>>>>>> danhmuc_list
@@ -13840,6 +14958,7 @@ $.widget( "ui.dialog", {
 	},
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	_keepFocus: function( event ) {
 		function checkFocus() {
 			var activeElement = $.ui.safeActiveElement( this.document[ 0 ] ),
@@ -13852,6 +14971,8 @@ $.widget( "ui.dialog", {
 		event.preventDefault();
 		checkFocus.call( this );
 =======
+=======
+>>>>>>> danhmuc_list
 	_restoreTabbableFocus: function() {
 		var activeElement = $.ui.safeActiveElement( this.document[ 0 ] ),
 			isActive = this.uiDialog[ 0 ] === activeElement ||
@@ -13864,13 +14985,20 @@ $.widget( "ui.dialog", {
 	_keepFocus: function( event ) {
 		event.preventDefault();
 		this._restoreTabbableFocus();
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 		// support: IE
 		// IE <= 8 doesn't prevent moving focus even with event.preventDefault()
 		// so we check again later
 <<<<<<< HEAD
+<<<<<<< HEAD
 		this._delay( checkFocus );
+=======
+		this._delay( this._restoreTabbableFocus );
+>>>>>>> danhmuc_list
 =======
 		this._delay( this._restoreTabbableFocus );
 >>>>>>> danhmuc_list
@@ -13903,8 +15031,13 @@ $.widget( "ui.dialog", {
 				}
 				var tabbables = this.uiDialog.find( ":tabbable" ),
 <<<<<<< HEAD
+<<<<<<< HEAD
 					first = tabbables.filter( ":first" ),
 					last = tabbables.filter( ":last" );
+=======
+					first = tabbables.first(),
+					last = tabbables.last();
+>>>>>>> danhmuc_list
 =======
 					first = tabbables.first(),
 					last = tabbables.last();
@@ -14020,7 +15153,11 @@ $.widget( "ui.dialog", {
 		this.uiButtonSet.empty();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( $.isEmptyObject( buttons ) || ( $.isArray( buttons ) && !buttons.length ) ) {
+=======
+		if ( $.isEmptyObject( buttons ) || ( Array.isArray( buttons ) && !buttons.length ) ) {
+>>>>>>> danhmuc_list
 =======
 		if ( $.isEmptyObject( buttons ) || ( Array.isArray( buttons ) && !buttons.length ) ) {
 >>>>>>> danhmuc_list
@@ -14031,7 +15168,11 @@ $.widget( "ui.dialog", {
 		$.each( buttons, function( name, props ) {
 			var click, buttonOptions;
 <<<<<<< HEAD
+<<<<<<< HEAD
 			props = $.isFunction( props ) ?
+=======
+			props = typeof props === "function" ?
+>>>>>>> danhmuc_list
 =======
 			props = typeof props === "function" ?
 >>>>>>> danhmuc_list
@@ -14400,6 +15541,11 @@ $.widget( "ui.dialog", {
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+		var jqMinor = $.fn.jquery.substring( 0, 4 );
+
+>>>>>>> danhmuc_list
 =======
 		var jqMinor = $.fn.jquery.substring( 0, 4 );
 
@@ -14414,6 +15560,7 @@ $.widget( "ui.dialog", {
 		if ( !this.document.data( "ui-dialog-overlays" ) ) {
 
 			// Prevent use of anchors and inputs
+<<<<<<< HEAD
 <<<<<<< HEAD
 			// Using _on() for an event handler shared across many instances is
 			// safe because the dialogs stack and must be closed in reverse order
@@ -14430,6 +15577,8 @@ $.widget( "ui.dialog", {
 				}
 			} );
 =======
+=======
+>>>>>>> danhmuc_list
 			// This doesn't use `_on()` because it is a shared event handler
 			// across all open modal dialogs.
 			this.document.on( "focusin.ui-dialog", function( event ) {
@@ -14452,6 +15601,9 @@ $.widget( "ui.dialog", {
 					}
 				}
 			}.bind( this ) );
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		}
 
@@ -14476,7 +15628,11 @@ $.widget( "ui.dialog", {
 
 			if ( !overlays ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 				this._off( this.document, "focusin" );
+=======
+				this.document.off( "focusin.ui-dialog" );
+>>>>>>> danhmuc_list
 =======
 				this.document.off( "focusin.ui-dialog" );
 >>>>>>> danhmuc_list
@@ -14520,7 +15676,11 @@ var widgetsDialog = $.ui.dialog;
 
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  * jQuery UI Droppable 1.12.1
+=======
+ * jQuery UI Droppable 1.13.0
+>>>>>>> danhmuc_list
 =======
  * jQuery UI Droppable 1.13.0
 >>>>>>> danhmuc_list
@@ -14539,9 +15699,14 @@ var widgetsDialog = $.ui.dialog;
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 $.widget( "ui.droppable", {
 	version: "1.12.1",
+=======
+$.widget( "ui.droppable", {
+	version: "1.13.0",
+>>>>>>> danhmuc_list
 =======
 $.widget( "ui.droppable", {
 	version: "1.13.0",
@@ -14571,7 +15736,11 @@ $.widget( "ui.droppable", {
 		this.isout = true;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		this.accept = $.isFunction( accept ) ? accept : function( d ) {
+=======
+		this.accept = typeof accept === "function" ? accept : function( d ) {
+>>>>>>> danhmuc_list
 =======
 		this.accept = typeof accept === "function" ? accept : function( d ) {
 >>>>>>> danhmuc_list
@@ -14598,7 +15767,13 @@ $.widget( "ui.droppable", {
 		this._addToManager( o.scope );
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		o.addClasses && this._addClass( "ui-droppable" );
+=======
+		if ( o.addClasses ) {
+			this._addClass( "ui-droppable" );
+		}
+>>>>>>> danhmuc_list
 =======
 		if ( o.addClasses ) {
 			this._addClass( "ui-droppable" );
@@ -14633,7 +15808,11 @@ $.widget( "ui.droppable", {
 
 		if ( key === "accept" ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 			this.accept = $.isFunction( value ) ? value : function( d ) {
+=======
+			this.accept = typeof value === "function" ? value : function( d ) {
+>>>>>>> danhmuc_list
 =======
 			this.accept = typeof value === "function" ? value : function( d ) {
 >>>>>>> danhmuc_list
@@ -14727,7 +15906,11 @@ $.widget( "ui.droppable", {
 						inst.element[ 0 ], ( draggable.currentItem || draggable.element )
 					) &&
 <<<<<<< HEAD
+<<<<<<< HEAD
 					intersect(
+=======
+					$.ui.intersect(
+>>>>>>> danhmuc_list
 =======
 					$.ui.intersect(
 >>>>>>> danhmuc_list
@@ -14738,7 +15921,12 @@ $.widget( "ui.droppable", {
 				) {
 					childrenIntersection = true;
 <<<<<<< HEAD
+<<<<<<< HEAD
 					return false; }
+=======
+					return false;
+				}
+>>>>>>> danhmuc_list
 =======
 					return false;
 				}
@@ -14772,7 +15960,11 @@ $.widget( "ui.droppable", {
 
 	// Extension points just to make backcompat sane and avoid duplicating logic
 <<<<<<< HEAD
+<<<<<<< HEAD
 	// TODO: Remove in 1.13 along with call to it below
+=======
+	// TODO: Remove in 1.14 along with call to it below
+>>>>>>> danhmuc_list
 =======
 	// TODO: Remove in 1.14 along with call to it below
 >>>>>>> danhmuc_list
@@ -14794,7 +15986,11 @@ $.widget( "ui.droppable", {
 } );
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 var intersect = $.ui.intersect = ( function() {
+=======
+$.ui.intersect = ( function() {
+>>>>>>> danhmuc_list
 =======
 $.ui.intersect = ( function() {
 >>>>>>> danhmuc_list
@@ -14906,7 +16102,11 @@ $.ui.ddmanager = {
 			}
 			if ( !this.options.disabled && this.visible &&
 <<<<<<< HEAD
+<<<<<<< HEAD
 					intersect( draggable, this, this.options.tolerance, event ) ) {
+=======
+					$.ui.intersect( draggable, this, this.options.tolerance, event ) ) {
+>>>>>>> danhmuc_list
 =======
 					$.ui.intersect( draggable, this, this.options.tolerance, event ) ) {
 >>>>>>> danhmuc_list
@@ -14951,7 +16151,11 @@ $.ui.ddmanager = {
 
 			var parentInstance, scope, parent,
 <<<<<<< HEAD
+<<<<<<< HEAD
 				intersects = intersect( draggable, this, this.options.tolerance, event ),
+=======
+				intersects = $.ui.intersect( draggable, this, this.options.tolerance, event ),
+>>>>>>> danhmuc_list
 =======
 				intersects = $.ui.intersect( draggable, this, this.options.tolerance, event ),
 >>>>>>> danhmuc_list
@@ -15049,7 +16253,11 @@ var widgetsDroppable = $.ui.droppable;
 
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  * jQuery UI Progressbar 1.12.1
+=======
+ * jQuery UI Progressbar 1.13.0
+>>>>>>> danhmuc_list
 =======
  * jQuery UI Progressbar 1.13.0
 >>>>>>> danhmuc_list
@@ -15063,9 +16271,15 @@ var widgetsDroppable = $.ui.droppable;
 //>>label: Progressbar
 //>>group: Widgets
 <<<<<<< HEAD
+<<<<<<< HEAD
 // jscs:disable maximumLineLength
 //>>description: Displays a status indicator for loading state, standard percentage, and other progress indicators.
 // jscs:enable maximumLineLength
+=======
+/* eslint-disable max-len */
+//>>description: Displays a status indicator for loading state, standard percentage, and other progress indicators.
+/* eslint-enable max-len */
+>>>>>>> danhmuc_list
 =======
 /* eslint-disable max-len */
 //>>description: Displays a status indicator for loading state, standard percentage, and other progress indicators.
@@ -15079,9 +16293,14 @@ var widgetsDroppable = $.ui.droppable;
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 var widgetsProgressbar = $.widget( "ui.progressbar", {
 	version: "1.12.1",
+=======
+var widgetsProgressbar = $.widget( "ui.progressbar", {
+	version: "1.13.0",
+>>>>>>> danhmuc_list
 =======
 var widgetsProgressbar = $.widget( "ui.progressbar", {
 	version: "1.13.0",
@@ -15228,7 +16447,11 @@ var widgetsProgressbar = $.widget( "ui.progressbar", {
 
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  * jQuery UI Selectable 1.12.1
+=======
+ * jQuery UI Selectable 1.13.0
+>>>>>>> danhmuc_list
 =======
  * jQuery UI Selectable 1.13.0
 >>>>>>> danhmuc_list
@@ -15248,9 +16471,14 @@ var widgetsProgressbar = $.widget( "ui.progressbar", {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 var widgetsSelectable = $.widget( "ui.selectable", $.ui.mouse, {
 	version: "1.12.1",
+=======
+var widgetsSelectable = $.widget( "ui.selectable", $.ui.mouse, {
+	version: "1.13.0",
+>>>>>>> danhmuc_list
 =======
 var widgetsSelectable = $.widget( "ui.selectable", $.ui.mouse, {
 	version: "1.13.0",
@@ -15406,15 +16634,21 @@ var widgetsSelectable = $.widget( "ui.selectable", $.ui.mouse, {
 			y2 = event.pageY;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( x1 > x2 ) { tmp = x2; x2 = x1; x1 = tmp; }
 		if ( y1 > y2 ) { tmp = y2; y2 = y1; y1 = tmp; }
 =======
+=======
+>>>>>>> danhmuc_list
 		if ( x1 > x2 ) {
 			tmp = x2; x2 = x1; x1 = tmp;
 		}
 		if ( y1 > y2 ) {
 			tmp = y2; y2 = y1; y1 = tmp;
 		}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		this.helper.css( { left: x1, top: y1, width: x2 - x1, height: y2 - y1 } );
 
@@ -15541,7 +16775,11 @@ var widgetsSelectable = $.widget( "ui.selectable", $.ui.mouse, {
 
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  * jQuery UI Selectmenu 1.12.1
+=======
+ * jQuery UI Selectmenu 1.13.0
+>>>>>>> danhmuc_list
 =======
  * jQuery UI Selectmenu 1.13.0
 >>>>>>> danhmuc_list
@@ -15555,9 +16793,15 @@ var widgetsSelectable = $.widget( "ui.selectable", $.ui.mouse, {
 //>>label: Selectmenu
 //>>group: Widgets
 <<<<<<< HEAD
+<<<<<<< HEAD
 // jscs:disable maximumLineLength
 //>>description: Duplicates and extends the functionality of a native HTML select element, allowing it to be customizable in behavior and appearance far beyond the limitations of a native select.
 // jscs:enable maximumLineLength
+=======
+/* eslint-disable max-len */
+//>>description: Duplicates and extends the functionality of a native HTML select element, allowing it to be customizable in behavior and appearance far beyond the limitations of a native select.
+/* eslint-enable max-len */
+>>>>>>> danhmuc_list
 =======
 /* eslint-disable max-len */
 //>>description: Duplicates and extends the functionality of a native HTML select element, allowing it to be customizable in behavior and appearance far beyond the limitations of a native select.
@@ -15571,9 +16815,14 @@ var widgetsSelectable = $.widget( "ui.selectable", $.ui.mouse, {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 var widgetsSelectmenu = $.widget( "ui.selectmenu", [ $.ui.formResetMixin, {
 	version: "1.12.1",
+=======
+var widgetsSelectmenu = $.widget( "ui.selectmenu", [ $.ui.formResetMixin, {
+	version: "1.13.0",
+>>>>>>> danhmuc_list
 =======
 var widgetsSelectmenu = $.widget( "ui.selectmenu", [ $.ui.formResetMixin, {
 	version: "1.13.0",
@@ -15633,7 +16882,11 @@ var widgetsSelectmenu = $.widget( "ui.selectmenu", [ $.ui.formResetMixin, {
 		this._on( this.labels, {
 			click: function( event ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 				this.button.focus();
+=======
+				this.button.trigger( "focus" );
+>>>>>>> danhmuc_list
 =======
 				this.button.trigger( "focus" );
 >>>>>>> danhmuc_list
@@ -15965,7 +17218,11 @@ var widgetsSelectmenu = $.widget( "ui.selectmenu", [ $.ui.formResetMixin, {
 
 			if ( !$( event.target ).closest( ".ui-selectmenu-menu, #" +
 <<<<<<< HEAD
+<<<<<<< HEAD
 					$.ui.escapeSelector( this.ids.button ) ).length ) {
+=======
+				$.escapeSelector( this.ids.button ) ).length ) {
+>>>>>>> danhmuc_list
 =======
 				$.escapeSelector( this.ids.button ) ).length ) {
 >>>>>>> danhmuc_list
@@ -16200,11 +17457,17 @@ var widgetsSelectmenu = $.widget( "ui.selectmenu", [ $.ui.formResetMixin, {
 			data = [];
 		options.each( function( index, item ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 			if ( item.hidden ) {
 				return;
 			}
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			data.push( that._parseOption( $( item ), index ) );
 		} );
@@ -16237,7 +17500,11 @@ var widgetsSelectmenu = $.widget( "ui.selectmenu", [ $.ui.formResetMixin, {
 
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  * jQuery UI Slider 1.12.1
+=======
+ * jQuery UI Slider 1.13.0
+>>>>>>> danhmuc_list
 =======
  * jQuery UI Slider 1.13.0
 >>>>>>> danhmuc_list
@@ -16259,9 +17526,14 @@ var widgetsSelectmenu = $.widget( "ui.selectmenu", [ $.ui.formResetMixin, {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 var widgetsSlider = $.widget( "ui.slider", $.ui.mouse, {
 	version: "1.12.1",
+=======
+var widgetsSlider = $.widget( "ui.slider", $.ui.mouse, {
+	version: "1.13.0",
+>>>>>>> danhmuc_list
 =======
 var widgetsSlider = $.widget( "ui.slider", $.ui.mouse, {
 	version: "1.13.0",
@@ -16363,7 +17635,11 @@ var widgetsSlider = $.widget( "ui.slider", $.ui.mouse, {
 				} else if ( options.values.length && options.values.length !== 2 ) {
 					options.values = [ options.values[ 0 ], options.values[ 0 ] ];
 <<<<<<< HEAD
+<<<<<<< HEAD
 				} else if ( $.isArray( options.values ) ) {
+=======
+				} else if ( Array.isArray( options.values ) ) {
+>>>>>>> danhmuc_list
 =======
 				} else if ( Array.isArray( options.values ) ) {
 >>>>>>> danhmuc_list
@@ -16630,7 +17906,11 @@ var widgetsSlider = $.widget( "ui.slider", $.ui.mouse, {
 
 		if ( arguments.length ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 			if ( $.isArray( arguments[ 0 ] ) ) {
+=======
+			if ( Array.isArray( arguments[ 0 ] ) ) {
+>>>>>>> danhmuc_list
 =======
 			if ( Array.isArray( arguments[ 0 ] ) ) {
 >>>>>>> danhmuc_list
@@ -16668,7 +17948,11 @@ var widgetsSlider = $.widget( "ui.slider", $.ui.mouse, {
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( $.isArray( this.options.values ) ) {
+=======
+		if ( Array.isArray( this.options.values ) ) {
+>>>>>>> danhmuc_list
 =======
 		if ( Array.isArray( this.options.values ) ) {
 >>>>>>> danhmuc_list
@@ -16994,7 +18278,11 @@ var widgetsSlider = $.widget( "ui.slider", $.ui.mouse, {
 
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  * jQuery UI Sortable 1.12.1
+=======
+ * jQuery UI Sortable 1.13.0
+>>>>>>> danhmuc_list
 =======
  * jQuery UI Sortable 1.13.0
 >>>>>>> danhmuc_list
@@ -17014,9 +18302,14 @@ var widgetsSlider = $.widget( "ui.slider", $.ui.mouse, {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 	version: "1.12.1",
+=======
+var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
+	version: "1.13.0",
+>>>>>>> danhmuc_list
 =======
 var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 	version: "1.13.0",
@@ -17181,12 +18474,18 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 		this.refreshPositions();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 		//Prepare the dragged items parent
 		this.appendTo = $( o.appendTo !== "parent" ?
 				o.appendTo :
 				this.currentItem.parent() );
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		//Create and append the visible helper
 		this.helper = this._createHelper( event );
@@ -17203,9 +18502,12 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 		this._cacheMargins();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		//Get the next scrolling parent
 		this.scrollParent = this.helper.scrollParent();
 
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 		//The element's absolute position on the page minus margins
@@ -17221,7 +18523,10 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 				top: event.pageY - this.offset.top
 			},
 <<<<<<< HEAD
+<<<<<<< HEAD
 			parent: this._getParentOffset(),
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 
@@ -17231,7 +18536,12 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 		} );
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		// Only after we got the offset, we can change the helper's position to absolute
+=======
+		// After we get the helper offset, but before we get the parent offset we can
+		// change the helper's position to absolute
+>>>>>>> danhmuc_list
 =======
 		// After we get the helper offset, but before we get the parent offset we can
 		// change the helper's position to absolute
@@ -17241,6 +18551,7 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 		this.cssPosition = this.helper.css( "position" );
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		//Generate the original position
 		this.originalPosition = this._generatePosition( event );
 		this.originalPageX = event.pageX;
@@ -17249,10 +18560,15 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 		//Adjust the mouse offset relative to the helper if "cursorAt" is supplied
 		( o.cursorAt && this._adjustOffsetFromHelper( o.cursorAt ) );
 =======
+=======
+>>>>>>> danhmuc_list
 		//Adjust the mouse offset relative to the helper if "cursorAt" is supplied
 		if ( o.cursorAt ) {
 			this._adjustOffsetFromHelper( o.cursorAt );
 		}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 		//Cache the former DOM position
@@ -17271,7 +18587,10 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 		this._createPlaceholder();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 		//Get the next scrolling parent
 		this.scrollParent = this.placeholder.scrollParent();
 
@@ -17279,6 +18598,9 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 			parent: this._getParentOffset()
 		} );
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		//Set a containment if given in the options
 		if ( o.containment ) {
@@ -17297,6 +18619,7 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( o.opacity ) { // opacity option
 			if ( this.helper.css( "opacity" ) ) {
 				this._storedOpacity = this.helper.css( "opacity" );
@@ -17304,6 +18627,11 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 			this.helper.css( "opacity", o.opacity );
 		}
 
+=======
+		// We need to make sure to grab the zIndex before setting the
+		// opacity, because setting the opacity to anything lower than 1
+		// causes the zIndex to change from "auto" to 0.
+>>>>>>> danhmuc_list
 =======
 		// We need to make sure to grab the zIndex before setting the
 		// opacity, because setting the opacity to anything lower than 1
@@ -17317,7 +18645,10 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 		if ( o.opacity ) { // opacity option
 			if ( this.helper.css( "opacity" ) ) {
 				this._storedOpacity = this.helper.css( "opacity" );
@@ -17325,6 +18656,9 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 			this.helper.css( "opacity", o.opacity );
 		}
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		//Prepare scrolling
 		if ( this.scrollParent[ 0 ] !== this.document[ 0 ] &&
@@ -17361,10 +18695,13 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 		this._addClass( this.helper, "ui-sortable-helper" );
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		// Execute the drag once - this causes the helper not to be visiblebefore getting its
 		// correct position
 		this._mouseDrag( event );
 =======
+=======
+>>>>>>> danhmuc_list
 		//Move the helper, if needed
 		if ( !this.helper.parent().is( this.appendTo ) ) {
 			this.helper.detach().appendTo( this.appendTo );
@@ -17381,17 +18718,23 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 
 		this._mouseDrag( event );
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		return true;
 
 	},
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	_mouseDrag: function( event ) {
 		var i, item, itemElement, intersection,
 			o = this.options,
 			scrolled = false;
 =======
+=======
+>>>>>>> danhmuc_list
 	_scroll: function( event ) {
 		var o = this.options,
 			scrolled = false;
@@ -17445,12 +18788,16 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 	_mouseDrag: function( event ) {
 		var i, item, itemElement, intersection,
 			o = this.options;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 		//Compute the helpers position
 		this.position = this._generatePosition( event );
 		this.positionAbs = this._convertPositionTo( "absolute" );
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ( !this.lastPositionAbs ) {
 			this.lastPositionAbs = this.positionAbs;
@@ -17511,6 +18858,8 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 
 =======
 >>>>>>> danhmuc_list
+=======
+>>>>>>> danhmuc_list
 		//Set the helper position
 		if ( !this.options.axis || this.options.axis !== "y" ) {
 			this.helper[ 0 ].style.left = this.position.left + "px";
@@ -17519,6 +18868,7 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 			this.helper[ 0 ].style.top = this.position.top + "px";
 		}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		//Rearrange
 		for ( i = this.items.length - 1; i >= 0; i-- ) {
@@ -17571,6 +18921,8 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 		this._contactContainers( event );
 
 =======
+=======
+>>>>>>> danhmuc_list
 		//Post events to containers
 		this._contactContainers( event );
 
@@ -17644,6 +18996,9 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 			}
 		}
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		//Interconnect with droppables
 		if ( $.ui.ddmanager ) {
@@ -17848,6 +19203,7 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		verticalDirection = this._getDragVerticalDirection();
 		horizontalDirection = this._getDragHorizontalDirection();
 
@@ -17855,12 +19211,17 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 			( ( horizontalDirection === "right" || verticalDirection === "down" ) ? 2 : 1 )
 			: ( verticalDirection && ( verticalDirection === "down" ? 2 : 1 ) );
 =======
+=======
+>>>>>>> danhmuc_list
 		verticalDirection = this.dragDirection.vertical;
 		horizontalDirection = this.dragDirection.horizontal;
 
 		return this.floating ?
 			( ( horizontalDirection === "right" || verticalDirection === "down" ) ? 2 : 1 ) :
 			( verticalDirection && ( verticalDirection === "down" ? 2 : 1 ) );
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 	},
@@ -17872,8 +19233,13 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 			isOverRightHalf = this._isOverAxis( this.positionAbs.left +
 				this.offset.click.left, item.left + ( item.width / 2 ), item.width ),
 <<<<<<< HEAD
+<<<<<<< HEAD
 			verticalDirection = this._getDragVerticalDirection(),
 			horizontalDirection = this._getDragHorizontalDirection();
+=======
+			verticalDirection = this.dragDirection.vertical,
+			horizontalDirection = this.dragDirection.horizontal;
+>>>>>>> danhmuc_list
 =======
 			verticalDirection = this.dragDirection.vertical,
 			horizontalDirection = this.dragDirection.horizontal;
@@ -17927,7 +19293,11 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 					inst = $.data( cur[ j ], this.widgetFullName );
 					if ( inst && inst !== this && !inst.options.disabled ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 						queries.push( [ $.isFunction( inst.options.items ) ?
+=======
+						queries.push( [ typeof inst.options.items === "function" ?
+>>>>>>> danhmuc_list
 =======
 						queries.push( [ typeof inst.options.items === "function" ?
 >>>>>>> danhmuc_list
@@ -17941,7 +19311,11 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		queries.push( [ $.isFunction( this.options.items ) ?
+=======
+		queries.push( [ typeof this.options.items === "function" ?
+>>>>>>> danhmuc_list
 =======
 		queries.push( [ typeof this.options.items === "function" ?
 >>>>>>> danhmuc_list
@@ -17985,7 +19359,11 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 		var i, j, cur, inst, targetData, _queries, item, queriesLength,
 			items = this.items,
 <<<<<<< HEAD
+<<<<<<< HEAD
 			queries = [ [ $.isFunction( this.options.items ) ?
+=======
+			queries = [ [ typeof this.options.items === "function" ?
+>>>>>>> danhmuc_list
 =======
 			queries = [ [ typeof this.options.items === "function" ?
 >>>>>>> danhmuc_list
@@ -18001,7 +19379,11 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 					inst = $.data( cur[ j ], this.widgetFullName );
 					if ( inst && inst !== this && !inst.options.disabled ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 						queries.push( [ $.isFunction( inst.options.items ) ?
+=======
+						queries.push( [ typeof inst.options.items === "function" ?
+>>>>>>> danhmuc_list
 =======
 						queries.push( [ typeof inst.options.items === "function" ?
 >>>>>>> danhmuc_list
@@ -18036,6 +19418,7 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 	},
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	refreshPositions: function( fast ) {
 
 		// Determine whether items are being displayed horizontally
@@ -18052,6 +19435,9 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 =======
 	_refreshItemPositions: function( fast ) {
 >>>>>>> danhmuc_list
+=======
+	_refreshItemPositions: function( fast ) {
+>>>>>>> danhmuc_list
 		var i, item, t, p;
 
 		for ( i = this.items.length - 1; i >= 0; i-- ) {
@@ -18059,7 +19445,11 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 
 			//We ignore calculating positions of all connected containers when we're not over them
 <<<<<<< HEAD
+<<<<<<< HEAD
 			if ( item.instance !== this.currentContainer && this.currentContainer &&
+=======
+			if ( this.currentContainer && item.instance !== this.currentContainer &&
+>>>>>>> danhmuc_list
 =======
 			if ( this.currentContainer && item.instance !== this.currentContainer &&
 >>>>>>> danhmuc_list
@@ -18081,7 +19471,10 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 			item.top = p.top;
 		}
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 	},
 
 	refreshPositions: function( fast ) {
@@ -18096,6 +19489,9 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 		}
 
 		var i, p;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 		if ( this.options.custom && this.options.custom.refreshContainers ) {
@@ -18118,7 +19514,11 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 	_createPlaceholder: function( that ) {
 		that = that || this;
 <<<<<<< HEAD
+<<<<<<< HEAD
 		var className,
+=======
+		var className, nodeName,
+>>>>>>> danhmuc_list
 =======
 		var className, nodeName,
 >>>>>>> danhmuc_list
@@ -18126,6 +19526,7 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 
 		if ( !o.placeholder || o.placeholder.constructor === String ) {
 			className = o.placeholder;
+<<<<<<< HEAD
 <<<<<<< HEAD
 			o.placeholder = {
 				element: function() {
@@ -18137,6 +19538,8 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 								className || that.currentItem[ 0 ].className )
 							._removeClass( element, "ui-sortable-helper" );
 =======
+=======
+>>>>>>> danhmuc_list
 			nodeName = that.currentItem[ 0 ].nodeName.toLowerCase();
 			o.placeholder = {
 				element: function() {
@@ -18146,6 +19549,9 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 					that._addClass( element, "ui-sortable-placeholder",
 							className || that.currentItem[ 0 ].className )
 						._removeClass( element, "ui-sortable-helper" );
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 					if ( nodeName === "tbody" ) {
@@ -18176,10 +19582,13 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 					}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 					//If the element doesn't have a actual height by itself (without styles coming
 					// from a stylesheet), it receives the inline height from the dragged item
 					if ( !p.height() ) {
 =======
+=======
+>>>>>>> danhmuc_list
 					// If the element doesn't have a actual height or width by itself (without
 					// styles coming from a stylesheet), it receives the inline height and width
 					// from the dragged item. Or, if it's a tbody or tr, it's going to have a height
@@ -18189,6 +19598,9 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 					// is true.
 					if ( !p.height() || ( o.forcePlaceholderSize &&
 							( nodeName === "tbody" || nodeName === "tr" ) ) ) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 						p.height(
 							that.currentItem.innerHeight() -
@@ -18265,6 +19677,11 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+		this.innermostContainer = innermostContainer;
+
+>>>>>>> danhmuc_list
 =======
 		this.innermostContainer = innermostContainer;
 
@@ -18328,15 +19745,21 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 			}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			itemWithLeastDistance ?
 				this._rearrange( event, itemWithLeastDistance, null, true ) :
 				this._rearrange( event, null, this.containers[ innermostIndex ].element, true );
 =======
+=======
+>>>>>>> danhmuc_list
 			if ( itemWithLeastDistance ) {
 				this._rearrange( event, itemWithLeastDistance, null, true );
 			} else {
 				this._rearrange( event, null, this.containers[ innermostIndex ].element, true );
 			}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			this._trigger( "change", event, this._uiHash() );
 			this.containers[ innermostIndex ]._trigger( "change", event, this._uiHash( this ) );
@@ -18346,7 +19769,10 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 			this.options.placeholder.update( this.currentContainer, this.placeholder );
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 			//Update scrollParent
 			this.scrollParent = this.placeholder.scrollParent();
 
@@ -18356,6 +19782,9 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 				this.overflowOffset = this.scrollParent.offset();
 			}
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			this.containers[ innermostIndex ]._trigger( "over", event, this._uiHash( this ) );
 			this.containers[ innermostIndex ].containerCache.over = 1;
@@ -18367,7 +19796,11 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 
 		var o = this.options,
 <<<<<<< HEAD
+<<<<<<< HEAD
 			helper = $.isFunction( o.helper ) ?
+=======
+			helper = typeof o.helper === "function" ?
+>>>>>>> danhmuc_list
 =======
 			helper = typeof o.helper === "function" ?
 >>>>>>> danhmuc_list
@@ -18377,9 +19810,13 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 		//Add the helper to the DOM if that didn't happen already
 		if ( !helper.parents( "body" ).length ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 			$( o.appendTo !== "parent" ?
 				o.appendTo :
 				this.currentItem[ 0 ].parentNode )[ 0 ].appendChild( helper[ 0 ] );
+=======
+			this.appendTo[ 0 ].appendChild( helper[ 0 ] );
+>>>>>>> danhmuc_list
 =======
 			this.appendTo[ 0 ].appendChild( helper[ 0 ] );
 >>>>>>> danhmuc_list
@@ -18411,7 +19848,11 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 			obj = obj.split( " " );
 		}
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( $.isArray( obj ) ) {
+=======
+		if ( Array.isArray( obj ) ) {
+>>>>>>> danhmuc_list
 =======
 		if ( Array.isArray( obj ) ) {
 >>>>>>> danhmuc_list
@@ -18695,16 +20136,22 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 	_rearrange: function( event, i, a, hardRefresh ) {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		a ? a[ 0 ].appendChild( this.placeholder[ 0 ] ) :
 			i.item[ 0 ].parentNode.insertBefore( this.placeholder[ 0 ],
 				( this.direction === "down" ? i.item[ 0 ] : i.item[ 0 ].nextSibling ) );
 =======
+=======
+>>>>>>> danhmuc_list
 		if ( a ) {
 			a[ 0 ].appendChild( this.placeholder[ 0 ] );
 		} else {
 			i.item[ 0 ].parentNode.insertBefore( this.placeholder[ 0 ],
 				( this.direction === "down" ? i.item[ 0 ] : i.item[ 0 ].nextSibling ) );
 		}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 		//Various things done here to improve the performance:
@@ -18874,7 +20321,11 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  * jQuery UI Spinner 1.12.1
+=======
+ * jQuery UI Spinner 1.13.0
+>>>>>>> danhmuc_list
 =======
  * jQuery UI Spinner 1.13.0
 >>>>>>> danhmuc_list
@@ -18896,8 +20347,12 @@ var widgetsSortable = $.widget( "ui.sortable", $.ui.mouse, {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 function spinnerModifer( fn ) {
+=======
+function spinnerModifier( fn ) {
+>>>>>>> danhmuc_list
 =======
 function spinnerModifier( fn ) {
 >>>>>>> danhmuc_list
@@ -18913,7 +20368,11 @@ function spinnerModifier( fn ) {
 
 $.widget( "ui.spinner", {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	version: "1.12.1",
+=======
+	version: "1.13.0",
+>>>>>>> danhmuc_list
 =======
 	version: "1.13.0",
 >>>>>>> danhmuc_list
@@ -19010,10 +20469,13 @@ $.widget( "ui.spinner", {
 		},
 		mousewheel: function( event, delta ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 			if ( !delta ) {
 				return;
 			}
 =======
+=======
+>>>>>>> danhmuc_list
 			var activeElement = $.ui.safeActiveElement( this.document[ 0 ] );
 			var isActive = this.element[ 0 ] === activeElement;
 
@@ -19021,6 +20483,9 @@ $.widget( "ui.spinner", {
 				return;
 			}
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			if ( !this.spinning && !this._start( event ) ) {
 				return false;
@@ -19220,7 +20685,11 @@ $.widget( "ui.spinner", {
 
 		if ( incremental ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 			return $.isFunction( incremental ) ?
+=======
+			return typeof incremental === "function" ?
+>>>>>>> danhmuc_list
 =======
 			return typeof incremental === "function" ?
 >>>>>>> danhmuc_list
@@ -19322,7 +20791,11 @@ $.widget( "ui.spinner", {
 	},
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	_setOptions: spinnerModifer( function( options ) {
+=======
+	_setOptions: spinnerModifier( function( options ) {
+>>>>>>> danhmuc_list
 =======
 	_setOptions: spinnerModifier( function( options ) {
 >>>>>>> danhmuc_list
@@ -19393,7 +20866,11 @@ $.widget( "ui.spinner", {
 	},
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	stepUp: spinnerModifer( function( steps ) {
+=======
+	stepUp: spinnerModifier( function( steps ) {
+>>>>>>> danhmuc_list
 =======
 	stepUp: spinnerModifier( function( steps ) {
 >>>>>>> danhmuc_list
@@ -19407,7 +20884,11 @@ $.widget( "ui.spinner", {
 	},
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	stepDown: spinnerModifer( function( steps ) {
+=======
+	stepDown: spinnerModifier( function( steps ) {
+>>>>>>> danhmuc_list
 =======
 	stepDown: spinnerModifier( function( steps ) {
 >>>>>>> danhmuc_list
@@ -19421,17 +20902,23 @@ $.widget( "ui.spinner", {
 	},
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	pageUp: spinnerModifer( function( pages ) {
 		this._stepUp( ( pages || 1 ) * this.options.page );
 	} ),
 
 	pageDown: spinnerModifer( function( pages ) {
 =======
+=======
+>>>>>>> danhmuc_list
 	pageUp: spinnerModifier( function( pages ) {
 		this._stepUp( ( pages || 1 ) * this.options.page );
 	} ),
 
 	pageDown: spinnerModifier( function( pages ) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		this._stepDown( ( pages || 1 ) * this.options.page );
 	} ),
@@ -19441,7 +20928,11 @@ $.widget( "ui.spinner", {
 			return this._parse( this.element.val() );
 		}
 <<<<<<< HEAD
+<<<<<<< HEAD
 		spinnerModifer( this._value ).call( this, newVal );
+=======
+		spinnerModifier( this._value ).call( this, newVal );
+>>>>>>> danhmuc_list
 =======
 		spinnerModifier( this._value ).call( this, newVal );
 >>>>>>> danhmuc_list
@@ -19482,7 +20973,11 @@ var widgetsSpinner = $.ui.spinner;
 
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  * jQuery UI Tabs 1.12.1
+=======
+ * jQuery UI Tabs 1.13.0
+>>>>>>> danhmuc_list
 =======
  * jQuery UI Tabs 1.13.0
 >>>>>>> danhmuc_list
@@ -19504,9 +20999,14 @@ var widgetsSpinner = $.ui.spinner;
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 $.widget( "ui.tabs", {
 	version: "1.12.1",
+=======
+$.widget( "ui.tabs", {
+	version: "1.13.0",
+>>>>>>> danhmuc_list
 =======
 $.widget( "ui.tabs", {
 	version: "1.13.0",
@@ -19569,8 +21069,13 @@ $.widget( "ui.tabs", {
 		// Take disabling tabs via class attribute from HTML
 		// into account and update option properly.
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( $.isArray( options.disabled ) ) {
 			options.disabled = $.unique( options.disabled.concat(
+=======
+		if ( Array.isArray( options.disabled ) ) {
+			options.disabled = $.uniqueSort( options.disabled.concat(
+>>>>>>> danhmuc_list
 =======
 		if ( Array.isArray( options.disabled ) ) {
 			options.disabled = $.uniqueSort( options.disabled.concat(
@@ -19910,7 +21415,10 @@ $.widget( "ui.tabs", {
 		} )
 			.attr( {
 <<<<<<< HEAD
+<<<<<<< HEAD
 				role: "presentation",
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 				tabIndex: -1
@@ -19985,7 +21493,11 @@ $.widget( "ui.tabs", {
 		var currentItem, li, i;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if ( $.isArray( disabled ) ) {
+=======
+		if ( Array.isArray( disabled ) ) {
+>>>>>>> danhmuc_list
 =======
 		if ( Array.isArray( disabled ) ) {
 >>>>>>> danhmuc_list
@@ -20220,7 +21732,11 @@ $.widget( "ui.tabs", {
 		if ( typeof index === "string" ) {
 			index = this.anchors.index( this.anchors.filter( "[href$='" +
 <<<<<<< HEAD
+<<<<<<< HEAD
 				$.ui.escapeSelector( index ) + "']" ) );
+=======
+				$.escapeSelector( index ) + "']" ) );
+>>>>>>> danhmuc_list
 =======
 				$.escapeSelector( index ) + "']" ) );
 >>>>>>> danhmuc_list
@@ -20281,7 +21797,11 @@ $.widget( "ui.tabs", {
 		} else {
 			index = this._getIndex( index );
 <<<<<<< HEAD
+<<<<<<< HEAD
 			if ( $.isArray( disabled ) ) {
+=======
+			if ( Array.isArray( disabled ) ) {
+>>>>>>> danhmuc_list
 =======
 			if ( Array.isArray( disabled ) ) {
 >>>>>>> danhmuc_list
@@ -20311,7 +21831,11 @@ $.widget( "ui.tabs", {
 				return;
 			}
 <<<<<<< HEAD
+<<<<<<< HEAD
 			if ( $.isArray( disabled ) ) {
+=======
+			if ( Array.isArray( disabled ) ) {
+>>>>>>> danhmuc_list
 =======
 			if ( Array.isArray( disabled ) ) {
 >>>>>>> danhmuc_list
@@ -20421,7 +21945,11 @@ var widgetsTabs = $.ui.tabs;
 
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  * jQuery UI Tooltip 1.12.1
+=======
+ * jQuery UI Tooltip 1.13.0
+>>>>>>> danhmuc_list
 =======
  * jQuery UI Tooltip 1.13.0
 >>>>>>> danhmuc_list
@@ -20443,9 +21971,14 @@ var widgetsTabs = $.ui.tabs;
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 $.widget( "ui.tooltip", {
 	version: "1.12.1",
+=======
+$.widget( "ui.tooltip", {
+	version: "1.13.0",
+>>>>>>> danhmuc_list
 =======
 $.widget( "ui.tooltip", {
 	version: "1.13.0",
@@ -20456,10 +21989,14 @@ $.widget( "ui.tooltip", {
 		},
 		content: function() {
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 			// support: IE<9, Opera in jQuery <1.7
 			// .text() can't accept undefined, so coerce to a string
 			var title = $( this ).attr( "title" ) || "";
+=======
+			var title = $( this ).attr( "title" );
+>>>>>>> danhmuc_list
 =======
 			var title = $( this ).attr( "title" );
 >>>>>>> danhmuc_list
@@ -20490,7 +22027,11 @@ $.widget( "ui.tooltip", {
 		elem
 			.data( "ui-tooltip-id", id )
 <<<<<<< HEAD
+<<<<<<< HEAD
 			.attr( "aria-describedby", $.trim( describedby.join( " " ) ) );
+=======
+			.attr( "aria-describedby", String.prototype.trim.call( describedby.join( " " ) ) );
+>>>>>>> danhmuc_list
 =======
 			.attr( "aria-describedby", String.prototype.trim.call( describedby.join( " " ) ) );
 >>>>>>> danhmuc_list
@@ -20507,7 +22048,11 @@ $.widget( "ui.tooltip", {
 
 		elem.removeData( "ui-tooltip-id" );
 <<<<<<< HEAD
+<<<<<<< HEAD
 		describedby = $.trim( describedby.join( " " ) );
+=======
+		describedby = String.prototype.trim.call( describedby.join( " " ) );
+>>>>>>> danhmuc_list
 =======
 		describedby = String.prototype.trim.call( describedby.join( " " ) );
 >>>>>>> danhmuc_list
@@ -20757,7 +22302,11 @@ $.widget( "ui.tooltip", {
 					clearInterval( delayedShow );
 				}
 <<<<<<< HEAD
+<<<<<<< HEAD
 			}, $.fx.interval );
+=======
+			}, 13 );
+>>>>>>> danhmuc_list
 =======
 			}, 13 );
 >>>>>>> danhmuc_list
@@ -20882,11 +22431,17 @@ $.widget( "ui.tooltip", {
 
 	_removeTooltip: function( tooltip ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 
 		// Clear the interval for delayed tracking tooltips
 		clearInterval( this.delayedShow );
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		tooltip.remove();
 		delete this.tooltips[ tooltip.attr( "id" ) ];
@@ -20957,7 +22512,11 @@ var widgetsTooltip = $.ui.tooltip;
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 }));
+=======
+} );
+>>>>>>> danhmuc_list
 =======
 } );
 >>>>>>> danhmuc_list

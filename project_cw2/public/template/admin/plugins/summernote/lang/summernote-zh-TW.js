@@ -1,6 +1,7 @@
 /*!
  * 
 <<<<<<< HEAD
+<<<<<<< HEAD
  * Super simple wysiwyg editor v0.8.18
  * https://summernote.org
  * 
@@ -11,6 +12,8 @@
  * Date: 2020-05-20T16:47Z
  * 
 =======
+=======
+>>>>>>> danhmuc_list
  * Super simple WYSIWYG editor v0.8.20
  * https://summernote.org
  *
@@ -20,6 +23,9 @@
  *
  * Date: 2021-10-14T21:15Z
  *
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
  */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -31,6 +37,7 @@
 		var a = factory();
 		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
 	}
+<<<<<<< HEAD
 <<<<<<< HEAD
 })(window, function() {
 return /******/ (function(modules) { // webpackBootstrap
@@ -129,6 +136,11 @@ return /******/ (function(modules) { // webpackBootstrap
 return /******/ (() => { // webpackBootstrap
 var __webpack_exports__ = {};
 >>>>>>> danhmuc_list
+=======
+})(self, function() {
+return /******/ (() => { // webpackBootstrap
+var __webpack_exports__ = {};
+>>>>>>> danhmuc_list
 (function ($) {
   $.extend($.summernote.lang, {
     'zh-TW': {
@@ -185,6 +197,7 @@ var __webpack_exports__ = {};
       table: {
         table: '表格',
 <<<<<<< HEAD
+<<<<<<< HEAD
         addRowAbove: 'Add row above',
         addRowBelow: 'Add row below',
         addColLeft: 'Add column left',
@@ -193,6 +206,8 @@ var __webpack_exports__ = {};
         delCol: 'Delete column',
         delTable: 'Delete table'
 =======
+=======
+>>>>>>> danhmuc_list
         addRowAbove: '上方插入列',
         addRowBelow: '下方插入列',
         addColLeft: '左方插入欄',
@@ -200,6 +215,9 @@ var __webpack_exports__ = {};
         delRow: '刪除列',
         delCol: '刪除欄',
         delTable: '刪除表格'
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       },
       hr: {
@@ -240,17 +258,23 @@ var __webpack_exports__ = {};
         more: '更多',
         background: '背景',
 <<<<<<< HEAD
+<<<<<<< HEAD
         foreground: '前景',
         transparent: '透明',
         setTransparent: '透明',
         reset: '重設',
         resetToDefault: '默認'
 =======
+=======
+>>>>>>> danhmuc_list
         foreground: '字體',
         transparent: '透明',
         setTransparent: '透明',
         reset: '重設',
         resetToDefault: '預設'
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       },
       shortcut: {
@@ -303,15 +327,22 @@ var __webpack_exports__ = {};
   });
 })(jQuery);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 /***/ })
 
 /******/ });
 });
 =======
+=======
+>>>>>>> danhmuc_list
 /******/ 	return __webpack_exports__;
 /******/ })()
 ;
 });
+<<<<<<< HEAD
+//# sourceMappingURL=summernote-zh-TW.js.map
+>>>>>>> danhmuc_list
+=======
 //# sourceMappingURL=summernote-zh-TW.js.map
 >>>>>>> danhmuc_list

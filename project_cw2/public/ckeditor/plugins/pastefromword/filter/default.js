@@ -1,5 +1,6 @@
 ﻿/*
 <<<<<<< HEAD
+<<<<<<< HEAD
  Copyright (c) 2003-2021, CKSource - Frederico Knabben. All rights reserved.
  For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
 */
@@ -42,6 +43,8 @@ function(a){return 0!==a})),f=k(d,function(a){return Math.round(a/h)});-1!==g.in
 1==c.children.length&&p.isShifted(c.children[0])?[c]:c.children).concat(b)},[]);CKEDITOR.tools.array.forEach(b,function(b){b.remove()});CKEDITOR.tools.array.forEach(d,function(b){c.add(b)});delete c.name}},isShifted:function(c){return"li"!==c.name?!1:0===CKEDITOR.tools.array.filter(c.children,function(b){return b.name&&("ul"==b.name||"ol"==b.name||"p"==b.name&&0===b.children.length)?!1:!0}).length}};p=q.heuristics;g.setListSymbol.removeRedundancies=function(c,b){(1===b&&"disc"===c["list-style-type"]||
 "decimal"===c["list-style-type"])&&delete c["list-style-type"]};CKEDITOR.cleanWord=CKEDITOR.pasteFilters.word=B.createFilter({rules:[t.rules,q.rules],additionalTransforms:function(c){CKEDITOR.plugins.clipboard.isCustomDataTypesSupported&&(c=t.styles.inliner.inline(c).getBody().getHtml());return c.replace(/<!\[/g,"\x3c!--[").replace(/\]>/g,"]--\x3e")}});CKEDITOR.config.pasteFromWord_heuristicsEdgeList=!0})();
 =======
+=======
+>>>>>>> danhmuc_list
  Copyright (c) 2003-2023, CKSource Holding sp. z o.o. All rights reserved.
  CKEditor 4 LTS ("Long Term Support") is available under the terms of the Extended Support Model.
 */
@@ -83,5 +86,9 @@ c.value.length&&(b=!0))},CKEDITOR.NODE_TEXT)},isDegenerateListItem:function(c,b)
 assignListLevels:function(c,b){if(!b.attributes||void 0===b.attributes["cke-list-level"]){for(var d=[A(b)],e=[b],f=[],k=CKEDITOR.tools.array,h=k.map;b.next&&b.next.attributes&&!b.next.attributes["cke-list-level"]&&t.isDegenerateListItem(c,b.next);)b=b.next,d.push(A(b)),e.push(b);var a=h(d,function(a,b){return 0===b?0:a-d[b-1]}),l=this.guessIndentationStep(k.filter(d,function(a){return 0!==a})),f=h(d,function(a){return Math.round(a/l)});-1!==k.indexOf(f,0)&&(f=h(f,function(a){return a+1}));k.forEach(e,
 function(a,b){a.attributes["cke-list-level"]=f[b]});return{indents:d,levels:f,diffs:a}}},guessIndentationStep:function(c){return c.length?Math.min.apply(null,c):null},correctLevelShift:function(c){if(this.isShifted(c)){var b=CKEDITOR.tools.array.filter(c.children,function(b){return"ul"==b.name||"ol"==b.name}),d=CKEDITOR.tools.array.reduce(b,function(b,c){return(c.children&&1==c.children.length&&t.isShifted(c.children[0])?[c]:c.children).concat(b)},[]);CKEDITOR.tools.array.forEach(b,function(b){b.remove()});
 CKEDITOR.tools.array.forEach(d,function(b){c.add(b)});delete c.name}},isShifted:function(c){return"li"!==c.name?!1:0===CKEDITOR.tools.array.filter(c.children,function(b){return b.name&&("ul"==b.name||"ol"==b.name||"p"==b.name&&0===b.children.length)?!1:!0}).length}};t=u.heuristics;f.setListSymbol.removeRedundancies=function(c,b){(1===b&&"disc"===c["list-style-type"]||"decimal"===c["list-style-type"])&&delete c["list-style-type"]};CKEDITOR.cleanWord=CKEDITOR.pasteFilters.word=D.createFilter({rules:[w.rules,
+<<<<<<< HEAD
+u.rules],additionalTransforms:function(c){CKEDITOR.plugins.clipboard.isCustomDataTypesSupported&&(c=w.styles.inliner.inline(c).getBody().getHtml());return c.replace(/<!\[/g,"\x3c!--[").replace(/\]>/g,"]--\x3e")}});CKEDITOR.config.pasteFromWord_heuristicsEdgeList=!0})();
+>>>>>>> danhmuc_list
+=======
 u.rules],additionalTransforms:function(c){CKEDITOR.plugins.clipboard.isCustomDataTypesSupported&&(c=w.styles.inliner.inline(c).getBody().getHtml());return c.replace(/<!\[/g,"\x3c!--[").replace(/\]>/g,"]--\x3e")}});CKEDITOR.config.pasteFromWord_heuristicsEdgeList=!0})();
 >>>>>>> danhmuc_list

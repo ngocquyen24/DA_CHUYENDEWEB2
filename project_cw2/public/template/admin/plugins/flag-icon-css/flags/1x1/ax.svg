@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <svg xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-ax" viewBox="0 0 512 512">
   <defs>
     <clipPath id="a">
@@ -7,6 +8,8 @@
   </defs>
   <g clip-path="url(#a)" transform="translate(-100) scale(.6024)">
 =======
+=======
+>>>>>>> danhmuc_list
 <svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-ax" viewBox="0 0 512 512">
   <defs>
     <clipPath id="ax-a">
@@ -14,6 +17,9 @@
     </clipPath>
   </defs>
   <g clip-path="url(#ax-a)" transform="translate(-100) scale(.6024)">
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     <path fill="#0053a5" d="M0 0h1300v850H0z"/>
     <g fill="#ffce00">

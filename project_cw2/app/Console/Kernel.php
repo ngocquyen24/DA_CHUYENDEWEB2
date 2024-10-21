@@ -11,6 +11,7 @@ class Kernel extends ConsoleKernel
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      * The Artisan commands provided by your application.
      *
@@ -35,6 +36,11 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule): void
 >>>>>>> danhmuc_list
+=======
+     * Define the application's command schedule.
+     */
+    protected function schedule(Schedule $schedule): void
+>>>>>>> danhmuc_list
     {
         // $schedule->command('inspire')->hourly();
     }
@@ -42,10 +48,15 @@ class Kernel extends ConsoleKernel
     /**
      * Register the commands for the application.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return void
      */
     protected function commands()
+=======
+     */
+    protected function commands(): void
+>>>>>>> danhmuc_list
 =======
      */
     protected function commands(): void

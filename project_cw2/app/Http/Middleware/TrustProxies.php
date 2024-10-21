@@ -5,6 +5,7 @@ namespace App\Http\Middleware;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Http\Middleware\TrustProxies as Middleware;
 =======
 use Fideloper\Proxy\TrustProxies as Middleware;
@@ -12,6 +13,9 @@ use Fideloper\Proxy\TrustProxies as Middleware;
 =======
 use Illuminate\Http\Middleware\TrustProxies as Middleware;
 >>>>>>> Login_Register
+=======
+use Illuminate\Http\Middleware\TrustProxies as Middleware;
+>>>>>>> danhmuc_list
 =======
 use Illuminate\Http\Middleware\TrustProxies as Middleware;
 >>>>>>> danhmuc_list
@@ -25,6 +29,7 @@ class TrustProxies extends Middleware
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @var array<int, string>|string|null
 =======
      * @var array|string|null
@@ -32,6 +37,9 @@ class TrustProxies extends Middleware
 =======
      * @var array<int, string>|string|null
 >>>>>>> Login_Register
+=======
+     * @var array<int, string>|string|null
+>>>>>>> danhmuc_list
 =======
      * @var array<int, string>|string|null
 >>>>>>> danhmuc_list
@@ -46,8 +54,11 @@ class TrustProxies extends Middleware
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Login_Register
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
     protected $headers =
@@ -58,11 +69,14 @@ class TrustProxies extends Middleware
         Request::HEADER_X_FORWARDED_AWS_ELB;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     protected $headers = Request::HEADER_X_FORWARDED_FOR | Request::HEADER_X_FORWARDED_HOST | Request::HEADER_X_FORWARDED_PORT | Request::HEADER_X_FORWARDED_PROTO | Request::HEADER_X_FORWARDED_AWS_ELB;
 >>>>>>> origin/them_slide
 =======
 >>>>>>> Login_Register
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 }

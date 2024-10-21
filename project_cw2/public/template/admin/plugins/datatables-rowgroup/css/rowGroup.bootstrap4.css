@@ -8,12 +8,18 @@ table.dataTable tr.dtrg-group.dtrg-level-0 td {
 
 table.dataTable tr.dtrg-group.dtrg-level-1 td,
 <<<<<<< HEAD
+<<<<<<< HEAD
 table.dataTable tr.dtrg-group.dtrg-level-2 td {
 =======
+=======
+>>>>>>> danhmuc_list
 table.dataTable tr.dtrg-group.dtrg-level-2 td,
 table.dataTable tr.dtrg-group.dtrg-level-3 td,
 table.dataTable tr.dtrg-group.dtrg-level-4 td,
 table.dataTable tr.dtrg-group.dtrg-level-5 td {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   background-color: #f0f0f0;
   padding-top: 0.25em;
@@ -25,7 +31,10 @@ table.dataTable tr.dtrg-group.dtrg-level-5 td {
 table.dataTable tr.dtrg-group.dtrg-level-2 td {
   background-color: #f3f3f3;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
   padding-left: 2.5em;
 }
 
@@ -42,5 +51,8 @@ table.dataTable tr.dtrg-group.dtrg-level-4 td {
 table.dataTable tr.dtrg-group.dtrg-level-5 td {
   background-color: #f3f3f3;
   padding-left: 4em;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 }

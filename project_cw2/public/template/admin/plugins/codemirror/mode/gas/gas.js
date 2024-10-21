@@ -145,6 +145,11 @@ CodeMirror.defineMode("gas", function(_config, parserConfig) {
     lineCommentStartSymbol = "#";
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    registers.al  = "variable";
+    registers.ah  = "variable";
+>>>>>>> danhmuc_list
 =======
     registers.al  = "variable";
     registers.ah  = "variable";
@@ -154,6 +159,11 @@ CodeMirror.defineMode("gas", function(_config, parserConfig) {
     registers.rax = "variable-3";
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    registers.bl  = "variable";
+    registers.bh  = "variable";
+>>>>>>> danhmuc_list
 =======
     registers.bl  = "variable";
     registers.bh  = "variable";
@@ -163,6 +173,11 @@ CodeMirror.defineMode("gas", function(_config, parserConfig) {
     registers.rbx = "variable-3";
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    registers.cl  = "variable";
+    registers.ch  = "variable";
+>>>>>>> danhmuc_list
 =======
     registers.cl  = "variable";
     registers.ch  = "variable";
@@ -172,6 +187,11 @@ CodeMirror.defineMode("gas", function(_config, parserConfig) {
     registers.rcx = "variable-3";
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    registers.dl  = "variable";
+    registers.dh  = "variable";
+>>>>>>> danhmuc_list
 =======
     registers.dl  = "variable";
     registers.dh  = "variable";

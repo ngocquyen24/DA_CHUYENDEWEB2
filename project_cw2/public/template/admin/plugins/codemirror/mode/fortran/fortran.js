@@ -113,7 +113,11 @@ CodeMirror.defineMode("fortran", function() {
                      "complex", "double", "integer", "logical", "real"]);
   var isOperatorChar = /[+\-*&=<>\/\:]/;
 <<<<<<< HEAD
+<<<<<<< HEAD
   var litOperator = new RegExp("(\.and\.|\.or\.|\.eq\.|\.lt\.|\.le\.|\.gt\.|\.ge\.|\.ne\.|\.not\.|\.eqv\.|\.neqv\.)", "i");
+=======
+  var litOperator = /^\.(and|or|eq|lt|le|gt|ge|ne|not|eqv|neqv)\./i;
+>>>>>>> danhmuc_list
 =======
   var litOperator = /^\.(and|or|eq|lt|le|gt|ge|ne|not|eqv|neqv)\./i;
 >>>>>>> danhmuc_list

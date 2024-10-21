@@ -1,6 +1,10 @@
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  *   AdminLTE v3.1.0
+=======
+ *   AdminLTE v3.2.0
+>>>>>>> danhmuc_list
 =======
  *   AdminLTE v3.2.0
 >>>>>>> danhmuc_list
@@ -2989,7 +2993,10 @@ body.text-sm .input-group-text {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 .dark-mode .custom-select {
   background: #343a40 url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23fff' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") right 0.75rem center/8px 10px no-repeat;
 }
@@ -2998,6 +3005,9 @@ body.text-sm .input-group-text {
   background: #343a40;
 }
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 .dark-mode .input-group-text {
   border-color: #6c757d;
@@ -3011,7 +3021,10 @@ body.text-sm .input-group-text {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 .dark-mode input:-webkit-autofill,
 .dark-mode input:-webkit-autofill:hover,
 .dark-mode input:-webkit-autofill:focus,
@@ -3024,6 +3037,9 @@ body.text-sm .input-group-text {
   -webkit-text-fill-color: #fff;
 }
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 .dark-mode .custom-range::-webkit-slider-runnable-track {
   background-color: #454d55;
@@ -5598,7 +5614,12 @@ body.text-sm .input-group-text {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .card-primary.card-outline-tabs > .card-header a.active {
+=======
+.card-primary.card-outline-tabs > .card-header a.active,
+.card-primary.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .card-primary.card-outline-tabs > .card-header a.active,
 .card-primary.card-outline-tabs > .card-header a.active:hover {
@@ -5674,7 +5695,12 @@ body.text-sm .input-group-text {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .card-secondary.card-outline-tabs > .card-header a.active {
+=======
+.card-secondary.card-outline-tabs > .card-header a.active,
+.card-secondary.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .card-secondary.card-outline-tabs > .card-header a.active,
 .card-secondary.card-outline-tabs > .card-header a.active:hover {
@@ -5750,7 +5776,12 @@ body.text-sm .input-group-text {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .card-success.card-outline-tabs > .card-header a.active {
+=======
+.card-success.card-outline-tabs > .card-header a.active,
+.card-success.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .card-success.card-outline-tabs > .card-header a.active,
 .card-success.card-outline-tabs > .card-header a.active:hover {
@@ -5826,7 +5857,12 @@ body.text-sm .input-group-text {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .card-info.card-outline-tabs > .card-header a.active {
+=======
+.card-info.card-outline-tabs > .card-header a.active,
+.card-info.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .card-info.card-outline-tabs > .card-header a.active,
 .card-info.card-outline-tabs > .card-header a.active:hover {
@@ -5902,7 +5938,12 @@ body.text-sm .input-group-text {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .card-warning.card-outline-tabs > .card-header a.active {
+=======
+.card-warning.card-outline-tabs > .card-header a.active,
+.card-warning.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .card-warning.card-outline-tabs > .card-header a.active,
 .card-warning.card-outline-tabs > .card-header a.active:hover {
@@ -5978,7 +6019,12 @@ body.text-sm .input-group-text {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .card-danger.card-outline-tabs > .card-header a.active {
+=======
+.card-danger.card-outline-tabs > .card-header a.active,
+.card-danger.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .card-danger.card-outline-tabs > .card-header a.active,
 .card-danger.card-outline-tabs > .card-header a.active:hover {
@@ -6054,7 +6100,12 @@ body.text-sm .input-group-text {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .card-light.card-outline-tabs > .card-header a.active {
+=======
+.card-light.card-outline-tabs > .card-header a.active,
+.card-light.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .card-light.card-outline-tabs > .card-header a.active,
 .card-light.card-outline-tabs > .card-header a.active:hover {
@@ -6130,7 +6181,12 @@ body.text-sm .input-group-text {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .card-dark.card-outline-tabs > .card-header a.active {
+=======
+.card-dark.card-outline-tabs > .card-header a.active,
+.card-dark.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .card-dark.card-outline-tabs > .card-header a.active,
 .card-dark.card-outline-tabs > .card-header a.active:hover {
@@ -6206,7 +6262,12 @@ body.text-sm .input-group-text {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .card-lightblue.card-outline-tabs > .card-header a.active {
+=======
+.card-lightblue.card-outline-tabs > .card-header a.active,
+.card-lightblue.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .card-lightblue.card-outline-tabs > .card-header a.active,
 .card-lightblue.card-outline-tabs > .card-header a.active:hover {
@@ -6282,7 +6343,12 @@ body.text-sm .input-group-text {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .card-navy.card-outline-tabs > .card-header a.active {
+=======
+.card-navy.card-outline-tabs > .card-header a.active,
+.card-navy.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .card-navy.card-outline-tabs > .card-header a.active,
 .card-navy.card-outline-tabs > .card-header a.active:hover {
@@ -6358,7 +6424,12 @@ body.text-sm .input-group-text {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .card-olive.card-outline-tabs > .card-header a.active {
+=======
+.card-olive.card-outline-tabs > .card-header a.active,
+.card-olive.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .card-olive.card-outline-tabs > .card-header a.active,
 .card-olive.card-outline-tabs > .card-header a.active:hover {
@@ -6434,7 +6505,12 @@ body.text-sm .input-group-text {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .card-lime.card-outline-tabs > .card-header a.active {
+=======
+.card-lime.card-outline-tabs > .card-header a.active,
+.card-lime.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .card-lime.card-outline-tabs > .card-header a.active,
 .card-lime.card-outline-tabs > .card-header a.active:hover {
@@ -6510,7 +6586,12 @@ body.text-sm .input-group-text {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .card-fuchsia.card-outline-tabs > .card-header a.active {
+=======
+.card-fuchsia.card-outline-tabs > .card-header a.active,
+.card-fuchsia.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .card-fuchsia.card-outline-tabs > .card-header a.active,
 .card-fuchsia.card-outline-tabs > .card-header a.active:hover {
@@ -6586,7 +6667,12 @@ body.text-sm .input-group-text {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .card-maroon.card-outline-tabs > .card-header a.active {
+=======
+.card-maroon.card-outline-tabs > .card-header a.active,
+.card-maroon.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .card-maroon.card-outline-tabs > .card-header a.active,
 .card-maroon.card-outline-tabs > .card-header a.active:hover {
@@ -6662,7 +6748,12 @@ body.text-sm .input-group-text {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .card-blue.card-outline-tabs > .card-header a.active {
+=======
+.card-blue.card-outline-tabs > .card-header a.active,
+.card-blue.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .card-blue.card-outline-tabs > .card-header a.active,
 .card-blue.card-outline-tabs > .card-header a.active:hover {
@@ -6738,7 +6829,12 @@ body.text-sm .input-group-text {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .card-indigo.card-outline-tabs > .card-header a.active {
+=======
+.card-indigo.card-outline-tabs > .card-header a.active,
+.card-indigo.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .card-indigo.card-outline-tabs > .card-header a.active,
 .card-indigo.card-outline-tabs > .card-header a.active:hover {
@@ -6814,7 +6910,12 @@ body.text-sm .input-group-text {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .card-purple.card-outline-tabs > .card-header a.active {
+=======
+.card-purple.card-outline-tabs > .card-header a.active,
+.card-purple.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .card-purple.card-outline-tabs > .card-header a.active,
 .card-purple.card-outline-tabs > .card-header a.active:hover {
@@ -6890,7 +6991,12 @@ body.text-sm .input-group-text {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .card-pink.card-outline-tabs > .card-header a.active {
+=======
+.card-pink.card-outline-tabs > .card-header a.active,
+.card-pink.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .card-pink.card-outline-tabs > .card-header a.active,
 .card-pink.card-outline-tabs > .card-header a.active:hover {
@@ -6966,7 +7072,12 @@ body.text-sm .input-group-text {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .card-red.card-outline-tabs > .card-header a.active {
+=======
+.card-red.card-outline-tabs > .card-header a.active,
+.card-red.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .card-red.card-outline-tabs > .card-header a.active,
 .card-red.card-outline-tabs > .card-header a.active:hover {
@@ -7042,7 +7153,12 @@ body.text-sm .input-group-text {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .card-orange.card-outline-tabs > .card-header a.active {
+=======
+.card-orange.card-outline-tabs > .card-header a.active,
+.card-orange.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .card-orange.card-outline-tabs > .card-header a.active,
 .card-orange.card-outline-tabs > .card-header a.active:hover {
@@ -7118,7 +7234,12 @@ body.text-sm .input-group-text {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .card-yellow.card-outline-tabs > .card-header a.active {
+=======
+.card-yellow.card-outline-tabs > .card-header a.active,
+.card-yellow.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .card-yellow.card-outline-tabs > .card-header a.active,
 .card-yellow.card-outline-tabs > .card-header a.active:hover {
@@ -7194,7 +7315,12 @@ body.text-sm .input-group-text {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .card-green.card-outline-tabs > .card-header a.active {
+=======
+.card-green.card-outline-tabs > .card-header a.active,
+.card-green.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .card-green.card-outline-tabs > .card-header a.active,
 .card-green.card-outline-tabs > .card-header a.active:hover {
@@ -7270,7 +7396,12 @@ body.text-sm .input-group-text {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .card-teal.card-outline-tabs > .card-header a.active {
+=======
+.card-teal.card-outline-tabs > .card-header a.active,
+.card-teal.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .card-teal.card-outline-tabs > .card-header a.active,
 .card-teal.card-outline-tabs > .card-header a.active:hover {
@@ -7346,7 +7477,12 @@ body.text-sm .input-group-text {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .card-cyan.card-outline-tabs > .card-header a.active {
+=======
+.card-cyan.card-outline-tabs > .card-header a.active,
+.card-cyan.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .card-cyan.card-outline-tabs > .card-header a.active,
 .card-cyan.card-outline-tabs > .card-header a.active:hover {
@@ -7422,7 +7558,12 @@ body.text-sm .input-group-text {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .card-white.card-outline-tabs > .card-header a.active {
+=======
+.card-white.card-outline-tabs > .card-header a.active,
+.card-white.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .card-white.card-outline-tabs > .card-header a.active,
 .card-white.card-outline-tabs > .card-header a.active:hover {
@@ -7498,7 +7639,12 @@ body.text-sm .input-group-text {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .card-gray.card-outline-tabs > .card-header a.active {
+=======
+.card-gray.card-outline-tabs > .card-header a.active,
+.card-gray.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .card-gray.card-outline-tabs > .card-header a.active,
 .card-gray.card-outline-tabs > .card-header a.active:hover {
@@ -7574,7 +7720,12 @@ body.text-sm .input-group-text {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .card-gray-dark.card-outline-tabs > .card-header a.active {
+=======
+.card-gray-dark.card-outline-tabs > .card-header a.active,
+.card-gray-dark.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .card-gray-dark.card-outline-tabs > .card-header a.active,
 .card-gray-dark.card-outline-tabs > .card-header a.active:hover {
@@ -7676,7 +7827,11 @@ body.text-sm .input-group-text {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .card .nav.flex-column > li {
+=======
+.card .nav.flex-column:not(.nav-sidebar) > li {
+>>>>>>> danhmuc_list
 =======
 .card .nav.flex-column:not(.nav-sidebar) > li {
 >>>>>>> danhmuc_list
@@ -7685,7 +7840,11 @@ body.text-sm .input-group-text {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .card .nav.flex-column > li:last-of-type {
+=======
+.card .nav.flex-column:not(.nav-sidebar) > li:last-of-type {
+>>>>>>> danhmuc_list
 =======
 .card .nav.flex-column:not(.nav-sidebar) > li:last-of-type {
 >>>>>>> danhmuc_list
@@ -8152,7 +8311,12 @@ html.maximized-card {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .dark-mode .card-primary.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-primary.card-outline-tabs > .card-header a.active,
+.dark-mode .card-primary.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .dark-mode .card-primary.card-outline-tabs > .card-header a.active,
 .dark-mode .card-primary.card-outline-tabs > .card-header a.active:hover {
@@ -8228,7 +8392,12 @@ html.maximized-card {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .dark-mode .card-secondary.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-secondary.card-outline-tabs > .card-header a.active,
+.dark-mode .card-secondary.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .dark-mode .card-secondary.card-outline-tabs > .card-header a.active,
 .dark-mode .card-secondary.card-outline-tabs > .card-header a.active:hover {
@@ -8304,7 +8473,12 @@ html.maximized-card {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .dark-mode .card-success.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-success.card-outline-tabs > .card-header a.active,
+.dark-mode .card-success.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .dark-mode .card-success.card-outline-tabs > .card-header a.active,
 .dark-mode .card-success.card-outline-tabs > .card-header a.active:hover {
@@ -8380,7 +8554,12 @@ html.maximized-card {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .dark-mode .card-info.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-info.card-outline-tabs > .card-header a.active,
+.dark-mode .card-info.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .dark-mode .card-info.card-outline-tabs > .card-header a.active,
 .dark-mode .card-info.card-outline-tabs > .card-header a.active:hover {
@@ -8456,7 +8635,12 @@ html.maximized-card {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .dark-mode .card-warning.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-warning.card-outline-tabs > .card-header a.active,
+.dark-mode .card-warning.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .dark-mode .card-warning.card-outline-tabs > .card-header a.active,
 .dark-mode .card-warning.card-outline-tabs > .card-header a.active:hover {
@@ -8532,7 +8716,12 @@ html.maximized-card {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .dark-mode .card-danger.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-danger.card-outline-tabs > .card-header a.active,
+.dark-mode .card-danger.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .dark-mode .card-danger.card-outline-tabs > .card-header a.active,
 .dark-mode .card-danger.card-outline-tabs > .card-header a.active:hover {
@@ -8608,7 +8797,12 @@ html.maximized-card {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .dark-mode .card-light.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-light.card-outline-tabs > .card-header a.active,
+.dark-mode .card-light.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .dark-mode .card-light.card-outline-tabs > .card-header a.active,
 .dark-mode .card-light.card-outline-tabs > .card-header a.active:hover {
@@ -8684,7 +8878,12 @@ html.maximized-card {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .dark-mode .card-dark.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-dark.card-outline-tabs > .card-header a.active,
+.dark-mode .card-dark.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .dark-mode .card-dark.card-outline-tabs > .card-header a.active,
 .dark-mode .card-dark.card-outline-tabs > .card-header a.active:hover {
@@ -8760,7 +8959,12 @@ html.maximized-card {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .dark-mode .card-lightblue.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-lightblue.card-outline-tabs > .card-header a.active,
+.dark-mode .card-lightblue.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .dark-mode .card-lightblue.card-outline-tabs > .card-header a.active,
 .dark-mode .card-lightblue.card-outline-tabs > .card-header a.active:hover {
@@ -8836,7 +9040,12 @@ html.maximized-card {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .dark-mode .card-navy.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-navy.card-outline-tabs > .card-header a.active,
+.dark-mode .card-navy.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .dark-mode .card-navy.card-outline-tabs > .card-header a.active,
 .dark-mode .card-navy.card-outline-tabs > .card-header a.active:hover {
@@ -8912,7 +9121,12 @@ html.maximized-card {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .dark-mode .card-olive.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-olive.card-outline-tabs > .card-header a.active,
+.dark-mode .card-olive.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .dark-mode .card-olive.card-outline-tabs > .card-header a.active,
 .dark-mode .card-olive.card-outline-tabs > .card-header a.active:hover {
@@ -8988,7 +9202,12 @@ html.maximized-card {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .dark-mode .card-lime.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-lime.card-outline-tabs > .card-header a.active,
+.dark-mode .card-lime.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .dark-mode .card-lime.card-outline-tabs > .card-header a.active,
 .dark-mode .card-lime.card-outline-tabs > .card-header a.active:hover {
@@ -9064,7 +9283,12 @@ html.maximized-card {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .dark-mode .card-fuchsia.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-fuchsia.card-outline-tabs > .card-header a.active,
+.dark-mode .card-fuchsia.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .dark-mode .card-fuchsia.card-outline-tabs > .card-header a.active,
 .dark-mode .card-fuchsia.card-outline-tabs > .card-header a.active:hover {
@@ -9140,7 +9364,12 @@ html.maximized-card {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .dark-mode .card-maroon.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-maroon.card-outline-tabs > .card-header a.active,
+.dark-mode .card-maroon.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .dark-mode .card-maroon.card-outline-tabs > .card-header a.active,
 .dark-mode .card-maroon.card-outline-tabs > .card-header a.active:hover {
@@ -9216,7 +9445,12 @@ html.maximized-card {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .dark-mode .card-blue.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-blue.card-outline-tabs > .card-header a.active,
+.dark-mode .card-blue.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .dark-mode .card-blue.card-outline-tabs > .card-header a.active,
 .dark-mode .card-blue.card-outline-tabs > .card-header a.active:hover {
@@ -9292,7 +9526,12 @@ html.maximized-card {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .dark-mode .card-indigo.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-indigo.card-outline-tabs > .card-header a.active,
+.dark-mode .card-indigo.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .dark-mode .card-indigo.card-outline-tabs > .card-header a.active,
 .dark-mode .card-indigo.card-outline-tabs > .card-header a.active:hover {
@@ -9368,7 +9607,12 @@ html.maximized-card {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .dark-mode .card-purple.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-purple.card-outline-tabs > .card-header a.active,
+.dark-mode .card-purple.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .dark-mode .card-purple.card-outline-tabs > .card-header a.active,
 .dark-mode .card-purple.card-outline-tabs > .card-header a.active:hover {
@@ -9444,7 +9688,12 @@ html.maximized-card {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .dark-mode .card-pink.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-pink.card-outline-tabs > .card-header a.active,
+.dark-mode .card-pink.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .dark-mode .card-pink.card-outline-tabs > .card-header a.active,
 .dark-mode .card-pink.card-outline-tabs > .card-header a.active:hover {
@@ -9520,7 +9769,12 @@ html.maximized-card {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .dark-mode .card-red.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-red.card-outline-tabs > .card-header a.active,
+.dark-mode .card-red.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .dark-mode .card-red.card-outline-tabs > .card-header a.active,
 .dark-mode .card-red.card-outline-tabs > .card-header a.active:hover {
@@ -9596,7 +9850,12 @@ html.maximized-card {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .dark-mode .card-orange.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-orange.card-outline-tabs > .card-header a.active,
+.dark-mode .card-orange.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .dark-mode .card-orange.card-outline-tabs > .card-header a.active,
 .dark-mode .card-orange.card-outline-tabs > .card-header a.active:hover {
@@ -9672,7 +9931,12 @@ html.maximized-card {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .dark-mode .card-yellow.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-yellow.card-outline-tabs > .card-header a.active,
+.dark-mode .card-yellow.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .dark-mode .card-yellow.card-outline-tabs > .card-header a.active,
 .dark-mode .card-yellow.card-outline-tabs > .card-header a.active:hover {
@@ -9748,7 +10012,12 @@ html.maximized-card {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .dark-mode .card-green.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-green.card-outline-tabs > .card-header a.active,
+.dark-mode .card-green.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .dark-mode .card-green.card-outline-tabs > .card-header a.active,
 .dark-mode .card-green.card-outline-tabs > .card-header a.active:hover {
@@ -9824,7 +10093,12 @@ html.maximized-card {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .dark-mode .card-teal.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-teal.card-outline-tabs > .card-header a.active,
+.dark-mode .card-teal.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .dark-mode .card-teal.card-outline-tabs > .card-header a.active,
 .dark-mode .card-teal.card-outline-tabs > .card-header a.active:hover {
@@ -9900,7 +10174,12 @@ html.maximized-card {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .dark-mode .card-cyan.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-cyan.card-outline-tabs > .card-header a.active,
+.dark-mode .card-cyan.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .dark-mode .card-cyan.card-outline-tabs > .card-header a.active,
 .dark-mode .card-cyan.card-outline-tabs > .card-header a.active:hover {
@@ -9976,7 +10255,12 @@ html.maximized-card {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .dark-mode .card-white.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-white.card-outline-tabs > .card-header a.active,
+.dark-mode .card-white.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .dark-mode .card-white.card-outline-tabs > .card-header a.active,
 .dark-mode .card-white.card-outline-tabs > .card-header a.active:hover {
@@ -10052,7 +10336,12 @@ html.maximized-card {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .dark-mode .card-gray.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-gray.card-outline-tabs > .card-header a.active,
+.dark-mode .card-gray.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .dark-mode .card-gray.card-outline-tabs > .card-header a.active,
 .dark-mode .card-gray.card-outline-tabs > .card-header a.active:hover {
@@ -10128,7 +10417,12 @@ html.maximized-card {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .dark-mode .card-gray-dark.card-outline-tabs > .card-header a.active {
+=======
+.dark-mode .card-gray-dark.card-outline-tabs > .card-header a.active,
+.dark-mode .card-gray-dark.card-outline-tabs > .card-header a.active:hover {
+>>>>>>> danhmuc_list
 =======
 .dark-mode .card-gray-dark.card-outline-tabs > .card-header a.active,
 .dark-mode .card-gray-dark.card-outline-tabs > .card-header a.active:hover {
@@ -10201,15 +10495,21 @@ html.maximized-card {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .dark-mode .card.card-outline-tabs .card-header a:hover {
   border-color: #6c757d;
 =======
+=======
+>>>>>>> danhmuc_list
 .dark-mode .card.card-outline-tabs {
   border-top: 0;
 }
 
 .dark-mode .card.card-outline-tabs .card-header a:hover {
   border-top-color: #6c757d;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   border-bottom-color: transparent;
 }
@@ -10346,7 +10646,10 @@ html.maximized-card {
 
 .modal-dialog .overlay {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-flex;
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
   display: -ms-flexbox;
@@ -10359,10 +10662,15 @@ html.maximized-card {
   margin: -1px;
   z-index: 1052;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-align-items: center;
+=======
+  -ms-flex-pack: center;
+  justify-content: center;
+>>>>>>> danhmuc_list
 =======
   -ms-flex-pack: center;
   justify-content: center;
@@ -11188,7 +11496,10 @@ html.maximized-card {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 .btn-default.disabled, .btn-default:disabled {
   color: #444;
   background-color: #f8f9fa;
@@ -11204,6 +11515,9 @@ html.maximized-card {
   border-color: #bdc6d0;
 }
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 .btn-app {
   border-radius: 3px;
@@ -11556,8 +11870,13 @@ html.maximized-card {
 .dark-mode .btn-dark {
   color: #fff;
 <<<<<<< HEAD
+<<<<<<< HEAD
   background-color: #343a40;
   border-color: #343a40;
+=======
+  background-color: #292d32;
+  border-color: #4b545c;
+>>>>>>> danhmuc_list
 =======
   background-color: #292d32;
   border-color: #4b545c;
@@ -11568,8 +11887,13 @@ html.maximized-card {
 .dark-mode .btn-dark:hover {
   color: #fff;
 <<<<<<< HEAD
+<<<<<<< HEAD
   background-color: #23272b;
   border-color: #1d2124;
+=======
+  background-color: #171a1d;
+  border-color: #343a40;
+>>>>>>> danhmuc_list
 =======
   background-color: #171a1d;
   border-color: #343a40;
@@ -11579,9 +11903,15 @@ html.maximized-card {
 .dark-mode .btn-dark:focus, .dark-mode .btn-dark.focus {
   color: #fff;
 <<<<<<< HEAD
+<<<<<<< HEAD
   background-color: #23272b;
   border-color: #1d2124;
   box-shadow: 0 0 0 0 rgba(82, 88, 93, 0.5);
+=======
+  background-color: #171a1d;
+  border-color: #343a40;
+  box-shadow: 0 0 0 0 rgba(102, 109, 117, 0.5);
+>>>>>>> danhmuc_list
 =======
   background-color: #171a1d;
   border-color: #343a40;
@@ -11592,8 +11922,13 @@ html.maximized-card {
 .dark-mode .btn-dark.disabled, .dark-mode .btn-dark:disabled {
   color: #fff;
 <<<<<<< HEAD
+<<<<<<< HEAD
   background-color: #343a40;
   border-color: #343a40;
+=======
+  background-color: #292d32;
+  border-color: #4b545c;
+>>>>>>> danhmuc_list
 =======
   background-color: #292d32;
   border-color: #4b545c;
@@ -11604,8 +11939,13 @@ html.maximized-card {
 .show > .dark-mode .btn-dark.dropdown-toggle {
   color: #fff;
 <<<<<<< HEAD
+<<<<<<< HEAD
   background-color: #1d2124;
   border-color: #171a1d;
+=======
+  background-color: #121416;
+  border-color: #2e3439;
+>>>>>>> danhmuc_list
 =======
   background-color: #121416;
   border-color: #2e3439;
@@ -11615,7 +11955,11 @@ html.maximized-card {
 .dark-mode .btn-dark:not(:disabled):not(.disabled):active:focus, .dark-mode .btn-dark:not(:disabled):not(.disabled).active:focus,
 .show > .dark-mode .btn-dark.dropdown-toggle:focus {
 <<<<<<< HEAD
+<<<<<<< HEAD
   box-shadow: 0 0 0 0 rgba(82, 88, 93, 0.5);
+=======
+  box-shadow: 0 0 0 0 rgba(102, 109, 117, 0.5);
+>>>>>>> danhmuc_list
 =======
   box-shadow: 0 0 0 0 rgba(102, 109, 117, 0.5);
 >>>>>>> danhmuc_list
@@ -11847,8 +12191,13 @@ html.maximized-card {
 
 .dark-mode .btn-outline-dark {
 <<<<<<< HEAD
+<<<<<<< HEAD
   color: #343a40;
   border-color: #343a40;
+=======
+  color: #060708;
+  border-color: #060708;
+>>>>>>> danhmuc_list
 =======
   color: #060708;
   border-color: #060708;
@@ -11857,6 +12206,7 @@ html.maximized-card {
 
 .dark-mode .btn-outline-dark:hover {
   color: #fff;
+<<<<<<< HEAD
 <<<<<<< HEAD
   background-color: #343a40;
   border-color: #343a40;
@@ -11869,6 +12219,8 @@ html.maximized-card {
 .dark-mode .btn-outline-dark.disabled, .dark-mode .btn-outline-dark:disabled {
   color: #343a40;
 =======
+=======
+>>>>>>> danhmuc_list
   background-color: #060708;
   border-color: #060708;
 }
@@ -11879,6 +12231,9 @@ html.maximized-card {
 
 .dark-mode .btn-outline-dark.disabled, .dark-mode .btn-outline-dark:disabled {
   color: #060708;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   background-color: transparent;
 }
@@ -11887,8 +12242,13 @@ html.maximized-card {
 .show > .dark-mode .btn-outline-dark.dropdown-toggle {
   color: #fff;
 <<<<<<< HEAD
+<<<<<<< HEAD
   background-color: #343a40;
   border-color: #343a40;
+=======
+  background-color: #060708;
+  border-color: #060708;
+>>>>>>> danhmuc_list
 =======
   background-color: #060708;
   border-color: #060708;
@@ -11898,7 +12258,11 @@ html.maximized-card {
 .dark-mode .btn-outline-dark:not(:disabled):not(.disabled):active:focus, .dark-mode .btn-outline-dark:not(:disabled):not(.disabled).active:focus,
 .show > .dark-mode .btn-outline-dark.dropdown-toggle:focus {
 <<<<<<< HEAD
+<<<<<<< HEAD
   box-shadow: 0 0 0 0 rgba(52, 58, 64, 0.5);
+=======
+  box-shadow: 0 0 0 0 rgba(6, 7, 8, 0.5);
+>>>>>>> danhmuc_list
 =======
   box-shadow: 0 0 0 0 rgba(6, 7, 8, 0.5);
 >>>>>>> danhmuc_list
@@ -12371,7 +12735,11 @@ html.maximized-card {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 [data-widget="expandable-table"][aria-expanded="true"] td i.expandable-table-caret[class*="right"] {
+=======
+[data-widget="expandable-table"][aria-expanded="true"] i.expandable-table-caret[class*="right"] {
+>>>>>>> danhmuc_list
 =======
 [data-widget="expandable-table"][aria-expanded="true"] i.expandable-table-caret[class*="right"] {
 >>>>>>> danhmuc_list
@@ -12380,8 +12748,11 @@ html.maximized-card {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 [data-widget="expandable-table"][aria-expanded="true"] td i.expandable-table-caret[class*="left"] {
 =======
+=======
+>>>>>>> danhmuc_list
 [data-widget="expandable-table"][aria-expanded="true"] i.expandable-table-caret[class*="left"] {
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
@@ -12403,6 +12774,9 @@ html.maximized-card {
 }
 
 [aria-expanded="true"] [data-widget="expandable-table"] i.expandable-table-caret[class*="left"] {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);

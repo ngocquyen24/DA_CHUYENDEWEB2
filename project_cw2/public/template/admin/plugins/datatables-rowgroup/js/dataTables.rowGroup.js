@@ -1,6 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*! RowGroup 1.1.2
  * ©2017-2020 SpryMedia Ltd - datatables.net/license
+=======
+/*! RowGroup 1.1.3
+ * ©2017-2021 SpryMedia Ltd - datatables.net/license
+>>>>>>> danhmuc_list
 =======
 /*! RowGroup 1.1.3
  * ©2017-2021 SpryMedia Ltd - datatables.net/license
@@ -11,17 +16,23 @@
  * @summary     RowGroup
  * @description RowGrouping for DataTables
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @version     1.1.2
  * @file        dataTables.rowGroup.js
  * @author      SpryMedia Ltd (www.sprymedia.co.uk)
  * @contact     datatables.net
  * @copyright   Copyright 2017-2020 SpryMedia Ltd.
 =======
+=======
+>>>>>>> danhmuc_list
  * @version     1.1.3
  * @file        dataTables.rowGroup.js
  * @author      SpryMedia Ltd (www.sprymedia.co.uk)
  * @contact     datatables.net
  * @copyright   Copyright 2017-2021 SpryMedia Ltd.
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
  *
  * This source file is free software, available under the following license:
@@ -244,7 +255,11 @@ $.extend( RowGroup.prototype, {
 	 */
 	_group: function ( level, rows ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 		var fns = $.isArray( this.c.dataSrc ) ? this.c.dataSrc : [ this.c.dataSrc ];
+=======
+		var fns = Array.isArray( this.c.dataSrc ) ? this.c.dataSrc : [ this.c.dataSrc ];
+>>>>>>> danhmuc_list
 =======
 		var fns = Array.isArray( this.c.dataSrc ) ? this.c.dataSrc : [ this.c.dataSrc ];
 >>>>>>> danhmuc_list
@@ -431,7 +446,11 @@ RowGroup.defaults = {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 RowGroup.version = "1.1.2";
+=======
+RowGroup.version = "1.1.3";
+>>>>>>> danhmuc_list
 =======
 RowGroup.version = "1.1.3";
 >>>>>>> danhmuc_list

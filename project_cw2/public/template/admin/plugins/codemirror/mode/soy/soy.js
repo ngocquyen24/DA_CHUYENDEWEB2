@@ -25,6 +25,11 @@
     "@state": paramData,
     "template": { soyState: "templ-def", variableScope: true},
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    "extern": {soyState: "param-def"},
+    "export": {soyState: "export"},
+>>>>>>> danhmuc_list
 =======
     "extern": {soyState: "param-def"},
     "export": {soyState: "export"},
@@ -37,6 +42,11 @@
     "let": { soyState: "var-def" },
     "if": {},
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    "javaimpl": {},
+    "jsimpl": {},
+>>>>>>> danhmuc_list
 =======
     "javaimpl": {},
     "jsimpl": {},
@@ -57,6 +67,11 @@
     "log": {},
     "element": { variableScope: true },
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    "velog": {},
+    "const": { soyState: "const-def"},
+>>>>>>> danhmuc_list
 =======
     "velog": {},
     "const": { soyState: "const-def"},
@@ -150,15 +165,21 @@
         state.lookupVariables = false;
         return null;
 <<<<<<< HEAD
+<<<<<<< HEAD
       } else if (stream.match(/map\b/)) {
         state.soyState.push("map-literal");
         return "keyword";
       } else if (stream.match(/record\b/)) {
 =======
+=======
+>>>>>>> danhmuc_list
       } else if (stream.match(/\bmap(?=\()/)) {
         state.soyState.push("map-literal");
         return "keyword";
       } else if (stream.match(/\brecord(?=\()/)) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         state.soyState.push("record-literal");
         return "keyword";
@@ -471,17 +492,23 @@
               return null;
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (stream.match(/\w+(?=\s+as)/)) {
               return "variable";
             }
             if (match = stream.match(/\w+/)) {
               return /(from|as)/.test(match[0]) ? "keyword" : "def";
 =======
+=======
+>>>>>>> danhmuc_list
             if (stream.match(/\w+(?=\s+as\b)/)) {
               return "variable";
             }
             if (match = stream.match(/\w+/)) {
               return /\b(from|as)\b/.test(match[0]) ? "keyword" : "def";
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             }
             if (match = stream.match(/^["']/)) {
@@ -553,7 +580,10 @@
             }
             return tokenUntil(stream, state, /\{\/literal}/);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
           case "export":
             if (match = stream.match(/\w+/)) {
               state.soyState.pop();
@@ -575,6 +605,9 @@
             }
             stream.next();
             return null;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         }
 
@@ -607,7 +640,12 @@
             // Otherwise close the current context.
             } else if (endTag) {
 <<<<<<< HEAD
+<<<<<<< HEAD
               if (!state.context || state.context.tag != tagName) {
+=======
+              var isBalancedForExtern = tagName == 'extern' && (state.context && state.context.tag == 'export');
+              if (!state.context || ((state.context.tag != tagName) && !isBalancedForExtern)) {
+>>>>>>> danhmuc_list
 =======
               var isBalancedForExtern = tagName == 'extern' && (state.context && state.context.tag == 'export');
               if (!state.context || ((state.context.tag != tagName) && !isBalancedForExtern)) {
@@ -637,7 +675,11 @@
           state.soyState.push("tag");
           return "keyword";
 <<<<<<< HEAD
+<<<<<<< HEAD
         } else if (!state.context && stream.match(/\bimport\b/)) {
+=======
+        } else if (!state.context && stream.sol() && stream.match(/import\b/)) {
+>>>>>>> danhmuc_list
 =======
         } else if (!state.context && stream.sol() && stream.match(/import\b/)) {
 >>>>>>> danhmuc_list

@@ -19,6 +19,7 @@ define('LARAVEL_START', microtime(true));
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 if (file_exists($maintenance = __DIR__.'/../storage/framework/maintenance.php')) {
     require $maintenance;
 =======
@@ -29,6 +30,10 @@ if (file_exists(__DIR__.'/../storage/framework/maintenance.php')) {
 if (file_exists($maintenance = __DIR__.'/../storage/framework/maintenance.php')) {
     require $maintenance;
 >>>>>>> Login_Register
+=======
+if (file_exists($maintenance = __DIR__.'/../storage/framework/maintenance.php')) {
+    require $maintenance;
+>>>>>>> danhmuc_list
 =======
 if (file_exists($maintenance = __DIR__.'/../storage/framework/maintenance.php')) {
     require $maintenance;
@@ -66,6 +71,7 @@ $kernel = $app->make(Kernel::class);
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 $response = $kernel->handle(
     $request = Request::capture()
 )->send();
@@ -79,6 +85,11 @@ $response = $kernel->handle(
     $request = Request::capture()
 )->send();
 >>>>>>> Login_Register
+=======
+$response = $kernel->handle(
+    $request = Request::capture()
+)->send();
+>>>>>>> danhmuc_list
 =======
 $response = $kernel->handle(
     $request = Request::capture()

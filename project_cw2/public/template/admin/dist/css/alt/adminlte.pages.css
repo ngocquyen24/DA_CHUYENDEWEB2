@@ -1,6 +1,10 @@
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
  *   AdminLTE v3.1.0
+=======
+ *   AdminLTE v3.2.0
+>>>>>>> danhmuc_list
 =======
  *   AdminLTE v3.2.0
 >>>>>>> danhmuc_list
@@ -477,6 +481,7 @@ a.close.disabled, a.disabled.mailbox-attachment-close {
 .login-page,
 .register-page {
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
@@ -490,6 +495,8 @@ a.close.disabled, a.disabled.mailbox-attachment-close {
   height: 100vh;
   -webkit-justify-content: center;
 =======
+=======
+>>>>>>> danhmuc_list
   -ms-flex-align: center;
   align-items: center;
   background-color: #e9ecef;
@@ -498,6 +505,9 @@ a.close.disabled, a.disabled.mailbox-attachment-close {
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100vh;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   -ms-flex-pack: center;
   justify-content: center;
@@ -708,10 +718,15 @@ a.close.disabled, a.disabled.mailbox-attachment-close {
 
 .product-image-thumbs {
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-align-items: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
   display: -webkit-flex;
+=======
+  -ms-flex-align: stretch;
+  align-items: stretch;
+>>>>>>> danhmuc_list
 =======
   -ms-flex-align: stretch;
   align-items: stretch;
@@ -727,7 +742,10 @@ a.close.disabled, a.disabled.mailbox-attachment-close {
   background-color: #fff;
   border: 1px solid #dee2e6;
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-flex;
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
   display: -ms-flexbox;
@@ -741,7 +759,10 @@ a.close.disabled, a.disabled.mailbox-attachment-close {
   max-width: 100%;
   height: auto;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-align-self: center;
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
   -ms-flex-item-align: center;
@@ -795,11 +816,17 @@ body.iframe-mode-fullscreen {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 body.iframe-mode-fullscreen.layout-navbar-fixed .wrapper .content-wrapper {
   margin-top: 0 !important;
 }
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 .content-wrapper {
   height: 100%;
@@ -871,6 +898,7 @@ body.iframe-mode-fullscreen.layout-navbar-fixed .wrapper .content-wrapper {
 .content-wrapper.iframe-mode .tab-empty {
   width: 100%;
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -879,10 +907,15 @@ body.iframe-mode-fullscreen.layout-navbar-fixed .wrapper .content-wrapper {
   justify-content: center;
   -webkit-align-items: center;
 =======
+=======
+>>>>>>> danhmuc_list
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
   justify-content: center;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   -ms-flex-align: center;
   align-items: center;
@@ -899,6 +932,7 @@ body.iframe-mode-fullscreen.layout-navbar-fixed .wrapper .content-wrapper {
 
 .content-wrapper.iframe-mode .tab-loading > div {
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -907,10 +941,15 @@ body.iframe-mode-fullscreen.layout-navbar-fixed .wrapper .content-wrapper {
   justify-content: center;
   -webkit-align-items: center;
 =======
+=======
+>>>>>>> danhmuc_list
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
   justify-content: center;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   -ms-flex-align: center;
   align-items: center;
@@ -949,11 +988,17 @@ body.iframe-mode-fullscreen .content-wrapper.iframe-mode {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 .dark-mode .content-wrapper.iframe-mode .tab-loading {
   background-color: #343a40;
 }
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 .content-wrapper.kanban {
   height: 1px;
@@ -971,10 +1016,15 @@ body.iframe-mode-fullscreen .content-wrapper.iframe-mode {
   width: -moz-max-content;
   width: max-content;
 <<<<<<< HEAD
+<<<<<<< HEAD
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-align-items: stretch;
+=======
+  display: -ms-flexbox;
+  display: flex;
+>>>>>>> danhmuc_list
 =======
   display: -ms-flexbox;
   display: flex;

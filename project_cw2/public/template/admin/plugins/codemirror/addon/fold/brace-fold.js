@@ -12,6 +12,7 @@
 "use strict";
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 CodeMirror.registerHelper("fold", "brace", function(cm, start) {
   var line = start.line, lineText = cm.getLine(line);
   var tokenType;
@@ -63,6 +64,8 @@ CodeMirror.registerHelper("fold", "brace", function(cm, start) {
           to: CodeMirror.Pos(end, endCh)};
 });
 =======
+=======
+>>>>>>> danhmuc_list
 function bracketFolding(pairs) {
   return function(cm, start) {
     var line = start.line, lineText = cm.getLine(line);
@@ -124,6 +127,9 @@ function bracketFolding(pairs) {
 CodeMirror.registerHelper("fold", "brace", bracketFolding([["{", "}"], ["[", "]"]]));
 
 CodeMirror.registerHelper("fold", "brace-paren", bracketFolding([["{", "}"], ["[", "]"], ["(", ")"]]));
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 CodeMirror.registerHelper("fold", "import", function(cm, start) {

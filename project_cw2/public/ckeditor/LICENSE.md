@@ -1,10 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 Software License Agreement
 ==========================
 
 CKEditor - The text editor for Internet - https://ckeditor.com/
 Copyright (c) 2003-2021, CKSource - Frederico Knabben. All rights reserved.
 =======
+=======
+>>>>>>> danhmuc_list
 Software License Agreement for CKEditor 4 LTS (4.23.0 and above)
 ================================================================
 
@@ -18,6 +21,9 @@ Software License Agreement for CKEditor 4.22.* and below
 
 CKEditor - The text editor for Internet - https://ckeditor.com/ <br>
 Copyright (c) 2003-2023, CKSource Holding sp. z o.o. All rights reserved.
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 Licensed under the terms of any of the following licenses at your
@@ -54,16 +60,22 @@ done by developers outside of CKSource with their express permission.
 The following libraries are included in CKEditor under the MIT license (see Appendix D):
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 * CKSource Samples Framework (included in the samples) - Copyright (c) 2014-2021, CKSource - Frederico Knabben.
 * PicoModal (included in `samples/js/sf.js`) - Copyright (c) 2012 James Frasca.
 * CodeMirror (included in the samples) - Copyright (C) 2014 by Marijn Haverbeke <marijnh@gmail.com> and others.
 * ES6Promise - Copyright (c) 2014 Yehuda Katz, Tom Dale, Stefan Penner and contributors.
 =======
+=======
+>>>>>>> danhmuc_list
 * CKSource Samples Framework (included in the samples) - Copyright (c) 2014-2023, CKSource Holding sp. z o.o.
 * PicoModal (included in `samples/js/sf.js`) - Copyright (c) 2012 James Frasca.
 * CodeMirror (included in the samples) - Copyright (C) 2014 by Marijn Haverbeke <marijnh@gmail.com> and others.
 * ES6Promise - Copyright (c) 2014 Yehuda Katz, Tom Dale, Stefan Penner and contributors.
 * A polyfill for `CSS.escape` (adopted with modifications in `core/tools.js`), Mathias Bynens, v1.5.1, https://mths.be/cssescape.
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 Parts of code taken from the following libraries are included in CKEditor under the MIT license (see Appendix D):
@@ -84,7 +96,11 @@ Trademarks
 ----------
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 CKEditor is a trademark of CKSource - Frederico Knabben. All other brand
+=======
+CKEditor is a trademark of CKSource Holding sp. z o.o. All other brand
+>>>>>>> danhmuc_list
 =======
 CKEditor is a trademark of CKSource Holding sp. z o.o. All other brand
 >>>>>>> danhmuc_list

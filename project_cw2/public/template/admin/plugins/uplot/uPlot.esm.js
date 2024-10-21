@@ -5,7 +5,11 @@
 * uPlot.js (μPlot)
 * A small, fast chart for time series, lines, areas, ohlc & bars
 <<<<<<< HEAD
+<<<<<<< HEAD
 * https://github.com/leeoniya/uPlot (v1.6.7)
+=======
+* https://github.com/leeoniya/uPlot (v1.6.18)
+>>>>>>> danhmuc_list
 =======
 * https://github.com/leeoniya/uPlot (v1.6.18)
 >>>>>>> danhmuc_list
@@ -13,6 +17,7 @@
 
 const FEAT_TIME          = true;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 function debounce(fn, time) {
 	let pending = null;
@@ -28,6 +33,8 @@ function debounce(fn, time) {
 	}
 }
 
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 // binary search for index of closest value
@@ -116,6 +123,10 @@ function fixIncr(minIncr, maxIncr, minExp, maxExp) {
 
 function rangeLog(min, max, base, fullMags) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+	let minSign = sign(min);
+>>>>>>> danhmuc_list
 =======
 	let minSign = sign(min);
 >>>>>>> danhmuc_list
@@ -124,9 +135,12 @@ function rangeLog(min, max, base, fullMags) {
 
 	if (min == max) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 		min /= base;
 		max *= base;
 =======
+=======
+>>>>>>> danhmuc_list
 		if (minSign == -1) {
 			min *= base;
 			max /= base;
@@ -135,6 +149,9 @@ function rangeLog(min, max, base, fullMags) {
 			min /= base;
 			max *= base;
 		}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	}
 
@@ -175,7 +192,10 @@ function rangeAsinh(min, max, base, fullMags) {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 const rangePad = 0.1;
 
 const autoRangePart = {
@@ -183,6 +203,9 @@ const autoRangePart = {
 	pad: rangePad,
 };
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 const _eqRangePart = {
 	pad:  0,
@@ -214,7 +237,10 @@ function ifNull(lh, rh) {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 // checks if given index range in an array contains a non-null value
 // aka a range-bounded Array.some()
 function hasData(data, idx0, idx1) {
@@ -230,6 +256,9 @@ function hasData(data, idx0, idx1) {
 	return false;
 }
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 function _rangeNum(_min, _max, cfg) {
 	let cmin = cfg.min;
@@ -249,7 +278,10 @@ function _rangeNum(_min, _max, cfg) {
 
 	let delta        = _max - _min;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 
 	// this handles situations like 89.7, 89.69999999999999
 	// by assuming 0.001x deltas are precision errors
@@ -273,6 +305,9 @@ function _rangeNum(_min, _max, cfg) {
 		}
 	}
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	let nonZeroDelta = delta || abs(_max) || 1e3;
 	let mag          = log10(nonZeroDelta);
@@ -280,7 +315,11 @@ function _rangeNum(_min, _max, cfg) {
 
 	let _padMin  = nonZeroDelta * (delta == 0 ? (_min == 0 ? .1 : 1) : padMin);
 <<<<<<< HEAD
+<<<<<<< HEAD
 	let _newMin  = roundDec(incrRoundDn(_min - _padMin, base/10), 6);
+=======
+	let _newMin  = roundDec(incrRoundDn(_min - _padMin, base/10), 9);
+>>>>>>> danhmuc_list
 =======
 	let _newMin  = roundDec(incrRoundDn(_min - _padMin, base/10), 9);
 >>>>>>> danhmuc_list
@@ -289,7 +328,11 @@ function _rangeNum(_min, _max, cfg) {
 
 	let _padMax  = nonZeroDelta * (delta == 0 ? (_max == 0 ? .1 : 1) : padMax);
 <<<<<<< HEAD
+<<<<<<< HEAD
 	let _newMax  = roundDec(incrRoundUp(_max + _padMax, base/10), 6);
+=======
+	let _newMax  = roundDec(incrRoundUp(_max + _padMax, base/10), 9);
+>>>>>>> danhmuc_list
 =======
 	let _newMax  = roundDec(incrRoundUp(_max + _padMax, base/10), 9);
 >>>>>>> danhmuc_list
@@ -316,27 +359,39 @@ const min = M.min;
 const max = M.max;
 const pow = M.pow;
 <<<<<<< HEAD
+<<<<<<< HEAD
 const sqrt = M.sqrt;
 const log10 = M.log10;
 const log2 = M.log2;
 const sinh =  (v, linthresh = 1) => M.sinh(v / linthresh);
 =======
+=======
+>>>>>>> danhmuc_list
 const sign = M.sign;
 const log10 = M.log10;
 const log2 = M.log2;
 // TODO: seems like this needs to match asinh impl if the passed v is tweaked?
 const sinh =  (v, linthresh = 1) => M.sinh(v) * linthresh;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 const asinh = (v, linthresh = 1) => M.asinh(v / linthresh);
 
 const inf = Infinity;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 function numIntDigits(x) {
 	return (log10((x ^ (x >> 31)) - (x >> 31)) | 0) + 1;
 }
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 function incrRound(num, incr) {
 	return round(num/incr)*incr;
@@ -351,6 +406,11 @@ function fnOrSelf(v) {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+const retArg0 = _0 => _0;
+
+>>>>>>> danhmuc_list
 =======
 const retArg0 = _0 => _0;
 
@@ -362,6 +422,11 @@ const retNull = _ => null;
 const retTrue = _ => true;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+const retEq = (a, b) => a == b;
+
+>>>>>>> danhmuc_list
 =======
 const retEq = (a, b) => a == b;
 
@@ -409,6 +474,12 @@ function genIncrs(base, minExp, maxExp, mults) {
 
 const EMPTY_OBJ = {};
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+const EMPTY_ARR = [];
+
+const nullNullTuple = [null, null];
+>>>>>>> danhmuc_list
 =======
 const EMPTY_ARR = [];
 
@@ -437,6 +508,7 @@ function fastIsObj(v) {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 function copy(o, _isObj) {
 	_isObj = _isObj || isObj;
 
@@ -448,6 +520,8 @@ function copy(o, _isObj) {
 		out = {};
 		for (var k in o)
 =======
+=======
+>>>>>>> danhmuc_list
 function copy(o, _isObj = isObj) {
 	let out;
 
@@ -465,6 +539,9 @@ function copy(o, _isObj = isObj) {
 	else if (_isObj(o)) {
 		out = {};
 		for (let k in o)
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			out[k] = copy(o[k], _isObj);
 	}
@@ -554,7 +631,11 @@ function join(tables, nullModes) {
 				let alignedIdx = xIdxs.get(xs[i]);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 				if (yVal == null) {
+=======
+				if (yVal === null) {
+>>>>>>> danhmuc_list
 =======
 				if (yVal === null) {
 >>>>>>> danhmuc_list
@@ -599,6 +680,12 @@ const resize      = "resize";
 const scroll      = "scroll";
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+const change      = "change";
+const dppxchange  = "dppxchange";
+
+>>>>>>> danhmuc_list
 =======
 const change      = "change";
 const dppxchange  = "dppxchange";
@@ -614,6 +701,10 @@ const WRAP           = pre + "wrap";
 const UNDER          = pre + "under";
 const OVER           = pre + "over";
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+const AXIS           = pre + "axis";
+>>>>>>> danhmuc_list
 =======
 const AXIS           = pre + "axis";
 >>>>>>> danhmuc_list
@@ -634,8 +725,11 @@ const LEGEND_VALUE   = pre + "value";
 const doc = document;
 const win = window;
 <<<<<<< HEAD
+<<<<<<< HEAD
 const pxRatio = devicePixelRatio;
 =======
+=======
+>>>>>>> danhmuc_list
 let pxRatio;
 
 let query;
@@ -654,6 +748,9 @@ function setPxRatio() {
 		win.dispatchEvent(new CustomEvent(dppxchange));
 	}
 }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 function addClass(el, c) {
@@ -689,6 +786,7 @@ function placeDiv(cls, targ) {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 function trans(el, xPos, yPos, xMax, yMax) {
 	el.style.transform = "translate(" + xPos + "px," + yPos + "px)";
 
@@ -709,6 +807,8 @@ function off(ev, el, cb) {
 }
 
 =======
+=======
+>>>>>>> danhmuc_list
 const xformCache = new WeakMap();
 
 function elTrans(el, xPos, yPos, xMax, yMax) {
@@ -767,6 +867,9 @@ function off(ev, el, cb, capt) {
 
 setPxRatio();
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 const months = [
 	"January",
@@ -1034,17 +1137,23 @@ function genTimeStuffs(ms) {
 			// get the timezone-adjusted date
 			let minDate = tzDate(scaleMin);
 <<<<<<< HEAD
+<<<<<<< HEAD
 			let minDateTs = minDate * ms;
 
 			// get ts of 12am (this lands us at or before the original scaleMin)
 			let minMin = mkDate(minDate.getFullYear(), isYr ? 0 : minDate.getMonth(), isMo || isYr ? 1 : minDate.getDate());
 			let minMinTs = minMin * ms;
 =======
+=======
+>>>>>>> danhmuc_list
 			let minDateTs = roundDec(minDate * ms, 3);
 
 			// get ts of 12am (this lands us at or before the original scaleMin)
 			let minMin = mkDate(minDate.getFullYear(), isYr ? 0 : minDate.getMonth(), isMo || isYr ? 1 : minDate.getDate());
 			let minMinTs = roundDec(minMin * ms, 3);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 			if (isMo || isYr) {
@@ -1052,8 +1161,13 @@ function genTimeStuffs(ms) {
 				let yrIncr = isYr ? foundIncr / y  : 0;
 			//	let tzOffset = scaleMin - minDateTs;		// needed?
 <<<<<<< HEAD
+<<<<<<< HEAD
 				let split = minDateTs == minMinTs ? minDateTs : mkDate(minMin.getFullYear() + yrIncr, minMin.getMonth() + moIncr, 1) * ms;
 				let splitDate = new Date(split / ms);
+=======
+				let split = minDateTs == minMinTs ? minDateTs : roundDec(mkDate(minMin.getFullYear() + yrIncr, minMin.getMonth() + moIncr, 1) * ms, 3);
+				let splitDate = new Date(round(split / ms));
+>>>>>>> danhmuc_list
 =======
 				let split = minDateTs == minMinTs ? minDateTs : roundDec(mkDate(minMin.getFullYear() + yrIncr, minMin.getMonth() + moIncr, 1) * ms, 3);
 				let splitDate = new Date(round(split / ms));
@@ -1064,9 +1178,15 @@ function genTimeStuffs(ms) {
 				for (let i = 0; split <= scaleMax; i++) {
 					let next = mkDate(baseYear + yrIncr * i, baseMonth + moIncr * i, 1);
 <<<<<<< HEAD
+<<<<<<< HEAD
 					let offs = next - tzDate(next * ms);
 
 					split = (+next + offs) * ms;
+=======
+					let offs = next - tzDate(roundDec(next * ms, 3));
+
+					split = roundDec((+next + offs) * ms, 3);
+>>>>>>> danhmuc_list
 =======
 					let offs = next - tzDate(roundDec(next * ms, 3));
 
@@ -1223,10 +1343,13 @@ function timeSeriesVal(tzDate, stamp) {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 const legendWidth = 2;
 
 const legendDash = "solid";
 
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 function legendStroke(self, seriesIdx) {
@@ -1239,7 +1362,10 @@ function legendFill(self, seriesIdx) {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 const legendOpts = {
 	show: true,
 	live: true,
@@ -1256,12 +1382,16 @@ const legendOpts = {
 	values: [],
 };
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 function cursorPointShow(self, si) {
 	let o = self.cursor.points;
 
 	let pt = placeDiv();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	let stroke = o.stroke(self, si);
 	let fill = o.fill(self, si);
@@ -1282,6 +1412,8 @@ function cursorPointShow(self, si) {
 	setStylePx(pt, "marginTop", mar);
 
 =======
+=======
+>>>>>>> danhmuc_list
 	let size = o.size(self, si);
 	setStylePx(pt, WIDTH, size);
 	setStylePx(pt, HEIGHT, size);
@@ -1293,11 +1425,15 @@ function cursorPointShow(self, si) {
 	let width = o.width(self, si, size);
 	width && setStylePx(pt, "borderWidth", width);
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	return pt;
 }
 
 function cursorPointFill(self, si) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 	let s = self.series[si];
 	return s.stroke(self, si);
@@ -1312,6 +1448,8 @@ function cursorPointSize(self, si) {
 	let s = self.series[si];
 	return ptDia(s.width, 1);
 =======
+=======
+>>>>>>> danhmuc_list
 	let sp = self.series[si].points;
 	return sp._fill || sp._stroke;
 }
@@ -1324,6 +1462,9 @@ function cursorPointStroke(self, si) {
 function cursorPointSize(self, si) {
 	let sp = self.series[si].points;
 	return ptDia(sp.width, 1);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 }
 
@@ -1393,6 +1534,10 @@ const cursorOpts = {
 	idx: null,
 	dataIdx,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+	idxs: null,
+>>>>>>> danhmuc_list
 =======
 	idxs: null,
 >>>>>>> danhmuc_list
@@ -1420,6 +1565,10 @@ const xAxisOpts = {
 	gap: 5,
 	size: 50,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+	labelGap: 0,
+>>>>>>> danhmuc_list
 =======
 	labelGap: 0,
 >>>>>>> danhmuc_list
@@ -1552,6 +1701,10 @@ const yAxisOpts = {
 	gap: 5,
 	size: 50,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+	labelGap: 0,
+>>>>>>> danhmuc_list
 =======
 	labelGap: 0,
 >>>>>>> danhmuc_list
@@ -1575,6 +1728,7 @@ function ptDia(width, mult) {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 function seriesPoints(self, si) {
 	const xsc = self.scales[self.series[0].scale];
 	const dim = xsc.ori == 0 ? self.bbox.width : self.bbox.height;
@@ -1583,6 +1737,8 @@ function seriesPoints(self, si) {
 	let maxPts = dim / (s.points.space * pxRatio);
 	let idxs = self.series[0].idxs;
 =======
+=======
+>>>>>>> danhmuc_list
 function seriesPointsShow(self, si) {
 	let { scale, idxs } = self.series[0];
 	let xData = self._data[0];
@@ -1593,6 +1749,9 @@ function seriesPointsShow(self, si) {
 	let s = self.series[si];
 //	const dia = ptDia(s.width, pxRatio);
 	let maxPts = dim / (s.points.space * pxRatio);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	return idxs[1] - idxs[0] <= maxPts;
 }
@@ -1604,7 +1763,10 @@ function seriesFillTo(self, seriesIdx, dataMin, dataMax) {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 const facet = {
 	scale: null,
 	auto: true,
@@ -1625,6 +1787,9 @@ const xySeriesOpts = {
 	],
 };
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 const ySeriesOpts = {
 	scale: "y",
@@ -1632,12 +1797,15 @@ const ySeriesOpts = {
 	sorted: 0,
 	show: true,
 <<<<<<< HEAD
+<<<<<<< HEAD
 	band: false,
 	spanGaps: false,
 	alpha: 1,
 	points: {
 		show: seriesPoints,
 =======
+=======
+>>>>>>> danhmuc_list
 	spanGaps: false,
 	gaps: (self, seriesIdx, idx0, idx1, nullGaps) => nullGaps,
 	alpha: 1,
@@ -1645,6 +1813,9 @@ const ySeriesOpts = {
 		show: seriesPointsShow,
 		filter: null,
 	//  paths:
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	//	stroke: "#000",
 	//	fill: "#fff",
@@ -1700,6 +1871,7 @@ function _sync(key, opts) {
 
 	if (!s) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 		let clients = [];
 
 		s = {
@@ -1715,6 +1887,8 @@ function _sync(key, opts) {
 					clients[i] != self && clients[i].pub(type, self, x, y, w, h, i);
 			}
 =======
+=======
+>>>>>>> danhmuc_list
 		s = {
 			key,
 			plots: [],
@@ -1728,6 +1902,9 @@ function _sync(key, opts) {
 				for (let j = 0; j < s.plots.length; j++)
 					s.plots[j] != self && s.plots[j].pub(type, self, x, y, w, h, i);
 			},
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		};
 
@@ -1739,6 +1916,12 @@ function _sync(key, opts) {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+const BAND_CLIP_FILL   = 1 << 0;
+const BAND_CLIP_STROKE = 1 << 1;
+
+>>>>>>> danhmuc_list
 =======
 const BAND_CLIP_FILL   = 1 << 0;
 const BAND_CLIP_STROKE = 1 << 1;
@@ -1749,7 +1932,11 @@ function orient(u, seriesIdx, cb) {
 	const scales = u.scales;
 	const bbox   = u.bbox;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	const scaleX = scales[u.series[0].scale];
+=======
+	const scaleX = u.mode == 2 ? scales[series.facets[0].scale] : scales[u.series[0].scale];
+>>>>>>> danhmuc_list
 =======
 	const scaleX = u.mode == 2 ? scales[series.facets[0].scale] : scales[u.series[0].scale];
 >>>>>>> danhmuc_list
@@ -1758,7 +1945,11 @@ function orient(u, seriesIdx, cb) {
 		dy = u._data[seriesIdx],
 		sx = scaleX,
 <<<<<<< HEAD
+<<<<<<< HEAD
 		sy = scales[series.scale],
+=======
+		sy = u.mode == 2 ? scales[series.facets[1].scale] : scales[series.scale],
+>>>>>>> danhmuc_list
 =======
 		sy = u.mode == 2 ? scales[series.facets[1].scale] : scales[series.scale],
 >>>>>>> danhmuc_list
@@ -1813,6 +2004,11 @@ function orient(u, seriesIdx, cb) {
 function clipBandLine(self, seriesIdx, idx0, idx1, strokePath) {
 	return orient(self, seriesIdx, (series, dataX, dataY, scaleX, scaleY, valToPosX, valToPosY, xOff, yOff, xDim, yDim) => {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+		let pxRound = series.pxRound;
+
+>>>>>>> danhmuc_list
 =======
 		let pxRound = series.pxRound;
 
@@ -1833,6 +2029,7 @@ function clipBandLine(self, seriesIdx, idx0, idx1, strokePath) {
 
 		// path start
 <<<<<<< HEAD
+<<<<<<< HEAD
 		let x0 = incrRound(valToPosX(dataX[frIdx], scaleX, xDim, xOff), 0.5);
 		let y0 = incrRound(valToPosY(dataY[frIdx], scaleY, yDim, yOff), 0.5);
 		// path end x
@@ -1840,12 +2037,17 @@ function clipBandLine(self, seriesIdx, idx0, idx1, strokePath) {
 		// upper y limit
 		let yLimit = incrRound(valToPosY(scaleY.max, scaleY, yDim, yOff), 0.5);
 =======
+=======
+>>>>>>> danhmuc_list
 		let x0 = pxRound(valToPosX(dataX[frIdx], scaleX, xDim, xOff));
 		let y0 = pxRound(valToPosY(dataY[frIdx], scaleY, yDim, yOff));
 		// path end x
 		let x1 = pxRound(valToPosX(dataX[toIdx], scaleX, xDim, xOff));
 		// upper y limit
 		let yLimit = pxRound(valToPosY(scaleY.max, scaleY, yDim, yOff));
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 		let clip = new Path2D(strokePath);
@@ -1873,6 +2075,7 @@ function clipGaps(gaps, ori, plotLft, plotTop, plotWid, plotHgt) {
 			let g = gaps[i];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			rect(clip, prevGapEnd, plotTop, g[0] - prevGapEnd, plotTop + plotHgt);
 
 			prevGapEnd = g[1];
@@ -1880,6 +2083,8 @@ function clipGaps(gaps, ori, plotLft, plotTop, plotWid, plotHgt) {
 
 		rect(clip, prevGapEnd, plotTop, plotLft + plotWid - prevGapEnd, plotTop + plotHgt);
 =======
+=======
+>>>>>>> danhmuc_list
 			if (g[1] > g[0]) {
 				let w = g[0] - prevGapEnd;
 
@@ -1892,6 +2097,9 @@ function clipGaps(gaps, ori, plotLft, plotTop, plotWid, plotHgt) {
 		let w = plotLft + plotWid - prevGapEnd;
 
 		w > 0 && rect(clip, prevGapEnd, plotTop, w, plotTop + plotHgt);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	}
 
@@ -1899,6 +2107,7 @@ function clipGaps(gaps, ori, plotLft, plotTop, plotWid, plotHgt) {
 }
 
 function addGap(gaps, fromX, toX) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 	if (toX > fromX) {
 		let prevGap = gaps[gaps.length - 1];
@@ -1927,6 +2136,8 @@ function _drawAcc(lineTo) {
 			lineTo(stroke, accX, minY);
 			lineTo(stroke, accX, maxY);
 =======
+=======
+>>>>>>> danhmuc_list
 	let prevGap = gaps[gaps.length - 1];
 
 	if (prevGap && prevGap[0] == fromX)			// TODO: gaps must be encoded at stroke widths?
@@ -2052,6 +2263,9 @@ function _drawAcc(lineTo) {
 			if (inY != maxY && outY != maxY)
 				lineTo(stroke, accX, maxY);
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			lineTo(stroke, accX, outY);
 		}
@@ -2065,6 +2279,11 @@ function linear() {
 	return (u, seriesIdx, idx0, idx1) => {
 		return orient(u, seriesIdx, (series, dataX, dataY, scaleX, scaleY, valToPosX, valToPosY, xOff, yOff, xDim, yDim) => {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+			let pxRound = series.pxRound;
+
+>>>>>>> danhmuc_list
 =======
 			let pxRound = series.pxRound;
 
@@ -2083,7 +2302,11 @@ function linear() {
 			const dir = scaleX.dir * (scaleX.ori == 0 ? 1 : -1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			const _paths = {stroke: new Path2D(), fill: null, clip: null, band: null};
+=======
+			const _paths = {stroke: new Path2D(), fill: null, clip: null, band: null, gaps: null, flags: BAND_CLIP_FILL};
+>>>>>>> danhmuc_list
 =======
 			const _paths = {stroke: new Path2D(), fill: null, clip: null, band: null, gaps: null, flags: BAND_CLIP_FILL};
 >>>>>>> danhmuc_list
@@ -2092,6 +2315,7 @@ function linear() {
 			let minY = inf,
 				maxY = -inf,
 <<<<<<< HEAD
+<<<<<<< HEAD
 				outY, outX, drawnAtX;
 
 			let gaps = [];
@@ -2099,6 +2323,8 @@ function linear() {
 			let accX = round(valToPosX(dataX[dir == 1 ? idx0 : idx1], scaleX, xDim, xOff));
 			let accGaps = false;
 =======
+=======
+>>>>>>> danhmuc_list
 				inY, outY, outX, drawnAtX;
 
 			let gaps = [];
@@ -2106,14 +2332,22 @@ function linear() {
 			let accX = pxRound(valToPosX(dataX[dir == 1 ? idx0 : idx1], scaleX, xDim, xOff));
 			let accGaps = false;
 			let prevYNull = false;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 			// data edges
 			let lftIdx = nonNullIdx(dataY, idx0, idx1,  1 * dir);
 			let rgtIdx = nonNullIdx(dataY, idx0, idx1, -1 * dir);
 <<<<<<< HEAD
+<<<<<<< HEAD
 			let lftX = incrRound(valToPosX(dataX[lftIdx], scaleX, xDim, xOff), 0.5);
 			let rgtX = incrRound(valToPosX(dataX[rgtIdx], scaleX, xDim, xOff), 0.5);
+=======
+			let lftX =  pxRound(valToPosX(dataX[lftIdx], scaleX, xDim, xOff));
+			let rgtX =  pxRound(valToPosX(dataX[rgtIdx], scaleX, xDim, xOff));
+>>>>>>> danhmuc_list
 =======
 			let lftX =  pxRound(valToPosX(dataX[lftIdx], scaleX, xDim, xOff));
 			let rgtX =  pxRound(valToPosX(dataX[rgtIdx], scaleX, xDim, xOff));
@@ -2124,6 +2358,7 @@ function linear() {
 
 			for (let i = dir == 1 ? idx0 : idx1; i >= idx0 && i <= idx1; i += dir) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 				let x = round(valToPosX(dataX[i], scaleX, xDim, xOff));
 
 				if (x == accX) {
@@ -2133,6 +2368,8 @@ function linear() {
 						if (minY == inf)
 							lineTo(stroke, x, outY);
 =======
+=======
+>>>>>>> danhmuc_list
 				let x = pxRound(valToPosX(dataX[i], scaleX, xDim, xOff));
 
 				if (x == accX) {
@@ -2143,14 +2380,22 @@ function linear() {
 							lineTo(stroke, x, outY);
 							inY = outY;
 						}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 						minY = min(outY, minY);
 						maxY = max(outY, maxY);
 					}
 <<<<<<< HEAD
+<<<<<<< HEAD
 					else if (!accGaps && dataY[i] === null)
 						accGaps = true;
+=======
+					else if (dataY[i] === null)
+						accGaps = prevYNull = true;
+>>>>>>> danhmuc_list
 =======
 					else if (dataY[i] === null)
 						accGaps = prevYNull = true;
@@ -2161,7 +2406,11 @@ function linear() {
 
 					if (minY != inf) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 						drawAcc(stroke, accX, minY, maxY, outY);
+=======
+						drawAcc(stroke, accX, minY, maxY, inY, outY);
+>>>>>>> danhmuc_list
 =======
 						drawAcc(stroke, accX, minY, maxY, inY, outY);
 >>>>>>> danhmuc_list
@@ -2174,6 +2423,7 @@ function linear() {
 
 					if (dataY[i] != null) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 						outY = round(valToPosY(dataY[i], scaleY, yDim, yOff));
 						lineTo(stroke, x, outY);
 						minY = maxY = outY;
@@ -2182,6 +2432,8 @@ function linear() {
 						if (x - accX > 1 && dataY[i - dir] === null)
 							_addGap = true;
 =======
+=======
+>>>>>>> danhmuc_list
 						outY = pxRound(valToPosY(dataY[i], scaleY, yDim, yOff));
 						lineTo(stroke, x, outY);
 						minY = maxY = inY = outY;
@@ -2191,6 +2443,9 @@ function linear() {
 							_addGap = true;
 
 						prevYNull = false;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 					}
 					else {
@@ -2198,15 +2453,21 @@ function linear() {
 						maxY = -inf;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 						if (!accGaps && dataY[i] === null)
 							accGaps = true;
 =======
+=======
+>>>>>>> danhmuc_list
 						if (dataY[i] === null) {
 							accGaps = true;
 
 							if (x - accX > 1)
 								_addGap = true;
 						}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 					}
 
@@ -2218,7 +2479,11 @@ function linear() {
 
 			if (minY != inf && minY != maxY && drawnAtX != accX)
 <<<<<<< HEAD
+<<<<<<< HEAD
 				drawAcc(stroke, accX, minY, maxY, outY);
+=======
+				drawAcc(stroke, accX, minY, maxY, inY, outY);
+>>>>>>> danhmuc_list
 =======
 				drawAcc(stroke, accX, minY, maxY, inY, outY);
 >>>>>>> danhmuc_list
@@ -2230,7 +2495,11 @@ function linear() {
 				let fill = _paths.fill = new Path2D(stroke);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 				let fillTo = round(valToPosY(series.fillTo(u, seriesIdx, series.min, series.max), scaleY, yDim, yOff));
+=======
+				let fillTo = pxRound(valToPosY(series.fillTo(u, seriesIdx, series.min, series.max), scaleY, yDim, yOff));
+>>>>>>> danhmuc_list
 =======
 				let fillTo = pxRound(valToPosY(series.fillTo(u, seriesIdx, series.min, series.max), scaleY, yDim, yOff));
 >>>>>>> danhmuc_list
@@ -2240,6 +2509,11 @@ function linear() {
 			}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+			_paths.gaps = gaps = series.gaps(u, seriesIdx, idx0, idx1, gaps);
+
+>>>>>>> danhmuc_list
 =======
 			_paths.gaps = gaps = series.gaps(u, seriesIdx, idx0, idx1, gaps);
 
@@ -2259,10 +2533,13 @@ function linear() {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 function spline(opts) {
 	return (u, seriesIdx, idx0, idx1) => {
 		return orient(u, seriesIdx, (series, dataX, dataY, scaleX, scaleY, valToPosX, valToPosY, xOff, yOff, xDim, yDim) => {
 =======
+=======
+>>>>>>> danhmuc_list
 function stepped(opts) {
 	const align = ifNull(opts.align, 1);
 	// whether to draw ascenders/descenders at null/gap bondaries
@@ -2565,6 +2842,9 @@ function splineInterp(interp, opts) {
 		return orient(u, seriesIdx, (series, dataX, dataY, scaleX, scaleY, valToPosX, valToPosY, xOff, yOff, xDim, yDim) => {
 			let pxRound = series.pxRound;
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			let moveTo, bezierCurveTo, lineTo;
 
@@ -2587,7 +2867,11 @@ function splineInterp(interp, opts) {
 			let gaps = [];
 			let inGap = false;
 <<<<<<< HEAD
+<<<<<<< HEAD
 			let firstXPos = round(valToPosX(dataX[_dir == 1 ? idx0 : idx1], scaleX, xDim, xOff));
+=======
+			let firstXPos = pxRound(valToPosX(dataX[_dir == 1 ? idx0 : idx1], scaleX, xDim, xOff));
+>>>>>>> danhmuc_list
 =======
 			let firstXPos = pxRound(valToPosX(dataX[_dir == 1 ? idx0 : idx1], scaleX, xDim, xOff));
 >>>>>>> danhmuc_list
@@ -2620,6 +2904,7 @@ function splineInterp(interp, opts) {
 			}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			const _paths = {stroke: catmullRomFitting(xCoords, yCoords, 0.5, moveTo, bezierCurveTo), fill: null, clip: null, band: null};
 			const stroke = _paths.stroke;
 
@@ -2629,6 +2914,8 @@ function splineInterp(interp, opts) {
 				let fillTo = series.fillTo(u, seriesIdx, series.min, series.max);
 				let minY = round(valToPosY(fillTo, scaleY, yDim, yOff));
 =======
+=======
+>>>>>>> danhmuc_list
 			const _paths = {stroke: interp(xCoords, yCoords, moveTo, lineTo, bezierCurveTo, pxRound), fill: null, clip: null, band: null, gaps: null, flags: BAND_CLIP_FILL};
 			const stroke = _paths.stroke;
 
@@ -2637,6 +2924,9 @@ function splineInterp(interp, opts) {
 
 				let fillTo = series.fillTo(u, seriesIdx, series.min, series.max);
 				let minY = pxRound(valToPosY(fillTo, scaleY, yDim, yOff));
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 				lineTo(fill, prevXPos, minY);
@@ -2644,6 +2934,11 @@ function splineInterp(interp, opts) {
 			}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+			_paths.gaps = gaps = series.gaps(u, seriesIdx, idx0, idx1, gaps);
+
+>>>>>>> danhmuc_list
 =======
 			_paths.gaps = gaps = series.gaps(u, seriesIdx, idx0, idx1, gaps);
 
@@ -2674,6 +2969,7 @@ function splineInterp(interp, opts) {
 	};
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 // adapted from https://gist.github.com/nicholaswmin/c2661eb11cad5671d816 (MIT)
 /**
@@ -2788,6 +3084,8 @@ function catmullRomFitting(xCoords, yCoords, alpha, moveTo, bezierCurveTo) {
 
 		bezierCurveTo(path, bp1x, bp1y, bp2x, bp2y, p2x, p2y);
 =======
+=======
+>>>>>>> danhmuc_list
 function monotoneCubic(opts) {
 	return splineInterp(_monotoneCubic);
 }
@@ -2850,12 +3148,16 @@ function _monotoneCubic(xs, ys, moveTo, lineTo, bezierCurveTo, pxRound) {
 				ys[i + 1],
 			);
 		}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	}
 
 	return path;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 function stepped(opts) {
 	const align = ifNull(opts.align, 1);
@@ -3041,6 +3343,8 @@ function bars(opts) {
 
 const linearPath = linear() ;
 =======
+=======
+>>>>>>> danhmuc_list
 const cursorPlots = new Set();
 
 function invalidateRects() {
@@ -3054,6 +3358,9 @@ on(scroll, win, invalidateRects, true);
 
 const linearPath = linear() ;
 const pointsPath = points() ;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 function setDefaults(d, xo, yo, initY) {
@@ -3062,21 +3369,32 @@ function setDefaults(d, xo, yo, initY) {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 function setDefaults2(d, xyo) {
 	return d.map((o, i) => i == 0 ? null : assign({}, xyo, o));  // todo: assign() will not merge facet arrays
 }
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 function setDefault(o, i, xo, yo) {
 	return assign({}, (i == 0 ? xo : yo), o);
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 const nullMinMax = [null, null];
 
 function snapNumX(self, dataMin, dataMax) {
 	return dataMin == null ? nullMinMax : [dataMin, dataMax];
+=======
+function snapNumX(self, dataMin, dataMax) {
+	return dataMin == null ? nullNullTuple : [dataMin, dataMax];
+>>>>>>> danhmuc_list
 =======
 function snapNumX(self, dataMin, dataMax) {
 	return dataMin == null ? nullNullTuple : [dataMin, dataMax];
@@ -3089,17 +3407,23 @@ const snapTimeX = snapNumX;
 // TODO: also account for incrs when snapping to ensure top of axis gets a tick & value
 function snapNumY(self, dataMin, dataMax) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	return dataMin == null ? nullMinMax : rangeNum(dataMin, dataMax, 0.1, true);
 }
 
 function snapLogY(self, dataMin, dataMax, scale) {
 	return dataMin == null ? nullMinMax : rangeLog(dataMin, dataMax, self.scales[scale].log, false);
 =======
+=======
+>>>>>>> danhmuc_list
 	return dataMin == null ? nullNullTuple : rangeNum(dataMin, dataMax, rangePad, true);
 }
 
 function snapLogY(self, dataMin, dataMax, scale) {
 	return dataMin == null ? nullNullTuple : rangeLog(dataMin, dataMax, self.scales[scale].log, false);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 }
 
@@ -3107,7 +3431,11 @@ const snapLogX = snapLogY;
 
 function snapAsinhY(self, dataMin, dataMax, scale) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	return dataMin == null ? nullMinMax : rangeAsinh(dataMin, dataMax, self.scales[scale].log, false);
+=======
+	return dataMin == null ? nullNullTuple : rangeAsinh(dataMin, dataMax, self.scales[scale].log, false);
+>>>>>>> danhmuc_list
 =======
 	return dataMin == null ? nullNullTuple : rangeAsinh(dataMin, dataMax, self.scales[scale].log, false);
 >>>>>>> danhmuc_list
@@ -3116,6 +3444,7 @@ function snapAsinhY(self, dataMin, dataMax, scale) {
 const snapAsinhX = snapAsinhY;
 
 // dim is logical (getClientBoundingRect) pixels, not canvas pixels
+<<<<<<< HEAD
 <<<<<<< HEAD
 function findIncr(min, max, incrs, dim, minSpace) {
 	let pxPerUnit = dim / (max - min);
@@ -3131,6 +3460,8 @@ function findIncr(min, max, incrs, dim, minSpace) {
 			return [incrs[i], space];
 	}
 =======
+=======
+>>>>>>> danhmuc_list
 function findIncr(minVal, maxVal, incrs, dim, minSpace) {
 	let intDigits = max(numIntDigits(minVal), numIntDigits(maxVal));
 
@@ -3145,12 +3476,16 @@ function findIncr(minVal, maxVal, incrs, dim, minSpace) {
 		if (foundSpace >= minSpace && intDigits + (foundIncr < 5 ? fixedDec.get(foundIncr) : 0) <= 17)
 			return [foundIncr, foundSpace];
 	} while (++incrIdx < incrs.length);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 	return [0, 0];
 }
 
 function pxRatioFont(font) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 	let fontSize;
 	font = font.replace(/(\d+)px/, (m, p1) => (fontSize = round(p1 * pxRatio)) + 'px');
@@ -3160,6 +3495,8 @@ function pxRatioFont(font) {
 function uPlot(opts, data, then) {
 	const self = {};
 =======
+=======
+>>>>>>> danhmuc_list
 	let fontSize, fontSizeCss;
 	font = font.replace(/(\d+)px/, (m, p1) => (fontSize = round((fontSizeCss = +p1) * pxRatio)) + 'px');
 	return [font, fontSize, fontSizeCss];
@@ -3181,6 +3518,9 @@ function uPlot(opts, data, then) {
 	};
 
 	const mode = self.mode;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 	// TODO: cache denoms & mins scale.cache = {r, min, }
@@ -3231,6 +3571,7 @@ function uPlot(opts, data, then) {
 
 	const wrap = placeDiv(WRAP, root);
 <<<<<<< HEAD
+<<<<<<< HEAD
 	const under = placeDiv(UNDER, wrap);
 	wrap.appendChild(can);
 	const over = placeDiv(OVER, wrap);
@@ -3239,6 +3580,8 @@ function uPlot(opts, data, then) {
 
 	const pxAlign = ifNull(opts.pxAlign, true);
 =======
+=======
+>>>>>>> danhmuc_list
 	const under = self.under = placeDiv(UNDER, wrap);
 	wrap.appendChild(can);
 	const over = self.over = placeDiv(OVER, wrap);
@@ -3248,6 +3591,9 @@ function uPlot(opts, data, then) {
 	const pxAlign = +ifNull(opts.pxAlign, 1);
 
 	const pxRound = pxRoundGen(pxAlign);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 	(opts.plugins || []).forEach(p => {
@@ -3258,7 +3604,13 @@ function uPlot(opts, data, then) {
 	const ms = opts.ms || 1e-3;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	const series  = self.series = setDefaults(opts.series || [], xSeriesOpts, ySeriesOpts, false);
+=======
+	const series  = self.series = mode == 1 ?
+		setDefaults(opts.series || [], xSeriesOpts, ySeriesOpts, false) :
+		setDefaults2(opts.series || [null], xySeriesOpts);
+>>>>>>> danhmuc_list
 =======
 	const series  = self.series = mode == 1 ?
 		setDefaults(opts.series || [], xSeriesOpts, ySeriesOpts, false) :
@@ -3273,7 +3625,11 @@ function uPlot(opts, data, then) {
 	});
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	const xScaleKey = series[0].scale;
+=======
+	const xScaleKey = mode == 2 ? series[1].facets[0].scale : series[0].scale;
+>>>>>>> danhmuc_list
 =======
 	const xScaleKey = mode == 2 ? series[1].facets[0].scale : series[0].scale;
 >>>>>>> danhmuc_list
@@ -3296,7 +3652,11 @@ function uPlot(opts, data, then) {
 				initScale(scaleOpts.from);
 				// dependent scales inherit
 <<<<<<< HEAD
+<<<<<<< HEAD
 				scales[scaleKey] = assign({}, scales[scaleOpts.from], scaleOpts);
+=======
+				scales[scaleKey] = assign({}, scales[scaleOpts.from], scaleOpts, {key: scaleKey});
+>>>>>>> danhmuc_list
 =======
 				scales[scaleKey] = assign({}, scales[scaleOpts.from], scaleOpts, {key: scaleKey});
 >>>>>>> danhmuc_list
@@ -3305,6 +3665,12 @@ function uPlot(opts, data, then) {
 				sc = scales[scaleKey] = assign({}, (scaleKey == xScaleKey ? xScaleOpts : yScaleOpts), scaleOpts);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+				if (mode == 2)
+					sc.time = false;
+
+>>>>>>> danhmuc_list
 =======
 				if (mode == 2)
 					sc.time = false;
@@ -3319,11 +3685,14 @@ function uPlot(opts, data, then) {
 				let rangeIsArr = isArr(rn);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 				if (scaleKey != xScaleKey && !rangeIsArr && isObj(rn)) {
 					let cfg = rn;
 					// this is similar to snapNumY
 					rn = (self, dataMin, dataMax) => dataMin == null ? nullMinMax : rangeNum(dataMin, dataMax, cfg);
 =======
+=======
+>>>>>>> danhmuc_list
 				if (scaleKey != xScaleKey || mode == 2) {
 					// if range array has null limits, it should be auto
 					if (rangeIsArr && (rn[0] == null || rn[1] == null)) {
@@ -3347,6 +3716,9 @@ function uPlot(opts, data, then) {
 						// this is similar to snapNumY
 						rn = (self, dataMin, dataMax) => dataMin == null ? nullNullTuple : rangeNum(dataMin, dataMax, cfg);
 					}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 				}
 
@@ -3369,16 +3741,22 @@ function uPlot(opts, data, then) {
 	initScale("y");
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	series.forEach(s => {
 		initScale(s.scale);
 	});
 =======
+=======
+>>>>>>> danhmuc_list
 	// TODO: init scales from facets in mode: 2
 	if (mode == 1) {
 		series.forEach(s => {
 			initScale(s.scale);
 		});
 	}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 	axes.forEach(a => {
@@ -3393,7 +3771,11 @@ function uPlot(opts, data, then) {
 	const xScaleDistr = scaleX.distr;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	let valToPosX, valToPosY, moveTo, arc;
+=======
+	let valToPosX, valToPosY;
+>>>>>>> danhmuc_list
 =======
 	let valToPosX, valToPosY;
 >>>>>>> danhmuc_list
@@ -3403,8 +3785,11 @@ function uPlot(opts, data, then) {
 		valToPosX = getHPos;
 		valToPosY = getVPos;
 <<<<<<< HEAD
+<<<<<<< HEAD
 		moveTo    = moveToH;
 		arc       = arcH;
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 		/*
@@ -3426,8 +3811,11 @@ function uPlot(opts, data, then) {
 		valToPosX = getVPos;
 		valToPosY = getHPos;
 <<<<<<< HEAD
+<<<<<<< HEAD
 		moveTo    = moveToV;
 		arc       = arcV;
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 		/*
@@ -3459,7 +3847,11 @@ function uPlot(opts, data, then) {
 
 //	self.tz = opts.tz || Intl.DateTimeFormat().resolvedOptions().timeZone;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	const _tzDate  = (opts.tzDate || (ts => new Date(ts / ms)));
+=======
+	const _tzDate  = (opts.tzDate || (ts => new Date(round(ts / ms))));
+>>>>>>> danhmuc_list
 =======
 	const _tzDate  = (opts.tzDate || (ts => new Date(round(ts / ms))));
 >>>>>>> danhmuc_list
@@ -3470,6 +3862,7 @@ function uPlot(opts, data, then) {
 	const _timeSeriesVal  = timeSeriesVal(_tzDate, timeSeriesStamp(_timeSeriesStamp, _fmtDate));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	const legend     = assign({show: true, live: true}, opts.legend);
 	const showLegend = legend.show;
 
@@ -3479,6 +3872,8 @@ function uPlot(opts, data, then) {
 		legend.stroke = fnOrSelf(legend.stroke || legendStroke);
 		legend.fill   = fnOrSelf(legend.fill   || legendFill);
 =======
+=======
+>>>>>>> danhmuc_list
 	const activeIdxs = [];
 
 	const legend     = (self.legend = assign({}, legendOpts, opts.legend));
@@ -3492,15 +3887,21 @@ function uPlot(opts, data, then) {
 		markers.dash   = fnOrSelf(markers.dash);
 		markers.stroke = fnOrSelf(markers.stroke);
 		markers.fill   = fnOrSelf(markers.fill);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	}
 
 	let legendEl;
 	let legendRows = [];
 <<<<<<< HEAD
+<<<<<<< HEAD
 	let legendCols;
 	let multiValLegend = false;
 =======
+=======
+>>>>>>> danhmuc_list
 	let legendCells = [];
 	let legendCols;
 	let multiValLegend = false;
@@ -3514,11 +3915,15 @@ function uPlot(opts, data, then) {
 		for (let k in legendCols)
 			NULL_LEGEND_VALUES[k] = "--";
 	}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 	if (showLegend) {
 		legendEl = placeTag("table", LEGEND, root);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		const getMultiVals = series[1] ? series[1].values : null;
 		multiValLegend = getMultiVals != null;
@@ -3532,13 +3937,21 @@ function uPlot(opts, data, then) {
 			let head = placeTag("tr", LEGEND_THEAD, legendEl);
 			placeTag("th", null, head);
 >>>>>>> danhmuc_list
+=======
+		if (multiValLegend) {
+			let head = placeTag("tr", LEGEND_THEAD, legendEl);
+			placeTag("th", null, head);
+>>>>>>> danhmuc_list
 
 			for (var key in legendCols)
 				placeTag("th", LEGEND_LABEL, head).textContent = key;
 		}
 		else {
 <<<<<<< HEAD
+<<<<<<< HEAD
 			legendCols = {_: 0};
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 			addClass(legendEl, LEGEND_INLINE);
@@ -3547,12 +3960,15 @@ function uPlot(opts, data, then) {
 	}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	function initLegendRow(s, i) {
 		if (i == 0 && (multiValLegend || !legend.live))
 			return null;
 
 		let _row = [];
 =======
+=======
+>>>>>>> danhmuc_list
 	const son  = {show: true};
 	const soff = {show: false};
 
@@ -3561,6 +3977,9 @@ function uPlot(opts, data, then) {
 			return nullNullTuple;
 
 		let cells = [];
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 		let row = placeTag("tr", LEGEND_SERIES, legendEl, legendEl.childNodes[i]);
@@ -3573,6 +3992,7 @@ function uPlot(opts, data, then) {
 		let label = placeTag("th", null, row);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		let indic = placeDiv(LEGEND_MARKER, label);
 
 		if (i > 0) {
@@ -3583,6 +4003,8 @@ function uPlot(opts, data, then) {
 
 			indic.style.background = legend.fill(self, i);
 =======
+=======
+>>>>>>> danhmuc_list
 		if (markers.show) {
 			let indic = placeDiv(LEGEND_MARKER, label);
 
@@ -3594,6 +4016,9 @@ function uPlot(opts, data, then) {
 
 				indic.style.background = markers.fill(self, i);
 			}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		}
 
@@ -3602,6 +4027,12 @@ function uPlot(opts, data, then) {
 
 		if (i > 0) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+			if (!markers.show)
+				text.style.color = s.width > 0 ? markers.stroke(self, i) : markers.fill(self, i);
+
+>>>>>>> danhmuc_list
 =======
 			if (!markers.show)
 				text.style.color = s.width > 0 ? markers.stroke(self, i) : markers.fill(self, i);
@@ -3612,8 +4043,11 @@ function uPlot(opts, data, then) {
 					return;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 				setSeries(series.indexOf(s), {show: !s.show}, syncOpts.setSeries);
 =======
+=======
+>>>>>>> danhmuc_list
 				let seriesIdx = series.indexOf(s);
 
 				if ((e.ctrlKey || e.metaKey) != legend.isolate) {
@@ -3626,6 +4060,9 @@ function uPlot(opts, data, then) {
 				}
 				else
 					setSeries(seriesIdx, {show: !s.show}, true, syncOpts.setSeries);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			});
 
@@ -3635,7 +4072,11 @@ function uPlot(opts, data, then) {
 						return;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 					setSeries(series.indexOf(s), FOCUS_TRUE, syncOpts.setSeries);
+=======
+					setSeries(series.indexOf(s), FOCUS_TRUE, true, syncOpts.setSeries);
+>>>>>>> danhmuc_list
 =======
 					setSeries(series.indexOf(s), FOCUS_TRUE, true, syncOpts.setSeries);
 >>>>>>> danhmuc_list
@@ -3647,15 +4088,21 @@ function uPlot(opts, data, then) {
 			let v = placeTag("td", LEGEND_VALUE, row);
 			v.textContent = "--";
 <<<<<<< HEAD
+<<<<<<< HEAD
 			_row.push(v);
 		}
 
 		return _row;
 =======
+=======
+>>>>>>> danhmuc_list
 			cells.push(v);
 		}
 
 		return [row, cells];
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	}
 
@@ -3674,9 +4121,12 @@ function uPlot(opts, data, then) {
 	function offMouse(ev, targ, fn) {
 		const targListeners = mouseListeners.get(targ) || {};
 <<<<<<< HEAD
+<<<<<<< HEAD
 		off(ev, targ, targListeners[ev]);
 		targListeners[ev] = null;
 =======
+=======
+>>>>>>> danhmuc_list
 
 		for (let k in targListeners) {
 			if (ev == null || k == ev) {
@@ -3687,6 +4137,9 @@ function uPlot(opts, data, then) {
 
 		if (ev == null)
 			mouseListeners.delete(targ);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	}
 
@@ -3714,8 +4167,13 @@ function uPlot(opts, data, then) {
 	let shouldSetLegend = false;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	function _setSize(width, height) {
 		if (width != self.width || height != self.height)
+=======
+	function _setSize(width, height, force) {
+		if (force || (width != self.width || height != self.height))
+>>>>>>> danhmuc_list
 =======
 	function _setSize(width, height, force) {
 		if (force || (width != self.width || height != self.height))
@@ -3727,8 +4185,12 @@ function uPlot(opts, data, then) {
 		shouldConvergeSize = true;
 		shouldSetSize = true;
 <<<<<<< HEAD
+<<<<<<< HEAD
 		shouldSetCursor = true;
 		shouldSetLegend = true;
+=======
+		shouldSetCursor = shouldSetLegend = cursor.left >= 0;
+>>>>>>> danhmuc_list
 =======
 		shouldSetCursor = shouldSetLegend = cursor.left >= 0;
 >>>>>>> danhmuc_list
@@ -3756,6 +4218,12 @@ function uPlot(opts, data, then) {
 	}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+	// ensures size calc convergence
+	const CYCLE_LIMIT = 3;
+
+>>>>>>> danhmuc_list
 =======
 	// ensures size calc convergence
 	const CYCLE_LIMIT = 3;
@@ -3773,7 +4241,11 @@ function uPlot(opts, data, then) {
 			let paddingConverged = paddingCalc(cycleNum);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			converged = axesConverged && paddingConverged;
+=======
+			converged = cycleNum == CYCLE_LIMIT || (axesConverged && paddingConverged);
+>>>>>>> danhmuc_list
 =======
 			converged = cycleNum == CYCLE_LIMIT || (axesConverged && paddingConverged);
 >>>>>>> danhmuc_list
@@ -3804,7 +4276,11 @@ function uPlot(opts, data, then) {
 				let {side, _size} = axis;
 				let isVt = side % 2;
 <<<<<<< HEAD
+<<<<<<< HEAD
 				let labelSize = axis.labelSize = (axis.label != null ? (axis.labelSize || 30) : 0);
+=======
+				let labelSize = axis.label != null ? axis.labelSize : 0;
+>>>>>>> danhmuc_list
 =======
 				let labelSize = axis.label != null ? axis.labelSize : 0;
 >>>>>>> danhmuc_list
@@ -3860,7 +4336,10 @@ function uPlot(opts, data, then) {
 
 		function incrOffset(side, size) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 			switch (side) {
@@ -3884,15 +4363,21 @@ function uPlot(opts, data, then) {
 	}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	const cursor = (self.cursor = assign({}, cursorOpts, opts.cursor));
 
 	{
 =======
+=======
+>>>>>>> danhmuc_list
 	const cursor = (self.cursor = assign({}, cursorOpts, {drag: {y: mode == 2}}, opts.cursor));
 
 	{
 		cursor.idxs = activeIdxs;
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		cursor._lock = false;
 
@@ -3919,7 +4404,11 @@ function uPlot(opts, data, then) {
 				addClass(pt, CURSOR_PT);
 				addClass(pt, s.class);
 <<<<<<< HEAD
+<<<<<<< HEAD
 				trans(pt, -10, -10, plotWidCss, plotHgtCss);
+=======
+				elTrans(pt, -10, -10, plotWidCss, plotHgtCss);
+>>>>>>> danhmuc_list
 =======
 				elTrans(pt, -10, -10, plotWidCss, plotHgtCss);
 >>>>>>> danhmuc_list
@@ -3932,12 +4421,15 @@ function uPlot(opts, data, then) {
 
 	function initSeries(s, i) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 		let isTime = scales[s.scale].time;
 
 		let sv = s.value;
 		s.value = isTime ? (isStr(sv) ? timeSeriesVal(_tzDate, timeSeriesStamp(sv, _fmtDate)) : sv || _timeSeriesVal) : sv || numSeriesVal;
 		s.label = s.label || (isTime ? timeSeriesLabel : numSeriesLabel);
 =======
+=======
+>>>>>>> danhmuc_list
 		if (mode == 1 || i > 0) {
 			let isTime = mode == 1 && scales[s.scale].time;
 
@@ -3945,6 +4437,9 @@ function uPlot(opts, data, then) {
 			s.value = isTime ? (isStr(sv) ? timeSeriesVal(_tzDate, timeSeriesStamp(sv, _fmtDate)) : sv || _timeSeriesVal) : sv || numSeriesVal;
 			s.label = s.label || (isTime ? timeSeriesLabel : numSeriesLabel);
 		}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 		if (i > 0) {
@@ -3952,7 +4447,12 @@ function uPlot(opts, data, then) {
 			s.paths  = s.paths || linearPath || retNull;
 			s.fillTo = fnOrSelf(s.fillTo || seriesFillTo);
 <<<<<<< HEAD
+<<<<<<< HEAD
 			s.pxAlign = ifNull(s.pxAlign, true);
+=======
+			s.pxAlign = +ifNull(s.pxAlign, pxAlign);
+			s.pxRound = pxRoundGen(s.pxAlign);
+>>>>>>> danhmuc_list
 =======
 			s.pxAlign = +ifNull(s.pxAlign, pxAlign);
 			s.pxRound = pxRoundGen(s.pxAlign);
@@ -3969,6 +4469,10 @@ function uPlot(opts, data, then) {
 				stroke: s.stroke,
 				space: _ptDia * 2,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+				paths: pointsPath,
+>>>>>>> danhmuc_list
 =======
 				paths: pointsPath,
 >>>>>>> danhmuc_list
@@ -3976,6 +4480,7 @@ function uPlot(opts, data, then) {
 				_fill: null,
 			}, s.points);
 			points.show   = fnOrSelf(points.show);
+<<<<<<< HEAD
 <<<<<<< HEAD
 			points.fill   = fnOrSelf(points.fill);
 			points.stroke = fnOrSelf(points.stroke);
@@ -3986,6 +4491,8 @@ function uPlot(opts, data, then) {
 
 		if (cursor.show) {
 =======
+=======
+>>>>>>> danhmuc_list
 			points.filter = fnOrSelf(points.filter);
 			points.fill   = fnOrSelf(points.fill);
 			points.stroke = fnOrSelf(points.stroke);
@@ -4003,6 +4510,9 @@ function uPlot(opts, data, then) {
 		if (cursor.show) {
 			activeIdxs.splice(i, 0, null);
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			let pt = initCursorPt(s, i);
 			pt && cursorPts.splice(i, 0, pt);
@@ -4022,9 +4532,12 @@ function uPlot(opts, data, then) {
 	function delSeries(i) {
 		series.splice(i, 1);
 <<<<<<< HEAD
+<<<<<<< HEAD
 		showLegend && legendRows.splice(i, 1)[0][0].parentNode.remove();
 		cursorPts.length > 1 && cursorPts.splice(i, 1)[0].remove();
 =======
+=======
+>>>>>>> danhmuc_list
 
 		if (showLegend) {
 			legend.values.splice(i, 1);
@@ -4040,6 +4553,9 @@ function uPlot(opts, data, then) {
 
 			cursorPts.length > 1 && cursorPts.splice(i, 1)[0].remove();
 		}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 		// TODO: de-init no-longer-needed scales?
@@ -4048,8 +4564,11 @@ function uPlot(opts, data, then) {
 	self.delSeries = delSeries;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	series.forEach(initSeries);
 
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 	const sidesWithAxes = [false, false, false, false];
@@ -4085,10 +4604,13 @@ function uPlot(opts, data, then) {
 
 			axis.values = (
 <<<<<<< HEAD
+<<<<<<< HEAD
 				isTime ? (
 					isArr(av) ?
 						timeAxisVals(_tzDate, timeAxisStamps(av, _fmtDate)) :
 =======
+=======
+>>>>>>> danhmuc_list
 				// static array of tick values
 				isArr(av) && !isArr(av[0]) ? fnOrSelf(av) :
 				// temporal
@@ -4097,6 +4619,9 @@ function uPlot(opts, data, then) {
 					isArr(av) ?
 						timeAxisVals(_tzDate, timeAxisStamps(av, _fmtDate)) :
 					// fmtDate string tpl
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 					isStr(av) ?
 						timeAxisVal(_tzDate, av) :
@@ -4121,6 +4646,7 @@ function uPlot(opts, data, then) {
 			if (axis._size > 0)
 				sidesWithAxes[i] = true;
 <<<<<<< HEAD
+<<<<<<< HEAD
 		}
 	}
 
@@ -4128,6 +4654,8 @@ function uPlot(opts, data, then) {
 	axes.forEach(initAxis);
 
 =======
+=======
+>>>>>>> danhmuc_list
 
 			axis._el = placeDiv(AXIS, wrap);
 
@@ -4136,6 +4664,9 @@ function uPlot(opts, data, then) {
 		}
 	}
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	function autoPadSide(self, side, sidesWithAxes, cycleNum) {
 		let [hasTopAxis, hasRgtAxis, hasBtmAxis, hasLftAxis] = sidesWithAxes;
@@ -4160,7 +4691,11 @@ function uPlot(opts, data, then) {
 	let i0 = null;
 	let i1 = null;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	const idxs = series[0].idxs;
+=======
+	const idxs = mode == 1 ? series[0].idxs : null;
+>>>>>>> danhmuc_list
 =======
 	const idxs = mode == 1 ? series[0].idxs : null;
 >>>>>>> danhmuc_list
@@ -4170,6 +4705,7 @@ function uPlot(opts, data, then) {
 	let viaAutoScaleX = false;
 
 	function setData(_data, _resetScales) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 		_data = _data || [];
 		_data[0] = _data[0] || [];
@@ -4182,6 +4718,8 @@ function uPlot(opts, data, then) {
 		if (xScaleDistr == 2)
 			data[0] = data0.map((v, i) => i);
 =======
+=======
+>>>>>>> danhmuc_list
 		if (mode == 2) {
 			dataLen = 0;
 			for (let i = 1; i < series.length; i++)
@@ -4199,6 +4737,9 @@ function uPlot(opts, data, then) {
 			if (xScaleDistr == 2)
 				data[0] = data0.map((v, i) => i);
 		}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 		self._data = data;
@@ -4229,6 +4770,7 @@ function uPlot(opts, data, then) {
 		let _min, _max;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if (dataLen > 0) {
 			i0 = idxs[0] = 0;
 			i1 = idxs[1] = dataLen - 1;
@@ -4256,6 +4798,8 @@ function uPlot(opts, data, then) {
 			i1 = idxs[1] = _max = null;
 		}
 =======
+=======
+>>>>>>> danhmuc_list
 		if (mode == 1) {
 			if (dataLen > 0) {
 				i0 = idxs[0] = 0;
@@ -4284,11 +4828,15 @@ function uPlot(opts, data, then) {
 				i1 = idxs[1] = _max = null;
 			}
 		}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 		_setScale(xScaleKey, _min, _max);
 	}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	function setCtxStyle(stroke, width, dash, cap, fill) {
 		ctx.strokeStyle = stroke || transparent;
@@ -4298,6 +4846,8 @@ function uPlot(opts, data, then) {
 		ctx.setLineDash(dash || []);
 		ctx.fillStyle = fill || transparent;
 =======
+=======
+>>>>>>> danhmuc_list
 	let ctxStroke, ctxFill, ctxWidth, ctxDash, ctxJoin, ctxCap, ctxFont, ctxAlign, ctxBaseline;
 	let ctxAlpha;
 
@@ -4339,6 +4889,9 @@ function uPlot(opts, data, then) {
 			wsc.min = min(wsc.min, facet.min = minMax[0]);
 			wsc.max = max(wsc.max, facet.max = minMax[1]);
 		}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	}
 
@@ -4360,7 +4913,11 @@ function uPlot(opts, data, then) {
 					resetYSeries(true);
 			}
 <<<<<<< HEAD
+<<<<<<< HEAD
 			else if (k != xScaleKey) {
+=======
+			else if (k != xScaleKey || mode == 2) {
+>>>>>>> danhmuc_list
 =======
 			else if (k != xScaleKey || mode == 2) {
 >>>>>>> danhmuc_list
@@ -4379,6 +4936,7 @@ function uPlot(opts, data, then) {
 		if (dataLen > 0) {
 			// pre-range y-scales from y series' data values
 			series.forEach((s, i) => {
+<<<<<<< HEAD
 <<<<<<< HEAD
 				let k = s.scale;
 				let wsc = wipScales[k];
@@ -4414,6 +4972,8 @@ function uPlot(opts, data, then) {
 				s.idxs[0] = i0;
 				s.idxs[1] = i1;
 =======
+=======
+>>>>>>> danhmuc_list
 				if (mode == 1) {
 					let k = s.scale;
 					let wsc = wipScales[k];
@@ -4461,6 +5021,9 @@ function uPlot(opts, data, then) {
 						}
 					}
 				}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			});
 
@@ -4489,10 +5052,13 @@ function uPlot(opts, data, then) {
 			if (wsc.from != null) {
 				let base = wipScales[wsc.from];
 <<<<<<< HEAD
+<<<<<<< HEAD
 				let minMax = wsc.range(self, base.min, base.max, k);
 				wsc.min = minMax[0];
 				wsc.max = minMax[1];
 =======
+=======
+>>>>>>> danhmuc_list
 
 				if (base.min == null)
 					wsc.min = wsc.max = null;
@@ -4501,6 +5067,9 @@ function uPlot(opts, data, then) {
 					wsc.min = minMax[0];
 					wsc.max = minMax[1];
 				}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			}
 		}
@@ -4528,10 +5097,13 @@ function uPlot(opts, data, then) {
 		if (anyChanged) {
 			// invalidate paths of all series on changed scales
 <<<<<<< HEAD
+<<<<<<< HEAD
 			series.forEach(s => {
 				if (changed[s.scale])
 					s._paths = null;
 =======
+=======
+>>>>>>> danhmuc_list
 			series.forEach((s, i) => {
 				if (mode == 2) {
 					if (i > 0 && changed.y)
@@ -4541,6 +5113,9 @@ function uPlot(opts, data, then) {
 					if (changed[s.scale])
 						s._paths = null;
 				}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			});
 
@@ -4551,7 +5126,11 @@ function uPlot(opts, data, then) {
 
 			if (cursor.show)
 <<<<<<< HEAD
+<<<<<<< HEAD
 				shouldSetCursor = cursor.left >= 0;
+=======
+				shouldSetCursor = shouldSetLegend = cursor.left >= 0;
+>>>>>>> danhmuc_list
 =======
 				shouldSetCursor = shouldSetLegend = cursor.left >= 0;
 >>>>>>> danhmuc_list
@@ -4561,6 +5140,7 @@ function uPlot(opts, data, then) {
 			pendScales[k] = null;
 	}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	// TODO: drawWrap(si, drawPoints) (save, restore, translate, clip)
 	function drawPoints(si) {
@@ -4645,6 +5225,8 @@ function uPlot(opts, data, then) {
 
 =======
 >>>>>>> danhmuc_list
+=======
+>>>>>>> danhmuc_list
 	// grabs the nearest indices with y data outside of x-scale limits
 	function getOuterIdxs(ydata) {
 		let _i0 = clamp(i0 - 1, 0, dataLen - 1);
@@ -4671,12 +5253,15 @@ function uPlot(opts, data, then) {
 			series.forEach((s, i) => {
 				if (i > 0 && s.show) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 					if (s._paths)
 						drawPath(i);
 
 					if (s.points.show(self, i, i0, i1))
 						drawPoints(i);
 =======
+=======
+>>>>>>> danhmuc_list
 					if (ctxAlpha != s.alpha)
 						ctx.globalAlpha = ctxAlpha = s.alpha;
 
@@ -4699,6 +5284,9 @@ function uPlot(opts, data, then) {
 
 					if (ctxAlpha != 1)
 						ctx.globalAlpha = ctxAlpha = 1;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 					fire("drawSeries", i);
@@ -4707,6 +5295,7 @@ function uPlot(opts, data, then) {
 		}
 	}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	function drawPath(si) {
 		const s = series[si];
@@ -4758,6 +5347,8 @@ function uPlot(opts, data, then) {
 
 	function fillStroke(si, strokeStyle, lineWidth, lineDash, lineCap, fillStyle, strokePath, fillPath) {
 =======
+=======
+>>>>>>> danhmuc_list
 	function cacheStrokeFill(si, _points) {
 		let s = _points ? series[si].points : series[si];
 
@@ -4813,6 +5404,9 @@ function uPlot(opts, data, then) {
 	}
 
 	function fillStroke(si, strokeStyle, lineWidth, lineDash, lineCap, fillStyle, strokePath, fillPath, flags, boundsClip, gapsClip) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		let didStrokeFill = false;
 
@@ -4823,20 +5417,27 @@ function uPlot(opts, data, then) {
 			if (b.series[0] == si) {
 				let lowerEdge = series[b.series[1]];
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 				let clip = (lowerEdge._paths || EMPTY_OBJ).band;
 
 				ctx.save();
 =======
+=======
+>>>>>>> danhmuc_list
 				let lowerData = data[b.series[1]];
 
 				let bandClip = (lowerEdge._paths || EMPTY_OBJ).band;
 				let gapsClip2;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 				let _fillStyle = null;
 
 				// hasLowerEdge?
+<<<<<<< HEAD
 <<<<<<< HEAD
 				if (lowerEdge.show && clip) {
 					_fillStyle = b.fill(self, bi) || fillStyle;
@@ -4847,6 +5448,8 @@ function uPlot(opts, data, then) {
 
 				ctx.restore();
 =======
+=======
+>>>>>>> danhmuc_list
 				if (lowerEdge.show && bandClip && hasData(lowerData, i0, i1)) {
 					_fillStyle = b.fill(self, bi) || fillStyle;
 					gapsClip2 = lowerEdge._paths.clip;
@@ -4855,6 +5458,9 @@ function uPlot(opts, data, then) {
 					bandClip = null;
 
 				strokeFill(strokeStyle, lineWidth, lineDash, lineCap, _fillStyle, strokePath, fillPath, flags, boundsClip, gapsClip, gapsClip2, bandClip);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 				didStrokeFill = true;
@@ -4862,6 +5468,7 @@ function uPlot(opts, data, then) {
 		});
 
 		if (!didStrokeFill)
+<<<<<<< HEAD
 <<<<<<< HEAD
 			strokeFill(strokeStyle, lineWidth, lineDash, lineCap, fillStyle, strokePath, fillPath);
 	}
@@ -4871,6 +5478,8 @@ function uPlot(opts, data, then) {
 		fillStyle   && fillPath                && ctx.fill(fillPath);
 		strokeStyle && strokePath && lineWidth && ctx.stroke(strokePath);
 =======
+=======
+>>>>>>> danhmuc_list
 			strokeFill(strokeStyle, lineWidth, lineDash, lineCap, fillStyle, strokePath, fillPath, flags, boundsClip, gapsClip);
 	}
 
@@ -4937,6 +5546,9 @@ function uPlot(opts, data, then) {
 		}
 		else
 			fillPath != null && fillStyle && ctx.fill(fillPath);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	}
 
@@ -4951,15 +5563,21 @@ function uPlot(opts, data, then) {
 			let minSpace = axis._space = axis.space(self, axisIdx, min, max, fullDim);
 			let incrs    = axis._incrs = axis.incrs(self, axisIdx, min, max, fullDim, minSpace);
 <<<<<<< HEAD
+<<<<<<< HEAD
 			incrSpace    = axis._found = findIncr(min, max, incrs, fullDim, minSpace);
 		}
 
 		return incrSpace;
 =======
+=======
+>>>>>>> danhmuc_list
 			incrSpace    = findIncr(min, max, incrs, fullDim, minSpace);
 		}
 
 		return (axis._found = incrSpace);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	}
 
@@ -4967,9 +5585,15 @@ function uPlot(opts, data, then) {
 		let offset = (width % 2) / 2;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		pxAlign && ctx.translate(offset, offset);
 
 		setCtxStyle(stroke, width, dash, cap);
+=======
+		pxAlign == 1 && ctx.translate(offset, offset);
+
+		setCtxStyle(stroke, width, dash, cap, stroke);
+>>>>>>> danhmuc_list
 =======
 		pxAlign == 1 && ctx.translate(offset, offset);
 
@@ -4990,6 +5614,7 @@ function uPlot(opts, data, then) {
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		offs.forEach((off, i) => {
 			if (filts[i] == null)
 				return;
@@ -5007,6 +5632,8 @@ function uPlot(opts, data, then) {
 
 		pxAlign && ctx.translate(-offset, -offset);
 =======
+=======
+>>>>>>> danhmuc_list
 		for (let i = 0; i < offs.length; i++) {
 			if (filts[i] != null) {
 				if (ori == 0)
@@ -5022,6 +5649,9 @@ function uPlot(opts, data, then) {
 		ctx.stroke();
 
 		pxAlign == 1 && ctx.translate(-offset, -offset);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	}
 
@@ -5105,6 +5735,7 @@ function uPlot(opts, data, then) {
 
 	function drawAxesGrid() {
 <<<<<<< HEAD
+<<<<<<< HEAD
 		axes.forEach((axis, i) => {
 			if (!axis.show || !axis._show)
 				return;
@@ -5181,6 +5812,8 @@ function uPlot(opts, data, then) {
 
 				let baseLpos = round(axis._lpos * pxRatio);
 =======
+=======
+>>>>>>> danhmuc_list
 		for (let i = 0; i < axes.length; i++) {
 			let axis = axes[i];
 
@@ -5204,6 +5837,9 @@ function uPlot(opts, data, then) {
 				setFontStyle(axis.labelFont[0], fillStyle, "center", side == 2 ? TOP : BOTTOM);
 
 				ctx.save();
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 				if (ori == 1) {
@@ -5222,11 +5858,14 @@ function uPlot(opts, data, then) {
 				}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 				ctx.font         = axis.labelFont[0];
 			//	ctx.fillStyle    = axis.labelStroke || hexBlack;						// rgba?
 				ctx.textAlign    = "center";
 				ctx.textBaseline = side == 2 ? TOP : BOTTOM;
 
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 				ctx.fillText(axis.label, x, y);
@@ -5235,7 +5874,10 @@ function uPlot(opts, data, then) {
 			}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 			let [_incr, _space] = axis._found;
 
 			if (_space == 0)
@@ -5313,6 +5955,9 @@ function uPlot(opts, data, then) {
 				}
 			}
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			// ticks
 			if (ticks.show) {
@@ -5348,7 +5993,11 @@ function uPlot(opts, data, then) {
 				);
 			}
 <<<<<<< HEAD
+<<<<<<< HEAD
 		});
+=======
+		}
+>>>>>>> danhmuc_list
 =======
 		}
 >>>>>>> danhmuc_list
@@ -5365,9 +6014,12 @@ function uPlot(opts, data, then) {
 
 				if (minMax) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 					s.min = null;
 					s.max = null;
 =======
+=======
+>>>>>>> danhmuc_list
 					if (mode == 1) {
 						s.min = null;
 						s.max = null;
@@ -5378,6 +6030,9 @@ function uPlot(opts, data, then) {
 							f.max = null;
 						});
 					}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 				}
 			}
@@ -5421,11 +6076,14 @@ function uPlot(opts, data, then) {
 			setStylePx(wrap, HEIGHT,  fullHgtCss);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			can.width  = round(fullWidCss * pxRatio);
 			can.height = round(fullHgtCss * pxRatio);
 
 			syncRect();
 =======
+=======
+>>>>>>> danhmuc_list
 			// NOTE: mutating this during print preview in Chrome forces transparent
 			// canvas pixels to white, even when followed up with clearRect() below
 			can.width  = round(fullWidCss * pxRatio);
@@ -5455,6 +6113,9 @@ function uPlot(opts, data, then) {
 			ctxAlpha = 1;
 
 			syncRect(false);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 			fire("setSize");
@@ -5480,7 +6141,11 @@ function uPlot(opts, data, then) {
 
 		if (cursor.show && shouldSetCursor) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 			updateCursor();
+=======
+			updateCursor(null, true, false);
+>>>>>>> danhmuc_list
 =======
 			updateCursor(null, true, false);
 >>>>>>> danhmuc_list
@@ -5537,6 +6202,12 @@ function uPlot(opts, data, then) {
 					opts.min = closestIdx(opts.min, data[0]);
 					opts.max = closestIdx(opts.max, data[0]);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+					if (opts.min == opts.max)
+						opts.max++;
+>>>>>>> danhmuc_list
 =======
 
 					if (opts.min == opts.max)
@@ -5630,7 +6301,11 @@ function uPlot(opts, data, then) {
 	function toggleDOM(i, onOff) {
 		let s = series[i];
 <<<<<<< HEAD
+<<<<<<< HEAD
 		let label = showLegend ? legendRows[i][0].parentNode : null;
+=======
+		let label = showLegend ? legendRows[i] : null;
+>>>>>>> danhmuc_list
 =======
 		let label = showLegend ? legendRows[i] : null;
 >>>>>>> danhmuc_list
@@ -5640,7 +6315,11 @@ function uPlot(opts, data, then) {
 		else {
 			label && addClass(label, OFF);
 <<<<<<< HEAD
+<<<<<<< HEAD
 			cursorPts.length > 1 && trans(cursorPts[i], -10, -10, plotWidCss, plotHgtCss);
+=======
+			cursorPts.length > 1 && elTrans(cursorPts[i], -10, -10, plotWidCss, plotHgtCss);
+>>>>>>> danhmuc_list
 =======
 			cursorPts.length > 1 && elTrans(cursorPts[i], -10, -10, plotWidCss, plotHgtCss);
 >>>>>>> danhmuc_list
@@ -5652,7 +6331,11 @@ function uPlot(opts, data, then) {
 	}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	function setSeries(i, opts, pub) {
+=======
+	function setSeries(i, opts, _fire, _pub) {
+>>>>>>> danhmuc_list
 =======
 	function setSeries(i, opts, _fire, _pub) {
 >>>>>>> danhmuc_list
@@ -5668,6 +6351,7 @@ function uPlot(opts, data, then) {
 			toggleDOM(i, opts.show);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			_setScale(s.scale, null, null);
 			commit();
 		}
@@ -5676,6 +6360,8 @@ function uPlot(opts, data, then) {
 
 		pub && pubSync("setSeries", self, i, opts);
 =======
+=======
+>>>>>>> danhmuc_list
 			_setScale(mode == 2 ? s.facets[1].scale : s.scale, null, null);
 			commit();
 		}
@@ -5683,13 +6369,19 @@ function uPlot(opts, data, then) {
 		_fire !== false && fire("setSeries", i, opts);
 
 		_pub && pubSync("setSeries", self, i, opts);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	}
 
 	self.setSeries = setSeries;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 	function setBand(bi, opts) {
 		assign(bands[bi], opts);
 	}
@@ -5711,6 +6403,9 @@ function uPlot(opts, data, then) {
 	self.setBand = setBand;
 	self.delBand = delBand;
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	function setAlpha(i, value) {
 		series[i].alpha = value;
@@ -5720,7 +6415,11 @@ function uPlot(opts, data, then) {
 
 		if (showLegend && legendRows[i])
 <<<<<<< HEAD
+<<<<<<< HEAD
 			legendRows[i][0].parentNode.style.opacity = value;
+=======
+			legendRows[i].style.opacity = value;
+>>>>>>> danhmuc_list
 =======
 			legendRows[i].style.opacity = value;
 >>>>>>> danhmuc_list
@@ -5757,6 +6456,7 @@ function uPlot(opts, data, then) {
 			if (cursor._lock)
 				return;
 <<<<<<< HEAD
+<<<<<<< HEAD
 			setSeries(null, FOCUS_FALSE, syncOpts.setSeries);
 			updateCursor();
 		});
@@ -5766,6 +6466,8 @@ function uPlot(opts, data, then) {
 		let sc = scales[scale];
 
 =======
+=======
+>>>>>>> danhmuc_list
 			setSeries(null, FOCUS_FALSE, true, syncOpts.setSeries);
 			updateCursor(null, true, false);
 		});
@@ -5777,6 +6479,9 @@ function uPlot(opts, data, then) {
 		if (can)
 			pos = pos / pxRatio - (sc.ori == 1 ? plotTopCss : plotLftCss);
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		let dim = plotWidCss;
 
@@ -5804,8 +6509,13 @@ function uPlot(opts, data, then) {
 	}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	function closestIdxFromXpos(pos) {
 		let v = posToVal(pos, xScaleKey);
+=======
+	function closestIdxFromXpos(pos, can) {
+		let v = posToVal(pos, xScaleKey, can);
+>>>>>>> danhmuc_list
 =======
 	function closestIdxFromXpos(pos, can) {
 		let v = posToVal(pos, xScaleKey, can);
@@ -5837,17 +6547,23 @@ function uPlot(opts, data, then) {
 	self.batch = batch;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	(self.setCursor = opts => {
 		mouseLeft1 = opts.left;
 		mouseTop1 = opts.top;
 	//	assign(cursor, opts);
 		updateCursor();
 =======
+=======
+>>>>>>> danhmuc_list
 	(self.setCursor = (opts, _fire, _pub) => {
 		mouseLeft1 = opts.left;
 		mouseTop1 = opts.top;
 	//	assign(cursor, opts);
 		updateCursor(null, _fire, _pub);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	});
 
@@ -5865,8 +6581,11 @@ function uPlot(opts, data, then) {
 	let setSelY = scaleX.ori == 1 ? setSelH : setSelV;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	function updateCursor(ts, src) {
 =======
+=======
+>>>>>>> danhmuc_list
 	function syncLegend() {
 		if (showLegend && legend.live) {
 			for (let i = mode == 2 ? 1 : 0; i < series.length; i++) {
@@ -5918,6 +6637,9 @@ function uPlot(opts, data, then) {
 	}
 
 	function updateCursor(src, _fire, _pub) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	//	ts == null && log("updateCursor()", arguments);
 
@@ -5928,8 +6650,13 @@ function uPlot(opts, data, then) {
 
 		if (cursor.show) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 			vCursor && trans(vCursor, round(mouseLeft1), 0, plotWidCss, plotHgtCss);
 			hCursor && trans(hCursor, 0, round(mouseTop1), plotWidCss, plotHgtCss);
+=======
+			vCursor && elTrans(vCursor, round(mouseLeft1), 0, plotWidCss, plotHgtCss);
+			hCursor && elTrans(hCursor, 0, round(mouseTop1), plotWidCss, plotHgtCss);
+>>>>>>> danhmuc_list
 =======
 			vCursor && elTrans(vCursor, round(mouseLeft1), 0, plotWidCss, plotHgtCss);
 			hCursor && elTrans(hCursor, 0, round(mouseTop1), plotWidCss, plotHgtCss);
@@ -5941,7 +6668,11 @@ function uPlot(opts, data, then) {
 		// when zooming to an x scale range between datapoints the binary search
 		// for nearest min/max indices results in this condition. cheap hack :D
 <<<<<<< HEAD
+<<<<<<< HEAD
 		let noDataInRange = i0 > i1;
+=======
+		let noDataInRange = i0 > i1; // works for mode 1 only
+>>>>>>> danhmuc_list
 =======
 		let noDataInRange = i0 > i1; // works for mode 1 only
 >>>>>>> danhmuc_list
@@ -5959,6 +6690,7 @@ function uPlot(opts, data, then) {
 			for (let i = 0; i < series.length; i++) {
 				if (i > 0) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 					cursorPts.length > 1 && trans(cursorPts[i], -10, -10, plotWidCss, plotHgtCss);
 				}
 
@@ -5971,13 +6703,19 @@ function uPlot(opts, data, then) {
 =======
 					cursorPts.length > 1 && elTrans(cursorPts[i], -10, -10, plotWidCss, plotHgtCss);
 >>>>>>> danhmuc_list
+=======
+					cursorPts.length > 1 && elTrans(cursorPts[i], -10, -10, plotWidCss, plotHgtCss);
+>>>>>>> danhmuc_list
 				}
 			}
 
 			if (cursorFocus)
 <<<<<<< HEAD
+<<<<<<< HEAD
 				setSeries(null, FOCUS_TRUE, syncOpts.setSeries);
 =======
+=======
+>>>>>>> danhmuc_list
 				setSeries(null, FOCUS_TRUE, true, src == null && syncOpts.setSeries);
 
 			if (legend.live) {
@@ -5987,11 +6725,15 @@ function uPlot(opts, data, then) {
 				for (let i = 0; i < series.length; i++)
 					legend.values[i] = NULL_LEGEND_VALUES;
 			}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		}
 		else {
 		//	let pctY = 1 - (y / rect.height);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 			let mouseXPos = scaleX.ori == 0 ? mouseLeft1 : mouseTop1;
 
@@ -6014,6 +6756,8 @@ function uPlot(opts, data, then) {
 
 					if (yPos > 0) {
 =======
+=======
+>>>>>>> danhmuc_list
 			let mouseXPos, valAtPosX, xPos;
 
 			if (mode == 1) {
@@ -6042,6 +6786,9 @@ function uPlot(opts, data, then) {
 					let yPos = yVal2 == null ? -10 : incrRoundUp(valToPosY(yVal2, mode == 1 ? scales[s.scale] : scales[s.facets[1].scale], yDim, 0), 0.5);
 
 					if (yPos > 0 && mode == 1) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 						let dist = abs(yPos - mouseTop1);
 
@@ -6063,6 +6810,7 @@ function uPlot(opts, data, then) {
 					}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 					cursorPts.length > 1 && trans(cursorPts[i], hPos, vPos, plotWidCss, plotHgtCss);
 				}
 
@@ -6083,6 +6831,8 @@ function uPlot(opts, data, then) {
 
 			shouldSetLegend = false;
 =======
+=======
+>>>>>>> danhmuc_list
 					if (shouldSetLegend && cursorPts.length > 1) {
 						elColor(cursorPts[i], cursor.points.fill(self, i), cursor.points.stroke(self, i));
 
@@ -6127,6 +6877,9 @@ function uPlot(opts, data, then) {
 		if (shouldSetLegend) {
 			legend.idx = idx;
 			setLegend();
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		}
 
@@ -6135,6 +6888,11 @@ function uPlot(opts, data, then) {
 			if (src != null) {
 				let [xKey, yKey] = syncOpts.scales;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+				let [matchXKeys, matchYKeys] = syncOpts.match;
+				let [xKeySrc, yKeySrc] = src.cursor.sync.scales;
+>>>>>>> danhmuc_list
 =======
 				let [matchXKeys, matchYKeys] = syncOpts.match;
 				let [xKeySrc, yKeySrc] = src.cursor.sync.scales;
@@ -6153,12 +6911,18 @@ function uPlot(opts, data, then) {
 				let sOff, sDim, sc, a, b;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 				if (xKey) {
 =======
+=======
+>>>>>>> danhmuc_list
 				let matchingX = xKey != null && matchXKeys(xKey, xKeySrc);
 				let matchingY = yKey != null && matchYKeys(yKey, yKeySrc);
 
 				if (matchingX) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 					if (sori == 0) {
 						sOff = left;
@@ -6169,6 +6933,7 @@ function uPlot(opts, data, then) {
 						sDim = height;
 					}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 					sc = scales[xKey];
 
@@ -6183,6 +6948,8 @@ function uPlot(opts, data, then) {
 
 				if (yKey) {
 =======
+=======
+>>>>>>> danhmuc_list
 					if (dragX) {
 						sc = scales[xKey];
 
@@ -6199,6 +6966,9 @@ function uPlot(opts, data, then) {
 				}
 
 				if (matchingY) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 					if (sori == 1) {
 						sOff = left;
@@ -6210,6 +6980,7 @@ function uPlot(opts, data, then) {
 					}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 					sc = scales[yKey];
 
 					a = valToPosY(sPosToVal(sOff, yKey),        sc, yDim, 0);
@@ -6219,6 +6990,8 @@ function uPlot(opts, data, then) {
 
 					if (!xKey)
 =======
+=======
+>>>>>>> danhmuc_list
 					if (dragY) {
 						sc = scales[yKey];
 
@@ -6231,6 +7004,9 @@ function uPlot(opts, data, then) {
 						setSelY(0, yDim);
 
 					if (!matchingX)
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 						setSelX(0, xDim);
 				}
@@ -6312,6 +7088,7 @@ function uPlot(opts, data, then) {
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		cursor.idx = idx;
 		cursor.left = mouseLeft1;
 		cursor.top = mouseTop1;
@@ -6327,6 +7104,8 @@ function uPlot(opts, data, then) {
 			if (cursorFocus) {
 				let o = syncOpts.setSeries;
 =======
+=======
+>>>>>>> danhmuc_list
 		drag._x = dragX;
 		drag._y = dragY;
 
@@ -6344,11 +7123,15 @@ function uPlot(opts, data, then) {
 
 			if (cursorFocus) {
 				let shouldPub = _pub && syncOpts.setSeries;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 				let p = focus.prox;
 
 				if (focusedSeries == null) {
 					if (closestDist <= p)
+<<<<<<< HEAD
 <<<<<<< HEAD
 						setSeries(closestSeries, FOCUS_TRUE, o);
 				}
@@ -6358,6 +7141,8 @@ function uPlot(opts, data, then) {
 					else if (closestSeries != focusedSeries)
 						setSeries(closestSeries, FOCUS_TRUE, o);
 =======
+=======
+>>>>>>> danhmuc_list
 						setSeries(closestSeries, FOCUS_TRUE, true, shouldPub);
 				}
 				else {
@@ -6365,13 +7150,20 @@ function uPlot(opts, data, then) {
 						setSeries(null, FOCUS_TRUE, true, shouldPub);
 					else if (closestSeries != focusedSeries)
 						setSeries(closestSeries, FOCUS_TRUE, true, shouldPub);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 				}
 			}
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		ready && fire("setCursor");
+=======
+		ready && _fire !== false && fire("setCursor");
+>>>>>>> danhmuc_list
 =======
 		ready && _fire !== false && fire("setCursor");
 >>>>>>> danhmuc_list
@@ -6380,9 +7172,12 @@ function uPlot(opts, data, then) {
 	let rect = null;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	function syncRect() {
 		rect = over.getBoundingClientRect();
 =======
+=======
+>>>>>>> danhmuc_list
 	function syncRect(defer) {
 		if (defer === true)
 			rect = null;
@@ -6390,6 +7185,9 @@ function uPlot(opts, data, then) {
 			rect = over.getBoundingClientRect();
 			fire("syncRect", rect);
 		}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	}
 
@@ -6401,6 +7199,7 @@ function uPlot(opts, data, then) {
 
 		if (e != null)
 <<<<<<< HEAD
+<<<<<<< HEAD
 			updateCursor(1);
 		else
 			updateCursor(null, src);
@@ -6408,6 +7207,8 @@ function uPlot(opts, data, then) {
 
 	function cacheMouse(e, src, _l, _t, _w, _h, _i, initial, snap) {
 =======
+=======
+>>>>>>> danhmuc_list
 			updateCursor(null, true, true);
 		else
 			updateCursor(src, true, false);
@@ -6417,6 +7218,9 @@ function uPlot(opts, data, then) {
 		if (rect == null)
 			syncRect(false);
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		if (e != null) {
 			_l = e.clientX - rect.left;
@@ -6429,6 +7233,7 @@ function uPlot(opts, data, then) {
 				return;
 			}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 			let xDim = plotWidCss,
 				yDim = plotHgtCss,
@@ -6459,6 +7264,8 @@ function uPlot(opts, data, then) {
 			if (yKey != null)
 				_t = getPos(src.posToVal(_yPos, yKey), scales[yKey], yDim, 0);
 =======
+=======
+>>>>>>> danhmuc_list
 			let [xKey, yKey] = syncOpts.scales;
 
 			let syncOptsSrc = src.cursor.sync;
@@ -6482,6 +7289,9 @@ function uPlot(opts, data, then) {
 
 			if (yKeySrc != null)
 				_t = matchYKeys(yKey, yKeySrc) ? getPos(yValSrc, scales[yKey], yDim, 0) : -10;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			else
 				_t = yDim * (_yPos/_yDim);
@@ -6588,7 +7398,11 @@ function uPlot(opts, data, then) {
 
 			if (!cursor._lock)
 <<<<<<< HEAD
+<<<<<<< HEAD
 				updateCursor();
+=======
+				updateCursor(null, true, false);
+>>>>>>> danhmuc_list
 =======
 				updateCursor(null, true, false);
 >>>>>>> danhmuc_list
@@ -6634,7 +7448,11 @@ function uPlot(opts, data, then) {
 					mouseTop1 = mouseTop1 < mouseTop0 ? 0 : plotHgtCss;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 				updateCursor(1);
+=======
+				updateCursor(null, true, true);
+>>>>>>> danhmuc_list
 =======
 				updateCursor(null, true, true);
 >>>>>>> danhmuc_list
@@ -6647,7 +7465,11 @@ function uPlot(opts, data, then) {
 
 			// passing a non-null timestamp to force sync/mousemove event
 <<<<<<< HEAD
+<<<<<<< HEAD
 			updateCursor(1);
+=======
+			updateCursor(null, true, true);
+>>>>>>> danhmuc_list
 =======
 			updateCursor(null, true, true);
 >>>>>>> danhmuc_list
@@ -6667,7 +7489,10 @@ function uPlot(opts, data, then) {
 	}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 	function syncPxRatio() {
 		axes.forEach(syncFontSize);
 		_setSize(self.width, self.height, true);
@@ -6675,6 +7500,9 @@ function uPlot(opts, data, then) {
 
 	on(dppxchange, win, syncPxRatio);
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	// internal pub/sub
 	const events = {};
@@ -6685,11 +7513,17 @@ function uPlot(opts, data, then) {
 	events.dblclick = dblClick;
 	events["setSeries"] = (e, src, idx, opts) => {
 <<<<<<< HEAD
+<<<<<<< HEAD
 		setSeries(idx, opts);
 	};
 
 	let deb;
 
+=======
+		setSeries(idx, opts, true, false);
+	};
+
+>>>>>>> danhmuc_list
 =======
 		setSeries(idx, opts, true, false);
 	};
@@ -6704,10 +7538,14 @@ function uPlot(opts, data, then) {
 		onMouse(dblclick, over, dblClick);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		deb = debounce(syncRect, 100);
 
 		on(resize, win, deb);
 		on(scroll, win, deb);
+=======
+		cursorPlots.add(self);
+>>>>>>> danhmuc_list
 =======
 		cursorPlots.add(self);
 >>>>>>> danhmuc_list
@@ -6739,10 +7577,13 @@ function uPlot(opts, data, then) {
 			sub: retTrue,
 		},
 <<<<<<< HEAD
+<<<<<<< HEAD
 		scales: [xScaleKey, null]
 	}, cursor.sync);
 
 =======
+=======
+>>>>>>> danhmuc_list
 		scales: [xScaleKey, series[1] ? series[1].scale : null],
 		match: [retEq, retEq],
 		values: [null, null],
@@ -6750,6 +7591,9 @@ function uPlot(opts, data, then) {
 
 	(cursor.sync = syncOpts);
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	const syncKey = syncOpts.key;
 
@@ -6772,8 +7616,14 @@ function uPlot(opts, data, then) {
 	function destroy() {
 		sync.unsub(self);
 <<<<<<< HEAD
+<<<<<<< HEAD
 		off(resize, win, deb);
 		off(scroll, win, deb);
+=======
+		cursorPlots.delete(self);
+		mouseListeners.clear();
+		off(dppxchange, win, syncPxRatio);
+>>>>>>> danhmuc_list
 =======
 		cursorPlots.delete(self);
 		mouseListeners.clear();
@@ -6798,7 +7648,11 @@ function uPlot(opts, data, then) {
 		_setSize(opts.width, opts.height);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		updateCursor();
+=======
+		updateCursor(null, true, false);
+>>>>>>> danhmuc_list
 =======
 		updateCursor(null, true, false);
 >>>>>>> danhmuc_list
@@ -6807,11 +7661,17 @@ function uPlot(opts, data, then) {
 	}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 	series.forEach(initSeries);
 
 	axes.forEach(initAxis);
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	if (then) {
 		if (then instanceof HTMLElement) {
@@ -6852,6 +7712,7 @@ uPlot.orient   = orient;
 	uPlot.clipGaps = clipGaps;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	let paths = uPlot.paths = {};
 
 	(paths.linear  = linear);
@@ -6862,6 +7723,8 @@ uPlot.orient   = orient;
 
 export default uPlot;
 =======
+=======
+>>>>>>> danhmuc_list
 	let paths = uPlot.paths = {
 		points,
 	};
@@ -6873,4 +7736,7 @@ export default uPlot;
 }
 
 export { uPlot as default };
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list

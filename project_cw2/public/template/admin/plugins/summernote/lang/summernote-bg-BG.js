@@ -1,6 +1,7 @@
 /*!
  * 
 <<<<<<< HEAD
+<<<<<<< HEAD
  * Super simple wysiwyg editor v0.8.18
  * https://summernote.org
  * 
@@ -11,6 +12,8 @@
  * Date: 2020-05-20T16:47Z
  * 
 =======
+=======
+>>>>>>> danhmuc_list
  * Super simple WYSIWYG editor v0.8.20
  * https://summernote.org
  *
@@ -20,6 +23,9 @@
  *
  * Date: 2021-10-14T21:15Z
  *
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
  */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -31,6 +37,7 @@
 		var a = factory();
 		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
 	}
+<<<<<<< HEAD
 <<<<<<< HEAD
 })(window, function() {
 return /******/ (function(modules) { // webpackBootstrap
@@ -129,6 +136,11 @@ return /******/ (function(modules) { // webpackBootstrap
 return /******/ (() => { // webpackBootstrap
 var __webpack_exports__ = {};
 >>>>>>> danhmuc_list
+=======
+})(self, function() {
+return /******/ (() => { // webpackBootstrap
+var __webpack_exports__ = {};
+>>>>>>> danhmuc_list
 (function ($) {
   $.extend($.summernote.lang, {
     'bg-BG': {
@@ -154,6 +166,7 @@ var __webpack_exports__ = {};
         floatRight: 'Подравни в дясно',
         floatNone: 'Без подравняване',
 <<<<<<< HEAD
+<<<<<<< HEAD
         shapeRounded: 'Shape: Rounded',
         shapeCircle: 'Shape: Circle',
         shapeThumbnail: 'Shape: Thumbnail',
@@ -173,6 +186,8 @@ var __webpack_exports__ = {};
         insert: 'Insert Video',
         url: 'Video URL?',
 =======
+=======
+>>>>>>> danhmuc_list
         shapeRounded: 'Форма: Заоблено',
         shapeCircle: 'Форма: Кръг',
         shapeThumbnail: 'Форма: Миниатюра',
@@ -191,6 +206,9 @@ var __webpack_exports__ = {};
         videoLink: 'Видео линк',
         insert: 'Добави Видео',
         url: 'Видео URL?',
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         providers: '(YouTube, Vimeo, Vine, Instagram, DailyMotion or Youku)'
       },
@@ -206,6 +224,7 @@ var __webpack_exports__ = {};
       table: {
         table: 'Таблица',
 <<<<<<< HEAD
+<<<<<<< HEAD
         addRowAbove: 'Add row above',
         addRowBelow: 'Add row below',
         addColLeft: 'Add column left',
@@ -214,6 +233,8 @@ var __webpack_exports__ = {};
         delCol: 'Delete column',
         delTable: 'Delete table'
 =======
+=======
+>>>>>>> danhmuc_list
         addRowAbove: 'Добави ред отгоре',
         addRowBelow: 'Добави ред отдолу',
         addColLeft: 'Добави колона отляво',
@@ -221,6 +242,9 @@ var __webpack_exports__ = {};
         delRow: 'Изтрии ред',
         delCol: 'Изтрии колона',
         delTable: 'Изтрии таблица'
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       },
       hr: {
@@ -275,6 +299,7 @@ var __webpack_exports__ = {};
         paragraphFormatting: 'Форматиране на параграф',
         documentStyle: 'Стил на документа',
 <<<<<<< HEAD
+<<<<<<< HEAD
         extraKeys: 'Extra keys'
       },
       help: {
@@ -293,6 +318,8 @@ var __webpack_exports__ = {};
         'justifyRight': 'Set right align',
         'justifyFull': 'Set full align',
 =======
+=======
+>>>>>>> danhmuc_list
         extraKeys: 'Екстра бутони'
       },
       help: {
@@ -310,6 +337,9 @@ var __webpack_exports__ = {};
         'justifyCenter': 'Подравняване в центъра',
         'justifyRight': 'Подравняване в дясно',
         'justifyFull': 'Двустранно подравняване',
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         'insertUnorderedList': 'Toggle unordered list',
         'insertOrderedList': 'Toggle ordered list',
@@ -323,7 +353,11 @@ var __webpack_exports__ = {};
         'formatH5': 'Change current block\'s format as H5',
         'formatH6': 'Change current block\'s format as H6',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'insertHorizontalRule': 'Insert horizontal rule',
+=======
+        'insertHorizontalRule': 'Вмъкни хоризонтално правило',
+>>>>>>> danhmuc_list
 =======
         'insertHorizontalRule': 'Вмъкни хоризонтално правило',
 >>>>>>> danhmuc_list
@@ -336,7 +370,11 @@ var __webpack_exports__ = {};
       specialChar: {
         specialChar: 'SPECIAL CHARACTERS',
 <<<<<<< HEAD
+<<<<<<< HEAD
         select: 'Select Special characters'
+=======
+        select: 'Избери Специални символи'
+>>>>>>> danhmuc_list
 =======
         select: 'Избери Специални символи'
 >>>>>>> danhmuc_list
@@ -345,15 +383,22 @@ var __webpack_exports__ = {};
   });
 })(jQuery);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 /***/ })
 
 /******/ });
 });
 =======
+=======
+>>>>>>> danhmuc_list
 /******/ 	return __webpack_exports__;
 /******/ })()
 ;
 });
+<<<<<<< HEAD
+//# sourceMappingURL=summernote-bg-BG.js.map
+>>>>>>> danhmuc_list
+=======
 //# sourceMappingURL=summernote-bg-BG.js.map
 >>>>>>> danhmuc_list

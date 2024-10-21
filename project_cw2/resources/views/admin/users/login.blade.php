@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -76,6 +77,8 @@
 </body>
 
 =======
+=======
+>>>>>>> danhmuc_list
 
 <!DOCTYPE html>
 <html lang="en">
@@ -136,5 +139,8 @@
         @include('admin.footer')
 
 </body>
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 </html>

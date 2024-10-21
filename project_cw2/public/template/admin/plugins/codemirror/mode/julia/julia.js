@@ -13,14 +13,20 @@
 
 CodeMirror.defineMode("julia", function(config, parserConf) {
 <<<<<<< HEAD
+<<<<<<< HEAD
   function wordRegexp(words, end) {
     if (typeof end === "undefined") { end = "\\b"; }
     return new RegExp("^((" + words.join(")|(") + "))" + end);
 =======
+=======
+>>>>>>> danhmuc_list
   function wordRegexp(words, end, pre) {
     if (typeof pre === "undefined") { pre = ""; }
     if (typeof end === "undefined") { end = "\\b"; }
     return new RegExp("^" + pre + "((" + words.join(")|(") + "))" + end);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   }
 
@@ -30,6 +36,7 @@ CodeMirror.defineMode("julia", function(config, parserConf) {
   var uChar = "([^\\u0027\\u005C\\uD800-\\uDFFF]|[\\uD800-\\uDFFF][\\uDC00-\\uDFFF])";
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   var operators = parserConf.operators || wordRegexp([
         "[<>]:", "[<>=]=", "<<=?", ">>>?=?", "=>", "->", "\\/\\/",
         "[\\\\%*+\\-<>!=\\/^|&\\u00F7\\u22BB]=?", "\\?", "\\$", "~", ":",
@@ -38,6 +45,8 @@ CodeMirror.defineMode("julia", function(config, parserConf) {
         "\\u2265", "\\u2286", "\\u2288", "\\u228A", "\\u22C5",
         "\\b(in|isa)\\b(?!\.?\\()"], "");
 =======
+=======
+>>>>>>> danhmuc_list
   var asciiOperatorsList = [
     "[<>]:", "[<>=]=", "<<=?", ">>>?=?", "=>", "--?>", "<--[->]?", "\\/\\/",
     "\\.{2,3}", "[\\.\\\\%*+\\-<>!\\/^|&]=?", "\\?", "\\$", "~", ":"
@@ -50,6 +59,9 @@ CodeMirror.defineMode("julia", function(config, parserConf) {
     "\\u2265", "\\u2286", "\\u2288", "\\u228A", "\\u22C5",
     "\\b(in|isa)\\b(?!\.?\\()"
   ], "");
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   var delimiters = parserConf.delimiters || /^[;,()[\]{}]/;
   var identifiers = parserConf.identifiers ||
@@ -80,11 +92,14 @@ CodeMirror.defineMode("julia", function(config, parserConf) {
   var builtins = wordRegexp(builtinsList);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   var macro = /^@[_A-Za-z][\w]*/;
   var symbol = /^:[_A-Za-z\u00A1-\uFFFF][\w\u00A1-\uFFFF]*!*/;
   var stringPrefixes = /^(`|([_A-Za-z\u00A1-\uFFFF]*"("")?))/;
 
 =======
+=======
+>>>>>>> danhmuc_list
   var macro = /^@[_A-Za-z\u00A1-\uFFFF][\w\u00A1-\uFFFF]*!*/;
   var symbol = /^:[_A-Za-z\u00A1-\uFFFF][\w\u00A1-\uFFFF]*!*/;
   var stringPrefixes = /^(`|([_A-Za-z\u00A1-\uFFFF]*"("")?))/;
@@ -92,6 +107,9 @@ CodeMirror.defineMode("julia", function(config, parserConf) {
   var macroOperators = wordRegexp(asciiOperatorsList, "", "@");
   var symbolOperators = wordRegexp(asciiOperatorsList, "", ":");
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   function inArray(state) {
     return (state.nestedArrays > 0);
@@ -198,8 +216,12 @@ CodeMirror.defineMode("julia", function(config, parserConf) {
 
     // Handle symbols
 <<<<<<< HEAD
+<<<<<<< HEAD
     if (!leavingExpr && stream.match(symbol) ||
         stream.match(/:([<>]:|<<=?|>>>?=?|->|\/\/|\.{2,3}|[\.\\%*+\-<>!\/^|&]=?|[~\?\$])/)) {
+=======
+    if (!leavingExpr && (stream.match(symbol) || stream.match(symbolOperators))) {
+>>>>>>> danhmuc_list
 =======
     if (!leavingExpr && (stream.match(symbol) || stream.match(symbolOperators))) {
 >>>>>>> danhmuc_list
@@ -249,7 +271,11 @@ CodeMirror.defineMode("julia", function(config, parserConf) {
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     if (stream.match(macro)) {
+=======
+    if (stream.match(macro) || stream.match(macroOperators)) {
+>>>>>>> danhmuc_list
 =======
     if (stream.match(macro) || stream.match(macroOperators)) {
 >>>>>>> danhmuc_list

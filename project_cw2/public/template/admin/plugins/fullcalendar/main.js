@@ -1,8 +1,14 @@
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
 FullCalendar v5.5.1
 Docs & License: https://fullcalendar.io/
 (c) 2020 Adam Shaw
+=======
+FullCalendar v5.10.1
+Docs & License: https://fullcalendar.io/
+(c) 2021 Adam Shaw
+>>>>>>> danhmuc_list
 =======
 FullCalendar v5.10.1
 Docs & License: https://fullcalendar.io/
@@ -37,6 +43,11 @@ var FullCalendar = (function (exports) {
 
     function __extends(d, b) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+>>>>>>> danhmuc_list
 =======
         if (typeof b !== "function" && b !== null)
             throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
@@ -58,6 +69,7 @@ var FullCalendar = (function (exports) {
     };
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     function __spreadArrays() {
         for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
         for (var r = Array(s), k = 0, i = 0; i < il; i++)
@@ -68,6 +80,8 @@ var FullCalendar = (function (exports) {
 
     var n,u,i,t,o,r,f={},e=[],c=/acit|ex(?:s|g|n|p|$)|rph|grid|ows|mnc|ntw|ine[ch]|zoo|^ord|itera/i;function s(n,l){for(var u in l)n[u]=l[u];return n}function a(n){var l=n.parentNode;l&&l.removeChild(n);}function v(n,l,u){var i,t,o,r=arguments,f={};for(o in l)"key"==o?i=l[o]:"ref"==o?t=l[o]:f[o]=l[o];if(arguments.length>3)for(u=[u],o=3;o<arguments.length;o++)u.push(r[o]);if(null!=u&&(f.children=u),"function"==typeof n&&null!=n.defaultProps)for(o in n.defaultProps)void 0===f[o]&&(f[o]=n.defaultProps[o]);return h(n,f,i,t,null)}function h(l,u,i,t,o){var r={type:l,props:u,key:i,ref:t,__k:null,__:null,__b:0,__e:null,__d:void 0,__c:null,__h:null,constructor:void 0,__v:null==o?++n.__v:o};return null!=n.vnode&&n.vnode(r),r}function y(){return {current:null}}function p(n){return n.children}function d(n,l){this.props=n,this.context=l;}function _(n,l){if(null==l)return n.__?_(n.__,n.__.__k.indexOf(n)+1):null;for(var u;l<n.__k.length;l++)if(null!=(u=n.__k[l])&&null!=u.__e)return u.__e;return "function"==typeof n.type?_(n):null}function w(n){var l,u;if(null!=(n=n.__)&&null!=n.__c){for(n.__e=n.__c.base=null,l=0;l<n.__k.length;l++)if(null!=(u=n.__k[l])&&null!=u.__e){n.__e=n.__c.base=u.__e;break}return w(n)}}function k(l){(!l.__d&&(l.__d=!0)&&u.push(l)&&!g.__r++||t!==n.debounceRendering)&&((t=n.debounceRendering)||i)(g);}function g(){for(var n;g.__r=u.length;)n=u.sort(function(n,l){return n.__v.__b-l.__v.__b}),u=[],n.some(function(n){var l,u,i,t,o,r,f;n.__d&&(r=(o=(l=n).__v).__e,(f=l.__P)&&(u=[],(i=s({},o)).__v=o.__v+1,t=$(f,o,i,l.__n,void 0!==f.ownerSVGElement,null!=o.__h?[r]:null,u,null==r?_(o):r,o.__h),j(u,o),t!=r&&w(o)));});}function m(n,l,u,i,t,o,r,c,s,v){var y,d,w,k,g,m,b,A=i&&i.__k||e,P=A.length;for(s==f&&(s=null!=r?r[0]:P?_(i,0):null),u.__k=[],y=0;y<l.length;y++)if(null!=(k=u.__k[y]=null==(k=l[y])||"boolean"==typeof k?null:"string"==typeof k||"number"==typeof k?h(null,k,null,null,k):Array.isArray(k)?h(p,{children:k},null,null,null):null!=k.__e||null!=k.__c?h(k.type,k.props,k.key,null,k.__v):k)){if(k.__=u,k.__b=u.__b+1,null===(w=A[y])||w&&k.key==w.key&&k.type===w.type)A[y]=void 0;else for(d=0;d<P;d++){if((w=A[d])&&k.key==w.key&&k.type===w.type){A[d]=void 0;break}w=null;}g=$(n,k,w=w||f,t,o,r,c,s,v),(d=k.ref)&&w.ref!=d&&(b||(b=[]),w.ref&&b.push(w.ref,null,k),b.push(d,k.__c||g,k)),null!=g?(null==m&&(m=g),s=x(n,k,w,A,r,g,s),v||"option"!=u.type?"function"==typeof u.type&&(u.__d=s):n.value=""):s&&w.__e==s&&s.parentNode!=n&&(s=_(w));}if(u.__e=m,null!=r&&"function"!=typeof u.type)for(y=r.length;y--;)null!=r[y]&&a(r[y]);for(y=P;y--;)null!=A[y]&&L(A[y],A[y]);if(b)for(y=0;y<b.length;y++)I(b[y],b[++y],b[++y]);}function x(n,l,u,i,t,o,r){var f,e,c;if(void 0!==l.__d)f=l.__d,l.__d=void 0;else if(t==u||o!=r||null==o.parentNode)n:if(null==r||r.parentNode!==n)n.appendChild(o),f=null;else {for(e=r,c=0;(e=e.nextSibling)&&c<i.length;c+=2)if(e==o)break n;n.insertBefore(o,r),f=r;}return void 0!==f?f:o.nextSibling}function A(n,l,u,i,t){var o;for(o in u)"children"===o||"key"===o||o in l||C(n,o,null,u[o],i);for(o in l)t&&"function"!=typeof l[o]||"children"===o||"key"===o||"value"===o||"checked"===o||u[o]===l[o]||C(n,o,l[o],u[o],i);}function P(n,l,u){"-"===l[0]?n.setProperty(l,u):n[l]=null==u?"":"number"!=typeof u||c.test(l)?u:u+"px";}function C(n,l,u,i,t){var o,r,f;if(t&&"className"==l&&(l="class"),"style"===l)if("string"==typeof u)n.style.cssText=u;else {if("string"==typeof i&&(n.style.cssText=i=""),i)for(l in i)u&&l in u||P(n.style,l,"");if(u)for(l in u)i&&u[l]===i[l]||P(n.style,l,u[l]);}else "o"===l[0]&&"n"===l[1]?(o=l!==(l=l.replace(/Capture$/,"")),(r=l.toLowerCase())in n&&(l=r),l=l.slice(2),n.l||(n.l={}),n.l[l+o]=u,f=o?N:z,u?i||n.addEventListener(l,f,o):n.removeEventListener(l,f,o)):"list"!==l&&"tagName"!==l&&"form"!==l&&"type"!==l&&"size"!==l&&"download"!==l&&"href"!==l&&!t&&l in n?n[l]=null==u?"":u:"function"!=typeof u&&"dangerouslySetInnerHTML"!==l&&(l!==(l=l.replace(/xlink:?/,""))?null==u||!1===u?n.removeAttributeNS("http://www.w3.org/1999/xlink",l.toLowerCase()):n.setAttributeNS("http://www.w3.org/1999/xlink",l.toLowerCase(),u):null==u||!1===u&&!/^ar/.test(l)?n.removeAttribute(l):n.setAttribute(l,u));}function z(l){this.l[l.type+!1](n.event?n.event(l):l);}function N(l){this.l[l.type+!0](n.event?n.event(l):l);}function T(n,l,u){var i,t;for(i=0;i<n.__k.length;i++)(t=n.__k[i])&&(t.__=n,t.__e&&("function"==typeof t.type&&t.__k.length>1&&T(t,l,u),l=x(u,t,t,n.__k,null,t.__e,l),"function"==typeof n.type&&(n.__d=l)));}function $(l,u,i,t,o,r,f,e,c){var a,v,h,y,_,w,k,g,b,x,A,P=u.type;if(void 0!==u.constructor)return null;null!=i.__h&&(c=i.__h,e=u.__e=i.__e,u.__h=null,r=[e]),(a=n.__b)&&a(u);try{n:if("function"==typeof P){if(g=u.props,b=(a=P.contextType)&&t[a.__c],x=a?b?b.props.value:a.__:t,i.__c?k=(v=u.__c=i.__c).__=v.__E:("prototype"in P&&P.prototype.render?u.__c=v=new P(g,x):(u.__c=v=new d(g,x),v.constructor=P,v.render=M),b&&b.sub(v),v.props=g,v.state||(v.state={}),v.context=x,v.__n=t,h=v.__d=!0,v.__h=[]),null==v.__s&&(v.__s=v.state),null!=P.getDerivedStateFromProps&&(v.__s==v.state&&(v.__s=s({},v.__s)),s(v.__s,P.getDerivedStateFromProps(g,v.__s))),y=v.props,_=v.state,h)null==P.getDerivedStateFromProps&&null!=v.componentWillMount&&v.componentWillMount(),null!=v.componentDidMount&&v.__h.push(v.componentDidMount);else {if(null==P.getDerivedStateFromProps&&g!==y&&null!=v.componentWillReceiveProps&&v.componentWillReceiveProps(g,x),!v.__e&&null!=v.shouldComponentUpdate&&!1===v.shouldComponentUpdate(g,v.__s,x)||u.__v===i.__v){v.props=g,v.state=v.__s,u.__v!==i.__v&&(v.__d=!1),v.__v=u,u.__e=i.__e,u.__k=i.__k,v.__h.length&&f.push(v),T(u,e,l);break n}null!=v.componentWillUpdate&&v.componentWillUpdate(g,v.__s,x),null!=v.componentDidUpdate&&v.__h.push(function(){v.componentDidUpdate(y,_,w);});}v.context=x,v.props=g,v.state=v.__s,(a=n.__r)&&a(u),v.__d=!1,v.__v=u,v.__P=l,a=v.render(v.props,v.state,v.context),v.state=v.__s,null!=v.getChildContext&&(t=s(s({},t),v.getChildContext())),h||null==v.getSnapshotBeforeUpdate||(w=v.getSnapshotBeforeUpdate(y,_)),A=null!=a&&a.type==p&&null==a.key?a.props.children:a,m(l,Array.isArray(A)?A:[A],u,i,t,o,r,f,e,c),v.base=u.__e,u.__h=null,v.__h.length&&f.push(v),k&&(v.__E=v.__=null),v.__e=!1;}else null==r&&u.__v===i.__v?(u.__k=i.__k,u.__e=i.__e):u.__e=H(i.__e,u,i,t,o,r,f,c);(a=n.diffed)&&a(u);}catch(l){u.__v=null,(c||null!=r)&&(u.__e=e,u.__h=!!c,r[r.indexOf(e)]=null),n.__e(l,u,i);}return u.__e}function j(l,u){n.__c&&n.__c(u,l),l.some(function(u){try{l=u.__h,u.__h=[],l.some(function(n){n.call(u);});}catch(l){n.__e(l,u.__v);}});}function H(n,l,u,i,t,o,r,c){var s,a,v,h,y,p=u.props,d=l.props;if(t="svg"===l.type||t,null!=o)for(s=0;s<o.length;s++)if(null!=(a=o[s])&&((null===l.type?3===a.nodeType:a.localName===l.type)||n==a)){n=a,o[s]=null;break}if(null==n){if(null===l.type)return document.createTextNode(d);n=t?document.createElementNS("http://www.w3.org/2000/svg",l.type):document.createElement(l.type,d.is&&{is:d.is}),o=null,c=!1;}if(null===l.type)p===d||c&&n.data===d||(n.data=d);else {if(null!=o&&(o=e.slice.call(n.childNodes)),v=(p=u.props||f).dangerouslySetInnerHTML,h=d.dangerouslySetInnerHTML,!c){if(null!=o)for(p={},y=0;y<n.attributes.length;y++)p[n.attributes[y].name]=n.attributes[y].value;(h||v)&&(h&&(v&&h.__html==v.__html||h.__html===n.innerHTML)||(n.innerHTML=h&&h.__html||""));}A(n,d,p,t,c),h?l.__k=[]:(s=l.props.children,m(n,Array.isArray(s)?s:[s],l,u,i,"foreignObject"!==l.type&&t,o,r,f,c)),c||("value"in d&&void 0!==(s=d.value)&&(s!==n.value||"progress"===l.type&&!s)&&C(n,"value",s,p.value,!1),"checked"in d&&void 0!==(s=d.checked)&&s!==n.checked&&C(n,"checked",s,p.checked,!1));}return n}function I(l,u,i){try{"function"==typeof l?l(u):l.current=u;}catch(l){n.__e(l,i);}}function L(l,u,i){var t,o,r;if(n.unmount&&n.unmount(l),(t=l.ref)&&(t.current&&t.current!==l.__e||I(t,null,u)),i||"function"==typeof l.type||(i=null!=(o=l.__e)),l.__e=l.__d=void 0,null!=(t=l.__c)){if(t.componentWillUnmount)try{t.componentWillUnmount();}catch(l){n.__e(l,u);}t.base=t.__P=null;}if(t=l.__k)for(r=0;r<t.length;r++)t[r]&&L(t[r],u,i);null!=o&&a(o);}function M(n,l,u){return this.constructor(n,u)}function O(l,u,i){var t,r,c;n.__&&n.__(l,u),r=(t=i===o)?null:i&&i.__k||u.__k,l=v(p,null,[l]),c=[],$(u,(t?u:i||u).__k=l,r||f,f,void 0!==u.ownerSVGElement,i&&!t?[i]:r?null:u.childNodes.length?e.slice.call(u.childNodes):null,c,i||f,t),j(c,l);}function B(n,l){var u={__c:l="__cC"+r++,__:n,Consumer:function(n,l){return n.children(l)},Provider:function(n,u,i){return this.getChildContext||(u=[],(i={})[l]=this,this.getChildContext=function(){return i},this.shouldComponentUpdate=function(n){this.props.value!==n.value&&u.some(k);},this.sub=function(n){u.push(n);var l=n.componentWillUnmount;n.componentWillUnmount=function(){u.splice(u.indexOf(n),1),l&&l.call(n);};}),n.children}};return u.Provider.__=u.Consumer.contextType=u}n={__e:function(n,l){for(var u,i,t,o=l.__h;l=l.__;)if((u=l.__c)&&!u.__)try{if((i=u.constructor)&&null!=i.getDerivedStateFromError&&(u.setState(i.getDerivedStateFromError(n)),t=u.__d),null!=u.componentDidCatch&&(u.componentDidCatch(n),t=u.__d),t)return l.__h=o,u.__E=u}catch(l){n=l;}throw n},__v:0},d.prototype.setState=function(n,l){var u;u=null!=this.__s&&this.__s!==this.state?this.__s:this.__s=s({},this.state),"function"==typeof n&&(n=n(s({},u),this.props)),n&&s(u,n),null!=n&&this.__v&&(l&&this.__h.push(l),k(this));},d.prototype.forceUpdate=function(n){this.__v&&(this.__e=!0,n&&this.__h.push(n),k(this));},d.prototype.render=p,u=[],i="function"==typeof Promise?Promise.prototype.then.bind(Promise.resolve()):setTimeout,g.__r=0,o=f,r=0;
 =======
+=======
+>>>>>>> danhmuc_list
     function __spreadArray(to, from, pack) {
         if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
             if (ar || !(i in from)) {
@@ -83,6 +97,9 @@ var FullCalendar = (function (exports) {
     var r,i=[],c=n.__b,f=n.__r,e=n.diffed,a=n.__c,v=n.unmount;function x(){i.forEach(function(t){if(t.__P)try{t.__H.__h.forEach(g),t.__H.__h.forEach(j$1),t.__H.__h=[];}catch(u){t.__H.__h=[],n.__e(u,t.__v);}}),i=[];}n.__b=function(n){c&&c(n);},n.__r=function(n){f&&f(n);var r=(n.__c).__H;r&&(r.__h.forEach(g),r.__h.forEach(j$1),r.__h=[]);},n.diffed=function(t){e&&e(t);var o=t.__c;o&&o.__H&&o.__H.__h.length&&(1!==i.push(o)&&r===n.requestAnimationFrame||((r=n.requestAnimationFrame)||function(n){var t,u=function(){clearTimeout(r),b&&cancelAnimationFrame(t),setTimeout(n);},r=setTimeout(u,100);b&&(t=requestAnimationFrame(u));})(x));},n.__c=function(t,u){u.some(function(t){try{t.__h.forEach(g),t.__h=t.__h.filter(function(n){return !n.__||j$1(n)});}catch(r){u.some(function(n){n.__h&&(n.__h=[]);}),u=[],n.__e(r,t.__v);}}),a&&a(t,u);},n.unmount=function(t){v&&v(t);var u=t.__c;if(u&&u.__H)try{u.__H.__.forEach(g);}catch(t){n.__e(t,u.__v);}};var b="function"==typeof requestAnimationFrame;function g(n){"function"==typeof n.__c&&n.__c();}function j$1(n){n.__c=n.__();}
 
     function C(n,t){for(var e in t)n[e]=t[e];return n}function S(n,t){for(var e in n)if("__source"!==e&&!(e in t))return !0;for(var r in t)if("__source"!==r&&n[r]!==t[r])return !0;return !1}function E(n){this.props=n;}(E.prototype=new p).isPureReactComponent=!0,E.prototype.shouldComponentUpdate=function(n,t){return S(this.props,n)||S(this.state,t)};var w=n.__b;n.__b=function(n){n.type&&n.type.__f&&n.ref&&(n.props.ref=n.ref,n.ref=null),w&&w(n);};var A=n.__e;n.__e=function(n,t,e){if(n.then)for(var r,u=t;u=u.__;)if((r=u.__c)&&r.__c)return null==t.__e&&(t.__e=e.__e,t.__k=e.__k),r.__c(n,t);A(n,t,e);};var O=n.unmount;function L(){this.__u=0,this.t=null,this.__b=null;}function U(n){var t=n.__.__c;return t&&t.__e&&t.__e(n)}function F(){this.u=null,this.o=null;}n.unmount=function(n){var t=n.__c;t&&t.__R&&t.__R(),t&&!0===n.__h&&(n.type=null),O&&O(n);},(L.prototype=new p).__c=function(n,t){var e=t.__c,r=this;null==r.t&&(r.t=[]),r.t.push(e);var u=U(r.__v),o=!1,i=function(){o||(o=!0,e.__R=null,u?u(l):l());};e.__R=i;var l=function(){if(!--r.__u){if(r.state.__e){var n=r.state.__e;r.__v.__k[0]=function n(t,e,r){return t&&(t.__v=null,t.__k=t.__k&&t.__k.map(function(t){return n(t,e,r)}),t.__c&&t.__c.__P===e&&(t.__e&&r.insertBefore(t.__e,t.__d),t.__c.__e=!0,t.__c.__P=r)),t}(n,n.__c.__P,n.__c.__O);}var t;for(r.setState({__e:r.__b=null});t=r.t.pop();)t.forceUpdate();}},f=!0===t.__h;r.__u++||f||r.setState({__e:r.__b=r.__v.__k[0]}),n.then(i,i);},L.prototype.componentWillUnmount=function(){this.t=[];},L.prototype.render=function(n,t){if(this.__b){if(this.__v.__k){var e=document.createElement("div"),r=this.__v.__k[0].__c;this.__v.__k[0]=function n(t,e,r){return t&&(t.__c&&t.__c.__H&&(t.__c.__H.__.forEach(function(n){"function"==typeof n.__c&&n.__c();}),t.__c.__H=null),null!=(t=C({},t)).__c&&(t.__c.__P===r&&(t.__c.__P=e),t.__c=null),t.__k=t.__k&&t.__k.map(function(t){return n(t,e,r)})),t}(this.__b,e,r.__O=r.__P);}this.__b=null;}var u=t.__e&&a$1(y,null,n.fallback);return u&&(u.__h=null),[a$1(y,null,t.__e?null:n.children),u]};var M=function(n,t,e){if(++e[1]===e[0]&&n.o.delete(t),n.props.revealOrder&&("t"!==n.props.revealOrder[0]||!n.o.size))for(e=n.u;e;){for(;e.length>3;)e.pop()();if(e[1]<e[0])break;n.u=e=e[2];}};function T(n){return this.getChildContext=function(){return n.context},n.children}function j(n){var t=this,e=n.i;t.componentWillUnmount=function(){N(null,t.l),t.l=null,t.i=null;},t.i&&t.i!==e&&t.componentWillUnmount(),n.__v?(t.l||(t.i=e,t.l={nodeType:1,parentNode:e,childNodes:[],appendChild:function(n){this.childNodes.push(n),t.i.appendChild(n);},insertBefore:function(n,e){this.childNodes.push(n),t.i.appendChild(n);},removeChild:function(n){this.childNodes.splice(this.childNodes.indexOf(n)>>>1,1),t.i.removeChild(n);}}),N(a$1(T,{context:t.context},n.__v),t.l)):t.l&&t.componentWillUnmount();}function I(n,t){return a$1(j,{__v:n,i:t})}(F.prototype=new p).__e=function(n){var t=this,e=U(t.__v),r=t.o.get(n);return r[0]++,function(u){var o=function(){t.props.revealOrder?(r.push(u),M(t,n,r)):u();};e?e(o):o();}},F.prototype.render=function(n){this.u=null,this.o=new Map;var t=w$1(n.children);n.revealOrder&&"b"===n.revealOrder[0]&&t.reverse();for(var e=t.length;e--;)this.o.set(t[e],this.u=[1,0,this.u]);return n.children},F.prototype.componentDidUpdate=F.prototype.componentDidMount=function(){var n=this;this.o.forEach(function(t,e){M(n,e,t);});};var W="undefined"!=typeof Symbol&&Symbol.for&&Symbol.for("react.element")||60103,P=/^(?:accent|alignment|arabic|baseline|cap|clip(?!PathU)|color|fill|flood|font|glyph(?!R)|horiz|marker(?!H|W|U)|overline|paint|stop|strikethrough|stroke|text(?!L)|underline|unicode|units|v|vector|vert|word|writing|x(?!C))[A-Z]/,V=function(n){return ("undefined"!=typeof Symbol&&"symbol"==typeof Symbol()?/fil|che|rad/i:/fil|che|ra/i).test(n)};p.prototype.isReactComponent={},["componentWillMount","componentWillReceiveProps","componentWillUpdate"].forEach(function(n){Object.defineProperty(p.prototype,n,{configurable:!0,get:function(){return this["UNSAFE_"+n]},set:function(t){Object.defineProperty(this,n,{configurable:!0,writable:!0,value:t});}});});var H=n.event;function Z(){}function Y(){return this.cancelBubble}function $(){return this.defaultPrevented}n.event=function(n){return H&&(n=H(n)),n.persist=Z,n.isPropagationStopped=Y,n.isDefaultPrevented=$,n.nativeEvent=n};var G={configurable:!0,get:function(){return this.class}},J=n.vnode;n.vnode=function(n){var t=n.type,e=n.props,r=e;if("string"==typeof t){for(var u in r={},e){var o=e[u];"value"===u&&"defaultValue"in e&&null==o||("defaultValue"===u&&"value"in e&&null==e.value?u="value":"download"===u&&!0===o?o="":/ondoubleclick/i.test(u)?u="ondblclick":/^onchange(textarea|input)/i.test(u+t)&&!V(e.type)?u="oninput":/^on(Ani|Tra|Tou|BeforeInp)/.test(u)?u=u.toLowerCase():P.test(u)?u=u.replace(/[A-Z0-9]/,"-$&").toLowerCase():null===o&&(o=void 0),r[u]=o);}"select"==t&&r.multiple&&Array.isArray(r.value)&&(r.value=w$1(e.children).forEach(function(n){n.props.selected=-1!=r.value.indexOf(n.props.value);})),"select"==t&&null!=r.defaultValue&&(r.value=w$1(e.children).forEach(function(n){n.props.selected=r.multiple?-1!=r.defaultValue.indexOf(n.props.value):r.defaultValue==n.props.value;})),n.props=r;}t&&e.class!=e.className&&(G.enumerable="className"in e,null!=e.className&&(r.class=e.className),Object.defineProperty(r,"className",G)),n.$$typeof=W,J&&J(n);};var K=n.__r;n.__r=function(n){K&&K(n);};"object"==typeof performance&&"function"==typeof performance.now?performance.now.bind(performance):function(){return Date.now()};
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
     var globalObj = typeof globalThis !== 'undefined' ? globalThis : window; // // TODO: streamline when killing IE11 support
@@ -91,6 +108,7 @@ var FullCalendar = (function (exports) {
     }
     else {
         globalObj.FullCalendarVDom = {
+<<<<<<< HEAD
 <<<<<<< HEAD
             Component: d,
             createElement: v,
@@ -101,6 +119,8 @@ var FullCalendar = (function (exports) {
             flushToDom: flushToDom,
             unmountComponentAtNode: unmountComponentAtNode,
 =======
+=======
+>>>>>>> danhmuc_list
             Component: p,
             createElement: a$1,
             render: N,
@@ -110,6 +130,9 @@ var FullCalendar = (function (exports) {
             createPortal: I,
             flushToDom: flushToDom$1,
             unmountComponentAtNode: unmountComponentAtNode$1,
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         };
     }
@@ -117,7 +140,11 @@ var FullCalendar = (function (exports) {
     // TODO: lock version
     // TODO: link gh issues
 <<<<<<< HEAD
+<<<<<<< HEAD
     function flushToDom() {
+=======
+    function flushToDom$1() {
+>>>>>>> danhmuc_list
 =======
     function flushToDom$1() {
 >>>>>>> danhmuc_list
@@ -128,7 +155,11 @@ var FullCalendar = (function (exports) {
         }
         n.debounceRendering = execCallbackSync;
 <<<<<<< HEAD
+<<<<<<< HEAD
         O(v(FakeComponent, {}), document.createElement('div'));
+=======
+        N(a$1(FakeComponent, {}), document.createElement('div'));
+>>>>>>> danhmuc_list
 =======
         N(a$1(FakeComponent, {}), document.createElement('div'));
 >>>>>>> danhmuc_list
@@ -143,6 +174,7 @@ var FullCalendar = (function (exports) {
             return _super !== null && _super.apply(this, arguments) || this;
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         FakeComponent.prototype.render = function () { return v('div', {}); };
         FakeComponent.prototype.componentDidMount = function () { this.setState({}); };
         return FakeComponent;
@@ -150,12 +182,17 @@ var FullCalendar = (function (exports) {
     function createContext(defaultValue) {
         var ContextType = B(defaultValue);
 =======
+=======
+>>>>>>> danhmuc_list
         FakeComponent.prototype.render = function () { return a$1('div', {}); };
         FakeComponent.prototype.componentDidMount = function () { this.setState({}); };
         return FakeComponent;
     }(p));
     function createContext$1(defaultValue) {
         var ContextType = q(defaultValue);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         var origProvider = ContextType.Provider;
         ContextType.Provider = function () {
@@ -186,8 +223,13 @@ var FullCalendar = (function (exports) {
         return ContextType;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     function unmountComponentAtNode(node) {
         O(null, node);
+=======
+    function unmountComponentAtNode$1(node) {
+        N(null, node);
+>>>>>>> danhmuc_list
 =======
     function unmountComponentAtNode$1(node) {
         N(null, node);
@@ -212,6 +254,10 @@ var FullCalendar = (function (exports) {
                 type: 'FETCH_EVENT_SOURCES',
                 sourceIds: [this.internalEventSource.sourceId],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                isRefetch: true,
+>>>>>>> danhmuc_list
 =======
                 isRefetch: true,
 >>>>>>> danhmuc_list
@@ -319,7 +365,10 @@ var FullCalendar = (function (exports) {
         }
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
     // Event Handling
     // ----------------------------------------------------------------------------------------------------------------
     // if intercepting bubbled events at the document/window/body level,
@@ -340,6 +389,9 @@ var FullCalendar = (function (exports) {
         guid$1 += 1;
         return 'fc-dom-' + guid$1;
     }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
     // Stops a mouse/touch event from doing it's native browser action
@@ -401,7 +453,10 @@ var FullCalendar = (function (exports) {
         });
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
     // ARIA workarounds
     // ----------------------------------------------------------------------------------------------------------------
     function createAriaClickAttrs(handler) {
@@ -418,6 +473,9 @@ var FullCalendar = (function (exports) {
             },
         };
     }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
     var guidNumber = 0;
@@ -520,7 +578,10 @@ var FullCalendar = (function (exports) {
         return '000'.substr(0, len - s.length) + s;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
     function formatWithOrdinals(formatter, args, fallbackText) {
         if (typeof formatter === 'function') {
             return formatter.apply(void 0, args);
@@ -530,6 +591,9 @@ var FullCalendar = (function (exports) {
         }
         return fallbackText;
     }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     /* Number Utilities
     ----------------------------------------------------------------------------------------------------------------------*/
@@ -1000,7 +1064,11 @@ var FullCalendar = (function (exports) {
                 (obj.minutes || obj.minute || 0) * 60 * 1000 + // minutes
                 (obj.seconds || obj.second || 0) * 1000 + // seconds
 <<<<<<< HEAD
+<<<<<<< HEAD
                 (obj.milliseconds || obj.millisecond || obj.ms || 0),
+=======
+                (obj.milliseconds || obj.millisecond || obj.ms || 0), // ms
+>>>>>>> danhmuc_list
 =======
                 (obj.milliseconds || obj.millisecond || obj.ms || 0), // ms
 >>>>>>> danhmuc_list
@@ -1408,7 +1476,11 @@ var FullCalendar = (function (exports) {
         }
         if (standardDatePropCnt === 0 && extendedSettings.week) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             return function (date) { return (formatWeekNumber(context.computeWeekNumber(date.marker), context.weekText, context.locale, extendedSettings.week)); };
+=======
+            return function (date) { return (formatWeekNumber(context.computeWeekNumber(date.marker), context.weekText, context.weekTextLong, context.locale, extendedSettings.week)); };
+>>>>>>> danhmuc_list
 =======
             return function (date) { return (formatWeekNumber(context.computeWeekNumber(date.marker), context.weekText, context.weekTextLong, context.locale, extendedSettings.week)); };
 >>>>>>> danhmuc_list
@@ -1504,6 +1576,7 @@ var FullCalendar = (function (exports) {
         return s;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     function formatWeekNumber(num, weekText, locale, display) {
         var parts = [];
         if (display === 'narrow') {
@@ -1514,6 +1587,8 @@ var FullCalendar = (function (exports) {
         }
         // otherwise, considered 'numeric'
 =======
+=======
+>>>>>>> danhmuc_list
     function formatWeekNumber(num, weekText, weekTextLong, locale, display) {
         var parts = [];
         if (display === 'long') {
@@ -1525,6 +1600,9 @@ var FullCalendar = (function (exports) {
         if (display === 'long' || display === 'short') {
             parts.push(' ');
         }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         parts.push(locale.simpleNumberFormat.format(num));
         if (locale.options.direction === 'rtl') { // TODO: use control characters instead?
@@ -1680,6 +1758,10 @@ var FullCalendar = (function (exports) {
         nextDayThreshold: createDuration,
         scrollTime: createDuration,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        scrollTimeReset: Boolean,
+>>>>>>> danhmuc_list
 =======
         scrollTimeReset: Boolean,
 >>>>>>> danhmuc_list
@@ -1737,6 +1819,10 @@ var FullCalendar = (function (exports) {
         dropAccept: identity,
         eventOrder: parseFieldSpecs,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        eventOrderStrict: Boolean,
+>>>>>>> danhmuc_list
 =======
         eventOrderStrict: Boolean,
 >>>>>>> danhmuc_list
@@ -1754,6 +1840,10 @@ var FullCalendar = (function (exports) {
         displayEventEnd: Boolean,
         weekText: String,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        weekTextLong: String,
+>>>>>>> danhmuc_list
 =======
         weekTextLong: String,
 >>>>>>> danhmuc_list
@@ -1811,6 +1901,10 @@ var FullCalendar = (function (exports) {
         rerenderDelay: Number,
         moreLinkText: identity,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        moreLinkHint: identity,
+>>>>>>> danhmuc_list
 =======
         moreLinkHint: identity,
 >>>>>>> danhmuc_list
@@ -1820,12 +1914,18 @@ var FullCalendar = (function (exports) {
         eventLongPressDelay: Number,
         selectMirror: Boolean,
 <<<<<<< HEAD
+<<<<<<< HEAD
         eventMinHeight: Number,
 =======
+=======
+>>>>>>> danhmuc_list
         eventMaxStack: Number,
         eventMinHeight: Number,
         eventMinWidth: Number,
         eventShortHeight: Number,
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         slotEventOverlap: Boolean,
         plugins: identity,
@@ -1840,9 +1940,12 @@ var FullCalendar = (function (exports) {
         visibleRange: identity,
         titleFormat: identity,
 <<<<<<< HEAD
+<<<<<<< HEAD
         // only used by list-view, but languages define the value, so we need it in base options
         noEventsText: String,
 =======
+=======
+>>>>>>> danhmuc_list
         eventInteractive: Boolean,
         // only used by list-view, but languages define the value, so we need it in base options
         noEventsText: String,
@@ -1856,6 +1959,9 @@ var FullCalendar = (function (exports) {
         moreLinkContent: identity,
         moreLinkDidMount: identity,
         moreLinkWillUnmount: identity,
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     };
     // do NOT give a type here. need `typeof BASE_OPTION_DEFAULTS` to give real results.
@@ -1883,6 +1989,10 @@ var FullCalendar = (function (exports) {
         nowIndicator: false,
         scrollTime: '06:00:00',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        scrollTimeReset: true,
+>>>>>>> danhmuc_list
 =======
         scrollTimeReset: true,
 >>>>>>> danhmuc_list
@@ -1912,6 +2022,12 @@ var FullCalendar = (function (exports) {
         navLinks: false,
         selectable: false,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        eventMinHeight: 15,
+        eventMinWidth: 30,
+        eventShortHeight: 30,
+>>>>>>> danhmuc_list
 =======
         eventMinHeight: 15,
         eventMinWidth: 30,
@@ -1947,6 +2063,10 @@ var FullCalendar = (function (exports) {
     var CALENDAR_OPTION_REFINERS = {
         buttonText: identity,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        buttonHints: identity,
+>>>>>>> danhmuc_list
 =======
         buttonHints: identity,
 >>>>>>> danhmuc_list
@@ -1961,6 +2081,10 @@ var FullCalendar = (function (exports) {
         footerToolbar: isBoolComplexEqual,
         buttonText: isBoolComplexEqual,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        buttonHints: isBoolComplexEqual,
+>>>>>>> danhmuc_list
 =======
         buttonHints: isBoolComplexEqual,
 >>>>>>> danhmuc_list
@@ -2153,7 +2277,11 @@ var FullCalendar = (function (exports) {
             borderColor: refined.borderColor || refined.color || '',
             textColor: refined.textColor || '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             classNames: (refined.className || []).concat(refined.classNames || []),
+=======
+            classNames: (refined.className || []).concat(refined.classNames || []), // join singular and plural
+>>>>>>> danhmuc_list
 =======
             classNames: (refined.className || []).concat(refined.classNames || []), // join singular and plural
 >>>>>>> danhmuc_list
@@ -2184,6 +2312,10 @@ var FullCalendar = (function (exports) {
         title: String,
         url: String,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        interactive: Boolean,
+>>>>>>> danhmuc_list
 =======
         interactive: Boolean,
 >>>>>>> danhmuc_list
@@ -2240,6 +2372,10 @@ var FullCalendar = (function (exports) {
             allDay: allDay,
             hasEnd: hasEnd,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            interactive: refined.interactive,
+>>>>>>> danhmuc_list
 =======
             interactive: refined.interactive,
 >>>>>>> danhmuc_list
@@ -2631,10 +2767,13 @@ var FullCalendar = (function (exports) {
             displayEventEnd = defaultDisplayEventEnd !== false;
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (displayEventTime && !eventDef.allDay && (seg.isStart || seg.isEnd)) {
             var segStart = startOverride || (seg.isStart ? eventInstance.range.start : (seg.start || seg.eventRange.range.start));
             var segEnd = endOverride || (seg.isEnd ? eventInstance.range.end : (seg.end || seg.eventRange.range.end));
 =======
+=======
+>>>>>>> danhmuc_list
         var wholeEventStart = eventInstance.range.start;
         var wholeEventEnd = eventInstance.range.end;
         var segStart = startOverride || seg.start || seg.eventRange.range.start;
@@ -2644,6 +2783,9 @@ var FullCalendar = (function (exports) {
         if (displayEventTime && !eventDef.allDay && (isStartDay || isEndDay)) {
             segStart = isStartDay ? wholeEventStart : segStart;
             segEnd = isEndDay ? wholeEventEnd : segEnd;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             if (displayEventEnd && eventDef.hasEnd) {
                 return dateEnv.formatRange(segStart, segEnd, timeFormat, {
@@ -2653,7 +2795,11 @@ var FullCalendar = (function (exports) {
             }
             return dateEnv.format(segStart, timeFormat, {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 forcedTzo: startOverride ? null : eventInstance.forcedStartTzo,
+=======
+                forcedTzo: startOverride ? null : eventInstance.forcedStartTzo, // nooooo, same
+>>>>>>> danhmuc_list
 =======
                 forcedTzo: startOverride ? null : eventInstance.forcedStartTzo, // nooooo, same
 >>>>>>> danhmuc_list
@@ -2713,7 +2859,10 @@ var FullCalendar = (function (exports) {
         // inverse-background events don't have specific instances. TODO: better solution
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
     function getSegAnchorAttrs(seg, context) {
         var _a = seg.eventRange, def = _a.def, instance = _a.instance;
         var url = def.url;
@@ -2742,6 +2891,9 @@ var FullCalendar = (function (exports) {
         }
         return {};
     }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
     var STANDARD_PROPS = {
@@ -3009,7 +3161,11 @@ var FullCalendar = (function (exports) {
     }());
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     var EVENT_SOURCE_REFINERS = {
+=======
+    var EVENT_SOURCE_REFINERS$1 = {
+>>>>>>> danhmuc_list
 =======
     var EVENT_SOURCE_REFINERS$1 = {
 >>>>>>> danhmuc_list
@@ -3061,7 +3217,11 @@ var FullCalendar = (function (exports) {
     }
     function buildEventSourceRefiners(context) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return __assign(__assign(__assign({}, EVENT_UI_REFINERS), EVENT_SOURCE_REFINERS), context.pluginHooks.eventSourceRefiners);
+=======
+        return __assign(__assign(__assign({}, EVENT_UI_REFINERS), EVENT_SOURCE_REFINERS$1), context.pluginHooks.eventSourceRefiners);
+>>>>>>> danhmuc_list
 =======
         return __assign(__assign(__assign({}, EVENT_UI_REFINERS), EVENT_SOURCE_REFINERS$1), context.pluginHooks.eventSourceRefiners);
 >>>>>>> danhmuc_list
@@ -3162,7 +3322,11 @@ var FullCalendar = (function (exports) {
                 args[_i - 1] = arguments[_i];
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
             (_a = this.currentDataManager.emitter).trigger.apply(_a, __spreadArrays([handlerName], args));
+=======
+            (_a = this.currentDataManager.emitter).trigger.apply(_a, __spreadArray([handlerName], args));
+>>>>>>> danhmuc_list
 =======
             (_a = this.currentDataManager.emitter).trigger.apply(_a, __spreadArray([handlerName], args));
 >>>>>>> danhmuc_list
@@ -3230,7 +3394,11 @@ var FullCalendar = (function (exports) {
         CalendarApi.prototype.getUnitViewSpec = function (unit) {
             var _a = this.getCurrentData(), viewSpecs = _a.viewSpecs, toolbarConfig = _a.toolbarConfig;
 <<<<<<< HEAD
+<<<<<<< HEAD
             var viewTypes = [].concat(toolbarConfig.viewsWithButtons);
+=======
+            var viewTypes = [].concat(toolbarConfig.header ? toolbarConfig.header.viewsWithButtons : [], toolbarConfig.footer ? toolbarConfig.footer.viewsWithButtons : []);
+>>>>>>> danhmuc_list
 =======
             var viewTypes = [].concat(toolbarConfig.header ? toolbarConfig.header.viewsWithButtons : [], toolbarConfig.footer ? toolbarConfig.footer.viewsWithButtons : []);
 >>>>>>> danhmuc_list
@@ -3372,7 +3540,11 @@ var FullCalendar = (function (exports) {
                     this.dispatch({
                         type: 'ADD_EVENTS',
 <<<<<<< HEAD
+<<<<<<< HEAD
                         eventStore: eventTupleToStore({ def: def, instance: instance }),
+=======
+                        eventStore: eventTupleToStore({ def: def, instance: instance }), // TODO: better util for two args?
+>>>>>>> danhmuc_list
 =======
                         eventStore: eventTupleToStore({ def: def, instance: instance }), // TODO: better util for two args?
 >>>>>>> danhmuc_list
@@ -3499,7 +3671,11 @@ var FullCalendar = (function (exports) {
         };
         CalendarApi.prototype.refetchEvents = function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.dispatch({ type: 'FETCH_EVENT_SOURCES' });
+=======
+            this.dispatch({ type: 'FETCH_EVENT_SOURCES', isRefetch: true });
+>>>>>>> danhmuc_list
 =======
             this.dispatch({ type: 'FETCH_EVENT_SOURCES', isRefetch: true });
 >>>>>>> danhmuc_list
@@ -3531,7 +3707,10 @@ var FullCalendar = (function (exports) {
             if (name in EVENT_DATE_REFINERS) {
                 console.warn('Could not set date-related prop \'name\'. Use one of the date-related methods instead.');
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
                 // TODO: make proper aliasing system?
             }
             else if (name === 'id') {
@@ -3539,6 +3718,9 @@ var FullCalendar = (function (exports) {
                 this.mutate({
                     standardProps: { publicId: val }, // hardcoded internal name
                 });
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             }
             else if (name in EVENT_NON_DATE_REFINERS) {
@@ -4049,6 +4231,10 @@ var FullCalendar = (function (exports) {
             }
             this.weekText = settings.weekText != null ? settings.weekText : settings.locale.options.weekText;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            this.weekTextLong = (settings.weekTextLong != null ? settings.weekTextLong : settings.locale.options.weekTextLong) || this.weekText;
+>>>>>>> danhmuc_list
 =======
             this.weekTextLong = (settings.weekTextLong != null ? settings.weekTextLong : settings.locale.options.weekTextLong) || this.weekText;
 >>>>>>> danhmuc_list
@@ -4355,17 +4541,23 @@ var FullCalendar = (function (exports) {
     var globalLocales = [];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     var RAW_EN_LOCALE = {
         code: 'en',
         week: {
             dow: 0,
             doy: 4,
 =======
+=======
+>>>>>>> danhmuc_list
     var MINIMAL_RAW_EN_LOCALE = {
         code: 'en',
         week: {
             dow: 0,
             doy: 4, // 4 days need to be within the year to be considered the first week
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         },
         direction: 'ltr',
@@ -4383,18 +4575,27 @@ var FullCalendar = (function (exports) {
         },
         weekText: 'W',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
         weekTextLong: 'Week',
         closeHint: 'Close',
         timeHint: 'Time',
         eventHint: 'Event',
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         allDayText: 'all-day',
         moreLinkText: 'more',
         noEventsText: 'No events to display',
     };
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
     var RAW_EN_LOCALE = __assign(__assign({}, MINIMAL_RAW_EN_LOCALE), { 
         // Includes things we don't want other locales to inherit,
         // things that derive from other translatable strings.
@@ -4409,6 +4610,9 @@ var FullCalendar = (function (exports) {
         }, viewHint: '$0 view', navLinkHint: 'Go to $0', moreLinkHint: function (eventCnt) {
             return "Show " + eventCnt + " more event" + (eventCnt === 1 ? '' : 's');
         } });
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     function organizeRawLocales(explicitRawLocales) {
         var defaultCode = explicitRawLocales.length > 0 ? explicitRawLocales[0].code : 'en';
@@ -4450,7 +4654,11 @@ var FullCalendar = (function (exports) {
     }
     function parseLocale(codeArg, codes, raw) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         var merged = mergeProps([RAW_EN_LOCALE, raw], ['buttonText']);
+=======
+        var merged = mergeProps([MINIMAL_RAW_EN_LOCALE, raw], ['buttonText']);
+>>>>>>> danhmuc_list
 =======
         var merged = mergeProps([MINIMAL_RAW_EN_LOCALE, raw], ['buttonText']);
 >>>>>>> danhmuc_list
@@ -4469,7 +4677,11 @@ var FullCalendar = (function (exports) {
     function formatDate(dateInput, options) {
         if (options === void 0) { options = {}; }
 <<<<<<< HEAD
+<<<<<<< HEAD
         var dateEnv = buildDateEnv(options);
+=======
+        var dateEnv = buildDateEnv$1(options);
+>>>>>>> danhmuc_list
 =======
         var dateEnv = buildDateEnv$1(options);
 >>>>>>> danhmuc_list
@@ -4484,7 +4696,11 @@ var FullCalendar = (function (exports) {
     }
     function formatRange(startInput, endInput, options) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         var dateEnv = buildDateEnv(typeof options === 'object' && options ? options : {}); // pass in if non-null object
+=======
+        var dateEnv = buildDateEnv$1(typeof options === 'object' && options ? options : {}); // pass in if non-null object
+>>>>>>> danhmuc_list
 =======
         var dateEnv = buildDateEnv$1(typeof options === 'object' && options ? options : {}); // pass in if non-null object
 >>>>>>> danhmuc_list
@@ -4503,7 +4719,11 @@ var FullCalendar = (function (exports) {
     }
     // TODO: more DRY and optimized
 <<<<<<< HEAD
+<<<<<<< HEAD
     function buildDateEnv(settings) {
+=======
+    function buildDateEnv$1(settings) {
+>>>>>>> danhmuc_list
 =======
     function buildDateEnv$1(settings) {
 >>>>>>> danhmuc_list
@@ -4518,7 +4738,11 @@ var FullCalendar = (function (exports) {
         display: 'inverse-background',
         classNames: 'fc-non-business',
 <<<<<<< HEAD
+<<<<<<< HEAD
         groupId: '_businessHours',
+=======
+        groupId: '_businessHours', // so multiple defs get grouped
+>>>>>>> danhmuc_list
 =======
         groupId: '_businessHours', // so multiple defs get grouped
 >>>>>>> danhmuc_list
@@ -4818,6 +5042,7 @@ var FullCalendar = (function (exports) {
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     function buildNavLinkData(date, type) {
         if (type === void 0) { type = 'day'; }
         return JSON.stringify({
@@ -4825,6 +5050,8 @@ var FullCalendar = (function (exports) {
             type: type,
         });
 =======
+=======
+>>>>>>> danhmuc_list
     var DAY_FORMAT = createFormatter({ year: 'numeric', month: 'long', day: 'numeric' });
     var WEEK_FORMAT = createFormatter({ week: 'long' });
     function buildNavLinkAttrs(context, dateMarker, viewType, isTabbable) {
@@ -4852,6 +5079,9 @@ var FullCalendar = (function (exports) {
                 : { onClick: handleInteraction }));
         }
         return { 'aria-label': dateStr };
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     }
 
@@ -4968,7 +5198,10 @@ var FullCalendar = (function (exports) {
         };
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
     function computeClippedClientRect(el) {
         var clippingParents = getClippingParents(el);
         var rect = el.getBoundingClientRect();
@@ -4984,6 +5217,9 @@ var FullCalendar = (function (exports) {
         }
         return rect;
     }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     function computeHeightAndMargins(el) {
         return el.getBoundingClientRect().height + computeVMargins(el);
@@ -5069,8 +5305,13 @@ var FullCalendar = (function (exports) {
         };
         Emitter.prototype.hasHandlers = function (type) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             return (this.handlers[type] && this.handlers[type].length) ||
                 (this.options && this.options[type]);
+=======
+            return Boolean((this.handlers[type] && this.handlers[type].length) ||
+                (this.options && this.options[type]));
+>>>>>>> danhmuc_list
 =======
             return Boolean((this.handlers[type] && this.handlers[type].length) ||
                 (this.options && this.options[type]));
@@ -5342,6 +5583,7 @@ var FullCalendar = (function (exports) {
     var createRef = FullCalendarVDom.createRef;
     var Fragment = FullCalendarVDom.Fragment;
 <<<<<<< HEAD
+<<<<<<< HEAD
     var createContext$1 = FullCalendarVDom.createContext;
     var flushToDom$1 = FullCalendarVDom.flushToDom;
     var unmountComponentAtNode$1 = FullCalendarVDom.unmountComponentAtNode;
@@ -5349,6 +5591,8 @@ var FullCalendar = (function (exports) {
     var ScrollResponder = /** @class */ (function () {
         function ScrollResponder(execFunc, emitter, scrollTime) {
 =======
+=======
+>>>>>>> danhmuc_list
     var createContext = FullCalendarVDom.createContext;
     var createPortal = FullCalendarVDom.createPortal;
     var flushToDom = FullCalendarVDom.flushToDom;
@@ -5357,12 +5601,19 @@ var FullCalendar = (function (exports) {
 
     var ScrollResponder = /** @class */ (function () {
         function ScrollResponder(execFunc, emitter, scrollTime, scrollTimeReset) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             var _this = this;
             this.execFunc = execFunc;
             this.emitter = emitter;
             this.scrollTime = scrollTime;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            this.scrollTimeReset = scrollTimeReset;
+>>>>>>> danhmuc_list
 =======
             this.scrollTimeReset = scrollTimeReset;
 >>>>>>> danhmuc_list
@@ -5378,7 +5629,11 @@ var FullCalendar = (function (exports) {
         };
         ScrollResponder.prototype.update = function (isDatesNew) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (isDatesNew) {
+=======
+            if (isDatesNew && this.scrollTimeReset) {
+>>>>>>> danhmuc_list
 =======
             if (isDatesNew && this.scrollTimeReset) {
 >>>>>>> danhmuc_list
@@ -5402,7 +5657,11 @@ var FullCalendar = (function (exports) {
     }());
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     var ViewContextType = createContext$1({}); // for Components
+=======
+    var ViewContextType = createContext({}); // for Components
+>>>>>>> danhmuc_list
 =======
     var ViewContextType = createContext({}); // for Components
 >>>>>>> danhmuc_list
@@ -5428,7 +5687,11 @@ var FullCalendar = (function (exports) {
             },
             createScrollResponder: function (execFunc) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 return new ScrollResponder(execFunc, emitter, createDuration(viewOptions.scrollTime));
+=======
+                return new ScrollResponder(execFunc, emitter, createDuration(viewOptions.scrollTime), viewOptions.scrollTimeReset);
+>>>>>>> danhmuc_list
 =======
                 return new ScrollResponder(execFunc, emitter, createDuration(viewOptions.scrollTime), viewOptions.scrollTimeReset);
 >>>>>>> danhmuc_list
@@ -5488,6 +5751,7 @@ var FullCalendar = (function (exports) {
         }
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     function reduceEventStore(eventStore, action, eventSources, dateProfile, context) {
         switch (action.type) {
@@ -5777,6 +6041,8 @@ var FullCalendar = (function (exports) {
 
 =======
 >>>>>>> danhmuc_list
+=======
+>>>>>>> danhmuc_list
     /*
     an INTERACTABLE date component
 
@@ -5798,6 +6064,7 @@ var FullCalendar = (function (exports) {
         DateComponent.prototype.queryHit = function (positionLeft, positionTop, elWidth, elHeight) {
             return null; // this should be abstract
         };
+<<<<<<< HEAD
 <<<<<<< HEAD
         // Validation
         // -----------------------------------------------------------------------------------------------------------------
@@ -5823,6 +6090,8 @@ var FullCalendar = (function (exports) {
         };
 =======
 >>>>>>> danhmuc_list
+=======
+>>>>>>> danhmuc_list
         // Pointer Interaction Utils
         // -----------------------------------------------------------------------------------------------------------------
         DateComponent.prototype.isValidSegDownEl = function (el) {
@@ -5833,7 +6102,11 @@ var FullCalendar = (function (exports) {
         DateComponent.prototype.isValidDateDownEl = function (el) {
             return !elementClosest(el, '.fc-event:not(.fc-bg-event)') &&
 <<<<<<< HEAD
+<<<<<<< HEAD
                 !elementClosest(el, '.fc-daygrid-more-link') && // a "more.." link
+=======
+                !elementClosest(el, '.fc-more-link') && // a "more.." link
+>>>>>>> danhmuc_list
 =======
                 !elementClosest(el, '.fc-more-link') && // a "more.." link
 >>>>>>> danhmuc_list
@@ -5865,7 +6138,10 @@ var FullCalendar = (function (exports) {
             isPropsValid: input.isPropsValid || null,
             externalDefTransforms: input.externalDefTransforms || [],
 <<<<<<< HEAD
+<<<<<<< HEAD
             eventResizeJoinTransforms: input.eventResizeJoinTransforms || [],
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
             viewContainerAppends: input.viewContainerAppends || [],
@@ -5907,7 +6183,10 @@ var FullCalendar = (function (exports) {
             isPropsValid: null,
             externalDefTransforms: [],
 <<<<<<< HEAD
+<<<<<<< HEAD
             eventResizeJoinTransforms: [],
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
             viewContainerAppends: [],
@@ -5976,7 +6255,10 @@ var FullCalendar = (function (exports) {
             isPropsValid: hooks1.isPropsValid || hooks0.isPropsValid,
             externalDefTransforms: hooks0.externalDefTransforms.concat(hooks1.externalDefTransforms),
 <<<<<<< HEAD
+<<<<<<< HEAD
             eventResizeJoinTransforms: hooks0.eventResizeJoinTransforms.concat(hooks1.eventResizeJoinTransforms),
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
             viewContainerAppends: hooks0.viewContainerAppends.concat(hooks1.viewContainerAppends),
@@ -6106,7 +6388,11 @@ var FullCalendar = (function (exports) {
     // TODO: rename to be about function, not default. use in above type
     // for forcing rerender of components that use the ContentHook
 <<<<<<< HEAD
+<<<<<<< HEAD
     var CustomContentRenderContext = createContext$1(0);
+=======
+    var CustomContentRenderContext = createContext(0);
+>>>>>>> danhmuc_list
 =======
     var CustomContentRenderContext = createContext(0);
 >>>>>>> danhmuc_list
@@ -6135,6 +6421,7 @@ var FullCalendar = (function (exports) {
             }
         };
         ContentHookInner.prototype.renderInnerContent = function () {
+<<<<<<< HEAD
 <<<<<<< HEAD
             var contentTypeHandlers = this.context.pluginHooks.contentTypeHandlers;
             var _a = this, props = _a.props, customContentInfo = _a.customContentInfo;
@@ -6170,6 +6457,8 @@ var FullCalendar = (function (exports) {
         ContentHookInner.prototype.updateCustomContent = function () {
             if (this.customContentInfo) {
 =======
+=======
+>>>>>>> danhmuc_list
             var customContentInfo = this.customContentInfo; // only populated if using non-[p]react node(s)
             var innerContent = this.getInnerContent();
             var meta = this.getContentMeta(innerContent);
@@ -6220,6 +6509,9 @@ var FullCalendar = (function (exports) {
         };
         ContentHookInner.prototype.updateCustomContent = function () {
             if (this.customContentInfo) { // for non-[p]react
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                 this.customContentInfo.render(this.innerElRef.current || this.props.backupElRef.current, // the element to render into
                 this.customContentInfo.contentVal);
@@ -6365,7 +6657,10 @@ var FullCalendar = (function (exports) {
             return null;
         };
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
         var queryButtonTitle = function (optionsSubset) {
             var buttonHints = optionsSubset.buttonHints || {};
             var buttonKey = viewDef.defaults.buttonTextKey; // use same key as text
@@ -6380,6 +6675,9 @@ var FullCalendar = (function (exports) {
             }
             return null;
         };
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         return {
             type: viewDef.type,
@@ -6397,7 +6695,10 @@ var FullCalendar = (function (exports) {
                 queryButtonText(BASE_OPTION_DEFAULTS) ||
                 viewDef.type,
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
             // not DRY
             buttonTitleOverride: queryButtonTitle(dynamicOptionOverrides) ||
                 queryButtonTitle(optionOverrides) ||
@@ -6406,6 +6707,9 @@ var FullCalendar = (function (exports) {
                 viewDef.defaults.buttonHint ||
                 queryButtonTitle(BASE_OPTION_DEFAULTS),
             // will eventually fall back to buttonText
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         };
     }
@@ -6497,6 +6801,10 @@ var FullCalendar = (function (exports) {
                 // how far the current date will move for a prev/next operation
                 dateIncrement: this.buildDateIncrement(currentInfo.duration),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                // pass a fallback (might be null) ^
+>>>>>>> danhmuc_list
 =======
                 // pass a fallback (might be null) ^
 >>>>>>> danhmuc_list
@@ -6759,12 +7067,16 @@ var FullCalendar = (function (exports) {
                 return dateProfileGenerator.build(action.dateMarker || currentDate);
             case 'CHANGE_DATE':
 <<<<<<< HEAD
+<<<<<<< HEAD
                 if (!currentDateProfile.activeRange ||
                     !rangeContainsMarker(currentDateProfile.currentRange, action.dateMarker) // don't move if date already in view
                 ) {
                     return dateProfileGenerator.build(action.dateMarker);
                 }
                 break;
+=======
+                return dateProfileGenerator.build(action.dateMarker);
+>>>>>>> danhmuc_list
 =======
                 return dateProfileGenerator.build(action.dateMarker);
 >>>>>>> danhmuc_list
@@ -6807,7 +7119,11 @@ var FullCalendar = (function (exports) {
                 return fetchSourcesByIds(eventSources, action.sourceIds ? // why no type?
                     arrayToHash(action.sourceIds) :
 <<<<<<< HEAD
+<<<<<<< HEAD
                     excludeStaticSources(eventSources, context), activeRange, context);
+=======
+                    excludeStaticSources(eventSources, context), activeRange, action.isRefetch || false, context);
+>>>>>>> danhmuc_list
 =======
                     excludeStaticSources(eventSources, context), activeRange, action.isRefetch || false, context);
 >>>>>>> danhmuc_list
@@ -6823,7 +7139,11 @@ var FullCalendar = (function (exports) {
     function reduceEventSourcesNewTimeZone(eventSources, dateProfile, context) {
         var activeRange = dateProfile ? dateProfile.activeRange : null; // need this check?
 <<<<<<< HEAD
+<<<<<<< HEAD
         return fetchSourcesByIds(eventSources, excludeStaticSources(eventSources, context), activeRange, context);
+=======
+        return fetchSourcesByIds(eventSources, excludeStaticSources(eventSources, context), activeRange, true, context);
+>>>>>>> danhmuc_list
 =======
         return fetchSourcesByIds(eventSources, excludeStaticSources(eventSources, context), activeRange, true, context);
 >>>>>>> danhmuc_list
@@ -6852,7 +7172,11 @@ var FullCalendar = (function (exports) {
     }
     function fetchDirtySources(sourceHash, fetchRange, context) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return fetchSourcesByIds(sourceHash, filterHash(sourceHash, function (eventSource) { return isSourceDirty(eventSource, fetchRange, context); }), fetchRange, context);
+=======
+        return fetchSourcesByIds(sourceHash, filterHash(sourceHash, function (eventSource) { return isSourceDirty(eventSource, fetchRange, context); }), fetchRange, false, context);
+>>>>>>> danhmuc_list
 =======
         return fetchSourcesByIds(sourceHash, filterHash(sourceHash, function (eventSource) { return isSourceDirty(eventSource, fetchRange, context); }), fetchRange, false, context);
 >>>>>>> danhmuc_list
@@ -6868,7 +7192,11 @@ var FullCalendar = (function (exports) {
             fetchRange.end > eventSource.fetchRange.end;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     function fetchSourcesByIds(prevSources, sourceIdHash, fetchRange, context) {
+=======
+    function fetchSourcesByIds(prevSources, sourceIdHash, fetchRange, isRefetch, context) {
+>>>>>>> danhmuc_list
 =======
     function fetchSourcesByIds(prevSources, sourceIdHash, fetchRange, isRefetch, context) {
 >>>>>>> danhmuc_list
@@ -6877,7 +7205,11 @@ var FullCalendar = (function (exports) {
             var source = prevSources[sourceId];
             if (sourceIdHash[sourceId]) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 nextSources[sourceId] = fetchSource(source, fetchRange, context);
+=======
+                nextSources[sourceId] = fetchSource(source, fetchRange, isRefetch, context);
+>>>>>>> danhmuc_list
 =======
                 nextSources[sourceId] = fetchSource(source, fetchRange, isRefetch, context);
 >>>>>>> danhmuc_list
@@ -6889,7 +7221,11 @@ var FullCalendar = (function (exports) {
         return nextSources;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     function fetchSource(eventSource, fetchRange, context) {
+=======
+    function fetchSource(eventSource, fetchRange, isRefetch, context) {
+>>>>>>> danhmuc_list
 =======
     function fetchSource(eventSource, fetchRange, isRefetch, context) {
 >>>>>>> danhmuc_list
@@ -6900,6 +7236,10 @@ var FullCalendar = (function (exports) {
             eventSource: eventSource,
             range: fetchRange,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            isRefetch: isRefetch,
+>>>>>>> danhmuc_list
 =======
             isRefetch: isRefetch,
 >>>>>>> danhmuc_list
@@ -6974,7 +7314,10 @@ var FullCalendar = (function (exports) {
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
     function reduceEventStore(eventStore, action, eventSources, dateProfile, context) {
         switch (action.type) {
             case 'RECEIVE_EVENTS': // raw
@@ -7081,6 +7424,9 @@ var FullCalendar = (function (exports) {
         };
     }
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     function reduceDateSelection(currentSelection, action) {
         switch (action.type) {
@@ -7140,6 +7486,7 @@ var FullCalendar = (function (exports) {
 
     function parseToolbars(calendarOptions, calendarOptionOverrides, theme, viewSpecs, calendarApi) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         var viewsWithButtons = [];
         var headerToolbar = calendarOptions.headerToolbar ? parseToolbar(calendarOptions.headerToolbar, calendarOptions, calendarOptionOverrides, theme, viewSpecs, calendarApi, viewsWithButtons) : null;
         var footerToolbar = calendarOptions.footerToolbar ? parseToolbar(calendarOptions.footerToolbar, calendarOptions, calendarOptionOverrides, theme, viewSpecs, calendarApi, viewsWithButtons) : null;
@@ -7148,6 +7495,8 @@ var FullCalendar = (function (exports) {
     function parseToolbar(sectionStrHash, calendarOptions, calendarOptionOverrides, theme, viewSpecs, calendarApi, viewsWithButtons) {
         return mapHash(sectionStrHash, function (sectionStr) { return parseSection(sectionStr, calendarOptions, calendarOptionOverrides, theme, viewSpecs, calendarApi, viewsWithButtons); });
 =======
+=======
+>>>>>>> danhmuc_list
         var header = calendarOptions.headerToolbar ? parseToolbar(calendarOptions.headerToolbar, calendarOptions, calendarOptionOverrides, theme, viewSpecs, calendarApi) : null;
         var footer = calendarOptions.footerToolbar ? parseToolbar(calendarOptions.footerToolbar, calendarOptions, calendarOptionOverrides, theme, viewSpecs, calendarApi) : null;
         return { header: header, footer: footer };
@@ -7164,13 +7513,22 @@ var FullCalendar = (function (exports) {
             hasTitle = hasTitle || sectionRes.hasTitle;
         }
         return { sectionWidgets: sectionWidgets, viewsWithButtons: viewsWithButtons, hasTitle: hasTitle };
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     }
     /*
     BAD: querying icons and text here. should be done at render time
     */
 <<<<<<< HEAD
+<<<<<<< HEAD
     function parseSection(sectionStr, calendarOptions, calendarOptionOverrides, theme, viewSpecs, calendarApi, viewsWithButtons) {
+=======
+    function parseSection(sectionStr, calendarOptions, // defaults+overrides, then refined
+    calendarOptionOverrides, // overrides only!, unrefined :(
+    theme, viewSpecs, calendarApi) {
+>>>>>>> danhmuc_list
 =======
     function parseSection(sectionStr, calendarOptions, // defaults+overrides, then refined
     calendarOptionOverrides, // overrides only!, unrefined :(
@@ -7181,10 +7539,13 @@ var FullCalendar = (function (exports) {
         var calendarButtonTextOverrides = calendarOptionOverrides.buttonText || {};
         var calendarButtonText = calendarOptions.buttonText || {};
 <<<<<<< HEAD
+<<<<<<< HEAD
         var sectionSubstrs = sectionStr ? sectionStr.split(' ') : [];
         return sectionSubstrs.map(function (buttonGroupStr) { return (buttonGroupStr.split(',').map(function (buttonName) {
             if (buttonName === 'title') {
 =======
+=======
+>>>>>>> danhmuc_list
         var calendarButtonHintOverrides = calendarOptionOverrides.buttonHints || {};
         var calendarButtonHints = calendarOptions.buttonHints || {};
         var sectionSubstrs = sectionStr ? sectionStr.split(' ') : [];
@@ -7193,6 +7554,9 @@ var FullCalendar = (function (exports) {
         var widgets = sectionSubstrs.map(function (buttonGroupStr) { return (buttonGroupStr.split(',').map(function (buttonName) {
             if (buttonName === 'title') {
                 hasTitle = true;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                 return { buttonName: buttonName };
             }
@@ -7202,17 +7566,23 @@ var FullCalendar = (function (exports) {
             var buttonIcon; // only one of these will be set
             var buttonText; // "
 <<<<<<< HEAD
+<<<<<<< HEAD
             if ((customButtonProps = calendarCustomButtons[buttonName])) {
                 buttonClick = function (ev) {
                     if (customButtonProps.click) {
                         customButtonProps.click.call(ev.target, ev, ev.target);
 =======
+=======
+>>>>>>> danhmuc_list
             var buttonHint;
             // ^ for the title="" attribute, for accessibility
             if ((customButtonProps = calendarCustomButtons[buttonName])) {
                 buttonClick = function (ev) {
                     if (customButtonProps.click) {
                         customButtonProps.click.call(ev.target, ev, ev.target); // TODO: use Calendar this context?
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                     }
                 };
@@ -7220,6 +7590,10 @@ var FullCalendar = (function (exports) {
                     (buttonIcon = theme.getIconClass(buttonName, isRtl)) ||
                     (buttonText = customButtonProps.text);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                buttonHint = customButtonProps.hint || customButtonProps.text;
+>>>>>>> danhmuc_list
 =======
                 buttonHint = customButtonProps.hint || customButtonProps.text;
 >>>>>>> danhmuc_list
@@ -7233,13 +7607,19 @@ var FullCalendar = (function (exports) {
                     (buttonIcon = theme.getIconClass(buttonName, isRtl)) ||
                     (buttonText = viewSpec.buttonTextDefault);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
                 var textFallback = viewSpec.buttonTextOverride ||
                     viewSpec.buttonTextDefault;
                 buttonHint = formatWithOrdinals(viewSpec.buttonTitleOverride ||
                     viewSpec.buttonTitleDefault ||
                     calendarOptions.viewHint, [textFallback, buttonName], // view-name = buttonName
                 textFallback);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             }
             else if (calendarApi[buttonName]) { // a calendarApi method
@@ -7248,6 +7628,7 @@ var FullCalendar = (function (exports) {
                 };
                 (buttonText = calendarButtonTextOverrides[buttonName]) ||
                     (buttonIcon = theme.getIconClass(buttonName, isRtl)) ||
+<<<<<<< HEAD
 <<<<<<< HEAD
                     (buttonText = calendarButtonText[buttonName]);
                 //            ^ everything else is considered default
@@ -7258,6 +7639,8 @@ var FullCalendar = (function (exports) {
 
     var eventSourceDef = {
 =======
+=======
+>>>>>>> danhmuc_list
                     (buttonText = calendarButtonText[buttonName]); // everything else is considered default
                 if (buttonName === 'prevYear' || buttonName === 'nextYear') {
                     var prevOrNext = buttonName === 'prevYear' ? 'prev' : 'next';
@@ -7281,6 +7664,9 @@ var FullCalendar = (function (exports) {
     }
 
     var eventSourceDef$3 = {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         ignoreRange: true,
         parseMeta: function (refined) {
@@ -7297,15 +7683,21 @@ var FullCalendar = (function (exports) {
     };
     var arrayEventSourcePlugin = createPlugin({
 <<<<<<< HEAD
+<<<<<<< HEAD
         eventSourceDefs: [eventSourceDef],
     });
 
     var eventSourceDef$1 = {
 =======
+=======
+>>>>>>> danhmuc_list
         eventSourceDefs: [eventSourceDef$3],
     });
 
     var eventSourceDef$2 = {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         parseMeta: function (refined) {
             if (typeof refined.events === 'function') {
@@ -7323,7 +7715,11 @@ var FullCalendar = (function (exports) {
     };
     var funcEventSourcePlugin = createPlugin({
 <<<<<<< HEAD
+<<<<<<< HEAD
         eventSourceDefs: [eventSourceDef$1],
+=======
+        eventSourceDefs: [eventSourceDef$2],
+>>>>>>> danhmuc_list
 =======
         eventSourceDefs: [eventSourceDef$2],
 >>>>>>> danhmuc_list
@@ -7392,7 +7788,11 @@ var FullCalendar = (function (exports) {
     };
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     var eventSourceDef$2 = {
+=======
+    var eventSourceDef$1 = {
+>>>>>>> danhmuc_list
 =======
     var eventSourceDef$1 = {
 >>>>>>> danhmuc_list
@@ -7413,7 +7813,11 @@ var FullCalendar = (function (exports) {
         fetch: function (arg, success, failure) {
             var meta = arg.eventSource.meta;
 <<<<<<< HEAD
+<<<<<<< HEAD
             var requestParams = buildRequestParams(meta, arg.range, arg.context);
+=======
+            var requestParams = buildRequestParams$1(meta, arg.range, arg.context);
+>>>>>>> danhmuc_list
 =======
             var requestParams = buildRequestParams$1(meta, arg.range, arg.context);
 >>>>>>> danhmuc_list
@@ -7427,9 +7831,15 @@ var FullCalendar = (function (exports) {
     var jsonFeedEventSourcePlugin = createPlugin({
         eventSourceRefiners: JSON_FEED_EVENT_SOURCE_REFINERS,
 <<<<<<< HEAD
+<<<<<<< HEAD
         eventSourceDefs: [eventSourceDef$2],
     });
     function buildRequestParams(meta, range, context) {
+=======
+        eventSourceDefs: [eventSourceDef$1],
+    });
+    function buildRequestParams$1(meta, range, context) {
+>>>>>>> danhmuc_list
 =======
         eventSourceDefs: [eventSourceDef$1],
     });
@@ -7501,7 +7911,11 @@ var FullCalendar = (function (exports) {
                     allDayGuess: Boolean(!refined.startTime && !refined.endTime),
                     duration: duration,
 <<<<<<< HEAD
+<<<<<<< HEAD
                     typeData: recurringData,
+=======
+                    typeData: recurringData, // doesn't need endTime anymore but oh well
+>>>>>>> danhmuc_list
 =======
                     typeData: recurringData, // doesn't need endTime anymore but oh well
 >>>>>>> danhmuc_list
@@ -7613,8 +8027,13 @@ var FullCalendar = (function (exports) {
             ],
             contentTypeHandlers: {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 html: function () { return ({ render: injectHtml }); },
                 domNodes: function () { return ({ render: injectDomNodes }); },
+=======
+                html: buildHtmlRenderer,
+                domNodes: buildDomNodeRenderer,
+>>>>>>> danhmuc_list
 =======
                 html: buildHtmlRenderer,
                 domNodes: buildDomNodeRenderer,
@@ -7626,6 +8045,7 @@ var FullCalendar = (function (exports) {
             },
         }),
     ];
+<<<<<<< HEAD
 <<<<<<< HEAD
     function injectHtml(el, html) {
         el.innerHTML = html;
@@ -7641,6 +8061,8 @@ var FullCalendar = (function (exports) {
             oldNodes.forEach(removeElement);
         }
 =======
+=======
+>>>>>>> danhmuc_list
     function buildHtmlRenderer() {
         var currentEl = null;
         var currentHtml = '';
@@ -7680,6 +8102,9 @@ var FullCalendar = (function (exports) {
             currentEl = null;
         }
         return { render: render, destroy: destroy };
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     }
 
@@ -7846,7 +8271,11 @@ var FullCalendar = (function (exports) {
             this.buildLocale = memoize(buildLocale);
             this.buildPluginHooks = buildBuildPluginHooks();
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.buildDateEnv = memoize(buildDateEnv$1);
+=======
+            this.buildDateEnv = memoize(buildDateEnv);
+>>>>>>> danhmuc_list
 =======
             this.buildDateEnv = memoize(buildDateEnv);
 >>>>>>> danhmuc_list
@@ -7966,7 +8395,13 @@ var FullCalendar = (function (exports) {
             currentDate = reduceCurrentDate(currentDate, action);
             dateProfile = reduceDateProfile(dateProfile, action, currentDate, currentViewData.dateProfileGenerator);
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (!rangeContainsMarker(dateProfile.currentRange, currentDate)) {
+=======
+            if (action.type === 'PREV' || // TODO: move this logic into DateProfileGenerator
+                action.type === 'NEXT' || // "
+                !rangeContainsMarker(dateProfile.currentRange, currentDate)) {
+>>>>>>> danhmuc_list
 =======
             if (action.type === 'PREV' || // TODO: move this logic into DateProfileGenerator
                 action.type === 'NEXT' || // "
@@ -8193,7 +8628,11 @@ var FullCalendar = (function (exports) {
         return CalendarDataManager;
     }());
 <<<<<<< HEAD
+<<<<<<< HEAD
     function buildDateEnv$1(timeZone, explicitLocale, weekNumberCalculation, firstDay, weekText, pluginHooks, availableLocaleData, defaultSeparator) {
+=======
+    function buildDateEnv(timeZone, explicitLocale, weekNumberCalculation, firstDay, weekText, pluginHooks, availableLocaleData, defaultSeparator) {
+>>>>>>> danhmuc_list
 =======
     function buildDateEnv(timeZone, explicitLocale, weekNumberCalculation, firstDay, weekText, pluginHooks, availableLocaleData, defaultSeparator) {
 >>>>>>> danhmuc_list
@@ -8250,6 +8689,10 @@ var FullCalendar = (function (exports) {
                 textColor: options.eventTextColor,
                 color: options.eventColor,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                // classNames: options.eventClassNames // render hook will handle this
+>>>>>>> danhmuc_list
 =======
                 // classNames: options.eventClassNames // render hook will handle this
 >>>>>>> danhmuc_list
@@ -8330,10 +8773,13 @@ var FullCalendar = (function (exports) {
     }());
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     var Interaction = /** @class */ (function () {
         function Interaction(settings) {
             this.component = settings.component;
 =======
+=======
+>>>>>>> danhmuc_list
     var SegHierarchy = /** @class */ (function () {
         function SegHierarchy() {
             // settings
@@ -8576,6 +9022,9 @@ var FullCalendar = (function (exports) {
         function Interaction(settings) {
             this.component = settings.component;
             this.isHitComboAllowed = settings.isHitComboAllowed || null;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         }
         Interaction.prototype.destroy = function () {
@@ -8588,6 +9037,10 @@ var FullCalendar = (function (exports) {
             el: input.el,
             useEventCenter: input.useEventCenter != null ? input.useEventCenter : true,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            isHitComboAllowed: input.isHitComboAllowed || null,
+>>>>>>> danhmuc_list
 =======
             isHitComboAllowed: input.isHitComboAllowed || null,
 >>>>>>> danhmuc_list
@@ -8667,7 +9120,11 @@ var FullCalendar = (function (exports) {
             var _this = this;
             var children = this.props.widgetGroups.map(function (widgetGroup) { return _this.renderWidgetGroup(widgetGroup); });
 <<<<<<< HEAD
+<<<<<<< HEAD
             return createElement.apply(void 0, __spreadArrays(['div', { className: 'fc-toolbar-chunk' }], children));
+=======
+            return createElement.apply(void 0, __spreadArray(['div', { className: 'fc-toolbar-chunk' }], children));
+>>>>>>> danhmuc_list
 =======
             return createElement.apply(void 0, __spreadArray(['div', { className: 'fc-toolbar-chunk' }], children));
 >>>>>>> danhmuc_list
@@ -8679,6 +9136,7 @@ var FullCalendar = (function (exports) {
             var isOnlyButtons = true;
             for (var _i = 0, widgetGroup_1 = widgetGroup; _i < widgetGroup_1.length; _i++) {
                 var widget = widgetGroup_1[_i];
+<<<<<<< HEAD
 <<<<<<< HEAD
                 var buttonName = widget.buttonName, buttonClick = widget.buttonClick, buttonText = widget.buttonText, buttonIcon = widget.buttonIcon;
                 if (buttonName === 'title') {
@@ -8696,6 +9154,8 @@ var FullCalendar = (function (exports) {
                         (!props.isNextEnabled && buttonName === 'next');
                     children.push(createElement("button", __assign({ disabled: isDisabled, className: buttonClasses.join(' '), onClick: buttonClick, type: "button" }, ariaAttrs), buttonText || (buttonIcon ? createElement("span", { className: buttonIcon }) : '')));
 =======
+=======
+>>>>>>> danhmuc_list
                 var buttonName = widget.buttonName, buttonClick = widget.buttonClick, buttonText = widget.buttonText, buttonIcon = widget.buttonIcon, buttonHint = widget.buttonHint;
                 if (buttonName === 'title') {
                     isOnlyButtons = false;
@@ -8711,13 +9171,20 @@ var FullCalendar = (function (exports) {
                         buttonClasses.push(theme.getClass('buttonActive'));
                     }
                     children.push(createElement("button", { type: "button", title: typeof buttonHint === 'function' ? buttonHint(props.navUnit) : buttonHint, disabled: isDisabled, "aria-pressed": isPressed, className: buttonClasses.join(' '), onClick: buttonClick }, buttonText || (buttonIcon ? createElement("span", { className: buttonIcon }) : '')));
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                 }
             }
             if (children.length > 1) {
                 var groupClassName = (isOnlyButtons && theme.getClass('buttonGroup')) || '';
 <<<<<<< HEAD
+<<<<<<< HEAD
                 return createElement.apply(void 0, __spreadArrays(['div', { className: groupClassName }], children));
+=======
+                return createElement.apply(void 0, __spreadArray(['div', { className: groupClassName }], children));
+>>>>>>> danhmuc_list
 =======
                 return createElement.apply(void 0, __spreadArray(['div', { className: groupClassName }], children));
 >>>>>>> danhmuc_list
@@ -8738,6 +9205,7 @@ var FullCalendar = (function (exports) {
             var startContent;
             var endContent;
 <<<<<<< HEAD
+<<<<<<< HEAD
             var centerContent = model.center;
             if (model.left) {
                 forceLtr = true;
@@ -8753,6 +9221,8 @@ var FullCalendar = (function (exports) {
             else {
                 endContent = model.end;
 =======
+=======
+>>>>>>> danhmuc_list
             var sectionWidgets = model.sectionWidgets;
             var centerContent = sectionWidgets.center;
             if (sectionWidgets.left) {
@@ -8768,6 +9238,9 @@ var FullCalendar = (function (exports) {
             }
             else {
                 endContent = sectionWidgets.end;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             }
             var classNames = [
@@ -8783,7 +9256,11 @@ var FullCalendar = (function (exports) {
         Toolbar.prototype.renderSection = function (key, widgetGroups) {
             var props = this.props;
 <<<<<<< HEAD
+<<<<<<< HEAD
             return (createElement(ToolbarSection, { key: key, widgetGroups: widgetGroups, title: props.title, activeButton: props.activeButton, isTodayEnabled: props.isTodayEnabled, isPrevEnabled: props.isPrevEnabled, isNextEnabled: props.isNextEnabled }));
+=======
+            return (createElement(ToolbarSection, { key: key, widgetGroups: widgetGroups, title: props.title, navUnit: props.navUnit, activeButton: props.activeButton, isTodayEnabled: props.isTodayEnabled, isPrevEnabled: props.isPrevEnabled, isNextEnabled: props.isNextEnabled, titleId: props.titleId }));
+>>>>>>> danhmuc_list
 =======
             return (createElement(ToolbarSection, { key: key, widgetGroups: widgetGroups, title: props.title, navUnit: props.navUnit, activeButton: props.activeButton, isTodayEnabled: props.isTodayEnabled, isPrevEnabled: props.isPrevEnabled, isNextEnabled: props.isNextEnabled, titleId: props.titleId }));
 >>>>>>> danhmuc_list
@@ -8817,7 +9294,11 @@ var FullCalendar = (function (exports) {
                 (aspectRatio || props.liquid || props.height)
                     ? 'fc-view-harness-active' // harness controls the height
 <<<<<<< HEAD
+<<<<<<< HEAD
                     : 'fc-view-harness-passive',
+=======
+                    : 'fc-view-harness-passive', // let the view do the height
+>>>>>>> danhmuc_list
 =======
                     : 'fc-view-harness-passive', // let the view do the height
 >>>>>>> danhmuc_list
@@ -8840,7 +9321,11 @@ var FullCalendar = (function (exports) {
                 height = props.height || '';
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
             return (createElement("div", { ref: this.handleEl, onClick: props.onClick, className: classNames.join(' '), style: { height: height, paddingBottom: paddingBottom } }, props.children));
+=======
+            return (createElement("div", { "aria-labelledby": props.labeledById, ref: this.handleEl, className: classNames.join(' '), style: { height: height, paddingBottom: paddingBottom } }, props.children));
+>>>>>>> danhmuc_list
 =======
             return (createElement("div", { "aria-labelledby": props.labeledById, ref: this.handleEl, className: classNames.join(' '), style: { height: height, paddingBottom: paddingBottom } }, props.children));
 >>>>>>> danhmuc_list
@@ -8953,11 +9438,14 @@ var FullCalendar = (function (exports) {
             _this.buildViewPropTransformers = memoize(buildViewPropTransformers);
             _this.buildToolbarProps = memoize(buildToolbarProps);
 <<<<<<< HEAD
+<<<<<<< HEAD
             _this.handleNavLinkClick = buildDelegationHandler('a[data-navlink]', _this._handleNavLinkClick.bind(_this));
             _this.headerRef = createRef();
             _this.footerRef = createRef();
             _this.interactionsStore = {};
 =======
+=======
+>>>>>>> danhmuc_list
             _this.headerRef = createRef();
             _this.footerRef = createRef();
             _this.interactionsStore = {};
@@ -8965,6 +9453,9 @@ var FullCalendar = (function (exports) {
             _this.state = {
                 viewLabelId: getUniqueDomId(),
             };
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             // Component Registration
             // -----------------------------------------------------------------------------------------------------------------
@@ -9028,6 +9519,7 @@ var FullCalendar = (function (exports) {
             }
             var viewContext = this.buildViewContext(props.viewSpec, props.viewApi, props.options, props.dateProfileGenerator, props.dateEnv, props.theme, props.pluginHooks, props.dispatch, props.getCurrentData, props.emitter, props.calendarApi, this.registerInteractiveComponent, this.unregisterInteractiveComponent);
 <<<<<<< HEAD
+<<<<<<< HEAD
             return (createElement(ViewContextType.Provider, { value: viewContext },
                 toolbarConfig.headerToolbar && (createElement(Toolbar, __assign({ ref: this.headerRef, extraClassName: "fc-header-toolbar", model: toolbarConfig.headerToolbar }, toolbarProps))),
                 createElement(ViewContainer, { liquid: viewVGrow, height: viewHeight, aspectRatio: viewAspectRatio, onClick: this.handleNavLinkClick },
@@ -9035,6 +9527,8 @@ var FullCalendar = (function (exports) {
                     this.buildAppendContent()),
                 toolbarConfig.footerToolbar && (createElement(Toolbar, __assign({ ref: this.footerRef, extraClassName: "fc-footer-toolbar", model: toolbarConfig.footerToolbar }, toolbarProps)))));
 =======
+=======
+>>>>>>> danhmuc_list
             var viewLabelId = (toolbarConfig.header && toolbarConfig.header.hasTitle)
                 ? this.state.viewLabelId
                 : '';
@@ -9044,6 +9538,9 @@ var FullCalendar = (function (exports) {
                     this.renderView(props),
                     this.buildAppendContent()),
                 toolbarConfig.footer && (createElement(Toolbar, __assign({ ref: this.footerRef, extraClassName: "fc-footer-toolbar", model: toolbarConfig.footer, titleId: "" }, toolbarProps)))));
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         };
         CalendarContent.prototype.componentDidMount = function () {
@@ -9075,6 +9572,7 @@ var FullCalendar = (function (exports) {
             this.props.emitter.trigger('_unmount');
         };
 <<<<<<< HEAD
+<<<<<<< HEAD
         CalendarContent.prototype._handleNavLinkClick = function (ev, anchorEl) {
             var _a = this.props, dateEnv = _a.dateEnv, options = _a.options, calendarApi = _a.calendarApi;
             var navLinkOptions = anchorEl.getAttribute('data-navlink');
@@ -9098,10 +9596,15 @@ var FullCalendar = (function (exports) {
             var children = props.pluginHooks.viewContainerAppends.map(function (buildAppendContent) { return buildAppendContent(props); });
             return createElement.apply(void 0, __spreadArrays([Fragment, {}], children));
 =======
+=======
+>>>>>>> danhmuc_list
         CalendarContent.prototype.buildAppendContent = function () {
             var props = this.props;
             var children = props.pluginHooks.viewContainerAppends.map(function (buildAppendContent) { return buildAppendContent(props); });
             return createElement.apply(void 0, __spreadArray([Fragment, {}], children));
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         };
         CalendarContent.prototype.renderView = function (props) {
@@ -9138,6 +9641,10 @@ var FullCalendar = (function (exports) {
             title: title,
             activeButton: viewSpec.type,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            navUnit: viewSpec.singleUnit,
+>>>>>>> danhmuc_list
 =======
             navUnit: viewSpec.singleUnit,
 >>>>>>> danhmuc_list
@@ -9212,7 +9719,11 @@ var FullCalendar = (function (exports) {
 
     var CLASS_NAME = 'fc-col-header-cell'; // do the cushion too? no
 <<<<<<< HEAD
+<<<<<<< HEAD
     function renderInner(hookProps) {
+=======
+    function renderInner$1(hookProps) {
+>>>>>>> danhmuc_list
 =======
     function renderInner$1(hookProps) {
 >>>>>>> danhmuc_list
@@ -9233,17 +9744,23 @@ var FullCalendar = (function (exports) {
             var text = dateEnv.format(date, props.dayHeaderFormat);
             // if colCnt is 1, we are already in a day-view and don't need a navlink
 <<<<<<< HEAD
+<<<<<<< HEAD
             var navLinkAttrs = (options.navLinks && !dayMeta.isDisabled && props.colCnt > 1)
                 ? { 'data-navlink': buildNavLinkData(date), tabIndex: 0 }
                 : {};
             var hookProps = __assign(__assign(__assign({ date: dateEnv.toDate(date), view: viewApi }, props.extraHookProps), { text: text }), dayMeta);
             return (createElement(RenderHook, { hookProps: hookProps, classNames: options.dayHeaderClassNames, content: options.dayHeaderContent, defaultContent: renderInner, didMount: options.dayHeaderDidMount, willUnmount: options.dayHeaderWillUnmount }, function (rootElRef, customClassNames, innerElRef, innerContent) { return (createElement("th", __assign({ ref: rootElRef, className: classNames.concat(customClassNames).join(' '), "data-date": !dayMeta.isDisabled ? formatDayString(date) : undefined, colSpan: props.colSpan }, props.extraDataAttrs),
 =======
+=======
+>>>>>>> danhmuc_list
             var navLinkAttrs = (!dayMeta.isDisabled && props.colCnt > 1)
                 ? buildNavLinkAttrs(this.context, date)
                 : {};
             var hookProps = __assign(__assign(__assign({ date: dateEnv.toDate(date), view: viewApi }, props.extraHookProps), { text: text }), dayMeta);
             return (createElement(RenderHook, { hookProps: hookProps, classNames: options.dayHeaderClassNames, content: options.dayHeaderContent, defaultContent: renderInner$1, didMount: options.dayHeaderDidMount, willUnmount: options.dayHeaderWillUnmount }, function (rootElRef, customClassNames, innerElRef, innerContent) { return (createElement("th", __assign({ ref: rootElRef, role: "columnheader", className: classNames.concat(customClassNames).join(' '), "data-date": !dayMeta.isDisabled ? formatDayString(date) : undefined, colSpan: props.colSpan }, props.extraDataAttrs),
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                 createElement("div", { className: "fc-scrollgrid-sync-inner" }, !dayMeta.isDisabled && (createElement("a", __assign({ ref: innerElRef, className: [
                         'fc-col-header-cell-cushion',
@@ -9254,6 +9771,10 @@ var FullCalendar = (function (exports) {
     }(BaseComponent));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    var WEEKDAY_FORMAT = createFormatter({ weekday: 'long' });
+>>>>>>> danhmuc_list
 =======
     var WEEKDAY_FORMAT = createFormatter({ weekday: 'long' });
 >>>>>>> danhmuc_list
@@ -9279,9 +9800,15 @@ var FullCalendar = (function (exports) {
             var hookProps = __assign(__assign(__assign(__assign({ // TODO: make this public?
                 date: date }, dateMeta), { view: viewApi }), props.extraHookProps), { text: text });
 <<<<<<< HEAD
+<<<<<<< HEAD
             return (createElement(RenderHook, { hookProps: hookProps, classNames: options.dayHeaderClassNames, content: options.dayHeaderContent, defaultContent: renderInner, didMount: options.dayHeaderDidMount, willUnmount: options.dayHeaderWillUnmount }, function (rootElRef, customClassNames, innerElRef, innerContent) { return (createElement("th", __assign({ ref: rootElRef, className: classNames.concat(customClassNames).join(' '), colSpan: props.colSpan }, props.extraDataAttrs),
                 createElement("div", { className: "fc-scrollgrid-sync-inner" },
                     createElement("a", { className: [
+=======
+            return (createElement(RenderHook, { hookProps: hookProps, classNames: options.dayHeaderClassNames, content: options.dayHeaderContent, defaultContent: renderInner$1, didMount: options.dayHeaderDidMount, willUnmount: options.dayHeaderWillUnmount }, function (rootElRef, customClassNames, innerElRef, innerContent) { return (createElement("th", __assign({ ref: rootElRef, role: "columnheader", className: classNames.concat(customClassNames).join(' '), colSpan: props.colSpan }, props.extraDataAttrs),
+                createElement("div", { className: "fc-scrollgrid-sync-inner" },
+                    createElement("a", { "aria-label": dateEnv.format(date, WEEKDAY_FORMAT), className: [
+>>>>>>> danhmuc_list
 =======
             return (createElement(RenderHook, { hookProps: hookProps, classNames: options.dayHeaderClassNames, content: options.dayHeaderContent, defaultContent: renderInner$1, didMount: options.dayHeaderDidMount, willUnmount: options.dayHeaderWillUnmount }, function (rootElRef, customClassNames, innerElRef, innerContent) { return (createElement("th", __assign({ ref: rootElRef, role: "columnheader", className: classNames.concat(customClassNames).join(' '), colSpan: props.colSpan }, props.extraDataAttrs),
                 createElement("div", { className: "fc-scrollgrid-sync-inner" },
@@ -9369,7 +9896,11 @@ var FullCalendar = (function (exports) {
             var _a = this.props, dates = _a.dates, dateProfile = _a.dateProfile, datesRepDistinctDays = _a.datesRepDistinctDays, renderIntro = _a.renderIntro;
             var dayHeaderFormat = this.createDayHeaderFormatter(context.options.dayHeaderFormat, datesRepDistinctDays, dates.length);
 <<<<<<< HEAD
+<<<<<<< HEAD
             return (createElement(NowTimer, { unit: "day" }, function (nowDate, todayRange) { return (createElement("tr", null,
+=======
+            return (createElement(NowTimer, { unit: "day" }, function (nowDate, todayRange) { return (createElement("tr", { role: "row" },
+>>>>>>> danhmuc_list
 =======
             return (createElement(NowTimer, { unit: "day" }, function (nowDate, todayRange) { return (createElement("tr", { role: "row" },
 >>>>>>> danhmuc_list
@@ -9533,6 +10064,7 @@ var FullCalendar = (function (exports) {
             }
             var eventUiBases = props.eventUiBases;
 <<<<<<< HEAD
+<<<<<<< HEAD
             var eventSegs = this.sliceEventStore.apply(this, __spreadArrays([props.eventStore, eventUiBases, dateProfile, nextDayThreshold], extraArgs));
             return {
                 dateSelectionSegs: this.sliceDateSelection.apply(this, __spreadArrays([props.dateSelection, eventUiBases, context], extraArgs)),
@@ -9542,6 +10074,8 @@ var FullCalendar = (function (exports) {
                 eventDrag: this.sliceEventDrag.apply(this, __spreadArrays([props.eventDrag, eventUiBases, dateProfile, nextDayThreshold], extraArgs)),
                 eventResize: this.sliceEventResize.apply(this, __spreadArrays([props.eventResize, eventUiBases, dateProfile, nextDayThreshold], extraArgs)),
 =======
+=======
+>>>>>>> danhmuc_list
             var eventSegs = this.sliceEventStore.apply(this, __spreadArray([props.eventStore, eventUiBases, dateProfile, nextDayThreshold], extraArgs));
             return {
                 dateSelectionSegs: this.sliceDateSelection.apply(this, __spreadArray([props.dateSelection, eventUiBases, context], extraArgs)),
@@ -9550,6 +10084,9 @@ var FullCalendar = (function (exports) {
                 bgEventSegs: eventSegs.bg,
                 eventDrag: this.sliceEventDrag.apply(this, __spreadArray([props.eventDrag, eventUiBases, dateProfile, nextDayThreshold], extraArgs)),
                 eventResize: this.sliceEventResize.apply(this, __spreadArray([props.eventResize, eventUiBases, dateProfile, nextDayThreshold], extraArgs)),
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                 eventSelection: props.eventSelection,
             }; // TODO: give interactionSegs?
@@ -9561,7 +10098,11 @@ var FullCalendar = (function (exports) {
                 extraArgs[_i - 2] = arguments[_i];
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
             return this._sliceDateSpan.apply(this, __spreadArrays([{ range: { start: date, end: addMs(date, 1) }, allDay: false },
+=======
+            return this._sliceDateSpan.apply(this, __spreadArray([{ range: { start: date, end: addMs(date, 1) }, allDay: false },
+>>>>>>> danhmuc_list
 =======
             return this._sliceDateSpan.apply(this, __spreadArray([{ range: { start: date, end: addMs(date, 1) }, allDay: false },
 >>>>>>> danhmuc_list
@@ -9577,7 +10118,11 @@ var FullCalendar = (function (exports) {
                 return [];
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
             return this._sliceEventStore.apply(this, __spreadArrays([expandRecurring(businessHours, computeActiveRange(dateProfile, Boolean(nextDayThreshold)), context),
+=======
+            return this._sliceEventStore.apply(this, __spreadArray([expandRecurring(businessHours, computeActiveRange(dateProfile, Boolean(nextDayThreshold)), context),
+>>>>>>> danhmuc_list
 =======
             return this._sliceEventStore.apply(this, __spreadArray([expandRecurring(businessHours, computeActiveRange(dateProfile, Boolean(nextDayThreshold)), context),
 >>>>>>> danhmuc_list
@@ -9624,7 +10169,11 @@ var FullCalendar = (function (exports) {
             }
             var eventRange = fabricateEventRange(dateSpan, eventUiBases, context);
 <<<<<<< HEAD
+<<<<<<< HEAD
             var segs = this.sliceRange.apply(this, __spreadArrays([dateSpan.range], extraArgs));
+=======
+            var segs = this.sliceRange.apply(this, __spreadArray([dateSpan.range], extraArgs));
+>>>>>>> danhmuc_list
 =======
             var segs = this.sliceRange.apply(this, __spreadArray([dateSpan.range], extraArgs));
 >>>>>>> danhmuc_list
@@ -9658,7 +10207,11 @@ var FullCalendar = (function (exports) {
                 };
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
             var segs = this.sliceRange.apply(this, __spreadArrays([dateRange], extraArgs));
+=======
+            var segs = this.sliceRange.apply(this, __spreadArray([dateRange], extraArgs));
+>>>>>>> danhmuc_list
 =======
             var segs = this.sliceRange.apply(this, __spreadArray([dateRange], extraArgs));
 >>>>>>> danhmuc_list
@@ -9685,11 +10238,14 @@ var FullCalendar = (function (exports) {
         return {
             start: addMs(range.start, dateProfile.slotMinTime.milliseconds),
 <<<<<<< HEAD
+<<<<<<< HEAD
             end: addMs(range.end, dateProfile.slotMaxTime.milliseconds - 864e5),
         };
     }
 
 =======
+=======
+>>>>>>> danhmuc_list
             end: addMs(range.end, dateProfile.slotMaxTime.milliseconds - 864e5), // 864e5 = ms in a day
         };
     }
@@ -9883,6 +10439,9 @@ var FullCalendar = (function (exports) {
         return false;
     }
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     var VISIBLE_HIDDEN_RE = /^(visible|hidden)$/;
     var Scroller = /** @class */ (function (_super) {
@@ -10051,7 +10610,11 @@ var FullCalendar = (function (exports) {
     }
     // TODO: ONLY use `arg`. force out internal function to use same API
 <<<<<<< HEAD
+<<<<<<< HEAD
     function renderChunkContent(sectionConfig, chunkConfig, arg) {
+=======
+    function renderChunkContent(sectionConfig, chunkConfig, arg, isHeader) {
+>>>>>>> danhmuc_list
 =======
     function renderChunkContent(sectionConfig, chunkConfig, arg, isHeader) {
 >>>>>>> danhmuc_list
@@ -10060,6 +10623,10 @@ var FullCalendar = (function (exports) {
             chunkConfig.content(arg) :
             createElement('table', {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                role: 'presentation',
+>>>>>>> danhmuc_list
 =======
                 role: 'presentation',
 >>>>>>> danhmuc_list
@@ -10071,10 +10638,13 @@ var FullCalendar = (function (exports) {
                     minWidth: arg.tableMinWidth,
                     width: arg.clientWidth,
 <<<<<<< HEAD
+<<<<<<< HEAD
                     height: expandRows ? arg.clientHeight : '',
                 },
             }, arg.tableColGroupNode, createElement('tbody', {}, typeof chunkConfig.rowContent === 'function' ? chunkConfig.rowContent(arg) : chunkConfig.rowContent));
 =======
+=======
+>>>>>>> danhmuc_list
                     height: expandRows ? arg.clientHeight : '', // css `height` on a <table> serves as a min-height
                 },
             }, arg.tableColGroupNode, createElement(isHeader ? 'thead' : 'tbody', {
@@ -10082,6 +10652,9 @@ var FullCalendar = (function (exports) {
             }, typeof chunkConfig.rowContent === 'function'
                 ? chunkConfig.rowContent(arg)
                 : chunkConfig.rowContent));
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         return content;
     }
@@ -10106,7 +10679,11 @@ var FullCalendar = (function (exports) {
             }
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         return createElement.apply(void 0, __spreadArrays(['colgroup', {}], colNodes));
+=======
+        return createElement.apply(void 0, __spreadArray(['colgroup', {}], colNodes));
+>>>>>>> danhmuc_list
 =======
         return createElement.apply(void 0, __spreadArray(['colgroup', {}], colNodes));
 >>>>>>> danhmuc_list
@@ -10140,7 +10717,11 @@ var FullCalendar = (function (exports) {
             'fc-scrollgrid-section',
             "fc-scrollgrid-section-" + sectionConfig.type,
 <<<<<<< HEAD
+<<<<<<< HEAD
             sectionConfig.className,
+=======
+            sectionConfig.className, // used?
+>>>>>>> danhmuc_list
 =======
             sectionConfig.className, // used?
 >>>>>>> danhmuc_list
@@ -10202,6 +10783,12 @@ var FullCalendar = (function (exports) {
             var microColGroupNode = this.renderMicroColGroup(cols, state.shrinkWidth);
             var classNames = getScrollGridClassNames(props.liquid, context);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            if (props.collapsibleWidth) {
+                classNames.push('fc-scrollgrid-collapsible');
+            }
+>>>>>>> danhmuc_list
 =======
             if (props.collapsibleWidth) {
                 classNames.push('fc-scrollgrid-collapsible');
@@ -10216,6 +10803,7 @@ var FullCalendar = (function (exports) {
             var footSectionNodes = [];
             while (configI < configCnt && (currentConfig = sectionConfigs[configI]).type === 'header') {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 headSectionNodes.push(this.renderSection(currentConfig, microColGroupNode));
                 configI += 1;
             }
@@ -10226,6 +10814,8 @@ var FullCalendar = (function (exports) {
             while (configI < configCnt && (currentConfig = sectionConfigs[configI]).type === 'footer') {
                 footSectionNodes.push(this.renderSection(currentConfig, microColGroupNode));
 =======
+=======
+>>>>>>> danhmuc_list
                 headSectionNodes.push(this.renderSection(currentConfig, microColGroupNode, true));
                 configI += 1;
             }
@@ -10235,6 +10825,9 @@ var FullCalendar = (function (exports) {
             }
             while (configI < configCnt && (currentConfig = sectionConfigs[configI]).type === 'footer') {
                 footSectionNodes.push(this.renderSection(currentConfig, microColGroupNode, true));
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                 configI += 1;
             }
@@ -10243,6 +10836,7 @@ var FullCalendar = (function (exports) {
             // use getCanVGrowWithinCell as a way to detect table-stupid firefox.
             // if so, use a simpler dom structure, jam everything into a lone tbody.
             var isBuggy = !getCanVGrowWithinCell();
+<<<<<<< HEAD
 <<<<<<< HEAD
             return createElement('table', {
                 className: classNames.join(' '),
@@ -10257,6 +10851,8 @@ var FullCalendar = (function (exports) {
         };
         SimpleScrollGrid.prototype.renderChunkTd = function (sectionConfig, microColGroupNode, chunkConfig) {
 =======
+=======
+>>>>>>> danhmuc_list
             var roleAttrs = { role: 'rowgroup' };
             return createElement('table', {
                 role: 'grid',
@@ -10271,6 +10867,9 @@ var FullCalendar = (function (exports) {
             return (createElement("tr", { key: sectionConfig.key, role: "presentation", className: getSectionClassNames(sectionConfig, this.props.liquid).join(' ') }, this.renderChunkTd(sectionConfig, microColGroupNode, sectionConfig.chunk, isHeader)));
         };
         SimpleScrollGrid.prototype.renderChunkTd = function (sectionConfig, microColGroupNode, chunkConfig, isHeader) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             if ('outerContent' in chunkConfig) {
                 return chunkConfig.outerContent;
@@ -10290,7 +10889,11 @@ var FullCalendar = (function (exports) {
                 tableColGroupNode: microColGroupNode,
                 tableMinWidth: '',
 <<<<<<< HEAD
+<<<<<<< HEAD
                 clientWidth: scrollerClientWidths[sectionKey] !== undefined ? scrollerClientWidths[sectionKey] : null,
+=======
+                clientWidth: (!props.collapsibleWidth && scrollerClientWidths[sectionKey] !== undefined) ? scrollerClientWidths[sectionKey] : null,
+>>>>>>> danhmuc_list
 =======
                 clientWidth: (!props.collapsibleWidth && scrollerClientWidths[sectionKey] !== undefined) ? scrollerClientWidths[sectionKey] : null,
 >>>>>>> danhmuc_list
@@ -10300,12 +10903,15 @@ var FullCalendar = (function (exports) {
                 rowSyncHeights: [],
                 reportRowHeightChange: function () { },
 <<<<<<< HEAD
+<<<<<<< HEAD
             });
             return (createElement("td", { ref: chunkConfig.elRef },
                 createElement("div", { className: "fc-scroller-harness" + (isLiquid ? ' fc-scroller-harness-liquid' : '') },
                     createElement(Scroller, { ref: this.scrollerRefs.createRef(sectionKey), elRef: this.scrollerElRefs.createRef(sectionKey), overflowY: overflowY, overflowX: !props.liquid ? 'visible' : 'hidden' /* natural height? */, maxHeight: sectionConfig.maxHeight, liquid: isLiquid, liquidIsAbsolute // because its within a harness
                         : true }, content))));
 =======
+=======
+>>>>>>> danhmuc_list
             }, isHeader);
             return createElement(isHeader ? 'th' : 'td', {
                 ref: chunkConfig.elRef,
@@ -10313,6 +10919,9 @@ var FullCalendar = (function (exports) {
             }, createElement("div", { className: "fc-scroller-harness" + (isLiquid ? ' fc-scroller-harness-liquid' : '') },
                 createElement(Scroller, { ref: this.scrollerRefs.createRef(sectionKey), elRef: this.scrollerElRefs.createRef(sectionKey), overflowY: overflowY, overflowX: !props.liquid ? 'visible' : 'hidden' /* natural height? */, maxHeight: sectionConfig.maxHeight, liquid: isLiquid, liquidIsAbsolute // because its within a harness
                     : true }, content)));
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         };
         SimpleScrollGrid.prototype._handleScrollerEl = function (scrollerEl, key) {
@@ -10443,15 +11052,21 @@ var FullCalendar = (function (exports) {
             var timeFormat = context.options.eventTimeFormat || props.defaultTimeFormat;
             var timeText = buildSegTimeText(seg, timeFormat, context, props.defaultDisplayEventTime, props.defaultDisplayEventEnd);
 <<<<<<< HEAD
+<<<<<<< HEAD
             return (createElement(EventRoot, { seg: seg, timeText: timeText, disableDragging: props.disableDragging, disableResizing: props.disableResizing, defaultContent: props.defaultContent || renderInnerContent, isDragging: props.isDragging, isResizing: props.isResizing, isDateSelecting: props.isDateSelecting, isSelected: props.isSelected, isPast: props.isPast, isFuture: props.isFuture, isToday: props.isToday }, function (rootElRef, classNames, innerElRef, innerContent, hookProps) { return (createElement("a", __assign({ className: props.extraClassNames.concat(classNames).join(' '), style: {
                     borderColor: hookProps.borderColor,
                     backgroundColor: hookProps.backgroundColor,
                 }, ref: rootElRef }, getSegAnchorAttrs(seg)),
 =======
+=======
+>>>>>>> danhmuc_list
             return (createElement(EventRoot, { seg: seg, timeText: timeText, disableDragging: props.disableDragging, disableResizing: props.disableResizing, defaultContent: props.defaultContent || renderInnerContent$4, isDragging: props.isDragging, isResizing: props.isResizing, isDateSelecting: props.isDateSelecting, isSelected: props.isSelected, isPast: props.isPast, isFuture: props.isFuture, isToday: props.isToday }, function (rootElRef, classNames, innerElRef, innerContent, hookProps) { return (createElement("a", __assign({ className: props.extraClassNames.concat(classNames).join(' '), style: {
                     borderColor: hookProps.borderColor,
                     backgroundColor: hookProps.backgroundColor,
                 }, ref: rootElRef }, getSegAnchorAttrs(seg, context)),
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                 createElement("div", { className: "fc-event-main", ref: innerElRef, style: { color: hookProps.textColor } }, innerContent),
                 hookProps.isStartResizable &&
@@ -10462,7 +11077,11 @@ var FullCalendar = (function (exports) {
         return StandardEvent;
     }(BaseComponent));
 <<<<<<< HEAD
+<<<<<<< HEAD
     function renderInnerContent(innerProps) {
+=======
+    function renderInnerContent$4(innerProps) {
+>>>>>>> danhmuc_list
 =======
     function renderInnerContent$4(innerProps) {
 >>>>>>> danhmuc_list
@@ -10472,10 +11091,13 @@ var FullCalendar = (function (exports) {
                 createElement("div", { className: "fc-event-title fc-sticky" }, innerProps.event.title || createElement(Fragment, null, "\u00A0")))));
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     function getSegAnchorAttrs(seg) {
         var url = seg.eventRange.def.url;
         return url ? { href: url } : {};
     }
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 
@@ -10552,15 +11174,21 @@ var FullCalendar = (function (exports) {
         return (createElement("div", { className: "fc-" + fillType }));
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     var BgEvent = function (props) { return (createElement(EventRoot, { defaultContent: renderInnerContent$1, seg: props.seg /* uselesss i think */, timeText: "", disableDragging: true, disableResizing: true, isDragging: false, isResizing: false, isDateSelecting: false, isSelected: false, isPast: props.isPast, isFuture: props.isFuture, isToday: props.isToday }, function (rootElRef, classNames, innerElRef, innerContent, hookProps) { return (createElement("div", { ref: rootElRef, className: ['fc-bg-event'].concat(classNames).join(' '), style: {
             backgroundColor: hookProps.backgroundColor,
         } }, innerContent)); })); };
     function renderInnerContent$1(props) {
 =======
+=======
+>>>>>>> danhmuc_list
     var BgEvent = function (props) { return (createElement(EventRoot, { defaultContent: renderInnerContent$3, seg: props.seg /* uselesss i think */, timeText: "", disableDragging: true, disableResizing: true, isDragging: false, isResizing: false, isDateSelecting: false, isSelected: false, isPast: props.isPast, isFuture: props.isFuture, isToday: props.isToday }, function (rootElRef, classNames, innerElRef, innerContent, hookProps) { return (createElement("div", { ref: rootElRef, className: ['fc-bg-event'].concat(classNames).join(' '), style: {
             backgroundColor: hookProps.backgroundColor,
         } }, innerContent)); })); };
     function renderInnerContent$3(props) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         var title = props.event.title;
         return title && (createElement("div", { className: "fc-event-title" }, props.event.title));
@@ -10574,6 +11202,7 @@ var FullCalendar = (function (exports) {
         var text = dateEnv.format(date, format);
         var hookProps = { num: num, text: text, date: date };
 <<<<<<< HEAD
+<<<<<<< HEAD
         return (createElement(RenderHook, { hookProps: hookProps, classNames: options.weekNumberClassNames, content: options.weekNumberContent, defaultContent: renderInner$1, didMount: options.weekNumberDidMount, willUnmount: options.weekNumberWillUnmount }, props.children));
     })); };
     function renderInner$1(innerProps) {
@@ -10584,6 +11213,8 @@ var FullCalendar = (function (exports) {
     // --------------------------------------------------------------------------------------------------
     var version = '5.5.1'; // important to type it, so .d.ts has generic string
 =======
+=======
+>>>>>>> danhmuc_list
         return (createElement(RenderHook, { hookProps: hookProps, classNames: options.weekNumberClassNames, content: options.weekNumberContent, defaultContent: renderInner, didMount: options.weekNumberDidMount, willUnmount: options.weekNumberWillUnmount }, props.children));
     })); };
     function renderInner(innerProps) {
@@ -10839,6 +11470,9 @@ var FullCalendar = (function (exports) {
     // exports
     // --------------------------------------------------------------------------------------------------
     var version = '5.10.1'; // important to type it, so .d.ts has generic string
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
     var Calendar = /** @class */ (function (_super) {
@@ -10876,17 +11510,23 @@ var FullCalendar = (function (exports) {
                 else if (_this.isRendered) {
                     _this.isRendered = false;
 <<<<<<< HEAD
+<<<<<<< HEAD
                     unmountComponentAtNode$1(_this.el);
                     _this.setClassNames([]);
                     _this.setHeight('');
                 }
                 flushToDom$1();
 =======
+=======
+>>>>>>> danhmuc_list
                     unmountComponentAtNode(_this.el);
                     _this.setClassNames([]);
                     _this.setHeight('');
                 }
                 flushToDom();
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             };
             _this.el = el;
@@ -10927,7 +11567,11 @@ var FullCalendar = (function (exports) {
         Calendar.prototype.updateSize = function () {
             _super.prototype.updateSize.call(this);
 <<<<<<< HEAD
+<<<<<<< HEAD
             flushToDom$1();
+=======
+            flushToDom();
+>>>>>>> danhmuc_list
 =======
             flushToDom();
 >>>>>>> danhmuc_list
@@ -11252,7 +11896,11 @@ var FullCalendar = (function (exports) {
             this.sourceElRect = null; // screen coords relative to viewport
             // options that can be set directly by caller
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.parentNode = document.body;
+=======
+            this.parentNode = document.body; // HIGHLY SUGGESTED to set this to sidestep ShadowDOM issues
+>>>>>>> danhmuc_list
 =======
             this.parentNode = document.body; // HIGHLY SUGGESTED to set this to sidestep ShadowDOM issues
 >>>>>>> danhmuc_list
@@ -11525,9 +12173,15 @@ var FullCalendar = (function (exports) {
             };
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         AutoScroller.prototype.start = function (pageX, pageY) {
             if (this.isEnabled) {
                 this.scrollCaches = this.buildCaches();
+=======
+        AutoScroller.prototype.start = function (pageX, pageY, scrollStartEl) {
+            if (this.isEnabled) {
+                this.scrollCaches = this.buildCaches(scrollStartEl);
+>>>>>>> danhmuc_list
 =======
         AutoScroller.prototype.start = function (pageX, pageY, scrollStartEl) {
             if (this.isEnabled) {
@@ -11639,8 +12293,13 @@ var FullCalendar = (function (exports) {
             return bestSide;
         };
 <<<<<<< HEAD
+<<<<<<< HEAD
         AutoScroller.prototype.buildCaches = function () {
             return this.queryScrollEls().map(function (el) {
+=======
+        AutoScroller.prototype.buildCaches = function (scrollStartEl) {
+            return this.queryScrollEls(scrollStartEl).map(function (el) {
+>>>>>>> danhmuc_list
 =======
         AutoScroller.prototype.buildCaches = function (scrollStartEl) {
             return this.queryScrollEls(scrollStartEl).map(function (el) {
@@ -11652,7 +12311,11 @@ var FullCalendar = (function (exports) {
             });
         };
 <<<<<<< HEAD
+<<<<<<< HEAD
         AutoScroller.prototype.queryScrollEls = function () {
+=======
+        AutoScroller.prototype.queryScrollEls = function (scrollStartEl) {
+>>>>>>> danhmuc_list
 =======
         AutoScroller.prototype.queryScrollEls = function (scrollStartEl) {
 >>>>>>> danhmuc_list
@@ -11664,7 +12327,11 @@ var FullCalendar = (function (exports) {
                 }
                 else {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     els.push.apply(els, Array.prototype.slice.call(document.querySelectorAll(query)));
+=======
+                    els.push.apply(els, Array.prototype.slice.call(getElRoot(scrollStartEl).querySelectorAll(query)));
+>>>>>>> danhmuc_list
 =======
                     els.push.apply(els, Array.prototype.slice.call(getElRoot(scrollStartEl).querySelectorAll(query)));
 >>>>>>> danhmuc_list
@@ -11686,6 +12353,10 @@ var FullCalendar = (function (exports) {
         function FeaturefulElementDragging(containerEl, selector) {
             var _this = _super.call(this, containerEl) || this;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            _this.containerEl = containerEl;
+>>>>>>> danhmuc_list
 =======
             _this.containerEl = containerEl;
 >>>>>>> danhmuc_list
@@ -11807,7 +12478,11 @@ var FullCalendar = (function (exports) {
                     this.isDragging = true;
                     this.mirrorNeedsRevert = false;
 <<<<<<< HEAD
+<<<<<<< HEAD
                     this.autoScroller.start(ev.pageX, ev.pageY);
+=======
+                    this.autoScroller.start(ev.pageX, ev.pageY, this.containerEl);
+>>>>>>> danhmuc_list
 =======
                     this.autoScroller.start(ev.pageX, ev.pageY, this.containerEl);
 >>>>>>> danhmuc_list
@@ -11974,7 +12649,11 @@ var FullCalendar = (function (exports) {
             var subjectEl = ev.subjectEl;
             var subjectRect;
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (subjectEl !== document) {
+=======
+            if (subjectEl instanceof HTMLElement) { // i.e. not a Document/ShadowRoot
+>>>>>>> danhmuc_list
 =======
             if (subjectEl instanceof HTMLElement) { // i.e. not a Document/ShadowRoot
 >>>>>>> danhmuc_list
@@ -12036,6 +12715,7 @@ var FullCalendar = (function (exports) {
                         positionTop >= 0 && positionTop < height) {
                         var hit = component.queryHit(positionLeft, positionTop, width, height);
 <<<<<<< HEAD
+<<<<<<< HEAD
                         var dateProfile = component.context.getCurrentData().dateProfile;
                         if (hit &&
                             (
@@ -12043,12 +12723,17 @@ var FullCalendar = (function (exports) {
                             rangeContainsRange(dateProfile.activeRange, hit.dateSpan.range)) &&
                             (!bestHit || hit.layer > bestHit.layer)) {
 =======
+=======
+>>>>>>> danhmuc_list
                         if (hit && (
                         // make sure the hit is within activeRange, meaning it's not a dead cell
                         rangeContainsRange(hit.dateProfile.activeRange, hit.dateSpan.range)) &&
                             (!bestHit || hit.layer > bestHit.layer)) {
                             hit.componentId = id;
                             hit.context = component.context;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                             // TODO: better way to re-orient rectangle
                             hit.rect.left += originLeft;
@@ -12150,7 +12835,11 @@ var FullCalendar = (function (exports) {
                 dragging.setIgnoreMove(!canSelect);
                 // if touch, require user to hold down
 <<<<<<< HEAD
+<<<<<<< HEAD
                 dragging.delay = ev.isTouch ? getComponentTouchDelay(component) : null;
+=======
+                dragging.delay = ev.isTouch ? getComponentTouchDelay$1(component) : null;
+>>>>>>> danhmuc_list
 =======
                 dragging.delay = ev.isTouch ? getComponentTouchDelay$1(component) : null;
 >>>>>>> danhmuc_list
@@ -12164,9 +12853,12 @@ var FullCalendar = (function (exports) {
                 var isInvalid = false;
                 if (hit) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     dragSelection = joinHitsIntoSelection(_this.hitDragging.initialHit, hit, context.pluginHooks.dateSelectionTransformers);
                     if (!dragSelection || !_this.component.isDateSelectionValid(dragSelection)) {
 =======
+=======
+>>>>>>> danhmuc_list
                     var initialHit = _this.hitDragging.initialHit;
                     var disallowed = hit.componentId === initialHit.componentId
                         && _this.isHitComboAllowed
@@ -12175,6 +12867,9 @@ var FullCalendar = (function (exports) {
                         dragSelection = joinHitsIntoSelection(initialHit, hit, context.pluginHooks.dateSelectionTransformers);
                     }
                     if (!dragSelection || !isDateSelectionValid(dragSelection, hit.dateProfile, context)) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                         isInvalid = true;
                         dragSelection = null;
@@ -12222,7 +12917,11 @@ var FullCalendar = (function (exports) {
         return DateSelecting;
     }(Interaction));
 <<<<<<< HEAD
+<<<<<<< HEAD
     function getComponentTouchDelay(component) {
+=======
+    function getComponentTouchDelay$1(component) {
+>>>>>>> danhmuc_list
 =======
     function getComponentTouchDelay$1(component) {
 >>>>>>> danhmuc_list
@@ -12288,7 +12987,11 @@ var FullCalendar = (function (exports) {
                     // only do a touch delay if touch and this event hasn't been selected yet
                     (ev.isTouch && eventInstanceId !== component.props.eventSelection) ?
 <<<<<<< HEAD
+<<<<<<< HEAD
                         getComponentTouchDelay$1(component) :
+=======
+                        getComponentTouchDelay(component) :
+>>>>>>> danhmuc_list
 =======
                         getComponentTouchDelay(component) :
 >>>>>>> danhmuc_list
@@ -12351,8 +13054,12 @@ var FullCalendar = (function (exports) {
                 };
                 if (hit) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     var receivingComponent = hit.component;
                     receivingContext = receivingComponent.context;
+=======
+                    receivingContext = hit.context;
+>>>>>>> danhmuc_list
 =======
                     receivingContext = hit.context;
 >>>>>>> danhmuc_list
@@ -12364,7 +13071,11 @@ var FullCalendar = (function (exports) {
                             mutatedRelevantEvents = applyMutationToEventStore(relevantEvents, receivingContext.getCurrentData().eventUiBases, mutation, receivingContext);
                             interaction.mutatedEvents = mutatedRelevantEvents;
 <<<<<<< HEAD
+<<<<<<< HEAD
                             if (!receivingComponent.isInteractionValid(interaction)) {
+=======
+                            if (!isInteractionValid(interaction, hit.dateProfile, receivingContext)) {
+>>>>>>> danhmuc_list
 =======
                             if (!isInteractionValid(interaction, hit.dateProfile, receivingContext)) {
 >>>>>>> danhmuc_list
@@ -12395,7 +13106,11 @@ var FullCalendar = (function (exports) {
                     // render the mirror if no already-rendered mirror
                     // TODO: wish we could somehow wait for dispatch to guarantee render
 <<<<<<< HEAD
+<<<<<<< HEAD
                     _this.dragging.setMirrorIsVisible(!hit || !document.querySelector('.fc-event-mirror'));
+=======
+                    _this.dragging.setMirrorIsVisible(!hit || !getElRoot(_this.subjectEl).querySelector('.fc-event-mirror'));
+>>>>>>> danhmuc_list
 =======
                     _this.dragging.setMirrorIsVisible(!hit || !getElRoot(_this.subjectEl).querySelector('.fc-event-mirror'));
 >>>>>>> danhmuc_list
@@ -12444,7 +13159,11 @@ var FullCalendar = (function (exports) {
                                     initialContext_1.dispatch({
                                         type: 'MERGE_EVENTS',
 <<<<<<< HEAD
+<<<<<<< HEAD
                                         eventStore: relevantEvents_1,
+=======
+                                        eventStore: relevantEvents_1, // the pre-change data
+>>>>>>> danhmuc_list
 =======
                                         eventStore: relevantEvents_1, // the pre-change data
 >>>>>>> danhmuc_list
@@ -12502,8 +13221,13 @@ var FullCalendar = (function (exports) {
                                 });
                             }
 <<<<<<< HEAD
+<<<<<<< HEAD
                             receivingContext_1.emitter.trigger('drop', __assign(__assign({}, buildDatePointApiWithContext(finalHit.dateSpan, receivingContext_1)), { draggedEl: ev.subjectEl, jsEvent: ev.origEvent, view: finalHit.component.context.viewApi }));
                             receivingContext_1.emitter.trigger('eventReceive', __assign(__assign({}, eventAddArg), { draggedEl: ev.subjectEl, view: finalHit.component.context.viewApi }));
+=======
+                            receivingContext_1.emitter.trigger('drop', __assign(__assign({}, buildDatePointApiWithContext(finalHit.dateSpan, receivingContext_1)), { draggedEl: ev.subjectEl, jsEvent: ev.origEvent, view: finalHit.context.viewApi }));
+                            receivingContext_1.emitter.trigger('eventReceive', __assign(__assign({}, eventAddArg), { draggedEl: ev.subjectEl, view: finalHit.context.viewApi }));
+>>>>>>> danhmuc_list
 =======
                             receivingContext_1.emitter.trigger('drop', __assign(__assign({}, buildDatePointApiWithContext(finalHit.dateSpan, receivingContext_1)), { draggedEl: ev.subjectEl, jsEvent: ev.origEvent, view: finalHit.context.viewApi }));
                             receivingContext_1.emitter.trigger('eventReceive', __assign(__assign({}, eventAddArg), { draggedEl: ev.subjectEl, view: finalHit.context.viewApi }));
@@ -12595,7 +13319,11 @@ var FullCalendar = (function (exports) {
         if (dateSpan0.allDay !== dateSpan1.allDay) {
             standardProps.allDay = dateSpan1.allDay;
 <<<<<<< HEAD
+<<<<<<< HEAD
             standardProps.hasEnd = hit1.component.context.options.allDayMaintainDuration;
+=======
+            standardProps.hasEnd = hit1.context.options.allDayMaintainDuration;
+>>>>>>> danhmuc_list
 =======
             standardProps.hasEnd = hit1.context.options.allDayMaintainDuration;
 >>>>>>> danhmuc_list
@@ -12606,8 +13334,13 @@ var FullCalendar = (function (exports) {
             }
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         var delta = diffDates(date0, date1, hit0.component.context.dateEnv, hit0.component === hit1.component ?
             hit0.component.largeUnit :
+=======
+        var delta = diffDates(date0, date1, hit0.context.dateEnv, hit0.componentId === hit1.componentId ?
+            hit0.largeUnit :
+>>>>>>> danhmuc_list
 =======
         var delta = diffDates(date0, date1, hit0.context.dateEnv, hit0.componentId === hit1.componentId ?
             hit0.largeUnit :
@@ -12627,7 +13360,11 @@ var FullCalendar = (function (exports) {
         return mutation;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     function getComponentTouchDelay$1(component) {
+=======
+    function getComponentTouchDelay(component) {
+>>>>>>> danhmuc_list
 =======
     function getComponentTouchDelay(component) {
 >>>>>>> danhmuc_list
@@ -12690,21 +13427,31 @@ var FullCalendar = (function (exports) {
                 };
                 if (hit) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     mutation = computeMutation(initialHit, hit, ev.subjectEl.classList.contains('fc-event-resizer-start'), eventInstance.range, context.pluginHooks.eventResizeJoinTransforms);
 =======
+=======
+>>>>>>> danhmuc_list
                     var disallowed = hit.componentId === initialHit.componentId
                         && _this.isHitComboAllowed
                         && !_this.isHitComboAllowed(initialHit, hit);
                     if (!disallowed) {
                         mutation = computeMutation(initialHit, hit, ev.subjectEl.classList.contains('fc-event-resizer-start'), eventInstance.range);
                     }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                 }
                 if (mutation) {
                     mutatedRelevantEvents = applyMutationToEventStore(relevantEvents, context.getCurrentData().eventUiBases, mutation, context);
                     interaction.mutatedEvents = mutatedRelevantEvents;
 <<<<<<< HEAD
+<<<<<<< HEAD
                     if (!_this.component.isInteractionValid(interaction)) {
+=======
+                    if (!isInteractionValid(interaction, hit.dateProfile, context)) {
+>>>>>>> danhmuc_list
 =======
                     if (!isInteractionValid(interaction, hit.dateProfile, context)) {
 >>>>>>> danhmuc_list
@@ -12764,7 +13511,11 @@ var FullCalendar = (function (exports) {
                             context.dispatch({
                                 type: 'MERGE_EVENTS',
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 eventStore: relevantEvents,
+=======
+                                eventStore: relevantEvents, // the pre-change events
+>>>>>>> danhmuc_list
 =======
                                 eventStore: relevantEvents, // the pre-change events
 >>>>>>> danhmuc_list
@@ -12804,6 +13555,7 @@ var FullCalendar = (function (exports) {
         return EventResizing;
     }(Interaction));
 <<<<<<< HEAD
+<<<<<<< HEAD
     function computeMutation(hit0, hit1, isFromStart, instanceRange, transforms) {
         var dateEnv = hit0.component.context.dateEnv;
         var date0 = hit0.dateSpan.range.start;
@@ -12830,6 +13582,8 @@ var FullCalendar = (function (exports) {
             props.endDelta = delta;
             return props;
 =======
+=======
+>>>>>>> danhmuc_list
     function computeMutation(hit0, hit1, isFromStart, instanceRange) {
         var dateEnv = hit0.context.dateEnv;
         var date0 = hit0.dateSpan.range.start;
@@ -12842,6 +13596,9 @@ var FullCalendar = (function (exports) {
         }
         else if (dateEnv.add(instanceRange.end, delta) > instanceRange.start) {
             return { endDelta: delta };
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         }
         return null;
@@ -12862,7 +13619,11 @@ var FullCalendar = (function (exports) {
             this.onDocumentPointerDown = function (pev) {
                 var unselectCancel = _this.context.options.unselectCancel;
 <<<<<<< HEAD
+<<<<<<< HEAD
                 var downEl = pev.origEvent.target;
+=======
+                var downEl = getEventTargetViaRoot(pev.origEvent);
+>>>>>>> danhmuc_list
 =======
                 var downEl = getEventTargetViaRoot(pev.origEvent);
 >>>>>>> danhmuc_list
@@ -12909,7 +13670,11 @@ var FullCalendar = (function (exports) {
     }());
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     var OPTION_REFINERS = {
+=======
+    var OPTION_REFINERS$3 = {
+>>>>>>> danhmuc_list
 =======
     var OPTION_REFINERS$3 = {
 >>>>>>> danhmuc_list
@@ -12955,17 +13720,23 @@ var FullCalendar = (function (exports) {
                 };
                 if (hit) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     receivingContext = hit.component.context;
                     if (_this.canDropElOnCalendar(ev.subjectEl, receivingContext)) {
                         droppableEvent = computeEventForDateSpan(hit.dateSpan, _this.dragMeta, receivingContext);
                         interaction.mutatedEvents = eventTupleToStore(droppableEvent);
                         isInvalid = !isInteractionValid(interaction, receivingContext);
 =======
+=======
+>>>>>>> danhmuc_list
                     receivingContext = hit.context;
                     if (_this.canDropElOnCalendar(ev.subjectEl, receivingContext)) {
                         droppableEvent = computeEventForDateSpan(hit.dateSpan, _this.dragMeta, receivingContext);
                         interaction.mutatedEvents = eventTupleToStore(droppableEvent);
                         isInvalid = !isInteractionValid(interaction, hit.dateProfile, receivingContext);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                         if (isInvalid) {
                             interaction.mutatedEvents = createEmptyEventStore();
@@ -12995,7 +13766,11 @@ var FullCalendar = (function (exports) {
                 if (receivingContext && droppableEvent) {
                     var finalHit = _this.hitDragging.finalHit;
 <<<<<<< HEAD
+<<<<<<< HEAD
                     var finalView = finalHit.component.context.viewApi;
+=======
+                    var finalView = finalHit.context.viewApi;
+>>>>>>> danhmuc_list
 =======
                     var finalView = finalHit.context.viewApi;
 >>>>>>> danhmuc_list
@@ -13214,14 +13989,20 @@ var FullCalendar = (function (exports) {
             }
             else {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 var mirrorEl = this.mirrorSelector ?
                     document.querySelector(this.mirrorSelector) :
                     null;
 =======
+=======
+>>>>>>> danhmuc_list
                 var mirrorEl = this.mirrorSelector
                     // TODO: somehow query FullCalendars WITHIN shadow-roots
                     ? document.querySelector(this.mirrorSelector)
                     : null;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                 if (mirrorEl) {
                     this.currentMirrorEl = mirrorEl;
@@ -13272,7 +14053,11 @@ var FullCalendar = (function (exports) {
         calendarInteractions: [UnselectAuto],
         elementDraggingImpl: FeaturefulElementDragging,
 <<<<<<< HEAD
+<<<<<<< HEAD
         optionRefiners: OPTION_REFINERS,
+=======
+        optionRefiners: OPTION_REFINERS$3,
+>>>>>>> danhmuc_list
 =======
         optionRefiners: OPTION_REFINERS$3,
 >>>>>>> danhmuc_list
@@ -13314,7 +14099,11 @@ var FullCalendar = (function (exports) {
             });
             return (createElement(ViewRoot, { viewSpec: context.viewSpec }, function (rootElRef, classNames) { return (createElement("div", { ref: rootElRef, className: ['fc-daygrid'].concat(classNames).join(' ') },
 <<<<<<< HEAD
+<<<<<<< HEAD
                 createElement(SimpleScrollGrid, { liquid: !props.isHeightAuto && !props.forPrint, cols: [] /* TODO: make optional? */, sections: sections }))); }));
+=======
+                createElement(SimpleScrollGrid, { liquid: !props.isHeightAuto && !props.forPrint, collapsibleWidth: props.forPrint, cols: [] /* TODO: make optional? */, sections: sections }))); }));
+>>>>>>> danhmuc_list
 =======
                 createElement(SimpleScrollGrid, { liquid: !props.isHeightAuto && !props.forPrint, collapsibleWidth: props.forPrint, cols: [] /* TODO: make optional? */, sections: sections }))); }));
 >>>>>>> danhmuc_list
@@ -13363,7 +14152,11 @@ var FullCalendar = (function (exports) {
             }
             return (createElement(ViewRoot, { viewSpec: context.viewSpec }, function (rootElRef, classNames) { return (createElement("div", { ref: rootElRef, className: ['fc-daygrid'].concat(classNames).join(' ') },
 <<<<<<< HEAD
+<<<<<<< HEAD
                 createElement(ScrollGrid, { liquid: !props.isHeightAuto && !props.forPrint, colGroups: [{ cols: [{ span: colCnt, minWidth: dayMinWidth }] }], sections: sections }))); }));
+=======
+                createElement(ScrollGrid, { liquid: !props.isHeightAuto && !props.forPrint, collapsibleWidth: props.forPrint, colGroups: [{ cols: [{ span: colCnt, minWidth: dayMinWidth }] }], sections: sections }))); }));
+>>>>>>> danhmuc_list
 =======
                 createElement(ScrollGrid, { liquid: !props.isHeightAuto && !props.forPrint, collapsibleWidth: props.forPrint, colGroups: [{ cols: [{ span: colCnt, minWidth: dayMinWidth }] }], sections: sections }))); }));
 >>>>>>> danhmuc_list
@@ -13424,11 +14217,17 @@ var FullCalendar = (function (exports) {
         TableCellTop.prototype.render = function () {
             var props = this.props;
 <<<<<<< HEAD
+<<<<<<< HEAD
             var navLinkAttrs = this.context.options.navLinks
                 ? { 'data-navlink': buildNavLinkData(props.date), tabIndex: 0 }
                 : {};
             return (createElement(DayCellContent, { date: props.date, dateProfile: props.dateProfile, todayRange: props.todayRange, showDayNumber: props.showDayNumber, extraHookProps: props.extraHookProps, defaultContent: renderTopInner }, function (innerElRef, innerContent) { return ((innerContent || props.forceDayTop) && (createElement("div", { className: "fc-daygrid-day-top", ref: innerElRef },
                 createElement("a", __assign({ className: "fc-daygrid-day-number" }, navLinkAttrs), innerContent || createElement(Fragment, null, "\u00A0"))))); }));
+=======
+            var navLinkAttrs = buildNavLinkAttrs(this.context, props.date);
+            return (createElement(DayCellContent, { date: props.date, dateProfile: props.dateProfile, todayRange: props.todayRange, showDayNumber: props.showDayNumber, extraHookProps: props.extraHookProps, defaultContent: renderTopInner }, function (innerElRef, innerContent) { return ((innerContent || props.forceDayTop) && (createElement("div", { className: "fc-daygrid-day-top", ref: innerElRef },
+                createElement("a", __assign({ id: props.dayNumberId, className: "fc-daygrid-day-number" }, navLinkAttrs), innerContent || createElement(Fragment, null, "\u00A0"))))); }));
+>>>>>>> danhmuc_list
 =======
             var navLinkAttrs = buildNavLinkAttrs(this.context, props.date);
             return (createElement(DayCellContent, { date: props.date, dateProfile: props.dateProfile, todayRange: props.todayRange, showDayNumber: props.showDayNumber, extraHookProps: props.extraHookProps, defaultContent: renderTopInner }, function (innerElRef, innerContent) { return ((innerContent || props.forceDayTop) && (createElement("div", { className: "fc-daygrid-day-top", ref: innerElRef },
@@ -13441,6 +14240,7 @@ var FullCalendar = (function (exports) {
         return props.dayNumberText;
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     var DEFAULT_WEEK_NUM_FORMAT = createFormatter({ week: 'narrow' });
     var TableCell = /** @class */ (function (_super) {
@@ -13502,6 +14302,8 @@ var FullCalendar = (function (exports) {
 
 =======
 >>>>>>> danhmuc_list
+=======
+>>>>>>> danhmuc_list
     var DEFAULT_TABLE_EVENT_TIME_FORMAT = createFormatter({
         hour: 'numeric',
         minute: '2-digit',
@@ -13518,6 +14320,7 @@ var FullCalendar = (function (exports) {
         );
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     var TableListItemEvent = /** @class */ (function (_super) {
         __extends(TableListItemEvent, _super);
@@ -13546,6 +14349,8 @@ var FullCalendar = (function (exports) {
 
 =======
 >>>>>>> danhmuc_list
+=======
+>>>>>>> danhmuc_list
     var TableBlockEvent = /** @class */ (function (_super) {
         __extends(TableBlockEvent, _super);
         function TableBlockEvent() {
@@ -13558,6 +14363,7 @@ var FullCalendar = (function (exports) {
         return TableBlockEvent;
     }(BaseComponent));
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     function computeFgSegPlacement(// for one row. TODO: print mode?
     cellModels, segs, dayMaxEvents, dayMaxEventRows, eventHeights, maxContentHeight, colCnt, eventOrderSpecs) {
@@ -13798,6 +14604,8 @@ var FullCalendar = (function (exports) {
         return newSegs;
     }
 =======
+=======
+>>>>>>> danhmuc_list
     var TableListItemEvent = /** @class */ (function (_super) {
         __extends(TableListItemEvent, _super);
         function TableListItemEvent() {
@@ -14121,6 +14929,9 @@ var FullCalendar = (function (exports) {
         };
         return DayGridSegHierarchy;
     }(SegHierarchy));
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
     var TableRow = /** @class */ (function (_super) {
@@ -14136,7 +14947,11 @@ var FullCalendar = (function (exports) {
                 framePositions: null,
                 maxContentHeight: null,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 segHeights: {},
+=======
+                eventInstanceHeights: {},
+>>>>>>> danhmuc_list
 =======
                 eventInstanceHeights: {},
 >>>>>>> danhmuc_list
@@ -14147,6 +14962,10 @@ var FullCalendar = (function (exports) {
             var _this = this;
             var _a = this, props = _a.props, state = _a.state, context = _a.context;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            var options = context.options;
+>>>>>>> danhmuc_list
 =======
             var options = context.options;
 >>>>>>> danhmuc_list
@@ -14155,6 +14974,7 @@ var FullCalendar = (function (exports) {
             var bgEventSegsByCol = splitSegsByFirstCol(props.bgEventSegs, colCnt);
             var highlightSegsByCol = splitSegsByFirstCol(this.getHighlightSegs(), colCnt);
             var mirrorSegsByCol = splitSegsByFirstCol(this.getMirrorSegs(), colCnt);
+<<<<<<< HEAD
 <<<<<<< HEAD
             var _b = computeFgSegPlacement(props.cells, props.fgEventSegs, props.dayMaxEvents, props.dayMaxEventRows, state.segHeights, state.maxContentHeight, colCnt, context.options.eventOrder), paddingBottoms = _b.paddingBottoms, segsByFirstCol = _b.segsByFirstCol, segsByEachCol = _b.segsByEachCol, segIsHidden = _b.segIsHidden, segTops = _b.segTops, segMarginTops = _b.segMarginTops, moreCnts = _b.moreCnts, moreTops = _b.moreTops;
             var selectedInstanceHash = // TODO: messy way to compute this
@@ -14171,6 +14991,8 @@ var FullCalendar = (function (exports) {
                             props.onMoreClick(__assign(__assign({}, arg), { fromCol: col }));
                         }, segIsHidden: segIsHidden, moreMarginTop: moreTops[col] /* rename */, segsByEachCol: segsByEachCol[col], fgPaddingBottom: paddingBottoms[col], fgContentElRef: _this.fgElRefs.createRef(cell.key), fgContent: ( // Fragment scopes the keys
 =======
+=======
+>>>>>>> danhmuc_list
             var _b = computeFgSegPlacement(sortEventSegs(props.fgEventSegs, options.eventOrder), props.dayMaxEvents, props.dayMaxEventRows, options.eventOrderStrict, state.eventInstanceHeights, state.maxContentHeight, props.cells), singleColPlacements = _b.singleColPlacements, multiColPlacements = _b.multiColPlacements, moreCnts = _b.moreCnts, moreMarginTops = _b.moreMarginTops;
             var isForcedInvisible = // TODO: messy way to compute this
              (props.eventDrag && props.eventDrag.affectedInstances) ||
@@ -14182,6 +15004,9 @@ var FullCalendar = (function (exports) {
                     var normalFgNodes = _this.renderFgSegs(col, props.forPrint ? singleColPlacements[col] : multiColPlacements[col], props.todayRange, isForcedInvisible);
                     var mirrorFgNodes = _this.renderFgSegs(col, buildMirrorPlacements(mirrorSegsByCol[col], multiColPlacements), props.todayRange, {}, Boolean(props.eventDrag), Boolean(props.eventResize), false);
                     return (createElement(TableCell, { key: cell.key, elRef: _this.cellElRefs.createRef(cell.key), innerElRef: _this.frameElRefs.createRef(cell.key) /* FF <td> problem, but okay to use for left/right. TODO: rename prop */, dateProfile: props.dateProfile, date: cell.date, showDayNumber: props.showDayNumbers, showWeekNumber: props.showWeekNumbers && col === 0, forceDayTop: props.showWeekNumbers /* even displaying weeknum for row, not necessarily day */, todayRange: props.todayRange, eventSelection: props.eventSelection, eventDrag: props.eventDrag, eventResize: props.eventResize, extraHookProps: cell.extraHookProps, extraDataAttrs: cell.extraDataAttrs, extraClassNames: cell.extraClassNames, extraDateSpan: cell.extraDateSpan, moreCnt: moreCnts[col], moreMarginTop: moreMarginTops[col], singlePlacements: singleColPlacements[col], fgContentElRef: _this.fgElRefs.createRef(cell.key), fgContent: ( // Fragment scopes the keys
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                         createElement(Fragment, null,
                             createElement(Fragment, null, normalFgNodes),
@@ -14217,8 +15042,12 @@ var FullCalendar = (function (exports) {
             return [];
         };
 <<<<<<< HEAD
+<<<<<<< HEAD
         TableRow.prototype.renderFgSegs = function (segs, segIsHidden, // does NOT mean display:hidden
         segTops, segMarginTops, selectedInstanceHash, todayRange, isDragging, isResizing, isDateSelecting) {
+=======
+        TableRow.prototype.renderFgSegs = function (col, segPlacements, todayRange, isForcedInvisible, isDragging, isResizing, isDateSelecting) {
+>>>>>>> danhmuc_list
 =======
         TableRow.prototype.renderFgSegs = function (col, segPlacements, todayRange, isForcedInvisible, isDragging, isResizing, isDateSelecting) {
 >>>>>>> danhmuc_list
@@ -14226,6 +15055,7 @@ var FullCalendar = (function (exports) {
             var eventSelection = this.props.eventSelection;
             var framePositions = this.state.framePositions;
             var defaultDisplayEventEnd = this.props.cells.length === 1; // colCnt === 1
+<<<<<<< HEAD
 <<<<<<< HEAD
             var nodes = [];
             if (framePositions) {
@@ -14244,6 +15074,8 @@ var FullCalendar = (function (exports) {
                     if (isAbsolute) {
                         top_1 = segTops[instanceId];
 =======
+=======
+>>>>>>> danhmuc_list
             var isMirror = isDragging || isResizing || isDateSelecting;
             var nodes = [];
             if (framePositions) {
@@ -14257,6 +15089,9 @@ var FullCalendar = (function (exports) {
                     var left = '';
                     var right = '';
                     if (isAbsolute) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                         if (context.isRtl) {
                             right = 0;
@@ -14267,6 +15102,7 @@ var FullCalendar = (function (exports) {
                             right = framePositions.rights[seg.firstCol] - framePositions.rights[seg.lastCol];
                         }
                     }
+<<<<<<< HEAD
 <<<<<<< HEAD
                     else {
                         marginTop = segMarginTops[instanceId];
@@ -14283,6 +15119,8 @@ var FullCalendar = (function (exports) {
                             left: left || '',
                             right: right || '',
 =======
+=======
+>>>>>>> danhmuc_list
                     /*
                     known bug: events that are force to be list-item but span multiple days still take up space in later columns
                     todo: in print view, for multi-day events, don't display title within non-start/end segs
@@ -14293,6 +15131,9 @@ var FullCalendar = (function (exports) {
                             top: isAbsolute ? placement.absoluteTop : '',
                             left: left,
                             right: right,
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                         } }, hasListItemDisplay(seg) ? (createElement(TableListItemEvent, __assign({ seg: seg, isDragging: isDragging, isSelected: instanceId === eventSelection, defaultDisplayEventEnd: defaultDisplayEventEnd }, getSegMeta(seg, todayRange)))) : (createElement(TableBlockEvent, __assign({ seg: seg, isDragging: isDragging, isResizing: isResizing, isDateSelecting: isDateSelecting, isSelected: instanceId === eventSelection, defaultDisplayEventEnd: defaultDisplayEventEnd }, getSegMeta(seg, todayRange))))));
                 }
@@ -14306,8 +15147,13 @@ var FullCalendar = (function (exports) {
             var nodes = [];
             if (framePositions) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 for (var _i = 0, segs_2 = segs; _i < segs_2.length; _i++) {
                     var seg = segs_2[_i];
+=======
+                for (var _i = 0, segs_1 = segs; _i < segs_1.length; _i++) {
+                    var seg = segs_1[_i];
+>>>>>>> danhmuc_list
 =======
                 for (var _i = 0, segs_1 = segs; _i < segs_1.length; _i++) {
                     var seg = segs_1[_i];
@@ -14325,12 +15171,15 @@ var FullCalendar = (function (exports) {
                 }
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
             return createElement.apply(void 0, __spreadArrays([Fragment, {}], nodes));
         };
         TableRow.prototype.updateSizing = function (isExternalSizingChange) {
             var _a = this, props = _a.props, frameElRefs = _a.frameElRefs;
             if (props.clientWidth !== null) { // positioning ready?
 =======
+=======
+>>>>>>> danhmuc_list
             return createElement.apply(void 0, __spreadArray([Fragment, {}], nodes));
         };
         TableRow.prototype.updateSizing = function (isExternalSizingChange) {
@@ -14338,6 +15187,9 @@ var FullCalendar = (function (exports) {
             if (!props.forPrint &&
                 props.clientWidth !== null // positioning ready?
             ) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                 if (isExternalSizingChange) {
                     var frameEls = props.cells.map(function (cell) { return frameElRefs.currentMap[cell.key]; });
@@ -14350,10 +15202,13 @@ var FullCalendar = (function (exports) {
                     }
                 }
 <<<<<<< HEAD
+<<<<<<< HEAD
                 var limitByContentHeight = props.dayMaxEvents === true || props.dayMaxEventRows === true;
                 this.setState({
                     segHeights: this.computeSegHeights(),
 =======
+=======
+>>>>>>> danhmuc_list
                 var oldInstanceHeights = this.state.eventInstanceHeights;
                 var newInstanceHeights = this.queryEventInstanceHeights();
                 var limitByContentHeight = props.dayMaxEvents === true || props.dayMaxEventRows === true;
@@ -14362,15 +15217,21 @@ var FullCalendar = (function (exports) {
                     // Essentially, once you compute an element's height, never null-out.
                     // TODO: always display all events, as visibility:hidden?
                     eventInstanceHeights: __assign(__assign({}, oldInstanceHeights), newInstanceHeights),
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                     maxContentHeight: limitByContentHeight ? this.computeMaxContentHeight() : null,
                 });
             }
         };
 <<<<<<< HEAD
+<<<<<<< HEAD
         TableRow.prototype.computeSegHeights = function () {
             return mapHash(this.segHarnessRefs.currentMap, function (eventHarnessEl) { return (eventHarnessEl.getBoundingClientRect().height); });
 =======
+=======
+>>>>>>> danhmuc_list
         TableRow.prototype.queryEventInstanceHeights = function () {
             var segElMap = this.segHarnessRefs.currentMap;
             var eventInstanceHeights = {};
@@ -14381,6 +15242,9 @@ var FullCalendar = (function (exports) {
                 eventInstanceHeights[instanceId] = Math.max(eventInstanceHeights[instanceId] || 0, height);
             }
             return eventInstanceHeights;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         };
         TableRow.prototype.computeMaxContentHeight = function () {
@@ -14395,6 +15259,7 @@ var FullCalendar = (function (exports) {
         };
         return TableRow;
     }(DateComponent));
+<<<<<<< HEAD
 <<<<<<< HEAD
     TableRow.addPropsEquality({
         onMoreClick: true,
@@ -14545,6 +15410,8 @@ var FullCalendar = (function (exports) {
         return MorePopover;
     }(DateComponent));
 =======
+=======
+>>>>>>> danhmuc_list
     TableRow.addStateEquality({
         eventInstanceHeights: isPropsEqual,
     });
@@ -14572,6 +15439,9 @@ var FullCalendar = (function (exports) {
         }
         return topsByInstanceId;
     }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
     var Table = /** @class */ (function (_super) {
@@ -14584,6 +15454,7 @@ var FullCalendar = (function (exports) {
             _this.splitDateSelectionSegs = memoize(splitSegsByRow);
             _this.splitEventDrag = memoize(splitInteractionByRow);
             _this.splitEventResize = memoize(splitInteractionByRow);
+<<<<<<< HEAD
 <<<<<<< HEAD
             _this.buildBuildMoreLinkText = memoize(buildBuildMoreLinkText);
             _this.morePopoverRef = createRef();
@@ -14635,6 +15506,8 @@ var FullCalendar = (function (exports) {
                 });
             };
 =======
+=======
+>>>>>>> danhmuc_list
             _this.rowRefs = new RefMap();
             _this.handleRootEl = function (rootEl) {
                 _this.rootEl = rootEl;
@@ -14648,6 +15521,9 @@ var FullCalendar = (function (exports) {
                     _this.context.unregisterInteractiveComponent(_this);
                 }
             };
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             return _this;
         }
@@ -14656,7 +15532,10 @@ var FullCalendar = (function (exports) {
             var props = this.props;
             var dateProfile = props.dateProfile, dayMaxEventRows = props.dayMaxEventRows, dayMaxEvents = props.dayMaxEvents, expandRows = props.expandRows;
 <<<<<<< HEAD
+<<<<<<< HEAD
             var morePopoverState = this.state.morePopoverState;
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
             var rowCnt = props.cells.length;
@@ -14667,7 +15546,10 @@ var FullCalendar = (function (exports) {
             var eventDragByRow = this.splitEventDrag(props.eventDrag, rowCnt);
             var eventResizeByRow = this.splitEventResize(props.eventResize, rowCnt);
 <<<<<<< HEAD
+<<<<<<< HEAD
             var buildMoreLinkText = this.buildBuildMoreLinkText(this.context.options.moreLinkText);
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
             var limitViaBalanced = dayMaxEvents === true || dayMaxEventRows === true;
@@ -14682,7 +15564,11 @@ var FullCalendar = (function (exports) {
                 'fc-daygrid-body',
                 limitViaBalanced ? 'fc-daygrid-body-balanced' : 'fc-daygrid-body-unbalanced',
 <<<<<<< HEAD
+<<<<<<< HEAD
                 expandRows ? '' : 'fc-daygrid-body-natural',
+=======
+                expandRows ? '' : 'fc-daygrid-body-natural', // will height of one row depend on the others?
+>>>>>>> danhmuc_list
 =======
                 expandRows ? '' : 'fc-daygrid-body-natural', // will height of one row depend on the others?
 >>>>>>> danhmuc_list
@@ -14695,7 +15581,11 @@ var FullCalendar = (function (exports) {
                 } },
                 createElement(NowTimer, { unit: "day" }, function (nowDate, todayRange) { return (createElement(Fragment, null,
 <<<<<<< HEAD
+<<<<<<< HEAD
                     createElement("table", { className: "fc-scrollgrid-sync-table", style: {
+=======
+                    createElement("table", { role: "presentation", className: "fc-scrollgrid-sync-table", style: {
+>>>>>>> danhmuc_list
 =======
                     createElement("table", { role: "presentation", className: "fc-scrollgrid-sync-table", style: {
 >>>>>>> danhmuc_list
@@ -14704,6 +15594,7 @@ var FullCalendar = (function (exports) {
                             height: expandRows ? props.clientHeight : '',
                         } },
                         props.colGroupNode,
+<<<<<<< HEAD
 <<<<<<< HEAD
                         createElement("tbody", null, props.cells.map(function (cells, row) { return (createElement(TableRow, { ref: _this.rowRefs.createRef(row), key: cells.length
                                 ? cells[0].date.toISOString() /* best? or put key on cell? or use diff formatter? */
@@ -14716,10 +15607,15 @@ var FullCalendar = (function (exports) {
                             (props.eventResize ? props.eventResize.affectedInstances : null) ||
                             {}, todayRange: todayRange })))); })));
 =======
+=======
+>>>>>>> danhmuc_list
                         createElement("tbody", { role: "presentation" }, props.cells.map(function (cells, row) { return (createElement(TableRow, { ref: _this.rowRefs.createRef(row), key: cells.length
                                 ? cells[0].date.toISOString() /* best? or put key on cell? or use diff formatter? */
                                 : row // in case there are no cells (like when resource view is loading)
                             , showDayNumbers: rowCnt > 1, showWeekNumbers: props.showWeekNumbers, todayRange: todayRange, dateProfile: dateProfile, cells: cells, renderIntro: props.renderRowIntro, businessHourSegs: businessHourSegsByRow[row], eventSelection: props.eventSelection, bgEventSegs: bgEventSegsByRow[row].filter(isSegAllDay) /* hack */, fgEventSegs: fgEventSegsByRow[row], dateSelectionSegs: dateSelectionSegsByRow[row], eventDrag: eventDragByRow[row], eventResize: eventResizeByRow[row], dayMaxEvents: dayMaxEvents, dayMaxEventRows: dayMaxEventRows, clientWidth: props.clientWidth, clientHeight: props.clientHeight, forPrint: props.forPrint })); }))))); })));
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         };
         // Hit System
@@ -14731,6 +15627,7 @@ var FullCalendar = (function (exports) {
             true, // horizontal
             false);
         };
+<<<<<<< HEAD
 <<<<<<< HEAD
         Table.prototype.positionToHit = function (leftPosition, topPosition) {
             var morePopover = this.morePopoverRef.current;
@@ -14753,6 +15650,8 @@ var FullCalendar = (function (exports) {
                     dayEl: this.getCellEl(row, col),
                     relativeRect: {
 =======
+=======
+>>>>>>> danhmuc_list
         Table.prototype.queryHit = function (positionLeft, positionTop) {
             var _a = this, colPositions = _a.colPositions, rowPositions = _a.rowPositions;
             var col = colPositions.leftToIndex(positionLeft);
@@ -14764,6 +15663,9 @@ var FullCalendar = (function (exports) {
                     dateSpan: __assign({ range: this.getCellRange(row, col), allDay: true }, cell.extraDateSpan),
                     dayEl: this.getCellEl(row, col),
                     rect: {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                         left: colPositions.lefts[col],
                         right: colPositions.rights[col],
@@ -14771,6 +15673,10 @@ var FullCalendar = (function (exports) {
                         bottom: rowPositions.bottoms[row],
                     },
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                    layer: 0,
+>>>>>>> danhmuc_list
 =======
                     layer: 0,
 >>>>>>> danhmuc_list
@@ -14789,12 +15695,15 @@ var FullCalendar = (function (exports) {
         return Table;
     }(DateComponent));
 <<<<<<< HEAD
+<<<<<<< HEAD
     function buildBuildMoreLinkText(moreLinkTextInput) {
         if (typeof moreLinkTextInput === 'function') {
             return moreLinkTextInput;
         }
         return function (num) { return "+" + num + " " + moreLinkTextInput; };
     }
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
     function isSegAllDay(seg) {
@@ -14821,6 +15730,7 @@ var FullCalendar = (function (exports) {
             _this.slicer = new DayTableSlicer();
             _this.tableRef = createRef();
 <<<<<<< HEAD
+<<<<<<< HEAD
             _this.handleRootEl = function (rootEl) {
                 if (rootEl) {
                     _this.context.registerInteractiveComponent(_this, { el: rootEl });
@@ -14831,10 +15741,13 @@ var FullCalendar = (function (exports) {
             };
 =======
 >>>>>>> danhmuc_list
+=======
+>>>>>>> danhmuc_list
             return _this;
         }
         DayTable.prototype.render = function () {
             var _a = this, props = _a.props, context = _a.context;
+<<<<<<< HEAD
 <<<<<<< HEAD
             return (createElement(Table, __assign({ ref: this.tableRef, elRef: this.handleRootEl }, this.slicer.sliceProps(props, props.dateProfile, props.nextDayThreshold, context, props.dayTableModel), { dateProfile: props.dateProfile, cells: props.dayTableModel.cells, colGroupNode: props.colGroupNode, tableMinWidth: props.tableMinWidth, renderRowIntro: props.renderRowIntro, dayMaxEvents: props.dayMaxEvents, dayMaxEventRows: props.dayMaxEventRows, showWeekNumbers: props.showWeekNumbers, expandRows: props.expandRows, headerAlignElRef: props.headerAlignElRef, clientWidth: props.clientWidth, clientHeight: props.clientHeight, forPrint: props.forPrint })));
         };
@@ -14858,6 +15771,9 @@ var FullCalendar = (function (exports) {
                 };
             }
             return null;
+=======
+            return (createElement(Table, __assign({ ref: this.tableRef }, this.slicer.sliceProps(props, props.dateProfile, props.nextDayThreshold, context, props.dayTableModel), { dateProfile: props.dateProfile, cells: props.dayTableModel.cells, colGroupNode: props.colGroupNode, tableMinWidth: props.tableMinWidth, renderRowIntro: props.renderRowIntro, dayMaxEvents: props.dayMaxEvents, dayMaxEventRows: props.dayMaxEventRows, showWeekNumbers: props.showWeekNumbers, expandRows: props.expandRows, headerAlignElRef: props.headerAlignElRef, clientWidth: props.clientWidth, clientHeight: props.clientHeight, forPrint: props.forPrint })));
+>>>>>>> danhmuc_list
 =======
             return (createElement(Table, __assign({ ref: this.tableRef }, this.slicer.sliceProps(props, props.dateProfile, props.nextDayThreshold, context, props.dayTableModel), { dateProfile: props.dateProfile, cells: props.dayTableModel.cells, colGroupNode: props.colGroupNode, tableMinWidth: props.tableMinWidth, renderRowIntro: props.renderRowIntro, dayMaxEvents: props.dayMaxEvents, dayMaxEventRows: props.dayMaxEventRows, showWeekNumbers: props.showWeekNumbers, expandRows: props.expandRows, headerAlignElRef: props.headerAlignElRef, clientWidth: props.clientWidth, clientHeight: props.clientHeight, forPrint: props.forPrint })));
 >>>>>>> danhmuc_list
@@ -14926,6 +15842,7 @@ var FullCalendar = (function (exports) {
     }(DateProfileGenerator));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     var OPTION_REFINERS$1 = {
         moreLinkClick: identity,
         moreLinkClassNames: identity,
@@ -14937,6 +15854,10 @@ var FullCalendar = (function (exports) {
     var dayGridPlugin = createPlugin({
         initialView: 'dayGridMonth',
         optionRefiners: OPTION_REFINERS$1,
+=======
+    var dayGridPlugin = createPlugin({
+        initialView: 'dayGridMonth',
+>>>>>>> danhmuc_list
 =======
     var dayGridPlugin = createPlugin({
         initialView: 'dayGridMonth',
@@ -15021,7 +15942,11 @@ var FullCalendar = (function (exports) {
                 text: dateEnv.format(props.date, labelFormat),
             };
 <<<<<<< HEAD
+<<<<<<< HEAD
             return (createElement(RenderHook, { hookProps: hookProps, classNames: options.slotLabelClassNames, content: options.slotLabelContent, defaultContent: renderInnerContent$3, didMount: options.slotLabelDidMount, willUnmount: options.slotLabelWillUnmount }, function (rootElRef, customClassNames, innerElRef, innerContent) { return (createElement("td", { ref: rootElRef, className: classNames.concat(customClassNames).join(' '), "data-time": props.isoTimeStr },
+=======
+            return (createElement(RenderHook, { hookProps: hookProps, classNames: options.slotLabelClassNames, content: options.slotLabelContent, defaultContent: renderInnerContent$1, didMount: options.slotLabelDidMount, willUnmount: options.slotLabelWillUnmount }, function (rootElRef, customClassNames, innerElRef, innerContent) { return (createElement("td", { ref: rootElRef, className: classNames.concat(customClassNames).join(' '), "data-time": props.isoTimeStr },
+>>>>>>> danhmuc_list
 =======
             return (createElement(RenderHook, { hookProps: hookProps, classNames: options.slotLabelClassNames, content: options.slotLabelContent, defaultContent: renderInnerContent$1, didMount: options.slotLabelDidMount, willUnmount: options.slotLabelWillUnmount }, function (rootElRef, customClassNames, innerElRef, innerContent) { return (createElement("td", { ref: rootElRef, className: classNames.concat(customClassNames).join(' '), "data-time": props.isoTimeStr },
 >>>>>>> danhmuc_list
@@ -15030,7 +15955,11 @@ var FullCalendar = (function (exports) {
         }));
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     function renderInnerContent$3(props) {
+=======
+    function renderInnerContent$1(props) {
+>>>>>>> danhmuc_list
 =======
     function renderInnerContent$1(props) {
 >>>>>>> danhmuc_list
@@ -15050,7 +15979,11 @@ var FullCalendar = (function (exports) {
     }(BaseComponent));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     var DEFAULT_WEEK_NUM_FORMAT$1 = createFormatter({ week: 'short' });
+=======
+    var DEFAULT_WEEK_NUM_FORMAT = createFormatter({ week: 'short' });
+>>>>>>> danhmuc_list
 =======
     var DEFAULT_WEEK_NUM_FORMAT = createFormatter({ week: 'short' });
 >>>>>>> danhmuc_list
@@ -15081,17 +16014,23 @@ var FullCalendar = (function (exports) {
                 var range = dateProfile.renderRange;
                 var dayCnt = diffDays(range.start, range.end);
 <<<<<<< HEAD
+<<<<<<< HEAD
                 var navLinkAttrs = (options.navLinks && dayCnt === 1) // only do in day views (to avoid doing in week views that dont need it)
                     ? { 'data-navlink': buildNavLinkData(range.start, 'week'), tabIndex: 0 }
                     : {};
                 if (options.weekNumbers && rowKey === 'day') {
                     return (createElement(WeekNumberRoot, { date: range.start, defaultFormat: DEFAULT_WEEK_NUM_FORMAT$1 }, function (rootElRef, classNames, innerElRef, innerContent) { return (createElement("th", { ref: rootElRef, className: [
 =======
+=======
+>>>>>>> danhmuc_list
                 var navLinkAttrs = (dayCnt === 1) // only do in day views (to avoid doing in week views that dont need it)
                     ? buildNavLinkAttrs(_this.context, range.start, 'week')
                     : {};
                 if (options.weekNumbers && rowKey === 'day') {
                     return (createElement(WeekNumberRoot, { date: range.start, defaultFormat: DEFAULT_WEEK_NUM_FORMAT }, function (rootElRef, classNames, innerElRef, innerContent) { return (createElement("th", { ref: rootElRef, "aria-hidden": true, className: [
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                             'fc-timegrid-axis',
                             'fc-scrollgrid-shrink',
@@ -15100,7 +16039,11 @@ var FullCalendar = (function (exports) {
                             createElement("a", __assign({ ref: innerElRef, className: "fc-timegrid-axis-cushion fc-scrollgrid-shrink-cushion fc-scrollgrid-sync-inner" }, navLinkAttrs), innerContent)))); }));
                 }
 <<<<<<< HEAD
+<<<<<<< HEAD
                 return (createElement("th", { className: "fc-timegrid-axis" },
+=======
+                return (createElement("th", { "aria-hidden": true, className: "fc-timegrid-axis" },
+>>>>>>> danhmuc_list
 =======
                 return (createElement("th", { "aria-hidden": true, className: "fc-timegrid-axis" },
 >>>>>>> danhmuc_list
@@ -15119,7 +16062,11 @@ var FullCalendar = (function (exports) {
                 return (
                 // TODO: make reusable hook. used in list view too
 <<<<<<< HEAD
+<<<<<<< HEAD
                 createElement(RenderHook, { hookProps: hookProps, classNames: options.allDayClassNames, content: options.allDayContent, defaultContent: renderAllDayInner, didMount: options.allDayDidMount, willUnmount: options.allDayWillUnmount }, function (rootElRef, classNames, innerElRef, innerContent) { return (createElement("td", { ref: rootElRef, className: [
+=======
+                createElement(RenderHook, { hookProps: hookProps, classNames: options.allDayClassNames, content: options.allDayContent, defaultContent: renderAllDayInner$1, didMount: options.allDayDidMount, willUnmount: options.allDayWillUnmount }, function (rootElRef, classNames, innerElRef, innerContent) { return (createElement("td", { ref: rootElRef, "aria-hidden": true, className: [
+>>>>>>> danhmuc_list
 =======
                 createElement(RenderHook, { hookProps: hookProps, classNames: options.allDayClassNames, content: options.allDayContent, defaultContent: renderAllDayInner$1, didMount: options.allDayDidMount, willUnmount: options.allDayWillUnmount }, function (rootElRef, classNames, innerElRef, innerContent) { return (createElement("td", { ref: rootElRef, "aria-hidden": true, className: [
 >>>>>>> danhmuc_list
@@ -15163,7 +16110,11 @@ var FullCalendar = (function (exports) {
                     key: 'all-day-divider',
                     outerContent: ( // TODO: rename to cellContent so don't need to define <tr>?
 <<<<<<< HEAD
+<<<<<<< HEAD
                     createElement("tr", { className: "fc-scrollgrid-section" },
+=======
+                    createElement("tr", { role: "presentation", className: "fc-scrollgrid-section" },
+>>>>>>> danhmuc_list
 =======
                     createElement("tr", { role: "presentation", className: "fc-scrollgrid-section" },
 >>>>>>> danhmuc_list
@@ -15182,7 +16133,11 @@ var FullCalendar = (function (exports) {
             });
             return (createElement(ViewRoot, { viewSpec: context.viewSpec, elRef: this.rootElRef }, function (rootElRef, classNames) { return (createElement("div", { className: ['fc-timegrid'].concat(classNames).join(' '), ref: rootElRef },
 <<<<<<< HEAD
+<<<<<<< HEAD
                 createElement(SimpleScrollGrid, { liquid: !props.isHeightAuto && !props.forPrint, cols: [{ width: 'shrink' }], sections: sections }))); }));
+=======
+                createElement(SimpleScrollGrid, { liquid: !props.isHeightAuto && !props.forPrint, collapsibleWidth: props.forPrint, cols: [{ width: 'shrink' }], sections: sections }))); }));
+>>>>>>> danhmuc_list
 =======
                 createElement(SimpleScrollGrid, { liquid: !props.isHeightAuto && !props.forPrint, collapsibleWidth: props.forPrint, cols: [{ width: 'shrink' }], sections: sections }))); }));
 >>>>>>> danhmuc_list
@@ -15207,7 +16162,11 @@ var FullCalendar = (function (exports) {
                         {
                             key: 'axis',
 <<<<<<< HEAD
+<<<<<<< HEAD
                             rowContent: function (arg) { return (createElement("tr", null, _this.renderHeadAxis('day', arg.rowSyncHeights[0]))); },
+=======
+                            rowContent: function (arg) { return (createElement("tr", { role: "presentation" }, _this.renderHeadAxis('day', arg.rowSyncHeights[0]))); },
+>>>>>>> danhmuc_list
 =======
                             rowContent: function (arg) { return (createElement("tr", { role: "presentation" }, _this.renderHeadAxis('day', arg.rowSyncHeights[0]))); },
 >>>>>>> danhmuc_list
@@ -15230,7 +16189,11 @@ var FullCalendar = (function (exports) {
                         {
                             key: 'axis',
 <<<<<<< HEAD
+<<<<<<< HEAD
                             rowContent: function (contentArg) { return (createElement("tr", null, _this.renderTableRowAxis(contentArg.rowSyncHeights[0]))); },
+=======
+                            rowContent: function (contentArg) { return (createElement("tr", { role: "presentation" }, _this.renderTableRowAxis(contentArg.rowSyncHeights[0]))); },
+>>>>>>> danhmuc_list
 =======
                             rowContent: function (contentArg) { return (createElement("tr", { role: "presentation" }, _this.renderTableRowAxis(contentArg.rowSyncHeights[0]))); },
 >>>>>>> danhmuc_list
@@ -15246,7 +16209,11 @@ var FullCalendar = (function (exports) {
                     type: 'body',
                     outerContent: ( // TODO: rename to cellContent so don't need to define <tr>?
 <<<<<<< HEAD
+<<<<<<< HEAD
                     createElement("tr", { className: "fc-scrollgrid-section" },
+=======
+                    createElement("tr", { role: "presentation", className: "fc-scrollgrid-section" },
+>>>>>>> danhmuc_list
 =======
                     createElement("tr", { role: "presentation", className: "fc-scrollgrid-section" },
 >>>>>>> danhmuc_list
@@ -15266,7 +16233,11 @@ var FullCalendar = (function (exports) {
                         // TODO: make this now-indicator arrow more DRY with TimeColsContent
                         createElement("div", { className: "fc-timegrid-axis-chunk" },
 <<<<<<< HEAD
+<<<<<<< HEAD
                             createElement("table", { style: { height: arg.expandRows ? arg.clientHeight : '' } },
+=======
+                            createElement("table", { "aria-hidden": true, style: { height: arg.expandRows ? arg.clientHeight : '' } },
+>>>>>>> danhmuc_list
 =======
                             createElement("table", { "aria-hidden": true, style: { height: arg.expandRows ? arg.clientHeight : '' } },
 >>>>>>> danhmuc_list
@@ -15310,7 +16281,11 @@ var FullCalendar = (function (exports) {
             }
             return (createElement(ViewRoot, { viewSpec: context.viewSpec, elRef: this.rootElRef }, function (rootElRef, classNames) { return (createElement("div", { className: ['fc-timegrid'].concat(classNames).join(' '), ref: rootElRef },
 <<<<<<< HEAD
+<<<<<<< HEAD
                 createElement(ScrollGrid, { liquid: !props.isHeightAuto && !props.forPrint, colGroups: [
+=======
+                createElement(ScrollGrid, { liquid: !props.isHeightAuto && !props.forPrint, collapsibleWidth: false, colGroups: [
+>>>>>>> danhmuc_list
 =======
                 createElement(ScrollGrid, { liquid: !props.isHeightAuto && !props.forPrint, collapsibleWidth: false, colGroups: [
 >>>>>>> danhmuc_list
@@ -15331,7 +16306,11 @@ var FullCalendar = (function (exports) {
         return TimeColsView;
     }(DateComponent));
 <<<<<<< HEAD
+<<<<<<< HEAD
     function renderAllDayInner(hookProps) {
+=======
+    function renderAllDayInner$1(hookProps) {
+>>>>>>> danhmuc_list
 =======
     function renderAllDayInner$1(hookProps) {
 >>>>>>> danhmuc_list
@@ -15434,8 +16413,13 @@ var FullCalendar = (function (exports) {
         TimeColsSlats.prototype.render = function () {
             var _a = this, props = _a.props, context = _a.context;
 <<<<<<< HEAD
+<<<<<<< HEAD
             return (createElement("div", { className: "fc-timegrid-slots", ref: this.rootElRef },
                 createElement("table", { className: context.theme.getClass('table'), style: {
+=======
+            return (createElement("div", { ref: this.rootElRef, className: "fc-timegrid-slots" },
+                createElement("table", { "aria-hidden": true, className: context.theme.getClass('table'), style: {
+>>>>>>> danhmuc_list
 =======
             return (createElement("div", { ref: this.rootElRef, className: "fc-timegrid-slots" },
                 createElement("table", { "aria-hidden": true, className: context.theme.getClass('table'), style: {
@@ -15511,6 +16495,7 @@ var FullCalendar = (function (exports) {
         return byRow;
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     // UNFORTUNATELY, assigns results to the top/bottom/level/forwardCoord/backwardCoord props of the actual segs.
     // TODO: return hash (by instanceId) of results
@@ -15683,6 +16668,8 @@ var FullCalendar = (function (exports) {
 
     var DEFAULT_TIME_FORMAT = createFormatter({
 =======
+=======
+>>>>>>> danhmuc_list
     var TimeColMoreLink = /** @class */ (function (_super) {
         __extends(TimeColMoreLink, _super);
         function TimeColMoreLink() {
@@ -15901,6 +16888,9 @@ var FullCalendar = (function (exports) {
     }
 
     var DEFAULT_TIME_FORMAT$1 = createFormatter({
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         hour: 'numeric',
         minute: '2-digit',
@@ -15917,15 +16907,21 @@ var FullCalendar = (function (exports) {
                 'fc-v-event',
             ];
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (this.props.isCondensed) {
                 classNames.push('fc-timegrid-event-condensed');
             }
             return (createElement(StandardEvent, __assign({}, this.props, { defaultTimeFormat: DEFAULT_TIME_FORMAT, extraClassNames: classNames })));
 =======
+=======
+>>>>>>> danhmuc_list
             if (this.props.isShort) {
                 classNames.push('fc-timegrid-event-short');
             }
             return (createElement(StandardEvent, __assign({}, this.props, { defaultTimeFormat: DEFAULT_TIME_FORMAT$1, extraClassNames: classNames })));
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         };
         return TimeColEvent;
@@ -15945,6 +16941,7 @@ var FullCalendar = (function (exports) {
     }(BaseComponent));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     config.timeGridEventCondensedHeight = 30;
     var TimeCol = /** @class */ (function (_super) {
         __extends(TimeCol, _super);
@@ -15952,6 +16949,8 @@ var FullCalendar = (function (exports) {
             return _super !== null && _super.apply(this, arguments) || this;
         }
 =======
+=======
+>>>>>>> danhmuc_list
     var TimeCol = /** @class */ (function (_super) {
         __extends(TimeCol, _super);
         function TimeCol() {
@@ -15960,6 +16959,9 @@ var FullCalendar = (function (exports) {
             return _this;
         }
         // TODO: memoize event-placement?
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         TimeCol.prototype.render = function () {
             var _this = this;
@@ -15974,7 +16976,12 @@ var FullCalendar = (function (exports) {
                 (props.eventResize && props.eventResize.affectedInstances) ||
                 {};
 <<<<<<< HEAD
+<<<<<<< HEAD
             return (createElement(DayCellRoot, { elRef: props.elRef, date: props.date, dateProfile: props.dateProfile, todayRange: props.todayRange, extraHookProps: props.extraHookProps }, function (rootElRef, classNames, dataAttrs) { return (createElement("td", __assign({ ref: rootElRef, className: ['fc-timegrid-col'].concat(classNames, props.extraClassNames || []).join(' ') }, dataAttrs, props.extraDataAttrs),
+=======
+            var sortedFgSegs = this.sortEventSegs(props.fgEventSegs, context.options.eventOrder);
+            return (createElement(DayCellRoot, { elRef: props.elRef, date: props.date, dateProfile: props.dateProfile, todayRange: props.todayRange, extraHookProps: props.extraHookProps }, function (rootElRef, classNames, dataAttrs) { return (createElement("td", __assign({ ref: rootElRef, role: "gridcell", className: ['fc-timegrid-col'].concat(classNames, props.extraClassNames || []).join(' ') }, dataAttrs, props.extraDataAttrs),
+>>>>>>> danhmuc_list
 =======
             var sortedFgSegs = this.sortEventSegs(props.fgEventSegs, context.options.eventOrder);
             return (createElement(DayCellRoot, { elRef: props.elRef, date: props.date, dateProfile: props.dateProfile, todayRange: props.todayRange, extraHookProps: props.extraHookProps }, function (rootElRef, classNames, dataAttrs) { return (createElement("td", __assign({ ref: rootElRef, role: "gridcell", className: ['fc-timegrid-col'].concat(classNames, props.extraClassNames || []).join(' ') }, dataAttrs, props.extraDataAttrs),
@@ -15985,7 +16992,11 @@ var FullCalendar = (function (exports) {
                         _this.renderFillSegs(props.bgEventSegs, 'bg-event'),
                         _this.renderFillSegs(props.dateSelectionSegs, 'highlight')),
 <<<<<<< HEAD
+<<<<<<< HEAD
                     createElement("div", { className: "fc-timegrid-col-events" }, _this.renderFgSegs(props.fgEventSegs, interactionAffectedInstances)),
+=======
+                    createElement("div", { className: "fc-timegrid-col-events" }, _this.renderFgSegs(sortedFgSegs, interactionAffectedInstances, false, false, false)),
+>>>>>>> danhmuc_list
 =======
                     createElement("div", { className: "fc-timegrid-col-events" }, _this.renderFgSegs(sortedFgSegs, interactionAffectedInstances, false, false, false)),
 >>>>>>> danhmuc_list
@@ -15993,6 +17004,7 @@ var FullCalendar = (function (exports) {
                     createElement("div", { className: "fc-timegrid-now-indicator-container" }, _this.renderNowIndicator(props.nowIndicatorSegs)),
                     createElement(TimeColMisc, { date: props.date, dateProfile: props.dateProfile, todayRange: props.todayRange, extraHookProps: props.extraHookProps })))); }));
         };
+<<<<<<< HEAD
 <<<<<<< HEAD
         TimeCol.prototype.renderFgSegs = function (segs, segIsInvisible, isDragging, isResizing, isDateSelecting) {
             var props = this.props;
@@ -16040,6 +17052,8 @@ var FullCalendar = (function (exports) {
                 createElement(BgEvent, __assign({ seg: seg }, getSegMeta(seg, props.todayRange, props.nowDate))) :
                 renderFill(fillType))); });
 =======
+=======
+>>>>>>> danhmuc_list
         TimeCol.prototype.renderFgSegs = function (sortedFgSegs, segIsInvisible, isDragging, isResizing, isDateSelecting) {
             var props = this.props;
             if (props.forPrint) {
@@ -16088,6 +17102,9 @@ var FullCalendar = (function (exports) {
                     createElement(BgEvent, __assign({ seg: seg }, getSegMeta(seg, props.todayRange, props.nowDate))) :
                     renderFill(fillType)));
             });
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             return createElement(Fragment, null, children);
         };
@@ -16101,22 +17118,29 @@ var FullCalendar = (function (exports) {
                 key: i }, function (rootElRef, classNames, innerElRef, innerContent) { return (createElement("div", { ref: rootElRef, className: ['fc-timegrid-now-indicator-line'].concat(classNames).join(' '), style: { top: slatCoords.computeDateTop(seg.start, date) } }, innerContent)); })); });
         };
 <<<<<<< HEAD
+<<<<<<< HEAD
         TimeCol.prototype.computeFgSegPositionCss = function (seg) {
             var _a = this.context, isRtl = _a.isRtl, options = _a.options;
             var shouldOverlap = options.slotEventOverlap;
             var backwardCoord = seg.backwardCoord; // the left side if LTR. the right side if RTL. floating-point
             var forwardCoord = seg.forwardCoord; // the right side if LTR. the left side if RTL. floating-point
 =======
+=======
+>>>>>>> danhmuc_list
         TimeCol.prototype.computeSegHStyle = function (segHCoords) {
             var _a = this.context, isRtl = _a.isRtl, options = _a.options;
             var shouldOverlap = options.slotEventOverlap;
             var nearCoord = segHCoords.levelCoord; // the left side if LTR. the right side if RTL. floating-point
             var farCoord = segHCoords.levelCoord + segHCoords.thickness; // the right side if LTR. the left side if RTL. floating-point
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             var left; // amount of space from left edge, a fraction of the total width
             var right; // amount of space from right edge, a fraction of the total width
             if (shouldOverlap) {
                 // double the width, but don't go beyond the maximum forward coordinate (1.0)
+<<<<<<< HEAD
 <<<<<<< HEAD
                 forwardCoord = Math.min(1, backwardCoord + (forwardCoord - backwardCoord) * 2);
             }
@@ -16148,6 +17172,8 @@ var FullCalendar = (function (exports) {
         return TimeCol;
     }(BaseComponent));
 =======
+=======
+>>>>>>> danhmuc_list
                 farCoord = Math.min(1, nearCoord + (farCoord - nearCoord) * 2);
             }
             if (isRtl) {
@@ -16194,6 +17220,9 @@ var FullCalendar = (function (exports) {
     function compileSegsFromEntries(segEntries, allSegs) {
         return segEntries.map(function (segEntry) { return allSegs[segEntry.index]; });
     }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
     var TimeColsContent = /** @class */ (function (_super) {
@@ -16227,7 +17256,11 @@ var FullCalendar = (function (exports) {
             var eventResizeByRow = this.splitEventResize(props.eventResize, colCnt);
             return (createElement("div", { className: "fc-timegrid-cols", ref: this.rootElRef },
 <<<<<<< HEAD
+<<<<<<< HEAD
                 createElement("table", { style: {
+=======
+                createElement("table", { role: "presentation", style: {
+>>>>>>> danhmuc_list
 =======
                 createElement("table", { role: "presentation", style: {
 >>>>>>> danhmuc_list
@@ -16236,6 +17269,7 @@ var FullCalendar = (function (exports) {
                     } },
                     props.tableColGroupNode,
 <<<<<<< HEAD
+<<<<<<< HEAD
                     createElement("tbody", null,
                         createElement("tr", null,
                             props.axis && (createElement("td", { className: "fc-timegrid-col fc-timegrid-axis" },
@@ -16243,12 +17277,17 @@ var FullCalendar = (function (exports) {
                                     createElement("div", { className: "fc-timegrid-now-indicator-container" }, typeof nowIndicatorTop === 'number' && (createElement(NowIndicatorRoot, { isAxis: true, date: props.nowDate }, function (rootElRef, classNames, innerElRef, innerContent) { return (createElement("div", { ref: rootElRef, className: ['fc-timegrid-now-indicator-arrow'].concat(classNames).join(' '), style: { top: nowIndicatorTop } }, innerContent)); })))))),
                             props.cells.map(function (cell, i) { return (createElement(TimeCol, { key: cell.key, elRef: _this.cellElRefs.createRef(cell.key), dateProfile: props.dateProfile, date: cell.date, nowDate: props.nowDate, todayRange: props.todayRange, extraHookProps: cell.extraHookProps, extraDataAttrs: cell.extraDataAttrs, extraClassNames: cell.extraClassNames, fgEventSegs: fgEventSegsByRow[i], bgEventSegs: bgEventSegsByRow[i], businessHourSegs: businessHourSegsByRow[i], nowIndicatorSegs: nowIndicatorSegsByRow[i], dateSelectionSegs: dateSelectionSegsByRow[i], eventDrag: eventDragByRow[i], eventResize: eventResizeByRow[i], slatCoords: props.slatCoords, eventSelection: props.eventSelection, forPrint: props.forPrint })); }))))));
 =======
+=======
+>>>>>>> danhmuc_list
                     createElement("tbody", { role: "presentation" },
                         createElement("tr", { role: "row" },
                             props.axis && (createElement("td", { "aria-hidden": true, className: "fc-timegrid-col fc-timegrid-axis" },
                                 createElement("div", { className: "fc-timegrid-col-frame" },
                                     createElement("div", { className: "fc-timegrid-now-indicator-container" }, typeof nowIndicatorTop === 'number' && (createElement(NowIndicatorRoot, { isAxis: true, date: props.nowDate }, function (rootElRef, classNames, innerElRef, innerContent) { return (createElement("div", { ref: rootElRef, className: ['fc-timegrid-now-indicator-arrow'].concat(classNames).join(' '), style: { top: nowIndicatorTop } }, innerContent)); })))))),
                             props.cells.map(function (cell, i) { return (createElement(TimeCol, { key: cell.key, elRef: _this.cellElRefs.createRef(cell.key), dateProfile: props.dateProfile, date: cell.date, nowDate: props.nowDate, todayRange: props.todayRange, extraHookProps: cell.extraHookProps, extraDataAttrs: cell.extraDataAttrs, extraClassNames: cell.extraClassNames, extraDateSpan: cell.extraDateSpan, fgEventSegs: fgEventSegsByRow[i], bgEventSegs: bgEventSegsByRow[i], businessHourSegs: businessHourSegsByRow[i], nowIndicatorSegs: nowIndicatorSegsByRow[i], dateSelectionSegs: dateSelectionSegsByRow[i], eventDrag: eventDragByRow[i], eventResize: eventResizeByRow[i], slatCoords: props.slatCoords, eventSelection: props.eventSelection, forPrint: props.forPrint })); }))))));
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         };
         TimeColsContent.prototype.componentDidMount = function () {
@@ -16283,7 +17322,10 @@ var FullCalendar = (function (exports) {
                 slatCoords: null,
             };
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
             _this.handleRootEl = function (el) {
                 if (el) {
                     _this.context.registerInteractiveComponent(_this, {
@@ -16295,6 +17337,9 @@ var FullCalendar = (function (exports) {
                     _this.context.unregisterInteractiveComponent(_this);
                 }
             };
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             _this.handleScrollRequest = function (request) {
                 var onScrollTopRequest = _this.props.onScrollTopRequest;
@@ -16326,7 +17371,11 @@ var FullCalendar = (function (exports) {
         TimeCols.prototype.render = function () {
             var _a = this, props = _a.props, state = _a.state;
 <<<<<<< HEAD
+<<<<<<< HEAD
             return (createElement("div", { className: "fc-timegrid-body", ref: props.rootElRef, style: {
+=======
+            return (createElement("div", { className: "fc-timegrid-body", ref: this.handleRootEl, style: {
+>>>>>>> danhmuc_list
 =======
             return (createElement("div", { className: "fc-timegrid-body", ref: this.handleRootEl, style: {
 >>>>>>> danhmuc_list
@@ -16348,7 +17397,11 @@ var FullCalendar = (function (exports) {
             this.scrollResponder.detach();
         };
 <<<<<<< HEAD
+<<<<<<< HEAD
         TimeCols.prototype.positionToHit = function (positionLeft, positionTop) {
+=======
+        TimeCols.prototype.queryHit = function (positionLeft, positionTop) {
+>>>>>>> danhmuc_list
 =======
         TimeCols.prototype.queryHit = function (positionLeft, positionTop) {
 >>>>>>> danhmuc_list
@@ -16361,6 +17414,10 @@ var FullCalendar = (function (exports) {
             var slatIndex = slatCoords.positions.topToIndex(positionTop);
             if (colIndex != null && slatIndex != null) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                var cell = this.props.cells[colIndex];
+>>>>>>> danhmuc_list
 =======
                 var cell = this.props.cells[colIndex];
 >>>>>>> danhmuc_list
@@ -16375,6 +17432,7 @@ var FullCalendar = (function (exports) {
                 var end = dateEnv.add(start, snapDuration);
                 return {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     col: colIndex,
                     dateSpan: {
                         range: { start: start, end: end },
@@ -16383,10 +17441,15 @@ var FullCalendar = (function (exports) {
                     dayEl: colCoords.els[colIndex],
                     relativeRect: {
 =======
+=======
+>>>>>>> danhmuc_list
                     dateProfile: dateProfile,
                     dateSpan: __assign({ range: { start: start, end: end }, allDay: false }, cell.extraDateSpan),
                     dayEl: colCoords.els[colIndex],
                     rect: {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                         left: colCoords.lefts[colIndex],
                         right: colCoords.rights[colIndex],
@@ -16394,6 +17457,10 @@ var FullCalendar = (function (exports) {
                         bottom: slatTop + slatHeight,
                     },
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                    layer: 0,
+>>>>>>> danhmuc_list
 =======
                     layer: 0,
 >>>>>>> danhmuc_list
@@ -16403,7 +17470,11 @@ var FullCalendar = (function (exports) {
         };
         return TimeCols;
 <<<<<<< HEAD
+<<<<<<< HEAD
     }(BaseComponent));
+=======
+    }(DateComponent));
+>>>>>>> danhmuc_list
 =======
     }(DateComponent));
 >>>>>>> danhmuc_list
@@ -16450,6 +17521,7 @@ var FullCalendar = (function (exports) {
             _this.slicer = new DayTimeColsSlicer();
             _this.timeColsRef = createRef();
 <<<<<<< HEAD
+<<<<<<< HEAD
             _this.handleRootEl = function (rootEl) {
                 if (rootEl) {
                     _this.context.registerInteractiveComponent(_this, { el: rootEl });
@@ -16458,6 +17530,8 @@ var FullCalendar = (function (exports) {
                     _this.context.unregisterInteractiveComponent(_this);
                 }
             };
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
             return _this;
@@ -16470,6 +17544,7 @@ var FullCalendar = (function (exports) {
             var dayRanges = this.buildDayRanges(dayTableModel, dateProfile, context.dateEnv);
             // give it the first row of cells
             // TODO: would move this further down hierarchy, but sliceNowDate needs it
+<<<<<<< HEAD
 <<<<<<< HEAD
             return (createElement(NowTimer, { unit: isNowIndicator ? 'minute' : 'day' }, function (nowDate, todayRange) { return (createElement(TimeCols, __assign({ ref: _this.timeColsRef, rootElRef: _this.handleRootEl }, _this.slicer.sliceProps(props, dateProfile, null, context, dayRanges), { forPrint: props.forPrint, axis: props.axis, dateProfile: dateProfile, slatMetas: props.slatMetas, slotDuration: props.slotDuration, cells: dayTableModel.cells[0], tableColGroupNode: props.tableColGroupNode, tableMinWidth: props.tableMinWidth, clientWidth: props.clientWidth, clientHeight: props.clientHeight, expandRows: props.expandRows, nowDate: nowDate, nowIndicatorSegs: isNowIndicator && _this.slicer.sliceNowDate(nowDate, context, dayRanges), todayRange: todayRange, onScrollTopRequest: props.onScrollTopRequest, onSlatCoords: props.onSlatCoords }))); }));
         };
@@ -16490,6 +17565,9 @@ var FullCalendar = (function (exports) {
                 };
             }
             return null;
+=======
+            return (createElement(NowTimer, { unit: isNowIndicator ? 'minute' : 'day' }, function (nowDate, todayRange) { return (createElement(TimeCols, __assign({ ref: _this.timeColsRef }, _this.slicer.sliceProps(props, dateProfile, null, context, dayRanges), { forPrint: props.forPrint, axis: props.axis, dateProfile: dateProfile, slatMetas: props.slatMetas, slotDuration: props.slotDuration, cells: dayTableModel.cells[0], tableColGroupNode: props.tableColGroupNode, tableMinWidth: props.tableMinWidth, clientWidth: props.clientWidth, clientHeight: props.clientHeight, expandRows: props.expandRows, nowDate: nowDate, nowIndicatorSegs: isNowIndicator && _this.slicer.sliceNowDate(nowDate, context, dayRanges), todayRange: todayRange, onScrollTopRequest: props.onScrollTopRequest, onSlatCoords: props.onSlatCoords }))); }));
+>>>>>>> danhmuc_list
 =======
             return (createElement(NowTimer, { unit: isNowIndicator ? 'minute' : 'day' }, function (nowDate, todayRange) { return (createElement(TimeCols, __assign({ ref: _this.timeColsRef }, _this.slicer.sliceProps(props, dateProfile, null, context, dayRanges), { forPrint: props.forPrint, axis: props.axis, dateProfile: dateProfile, slatMetas: props.slatMetas, slotDuration: props.slotDuration, cells: dayTableModel.cells[0], tableColGroupNode: props.tableColGroupNode, tableMinWidth: props.tableMinWidth, clientWidth: props.clientWidth, clientHeight: props.clientHeight, expandRows: props.expandRows, nowDate: nowDate, nowIndicatorSegs: isNowIndicator && _this.slicer.sliceNowDate(nowDate, context, dayRanges), todayRange: todayRange, onScrollTopRequest: props.onScrollTopRequest, onSlatCoords: props.onSlatCoords }))); }));
 >>>>>>> danhmuc_list
@@ -16601,7 +17679,11 @@ var FullCalendar = (function (exports) {
                 allDaySlot: true,
                 slotDuration: '00:30:00',
 <<<<<<< HEAD
+<<<<<<< HEAD
                 slotEventOverlap: true,
+=======
+                slotEventOverlap: true, // a bad name. confused with overlap/constraint system
+>>>>>>> danhmuc_list
 =======
                 slotEventOverlap: true, // a bad name. confused with overlap/constraint system
 >>>>>>> danhmuc_list
@@ -16621,12 +17703,15 @@ var FullCalendar = (function (exports) {
         __extends(ListViewHeaderRow, _super);
         function ListViewHeaderRow() {
 <<<<<<< HEAD
+<<<<<<< HEAD
             return _super !== null && _super.apply(this, arguments) || this;
         }
         ListViewHeaderRow.prototype.render = function () {
             var _a = this.props, dayDate = _a.dayDate, todayRange = _a.todayRange;
             var _b = this.context, theme = _b.theme, dateEnv = _b.dateEnv, options = _b.options, viewApi = _b.viewApi;
 =======
+=======
+>>>>>>> danhmuc_list
             var _this = _super !== null && _super.apply(this, arguments) || this;
             _this.state = {
                 textId: getUniqueDomId(),
@@ -16637,12 +17722,16 @@ var FullCalendar = (function (exports) {
             var _a = this.context, theme = _a.theme, dateEnv = _a.dateEnv, options = _a.options, viewApi = _a.viewApi;
             var _b = this.props, cellId = _b.cellId, dayDate = _b.dayDate, todayRange = _b.todayRange;
             var textId = this.state.textId;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             var dayMeta = getDateMeta(dayDate, todayRange);
             // will ever be falsy?
             var text = options.listDayFormat ? dateEnv.format(dayDate, options.listDayFormat) : '';
             // will ever be falsy? also, BAD NAME "alt"
             var sideText = options.listDaySideFormat ? dateEnv.format(dayDate, options.listDaySideFormat) : '';
+<<<<<<< HEAD
 <<<<<<< HEAD
             var navLinkData = options.navLinks
                 ? buildNavLinkData(dayDate)
@@ -16655,6 +17744,8 @@ var FullCalendar = (function (exports) {
             return (createElement(RenderHook, { hookProps: hookProps, classNames: options.dayHeaderClassNames, content: options.dayHeaderContent, defaultContent: renderInnerContent$4, didMount: options.dayHeaderDidMount, willUnmount: options.dayHeaderWillUnmount }, function (rootElRef, customClassNames, innerElRef, innerContent) { return (createElement("tr", { ref: rootElRef, className: classNames.concat(customClassNames).join(' '), "data-date": formatDayString(dayDate) },
                 createElement("th", { colSpan: 3 },
 =======
+=======
+>>>>>>> danhmuc_list
             var hookProps = __assign({ date: dateEnv.toDate(dayDate), view: viewApi, textId: textId,
                 text: text,
                 sideText: sideText, navLinkAttrs: buildNavLinkAttrs(this.context, dayDate), sideNavLinkAttrs: buildNavLinkAttrs(this.context, dayDate, 'day', false) }, dayMeta);
@@ -16662,11 +17753,15 @@ var FullCalendar = (function (exports) {
             // TODO: make a reusable HOC for dayHeader (used in daygrid/timegrid too)
             return (createElement(RenderHook, { hookProps: hookProps, classNames: options.dayHeaderClassNames, content: options.dayHeaderContent, defaultContent: renderInnerContent, didMount: options.dayHeaderDidMount, willUnmount: options.dayHeaderWillUnmount }, function (rootElRef, customClassNames, innerElRef, innerContent) { return (createElement("tr", { ref: rootElRef, className: classNames.concat(customClassNames).join(' '), "data-date": formatDayString(dayDate) },
                 createElement("th", { scope: "colgroup", colSpan: 3, id: cellId, "aria-labelledby": textId },
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                     createElement("div", { className: 'fc-list-day-cushion ' + theme.getClass('tableCellShaded'), ref: innerElRef }, innerContent)))); }));
         };
         return ListViewHeaderRow;
     }(BaseComponent));
+<<<<<<< HEAD
 <<<<<<< HEAD
     function renderInnerContent$4(props) {
         var navLinkAttrs = props.navLinkData // is there a type for this?
@@ -16679,6 +17774,8 @@ var FullCalendar = (function (exports) {
 
     var DEFAULT_TIME_FORMAT$1 = createFormatter({
 =======
+=======
+>>>>>>> danhmuc_list
     function renderInnerContent(props) {
         return (createElement(Fragment, null,
             props.text && (createElement("a", __assign({ id: props.textId, className: "fc-list-day-text" }, props.navLinkAttrs), props.text)),
@@ -16686,6 +17783,9 @@ var FullCalendar = (function (exports) {
     }
 
     var DEFAULT_TIME_FORMAT = createFormatter({
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         hour: 'numeric',
         minute: '2-digit',
@@ -16698,6 +17798,7 @@ var FullCalendar = (function (exports) {
         }
         ListViewEventRow.prototype.render = function () {
             var _a = this, props = _a.props, context = _a.context;
+<<<<<<< HEAD
 <<<<<<< HEAD
             var seg = props.seg;
             var timeFormat = context.options.eventTimeFormat || DEFAULT_TIME_FORMAT$1;
@@ -16718,6 +17819,8 @@ var FullCalendar = (function (exports) {
     }
     function buildTimeContent(seg, timeFormat, context) {
 =======
+=======
+>>>>>>> danhmuc_list
             var seg = props.seg, timeHeaderId = props.timeHeaderId, eventHeaderId = props.eventHeaderId, dateHeaderId = props.dateHeaderId;
             var timeFormat = context.options.eventTimeFormat || DEFAULT_TIME_FORMAT;
             return (createElement(EventRoot, { seg: seg, timeText: "" // BAD. because of all-day content
@@ -16734,6 +17837,9 @@ var FullCalendar = (function (exports) {
         return (createElement("a", __assign({}, interactiveAttrs), seg.eventRange.def.title));
     }
     function buildTimeContent(seg, timeFormat, context, timeHeaderId, dateHeaderId) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         var options = context.options;
         if (options.displayEventTime !== false) {
@@ -16764,7 +17870,11 @@ var FullCalendar = (function (exports) {
                     view: context.viewApi,
                 };
 <<<<<<< HEAD
+<<<<<<< HEAD
                 return (createElement(RenderHook, { hookProps: hookProps, classNames: options.allDayClassNames, content: options.allDayContent, defaultContent: renderAllDayInner$1, didMount: options.allDayDidMount, willUnmount: options.allDayWillUnmount }, function (rootElRef, classNames, innerElRef, innerContent) { return (createElement("td", { className: ['fc-list-event-time'].concat(classNames).join(' '), ref: rootElRef }, innerContent)); }));
+=======
+                return (createElement(RenderHook, { hookProps: hookProps, classNames: options.allDayClassNames, content: options.allDayContent, defaultContent: renderAllDayInner, didMount: options.allDayDidMount, willUnmount: options.allDayWillUnmount }, function (rootElRef, classNames, innerElRef, innerContent) { return (createElement("td", { ref: rootElRef, headers: timeHeaderId + " " + dateHeaderId, className: ['fc-list-event-time'].concat(classNames).join(' ') }, innerContent)); }));
+>>>>>>> danhmuc_list
 =======
                 return (createElement(RenderHook, { hookProps: hookProps, classNames: options.allDayClassNames, content: options.allDayContent, defaultContent: renderAllDayInner, didMount: options.allDayDidMount, willUnmount: options.allDayWillUnmount }, function (rootElRef, classNames, innerElRef, innerContent) { return (createElement("td", { ref: rootElRef, headers: timeHeaderId + " " + dateHeaderId, className: ['fc-list-event-time'].concat(classNames).join(' ') }, innerContent)); }));
 >>>>>>> danhmuc_list
@@ -16774,7 +17884,11 @@ var FullCalendar = (function (exports) {
         return null;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     function renderAllDayInner$1(hookProps) {
+=======
+    function renderAllDayInner(hookProps) {
+>>>>>>> danhmuc_list
 =======
     function renderAllDayInner(hookProps) {
 >>>>>>> danhmuc_list
@@ -16791,12 +17905,18 @@ var FullCalendar = (function (exports) {
             _this.computeDateVars = memoize(computeDateVars);
             _this.eventStoreToSegs = memoize(_this._eventStoreToSegs);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
             _this.state = {
                 timeHeaderId: getUniqueDomId(),
                 eventHeaderId: getUniqueDomId(),
                 dateHeaderIdRoot: getUniqueDomId(),
             };
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             _this.setRootEl = function (rootEl) {
                 if (rootEl) {
@@ -16837,6 +17957,10 @@ var FullCalendar = (function (exports) {
         ListView.prototype.renderSegList = function (allSegs, dayDates) {
             var _a = this.context, theme = _a.theme, options = _a.options;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            var _b = this.state, timeHeaderId = _b.timeHeaderId, eventHeaderId = _b.eventHeaderId, dateHeaderIdRoot = _b.dateHeaderIdRoot;
+>>>>>>> danhmuc_list
 =======
             var _b = this.state, timeHeaderId = _b.timeHeaderId, eventHeaderId = _b.eventHeaderId, dateHeaderIdRoot = _b.dateHeaderIdRoot;
 >>>>>>> danhmuc_list
@@ -16847,6 +17971,7 @@ var FullCalendar = (function (exports) {
                     var daySegs = segsByDay[dayIndex];
                     if (daySegs) { // sparse array, so might be undefined
 <<<<<<< HEAD
+<<<<<<< HEAD
                         var dayStr = dayDates[dayIndex].toISOString();
                         // append a day header
                         innerNodes.push(createElement(ListViewHeaderRow, { key: dayStr, dayDate: dayDates[dayIndex], todayRange: todayRange }));
@@ -16855,6 +17980,8 @@ var FullCalendar = (function (exports) {
                             var seg = daySegs_1[_i];
                             innerNodes.push(createElement(ListViewEventRow, __assign({ key: dayStr + ':' + seg.eventRange.instance.instanceId /* are multiple segs for an instanceId */, seg: seg, isDragging: false, isResizing: false, isDateSelecting: false, isSelected: false }, getSegMeta(seg, todayRange, nowDate))));
 =======
+=======
+>>>>>>> danhmuc_list
                         var dayStr = formatDayString(dayDates[dayIndex]);
                         var dateHeaderId = dateHeaderIdRoot + '-' + dayStr;
                         // append a day header
@@ -16863,18 +17990,27 @@ var FullCalendar = (function (exports) {
                         for (var _i = 0, daySegs_1 = daySegs; _i < daySegs_1.length; _i++) {
                             var seg = daySegs_1[_i];
                             innerNodes.push(createElement(ListViewEventRow, __assign({ key: dayStr + ':' + seg.eventRange.instance.instanceId /* are multiple segs for an instanceId */, seg: seg, isDragging: false, isResizing: false, isDateSelecting: false, isSelected: false, timeHeaderId: timeHeaderId, eventHeaderId: eventHeaderId, dateHeaderId: dateHeaderId }, getSegMeta(seg, todayRange, nowDate))));
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                         }
                     }
                 }
                 return (createElement("table", { className: 'fc-list-table ' + theme.getClass('table') },
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
                     createElement("thead", null,
                         createElement("tr", null,
                             createElement("th", { scope: "col", id: timeHeaderId }, options.timeHint),
                             createElement("th", { scope: "col", "aria-hidden": true }),
                             createElement("th", { scope: "col", id: eventHeaderId }, options.eventHint))),
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                     createElement("tbody", null, innerNodes)));
             }));
@@ -16960,7 +18096,11 @@ var FullCalendar = (function (exports) {
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     var OPTION_REFINERS$3 = {
+=======
+    var OPTION_REFINERS$1 = {
+>>>>>>> danhmuc_list
 =======
     var OPTION_REFINERS$1 = {
 >>>>>>> danhmuc_list
@@ -16971,6 +18111,10 @@ var FullCalendar = (function (exports) {
         noEventsDidMount: identity,
         noEventsWillUnmount: identity,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        // noEventsText is defined in base options
+>>>>>>> danhmuc_list
 =======
         // noEventsText is defined in base options
 >>>>>>> danhmuc_list
@@ -16981,7 +18125,11 @@ var FullCalendar = (function (exports) {
 
     var listPlugin = createPlugin({
 <<<<<<< HEAD
+<<<<<<< HEAD
         optionRefiners: OPTION_REFINERS$3,
+=======
+        optionRefiners: OPTION_REFINERS$1,
+>>>>>>> danhmuc_list
 =======
         optionRefiners: OPTION_REFINERS$1,
 >>>>>>> danhmuc_list
@@ -16990,7 +18138,11 @@ var FullCalendar = (function (exports) {
                 component: ListView,
                 buttonTextKey: 'list',
 <<<<<<< HEAD
+<<<<<<< HEAD
                 listDayFormat: { month: 'long', day: 'numeric', year: 'numeric' },
+=======
+                listDayFormat: { month: 'long', day: 'numeric', year: 'numeric' }, // like "January 1, 2016"
+>>>>>>> danhmuc_list
 =======
                 listDayFormat: { month: 'long', day: 'numeric', year: 'numeric' }, // like "January 1, 2016"
 >>>>>>> danhmuc_list
@@ -16999,7 +18151,11 @@ var FullCalendar = (function (exports) {
                 type: 'list',
                 duration: { days: 1 },
 <<<<<<< HEAD
+<<<<<<< HEAD
                 listDayFormat: { weekday: 'long' },
+=======
+                listDayFormat: { weekday: 'long' }, // day-of-week is all we need. full date is probably in headerToolbar
+>>>>>>> danhmuc_list
 =======
                 listDayFormat: { weekday: 'long' }, // day-of-week is all we need. full date is probably in headerToolbar
 >>>>>>> danhmuc_list
@@ -17014,7 +18170,11 @@ var FullCalendar = (function (exports) {
                 type: 'list',
                 duration: { month: 1 },
 <<<<<<< HEAD
+<<<<<<< HEAD
                 listDaySideFormat: { weekday: 'long' },
+=======
+                listDaySideFormat: { weekday: 'long' }, // day-of-week is nice-to-have
+>>>>>>> danhmuc_list
 =======
                 listDaySideFormat: { weekday: 'long' }, // day-of-week is nice-to-have
 >>>>>>> danhmuc_list
@@ -17023,7 +18183,11 @@ var FullCalendar = (function (exports) {
                 type: 'list',
                 duration: { year: 1 },
 <<<<<<< HEAD
+<<<<<<< HEAD
                 listDaySideFormat: { weekday: 'long' },
+=======
+                listDaySideFormat: { weekday: 'long' }, // day-of-week is nice-to-have
+>>>>>>> danhmuc_list
 =======
                 listDaySideFormat: { weekday: 'long' }, // day-of-week is nice-to-have
 >>>>>>> danhmuc_list
@@ -17074,17 +18238,23 @@ var FullCalendar = (function (exports) {
 
     // rename this file to options.ts like other packages?
 <<<<<<< HEAD
+<<<<<<< HEAD
     var OPTION_REFINERS$4 = {
         googleCalendarApiKey: String,
     };
 
     var EVENT_SOURCE_REFINERS$1 = {
 =======
+=======
+>>>>>>> danhmuc_list
     var OPTION_REFINERS = {
         googleCalendarApiKey: String,
     };
 
     var EVENT_SOURCE_REFINERS = {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         googleCalendarApiKey: String,
         googleCalendarId: String,
@@ -17095,7 +18265,11 @@ var FullCalendar = (function (exports) {
     // TODO: expose somehow
     var API_BASE = 'https://www.googleapis.com/calendar/v3/calendars';
 <<<<<<< HEAD
+<<<<<<< HEAD
     var eventSourceDef$3 = {
+=======
+    var eventSourceDef = {
+>>>>>>> danhmuc_list
 =======
     var eventSourceDef = {
 >>>>>>> danhmuc_list
@@ -17129,7 +18303,11 @@ var FullCalendar = (function (exports) {
                 var extraParams = meta.extraParams;
                 var extraParamsObj = typeof extraParams === 'function' ? extraParams() : extraParams;
 <<<<<<< HEAD
+<<<<<<< HEAD
                 var requestParams_1 = buildRequestParams$1(arg.range, apiKey, extraParamsObj, dateEnv);
+=======
+                var requestParams_1 = buildRequestParams(arg.range, apiKey, extraParamsObj, dateEnv);
+>>>>>>> danhmuc_list
 =======
                 var requestParams_1 = buildRequestParams(arg.range, apiKey, extraParamsObj, dateEnv);
 >>>>>>> danhmuc_list
@@ -17174,7 +18352,11 @@ var FullCalendar = (function (exports) {
         return apiBase + '/' + encodeURIComponent(meta.googleCalendarId) + '/events';
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     function buildRequestParams$1(range, apiKey, extraParams, dateEnv) {
+=======
+    function buildRequestParams(range, apiKey, extraParams, dateEnv) {
+>>>>>>> danhmuc_list
 =======
     function buildRequestParams(range, apiKey, extraParams, dateEnv) {
 >>>>>>> danhmuc_list
@@ -17217,6 +18399,11 @@ var FullCalendar = (function (exports) {
             location: item.location,
             description: item.description,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            attachments: item.attachments || [],
+            extendedProps: (item.extendedProperties || {}).shared || {},
+>>>>>>> danhmuc_list
 =======
             attachments: item.attachments || [],
             extendedProps: (item.extendedProperties || {}).shared || {},
@@ -17231,9 +18418,15 @@ var FullCalendar = (function (exports) {
     }
     var googleCalendarPlugin = createPlugin({
 <<<<<<< HEAD
+<<<<<<< HEAD
         eventSourceDefs: [eventSourceDef$3],
         optionRefiners: OPTION_REFINERS$4,
         eventSourceRefiners: EVENT_SOURCE_REFINERS$1,
+=======
+        eventSourceDefs: [eventSourceDef],
+        optionRefiners: OPTION_REFINERS,
+        eventSourceRefiners: EVENT_SOURCE_REFINERS,
+>>>>>>> danhmuc_list
 =======
         eventSourceDefs: [eventSourceDef],
         optionRefiners: OPTION_REFINERS,
@@ -17284,6 +18477,10 @@ var FullCalendar = (function (exports) {
     exports.Interaction = Interaction;
     exports.ListView = ListView;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    exports.MoreLinkRoot = MoreLinkRoot;
+>>>>>>> danhmuc_list
 =======
     exports.MoreLinkRoot = MoreLinkRoot;
 >>>>>>> danhmuc_list
@@ -17299,6 +18496,10 @@ var FullCalendar = (function (exports) {
     exports.ScrollResponder = ScrollResponder;
     exports.Scroller = Scroller;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    exports.SegHierarchy = SegHierarchy;
+>>>>>>> danhmuc_list
 =======
     exports.SegHierarchy = SegHierarchy;
 >>>>>>> danhmuc_list
@@ -17334,6 +18535,7 @@ var FullCalendar = (function (exports) {
     exports.asRoughMs = asRoughMs;
     exports.asRoughSeconds = asRoughSeconds;
 <<<<<<< HEAD
+<<<<<<< HEAD
     exports.buildClassNameNormalizer = buildClassNameNormalizer;
     exports.buildDayRanges = buildDayRanges;
     exports.buildDayTableModel = buildDayTableModel;
@@ -17342,6 +18544,8 @@ var FullCalendar = (function (exports) {
     exports.buildHashFromArray = buildHashFromArray;
     exports.buildNavLinkData = buildNavLinkData;
 =======
+=======
+>>>>>>> danhmuc_list
     exports.binarySearch = binarySearch;
     exports.buildClassNameNormalizer = buildClassNameNormalizer;
     exports.buildDayRanges = buildDayRanges;
@@ -17352,6 +18556,9 @@ var FullCalendar = (function (exports) {
     exports.buildHashFromArray = buildHashFromArray;
     exports.buildIsoString = buildIsoString;
     exports.buildNavLinkAttrs = buildNavLinkAttrs;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     exports.buildSegCompareObj = buildSegCompareObj;
     exports.buildSegTimeText = buildSegTimeText;
@@ -17364,6 +18571,10 @@ var FullCalendar = (function (exports) {
     exports.compareNumbers = compareNumbers;
     exports.compareObjs = compareObjs;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    exports.computeEarliestSegStart = computeEarliestSegStart;
+>>>>>>> danhmuc_list
 =======
     exports.computeEarliestSegStart = computeEarliestSegStart;
 >>>>>>> danhmuc_list
@@ -17381,7 +18592,12 @@ var FullCalendar = (function (exports) {
     exports.config = config;
     exports.constrainPoint = constrainPoint;
 <<<<<<< HEAD
+<<<<<<< HEAD
     exports.createContext = createContext$1;
+=======
+    exports.createAriaClickAttrs = createAriaClickAttrs;
+    exports.createContext = createContext;
+>>>>>>> danhmuc_list
 =======
     exports.createAriaClickAttrs = createAriaClickAttrs;
     exports.createContext = createContext;
@@ -17394,6 +18610,10 @@ var FullCalendar = (function (exports) {
     exports.createFormatter = createFormatter;
     exports.createPlugin = createPlugin;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    exports.createPortal = createPortal;
+>>>>>>> danhmuc_list
 =======
     exports.createPortal = createPortal;
 >>>>>>> danhmuc_list
@@ -17416,7 +18636,11 @@ var FullCalendar = (function (exports) {
     exports.findElements = findElements;
     exports.flexibleCompare = flexibleCompare;
 <<<<<<< HEAD
+<<<<<<< HEAD
     exports.flushToDom = flushToDom$1;
+=======
+    exports.flushToDom = flushToDom;
+>>>>>>> danhmuc_list
 =======
     exports.flushToDom = flushToDom;
 >>>>>>> danhmuc_list
@@ -17431,14 +18655,20 @@ var FullCalendar = (function (exports) {
     exports.getDayClassNames = getDayClassNames;
     exports.getDefaultEventEnd = getDefaultEventEnd;
 <<<<<<< HEAD
+<<<<<<< HEAD
     exports.getElSeg = getElSeg;
     exports.getEventClassNames = getEventClassNames;
 =======
+=======
+>>>>>>> danhmuc_list
     exports.getElRoot = getElRoot;
     exports.getElSeg = getElSeg;
     exports.getEntrySpanEnd = getEntrySpanEnd;
     exports.getEventClassNames = getEventClassNames;
     exports.getEventTargetViaRoot = getEventTargetViaRoot;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     exports.getIsRtlScrollbarOnLeft = getIsRtlScrollbarOnLeft;
     exports.getRectCenter = getRectCenter;
@@ -17448,6 +18678,10 @@ var FullCalendar = (function (exports) {
     exports.getSectionClassNames = getSectionClassNames;
     exports.getSectionHasLiquidHeight = getSectionHasLiquidHeight;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    exports.getSegAnchorAttrs = getSegAnchorAttrs;
+>>>>>>> danhmuc_list
 =======
     exports.getSegAnchorAttrs = getSegAnchorAttrs;
 >>>>>>> danhmuc_list
@@ -17457,15 +18691,21 @@ var FullCalendar = (function (exports) {
     exports.getStickyHeaderDates = getStickyHeaderDates;
     exports.getUnequalProps = getUnequalProps;
 <<<<<<< HEAD
+<<<<<<< HEAD
     exports.globalLocales = globalLocales;
     exports.globalPlugins = globalPlugins;
     exports.greatestDurationDenominator = greatestDurationDenominator;
 =======
+=======
+>>>>>>> danhmuc_list
     exports.getUniqueDomId = getUniqueDomId;
     exports.globalLocales = globalLocales;
     exports.globalPlugins = globalPlugins;
     exports.greatestDurationDenominator = greatestDurationDenominator;
     exports.groupIntersectingEntries = groupIntersectingEntries;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     exports.guid = guid;
     exports.hasBgRendering = hasBgRendering;
@@ -17476,13 +18716,19 @@ var FullCalendar = (function (exports) {
     exports.intersectRanges = intersectRanges;
     exports.intersectRects = intersectRects;
 <<<<<<< HEAD
+<<<<<<< HEAD
     exports.isArraysEqual = isArraysEqual;
     exports.isColPropsEqual = isColPropsEqual;
 =======
+=======
+>>>>>>> danhmuc_list
     exports.intersectSpans = intersectSpans;
     exports.isArraysEqual = isArraysEqual;
     exports.isColPropsEqual = isColPropsEqual;
     exports.isDateSelectionValid = isDateSelectionValid;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     exports.isDateSpansEqual = isDateSpansEqual;
     exports.isInt = isInt;
@@ -17492,6 +18738,10 @@ var FullCalendar = (function (exports) {
     exports.isPropsValid = isPropsValid;
     exports.isValidDate = isValidDate;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    exports.joinSpans = joinSpans;
+>>>>>>> danhmuc_list
 =======
     exports.joinSpans = joinSpans;
 >>>>>>> danhmuc_list
@@ -17538,7 +18788,11 @@ var FullCalendar = (function (exports) {
     exports.translateRect = translateRect;
     exports.triggerDateSelect = triggerDateSelect;
 <<<<<<< HEAD
+<<<<<<< HEAD
     exports.unmountComponentAtNode = unmountComponentAtNode$1;
+=======
+    exports.unmountComponentAtNode = unmountComponentAtNode;
+>>>>>>> danhmuc_list
 =======
     exports.unmountComponentAtNode = unmountComponentAtNode;
 >>>>>>> danhmuc_list

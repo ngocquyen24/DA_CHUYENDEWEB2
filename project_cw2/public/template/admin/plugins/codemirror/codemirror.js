@@ -1312,6 +1312,10 @@
     } }
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> danhmuc_list
 =======
 
 >>>>>>> danhmuc_list
@@ -1324,10 +1328,13 @@
     return r
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
   // Add a span to a line.
   function addMarkedSpan(line, span) {
     line.markedSpans = line.markedSpans ? line.markedSpans.concat([span]) : [span];
 =======
+=======
+>>>>>>> danhmuc_list
 
   // Add a span to a line.
   function addMarkedSpan(line, span, op) {
@@ -1338,6 +1345,9 @@
       line.markedSpans = line.markedSpans ? line.markedSpans.concat([span]) : [span];
       if (inThisOp) { inThisOp.add(line.markedSpans); }
     }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     span.marker.attachLine(line);
   }
@@ -2204,6 +2214,10 @@
       var wrap$1 = ensureLineWrapped(lineView);
       var gutterWrap = lineView.gutter = elt("div", null, "CodeMirror-gutter-wrapper", ("left: " + (cm.options.fixedGutter ? dims.fixedPos : -dims.gutterTotalWidth) + "px"));
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+      gutterWrap.setAttribute("aria-hidden", "true");
+>>>>>>> danhmuc_list
 =======
       gutterWrap.setAttribute("aria-hidden", "true");
 >>>>>>> danhmuc_list
@@ -2364,6 +2378,7 @@
     if (lineView.line == line)
       { return {map: lineView.measure.map, cache: lineView.measure.cache} }
 <<<<<<< HEAD
+<<<<<<< HEAD
     for (var i = 0; i < lineView.rest.length; i++)
       { if (lineView.rest[i] == line)
         { return {map: lineView.measure.maps[i], cache: lineView.measure.caches[i]} } }
@@ -2371,6 +2386,8 @@
       { if (lineNo(lineView.rest[i$1]) > lineN)
         { return {map: lineView.measure.maps[i$1], cache: lineView.measure.caches[i$1], before: true} } }
 =======
+=======
+>>>>>>> danhmuc_list
     if (lineView.rest) {
       for (var i = 0; i < lineView.rest.length; i++)
         { if (lineView.rest[i] == line)
@@ -2379,6 +2396,9 @@
         { if (lineNo(lineView.rest[i$1]) > lineN)
           { return {map: lineView.measure.maps[i$1], cache: lineView.measure.caches[i$1], before: true} } }
     }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   }
 
@@ -2607,15 +2627,21 @@
 
   function widgetTopHeight(lineObj) {
 <<<<<<< HEAD
+<<<<<<< HEAD
     var height = 0;
     if (lineObj.widgets) { for (var i = 0; i < lineObj.widgets.length; ++i) { if (lineObj.widgets[i].above)
       { height += widgetHeight(lineObj.widgets[i]); } } }
 =======
+=======
+>>>>>>> danhmuc_list
     var ref = visualLine(lineObj);
     var widgets = ref.widgets;
     var height = 0;
     if (widgets) { for (var i = 0; i < widgets.length; ++i) { if (widgets[i].above)
       { height += widgetHeight(widgets[i]); } } }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     return height
   }
@@ -3182,6 +3208,11 @@
     var selFragment = result.selection = document.createDocumentFragment();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    var customCursor = cm.options.$customCursor;
+    if (customCursor) { primary = true; }
+>>>>>>> danhmuc_list
 =======
     var customCursor = cm.options.$customCursor;
     if (customCursor) { primary = true; }
@@ -3192,15 +3223,21 @@
       if (range.from().line >= cm.display.viewTo || range.to().line < cm.display.viewFrom) { continue }
       var collapsed = range.empty();
 <<<<<<< HEAD
+<<<<<<< HEAD
       if (collapsed || cm.options.showCursorWhenSelecting)
         { drawSelectionCursor(cm, range.head, curFragment); }
 =======
+=======
+>>>>>>> danhmuc_list
       if (customCursor) {
         var head = customCursor(cm, range);
         if (head) { drawSelectionCursor(cm, head, curFragment); }
       } else if (collapsed || cm.options.showCursorWhenSelecting) {
         drawSelectionCursor(cm, range.head, curFragment);
       }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       if (!collapsed)
         { drawSelectionRange(cm, range, selFragment); }
@@ -3218,13 +3255,19 @@
     cursor.style.height = Math.max(0, pos.bottom - pos.top) * cm.options.cursorHeight + "px";
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
     if (/\bcm-fat-cursor\b/.test(cm.getWrapperElement().className)) {
       var charPos = charCoords(cm, head, "div", null, null);
       var width = charPos.right - charPos.left;
       cursor.style.width = (width > 0 ? width : cm.defaultCharWidth()) + "px";
     }
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     if (pos.other) {
       // Secondary cursor, shown when on a 'jump' in bi-directional text
@@ -3399,6 +3442,12 @@
     var display = cm.display;
     var prevBottom = display.lineDiv.offsetTop;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    var viewTop = Math.max(0, display.scroller.getBoundingClientRect().top);
+    var oldHeight = display.lineDiv.getBoundingClientRect().top;
+    var mustScroll = 0;
+>>>>>>> danhmuc_list
 =======
     var viewTop = Math.max(0, display.scroller.getBoundingClientRect().top);
     var oldHeight = display.lineDiv.getBoundingClientRect().top;
@@ -3409,6 +3458,10 @@
       var height = (void 0), width = 0;
       if (cur.hidden) { continue }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+      oldHeight += cur.line.height;
+>>>>>>> danhmuc_list
 =======
       oldHeight += cur.line.height;
 >>>>>>> danhmuc_list
@@ -3427,6 +3480,10 @@
       var diff = cur.line.height - height;
       if (diff > .005 || diff < -.005) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        if (oldHeight < viewTop) { mustScroll -= diff; }
+>>>>>>> danhmuc_list
 =======
         if (oldHeight < viewTop) { mustScroll -= diff; }
 >>>>>>> danhmuc_list
@@ -3445,6 +3502,10 @@
       }
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    if (Math.abs(mustScroll) > 2) { display.scroller.scrollTop += mustScroll; }
+>>>>>>> danhmuc_list
 =======
     if (Math.abs(mustScroll) > 2) { display.scroller.scrollTop += mustScroll; }
 >>>>>>> danhmuc_list
@@ -3512,8 +3573,13 @@
       // If pos.sticky == "before", that is around pos.ch - 1, otherwise around pos.ch
       // If pos == Pos(_, 0, "before"), pos and end are unchanged
 <<<<<<< HEAD
+<<<<<<< HEAD
       pos = pos.ch ? Pos(pos.line, pos.sticky == "before" ? pos.ch - 1 : pos.ch, "after") : pos;
       end = pos.sticky == "before" ? Pos(pos.line, pos.ch + 1, "before") : pos;
+=======
+      end = pos.sticky == "before" ? Pos(pos.line, pos.ch + 1, "before") : pos;
+      pos = pos.ch ? Pos(pos.line, pos.sticky == "before" ? pos.ch - 1 : pos.ch, "after") : pos;
+>>>>>>> danhmuc_list
 =======
       end = pos.sticky == "before" ? Pos(pos.line, pos.ch + 1, "before") : pos;
       pos = pos.ch ? Pos(pos.line, pos.sticky == "before" ? pos.ch - 1 : pos.ch, "after") : pos;
@@ -3714,6 +3780,10 @@
         Math.max(0, measure.scrollHeight - measure.clientHeight + totalHeight) + "px";
     } else {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+      this.vert.scrollTop = 0;
+>>>>>>> danhmuc_list
 =======
       this.vert.scrollTop = 0;
 >>>>>>> danhmuc_list
@@ -3873,7 +3943,12 @@
       scrollToPos: null,       // Used to scroll to a specific position
       focus: false,
 <<<<<<< HEAD
+<<<<<<< HEAD
       id: ++nextOpId           // Unique ID
+=======
+      id: ++nextOpId,          // Unique ID
+      markArrays: null         // Used by addMarkedSpan
+>>>>>>> danhmuc_list
 =======
       id: ++nextOpId,          // Unique ID
       markArrays: null         // Used by addMarkedSpan
@@ -4331,6 +4406,11 @@
     var width = display.gutters.offsetWidth;
     display.sizer.style.marginLeft = width + "px";
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    // Send an event to consumers responding to changes in gutter width.
+    signalLater(display, "gutterChanged", display);
+>>>>>>> danhmuc_list
 =======
     // Send an event to consumers responding to changes in gutter width.
     signalLater(display, "gutterChanged", display);
@@ -4475,11 +4555,17 @@
     d.wrapper = elt("div", [d.scrollbarFiller, d.gutterFiller, d.scroller], "CodeMirror");
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
     // This attribute is respected by automatic translation systems such as Google Translate,
     // and may also be respected by tools used by human translators.
     d.wrapper.setAttribute('translate', 'no');
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     // Work around IE7 z-index bug (not perfect, hence IE7 not really being supported)
     if (ie && ie_version < 8) { d.gutters.style.zIndex = -1; d.scroller.style.paddingRight = 0; }
@@ -4579,13 +4665,19 @@
   function onScrollWheel(cm, e) {
     var delta = wheelEventDelta(e), dx = delta.x, dy = delta.y;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
     var pixelsPerUnit = wheelPixelsPerUnit;
     if (e.deltaMode === 0) {
       dx = e.deltaX;
       dy = e.deltaY;
       pixelsPerUnit = 1;
     }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
     var display = cm.display, scroll = display.scroller;
@@ -4616,15 +4708,21 @@
     // scrolling entirely here. It'll be slightly off from native, but
     // better than glitching out.
 <<<<<<< HEAD
+<<<<<<< HEAD
     if (dx && !gecko && !presto && wheelPixelsPerUnit != null) {
       if (dy && canScrollY)
         { updateScrollTop(cm, Math.max(0, scroll.scrollTop + dy * wheelPixelsPerUnit)); }
       setScrollLeft(cm, Math.max(0, scroll.scrollLeft + dx * wheelPixelsPerUnit));
 =======
+=======
+>>>>>>> danhmuc_list
     if (dx && !gecko && !presto && pixelsPerUnit != null) {
       if (dy && canScrollY)
         { updateScrollTop(cm, Math.max(0, scroll.scrollTop + dy * pixelsPerUnit)); }
       setScrollLeft(cm, Math.max(0, scroll.scrollLeft + dx * pixelsPerUnit));
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       // Only prevent default scrolling if vertical scrolling is
       // actually possible. Otherwise, it causes vertical scroll
@@ -4639,8 +4737,13 @@
     // 'Project' the visible viewport to cover the area that is being
     // scrolled into view (if we know enough to estimate it).
 <<<<<<< HEAD
+<<<<<<< HEAD
     if (dy && wheelPixelsPerUnit != null) {
       var pixels = dy * wheelPixelsPerUnit;
+=======
+    if (dy && pixelsPerUnit != null) {
+      var pixels = dy * pixelsPerUnit;
+>>>>>>> danhmuc_list
 =======
     if (dy && pixelsPerUnit != null) {
       var pixels = dy * pixelsPerUnit;
@@ -4652,7 +4755,11 @@
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     if (wheelSamples < 20) {
+=======
+    if (wheelSamples < 20 && e.deltaMode !== 0) {
+>>>>>>> danhmuc_list
 =======
     if (wheelSamples < 20 && e.deltaMode !== 0) {
 >>>>>>> danhmuc_list
@@ -4915,6 +5022,10 @@
     loadMode(cm);
     setDirectionClass(cm);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    cm.options.direction = doc.direction;
+>>>>>>> danhmuc_list
 =======
     cm.options.direction = doc.direction;
 >>>>>>> danhmuc_list
@@ -6095,7 +6206,11 @@
       addMarkedSpan(line, new MarkedSpan(marker,
                                          curLine == from.line ? from.ch : null,
 <<<<<<< HEAD
+<<<<<<< HEAD
                                          curLine == to.line ? to.ch : null));
+=======
+                                         curLine == to.line ? to.ch : null), doc.cm && doc.cm.curOp);
+>>>>>>> danhmuc_list
 =======
                                          curLine == to.line ? to.ch : null), doc.cm && doc.cm.curOp);
 >>>>>>> danhmuc_list
@@ -6271,6 +6386,10 @@
       var lines = getBetween(this, clipPos(this, from), clipPos(this, to));
       if (lineSep === false) { return lines }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+      if (lineSep === '') { return lines.join('') }
+>>>>>>> danhmuc_list
 =======
       if (lineSep === '') { return lines.join('') }
 >>>>>>> danhmuc_list
@@ -6829,10 +6948,16 @@
   keyMap.emacsy = {
     "Ctrl-F": "goCharRight", "Ctrl-B": "goCharLeft", "Ctrl-P": "goLineUp", "Ctrl-N": "goLineDown",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "Alt-F": "goWordRight", "Alt-B": "goWordLeft", "Ctrl-A": "goLineStart", "Ctrl-E": "goLineEnd",
     "Ctrl-V": "goPageDown", "Shift-Ctrl-V": "goPageUp", "Ctrl-D": "delCharAfter", "Ctrl-H": "delCharBefore",
     "Alt-D": "delWordAfter", "Alt-Backspace": "delWordBefore", "Ctrl-K": "killLine", "Ctrl-T": "transposeChars",
     "Ctrl-O": "openLine"
+=======
+    "Ctrl-A": "goLineStart", "Ctrl-E": "goLineEnd", "Ctrl-V": "goPageDown", "Shift-Ctrl-V": "goPageUp",
+    "Ctrl-D": "delCharAfter", "Ctrl-H": "delCharBefore", "Alt-Backspace": "delWordBefore", "Ctrl-K": "killLine",
+    "Ctrl-T": "transposeChars", "Ctrl-O": "openLine"
+>>>>>>> danhmuc_list
 =======
     "Ctrl-A": "goLineStart", "Ctrl-E": "goLineEnd", "Ctrl-V": "goPageDown", "Shift-Ctrl-V": "goPageUp",
     "Ctrl-D": "delCharAfter", "Ctrl-H": "delCharBefore", "Alt-Backspace": "delWordBefore", "Ctrl-K": "killLine",
@@ -8350,7 +8475,11 @@
 
   function hiddenTextarea() {
 <<<<<<< HEAD
+<<<<<<< HEAD
     var te = elt("textarea", null, null, "position: absolute; bottom: -1em; padding: 0; width: 1px; height: 1em; outline: none");
+=======
+    var te = elt("textarea", null, null, "position: absolute; bottom: -1em; padding: 0; width: 1px; height: 1em; min-height: 1em; outline: none");
+>>>>>>> danhmuc_list
 =======
     var te = elt("textarea", null, null, "position: absolute; bottom: -1em; padding: 0; width: 1px; height: 1em; min-height: 1em; outline: none");
 >>>>>>> danhmuc_list
@@ -8988,7 +9117,11 @@
       cm.display.lineSpace.insertBefore(kludge, cm.display.lineSpace.firstChild);
       te.value = lastCopied.text.join("\n");
 <<<<<<< HEAD
+<<<<<<< HEAD
       var hadFocus = document.activeElement;
+=======
+      var hadFocus = activeElt();
+>>>>>>> danhmuc_list
 =======
       var hadFocus = activeElt();
 >>>>>>> danhmuc_list
@@ -9015,7 +9148,11 @@
   ContentEditableInput.prototype.prepareSelection = function () {
     var result = prepareSelection(this.cm, false);
 <<<<<<< HEAD
+<<<<<<< HEAD
     result.focus = document.activeElement == this.div;
+=======
+    result.focus = activeElt() == this.div;
+>>>>>>> danhmuc_list
 =======
     result.focus = activeElt() == this.div;
 >>>>>>> danhmuc_list
@@ -9115,7 +9252,11 @@
   ContentEditableInput.prototype.focus = function () {
     if (this.cm.options.readOnly != "nocursor") {
 <<<<<<< HEAD
+<<<<<<< HEAD
       if (!this.selectionInEditor() || document.activeElement != this.div)
+=======
+      if (!this.selectionInEditor() || activeElt() != this.div)
+>>>>>>> danhmuc_list
 =======
       if (!this.selectionInEditor() || activeElt() != this.div)
 >>>>>>> danhmuc_list
@@ -9130,15 +9271,21 @@
 
   ContentEditableInput.prototype.receivedFocus = function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
     var input = this;
     if (this.selectionInEditor())
       { this.pollSelection(); }
 =======
+=======
+>>>>>>> danhmuc_list
       var this$1 = this;
 
     var input = this;
     if (this.selectionInEditor())
       { setTimeout(function () { return this$1.pollSelection(); }, 20); }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     else
       { runInOp(this.cm, function () { return input.cm.curOp.selectionChanged = true; }); }
@@ -9969,7 +10116,11 @@
   addLegacyProps(CodeMirror);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   CodeMirror.version = "5.60.0";
+=======
+  CodeMirror.version = "5.65.1";
+>>>>>>> danhmuc_list
 =======
   CodeMirror.version = "5.65.1";
 >>>>>>> danhmuc_list

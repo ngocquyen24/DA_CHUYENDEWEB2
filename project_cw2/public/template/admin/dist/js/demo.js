@@ -11,7 +11,10 @@
   'use strict'
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
   setTimeout(function () {
     if (window.___browserSync___ === undefined && Number(localStorage.getItem('AdminLTE:Demo:MessageShowed')) < Date.now()) {
       localStorage.setItem('AdminLTE:Demo:MessageShowed', (Date.now()) + (15 * 60 * 1000))
@@ -20,6 +23,9 @@
     }
   }, 1000)
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1)
@@ -35,9 +41,12 @@
         text: 'None Selected'
       })
 <<<<<<< HEAD
+<<<<<<< HEAD
       if (callback) {
         $default.on('click', callback)
       }
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 
@@ -52,6 +61,7 @@
 
       $block.append($color)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
       $color.data('color', color)
 
@@ -60,10 +70,15 @@
       }
     })
 =======
+=======
+>>>>>>> danhmuc_list
     })
     if (callback) {
       $block.on('change', callback)
     }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
     return $block
@@ -524,7 +539,11 @@
   var navbar_all_colors = navbar_dark_skins.concat(navbar_light_skins)
   var $navbar_variants_colors = createSkinBlock(navbar_all_colors, function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
     var color = $(this).data('color')
+=======
+    var color = $(this).find('option:selected').attr('class')
+>>>>>>> danhmuc_list
 =======
     var color = $(this).find('option:selected').attr('class')
 >>>>>>> danhmuc_list
@@ -535,6 +554,7 @@
     })
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     $(this).parent().removeClass().addClass('custom-select mb-3 text-light border-0 ')
 
     if (navbar_dark_skins.indexOf(color) > -1) {
@@ -544,6 +564,8 @@
       $main_header.addClass('navbar-light')
       $(this).parent().addClass(color)
 =======
+=======
+>>>>>>> danhmuc_list
     $(this).removeClass().addClass('custom-select mb-3 text-light border-0 ')
 
     if (navbar_dark_skins.indexOf(color) > -1) {
@@ -552,6 +574,9 @@
     } else {
       $main_header.addClass('navbar-light')
       $(this).addClass(color)
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     }
 
@@ -581,8 +606,12 @@
   $container.append($accent_variants)
   $container.append(createSkinBlock(accent_colors, function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
     var color = $(this).data('color')
     var accent_class = color
+=======
+    var color = $(this).find('option:selected').attr('class')
+>>>>>>> danhmuc_list
 =======
     var color = $(this).find('option:selected').attr('class')
 >>>>>>> danhmuc_list
@@ -592,7 +621,13 @@
     })
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     $body.addClass(accent_class)
+=======
+    var accent_color_class = color.replace('bg-', 'accent-')
+
+    $body.addClass(accent_color_class)
+>>>>>>> danhmuc_list
 =======
     var accent_color_class = color.replace('bg-', 'accent-')
 
@@ -617,7 +652,11 @@
   $container.append($sidebar_variants_dark)
   var $sidebar_dark_variants = createSkinBlock(sidebar_colors, function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
     var color = $(this).data('color')
+=======
+    var color = $(this).find('option:selected').attr('class')
+>>>>>>> danhmuc_list
 =======
     var color = $(this).find('option:selected').attr('class')
 >>>>>>> danhmuc_list
@@ -629,7 +668,11 @@
     })
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     $(this).parent().removeClass().addClass('custom-select mb-3 text-light border-0').addClass(color)
+=======
+    $(this).removeClass().addClass('custom-select mb-3 text-light border-0').addClass(color)
+>>>>>>> danhmuc_list
 =======
     $(this).removeClass().addClass('custom-select mb-3 text-light border-0').addClass(color)
 >>>>>>> danhmuc_list
@@ -658,7 +701,11 @@
   $container.append($sidebar_variants_light)
   var $sidebar_light_variants = createSkinBlock(sidebar_colors, function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
     var color = $(this).data('color')
+=======
+    var color = $(this).find('option:selected').attr('class')
+>>>>>>> danhmuc_list
 =======
     var color = $(this).find('option:selected').attr('class')
 >>>>>>> danhmuc_list
@@ -670,7 +717,11 @@
     })
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     $(this).parent().removeClass().addClass('custom-select mb-3 text-light border-0').addClass(color)
+=======
+    $(this).removeClass().addClass('custom-select mb-3 text-light border-0').addClass(color)
+>>>>>>> danhmuc_list
 =======
     $(this).removeClass().addClass('custom-select mb-3 text-light border-0').addClass(color)
 >>>>>>> danhmuc_list
@@ -712,7 +763,11 @@
 
   var $brand_variants = createSkinBlock(logo_skins, function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
     var color = $(this).data('color')
+=======
+    var color = $(this).find('option:selected').attr('class')
+>>>>>>> danhmuc_list
 =======
     var color = $(this).find('option:selected').attr('class')
 >>>>>>> danhmuc_list
@@ -730,9 +785,15 @@
 
     if (color) {
 <<<<<<< HEAD
+<<<<<<< HEAD
       $(this).parent().removeClass().addClass('custom-select mb-3 border-0').addClass(color).addClass(color !== 'navbar-light' && color !== 'navbar-white' ? 'text-light' : '')
     } else {
       $(this).parent().removeClass().addClass('custom-select mb-3 border-0')
+=======
+      $(this).removeClass().addClass('custom-select mb-3 border-0').addClass(color).addClass(color !== 'navbar-light' && color !== 'navbar-white' ? 'text-light' : '')
+    } else {
+      $(this).removeClass().addClass('custom-select mb-3 border-0')
+>>>>>>> danhmuc_list
 =======
       $(this).removeClass().addClass('custom-select mb-3 border-0').addClass(color).addClass(color !== 'navbar-light' && color !== 'navbar-white' ? 'text-light' : '')
     } else {

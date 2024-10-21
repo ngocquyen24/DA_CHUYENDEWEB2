@@ -27,7 +27,11 @@
         ENTER: 13,
       };
 <<<<<<< HEAD
+<<<<<<< HEAD
       var COLUMN_LENGTH = 15;
+=======
+      var COLUMN_LENGTH = 12;
+>>>>>>> danhmuc_list
 =======
       var COLUMN_LENGTH = 12;
 >>>>>>> danhmuc_list
@@ -70,7 +74,11 @@
       context.memo('button.specialchars', function() {
         return ui.button({
 <<<<<<< HEAD
+<<<<<<< HEAD
           contents: '<i class="fa fa-font fa-flip-vertical">',
+=======
+          contents: '<i class="fa fa-font fa-flip-vertical"></i>',
+>>>>>>> danhmuc_list
 =======
           contents: '<i class="fa fa-font fa-flip-vertical"></i>',
 >>>>>>> danhmuc_list
@@ -90,15 +98,21 @@
        */
       this.makeSpecialCharSetTable = function() {
 <<<<<<< HEAD
+<<<<<<< HEAD
         var $table = $('<table/>');
         $.each(specialCharDataSet, function(idx, text) {
           var $td = $('<td/>').addClass('note-specialchar-node');
           var $tr = (idx % COLUMN_LENGTH === 0) ? $('<tr/>') : $table.find('tr').last();
 =======
+=======
+>>>>>>> danhmuc_list
         var $table = $('<table></table>');
         $.each(specialCharDataSet, function(idx, text) {
           var $td = $('<td></td>').addClass('note-specialchar-node');
           var $tr = (idx % COLUMN_LENGTH === 0) ? $('<tr></tr>') : $table.find('tr').last();
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
           var $button = ui.button({
@@ -310,7 +324,11 @@
             $specialCharNode.off('click');
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             self.$dialog.find('button').tooltip('destroy');
+=======
+            self.$dialog.find('button').tooltip();
+>>>>>>> danhmuc_list
 =======
             self.$dialog.find('button').tooltip();
 >>>>>>> danhmuc_list

@@ -1,5 +1,6 @@
 <?php
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 namespace App\Helpers;
@@ -90,6 +91,8 @@ class Helper
         if ($price != 0)  return number_format($price);
         return '<a href="/lien-he.html">Liên Hệ</a>';
 =======
+=======
+>>>>>>> danhmuc_list
 namespace App\Helpers;
 
 class Helper
@@ -118,6 +121,9 @@ class Helper
         }
         return $html;
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     }
 }

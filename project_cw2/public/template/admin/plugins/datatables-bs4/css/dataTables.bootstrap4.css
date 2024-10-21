@@ -1,6 +1,9 @@
 @charset "UTF-8";
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 table.dataTable th.dt-left,
 table.dataTable td.dt-left {
   text-align: left;
@@ -98,6 +101,9 @@ table.dataTable tr.dt-hasChild td.dt-control:before {
   background-color: #d33333;
 }
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 table.dataTable {
   clear: both;
@@ -227,7 +233,11 @@ div.dataTables_scrollHead table.dataTable {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 div.dataTables_scrollBody table {
+=======
+div.dataTables_scrollBody > table {
+>>>>>>> danhmuc_list
 =======
 div.dataTables_scrollBody > table {
 >>>>>>> danhmuc_list
@@ -235,6 +245,7 @@ div.dataTables_scrollBody > table {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 div.dataTables_scrollBody table thead .sorting:before,
 div.dataTables_scrollBody table thead .sorting_asc:before,
@@ -247,6 +258,8 @@ div.dataTables_scrollBody table thead .sorting_desc:after {
 div.dataTables_scrollBody table tbody tr:first-child th,
 div.dataTables_scrollBody table tbody tr:first-child td {
 =======
+=======
+>>>>>>> danhmuc_list
 div.dataTables_scrollBody > table > thead .sorting:before,
 div.dataTables_scrollBody > table > thead .sorting_asc:before,
 div.dataTables_scrollBody > table > thead .sorting_desc:before,
@@ -257,6 +270,9 @@ div.dataTables_scrollBody > table > thead .sorting_desc:after {
 }
 div.dataTables_scrollBody > table > tbody tr:first-child th,
 div.dataTables_scrollBody > table > tbody tr:first-child td {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   border-top: none;
 }

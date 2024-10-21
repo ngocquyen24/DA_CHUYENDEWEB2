@@ -14,6 +14,7 @@ class Kernel extends HttpKernel
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @var array<int, class-string|string>
 =======
      * @var array
@@ -24,12 +25,19 @@ class Kernel extends HttpKernel
 =======
      * @var array<int, class-string|string>
 >>>>>>> danhmuc_list
+=======
+     * @var array<int, class-string|string>
+>>>>>>> danhmuc_list
      */
     protected $middleware = [
         // \App\Http\Middleware\TrustHosts::class,
         \App\Http\Middleware\TrustProxies::class,
 <<<<<<< HEAD
+<<<<<<< HEAD
         \Fruitcake\Cors\HandleCors::class,
+=======
+        \Illuminate\Http\Middleware\HandleCors::class,
+>>>>>>> danhmuc_list
 =======
         \Illuminate\Http\Middleware\HandleCors::class,
 >>>>>>> danhmuc_list
@@ -45,6 +53,7 @@ class Kernel extends HttpKernel
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @var array<string, array<int, class-string|string>>
 =======
      * @var array
@@ -55,6 +64,9 @@ class Kernel extends HttpKernel
 =======
      * @var array<string, array<int, class-string|string>>
 >>>>>>> danhmuc_list
+=======
+     * @var array<string, array<int, class-string|string>>
+>>>>>>> danhmuc_list
      */
     protected $middlewareGroups = [
         'web' => [
@@ -62,7 +74,10 @@ class Kernel extends HttpKernel
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
             \Illuminate\Session\Middleware\StartSession::class,
 <<<<<<< HEAD
+<<<<<<< HEAD
             // \Illuminate\Session\Middleware\AuthenticateSession::class,
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
@@ -71,6 +86,7 @@ class Kernel extends HttpKernel
         ],
 
         'api' => [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -85,11 +101,16 @@ class Kernel extends HttpKernel
             // \Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful::class,
             \Illuminate\Routing\Middleware\ThrottleRequests::class.':api',
 >>>>>>> danhmuc_list
+=======
+            // \Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful::class,
+            \Illuminate\Routing\Middleware\ThrottleRequests::class.':api',
+>>>>>>> danhmuc_list
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
     ];
 
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
      * The application's route middleware.
      *
@@ -109,6 +130,8 @@ class Kernel extends HttpKernel
         'auth' => \App\Http\Middleware\Authenticate::class,
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
 =======
+=======
+>>>>>>> danhmuc_list
      * The application's middleware aliases.
      *
      * Aliases may be used to conveniently assign middleware to routes and groups.
@@ -119,13 +142,20 @@ class Kernel extends HttpKernel
         'auth' => \App\Http\Middleware\Authenticate::class,
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
         'auth.session' => \Illuminate\Session\Middleware\AuthenticateSession::class,
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         'cache.headers' => \Illuminate\Http\Middleware\SetCacheHeaders::class,
         'can' => \Illuminate\Auth\Middleware\Authorize::class,
         'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
         'password.confirm' => \Illuminate\Auth\Middleware\RequirePassword::class,
 <<<<<<< HEAD
+<<<<<<< HEAD
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
+=======
+        'signed' => \App\Http\Middleware\ValidateSignature::class,
+>>>>>>> danhmuc_list
 =======
         'signed' => \App\Http\Middleware\ValidateSignature::class,
 >>>>>>> danhmuc_list

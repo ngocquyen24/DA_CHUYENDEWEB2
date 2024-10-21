@@ -1,6 +1,10 @@
 /*!
 <<<<<<< HEAD
+<<<<<<< HEAD
   * Bootstrap v4.6.0 (https://getbootstrap.com/)
+=======
+  * Bootstrap v4.6.1 (https://getbootstrap.com/)
+>>>>>>> danhmuc_list
 =======
   * Bootstrap v4.6.1 (https://getbootstrap.com/)
 >>>>>>> danhmuc_list
@@ -12,7 +16,11 @@
   typeof define === 'function' && define.amd ? define(['exports', 'jquery', 'popper.js'], factory) :
   (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.bootstrap = {}, global.jQuery, global.Popper));
 <<<<<<< HEAD
+<<<<<<< HEAD
 }(this, (function (exports, $, Popper) { 'use strict';
+=======
+})(this, (function (exports, $, Popper) { 'use strict';
+>>>>>>> danhmuc_list
 =======
 })(this, (function (exports, $, Popper) { 'use strict';
 >>>>>>> danhmuc_list
@@ -60,8 +68,11 @@
     subClass.prototype = Object.create(superClass.prototype);
     subClass.prototype.constructor = subClass;
 <<<<<<< HEAD
+<<<<<<< HEAD
     subClass.__proto__ = superClass;
 =======
+=======
+>>>>>>> danhmuc_list
 
     _setPrototypeOf(subClass, superClass);
   }
@@ -73,13 +84,20 @@
     };
 
     return _setPrototypeOf(o, p);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   }
 
   /**
    * --------------------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
    * Bootstrap (v4.6.0): util.js
+=======
+   * Bootstrap (v4.6.1): util.js
+>>>>>>> danhmuc_list
 =======
    * Bootstrap (v4.6.1): util.js
 >>>>>>> danhmuc_list
@@ -88,9 +106,13 @@
    */
   /**
 <<<<<<< HEAD
+<<<<<<< HEAD
    * ------------------------------------------------------------------------
    * Private TransitionEnd Helpers
    * ------------------------------------------------------------------------
+=======
+   * Private TransitionEnd Helpers
+>>>>>>> danhmuc_list
 =======
    * Private TransitionEnd Helpers
 >>>>>>> danhmuc_list
@@ -114,7 +136,11 @@
       delegateType: TRANSITION_END,
       handle: function handle(event) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($__default['default'](event.target).is(this)) {
+=======
+        if ($__default["default"](event.target).is(this)) {
+>>>>>>> danhmuc_list
 =======
         if ($__default["default"](event.target).is(this)) {
 >>>>>>> danhmuc_list
@@ -131,7 +157,11 @@
 
     var called = false;
 <<<<<<< HEAD
+<<<<<<< HEAD
     $__default['default'](this).one(Util.TRANSITION_END, function () {
+=======
+    $__default["default"](this).one(Util.TRANSITION_END, function () {
+>>>>>>> danhmuc_list
 =======
     $__default["default"](this).one(Util.TRANSITION_END, function () {
 >>>>>>> danhmuc_list
@@ -147,6 +177,7 @@
 
   function setTransitionEndSupport() {
 <<<<<<< HEAD
+<<<<<<< HEAD
     $__default['default'].fn.emulateTransitionEnd = transitionEndEmulator;
     $__default['default'].event.special[Util.TRANSITION_END] = getSpecialTransitionEndEvent();
   }
@@ -155,11 +186,16 @@
    * Public Util Api
    * --------------------------------------------------------------------------
 =======
+=======
+>>>>>>> danhmuc_list
     $__default["default"].fn.emulateTransitionEnd = transitionEndEmulator;
     $__default["default"].event.special[Util.TRANSITION_END] = getSpecialTransitionEndEvent();
   }
   /**
    * Public Util API
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
    */
 
@@ -169,6 +205,10 @@
     getUID: function getUID(prefix) {
       do {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        // eslint-disable-next-line no-bitwise
+>>>>>>> danhmuc_list
 =======
         // eslint-disable-next-line no-bitwise
 >>>>>>> danhmuc_list
@@ -198,8 +238,13 @@
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       var transitionDuration = $__default['default'](element).css('transition-duration');
       var transitionDelay = $__default['default'](element).css('transition-delay');
+=======
+      var transitionDuration = $__default["default"](element).css('transition-duration');
+      var transitionDelay = $__default["default"](element).css('transition-delay');
+>>>>>>> danhmuc_list
 =======
       var transitionDuration = $__default["default"](element).css('transition-duration');
       var transitionDelay = $__default["default"](element).css('transition-delay');
@@ -221,7 +266,11 @@
     },
     triggerTransitionEnd: function triggerTransitionEnd(element) {
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'](element).trigger(TRANSITION_END);
+=======
+      $__default["default"](element).trigger(TRANSITION_END);
+>>>>>>> danhmuc_list
 =======
       $__default["default"](element).trigger(TRANSITION_END);
 >>>>>>> danhmuc_list
@@ -269,17 +318,23 @@
     },
     jQueryDetection: function jQueryDetection() {
 <<<<<<< HEAD
+<<<<<<< HEAD
       if (typeof $__default['default'] === 'undefined') {
         throw new TypeError('Bootstrap\'s JavaScript requires jQuery. jQuery must be included before Bootstrap\'s JavaScript.');
       }
 
       var version = $__default['default'].fn.jquery.split(' ')[0].split('.');
 =======
+=======
+>>>>>>> danhmuc_list
       if (typeof $__default["default"] === 'undefined') {
         throw new TypeError('Bootstrap\'s JavaScript requires jQuery. jQuery must be included before Bootstrap\'s JavaScript.');
       }
 
       var version = $__default["default"].fn.jquery.split(' ')[0].split('.');
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       var minMajor = 1;
       var ltMajor = 2;
@@ -296,6 +351,7 @@
   setTransitionEndSupport();
 
   /**
+<<<<<<< HEAD
 <<<<<<< HEAD
    * ------------------------------------------------------------------------
    * Constants
@@ -320,6 +376,8 @@
    * Class Definition
    * ------------------------------------------------------------------------
 =======
+=======
+>>>>>>> danhmuc_list
    * Constants
    */
 
@@ -338,6 +396,9 @@
   var SELECTOR_DISMISS = '[data-dismiss="alert"]';
   /**
    * Class definition
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
    */
 
@@ -368,7 +429,11 @@
 
     _proto.dispose = function dispose() {
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'].removeData(this._element, DATA_KEY);
+=======
+      $__default["default"].removeData(this._element, DATA_KEY$a);
+>>>>>>> danhmuc_list
 =======
       $__default["default"].removeData(this._element, DATA_KEY$a);
 >>>>>>> danhmuc_list
@@ -386,7 +451,11 @@
 
       if (!parent) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         parent = $__default['default'](element).closest("." + CLASS_NAME_ALERT)[0];
+=======
+        parent = $__default["default"](element).closest("." + CLASS_NAME_ALERT)[0];
+>>>>>>> danhmuc_list
 =======
         parent = $__default["default"](element).closest("." + CLASS_NAME_ALERT)[0];
 >>>>>>> danhmuc_list
@@ -397,8 +466,13 @@
 
     _proto._triggerCloseEvent = function _triggerCloseEvent(element) {
 <<<<<<< HEAD
+<<<<<<< HEAD
       var closeEvent = $__default['default'].Event(EVENT_CLOSE);
       $__default['default'](element).trigger(closeEvent);
+=======
+      var closeEvent = $__default["default"].Event(EVENT_CLOSE);
+      $__default["default"](element).trigger(closeEvent);
+>>>>>>> danhmuc_list
 =======
       var closeEvent = $__default["default"].Event(EVENT_CLOSE);
       $__default["default"](element).trigger(closeEvent);
@@ -410,9 +484,15 @@
       var _this = this;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'](element).removeClass(CLASS_NAME_SHOW);
 
       if (!$__default['default'](element).hasClass(CLASS_NAME_FADE)) {
+=======
+      $__default["default"](element).removeClass(CLASS_NAME_SHOW$7);
+
+      if (!$__default["default"](element).hasClass(CLASS_NAME_FADE$5)) {
+>>>>>>> danhmuc_list
 =======
       $__default["default"](element).removeClass(CLASS_NAME_SHOW$7);
 
@@ -425,7 +505,11 @@
 
       var transitionDuration = Util.getTransitionDurationFromElement(element);
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'](element).one(Util.TRANSITION_END, function (event) {
+=======
+      $__default["default"](element).one(Util.TRANSITION_END, function (event) {
+>>>>>>> danhmuc_list
 =======
       $__default["default"](element).one(Util.TRANSITION_END, function (event) {
 >>>>>>> danhmuc_list
@@ -435,7 +519,11 @@
 
     _proto._destroyElement = function _destroyElement(element) {
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'](element).detach().trigger(EVENT_CLOSED).remove();
+=======
+      $__default["default"](element).detach().trigger(EVENT_CLOSED).remove();
+>>>>>>> danhmuc_list
 =======
       $__default["default"](element).detach().trigger(EVENT_CLOSED).remove();
 >>>>>>> danhmuc_list
@@ -445,6 +533,7 @@
     Alert._jQueryInterface = function _jQueryInterface(config) {
       return this.each(function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
         var $element = $__default['default'](this);
         var data = $element.data(DATA_KEY);
 
@@ -452,12 +541,17 @@
           data = new Alert(this);
           $element.data(DATA_KEY, data);
 =======
+=======
+>>>>>>> danhmuc_list
         var $element = $__default["default"](this);
         var data = $element.data(DATA_KEY$a);
 
         if (!data) {
           data = new Alert(this);
           $element.data(DATA_KEY$a, data);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         }
 
@@ -481,7 +575,11 @@
       key: "VERSION",
       get: function get() {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return VERSION;
+=======
+        return VERSION$a;
+>>>>>>> danhmuc_list
 =======
         return VERSION$a;
 >>>>>>> danhmuc_list
@@ -491,6 +589,7 @@
     return Alert;
   }();
   /**
+<<<<<<< HEAD
 <<<<<<< HEAD
    * ------------------------------------------------------------------------
    * Data Api implementation
@@ -511,6 +610,8 @@
   $__default['default'].fn[NAME].noConflict = function () {
     $__default['default'].fn[NAME] = JQUERY_NO_CONFLICT;
 =======
+=======
+>>>>>>> danhmuc_list
    * Data API implementation
    */
 
@@ -525,11 +626,15 @@
 
   $__default["default"].fn[NAME$a].noConflict = function () {
     $__default["default"].fn[NAME$a] = JQUERY_NO_CONFLICT$a;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     return Alert._jQueryInterface;
   };
 
   /**
+<<<<<<< HEAD
 <<<<<<< HEAD
    * ------------------------------------------------------------------------
    * Constants
@@ -560,6 +665,8 @@
    * Class Definition
    * ------------------------------------------------------------------------
 =======
+=======
+>>>>>>> danhmuc_list
    * Constants
    */
 
@@ -584,6 +691,9 @@
   var SELECTOR_BUTTON = '.btn';
   /**
    * Class definition
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
    */
 
@@ -601,7 +711,11 @@
       var triggerChangeEvent = true;
       var addAriaPressed = true;
 <<<<<<< HEAD
+<<<<<<< HEAD
       var rootElement = $__default['default'](this._element).closest(SELECTOR_DATA_TOGGLES)[0];
+=======
+      var rootElement = $__default["default"](this._element).closest(SELECTOR_DATA_TOGGLES)[0];
+>>>>>>> danhmuc_list
 =======
       var rootElement = $__default["default"](this._element).closest(SELECTOR_DATA_TOGGLES)[0];
 >>>>>>> danhmuc_list
@@ -612,6 +726,7 @@
         if (input) {
           if (input.type === 'radio') {
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (input.checked && this._element.classList.contains(CLASS_NAME_ACTIVE)) {
               triggerChangeEvent = false;
             } else {
@@ -620,6 +735,8 @@
               if (activeElement) {
                 $__default['default'](activeElement).removeClass(CLASS_NAME_ACTIVE);
 =======
+=======
+>>>>>>> danhmuc_list
             if (input.checked && this._element.classList.contains(CLASS_NAME_ACTIVE$3)) {
               triggerChangeEvent = false;
             } else {
@@ -627,6 +744,9 @@
 
               if (activeElement) {
                 $__default["default"](activeElement).removeClass(CLASS_NAME_ACTIVE$3);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
               }
             }
@@ -636,17 +756,23 @@
             // if it's not a radio button or checkbox don't add a pointless/invalid checked property to the input
             if (input.type === 'checkbox' || input.type === 'radio') {
 <<<<<<< HEAD
+<<<<<<< HEAD
               input.checked = !this._element.classList.contains(CLASS_NAME_ACTIVE);
             }
 
             if (!this.shouldAvoidTriggerChange) {
               $__default['default'](input).trigger('change');
 =======
+=======
+>>>>>>> danhmuc_list
               input.checked = !this._element.classList.contains(CLASS_NAME_ACTIVE$3);
             }
 
             if (!this.shouldAvoidTriggerChange) {
               $__default["default"](input).trigger('change');
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             }
           }
@@ -659,17 +785,23 @@
       if (!(this._element.hasAttribute('disabled') || this._element.classList.contains('disabled'))) {
         if (addAriaPressed) {
 <<<<<<< HEAD
+<<<<<<< HEAD
           this._element.setAttribute('aria-pressed', !this._element.classList.contains(CLASS_NAME_ACTIVE));
         }
 
         if (triggerChangeEvent) {
           $__default['default'](this._element).toggleClass(CLASS_NAME_ACTIVE);
 =======
+=======
+>>>>>>> danhmuc_list
           this._element.setAttribute('aria-pressed', !this._element.classList.contains(CLASS_NAME_ACTIVE$3));
         }
 
         if (triggerChangeEvent) {
           $__default["default"](this._element).toggleClass(CLASS_NAME_ACTIVE$3);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         }
       }
@@ -677,7 +809,11 @@
 
     _proto.dispose = function dispose() {
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'].removeData(this._element, DATA_KEY$1);
+=======
+      $__default["default"].removeData(this._element, DATA_KEY$9);
+>>>>>>> danhmuc_list
 =======
       $__default["default"].removeData(this._element, DATA_KEY$9);
 >>>>>>> danhmuc_list
@@ -688,6 +824,7 @@
     Button._jQueryInterface = function _jQueryInterface(config, avoidTriggerChange) {
       return this.each(function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
         var $element = $__default['default'](this);
         var data = $element.data(DATA_KEY$1);
 
@@ -695,12 +832,17 @@
           data = new Button(this);
           $element.data(DATA_KEY$1, data);
 =======
+=======
+>>>>>>> danhmuc_list
         var $element = $__default["default"](this);
         var data = $element.data(DATA_KEY$9);
 
         if (!data) {
           data = new Button(this);
           $element.data(DATA_KEY$9, data);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         }
 
@@ -716,7 +858,11 @@
       key: "VERSION",
       get: function get() {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return VERSION$1;
+=======
+        return VERSION$9;
+>>>>>>> danhmuc_list
 =======
         return VERSION$9;
 >>>>>>> danhmuc_list
@@ -726,6 +872,7 @@
     return Button;
   }();
   /**
+<<<<<<< HEAD
 <<<<<<< HEAD
    * ------------------------------------------------------------------------
    * Data Api implementation
@@ -740,6 +887,8 @@
     if (!$__default['default'](button).hasClass(CLASS_NAME_BUTTON)) {
       button = $__default['default'](button).closest(SELECTOR_BUTTON)[0];
 =======
+=======
+>>>>>>> danhmuc_list
    * Data API implementation
    */
 
@@ -750,6 +899,9 @@
 
     if (!$__default["default"](button).hasClass(CLASS_NAME_BUTTON)) {
       button = $__default["default"](button).closest(SELECTOR_BUTTON)[0];
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     }
 
@@ -766,6 +918,7 @@
 
       if (initialButton.tagName === 'INPUT' || button.tagName !== 'LABEL') {
 <<<<<<< HEAD
+<<<<<<< HEAD
         Button._jQueryInterface.call($__default['default'](button), 'toggle', initialButton.tagName === 'INPUT');
       }
     }
@@ -775,6 +928,8 @@
   });
   $__default['default'](window).on(EVENT_LOAD_DATA_API, function () {
 =======
+=======
+>>>>>>> danhmuc_list
         Button._jQueryInterface.call($__default["default"](button), 'toggle', initialButton.tagName === 'INPUT');
       }
     }
@@ -783,6 +938,9 @@
     $__default["default"](button).toggleClass(CLASS_NAME_FOCUS, /^focus(in)?$/.test(event.type));
   });
   $__default["default"](window).on(EVENT_LOAD_DATA_API$2, function () {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     // ensure correct active class is set to match the controls' actual values/states
     // find all checkboxes/readio buttons inside data-toggle groups
@@ -794,9 +952,15 @@
 
       if (input.checked || input.hasAttribute('checked')) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         button.classList.add(CLASS_NAME_ACTIVE);
       } else {
         button.classList.remove(CLASS_NAME_ACTIVE);
+=======
+        button.classList.add(CLASS_NAME_ACTIVE$3);
+      } else {
+        button.classList.remove(CLASS_NAME_ACTIVE$3);
+>>>>>>> danhmuc_list
 =======
         button.classList.add(CLASS_NAME_ACTIVE$3);
       } else {
@@ -807,7 +971,11 @@
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     buttons = [].slice.call(document.querySelectorAll(SELECTOR_DATA_TOGGLE));
+=======
+    buttons = [].slice.call(document.querySelectorAll(SELECTOR_DATA_TOGGLE$4));
+>>>>>>> danhmuc_list
 =======
     buttons = [].slice.call(document.querySelectorAll(SELECTOR_DATA_TOGGLE$4));
 >>>>>>> danhmuc_list
@@ -817,9 +985,15 @@
 
       if (_button.getAttribute('aria-pressed') === 'true') {
 <<<<<<< HEAD
+<<<<<<< HEAD
         _button.classList.add(CLASS_NAME_ACTIVE);
       } else {
         _button.classList.remove(CLASS_NAME_ACTIVE);
+=======
+        _button.classList.add(CLASS_NAME_ACTIVE$3);
+      } else {
+        _button.classList.remove(CLASS_NAME_ACTIVE$3);
+>>>>>>> danhmuc_list
 =======
         _button.classList.add(CLASS_NAME_ACTIVE$3);
       } else {
@@ -829,6 +1003,7 @@
     }
   });
   /**
+<<<<<<< HEAD
 <<<<<<< HEAD
    * ------------------------------------------------------------------------
    * jQuery
@@ -841,6 +1016,8 @@
   $__default['default'].fn[NAME$1].noConflict = function () {
     $__default['default'].fn[NAME$1] = JQUERY_NO_CONFLICT$1;
 =======
+=======
+>>>>>>> danhmuc_list
    * jQuery
    */
 
@@ -849,11 +1026,15 @@
 
   $__default["default"].fn[NAME$9].noConflict = function () {
     $__default["default"].fn[NAME$9] = JQUERY_NO_CONFLICT$9;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     return Button._jQueryInterface;
   };
 
   /**
+<<<<<<< HEAD
 <<<<<<< HEAD
    * ------------------------------------------------------------------------
    * Constants
@@ -867,6 +1048,8 @@
   var DATA_API_KEY$2 = '.data-api';
   var JQUERY_NO_CONFLICT$2 = $__default['default'].fn[NAME$2];
 =======
+=======
+>>>>>>> danhmuc_list
    * Constants
    */
 
@@ -876,6 +1059,9 @@
   var EVENT_KEY$8 = "." + DATA_KEY$8;
   var DATA_API_KEY$5 = '.data-api';
   var JQUERY_NO_CONFLICT$8 = $__default["default"].fn[NAME$8];
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   var ARROW_LEFT_KEYCODE = 37; // KeyboardEvent.which value for left arrow key
 
@@ -884,6 +1070,7 @@
   var TOUCHEVENT_COMPAT_WAIT = 500; // Time for mouse compat events to fire after touch
 
   var SWIPE_THRESHOLD = 40;
+<<<<<<< HEAD
 <<<<<<< HEAD
   var Default = {
     interval: 5000,
@@ -924,6 +1111,10 @@
   var CLASS_NAME_CAROUSEL = 'carousel';
   var CLASS_NAME_ACTIVE$2 = 'active';
 >>>>>>> danhmuc_list
+=======
+  var CLASS_NAME_CAROUSEL = 'carousel';
+  var CLASS_NAME_ACTIVE$2 = 'active';
+>>>>>>> danhmuc_list
   var CLASS_NAME_SLIDE = 'slide';
   var CLASS_NAME_RIGHT = 'carousel-item-right';
   var CLASS_NAME_LEFT = 'carousel-item-left';
@@ -931,7 +1122,10 @@
   var CLASS_NAME_PREV = 'carousel-item-prev';
   var CLASS_NAME_POINTER_EVENT = 'pointer-event';
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
   var DIRECTION_NEXT = 'next';
   var DIRECTION_PREV = 'prev';
   var DIRECTION_LEFT = 'left';
@@ -949,6 +1143,9 @@
   var EVENT_DRAG_START = "dragstart" + EVENT_KEY$8;
   var EVENT_LOAD_DATA_API$1 = "load" + EVENT_KEY$8 + DATA_API_KEY$5;
   var EVENT_CLICK_DATA_API$4 = "click" + EVENT_KEY$8 + DATA_API_KEY$5;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   var SELECTOR_ACTIVE$1 = '.active';
   var SELECTOR_ACTIVE_ITEM = '.active.carousel-item';
@@ -959,7 +1156,10 @@
   var SELECTOR_DATA_SLIDE = '[data-slide], [data-slide-to]';
   var SELECTOR_DATA_RIDE = '[data-ride="carousel"]';
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
   var Default$7 = {
     interval: 5000,
     keyboard: true,
@@ -976,6 +1176,9 @@
     wrap: 'boolean',
     touch: 'boolean'
   };
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   var PointerType = {
     TOUCH: 'touch',
@@ -983,9 +1186,13 @@
   };
   /**
 <<<<<<< HEAD
+<<<<<<< HEAD
    * ------------------------------------------------------------------------
    * Class Definition
    * ------------------------------------------------------------------------
+=======
+   * Class definition
+>>>>>>> danhmuc_list
 =======
    * Class definition
 >>>>>>> danhmuc_list
@@ -1022,7 +1229,11 @@
 
     _proto.nextWhenVisible = function nextWhenVisible() {
 <<<<<<< HEAD
+<<<<<<< HEAD
       var $element = $__default['default'](this._element); // Don't call next when the page isn't visible
+=======
+      var $element = $__default["default"](this._element); // Don't call next when the page isn't visible
+>>>>>>> danhmuc_list
 =======
       var $element = $__default["default"](this._element); // Don't call next when the page isn't visible
 >>>>>>> danhmuc_list
@@ -1083,7 +1294,11 @@
 
       if (this._isSliding) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         $__default['default'](this._element).one(EVENT_SLID, function () {
+=======
+        $__default["default"](this._element).one(EVENT_SLID, function () {
+>>>>>>> danhmuc_list
 =======
         $__default["default"](this._element).one(EVENT_SLID, function () {
 >>>>>>> danhmuc_list
@@ -1105,8 +1320,13 @@
 
     _proto.dispose = function dispose() {
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'](this._element).off(EVENT_KEY$2);
       $__default['default'].removeData(this._element, DATA_KEY$2);
+=======
+      $__default["default"](this._element).off(EVENT_KEY$8);
+      $__default["default"].removeData(this._element, DATA_KEY$8);
+>>>>>>> danhmuc_list
 =======
       $__default["default"](this._element).off(EVENT_KEY$8);
       $__default["default"].removeData(this._element, DATA_KEY$8);
@@ -1124,8 +1344,13 @@
 
     _proto._getConfig = function _getConfig(config) {
 <<<<<<< HEAD
+<<<<<<< HEAD
       config = _extends({}, Default, config);
       Util.typeCheckConfig(NAME$2, config, DefaultType);
+=======
+      config = _extends({}, Default$7, config);
+      Util.typeCheckConfig(NAME$8, config, DefaultType$7);
+>>>>>>> danhmuc_list
 =======
       config = _extends({}, Default$7, config);
       Util.typeCheckConfig(NAME$8, config, DefaultType$7);
@@ -1158,7 +1383,11 @@
 
       if (this._config.keyboard) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         $__default['default'](this._element).on(EVENT_KEYDOWN, function (event) {
+=======
+        $__default["default"](this._element).on(EVENT_KEYDOWN, function (event) {
+>>>>>>> danhmuc_list
 =======
         $__default["default"](this._element).on(EVENT_KEYDOWN, function (event) {
 >>>>>>> danhmuc_list
@@ -1168,7 +1397,11 @@
 
       if (this._config.pause === 'hover') {
 <<<<<<< HEAD
+<<<<<<< HEAD
         $__default['default'](this._element).on(EVENT_MOUSEENTER, function (event) {
+=======
+        $__default["default"](this._element).on(EVENT_MOUSEENTER, function (event) {
+>>>>>>> danhmuc_list
 =======
         $__default["default"](this._element).on(EVENT_MOUSEENTER, function (event) {
 >>>>>>> danhmuc_list
@@ -1201,11 +1434,15 @@
       var move = function move(event) {
         // ensure swiping with one touch and not pinching
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (event.originalEvent.touches && event.originalEvent.touches.length > 1) {
           _this3.touchDeltaX = 0;
         } else {
           _this3.touchDeltaX = event.originalEvent.touches[0].clientX - _this3.touchStartX;
         }
+=======
+        _this3.touchDeltaX = event.originalEvent.touches && event.originalEvent.touches.length > 1 ? 0 : event.originalEvent.touches[0].clientX - _this3.touchStartX;
+>>>>>>> danhmuc_list
 =======
         _this3.touchDeltaX = event.originalEvent.touches && event.originalEvent.touches.length > 1 ? 0 : event.originalEvent.touches[0].clientX - _this3.touchStartX;
 >>>>>>> danhmuc_list
@@ -1239,7 +1476,11 @@
       };
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'](this._element.querySelectorAll(SELECTOR_ITEM_IMG)).on(EVENT_DRAG_START, function (e) {
+=======
+      $__default["default"](this._element.querySelectorAll(SELECTOR_ITEM_IMG)).on(EVENT_DRAG_START, function (e) {
+>>>>>>> danhmuc_list
 =======
       $__default["default"](this._element.querySelectorAll(SELECTOR_ITEM_IMG)).on(EVENT_DRAG_START, function (e) {
 >>>>>>> danhmuc_list
@@ -1248,21 +1489,28 @@
 
       if (this._pointerEvent) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         $__default['default'](this._element).on(EVENT_POINTERDOWN, function (event) {
           return start(event);
         });
         $__default['default'](this._element).on(EVENT_POINTERUP, function (event) {
 =======
+=======
+>>>>>>> danhmuc_list
         $__default["default"](this._element).on(EVENT_POINTERDOWN, function (event) {
           return start(event);
         });
         $__default["default"](this._element).on(EVENT_POINTERUP, function (event) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
           return end(event);
         });
 
         this._element.classList.add(CLASS_NAME_POINTER_EVENT);
       } else {
+<<<<<<< HEAD
 <<<<<<< HEAD
         $__default['default'](this._element).on(EVENT_TOUCHSTART, function (event) {
           return start(event);
@@ -1272,6 +1520,8 @@
         });
         $__default['default'](this._element).on(EVENT_TOUCHEND, function (event) {
 =======
+=======
+>>>>>>> danhmuc_list
         $__default["default"](this._element).on(EVENT_TOUCHSTART, function (event) {
           return start(event);
         });
@@ -1279,6 +1529,9 @@
           return move(event);
         });
         $__default["default"](this._element).on(EVENT_TOUCHEND, function (event) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
           return end(event);
         });
@@ -1332,7 +1585,11 @@
       var fromIndex = this._getItemIndex(this._element.querySelector(SELECTOR_ACTIVE_ITEM));
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       var slideEvent = $__default['default'].Event(EVENT_SLIDE, {
+=======
+      var slideEvent = $__default["default"].Event(EVENT_SLIDE, {
+>>>>>>> danhmuc_list
 =======
       var slideEvent = $__default["default"].Event(EVENT_SLIDE, {
 >>>>>>> danhmuc_list
@@ -1342,7 +1599,11 @@
         to: targetIndex
       });
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'](this._element).trigger(slideEvent);
+=======
+      $__default["default"](this._element).trigger(slideEvent);
+>>>>>>> danhmuc_list
 =======
       $__default["default"](this._element).trigger(slideEvent);
 >>>>>>> danhmuc_list
@@ -1353,7 +1614,11 @@
       if (this._indicatorsElement) {
         var indicators = [].slice.call(this._indicatorsElement.querySelectorAll(SELECTOR_ACTIVE$1));
 <<<<<<< HEAD
+<<<<<<< HEAD
         $__default['default'](indicators).removeClass(CLASS_NAME_ACTIVE$1);
+=======
+        $__default["default"](indicators).removeClass(CLASS_NAME_ACTIVE$2);
+>>>>>>> danhmuc_list
 =======
         $__default["default"](indicators).removeClass(CLASS_NAME_ACTIVE$2);
 >>>>>>> danhmuc_list
@@ -1362,7 +1627,11 @@
 
         if (nextIndicator) {
 <<<<<<< HEAD
+<<<<<<< HEAD
           $__default['default'](nextIndicator).addClass(CLASS_NAME_ACTIVE$1);
+=======
+          $__default["default"](nextIndicator).addClass(CLASS_NAME_ACTIVE$2);
+>>>>>>> danhmuc_list
 =======
           $__default["default"](nextIndicator).addClass(CLASS_NAME_ACTIVE$2);
 >>>>>>> danhmuc_list
@@ -1414,7 +1683,11 @@
       }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       if (nextElement && $__default['default'](nextElement).hasClass(CLASS_NAME_ACTIVE$1)) {
+=======
+      if (nextElement && $__default["default"](nextElement).hasClass(CLASS_NAME_ACTIVE$2)) {
+>>>>>>> danhmuc_list
 =======
       if (nextElement && $__default["default"](nextElement).hasClass(CLASS_NAME_ACTIVE$2)) {
 >>>>>>> danhmuc_list
@@ -1443,7 +1716,11 @@
 
       this._activeElement = nextElement;
 <<<<<<< HEAD
+<<<<<<< HEAD
       var slidEvent = $__default['default'].Event(EVENT_SLID, {
+=======
+      var slidEvent = $__default["default"].Event(EVENT_SLID, {
+>>>>>>> danhmuc_list
 =======
       var slidEvent = $__default["default"].Event(EVENT_SLID, {
 >>>>>>> danhmuc_list
@@ -1453,6 +1730,7 @@
         to: nextElementIndex
       });
 
+<<<<<<< HEAD
 <<<<<<< HEAD
       if ($__default['default'](this._element).hasClass(CLASS_NAME_SLIDE)) {
         $__default['default'](nextElement).addClass(orderClassName);
@@ -1474,6 +1752,8 @@
         this._isSliding = false;
         $__default['default'](this._element).trigger(slidEvent);
 =======
+=======
+>>>>>>> danhmuc_list
       if ($__default["default"](this._element).hasClass(CLASS_NAME_SLIDE)) {
         $__default["default"](nextElement).addClass(orderClassName);
         Util.reflow(nextElement);
@@ -1493,6 +1773,9 @@
         $__default["default"](nextElement).addClass(CLASS_NAME_ACTIVE$2);
         this._isSliding = false;
         $__default["default"](this._element).trigger(slidEvent);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       }
 
@@ -1505,9 +1788,15 @@
     Carousel._jQueryInterface = function _jQueryInterface(config) {
       return this.each(function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
         var data = $__default['default'](this).data(DATA_KEY$2);
 
         var _config = _extends({}, Default, $__default['default'](this).data());
+=======
+        var data = $__default["default"](this).data(DATA_KEY$8);
+
+        var _config = _extends({}, Default$7, $__default["default"](this).data());
+>>>>>>> danhmuc_list
 =======
         var data = $__default["default"](this).data(DATA_KEY$8);
 
@@ -1523,7 +1812,11 @@
         if (!data) {
           data = new Carousel(this, _config);
 <<<<<<< HEAD
+<<<<<<< HEAD
           $__default['default'](this).data(DATA_KEY$2, data);
+=======
+          $__default["default"](this).data(DATA_KEY$8, data);
+>>>>>>> danhmuc_list
 =======
           $__default["default"](this).data(DATA_KEY$8, data);
 >>>>>>> danhmuc_list
@@ -1552,6 +1845,7 @@
       }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       var target = $__default['default'](selector)[0];
 
       if (!target || !$__default['default'](target).hasClass(CLASS_NAME_CAROUSEL)) {
@@ -1560,6 +1854,8 @@
 
       var config = _extends({}, $__default['default'](target).data(), $__default['default'](this).data());
 =======
+=======
+>>>>>>> danhmuc_list
       var target = $__default["default"](selector)[0];
 
       if (!target || !$__default["default"](target).hasClass(CLASS_NAME_CAROUSEL)) {
@@ -1567,6 +1863,9 @@
       }
 
       var config = _extends({}, $__default["default"](target).data(), $__default["default"](this).data());
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
       var slideIndex = this.getAttribute('data-slide-to');
@@ -1576,15 +1875,21 @@
       }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       Carousel._jQueryInterface.call($__default['default'](target), config);
 
       if (slideIndex) {
         $__default['default'](target).data(DATA_KEY$2).to(slideIndex);
 =======
+=======
+>>>>>>> danhmuc_list
       Carousel._jQueryInterface.call($__default["default"](target), config);
 
       if (slideIndex) {
         $__default["default"](target).data(DATA_KEY$8).to(slideIndex);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       }
 
@@ -1595,7 +1900,11 @@
       key: "VERSION",
       get: function get() {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return VERSION$2;
+=======
+        return VERSION$8;
+>>>>>>> danhmuc_list
 =======
         return VERSION$8;
 >>>>>>> danhmuc_list
@@ -1604,7 +1913,11 @@
       key: "Default",
       get: function get() {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return Default;
+=======
+        return Default$7;
+>>>>>>> danhmuc_list
 =======
         return Default$7;
 >>>>>>> danhmuc_list
@@ -1614,6 +1927,7 @@
     return Carousel;
   }();
   /**
+<<<<<<< HEAD
 <<<<<<< HEAD
    * ------------------------------------------------------------------------
    * Data Api implementation
@@ -1628,6 +1942,8 @@
     for (var i = 0, len = carousels.length; i < len; i++) {
       var $carousel = $__default['default'](carousels[i]);
 =======
+=======
+>>>>>>> danhmuc_list
    * Data API implementation
    */
 
@@ -1638,12 +1954,16 @@
 
     for (var i = 0, len = carousels.length; i < len; i++) {
       var $carousel = $__default["default"](carousels[i]);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
       Carousel._jQueryInterface.call($carousel, $carousel.data());
     }
   });
   /**
+<<<<<<< HEAD
 <<<<<<< HEAD
    * ------------------------------------------------------------------------
    * jQuery
@@ -1656,6 +1976,8 @@
   $__default['default'].fn[NAME$2].noConflict = function () {
     $__default['default'].fn[NAME$2] = JQUERY_NO_CONFLICT$2;
 =======
+=======
+>>>>>>> danhmuc_list
    * jQuery
    */
 
@@ -1664,11 +1986,15 @@
 
   $__default["default"].fn[NAME$8].noConflict = function () {
     $__default["default"].fn[NAME$8] = JQUERY_NO_CONFLICT$8;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     return Carousel._jQueryInterface;
   };
 
   /**
+<<<<<<< HEAD
 <<<<<<< HEAD
    * ------------------------------------------------------------------------
    * Constants
@@ -1696,6 +2022,8 @@
   var EVENT_CLICK_DATA_API$3 = "click" + EVENT_KEY$3 + DATA_API_KEY$3;
   var CLASS_NAME_SHOW$1 = 'show';
 =======
+=======
+>>>>>>> danhmuc_list
    * Constants
    */
 
@@ -1706,12 +2034,16 @@
   var DATA_API_KEY$4 = '.data-api';
   var JQUERY_NO_CONFLICT$7 = $__default["default"].fn[NAME$7];
   var CLASS_NAME_SHOW$6 = 'show';
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   var CLASS_NAME_COLLAPSE = 'collapse';
   var CLASS_NAME_COLLAPSING = 'collapsing';
   var CLASS_NAME_COLLAPSED = 'collapsed';
   var DIMENSION_WIDTH = 'width';
   var DIMENSION_HEIGHT = 'height';
+<<<<<<< HEAD
 <<<<<<< HEAD
   var SELECTOR_ACTIVES = '.show, .collapsing';
   var SELECTOR_DATA_TOGGLE$1 = '[data-toggle="collapse"]';
@@ -1720,6 +2052,8 @@
    * Class Definition
    * ------------------------------------------------------------------------
 =======
+=======
+>>>>>>> danhmuc_list
   var EVENT_SHOW$4 = "show" + EVENT_KEY$7;
   var EVENT_SHOWN$4 = "shown" + EVENT_KEY$7;
   var EVENT_HIDE$4 = "hide" + EVENT_KEY$7;
@@ -1737,6 +2071,9 @@
   };
   /**
    * Class definition
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
    */
 
@@ -1747,7 +2084,11 @@
       this._config = this._getConfig(config);
       this._triggerArray = [].slice.call(document.querySelectorAll("[data-toggle=\"collapse\"][href=\"#" + element.id + "\"]," + ("[data-toggle=\"collapse\"][data-target=\"#" + element.id + "\"]")));
 <<<<<<< HEAD
+<<<<<<< HEAD
       var toggleList = [].slice.call(document.querySelectorAll(SELECTOR_DATA_TOGGLE$1));
+=======
+      var toggleList = [].slice.call(document.querySelectorAll(SELECTOR_DATA_TOGGLE$3));
+>>>>>>> danhmuc_list
 =======
       var toggleList = [].slice.call(document.querySelectorAll(SELECTOR_DATA_TOGGLE$3));
 >>>>>>> danhmuc_list
@@ -1783,7 +2124,11 @@
     // Public
     _proto.toggle = function toggle() {
 <<<<<<< HEAD
+<<<<<<< HEAD
       if ($__default['default'](this._element).hasClass(CLASS_NAME_SHOW$1)) {
+=======
+      if ($__default["default"](this._element).hasClass(CLASS_NAME_SHOW$6)) {
+>>>>>>> danhmuc_list
 =======
       if ($__default["default"](this._element).hasClass(CLASS_NAME_SHOW$6)) {
 >>>>>>> danhmuc_list
@@ -1797,7 +2142,11 @@
       var _this = this;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       if (this._isTransitioning || $__default['default'](this._element).hasClass(CLASS_NAME_SHOW$1)) {
+=======
+      if (this._isTransitioning || $__default["default"](this._element).hasClass(CLASS_NAME_SHOW$6)) {
+>>>>>>> danhmuc_list
 =======
       if (this._isTransitioning || $__default["default"](this._element).hasClass(CLASS_NAME_SHOW$6)) {
 >>>>>>> danhmuc_list
@@ -1823,7 +2172,11 @@
 
       if (actives) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         activesData = $__default['default'](actives).not(this._selector).data(DATA_KEY$3);
+=======
+        activesData = $__default["default"](actives).not(this._selector).data(DATA_KEY$7);
+>>>>>>> danhmuc_list
 =======
         activesData = $__default["default"](actives).not(this._selector).data(DATA_KEY$7);
 >>>>>>> danhmuc_list
@@ -1834,8 +2187,13 @@
       }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       var startEvent = $__default['default'].Event(EVENT_SHOW);
       $__default['default'](this._element).trigger(startEvent);
+=======
+      var startEvent = $__default["default"].Event(EVENT_SHOW$4);
+      $__default["default"](this._element).trigger(startEvent);
+>>>>>>> danhmuc_list
 =======
       var startEvent = $__default["default"].Event(EVENT_SHOW$4);
       $__default["default"](this._element).trigger(startEvent);
@@ -1847,15 +2205,21 @@
 
       if (actives) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         Collapse._jQueryInterface.call($__default['default'](actives).not(this._selector), 'hide');
 
         if (!activesData) {
           $__default['default'](actives).data(DATA_KEY$3, null);
 =======
+=======
+>>>>>>> danhmuc_list
         Collapse._jQueryInterface.call($__default["default"](actives).not(this._selector), 'hide');
 
         if (!activesData) {
           $__default["default"](actives).data(DATA_KEY$7, null);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         }
       }
@@ -1863,17 +2227,23 @@
       var dimension = this._getDimension();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'](this._element).removeClass(CLASS_NAME_COLLAPSE).addClass(CLASS_NAME_COLLAPSING);
       this._element.style[dimension] = 0;
 
       if (this._triggerArray.length) {
         $__default['default'](this._triggerArray).removeClass(CLASS_NAME_COLLAPSED).attr('aria-expanded', true);
 =======
+=======
+>>>>>>> danhmuc_list
       $__default["default"](this._element).removeClass(CLASS_NAME_COLLAPSE).addClass(CLASS_NAME_COLLAPSING);
       this._element.style[dimension] = 0;
 
       if (this._triggerArray.length) {
         $__default["default"](this._triggerArray).removeClass(CLASS_NAME_COLLAPSED).attr('aria-expanded', true);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       }
 
@@ -1881,7 +2251,11 @@
 
       var complete = function complete() {
 <<<<<<< HEAD
+<<<<<<< HEAD
         $__default['default'](_this._element).removeClass(CLASS_NAME_COLLAPSING).addClass(CLASS_NAME_COLLAPSE + " " + CLASS_NAME_SHOW$1);
+=======
+        $__default["default"](_this._element).removeClass(CLASS_NAME_COLLAPSING).addClass(CLASS_NAME_COLLAPSE + " " + CLASS_NAME_SHOW$6);
+>>>>>>> danhmuc_list
 =======
         $__default["default"](_this._element).removeClass(CLASS_NAME_COLLAPSING).addClass(CLASS_NAME_COLLAPSE + " " + CLASS_NAME_SHOW$6);
 >>>>>>> danhmuc_list
@@ -1890,7 +2264,11 @@
         _this.setTransitioning(false);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $__default['default'](_this._element).trigger(EVENT_SHOWN);
+=======
+        $__default["default"](_this._element).trigger(EVENT_SHOWN$4);
+>>>>>>> danhmuc_list
 =======
         $__default["default"](_this._element).trigger(EVENT_SHOWN$4);
 >>>>>>> danhmuc_list
@@ -1900,7 +2278,11 @@
       var scrollSize = "scroll" + capitalizedDimension;
       var transitionDuration = Util.getTransitionDurationFromElement(this._element);
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'](this._element).one(Util.TRANSITION_END, complete).emulateTransitionEnd(transitionDuration);
+=======
+      $__default["default"](this._element).one(Util.TRANSITION_END, complete).emulateTransitionEnd(transitionDuration);
+>>>>>>> danhmuc_list
 =======
       $__default["default"](this._element).one(Util.TRANSITION_END, complete).emulateTransitionEnd(transitionDuration);
 >>>>>>> danhmuc_list
@@ -1911,6 +2293,7 @@
       var _this2 = this;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       if (this._isTransitioning || !$__default['default'](this._element).hasClass(CLASS_NAME_SHOW$1)) {
         return;
       }
@@ -1918,12 +2301,17 @@
       var startEvent = $__default['default'].Event(EVENT_HIDE);
       $__default['default'](this._element).trigger(startEvent);
 =======
+=======
+>>>>>>> danhmuc_list
       if (this._isTransitioning || !$__default["default"](this._element).hasClass(CLASS_NAME_SHOW$6)) {
         return;
       }
 
       var startEvent = $__default["default"].Event(EVENT_HIDE$4);
       $__default["default"](this._element).trigger(startEvent);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
       if (startEvent.isDefaultPrevented()) {
@@ -1935,7 +2323,11 @@
       this._element.style[dimension] = this._element.getBoundingClientRect()[dimension] + "px";
       Util.reflow(this._element);
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'](this._element).addClass(CLASS_NAME_COLLAPSING).removeClass(CLASS_NAME_COLLAPSE + " " + CLASS_NAME_SHOW$1);
+=======
+      $__default["default"](this._element).addClass(CLASS_NAME_COLLAPSING).removeClass(CLASS_NAME_COLLAPSE + " " + CLASS_NAME_SHOW$6);
+>>>>>>> danhmuc_list
 =======
       $__default["default"](this._element).addClass(CLASS_NAME_COLLAPSING).removeClass(CLASS_NAME_COLLAPSE + " " + CLASS_NAME_SHOW$6);
 >>>>>>> danhmuc_list
@@ -1948,15 +2340,21 @@
 
           if (selector !== null) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             var $elem = $__default['default']([].slice.call(document.querySelectorAll(selector)));
 
             if (!$elem.hasClass(CLASS_NAME_SHOW$1)) {
               $__default['default'](trigger).addClass(CLASS_NAME_COLLAPSED).attr('aria-expanded', false);
 =======
+=======
+>>>>>>> danhmuc_list
             var $elem = $__default["default"]([].slice.call(document.querySelectorAll(selector)));
 
             if (!$elem.hasClass(CLASS_NAME_SHOW$6)) {
               $__default["default"](trigger).addClass(CLASS_NAME_COLLAPSED).attr('aria-expanded', false);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             }
           }
@@ -1969,7 +2367,11 @@
         _this2.setTransitioning(false);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $__default['default'](_this2._element).removeClass(CLASS_NAME_COLLAPSING).addClass(CLASS_NAME_COLLAPSE).trigger(EVENT_HIDDEN);
+=======
+        $__default["default"](_this2._element).removeClass(CLASS_NAME_COLLAPSING).addClass(CLASS_NAME_COLLAPSE).trigger(EVENT_HIDDEN$4);
+>>>>>>> danhmuc_list
 =======
         $__default["default"](_this2._element).removeClass(CLASS_NAME_COLLAPSING).addClass(CLASS_NAME_COLLAPSE).trigger(EVENT_HIDDEN$4);
 >>>>>>> danhmuc_list
@@ -1978,7 +2380,11 @@
       this._element.style[dimension] = '';
       var transitionDuration = Util.getTransitionDurationFromElement(this._element);
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'](this._element).one(Util.TRANSITION_END, complete).emulateTransitionEnd(transitionDuration);
+=======
+      $__default["default"](this._element).one(Util.TRANSITION_END, complete).emulateTransitionEnd(transitionDuration);
+>>>>>>> danhmuc_list
 =======
       $__default["default"](this._element).one(Util.TRANSITION_END, complete).emulateTransitionEnd(transitionDuration);
 >>>>>>> danhmuc_list
@@ -1990,7 +2396,11 @@
 
     _proto.dispose = function dispose() {
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'].removeData(this._element, DATA_KEY$3);
+=======
+      $__default["default"].removeData(this._element, DATA_KEY$7);
+>>>>>>> danhmuc_list
 =======
       $__default["default"].removeData(this._element, DATA_KEY$7);
 >>>>>>> danhmuc_list
@@ -2004,22 +2414,32 @@
 
     _proto._getConfig = function _getConfig(config) {
 <<<<<<< HEAD
+<<<<<<< HEAD
       config = _extends({}, Default$1, config);
       config.toggle = Boolean(config.toggle); // Coerce string values
 
       Util.typeCheckConfig(NAME$3, config, DefaultType$1);
 =======
+=======
+>>>>>>> danhmuc_list
       config = _extends({}, Default$6, config);
       config.toggle = Boolean(config.toggle); // Coerce string values
 
       Util.typeCheckConfig(NAME$7, config, DefaultType$6);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       return config;
     };
 
     _proto._getDimension = function _getDimension() {
 <<<<<<< HEAD
+<<<<<<< HEAD
       var hasWidth = $__default['default'](this._element).hasClass(DIMENSION_WIDTH);
+=======
+      var hasWidth = $__default["default"](this._element).hasClass(DIMENSION_WIDTH);
+>>>>>>> danhmuc_list
 =======
       var hasWidth = $__default["default"](this._element).hasClass(DIMENSION_WIDTH);
 >>>>>>> danhmuc_list
@@ -2044,7 +2464,11 @@
       var selector = "[data-toggle=\"collapse\"][data-parent=\"" + this._config.parent + "\"]";
       var children = [].slice.call(parent.querySelectorAll(selector));
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'](children).each(function (i, element) {
+=======
+      $__default["default"](children).each(function (i, element) {
+>>>>>>> danhmuc_list
 =======
       $__default["default"](children).each(function (i, element) {
 >>>>>>> danhmuc_list
@@ -2055,15 +2479,21 @@
 
     _proto._addAriaAndCollapsedClass = function _addAriaAndCollapsedClass(element, triggerArray) {
 <<<<<<< HEAD
+<<<<<<< HEAD
       var isOpen = $__default['default'](element).hasClass(CLASS_NAME_SHOW$1);
 
       if (triggerArray.length) {
         $__default['default'](triggerArray).toggleClass(CLASS_NAME_COLLAPSED, !isOpen).attr('aria-expanded', isOpen);
 =======
+=======
+>>>>>>> danhmuc_list
       var isOpen = $__default["default"](element).hasClass(CLASS_NAME_SHOW$6);
 
       if (triggerArray.length) {
         $__default["default"](triggerArray).toggleClass(CLASS_NAME_COLLAPSED, !isOpen).attr('aria-expanded', isOpen);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       }
     } // Static
@@ -2077,15 +2507,21 @@
     Collapse._jQueryInterface = function _jQueryInterface(config) {
       return this.each(function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
         var $element = $__default['default'](this);
         var data = $element.data(DATA_KEY$3);
 
         var _config = _extends({}, Default$1, $element.data(), typeof config === 'object' && config ? config : {});
 =======
+=======
+>>>>>>> danhmuc_list
         var $element = $__default["default"](this);
         var data = $element.data(DATA_KEY$7);
 
         var _config = _extends({}, Default$6, $element.data(), typeof config === 'object' && config ? config : {});
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
         if (!data && _config.toggle && typeof config === 'string' && /show|hide/.test(config)) {
@@ -2095,7 +2531,11 @@
         if (!data) {
           data = new Collapse(this, _config);
 <<<<<<< HEAD
+<<<<<<< HEAD
           $element.data(DATA_KEY$3, data);
+=======
+          $element.data(DATA_KEY$7, data);
+>>>>>>> danhmuc_list
 =======
           $element.data(DATA_KEY$7, data);
 >>>>>>> danhmuc_list
@@ -2115,7 +2555,11 @@
       key: "VERSION",
       get: function get() {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return VERSION$3;
+=======
+        return VERSION$7;
+>>>>>>> danhmuc_list
 =======
         return VERSION$7;
 >>>>>>> danhmuc_list
@@ -2124,7 +2568,11 @@
       key: "Default",
       get: function get() {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return Default$1;
+=======
+        return Default$6;
+>>>>>>> danhmuc_list
 =======
         return Default$6;
 >>>>>>> danhmuc_list
@@ -2135,6 +2583,7 @@
   }();
   /**
 <<<<<<< HEAD
+<<<<<<< HEAD
    * ------------------------------------------------------------------------
    * Data Api implementation
    * ------------------------------------------------------------------------
@@ -2143,17 +2592,23 @@
 
   $__default['default'](document).on(EVENT_CLICK_DATA_API$3, SELECTOR_DATA_TOGGLE$1, function (event) {
 =======
+=======
+>>>>>>> danhmuc_list
    * Data API implementation
    */
 
 
   $__default["default"](document).on(EVENT_CLICK_DATA_API$3, SELECTOR_DATA_TOGGLE$3, function (event) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     // preventDefault only for <a> elements (which change the URL) not inside the collapsible element
     if (event.currentTarget.tagName === 'A') {
       event.preventDefault();
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     var $trigger = $__default['default'](this);
     var selector = Util.getSelectorFromElement(this);
@@ -2162,12 +2617,17 @@
       var $target = $__default['default'](this);
       var data = $target.data(DATA_KEY$3);
 =======
+=======
+>>>>>>> danhmuc_list
     var $trigger = $__default["default"](this);
     var selector = Util.getSelectorFromElement(this);
     var selectors = [].slice.call(document.querySelectorAll(selector));
     $__default["default"](selectors).each(function () {
       var $target = $__default["default"](this);
       var data = $target.data(DATA_KEY$7);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       var config = data ? 'toggle' : $trigger.data();
 
@@ -2175,6 +2635,7 @@
     });
   });
   /**
+<<<<<<< HEAD
 <<<<<<< HEAD
    * ------------------------------------------------------------------------
    * jQuery
@@ -2187,6 +2648,8 @@
   $__default['default'].fn[NAME$3].noConflict = function () {
     $__default['default'].fn[NAME$3] = JQUERY_NO_CONFLICT$3;
 =======
+=======
+>>>>>>> danhmuc_list
    * jQuery
    */
 
@@ -2195,11 +2658,15 @@
 
   $__default["default"].fn[NAME$7].noConflict = function () {
     $__default["default"].fn[NAME$7] = JQUERY_NO_CONFLICT$7;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     return Collapse._jQueryInterface;
   };
 
   /**
+<<<<<<< HEAD
 <<<<<<< HEAD
    * ------------------------------------------------------------------------
    * Constants
@@ -2214,6 +2681,8 @@
   var JQUERY_NO_CONFLICT$4 = $__default['default'].fn[NAME$4];
   var ESCAPE_KEYCODE = 27; // KeyboardEvent.which value for Escape (Esc) key
 =======
+=======
+>>>>>>> danhmuc_list
    * Constants
    */
 
@@ -2224,6 +2693,9 @@
   var DATA_API_KEY$3 = '.data-api';
   var JQUERY_NO_CONFLICT$6 = $__default["default"].fn[NAME$6];
   var ESCAPE_KEYCODE$1 = 27; // KeyboardEvent.which value for Escape (Esc) key
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
   var SPACE_KEYCODE = 32; // KeyboardEvent.which value for space key
@@ -2236,6 +2708,7 @@
 
   var RIGHT_MOUSE_BUTTON_WHICH = 3; // MouseEvent.which value for the right button (assuming a right-handed mouse)
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   var REGEXP_KEYDOWN = new RegExp(ARROW_UP_KEYCODE + "|" + ARROW_DOWN_KEYCODE + "|" + ESCAPE_KEYCODE);
   var EVENT_HIDE$1 = "hide" + EVENT_KEY$4;
@@ -2253,13 +2726,21 @@
   var CLASS_NAME_DISABLED$1 = 'disabled';
   var CLASS_NAME_SHOW$5 = 'show';
 >>>>>>> danhmuc_list
+=======
+  var REGEXP_KEYDOWN = new RegExp(ARROW_UP_KEYCODE + "|" + ARROW_DOWN_KEYCODE + "|" + ESCAPE_KEYCODE$1);
+  var CLASS_NAME_DISABLED$1 = 'disabled';
+  var CLASS_NAME_SHOW$5 = 'show';
+>>>>>>> danhmuc_list
   var CLASS_NAME_DROPUP = 'dropup';
   var CLASS_NAME_DROPRIGHT = 'dropright';
   var CLASS_NAME_DROPLEFT = 'dropleft';
   var CLASS_NAME_MENURIGHT = 'dropdown-menu-right';
   var CLASS_NAME_POSITION_STATIC = 'position-static';
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
   var EVENT_HIDE$3 = "hide" + EVENT_KEY$6;
   var EVENT_HIDDEN$3 = "hidden" + EVENT_KEY$6;
   var EVENT_SHOW$3 = "show" + EVENT_KEY$6;
@@ -2268,6 +2749,9 @@
   var EVENT_CLICK_DATA_API$2 = "click" + EVENT_KEY$6 + DATA_API_KEY$3;
   var EVENT_KEYDOWN_DATA_API = "keydown" + EVENT_KEY$6 + DATA_API_KEY$3;
   var EVENT_KEYUP_DATA_API = "keyup" + EVENT_KEY$6 + DATA_API_KEY$3;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   var SELECTOR_DATA_TOGGLE$2 = '[data-toggle="dropdown"]';
   var SELECTOR_FORM_CHILD = '.dropdown form';
@@ -2281,7 +2765,11 @@
   var PLACEMENT_RIGHT = 'right-start';
   var PLACEMENT_LEFT = 'left-start';
 <<<<<<< HEAD
+<<<<<<< HEAD
   var Default$2 = {
+=======
+  var Default$5 = {
+>>>>>>> danhmuc_list
 =======
   var Default$5 = {
 >>>>>>> danhmuc_list
@@ -2293,7 +2781,11 @@
     popperConfig: null
   };
 <<<<<<< HEAD
+<<<<<<< HEAD
   var DefaultType$2 = {
+=======
+  var DefaultType$5 = {
+>>>>>>> danhmuc_list
 =======
   var DefaultType$5 = {
 >>>>>>> danhmuc_list
@@ -2306,9 +2798,13 @@
   };
   /**
 <<<<<<< HEAD
+<<<<<<< HEAD
    * ------------------------------------------------------------------------
    * Class Definition
    * ------------------------------------------------------------------------
+=======
+   * Class definition
+>>>>>>> danhmuc_list
 =======
    * Class definition
 >>>>>>> danhmuc_list
@@ -2331,17 +2827,23 @@
     // Public
     _proto.toggle = function toggle() {
 <<<<<<< HEAD
+<<<<<<< HEAD
       if (this._element.disabled || $__default['default'](this._element).hasClass(CLASS_NAME_DISABLED)) {
         return;
       }
 
       var isActive = $__default['default'](this._menu).hasClass(CLASS_NAME_SHOW$2);
 =======
+=======
+>>>>>>> danhmuc_list
       if (this._element.disabled || $__default["default"](this._element).hasClass(CLASS_NAME_DISABLED$1)) {
         return;
       }
 
       var isActive = $__default["default"](this._menu).hasClass(CLASS_NAME_SHOW$5);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
       Dropdown._clearMenus();
@@ -2359,7 +2861,11 @@
       }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       if (this._element.disabled || $__default['default'](this._element).hasClass(CLASS_NAME_DISABLED) || $__default['default'](this._menu).hasClass(CLASS_NAME_SHOW$2)) {
+=======
+      if (this._element.disabled || $__default["default"](this._element).hasClass(CLASS_NAME_DISABLED$1) || $__default["default"](this._menu).hasClass(CLASS_NAME_SHOW$5)) {
+>>>>>>> danhmuc_list
 =======
       if (this._element.disabled || $__default["default"](this._element).hasClass(CLASS_NAME_DISABLED$1) || $__default["default"](this._menu).hasClass(CLASS_NAME_SHOW$5)) {
 >>>>>>> danhmuc_list
@@ -2370,17 +2876,23 @@
         relatedTarget: this._element
       };
 <<<<<<< HEAD
+<<<<<<< HEAD
       var showEvent = $__default['default'].Event(EVENT_SHOW$1, relatedTarget);
 
       var parent = Dropdown._getParentFromElement(this._element);
 
       $__default['default'](parent).trigger(showEvent);
 =======
+=======
+>>>>>>> danhmuc_list
       var showEvent = $__default["default"].Event(EVENT_SHOW$3, relatedTarget);
 
       var parent = Dropdown._getParentFromElement(this._element);
 
       $__default["default"](parent).trigger(showEvent);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
       if (showEvent.isDefaultPrevented()) {
@@ -2390,11 +2902,16 @@
 
       if (!this._inNavbar && usePopper) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         /**
          * Check for Popper dependency
          * Popper - https://popper.js.org
          */
         if (typeof Popper__default['default'] === 'undefined') {
+=======
+        // Check for Popper dependency
+        if (typeof Popper__default["default"] === 'undefined') {
+>>>>>>> danhmuc_list
 =======
         // Check for Popper dependency
         if (typeof Popper__default["default"] === 'undefined') {
@@ -2419,15 +2936,21 @@
 
         if (this._config.boundary !== 'scrollParent') {
 <<<<<<< HEAD
+<<<<<<< HEAD
           $__default['default'](parent).addClass(CLASS_NAME_POSITION_STATIC);
         }
 
         this._popper = new Popper__default['default'](referenceElement, this._menu, this._getPopperConfig());
 =======
+=======
+>>>>>>> danhmuc_list
           $__default["default"](parent).addClass(CLASS_NAME_POSITION_STATIC);
         }
 
         this._popper = new Popper__default["default"](referenceElement, this._menu, this._getPopperConfig());
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       } // If this is a touch-enabled device we add extra
       // empty mouseover listeners to the body's immediate children;
@@ -2436,8 +2959,13 @@
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       if ('ontouchstart' in document.documentElement && $__default['default'](parent).closest(SELECTOR_NAVBAR_NAV).length === 0) {
         $__default['default'](document.body).children().on('mouseover', null, $__default['default'].noop);
+=======
+      if ('ontouchstart' in document.documentElement && $__default["default"](parent).closest(SELECTOR_NAVBAR_NAV).length === 0) {
+        $__default["default"](document.body).children().on('mouseover', null, $__default["default"].noop);
+>>>>>>> danhmuc_list
 =======
       if ('ontouchstart' in document.documentElement && $__default["default"](parent).closest(SELECTOR_NAVBAR_NAV).length === 0) {
         $__default["default"](document.body).children().on('mouseover', null, $__default["default"].noop);
@@ -2449,6 +2977,7 @@
       this._element.setAttribute('aria-expanded', true);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'](this._menu).toggleClass(CLASS_NAME_SHOW$2);
       $__default['default'](parent).toggleClass(CLASS_NAME_SHOW$2).trigger($__default['default'].Event(EVENT_SHOWN$1, relatedTarget));
     };
@@ -2456,12 +2985,17 @@
     _proto.hide = function hide() {
       if (this._element.disabled || $__default['default'](this._element).hasClass(CLASS_NAME_DISABLED) || !$__default['default'](this._menu).hasClass(CLASS_NAME_SHOW$2)) {
 =======
+=======
+>>>>>>> danhmuc_list
       $__default["default"](this._menu).toggleClass(CLASS_NAME_SHOW$5);
       $__default["default"](parent).toggleClass(CLASS_NAME_SHOW$5).trigger($__default["default"].Event(EVENT_SHOWN$3, relatedTarget));
     };
 
     _proto.hide = function hide() {
       if (this._element.disabled || $__default["default"](this._element).hasClass(CLASS_NAME_DISABLED$1) || !$__default["default"](this._menu).hasClass(CLASS_NAME_SHOW$5)) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         return;
       }
@@ -2470,17 +3004,23 @@
         relatedTarget: this._element
       };
 <<<<<<< HEAD
+<<<<<<< HEAD
       var hideEvent = $__default['default'].Event(EVENT_HIDE$1, relatedTarget);
 
       var parent = Dropdown._getParentFromElement(this._element);
 
       $__default['default'](parent).trigger(hideEvent);
 =======
+=======
+>>>>>>> danhmuc_list
       var hideEvent = $__default["default"].Event(EVENT_HIDE$3, relatedTarget);
 
       var parent = Dropdown._getParentFromElement(this._element);
 
       $__default["default"](parent).trigger(hideEvent);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
       if (hideEvent.isDefaultPrevented()) {
@@ -2492,6 +3032,7 @@
       }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'](this._menu).toggleClass(CLASS_NAME_SHOW$2);
       $__default['default'](parent).toggleClass(CLASS_NAME_SHOW$2).trigger($__default['default'].Event(EVENT_HIDDEN$1, relatedTarget));
     };
@@ -2500,6 +3041,8 @@
       $__default['default'].removeData(this._element, DATA_KEY$4);
       $__default['default'](this._element).off(EVENT_KEY$4);
 =======
+=======
+>>>>>>> danhmuc_list
       $__default["default"](this._menu).toggleClass(CLASS_NAME_SHOW$5);
       $__default["default"](parent).toggleClass(CLASS_NAME_SHOW$5).trigger($__default["default"].Event(EVENT_HIDDEN$3, relatedTarget));
     };
@@ -2507,6 +3050,9 @@
     _proto.dispose = function dispose() {
       $__default["default"].removeData(this._element, DATA_KEY$6);
       $__default["default"](this._element).off(EVENT_KEY$6);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       this._element = null;
       this._menu = null;
@@ -2531,7 +3077,11 @@
       var _this = this;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'](this._element).on(EVENT_CLICK, function (event) {
+=======
+      $__default["default"](this._element).on(EVENT_CLICK, function (event) {
+>>>>>>> danhmuc_list
 =======
       $__default["default"](this._element).on(EVENT_CLICK, function (event) {
 >>>>>>> danhmuc_list
@@ -2544,8 +3094,13 @@
 
     _proto._getConfig = function _getConfig(config) {
 <<<<<<< HEAD
+<<<<<<< HEAD
       config = _extends({}, this.constructor.Default, $__default['default'](this._element).data(), config);
       Util.typeCheckConfig(NAME$4, config, this.constructor.DefaultType);
+=======
+      config = _extends({}, this.constructor.Default, $__default["default"](this._element).data(), config);
+      Util.typeCheckConfig(NAME$6, config, this.constructor.DefaultType);
+>>>>>>> danhmuc_list
 =======
       config = _extends({}, this.constructor.Default, $__default["default"](this._element).data(), config);
       Util.typeCheckConfig(NAME$6, config, this.constructor.DefaultType);
@@ -2567,24 +3122,34 @@
 
     _proto._getPlacement = function _getPlacement() {
 <<<<<<< HEAD
+<<<<<<< HEAD
       var $parentDropdown = $__default['default'](this._element.parentNode);
       var placement = PLACEMENT_BOTTOM; // Handle dropup
 
       if ($parentDropdown.hasClass(CLASS_NAME_DROPUP)) {
         placement = $__default['default'](this._menu).hasClass(CLASS_NAME_MENURIGHT) ? PLACEMENT_TOPEND : PLACEMENT_TOP;
 =======
+=======
+>>>>>>> danhmuc_list
       var $parentDropdown = $__default["default"](this._element.parentNode);
       var placement = PLACEMENT_BOTTOM; // Handle dropup
 
       if ($parentDropdown.hasClass(CLASS_NAME_DROPUP)) {
         placement = $__default["default"](this._menu).hasClass(CLASS_NAME_MENURIGHT) ? PLACEMENT_TOPEND : PLACEMENT_TOP;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       } else if ($parentDropdown.hasClass(CLASS_NAME_DROPRIGHT)) {
         placement = PLACEMENT_RIGHT;
       } else if ($parentDropdown.hasClass(CLASS_NAME_DROPLEFT)) {
         placement = PLACEMENT_LEFT;
 <<<<<<< HEAD
+<<<<<<< HEAD
       } else if ($__default['default'](this._menu).hasClass(CLASS_NAME_MENURIGHT)) {
+=======
+      } else if ($__default["default"](this._menu).hasClass(CLASS_NAME_MENURIGHT)) {
+>>>>>>> danhmuc_list
 =======
       } else if ($__default["default"](this._menu).hasClass(CLASS_NAME_MENURIGHT)) {
 >>>>>>> danhmuc_list
@@ -2596,7 +3161,11 @@
 
     _proto._detectNavbar = function _detectNavbar() {
 <<<<<<< HEAD
+<<<<<<< HEAD
       return $__default['default'](this._element).closest('.navbar').length > 0;
+=======
+      return $__default["default"](this._element).closest('.navbar').length > 0;
+>>>>>>> danhmuc_list
 =======
       return $__default["default"](this._element).closest('.navbar').length > 0;
 >>>>>>> danhmuc_list
@@ -2610,7 +3179,11 @@
       if (typeof this._config.offset === 'function') {
         offset.fn = function (data) {
 <<<<<<< HEAD
+<<<<<<< HEAD
           data.offsets = _extends({}, data.offsets, _this2._config.offset(data.offsets, _this2._element) || {});
+=======
+          data.offsets = _extends({}, data.offsets, _this2._config.offset(data.offsets, _this2._element));
+>>>>>>> danhmuc_list
 =======
           data.offsets = _extends({}, data.offsets, _this2._config.offset(data.offsets, _this2._element));
 >>>>>>> danhmuc_list
@@ -2650,7 +3223,11 @@
     Dropdown._jQueryInterface = function _jQueryInterface(config) {
       return this.each(function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
         var data = $__default['default'](this).data(DATA_KEY$4);
+=======
+        var data = $__default["default"](this).data(DATA_KEY$6);
+>>>>>>> danhmuc_list
 =======
         var data = $__default["default"](this).data(DATA_KEY$6);
 >>>>>>> danhmuc_list
@@ -2660,7 +3237,11 @@
         if (!data) {
           data = new Dropdown(this, _config);
 <<<<<<< HEAD
+<<<<<<< HEAD
           $__default['default'](this).data(DATA_KEY$4, data);
+=======
+          $__default["default"](this).data(DATA_KEY$6, data);
+>>>>>>> danhmuc_list
 =======
           $__default["default"](this).data(DATA_KEY$6, data);
 >>>>>>> danhmuc_list
@@ -2687,7 +3268,11 @@
         var parent = Dropdown._getParentFromElement(toggles[i]);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         var context = $__default['default'](toggles[i]).data(DATA_KEY$4);
+=======
+        var context = $__default["default"](toggles[i]).data(DATA_KEY$6);
+>>>>>>> danhmuc_list
 =======
         var context = $__default["default"](toggles[i]).data(DATA_KEY$6);
 >>>>>>> danhmuc_list
@@ -2706,6 +3291,7 @@
         var dropdownMenu = context._menu;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (!$__default['default'](parent).hasClass(CLASS_NAME_SHOW$2)) {
           continue;
         }
@@ -2717,6 +3303,8 @@
         var hideEvent = $__default['default'].Event(EVENT_HIDE$1, relatedTarget);
         $__default['default'](parent).trigger(hideEvent);
 =======
+=======
+>>>>>>> danhmuc_list
         if (!$__default["default"](parent).hasClass(CLASS_NAME_SHOW$5)) {
           continue;
         }
@@ -2727,6 +3315,9 @@
 
         var hideEvent = $__default["default"].Event(EVENT_HIDE$3, relatedTarget);
         $__default["default"](parent).trigger(hideEvent);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
         if (hideEvent.isDefaultPrevented()) {
@@ -2737,7 +3328,11 @@
 
         if ('ontouchstart' in document.documentElement) {
 <<<<<<< HEAD
+<<<<<<< HEAD
           $__default['default'](document.body).children().off('mouseover', null, $__default['default'].noop);
+=======
+          $__default["default"](document.body).children().off('mouseover', null, $__default["default"].noop);
+>>>>>>> danhmuc_list
 =======
           $__default["default"](document.body).children().off('mouseover', null, $__default["default"].noop);
 >>>>>>> danhmuc_list
@@ -2750,8 +3345,13 @@
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $__default['default'](dropdownMenu).removeClass(CLASS_NAME_SHOW$2);
         $__default['default'](parent).removeClass(CLASS_NAME_SHOW$2).trigger($__default['default'].Event(EVENT_HIDDEN$1, relatedTarget));
+=======
+        $__default["default"](dropdownMenu).removeClass(CLASS_NAME_SHOW$5);
+        $__default["default"](parent).removeClass(CLASS_NAME_SHOW$5).trigger($__default["default"].Event(EVENT_HIDDEN$3, relatedTarget));
+>>>>>>> danhmuc_list
 =======
         $__default["default"](dropdownMenu).removeClass(CLASS_NAME_SHOW$5);
         $__default["default"](parent).removeClass(CLASS_NAME_SHOW$5).trigger($__default["default"].Event(EVENT_HIDDEN$3, relatedTarget));
@@ -2780,17 +3380,23 @@
       //    - If key is not up or down => not a dropdown command
       //    - If trigger inside the menu => not a dropdown command
 <<<<<<< HEAD
+<<<<<<< HEAD
       if (/input|textarea/i.test(event.target.tagName) ? event.which === SPACE_KEYCODE || event.which !== ESCAPE_KEYCODE && (event.which !== ARROW_DOWN_KEYCODE && event.which !== ARROW_UP_KEYCODE || $__default['default'](event.target).closest(SELECTOR_MENU).length) : !REGEXP_KEYDOWN.test(event.which)) {
         return;
       }
 
       if (this.disabled || $__default['default'](this).hasClass(CLASS_NAME_DISABLED)) {
 =======
+=======
+>>>>>>> danhmuc_list
       if (/input|textarea/i.test(event.target.tagName) ? event.which === SPACE_KEYCODE || event.which !== ESCAPE_KEYCODE$1 && (event.which !== ARROW_DOWN_KEYCODE && event.which !== ARROW_UP_KEYCODE || $__default["default"](event.target).closest(SELECTOR_MENU).length) : !REGEXP_KEYDOWN.test(event.which)) {
         return;
       }
 
       if (this.disabled || $__default["default"](this).hasClass(CLASS_NAME_DISABLED$1)) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         return;
       }
@@ -2798,9 +3404,15 @@
       var parent = Dropdown._getParentFromElement(this);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       var isActive = $__default['default'](parent).hasClass(CLASS_NAME_SHOW$2);
 
       if (!isActive && event.which === ESCAPE_KEYCODE) {
+=======
+      var isActive = $__default["default"](parent).hasClass(CLASS_NAME_SHOW$5);
+
+      if (!isActive && event.which === ESCAPE_KEYCODE$1) {
+>>>>>>> danhmuc_list
 =======
       var isActive = $__default["default"](parent).hasClass(CLASS_NAME_SHOW$5);
 
@@ -2813,6 +3425,7 @@
       event.stopPropagation();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       if (!isActive || event.which === ESCAPE_KEYCODE || event.which === SPACE_KEYCODE) {
         if (event.which === ESCAPE_KEYCODE) {
           $__default['default'](parent.querySelector(SELECTOR_DATA_TOGGLE$2)).trigger('focus');
@@ -2820,19 +3433,28 @@
 
         $__default['default'](this).trigger('click');
 =======
+=======
+>>>>>>> danhmuc_list
       if (!isActive || event.which === ESCAPE_KEYCODE$1 || event.which === SPACE_KEYCODE) {
         if (event.which === ESCAPE_KEYCODE$1) {
           $__default["default"](parent.querySelector(SELECTOR_DATA_TOGGLE$2)).trigger('focus');
         }
 
         $__default["default"](this).trigger('click');
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         return;
       }
 
       var items = [].slice.call(parent.querySelectorAll(SELECTOR_VISIBLE_ITEMS)).filter(function (item) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $__default['default'](item).is(':visible');
+=======
+        return $__default["default"](item).is(':visible');
+>>>>>>> danhmuc_list
 =======
         return $__default["default"](item).is(':visible');
 >>>>>>> danhmuc_list
@@ -2865,7 +3487,11 @@
       key: "VERSION",
       get: function get() {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return VERSION$4;
+=======
+        return VERSION$6;
+>>>>>>> danhmuc_list
 =======
         return VERSION$6;
 >>>>>>> danhmuc_list
@@ -2874,7 +3500,11 @@
       key: "Default",
       get: function get() {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return Default$2;
+=======
+        return Default$5;
+>>>>>>> danhmuc_list
 =======
         return Default$5;
 >>>>>>> danhmuc_list
@@ -2883,7 +3513,11 @@
       key: "DefaultType",
       get: function get() {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return DefaultType$2;
+=======
+        return DefaultType$5;
+>>>>>>> danhmuc_list
 =======
         return DefaultType$5;
 >>>>>>> danhmuc_list
@@ -2893,6 +3527,7 @@
     return Dropdown;
   }();
   /**
+<<<<<<< HEAD
 <<<<<<< HEAD
    * ------------------------------------------------------------------------
    * Data Api implementation
@@ -2920,6 +3555,8 @@
   $__default['default'].fn[NAME$4].noConflict = function () {
     $__default['default'].fn[NAME$4] = JQUERY_NO_CONFLICT$4;
 =======
+=======
+>>>>>>> danhmuc_list
    * Data API implementation
    */
 
@@ -2941,11 +3578,15 @@
 
   $__default["default"].fn[NAME$6].noConflict = function () {
     $__default["default"].fn[NAME$6] = JQUERY_NO_CONFLICT$6;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     return Dropdown._jQueryInterface;
   };
 
   /**
+<<<<<<< HEAD
 <<<<<<< HEAD
    * ------------------------------------------------------------------------
    * Constants
@@ -2973,6 +3614,8 @@
     show: 'boolean'
   };
 =======
+=======
+>>>>>>> danhmuc_list
    * Constants
    */
 
@@ -2991,6 +3634,9 @@
   var CLASS_NAME_FADE$4 = 'fade';
   var CLASS_NAME_SHOW$4 = 'show';
   var CLASS_NAME_STATIC = 'modal-static';
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   var EVENT_HIDE$2 = "hide" + EVENT_KEY$5;
   var EVENT_HIDE_PREVENTED = "hidePrevented" + EVENT_KEY$5;
@@ -2999,6 +3645,7 @@
   var EVENT_SHOWN$2 = "shown" + EVENT_KEY$5;
   var EVENT_FOCUSIN = "focusin" + EVENT_KEY$5;
   var EVENT_RESIZE = "resize" + EVENT_KEY$5;
+<<<<<<< HEAD
 <<<<<<< HEAD
   var EVENT_CLICK_DISMISS = "click.dismiss" + EVENT_KEY$5;
   var EVENT_KEYDOWN_DISMISS = "keydown.dismiss" + EVENT_KEY$5;
@@ -3023,6 +3670,8 @@
    * Class Definition
    * ------------------------------------------------------------------------
 =======
+=======
+>>>>>>> danhmuc_list
   var EVENT_CLICK_DISMISS$1 = "click.dismiss" + EVENT_KEY$5;
   var EVENT_KEYDOWN_DISMISS = "keydown.dismiss" + EVENT_KEY$5;
   var EVENT_MOUSEUP_DISMISS = "mouseup.dismiss" + EVENT_KEY$5;
@@ -3048,6 +3697,9 @@
   };
   /**
    * Class definition
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
    */
 
@@ -3080,6 +3732,7 @@
       }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       if ($__default['default'](this._element).hasClass(CLASS_NAME_FADE$1)) {
         this._isTransitioning = true;
       }
@@ -3091,12 +3744,17 @@
 
       if (this._isShown || showEvent.isDefaultPrevented()) {
 =======
+=======
+>>>>>>> danhmuc_list
       var showEvent = $__default["default"].Event(EVENT_SHOW$2, {
         relatedTarget: relatedTarget
       });
       $__default["default"](this._element).trigger(showEvent);
 
       if (showEvent.isDefaultPrevented()) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         return;
       }
@@ -3104,11 +3762,17 @@
       this._isShown = true;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
       if ($__default["default"](this._element).hasClass(CLASS_NAME_FADE$4)) {
         this._isTransitioning = true;
       }
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       this._checkScrollbar();
 
@@ -3121,6 +3785,7 @@
       this._setResizeEvent();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'](this._element).on(EVENT_CLICK_DISMISS, SELECTOR_DATA_DISMISS, function (event) {
         return _this.hide(event);
       });
@@ -3128,12 +3793,17 @@
         $__default['default'](_this._element).one(EVENT_MOUSEUP_DISMISS, function (event) {
           if ($__default['default'](event.target).is(_this._element)) {
 =======
+=======
+>>>>>>> danhmuc_list
       $__default["default"](this._element).on(EVENT_CLICK_DISMISS$1, SELECTOR_DATA_DISMISS$1, function (event) {
         return _this.hide(event);
       });
       $__default["default"](this._dialog).on(EVENT_MOUSEDOWN_DISMISS, function () {
         $__default["default"](_this._element).one(EVENT_MOUSEUP_DISMISS, function (event) {
           if ($__default["default"](event.target).is(_this._element)) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             _this._ignoreBackdropClick = true;
           }
@@ -3157,8 +3827,13 @@
       }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       var hideEvent = $__default['default'].Event(EVENT_HIDE$2);
       $__default['default'](this._element).trigger(hideEvent);
+=======
+      var hideEvent = $__default["default"].Event(EVENT_HIDE$2);
+      $__default["default"](this._element).trigger(hideEvent);
+>>>>>>> danhmuc_list
 =======
       var hideEvent = $__default["default"].Event(EVENT_HIDE$2);
       $__default["default"](this._element).trigger(hideEvent);
@@ -3170,7 +3845,11 @@
 
       this._isShown = false;
 <<<<<<< HEAD
+<<<<<<< HEAD
       var transition = $__default['default'](this._element).hasClass(CLASS_NAME_FADE$1);
+=======
+      var transition = $__default["default"](this._element).hasClass(CLASS_NAME_FADE$4);
+>>>>>>> danhmuc_list
 =======
       var transition = $__default["default"](this._element).hasClass(CLASS_NAME_FADE$4);
 >>>>>>> danhmuc_list
@@ -3184,6 +3863,7 @@
       this._setResizeEvent();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'](document).off(EVENT_FOCUSIN);
       $__default['default'](this._element).removeClass(CLASS_NAME_SHOW$3);
       $__default['default'](this._element).off(EVENT_CLICK_DISMISS);
@@ -3193,6 +3873,8 @@
         var transitionDuration = Util.getTransitionDurationFromElement(this._element);
         $__default['default'](this._element).one(Util.TRANSITION_END, function (event) {
 =======
+=======
+>>>>>>> danhmuc_list
       $__default["default"](document).off(EVENT_FOCUSIN);
       $__default["default"](this._element).removeClass(CLASS_NAME_SHOW$4);
       $__default["default"](this._element).off(EVENT_CLICK_DISMISS$1);
@@ -3201,6 +3883,9 @@
       if (transition) {
         var transitionDuration = Util.getTransitionDurationFromElement(this._element);
         $__default["default"](this._element).one(Util.TRANSITION_END, function (event) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
           return _this2._hideModal(event);
         }).emulateTransitionEnd(transitionDuration);
@@ -3212,7 +3897,11 @@
     _proto.dispose = function dispose() {
       [window, this._element, this._dialog].forEach(function (htmlElement) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $__default['default'](htmlElement).off(EVENT_KEY$5);
+=======
+        return $__default["default"](htmlElement).off(EVENT_KEY$5);
+>>>>>>> danhmuc_list
 =======
         return $__default["default"](htmlElement).off(EVENT_KEY$5);
 >>>>>>> danhmuc_list
@@ -3224,8 +3913,13 @@
        */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'](document).off(EVENT_FOCUSIN);
       $__default['default'].removeData(this._element, DATA_KEY$5);
+=======
+      $__default["default"](document).off(EVENT_FOCUSIN);
+      $__default["default"].removeData(this._element, DATA_KEY$5);
+>>>>>>> danhmuc_list
 =======
       $__default["default"](document).off(EVENT_FOCUSIN);
       $__default["default"].removeData(this._element, DATA_KEY$5);
@@ -3248,8 +3942,13 @@
 
     _proto._getConfig = function _getConfig(config) {
 <<<<<<< HEAD
+<<<<<<< HEAD
       config = _extends({}, Default$3, config);
       Util.typeCheckConfig(NAME$5, config, DefaultType$3);
+=======
+      config = _extends({}, Default$4, config);
+      Util.typeCheckConfig(NAME$5, config, DefaultType$4);
+>>>>>>> danhmuc_list
 =======
       config = _extends({}, Default$4, config);
       Util.typeCheckConfig(NAME$5, config, DefaultType$4);
@@ -3261,8 +3960,13 @@
       var _this3 = this;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       var hideEventPrevented = $__default['default'].Event(EVENT_HIDE_PREVENTED);
       $__default['default'](this._element).trigger(hideEventPrevented);
+=======
+      var hideEventPrevented = $__default["default"].Event(EVENT_HIDE_PREVENTED);
+      $__default["default"](this._element).trigger(hideEventPrevented);
+>>>>>>> danhmuc_list
 =======
       var hideEventPrevented = $__default["default"].Event(EVENT_HIDE_PREVENTED);
       $__default["default"](this._element).trigger(hideEventPrevented);
@@ -3282,6 +3986,7 @@
 
       var modalTransitionDuration = Util.getTransitionDurationFromElement(this._dialog);
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'](this._element).off(Util.TRANSITION_END);
       $__default['default'](this._element).one(Util.TRANSITION_END, function () {
         _this3._element.classList.remove(CLASS_NAME_STATIC);
@@ -3289,12 +3994,17 @@
         if (!isModalOverflowing) {
           $__default['default'](_this3._element).one(Util.TRANSITION_END, function () {
 =======
+=======
+>>>>>>> danhmuc_list
       $__default["default"](this._element).off(Util.TRANSITION_END);
       $__default["default"](this._element).one(Util.TRANSITION_END, function () {
         _this3._element.classList.remove(CLASS_NAME_STATIC);
 
         if (!isModalOverflowing) {
           $__default["default"](_this3._element).one(Util.TRANSITION_END, function () {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             _this3._element.style.overflowY = '';
           }).emulateTransitionEnd(_this3._element, modalTransitionDuration);
@@ -3308,7 +4018,11 @@
       var _this4 = this;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       var transition = $__default['default'](this._element).hasClass(CLASS_NAME_FADE$1);
+=======
+      var transition = $__default["default"](this._element).hasClass(CLASS_NAME_FADE$4);
+>>>>>>> danhmuc_list
 =======
       var transition = $__default["default"](this._element).hasClass(CLASS_NAME_FADE$4);
 >>>>>>> danhmuc_list
@@ -3328,7 +4042,11 @@
       this._element.setAttribute('role', 'dialog');
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       if ($__default['default'](this._dialog).hasClass(CLASS_NAME_SCROLLABLE) && modalBody) {
+=======
+      if ($__default["default"](this._dialog).hasClass(CLASS_NAME_SCROLLABLE) && modalBody) {
+>>>>>>> danhmuc_list
 =======
       if ($__default["default"](this._dialog).hasClass(CLASS_NAME_SCROLLABLE) && modalBody) {
 >>>>>>> danhmuc_list
@@ -3342,7 +4060,11 @@
       }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'](this._element).addClass(CLASS_NAME_SHOW$3);
+=======
+      $__default["default"](this._element).addClass(CLASS_NAME_SHOW$4);
+>>>>>>> danhmuc_list
 =======
       $__default["default"](this._element).addClass(CLASS_NAME_SHOW$4);
 >>>>>>> danhmuc_list
@@ -3352,7 +4074,11 @@
       }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       var shownEvent = $__default['default'].Event(EVENT_SHOWN$2, {
+=======
+      var shownEvent = $__default["default"].Event(EVENT_SHOWN$2, {
+>>>>>>> danhmuc_list
 =======
       var shownEvent = $__default["default"].Event(EVENT_SHOWN$2, {
 >>>>>>> danhmuc_list
@@ -3366,7 +4092,11 @@
 
         _this4._isTransitioning = false;
 <<<<<<< HEAD
+<<<<<<< HEAD
         $__default['default'](_this4._element).trigger(shownEvent);
+=======
+        $__default["default"](_this4._element).trigger(shownEvent);
+>>>>>>> danhmuc_list
 =======
         $__default["default"](_this4._element).trigger(shownEvent);
 >>>>>>> danhmuc_list
@@ -3375,7 +4105,11 @@
       if (transition) {
         var transitionDuration = Util.getTransitionDurationFromElement(this._dialog);
 <<<<<<< HEAD
+<<<<<<< HEAD
         $__default['default'](this._dialog).one(Util.TRANSITION_END, transitionComplete).emulateTransitionEnd(transitionDuration);
+=======
+        $__default["default"](this._dialog).one(Util.TRANSITION_END, transitionComplete).emulateTransitionEnd(transitionDuration);
+>>>>>>> danhmuc_list
 =======
         $__default["default"](this._dialog).one(Util.TRANSITION_END, transitionComplete).emulateTransitionEnd(transitionDuration);
 >>>>>>> danhmuc_list
@@ -3388,9 +4122,15 @@
       var _this5 = this;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'](document).off(EVENT_FOCUSIN) // Guard against infinite focus loop
       .on(EVENT_FOCUSIN, function (event) {
         if (document !== event.target && _this5._element !== event.target && $__default['default'](_this5._element).has(event.target).length === 0) {
+=======
+      $__default["default"](document).off(EVENT_FOCUSIN) // Guard against infinite focus loop
+      .on(EVENT_FOCUSIN, function (event) {
+        if (document !== event.target && _this5._element !== event.target && $__default["default"](_this5._element).has(event.target).length === 0) {
+>>>>>>> danhmuc_list
 =======
       $__default["default"](document).off(EVENT_FOCUSIN) // Guard against infinite focus loop
       .on(EVENT_FOCUSIN, function (event) {
@@ -3406,6 +4146,7 @@
 
       if (this._isShown) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         $__default['default'](this._element).on(EVENT_KEYDOWN_DISMISS, function (event) {
           if (_this6._config.keyboard && event.which === ESCAPE_KEYCODE$1) {
             event.preventDefault();
@@ -3413,19 +4154,28 @@
             _this6.hide();
           } else if (!_this6._config.keyboard && event.which === ESCAPE_KEYCODE$1) {
 =======
+=======
+>>>>>>> danhmuc_list
         $__default["default"](this._element).on(EVENT_KEYDOWN_DISMISS, function (event) {
           if (_this6._config.keyboard && event.which === ESCAPE_KEYCODE) {
             event.preventDefault();
 
             _this6.hide();
           } else if (!_this6._config.keyboard && event.which === ESCAPE_KEYCODE) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             _this6._triggerBackdropTransition();
           }
         });
       } else if (!this._isShown) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         $__default['default'](this._element).off(EVENT_KEYDOWN_DISMISS);
+=======
+        $__default["default"](this._element).off(EVENT_KEYDOWN_DISMISS);
+>>>>>>> danhmuc_list
 =======
         $__default["default"](this._element).off(EVENT_KEYDOWN_DISMISS);
 >>>>>>> danhmuc_list
@@ -3437,17 +4187,23 @@
 
       if (this._isShown) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         $__default['default'](window).on(EVENT_RESIZE, function (event) {
           return _this7.handleUpdate(event);
         });
       } else {
         $__default['default'](window).off(EVENT_RESIZE);
 =======
+=======
+>>>>>>> danhmuc_list
         $__default["default"](window).on(EVENT_RESIZE, function (event) {
           return _this7.handleUpdate(event);
         });
       } else {
         $__default["default"](window).off(EVENT_RESIZE);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       }
     };
@@ -3467,7 +4223,11 @@
 
       this._showBackdrop(function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
         $__default['default'](document.body).removeClass(CLASS_NAME_OPEN);
+=======
+        $__default["default"](document.body).removeClass(CLASS_NAME_OPEN);
+>>>>>>> danhmuc_list
 =======
         $__default["default"](document.body).removeClass(CLASS_NAME_OPEN);
 >>>>>>> danhmuc_list
@@ -3477,7 +4237,11 @@
         _this8._resetScrollbar();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $__default['default'](_this8._element).trigger(EVENT_HIDDEN$2);
+=======
+        $__default["default"](_this8._element).trigger(EVENT_HIDDEN$2);
+>>>>>>> danhmuc_list
 =======
         $__default["default"](_this8._element).trigger(EVENT_HIDDEN$2);
 >>>>>>> danhmuc_list
@@ -3487,7 +4251,11 @@
     _proto._removeBackdrop = function _removeBackdrop() {
       if (this._backdrop) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         $__default['default'](this._backdrop).remove();
+=======
+        $__default["default"](this._backdrop).remove();
+>>>>>>> danhmuc_list
 =======
         $__default["default"](this._backdrop).remove();
 >>>>>>> danhmuc_list
@@ -3499,7 +4267,11 @@
       var _this9 = this;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       var animate = $__default['default'](this._element).hasClass(CLASS_NAME_FADE$1) ? CLASS_NAME_FADE$1 : '';
+=======
+      var animate = $__default["default"](this._element).hasClass(CLASS_NAME_FADE$4) ? CLASS_NAME_FADE$4 : '';
+>>>>>>> danhmuc_list
 =======
       var animate = $__default["default"](this._element).hasClass(CLASS_NAME_FADE$4) ? CLASS_NAME_FADE$4 : '';
 >>>>>>> danhmuc_list
@@ -3513,8 +4285,13 @@
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $__default['default'](this._backdrop).appendTo(document.body);
         $__default['default'](this._element).on(EVENT_CLICK_DISMISS, function (event) {
+=======
+        $__default["default"](this._backdrop).appendTo(document.body);
+        $__default["default"](this._element).on(EVENT_CLICK_DISMISS$1, function (event) {
+>>>>>>> danhmuc_list
 =======
         $__default["default"](this._backdrop).appendTo(document.body);
         $__default["default"](this._element).on(EVENT_CLICK_DISMISS$1, function (event) {
@@ -3540,7 +4317,11 @@
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $__default['default'](this._backdrop).addClass(CLASS_NAME_SHOW$3);
+=======
+        $__default["default"](this._backdrop).addClass(CLASS_NAME_SHOW$4);
+>>>>>>> danhmuc_list
 =======
         $__default["default"](this._backdrop).addClass(CLASS_NAME_SHOW$4);
 >>>>>>> danhmuc_list
@@ -3556,9 +4337,15 @@
 
         var backdropTransitionDuration = Util.getTransitionDurationFromElement(this._backdrop);
 <<<<<<< HEAD
+<<<<<<< HEAD
         $__default['default'](this._backdrop).one(Util.TRANSITION_END, callback).emulateTransitionEnd(backdropTransitionDuration);
       } else if (!this._isShown && this._backdrop) {
         $__default['default'](this._backdrop).removeClass(CLASS_NAME_SHOW$3);
+=======
+        $__default["default"](this._backdrop).one(Util.TRANSITION_END, callback).emulateTransitionEnd(backdropTransitionDuration);
+      } else if (!this._isShown && this._backdrop) {
+        $__default["default"](this._backdrop).removeClass(CLASS_NAME_SHOW$4);
+>>>>>>> danhmuc_list
 =======
         $__default["default"](this._backdrop).one(Util.TRANSITION_END, callback).emulateTransitionEnd(backdropTransitionDuration);
       } else if (!this._isShown && this._backdrop) {
@@ -3574,15 +4361,21 @@
         };
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($__default['default'](this._element).hasClass(CLASS_NAME_FADE$1)) {
           var _backdropTransitionDuration = Util.getTransitionDurationFromElement(this._backdrop);
 
           $__default['default'](this._backdrop).one(Util.TRANSITION_END, callbackRemove).emulateTransitionEnd(_backdropTransitionDuration);
 =======
+=======
+>>>>>>> danhmuc_list
         if ($__default["default"](this._element).hasClass(CLASS_NAME_FADE$4)) {
           var _backdropTransitionDuration = Util.getTransitionDurationFromElement(this._backdrop);
 
           $__default["default"](this._backdrop).one(Util.TRANSITION_END, callbackRemove).emulateTransitionEnd(_backdropTransitionDuration);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         } else {
           callbackRemove();
@@ -3629,6 +4422,7 @@
         var stickyContent = [].slice.call(document.querySelectorAll(SELECTOR_STICKY_CONTENT)); // Adjust fixed content padding
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $__default['default'](fixedContent).each(function (index, element) {
           var actualPadding = element.style.paddingRight;
           var calculatedPadding = $__default['default'](element).css('padding-right');
@@ -3648,6 +4442,8 @@
 
       $__default['default'](document.body).addClass(CLASS_NAME_OPEN);
 =======
+=======
+>>>>>>> danhmuc_list
         $__default["default"](fixedContent).each(function (index, element) {
           var actualPadding = element.style.paddingRight;
           var calculatedPadding = $__default["default"](element).css('padding-right');
@@ -3666,12 +4462,16 @@
       }
 
       $__default["default"](document.body).addClass(CLASS_NAME_OPEN);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     };
 
     _proto._resetScrollbar = function _resetScrollbar() {
       // Restore fixed content padding
       var fixedContent = [].slice.call(document.querySelectorAll(SELECTOR_FIXED_CONTENT));
+<<<<<<< HEAD
 <<<<<<< HEAD
       $__default['default'](fixedContent).each(function (index, element) {
         var padding = $__default['default'](element).data('padding-right');
@@ -3681,10 +4481,16 @@
         var padding = $__default["default"](element).data('padding-right');
         $__default["default"](element).removeData('padding-right');
 >>>>>>> danhmuc_list
+=======
+      $__default["default"](fixedContent).each(function (index, element) {
+        var padding = $__default["default"](element).data('padding-right');
+        $__default["default"](element).removeData('padding-right');
+>>>>>>> danhmuc_list
         element.style.paddingRight = padding ? padding : '';
       }); // Restore sticky content
 
       var elements = [].slice.call(document.querySelectorAll("" + SELECTOR_STICKY_CONTENT));
+<<<<<<< HEAD
 <<<<<<< HEAD
       $__default['default'](elements).each(function (index, element) {
         var margin = $__default['default'](element).data('margin-right');
@@ -3697,6 +4503,8 @@
       var padding = $__default['default'](document.body).data('padding-right');
       $__default['default'](document.body).removeData('padding-right');
 =======
+=======
+>>>>>>> danhmuc_list
       $__default["default"](elements).each(function (index, element) {
         var margin = $__default["default"](element).data('margin-right');
 
@@ -3707,6 +4515,9 @@
 
       var padding = $__default["default"](document.body).data('padding-right');
       $__default["default"](document.body).removeData('padding-right');
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       document.body.style.paddingRight = padding ? padding : '';
     };
@@ -3725,6 +4536,7 @@
     Modal._jQueryInterface = function _jQueryInterface(config, relatedTarget) {
       return this.each(function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
         var data = $__default['default'](this).data(DATA_KEY$5);
 
         var _config = _extends({}, Default$3, $__default['default'](this).data(), typeof config === 'object' && config ? config : {});
@@ -3733,6 +4545,8 @@
           data = new Modal(this, _config);
           $__default['default'](this).data(DATA_KEY$5, data);
 =======
+=======
+>>>>>>> danhmuc_list
         var data = $__default["default"](this).data(DATA_KEY$5);
 
         var _config = _extends({}, Default$4, $__default["default"](this).data(), typeof config === 'object' && config ? config : {});
@@ -3740,6 +4554,9 @@
         if (!data) {
           data = new Modal(this, _config);
           $__default["default"](this).data(DATA_KEY$5, data);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         }
 
@@ -3764,7 +4581,11 @@
       key: "Default",
       get: function get() {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return Default$3;
+=======
+        return Default$4;
+>>>>>>> danhmuc_list
 =======
         return Default$4;
 >>>>>>> danhmuc_list
@@ -3775,6 +4596,7 @@
   }();
   /**
 <<<<<<< HEAD
+<<<<<<< HEAD
    * ------------------------------------------------------------------------
    * Data Api implementation
    * ------------------------------------------------------------------------
@@ -3783,11 +4605,16 @@
 
   $__default['default'](document).on(EVENT_CLICK_DATA_API$5, SELECTOR_DATA_TOGGLE$3, function (event) {
 =======
+=======
+>>>>>>> danhmuc_list
    * Data API implementation
    */
 
 
   $__default["default"](document).on(EVENT_CLICK_DATA_API$1, SELECTOR_DATA_TOGGLE$1, function (event) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     var _this11 = this;
 
@@ -3799,7 +4626,11 @@
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     var config = $__default['default'](target).data(DATA_KEY$5) ? 'toggle' : _extends({}, $__default['default'](target).data(), $__default['default'](this).data());
+=======
+    var config = $__default["default"](target).data(DATA_KEY$5) ? 'toggle' : _extends({}, $__default["default"](target).data(), $__default["default"](this).data());
+>>>>>>> danhmuc_list
 =======
     var config = $__default["default"](target).data(DATA_KEY$5) ? 'toggle' : _extends({}, $__default["default"](target).data(), $__default["default"](this).data());
 >>>>>>> danhmuc_list
@@ -3809,7 +4640,11 @@
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     var $target = $__default['default'](target).one(EVENT_SHOW$2, function (showEvent) {
+=======
+    var $target = $__default["default"](target).one(EVENT_SHOW$2, function (showEvent) {
+>>>>>>> danhmuc_list
 =======
     var $target = $__default["default"](target).one(EVENT_SHOW$2, function (showEvent) {
 >>>>>>> danhmuc_list
@@ -3820,7 +4655,11 @@
 
       $target.one(EVENT_HIDDEN$2, function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($__default['default'](_this11).is(':visible')) {
+=======
+        if ($__default["default"](_this11).is(':visible')) {
+>>>>>>> danhmuc_list
 =======
         if ($__default["default"](_this11).is(':visible')) {
 >>>>>>> danhmuc_list
@@ -3829,6 +4668,7 @@
       });
     });
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     Modal._jQueryInterface.call($__default['default'](target), config, this);
   });
@@ -3844,6 +4684,8 @@
   $__default['default'].fn[NAME$5].noConflict = function () {
     $__default['default'].fn[NAME$5] = JQUERY_NO_CONFLICT$5;
 =======
+=======
+>>>>>>> danhmuc_list
     Modal._jQueryInterface.call($__default["default"](target), config, this);
   });
   /**
@@ -3855,6 +4697,9 @@
 
   $__default["default"].fn[NAME$5].noConflict = function () {
     $__default["default"].fn[NAME$5] = JQUERY_NO_CONFLICT$5;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     return Modal._jQueryInterface;
   };
@@ -3862,7 +4707,11 @@
   /**
    * --------------------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
    * Bootstrap (v4.6.0): tools/sanitizer.js
+=======
+   * Bootstrap (v4.6.1): tools/sanitizer.js
+>>>>>>> danhmuc_list
 =======
    * Bootstrap (v4.6.1): tools/sanitizer.js
 >>>>>>> danhmuc_list
@@ -3908,6 +4757,7 @@
    * A pattern that recognizes a commonly useful subset of URLs that are safe.
    *
 <<<<<<< HEAD
+<<<<<<< HEAD
    * Shoutout to Angular 7 https://github.com/angular/angular/blob/7.2.4/packages/core/src/sanitization/url_sanitizer.ts
    */
 
@@ -3917,6 +4767,8 @@
    *
    * Shoutout to Angular 7 https://github.com/angular/angular/blob/7.2.4/packages/core/src/sanitization/url_sanitizer.ts
 =======
+=======
+>>>>>>> danhmuc_list
    * Shoutout to Angular https://github.com/angular/angular/blob/12.2.x/packages/core/src/sanitization/url_sanitizer.ts
    */
 
@@ -3925,6 +4777,9 @@
    * A pattern that matches safe data URLs. Only matches image, video and audio types.
    *
    * Shoutout to Angular https://github.com/angular/angular/blob/12.2.x/packages/core/src/sanitization/url_sanitizer.ts
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
    */
 
@@ -3936,7 +4791,11 @@
     if (allowedAttributeList.indexOf(attrName) !== -1) {
       if (uriAttrs.indexOf(attrName) !== -1) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return Boolean(attr.nodeValue.match(SAFE_URL_PATTERN) || attr.nodeValue.match(DATA_URL_PATTERN));
+=======
+        return Boolean(SAFE_URL_PATTERN.test(attr.nodeValue) || DATA_URL_PATTERN.test(attr.nodeValue));
+>>>>>>> danhmuc_list
 =======
         return Boolean(SAFE_URL_PATTERN.test(attr.nodeValue) || DATA_URL_PATTERN.test(attr.nodeValue));
 >>>>>>> danhmuc_list
@@ -3951,7 +4810,11 @@
 
     for (var i = 0, len = regExp.length; i < len; i++) {
 <<<<<<< HEAD
+<<<<<<< HEAD
       if (attrName.match(regExp[i])) {
+=======
+      if (regExp[i].test(attrName)) {
+>>>>>>> danhmuc_list
 =======
       if (regExp[i].test(attrName)) {
 >>>>>>> danhmuc_list
@@ -3986,7 +4849,12 @@
       }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       var attributeList = [].slice.call(el.attributes);
+=======
+      var attributeList = [].slice.call(el.attributes); // eslint-disable-next-line unicorn/prefer-spread
+
+>>>>>>> danhmuc_list
 =======
       var attributeList = [].slice.call(el.attributes); // eslint-disable-next-line unicorn/prefer-spread
 
@@ -4009,6 +4877,7 @@
   }
 
   /**
+<<<<<<< HEAD
 <<<<<<< HEAD
    * ------------------------------------------------------------------------
    * Constants
@@ -4043,6 +4912,8 @@
     popperConfig: '(null|object)'
   };
 =======
+=======
+>>>>>>> danhmuc_list
    * Constants
    */
 
@@ -4064,6 +4935,9 @@
   var TRIGGER_FOCUS = 'focus';
   var TRIGGER_CLICK = 'click';
   var TRIGGER_MANUAL = 'manual';
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   var AttachmentMap = {
     AUTO: 'auto',
@@ -4073,7 +4947,11 @@
     LEFT: 'left'
   };
 <<<<<<< HEAD
+<<<<<<< HEAD
   var Default$4 = {
+=======
+  var Default$3 = {
+>>>>>>> danhmuc_list
 =======
   var Default$3 = {
 >>>>>>> danhmuc_list
@@ -4095,6 +4973,7 @@
     whiteList: DefaultWhitelist,
     popperConfig: null
   };
+<<<<<<< HEAD
 <<<<<<< HEAD
   var HOVER_STATE_SHOW = 'show';
   var HOVER_STATE_OUT = 'out';
@@ -4123,6 +5002,8 @@
    * Class Definition
    * ------------------------------------------------------------------------
 =======
+=======
+>>>>>>> danhmuc_list
   var DefaultType$3 = {
     animation: 'boolean',
     template: 'string',
@@ -4156,15 +5037,24 @@
   };
   /**
    * Class definition
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
    */
 
   var Tooltip = /*#__PURE__*/function () {
     function Tooltip(element, config) {
 <<<<<<< HEAD
+<<<<<<< HEAD
       if (typeof Popper__default['default'] === 'undefined') {
         throw new TypeError('Bootstrap\'s tooltips require Popper (https://popper.js.org)');
       } // private
+=======
+      if (typeof Popper__default["default"] === 'undefined') {
+        throw new TypeError('Bootstrap\'s tooltips require Popper (https://popper.js.org)');
+      } // Private
+>>>>>>> danhmuc_list
 =======
       if (typeof Popper__default["default"] === 'undefined') {
         throw new TypeError('Bootstrap\'s tooltips require Popper (https://popper.js.org)');
@@ -4209,17 +5099,23 @@
       if (event) {
         var dataKey = this.constructor.DATA_KEY;
 <<<<<<< HEAD
+<<<<<<< HEAD
         var context = $__default['default'](event.currentTarget).data(dataKey);
 
         if (!context) {
           context = new this.constructor(event.currentTarget, this._getDelegateConfig());
           $__default['default'](event.currentTarget).data(dataKey, context);
 =======
+=======
+>>>>>>> danhmuc_list
         var context = $__default["default"](event.currentTarget).data(dataKey);
 
         if (!context) {
           context = new this.constructor(event.currentTarget, this._getDelegateConfig());
           $__default["default"](event.currentTarget).data(dataKey, context);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         }
 
@@ -4232,7 +5128,11 @@
         }
       } else {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($__default['default'](this.getTipElement()).hasClass(CLASS_NAME_SHOW$4)) {
+=======
+        if ($__default["default"](this.getTipElement()).hasClass(CLASS_NAME_SHOW$3)) {
+>>>>>>> danhmuc_list
 =======
         if ($__default["default"](this.getTipElement()).hasClass(CLASS_NAME_SHOW$3)) {
 >>>>>>> danhmuc_list
@@ -4248,6 +5148,7 @@
     _proto.dispose = function dispose() {
       clearTimeout(this._timeout);
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'].removeData(this.element, this.constructor.DATA_KEY);
       $__default['default'](this.element).off(this.constructor.EVENT_KEY);
       $__default['default'](this.element).closest('.modal').off('hide.bs.modal', this._hideModalHandler);
@@ -4255,12 +5156,17 @@
       if (this.tip) {
         $__default['default'](this.tip).remove();
 =======
+=======
+>>>>>>> danhmuc_list
       $__default["default"].removeData(this.element, this.constructor.DATA_KEY);
       $__default["default"](this.element).off(this.constructor.EVENT_KEY);
       $__default["default"](this.element).closest('.modal').off('hide.bs.modal', this._hideModalHandler);
 
       if (this.tip) {
         $__default["default"](this.tip).remove();
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       }
 
@@ -4283,6 +5189,7 @@
       var _this = this;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       if ($__default['default'](this.element).css('display') === 'none') {
         throw new Error('Please use show on visible elements');
       }
@@ -4294,6 +5201,8 @@
         var shadowRoot = Util.findShadowRoot(this.element);
         var isInTheDom = $__default['default'].contains(shadowRoot !== null ? shadowRoot : this.element.ownerDocument.documentElement, this.element);
 =======
+=======
+>>>>>>> danhmuc_list
       if ($__default["default"](this.element).css('display') === 'none') {
         throw new Error('Please use show on visible elements');
       }
@@ -4304,6 +5213,9 @@
         $__default["default"](this.element).trigger(showEvent);
         var shadowRoot = Util.findShadowRoot(this.element);
         var isInTheDom = $__default["default"].contains(shadowRoot !== null ? shadowRoot : this.element.ownerDocument.documentElement, this.element);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
         if (showEvent.isDefaultPrevented() || !isInTheDom) {
@@ -4318,7 +5230,11 @@
 
         if (this.config.animation) {
 <<<<<<< HEAD
+<<<<<<< HEAD
           $__default['default'](tip).addClass(CLASS_NAME_FADE$2);
+=======
+          $__default["default"](tip).addClass(CLASS_NAME_FADE$3);
+>>>>>>> danhmuc_list
 =======
           $__default["default"](tip).addClass(CLASS_NAME_FADE$3);
 >>>>>>> danhmuc_list
@@ -4333,6 +5249,7 @@
         var container = this._getContainer();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $__default['default'](tip).data(this.constructor.DATA_KEY, this);
 
         if (!$__default['default'].contains(this.element.ownerDocument.documentElement, this.tip)) {
@@ -4344,6 +5261,8 @@
         $__default['default'](tip).addClass(CLASS_NAME_SHOW$4);
         $__default['default'](tip).addClass(this.config.customClass); // If this is a touch-enabled device we add extra
 =======
+=======
+>>>>>>> danhmuc_list
         $__default["default"](tip).data(this.constructor.DATA_KEY, this);
 
         if (!$__default["default"].contains(this.element.ownerDocument.documentElement, this.tip)) {
@@ -4354,6 +5273,9 @@
         this._popper = new Popper__default["default"](this.element, tip, this._getPopperConfig(attachment));
         $__default["default"](tip).addClass(CLASS_NAME_SHOW$3);
         $__default["default"](tip).addClass(this.config.customClass); // If this is a touch-enabled device we add extra
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         // empty mouseover listeners to the body's immediate children;
         // only needed because of broken event delegation on iOS
@@ -4361,7 +5283,11 @@
 
         if ('ontouchstart' in document.documentElement) {
 <<<<<<< HEAD
+<<<<<<< HEAD
           $__default['default'](document.body).children().on('mouseover', null, $__default['default'].noop);
+=======
+          $__default["default"](document.body).children().on('mouseover', null, $__default["default"].noop);
+>>>>>>> danhmuc_list
 =======
           $__default["default"](document.body).children().on('mouseover', null, $__default["default"].noop);
 >>>>>>> danhmuc_list
@@ -4375,7 +5301,11 @@
           var prevHoverState = _this._hoverState;
           _this._hoverState = null;
 <<<<<<< HEAD
+<<<<<<< HEAD
           $__default['default'](_this.element).trigger(_this.constructor.Event.SHOWN);
+=======
+          $__default["default"](_this.element).trigger(_this.constructor.Event.SHOWN);
+>>>>>>> danhmuc_list
 =======
           $__default["default"](_this.element).trigger(_this.constructor.Event.SHOWN);
 >>>>>>> danhmuc_list
@@ -4386,9 +5316,15 @@
         };
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($__default['default'](this.tip).hasClass(CLASS_NAME_FADE$2)) {
           var transitionDuration = Util.getTransitionDurationFromElement(this.tip);
           $__default['default'](this.tip).one(Util.TRANSITION_END, complete).emulateTransitionEnd(transitionDuration);
+=======
+        if ($__default["default"](this.tip).hasClass(CLASS_NAME_FADE$3)) {
+          var transitionDuration = Util.getTransitionDurationFromElement(this.tip);
+          $__default["default"](this.tip).one(Util.TRANSITION_END, complete).emulateTransitionEnd(transitionDuration);
+>>>>>>> danhmuc_list
 =======
         if ($__default["default"](this.tip).hasClass(CLASS_NAME_FADE$3)) {
           var transitionDuration = Util.getTransitionDurationFromElement(this.tip);
@@ -4405,7 +5341,11 @@
 
       var tip = this.getTipElement();
 <<<<<<< HEAD
+<<<<<<< HEAD
       var hideEvent = $__default['default'].Event(this.constructor.Event.HIDE);
+=======
+      var hideEvent = $__default["default"].Event(this.constructor.Event.HIDE);
+>>>>>>> danhmuc_list
 =======
       var hideEvent = $__default["default"].Event(this.constructor.Event.HIDE);
 >>>>>>> danhmuc_list
@@ -4420,7 +5360,11 @@
         _this2.element.removeAttribute('aria-describedby');
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $__default['default'](_this2.element).trigger(_this2.constructor.Event.HIDDEN);
+=======
+        $__default["default"](_this2.element).trigger(_this2.constructor.Event.HIDDEN);
+>>>>>>> danhmuc_list
 =======
         $__default["default"](_this2.element).trigger(_this2.constructor.Event.HIDDEN);
 >>>>>>> danhmuc_list
@@ -4435,7 +5379,11 @@
       };
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'](this.element).trigger(hideEvent);
+=======
+      $__default["default"](this.element).trigger(hideEvent);
+>>>>>>> danhmuc_list
 =======
       $__default["default"](this.element).trigger(hideEvent);
 >>>>>>> danhmuc_list
@@ -4445,17 +5393,23 @@
       }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'](tip).removeClass(CLASS_NAME_SHOW$4); // If this is a touch-enabled device we remove the extra
       // empty mouseover listeners we added for iOS support
 
       if ('ontouchstart' in document.documentElement) {
         $__default['default'](document.body).children().off('mouseover', null, $__default['default'].noop);
 =======
+=======
+>>>>>>> danhmuc_list
       $__default["default"](tip).removeClass(CLASS_NAME_SHOW$3); // If this is a touch-enabled device we remove the extra
       // empty mouseover listeners we added for iOS support
 
       if ('ontouchstart' in document.documentElement) {
         $__default["default"](document.body).children().off('mouseover', null, $__default["default"].noop);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       }
 
@@ -4464,9 +5418,15 @@
       this._activeTrigger[TRIGGER_HOVER] = false;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       if ($__default['default'](this.tip).hasClass(CLASS_NAME_FADE$2)) {
         var transitionDuration = Util.getTransitionDurationFromElement(tip);
         $__default['default'](tip).one(Util.TRANSITION_END, complete).emulateTransitionEnd(transitionDuration);
+=======
+      if ($__default["default"](this.tip).hasClass(CLASS_NAME_FADE$3)) {
+        var transitionDuration = Util.getTransitionDurationFromElement(tip);
+        $__default["default"](tip).one(Util.TRANSITION_END, complete).emulateTransitionEnd(transitionDuration);
+>>>>>>> danhmuc_list
 =======
       if ($__default["default"](this.tip).hasClass(CLASS_NAME_FADE$3)) {
         var transitionDuration = Util.getTransitionDurationFromElement(tip);
@@ -4492,17 +5452,23 @@
 
     _proto.addAttachmentClass = function addAttachmentClass(attachment) {
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'](this.getTipElement()).addClass(CLASS_PREFIX + "-" + attachment);
     };
 
     _proto.getTipElement = function getTipElement() {
       this.tip = this.tip || $__default['default'](this.config.template)[0];
 =======
+=======
+>>>>>>> danhmuc_list
       $__default["default"](this.getTipElement()).addClass(CLASS_PREFIX$1 + "-" + attachment);
     };
 
     _proto.getTipElement = function getTipElement() {
       this.tip = this.tip || $__default["default"](this.config.template)[0];
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       return this.tip;
     };
@@ -4510,8 +5476,13 @@
     _proto.setContent = function setContent() {
       var tip = this.getTipElement();
 <<<<<<< HEAD
+<<<<<<< HEAD
       this.setElementContent($__default['default'](tip.querySelectorAll(SELECTOR_TOOLTIP_INNER)), this.getTitle());
       $__default['default'](tip).removeClass(CLASS_NAME_FADE$2 + " " + CLASS_NAME_SHOW$4);
+=======
+      this.setElementContent($__default["default"](tip.querySelectorAll(SELECTOR_TOOLTIP_INNER)), this.getTitle());
+      $__default["default"](tip).removeClass(CLASS_NAME_FADE$3 + " " + CLASS_NAME_SHOW$3);
+>>>>>>> danhmuc_list
 =======
       this.setElementContent($__default["default"](tip.querySelectorAll(SELECTOR_TOOLTIP_INNER)), this.getTitle());
       $__default["default"](tip).removeClass(CLASS_NAME_FADE$3 + " " + CLASS_NAME_SHOW$3);
@@ -4523,17 +5494,23 @@
         // Content is a DOM node or a jQuery
         if (this.config.html) {
 <<<<<<< HEAD
+<<<<<<< HEAD
           if (!$__default['default'](content).parent().is($element)) {
             $element.empty().append(content);
           }
         } else {
           $element.text($__default['default'](content).text());
 =======
+=======
+>>>>>>> danhmuc_list
           if (!$__default["default"](content).parent().is($element)) {
             $element.empty().append(content);
           }
         } else {
           $element.text($__default["default"](content).text());
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         }
 
@@ -4599,7 +5576,11 @@
       if (typeof this.config.offset === 'function') {
         offset.fn = function (data) {
 <<<<<<< HEAD
+<<<<<<< HEAD
           data.offsets = _extends({}, data.offsets, _this4.config.offset(data.offsets, _this4.element) || {});
+=======
+          data.offsets = _extends({}, data.offsets, _this4.config.offset(data.offsets, _this4.element));
+>>>>>>> danhmuc_list
 =======
           data.offsets = _extends({}, data.offsets, _this4.config.offset(data.offsets, _this4.element));
 >>>>>>> danhmuc_list
@@ -4619,15 +5600,21 @@
 
       if (Util.isElement(this.config.container)) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $__default['default'](this.config.container);
       }
 
       return $__default['default'](document).find(this.config.container);
 =======
+=======
+>>>>>>> danhmuc_list
         return $__default["default"](this.config.container);
       }
 
       return $__default["default"](document).find(this.config.container);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     };
 
@@ -4642,7 +5629,11 @@
       triggers.forEach(function (trigger) {
         if (trigger === 'click') {
 <<<<<<< HEAD
+<<<<<<< HEAD
           $__default['default'](_this5.element).on(_this5.constructor.Event.CLICK, _this5.config.selector, function (event) {
+=======
+          $__default["default"](_this5.element).on(_this5.constructor.Event.CLICK, _this5.config.selector, function (event) {
+>>>>>>> danhmuc_list
 =======
           $__default["default"](_this5.element).on(_this5.constructor.Event.CLICK, _this5.config.selector, function (event) {
 >>>>>>> danhmuc_list
@@ -4652,7 +5643,11 @@
           var eventIn = trigger === TRIGGER_HOVER ? _this5.constructor.Event.MOUSEENTER : _this5.constructor.Event.FOCUSIN;
           var eventOut = trigger === TRIGGER_HOVER ? _this5.constructor.Event.MOUSELEAVE : _this5.constructor.Event.FOCUSOUT;
 <<<<<<< HEAD
+<<<<<<< HEAD
           $__default['default'](_this5.element).on(eventIn, _this5.config.selector, function (event) {
+=======
+          $__default["default"](_this5.element).on(eventIn, _this5.config.selector, function (event) {
+>>>>>>> danhmuc_list
 =======
           $__default["default"](_this5.element).on(eventIn, _this5.config.selector, function (event) {
 >>>>>>> danhmuc_list
@@ -4670,7 +5665,11 @@
       };
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'](this.element).closest('.modal').on('hide.bs.modal', this._hideModalHandler);
+=======
+      $__default["default"](this.element).closest('.modal').on('hide.bs.modal', this._hideModalHandler);
+>>>>>>> danhmuc_list
 =======
       $__default["default"](this.element).closest('.modal').on('hide.bs.modal', this._hideModalHandler);
 >>>>>>> danhmuc_list
@@ -4697,17 +5696,23 @@
     _proto._enter = function _enter(event, context) {
       var dataKey = this.constructor.DATA_KEY;
 <<<<<<< HEAD
+<<<<<<< HEAD
       context = context || $__default['default'](event.currentTarget).data(dataKey);
 
       if (!context) {
         context = new this.constructor(event.currentTarget, this._getDelegateConfig());
         $__default['default'](event.currentTarget).data(dataKey, context);
 =======
+=======
+>>>>>>> danhmuc_list
       context = context || $__default["default"](event.currentTarget).data(dataKey);
 
       if (!context) {
         context = new this.constructor(event.currentTarget, this._getDelegateConfig());
         $__default["default"](event.currentTarget).data(dataKey, context);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       }
 
@@ -4716,7 +5721,11 @@
       }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       if ($__default['default'](context.getTipElement()).hasClass(CLASS_NAME_SHOW$4) || context._hoverState === HOVER_STATE_SHOW) {
+=======
+      if ($__default["default"](context.getTipElement()).hasClass(CLASS_NAME_SHOW$3) || context._hoverState === HOVER_STATE_SHOW) {
+>>>>>>> danhmuc_list
 =======
       if ($__default["default"](context.getTipElement()).hasClass(CLASS_NAME_SHOW$3) || context._hoverState === HOVER_STATE_SHOW) {
 >>>>>>> danhmuc_list
@@ -4742,17 +5751,23 @@
     _proto._leave = function _leave(event, context) {
       var dataKey = this.constructor.DATA_KEY;
 <<<<<<< HEAD
+<<<<<<< HEAD
       context = context || $__default['default'](event.currentTarget).data(dataKey);
 
       if (!context) {
         context = new this.constructor(event.currentTarget, this._getDelegateConfig());
         $__default['default'](event.currentTarget).data(dataKey, context);
 =======
+=======
+>>>>>>> danhmuc_list
       context = context || $__default["default"](event.currentTarget).data(dataKey);
 
       if (!context) {
         context = new this.constructor(event.currentTarget, this._getDelegateConfig());
         $__default["default"](event.currentTarget).data(dataKey, context);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       }
 
@@ -4791,7 +5806,11 @@
 
     _proto._getConfig = function _getConfig(config) {
 <<<<<<< HEAD
+<<<<<<< HEAD
       var dataAttributes = $__default['default'](this.element).data();
+=======
+      var dataAttributes = $__default["default"](this.element).data();
+>>>>>>> danhmuc_list
 =======
       var dataAttributes = $__default["default"](this.element).data();
 >>>>>>> danhmuc_list
@@ -4818,7 +5837,11 @@
       }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       Util.typeCheckConfig(NAME$6, config, this.constructor.DefaultType);
+=======
+      Util.typeCheckConfig(NAME$4, config, this.constructor.DefaultType);
+>>>>>>> danhmuc_list
 =======
       Util.typeCheckConfig(NAME$4, config, this.constructor.DefaultType);
 >>>>>>> danhmuc_list
@@ -4846,8 +5869,13 @@
 
     _proto._cleanTipClass = function _cleanTipClass() {
 <<<<<<< HEAD
+<<<<<<< HEAD
       var $tip = $__default['default'](this.getTipElement());
       var tabClass = $tip.attr('class').match(BSCLS_PREFIX_REGEX);
+=======
+      var $tip = $__default["default"](this.getTipElement());
+      var tabClass = $tip.attr('class').match(BSCLS_PREFIX_REGEX$1);
+>>>>>>> danhmuc_list
 =======
       var $tip = $__default["default"](this.getTipElement());
       var tabClass = $tip.attr('class').match(BSCLS_PREFIX_REGEX$1);
@@ -4875,7 +5903,11 @@
       }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'](tip).removeClass(CLASS_NAME_FADE$2);
+=======
+      $__default["default"](tip).removeClass(CLASS_NAME_FADE$3);
+>>>>>>> danhmuc_list
 =======
       $__default["default"](tip).removeClass(CLASS_NAME_FADE$3);
 >>>>>>> danhmuc_list
@@ -4889,8 +5921,13 @@
     Tooltip._jQueryInterface = function _jQueryInterface(config) {
       return this.each(function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
         var $element = $__default['default'](this);
         var data = $element.data(DATA_KEY$6);
+=======
+        var $element = $__default["default"](this);
+        var data = $element.data(DATA_KEY$4);
+>>>>>>> danhmuc_list
 =======
         var $element = $__default["default"](this);
         var data = $element.data(DATA_KEY$4);
@@ -4905,7 +5942,11 @@
         if (!data) {
           data = new Tooltip(this, _config);
 <<<<<<< HEAD
+<<<<<<< HEAD
           $element.data(DATA_KEY$6, data);
+=======
+          $element.data(DATA_KEY$4, data);
+>>>>>>> danhmuc_list
 =======
           $element.data(DATA_KEY$4, data);
 >>>>>>> danhmuc_list
@@ -4925,7 +5966,11 @@
       key: "VERSION",
       get: function get() {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return VERSION$6;
+=======
+        return VERSION$4;
+>>>>>>> danhmuc_list
 =======
         return VERSION$4;
 >>>>>>> danhmuc_list
@@ -4934,7 +5979,11 @@
       key: "Default",
       get: function get() {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return Default$4;
+=======
+        return Default$3;
+>>>>>>> danhmuc_list
 =======
         return Default$3;
 >>>>>>> danhmuc_list
@@ -4943,7 +5992,11 @@
       key: "NAME",
       get: function get() {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return NAME$6;
+=======
+        return NAME$4;
+>>>>>>> danhmuc_list
 =======
         return NAME$4;
 >>>>>>> danhmuc_list
@@ -4952,7 +6005,11 @@
       key: "DATA_KEY",
       get: function get() {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return DATA_KEY$6;
+=======
+        return DATA_KEY$4;
+>>>>>>> danhmuc_list
 =======
         return DATA_KEY$4;
 >>>>>>> danhmuc_list
@@ -4961,7 +6018,11 @@
       key: "Event",
       get: function get() {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return Event;
+=======
+        return Event$1;
+>>>>>>> danhmuc_list
 =======
         return Event$1;
 >>>>>>> danhmuc_list
@@ -4970,7 +6031,11 @@
       key: "EVENT_KEY",
       get: function get() {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return EVENT_KEY$6;
+=======
+        return EVENT_KEY$4;
+>>>>>>> danhmuc_list
 =======
         return EVENT_KEY$4;
 >>>>>>> danhmuc_list
@@ -4979,7 +6044,11 @@
       key: "DefaultType",
       get: function get() {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return DefaultType$4;
+=======
+        return DefaultType$3;
+>>>>>>> danhmuc_list
 =======
         return DefaultType$3;
 >>>>>>> danhmuc_list
@@ -4989,6 +6058,7 @@
     return Tooltip;
   }();
   /**
+<<<<<<< HEAD
 <<<<<<< HEAD
    * ------------------------------------------------------------------------
    * jQuery
@@ -5002,6 +6072,8 @@
   $__default['default'].fn[NAME$6].noConflict = function () {
     $__default['default'].fn[NAME$6] = JQUERY_NO_CONFLICT$6;
 =======
+=======
+>>>>>>> danhmuc_list
    * jQuery
    */
 
@@ -5011,11 +6083,15 @@
 
   $__default["default"].fn[NAME$4].noConflict = function () {
     $__default["default"].fn[NAME$4] = JQUERY_NO_CONFLICT$4;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     return Tooltip._jQueryInterface;
   };
 
   /**
+<<<<<<< HEAD
 <<<<<<< HEAD
    * ------------------------------------------------------------------------
    * Constants
@@ -5032,6 +6108,8 @@
 
   var Default$5 = _extends({}, Tooltip.Default, {
 =======
+=======
+>>>>>>> danhmuc_list
    * Constants
    */
 
@@ -5048,6 +6126,9 @@
   var SELECTOR_CONTENT = '.popover-body';
 
   var Default$2 = _extends({}, Tooltip.Default, {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     placement: 'right',
     trigger: 'click',
@@ -5055,6 +6136,7 @@
     template: '<div class="popover" role="tooltip">' + '<div class="arrow"></div>' + '<h3 class="popover-header"></h3>' + '<div class="popover-body"></div></div>'
   });
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   var DefaultType$5 = _extends({}, Tooltip.DefaultType, {
     content: '(string|element|function)'
@@ -5081,6 +6163,8 @@
    * Class Definition
    * ------------------------------------------------------------------------
 =======
+=======
+>>>>>>> danhmuc_list
   var DefaultType$2 = _extends({}, Tooltip.DefaultType, {
     content: '(string|element|function)'
   });
@@ -5099,6 +6183,9 @@
   };
   /**
    * Class definition
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
    */
 
@@ -5118,24 +6205,34 @@
 
     _proto.addAttachmentClass = function addAttachmentClass(attachment) {
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'](this.getTipElement()).addClass(CLASS_PREFIX$1 + "-" + attachment);
     };
 
     _proto.getTipElement = function getTipElement() {
       this.tip = this.tip || $__default['default'](this.config.template)[0];
 =======
+=======
+>>>>>>> danhmuc_list
       $__default["default"](this.getTipElement()).addClass(CLASS_PREFIX + "-" + attachment);
     };
 
     _proto.getTipElement = function getTipElement() {
       this.tip = this.tip || $__default["default"](this.config.template)[0];
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       return this.tip;
     };
 
     _proto.setContent = function setContent() {
 <<<<<<< HEAD
+<<<<<<< HEAD
       var $tip = $__default['default'](this.getTipElement()); // We use append for html objects to maintain js events
+=======
+      var $tip = $__default["default"](this.getTipElement()); // We use append for html objects to maintain js events
+>>>>>>> danhmuc_list
 =======
       var $tip = $__default["default"](this.getTipElement()); // We use append for html objects to maintain js events
 >>>>>>> danhmuc_list
@@ -5150,7 +6247,11 @@
 
       this.setElementContent($tip.find(SELECTOR_CONTENT), content);
 <<<<<<< HEAD
+<<<<<<< HEAD
       $tip.removeClass(CLASS_NAME_FADE$3 + " " + CLASS_NAME_SHOW$5);
+=======
+      $tip.removeClass(CLASS_NAME_FADE$2 + " " + CLASS_NAME_SHOW$2);
+>>>>>>> danhmuc_list
 =======
       $tip.removeClass(CLASS_NAME_FADE$2 + " " + CLASS_NAME_SHOW$2);
 >>>>>>> danhmuc_list
@@ -5163,8 +6264,13 @@
 
     _proto._cleanTipClass = function _cleanTipClass() {
 <<<<<<< HEAD
+<<<<<<< HEAD
       var $tip = $__default['default'](this.getTipElement());
       var tabClass = $tip.attr('class').match(BSCLS_PREFIX_REGEX$1);
+=======
+      var $tip = $__default["default"](this.getTipElement());
+      var tabClass = $tip.attr('class').match(BSCLS_PREFIX_REGEX);
+>>>>>>> danhmuc_list
 =======
       var $tip = $__default["default"](this.getTipElement());
       var tabClass = $tip.attr('class').match(BSCLS_PREFIX_REGEX);
@@ -5179,7 +6285,11 @@
     Popover._jQueryInterface = function _jQueryInterface(config) {
       return this.each(function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
         var data = $__default['default'](this).data(DATA_KEY$7);
+=======
+        var data = $__default["default"](this).data(DATA_KEY$3);
+>>>>>>> danhmuc_list
 =======
         var data = $__default["default"](this).data(DATA_KEY$3);
 >>>>>>> danhmuc_list
@@ -5193,7 +6303,11 @@
         if (!data) {
           data = new Popover(this, _config);
 <<<<<<< HEAD
+<<<<<<< HEAD
           $__default['default'](this).data(DATA_KEY$7, data);
+=======
+          $__default["default"](this).data(DATA_KEY$3, data);
+>>>>>>> danhmuc_list
 =======
           $__default["default"](this).data(DATA_KEY$3, data);
 >>>>>>> danhmuc_list
@@ -5212,9 +6326,15 @@
     _createClass(Popover, null, [{
       key: "VERSION",
 <<<<<<< HEAD
+<<<<<<< HEAD
       // Getters
       get: function get() {
         return VERSION$7;
+=======
+      get: // Getters
+      function get() {
+        return VERSION$3;
+>>>>>>> danhmuc_list
 =======
       get: // Getters
       function get() {
@@ -5225,7 +6345,11 @@
       key: "Default",
       get: function get() {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return Default$5;
+=======
+        return Default$2;
+>>>>>>> danhmuc_list
 =======
         return Default$2;
 >>>>>>> danhmuc_list
@@ -5234,7 +6358,11 @@
       key: "NAME",
       get: function get() {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return NAME$7;
+=======
+        return NAME$3;
+>>>>>>> danhmuc_list
 =======
         return NAME$3;
 >>>>>>> danhmuc_list
@@ -5243,7 +6371,11 @@
       key: "DATA_KEY",
       get: function get() {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return DATA_KEY$7;
+=======
+        return DATA_KEY$3;
+>>>>>>> danhmuc_list
 =======
         return DATA_KEY$3;
 >>>>>>> danhmuc_list
@@ -5252,7 +6384,11 @@
       key: "Event",
       get: function get() {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return Event$1;
+=======
+        return Event;
+>>>>>>> danhmuc_list
 =======
         return Event;
 >>>>>>> danhmuc_list
@@ -5261,7 +6397,11 @@
       key: "EVENT_KEY",
       get: function get() {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return EVENT_KEY$7;
+=======
+        return EVENT_KEY$3;
+>>>>>>> danhmuc_list
 =======
         return EVENT_KEY$3;
 >>>>>>> danhmuc_list
@@ -5270,7 +6410,11 @@
       key: "DefaultType",
       get: function get() {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return DefaultType$5;
+=======
+        return DefaultType$2;
+>>>>>>> danhmuc_list
 =======
         return DefaultType$2;
 >>>>>>> danhmuc_list
@@ -5280,6 +6424,7 @@
     return Popover;
   }(Tooltip);
   /**
+<<<<<<< HEAD
 <<<<<<< HEAD
    * ------------------------------------------------------------------------
    * jQuery
@@ -5293,6 +6438,8 @@
   $__default['default'].fn[NAME$7].noConflict = function () {
     $__default['default'].fn[NAME$7] = JQUERY_NO_CONFLICT$7;
 =======
+=======
+>>>>>>> danhmuc_list
    * jQuery
    */
 
@@ -5302,11 +6449,15 @@
 
   $__default["default"].fn[NAME$3].noConflict = function () {
     $__default["default"].fn[NAME$3] = JQUERY_NO_CONFLICT$3;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     return Popover._jQueryInterface;
   };
 
   /**
+<<<<<<< HEAD
 <<<<<<< HEAD
    * ------------------------------------------------------------------------
    * Constants
@@ -5321,6 +6472,8 @@
   var JQUERY_NO_CONFLICT$8 = $__default['default'].fn[NAME$8];
   var Default$6 = {
 =======
+=======
+>>>>>>> danhmuc_list
    * Constants
    */
 
@@ -5346,13 +6499,20 @@
   var SELECTOR_DROPDOWN_ITEMS = '.dropdown-item';
   var SELECTOR_DROPDOWN_TOGGLE$1 = '.dropdown-toggle';
   var Default$1 = {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     offset: 10,
     method: 'auto',
     target: ''
   };
 <<<<<<< HEAD
+<<<<<<< HEAD
   var DefaultType$6 = {
+=======
+  var DefaultType$1 = {
+>>>>>>> danhmuc_list
 =======
   var DefaultType$1 = {
 >>>>>>> danhmuc_list
@@ -5360,6 +6520,7 @@
     method: 'string',
     target: '(string|element)'
   };
+<<<<<<< HEAD
 <<<<<<< HEAD
   var EVENT_ACTIVATE = "activate" + EVENT_KEY$8;
   var EVENT_SCROLL = "scroll" + EVENT_KEY$8;
@@ -5384,6 +6545,10 @@
   /**
    * Class definition
 >>>>>>> danhmuc_list
+=======
+  /**
+   * Class definition
+>>>>>>> danhmuc_list
    */
 
   var ScrollSpy = /*#__PURE__*/function () {
@@ -5399,7 +6564,11 @@
       this._activeTarget = null;
       this._scrollHeight = 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'](this._scrollElement).on(EVENT_SCROLL, function (event) {
+=======
+      $__default["default"](this._scrollElement).on(EVENT_SCROLL, function (event) {
+>>>>>>> danhmuc_list
 =======
       $__default["default"](this._scrollElement).on(EVENT_SCROLL, function (event) {
 >>>>>>> danhmuc_list
@@ -5438,7 +6607,11 @@
           if (targetBCR.width || targetBCR.height) {
             // TODO (fat): remove sketch reliance on jQuery position/offset
 <<<<<<< HEAD
+<<<<<<< HEAD
             return [$__default['default'](target)[offsetMethod]().top + offsetBase, targetSelector];
+=======
+            return [$__default["default"](target)[offsetMethod]().top + offsetBase, targetSelector];
+>>>>>>> danhmuc_list
 =======
             return [$__default["default"](target)[offsetMethod]().top + offsetBase, targetSelector];
 >>>>>>> danhmuc_list
@@ -5459,8 +6632,13 @@
 
     _proto.dispose = function dispose() {
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'].removeData(this._element, DATA_KEY$8);
       $__default['default'](this._scrollElement).off(EVENT_KEY$8);
+=======
+      $__default["default"].removeData(this._element, DATA_KEY$2);
+      $__default["default"](this._scrollElement).off(EVENT_KEY$2);
+>>>>>>> danhmuc_list
 =======
       $__default["default"].removeData(this._element, DATA_KEY$2);
       $__default["default"](this._scrollElement).off(EVENT_KEY$2);
@@ -5478,6 +6656,7 @@
 
     _proto._getConfig = function _getConfig(config) {
 <<<<<<< HEAD
+<<<<<<< HEAD
       config = _extends({}, Default$6, typeof config === 'object' && config ? config : {});
 
       if (typeof config.target !== 'string' && Util.isElement(config.target)) {
@@ -5487,6 +6666,8 @@
           id = Util.getUID(NAME$8);
           $__default['default'](config.target).attr('id', id);
 =======
+=======
+>>>>>>> danhmuc_list
       config = _extends({}, Default$1, typeof config === 'object' && config ? config : {});
 
       if (typeof config.target !== 'string' && Util.isElement(config.target)) {
@@ -5495,6 +6676,9 @@
         if (!id) {
           id = Util.getUID(NAME$2);
           $__default["default"](config.target).attr('id', id);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         }
 
@@ -5502,7 +6686,11 @@
       }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       Util.typeCheckConfig(NAME$8, config, DefaultType$6);
+=======
+      Util.typeCheckConfig(NAME$2, config, DefaultType$1);
+>>>>>>> danhmuc_list
 =======
       Util.typeCheckConfig(NAME$2, config, DefaultType$1);
 >>>>>>> danhmuc_list
@@ -5569,6 +6757,7 @@
       });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       var $link = $__default['default']([].slice.call(document.querySelectorAll(queries.join(','))));
 
       if ($link.hasClass(CLASS_NAME_DROPDOWN_ITEM)) {
@@ -5586,6 +6775,8 @@
 
       $__default['default'](this._scrollElement).trigger(EVENT_ACTIVATE, {
 =======
+=======
+>>>>>>> danhmuc_list
       var $link = $__default["default"]([].slice.call(document.querySelectorAll(queries.join(','))));
 
       if ($link.hasClass(CLASS_NAME_DROPDOWN_ITEM)) {
@@ -5602,6 +6793,9 @@
       }
 
       $__default["default"](this._scrollElement).trigger(EVENT_ACTIVATE, {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         relatedTarget: target
       });
@@ -5610,9 +6804,15 @@
     _proto._clear = function _clear() {
       [].slice.call(document.querySelectorAll(this._selector)).filter(function (node) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return node.classList.contains(CLASS_NAME_ACTIVE$2);
       }).forEach(function (node) {
         return node.classList.remove(CLASS_NAME_ACTIVE$2);
+=======
+        return node.classList.contains(CLASS_NAME_ACTIVE$1);
+      }).forEach(function (node) {
+        return node.classList.remove(CLASS_NAME_ACTIVE$1);
+>>>>>>> danhmuc_list
 =======
         return node.classList.contains(CLASS_NAME_ACTIVE$1);
       }).forEach(function (node) {
@@ -5625,7 +6825,11 @@
     ScrollSpy._jQueryInterface = function _jQueryInterface(config) {
       return this.each(function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
         var data = $__default['default'](this).data(DATA_KEY$8);
+=======
+        var data = $__default["default"](this).data(DATA_KEY$2);
+>>>>>>> danhmuc_list
 =======
         var data = $__default["default"](this).data(DATA_KEY$2);
 >>>>>>> danhmuc_list
@@ -5635,7 +6839,11 @@
         if (!data) {
           data = new ScrollSpy(this, _config);
 <<<<<<< HEAD
+<<<<<<< HEAD
           $__default['default'](this).data(DATA_KEY$8, data);
+=======
+          $__default["default"](this).data(DATA_KEY$2, data);
+>>>>>>> danhmuc_list
 =======
           $__default["default"](this).data(DATA_KEY$2, data);
 >>>>>>> danhmuc_list
@@ -5655,7 +6863,11 @@
       key: "VERSION",
       get: function get() {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return VERSION$8;
+=======
+        return VERSION$2;
+>>>>>>> danhmuc_list
 =======
         return VERSION$2;
 >>>>>>> danhmuc_list
@@ -5664,7 +6876,11 @@
       key: "Default",
       get: function get() {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return Default$6;
+=======
+        return Default$1;
+>>>>>>> danhmuc_list
 =======
         return Default$1;
 >>>>>>> danhmuc_list
@@ -5675,6 +6891,7 @@
   }();
   /**
 <<<<<<< HEAD
+<<<<<<< HEAD
    * ------------------------------------------------------------------------
    * Data Api implementation
    * ------------------------------------------------------------------------
@@ -5683,18 +6900,27 @@
 
   $__default['default'](window).on(EVENT_LOAD_DATA_API$2, function () {
 =======
+=======
+>>>>>>> danhmuc_list
    * Data API implementation
    */
 
 
   $__default["default"](window).on(EVENT_LOAD_DATA_API, function () {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     var scrollSpys = [].slice.call(document.querySelectorAll(SELECTOR_DATA_SPY));
     var scrollSpysLength = scrollSpys.length;
 
     for (var i = scrollSpysLength; i--;) {
 <<<<<<< HEAD
+<<<<<<< HEAD
       var $spy = $__default['default'](scrollSpys[i]);
+=======
+      var $spy = $__default["default"](scrollSpys[i]);
+>>>>>>> danhmuc_list
 =======
       var $spy = $__default["default"](scrollSpys[i]);
 >>>>>>> danhmuc_list
@@ -5703,6 +6929,7 @@
     }
   });
   /**
+<<<<<<< HEAD
 <<<<<<< HEAD
    * ------------------------------------------------------------------------
    * jQuery
@@ -5715,6 +6942,8 @@
   $__default['default'].fn[NAME$8].noConflict = function () {
     $__default['default'].fn[NAME$8] = JQUERY_NO_CONFLICT$8;
 =======
+=======
+>>>>>>> danhmuc_list
    * jQuery
    */
 
@@ -5723,11 +6952,15 @@
 
   $__default["default"].fn[NAME$2].noConflict = function () {
     $__default["default"].fn[NAME$2] = JQUERY_NO_CONFLICT$2;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     return ScrollSpy._jQueryInterface;
   };
 
   /**
+<<<<<<< HEAD
 <<<<<<< HEAD
    * ------------------------------------------------------------------------
    * Constants
@@ -5762,6 +6995,8 @@
    * Class Definition
    * ------------------------------------------------------------------------
 =======
+=======
+>>>>>>> danhmuc_list
    * Constants
    */
 
@@ -5790,6 +7025,9 @@
   var SELECTOR_DROPDOWN_ACTIVE_CHILD = '> .dropdown-menu .active';
   /**
    * Class definition
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
    */
 
@@ -5806,7 +7044,11 @@
       var _this = this;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       if (this._element.parentNode && this._element.parentNode.nodeType === Node.ELEMENT_NODE && $__default['default'](this._element).hasClass(CLASS_NAME_ACTIVE$3) || $__default['default'](this._element).hasClass(CLASS_NAME_DISABLED$1)) {
+=======
+      if (this._element.parentNode && this._element.parentNode.nodeType === Node.ELEMENT_NODE && $__default["default"](this._element).hasClass(CLASS_NAME_ACTIVE) || $__default["default"](this._element).hasClass(CLASS_NAME_DISABLED)) {
+>>>>>>> danhmuc_list
 =======
       if (this._element.parentNode && this._element.parentNode.nodeType === Node.ELEMENT_NODE && $__default["default"](this._element).hasClass(CLASS_NAME_ACTIVE) || $__default["default"](this._element).hasClass(CLASS_NAME_DISABLED)) {
 >>>>>>> danhmuc_list
@@ -5815,6 +7057,7 @@
 
       var target;
       var previous;
+<<<<<<< HEAD
 <<<<<<< HEAD
       var listElement = $__default['default'](this._element).closest(SELECTOR_NAV_LIST_GROUP$1)[0];
       var selector = Util.getSelectorFromElement(this._element);
@@ -5830,6 +7073,8 @@
       });
       var showEvent = $__default['default'].Event(EVENT_SHOW$3, {
 =======
+=======
+>>>>>>> danhmuc_list
       var listElement = $__default["default"](this._element).closest(SELECTOR_NAV_LIST_GROUP)[0];
       var selector = Util.getSelectorFromElement(this._element);
 
@@ -5843,21 +7088,30 @@
         relatedTarget: this._element
       });
       var showEvent = $__default["default"].Event(EVENT_SHOW$1, {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         relatedTarget: previous
       });
 
       if (previous) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         $__default['default'](previous).trigger(hideEvent);
       }
 
       $__default['default'](this._element).trigger(showEvent);
 =======
+=======
+>>>>>>> danhmuc_list
         $__default["default"](previous).trigger(hideEvent);
       }
 
       $__default["default"](this._element).trigger(showEvent);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
       if (showEvent.isDefaultPrevented() || hideEvent.isDefaultPrevented()) {
@@ -5872,6 +7126,7 @@
 
       var complete = function complete() {
 <<<<<<< HEAD
+<<<<<<< HEAD
         var hiddenEvent = $__default['default'].Event(EVENT_HIDDEN$3, {
           relatedTarget: _this._element
         });
@@ -5881,6 +7136,8 @@
         $__default['default'](previous).trigger(hiddenEvent);
         $__default['default'](_this._element).trigger(shownEvent);
 =======
+=======
+>>>>>>> danhmuc_list
         var hiddenEvent = $__default["default"].Event(EVENT_HIDDEN$1, {
           relatedTarget: _this._element
         });
@@ -5889,6 +7146,9 @@
         });
         $__default["default"](previous).trigger(hiddenEvent);
         $__default["default"](_this._element).trigger(shownEvent);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       };
 
@@ -5901,7 +7161,11 @@
 
     _proto.dispose = function dispose() {
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'].removeData(this._element, DATA_KEY$9);
+=======
+      $__default["default"].removeData(this._element, DATA_KEY$1);
+>>>>>>> danhmuc_list
 =======
       $__default["default"].removeData(this._element, DATA_KEY$1);
 >>>>>>> danhmuc_list
@@ -5913,9 +7177,15 @@
       var _this2 = this;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       var activeElements = container && (container.nodeName === 'UL' || container.nodeName === 'OL') ? $__default['default'](container).find(SELECTOR_ACTIVE_UL) : $__default['default'](container).children(SELECTOR_ACTIVE$2);
       var active = activeElements[0];
       var isTransitioning = callback && active && $__default['default'](active).hasClass(CLASS_NAME_FADE$4);
+=======
+      var activeElements = container && (container.nodeName === 'UL' || container.nodeName === 'OL') ? $__default["default"](container).find(SELECTOR_ACTIVE_UL) : $__default["default"](container).children(SELECTOR_ACTIVE);
+      var active = activeElements[0];
+      var isTransitioning = callback && active && $__default["default"](active).hasClass(CLASS_NAME_FADE$1);
+>>>>>>> danhmuc_list
 =======
       var activeElements = container && (container.nodeName === 'UL' || container.nodeName === 'OL') ? $__default["default"](container).find(SELECTOR_ACTIVE_UL) : $__default["default"](container).children(SELECTOR_ACTIVE);
       var active = activeElements[0];
@@ -5929,7 +7199,11 @@
       if (active && isTransitioning) {
         var transitionDuration = Util.getTransitionDurationFromElement(active);
 <<<<<<< HEAD
+<<<<<<< HEAD
         $__default['default'](active).removeClass(CLASS_NAME_SHOW$6).one(Util.TRANSITION_END, complete).emulateTransitionEnd(transitionDuration);
+=======
+        $__default["default"](active).removeClass(CLASS_NAME_SHOW$1).one(Util.TRANSITION_END, complete).emulateTransitionEnd(transitionDuration);
+>>>>>>> danhmuc_list
 =======
         $__default["default"](active).removeClass(CLASS_NAME_SHOW$1).one(Util.TRANSITION_END, complete).emulateTransitionEnd(transitionDuration);
 >>>>>>> danhmuc_list
@@ -5941,17 +7215,23 @@
     _proto._transitionComplete = function _transitionComplete(element, active, callback) {
       if (active) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         $__default['default'](active).removeClass(CLASS_NAME_ACTIVE$3);
         var dropdownChild = $__default['default'](active.parentNode).find(SELECTOR_DROPDOWN_ACTIVE_CHILD)[0];
 
         if (dropdownChild) {
           $__default['default'](dropdownChild).removeClass(CLASS_NAME_ACTIVE$3);
 =======
+=======
+>>>>>>> danhmuc_list
         $__default["default"](active).removeClass(CLASS_NAME_ACTIVE);
         var dropdownChild = $__default["default"](active.parentNode).find(SELECTOR_DROPDOWN_ACTIVE_CHILD)[0];
 
         if (dropdownChild) {
           $__default["default"](dropdownChild).removeClass(CLASS_NAME_ACTIVE);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         }
 
@@ -5961,7 +7241,11 @@
       }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'](element).addClass(CLASS_NAME_ACTIVE$3);
+=======
+      $__default["default"](element).addClass(CLASS_NAME_ACTIVE);
+>>>>>>> danhmuc_list
 =======
       $__default["default"](element).addClass(CLASS_NAME_ACTIVE);
 >>>>>>> danhmuc_list
@@ -5972,6 +7256,7 @@
 
       Util.reflow(element);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
       if (element.classList.contains(CLASS_NAME_FADE$4)) {
         element.classList.add(CLASS_NAME_SHOW$6);
@@ -5984,6 +7269,8 @@
           var dropdownToggleList = [].slice.call(dropdownElement.querySelectorAll(SELECTOR_DROPDOWN_TOGGLE$1));
           $__default['default'](dropdownToggleList).addClass(CLASS_NAME_ACTIVE$3);
 =======
+=======
+>>>>>>> danhmuc_list
       if (element.classList.contains(CLASS_NAME_FADE$1)) {
         element.classList.add(CLASS_NAME_SHOW$1);
       }
@@ -6000,6 +7287,9 @@
         if (dropdownElement) {
           var dropdownToggleList = [].slice.call(dropdownElement.querySelectorAll(SELECTOR_DROPDOWN_TOGGLE));
           $__default["default"](dropdownToggleList).addClass(CLASS_NAME_ACTIVE);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         }
 
@@ -6015,6 +7305,7 @@
     Tab._jQueryInterface = function _jQueryInterface(config) {
       return this.each(function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
         var $this = $__default['default'](this);
         var data = $this.data(DATA_KEY$9);
 
@@ -6022,12 +7313,17 @@
           data = new Tab(this);
           $this.data(DATA_KEY$9, data);
 =======
+=======
+>>>>>>> danhmuc_list
         var $this = $__default["default"](this);
         var data = $this.data(DATA_KEY$1);
 
         if (!data) {
           data = new Tab(this);
           $this.data(DATA_KEY$1, data);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         }
 
@@ -6045,7 +7341,11 @@
       key: "VERSION",
       get: function get() {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return VERSION$9;
+=======
+        return VERSION$1;
+>>>>>>> danhmuc_list
 =======
         return VERSION$1;
 >>>>>>> danhmuc_list
@@ -6055,6 +7355,7 @@
     return Tab;
   }();
   /**
+<<<<<<< HEAD
 <<<<<<< HEAD
    * ------------------------------------------------------------------------
    * Data Api implementation
@@ -6079,6 +7380,8 @@
   $__default['default'].fn[NAME$9].noConflict = function () {
     $__default['default'].fn[NAME$9] = JQUERY_NO_CONFLICT$9;
 =======
+=======
+>>>>>>> danhmuc_list
    * Data API implementation
    */
 
@@ -6097,11 +7400,15 @@
 
   $__default["default"].fn[NAME$1].noConflict = function () {
     $__default["default"].fn[NAME$1] = JQUERY_NO_CONFLICT$1;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     return Tab._jQueryInterface;
   };
 
   /**
+<<<<<<< HEAD
 <<<<<<< HEAD
    * ------------------------------------------------------------------------
    * Constants
@@ -6129,6 +7436,8 @@
   };
   var Default$7 = {
 =======
+=======
+>>>>>>> danhmuc_list
    * Constants
    */
 
@@ -6148,11 +7457,15 @@
   var EVENT_SHOWN = "shown" + EVENT_KEY;
   var SELECTOR_DATA_DISMISS = '[data-dismiss="toast"]';
   var Default = {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     animation: true,
     autohide: true,
     delay: 500
   };
+<<<<<<< HEAD
 <<<<<<< HEAD
   var SELECTOR_DATA_DISMISS$1 = '[data-dismiss="toast"]';
   /**
@@ -6160,6 +7473,8 @@
    * Class Definition
    * ------------------------------------------------------------------------
 =======
+=======
+>>>>>>> danhmuc_list
   var DefaultType = {
     animation: 'boolean',
     autohide: 'boolean',
@@ -6167,6 +7482,9 @@
   };
   /**
    * Class definition
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
    */
 
@@ -6187,8 +7505,13 @@
       var _this = this;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       var showEvent = $__default['default'].Event(EVENT_SHOW$4);
       $__default['default'](this._element).trigger(showEvent);
+=======
+      var showEvent = $__default["default"].Event(EVENT_SHOW);
+      $__default["default"](this._element).trigger(showEvent);
+>>>>>>> danhmuc_list
 =======
       var showEvent = $__default["default"].Event(EVENT_SHOW);
       $__default["default"](this._element).trigger(showEvent);
@@ -6202,7 +7525,11 @@
 
       if (this._config.animation) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         this._element.classList.add(CLASS_NAME_FADE$5);
+=======
+        this._element.classList.add(CLASS_NAME_FADE);
+>>>>>>> danhmuc_list
 =======
         this._element.classList.add(CLASS_NAME_FADE);
 >>>>>>> danhmuc_list
@@ -6212,9 +7539,15 @@
         _this._element.classList.remove(CLASS_NAME_SHOWING);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         _this._element.classList.add(CLASS_NAME_SHOW$7);
 
         $__default['default'](_this._element).trigger(EVENT_SHOWN$4);
+=======
+        _this._element.classList.add(CLASS_NAME_SHOW);
+
+        $__default["default"](_this._element).trigger(EVENT_SHOWN);
+>>>>>>> danhmuc_list
 =======
         _this._element.classList.add(CLASS_NAME_SHOW);
 
@@ -6237,7 +7570,11 @@
       if (this._config.animation) {
         var transitionDuration = Util.getTransitionDurationFromElement(this._element);
 <<<<<<< HEAD
+<<<<<<< HEAD
         $__default['default'](this._element).one(Util.TRANSITION_END, complete).emulateTransitionEnd(transitionDuration);
+=======
+        $__default["default"](this._element).one(Util.TRANSITION_END, complete).emulateTransitionEnd(transitionDuration);
+>>>>>>> danhmuc_list
 =======
         $__default["default"](this._element).one(Util.TRANSITION_END, complete).emulateTransitionEnd(transitionDuration);
 >>>>>>> danhmuc_list
@@ -6248,6 +7585,7 @@
 
     _proto.hide = function hide() {
 <<<<<<< HEAD
+<<<<<<< HEAD
       if (!this._element.classList.contains(CLASS_NAME_SHOW$7)) {
         return;
       }
@@ -6255,12 +7593,17 @@
       var hideEvent = $__default['default'].Event(EVENT_HIDE$4);
       $__default['default'](this._element).trigger(hideEvent);
 =======
+=======
+>>>>>>> danhmuc_list
       if (!this._element.classList.contains(CLASS_NAME_SHOW)) {
         return;
       }
 
       var hideEvent = $__default["default"].Event(EVENT_HIDE);
       $__default["default"](this._element).trigger(hideEvent);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
       if (hideEvent.isDefaultPrevented()) {
@@ -6274,6 +7617,7 @@
       this._clearTimeout();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       if (this._element.classList.contains(CLASS_NAME_SHOW$7)) {
         this._element.classList.remove(CLASS_NAME_SHOW$7);
       }
@@ -6281,12 +7625,17 @@
       $__default['default'](this._element).off(EVENT_CLICK_DISMISS$1);
       $__default['default'].removeData(this._element, DATA_KEY$a);
 =======
+=======
+>>>>>>> danhmuc_list
       if (this._element.classList.contains(CLASS_NAME_SHOW)) {
         this._element.classList.remove(CLASS_NAME_SHOW);
       }
 
       $__default["default"](this._element).off(EVENT_CLICK_DISMISS);
       $__default["default"].removeData(this._element, DATA_KEY);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       this._element = null;
       this._config = null;
@@ -6295,8 +7644,13 @@
 
     _proto._getConfig = function _getConfig(config) {
 <<<<<<< HEAD
+<<<<<<< HEAD
       config = _extends({}, Default$7, $__default['default'](this._element).data(), typeof config === 'object' && config ? config : {});
       Util.typeCheckConfig(NAME$a, config, this.constructor.DefaultType);
+=======
+      config = _extends({}, Default, $__default["default"](this._element).data(), typeof config === 'object' && config ? config : {});
+      Util.typeCheckConfig(NAME, config, this.constructor.DefaultType);
+>>>>>>> danhmuc_list
 =======
       config = _extends({}, Default, $__default["default"](this._element).data(), typeof config === 'object' && config ? config : {});
       Util.typeCheckConfig(NAME, config, this.constructor.DefaultType);
@@ -6308,7 +7662,11 @@
       var _this2 = this;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       $__default['default'](this._element).on(EVENT_CLICK_DISMISS$1, SELECTOR_DATA_DISMISS$1, function () {
+=======
+      $__default["default"](this._element).on(EVENT_CLICK_DISMISS, SELECTOR_DATA_DISMISS, function () {
+>>>>>>> danhmuc_list
 =======
       $__default["default"](this._element).on(EVENT_CLICK_DISMISS, SELECTOR_DATA_DISMISS, function () {
 >>>>>>> danhmuc_list
@@ -6323,6 +7681,7 @@
         _this3._element.classList.add(CLASS_NAME_HIDE);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $__default['default'](_this3._element).trigger(EVENT_HIDDEN$4);
       };
 
@@ -6332,6 +7691,8 @@
         var transitionDuration = Util.getTransitionDurationFromElement(this._element);
         $__default['default'](this._element).one(Util.TRANSITION_END, complete).emulateTransitionEnd(transitionDuration);
 =======
+=======
+>>>>>>> danhmuc_list
         $__default["default"](_this3._element).trigger(EVENT_HIDDEN);
       };
 
@@ -6340,6 +7701,9 @@
       if (this._config.animation) {
         var transitionDuration = Util.getTransitionDurationFromElement(this._element);
         $__default["default"](this._element).one(Util.TRANSITION_END, complete).emulateTransitionEnd(transitionDuration);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       } else {
         complete();
@@ -6355,8 +7719,13 @@
     Toast._jQueryInterface = function _jQueryInterface(config) {
       return this.each(function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
         var $element = $__default['default'](this);
         var data = $element.data(DATA_KEY$a);
+=======
+        var $element = $__default["default"](this);
+        var data = $element.data(DATA_KEY);
+>>>>>>> danhmuc_list
 =======
         var $element = $__default["default"](this);
         var data = $element.data(DATA_KEY);
@@ -6367,7 +7736,11 @@
         if (!data) {
           data = new Toast(this, _config);
 <<<<<<< HEAD
+<<<<<<< HEAD
           $element.data(DATA_KEY$a, data);
+=======
+          $element.data(DATA_KEY, data);
+>>>>>>> danhmuc_list
 =======
           $element.data(DATA_KEY, data);
 >>>>>>> danhmuc_list
@@ -6387,7 +7760,11 @@
       key: "VERSION",
       get: function get() {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return VERSION$a;
+=======
+        return VERSION;
+>>>>>>> danhmuc_list
 =======
         return VERSION;
 >>>>>>> danhmuc_list
@@ -6396,7 +7773,11 @@
       key: "DefaultType",
       get: function get() {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return DefaultType$7;
+=======
+        return DefaultType;
+>>>>>>> danhmuc_list
 =======
         return DefaultType;
 >>>>>>> danhmuc_list
@@ -6405,7 +7786,11 @@
       key: "Default",
       get: function get() {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return Default$7;
+=======
+        return Default;
+>>>>>>> danhmuc_list
 =======
         return Default;
 >>>>>>> danhmuc_list
@@ -6415,6 +7800,7 @@
     return Toast;
   }();
   /**
+<<<<<<< HEAD
 <<<<<<< HEAD
    * ------------------------------------------------------------------------
    * jQuery
@@ -6428,6 +7814,8 @@
   $__default['default'].fn[NAME$a].noConflict = function () {
     $__default['default'].fn[NAME$a] = JQUERY_NO_CONFLICT$a;
 =======
+=======
+>>>>>>> danhmuc_list
    * jQuery
    */
 
@@ -6437,6 +7825,9 @@
 
   $__default["default"].fn[NAME].noConflict = function () {
     $__default["default"].fn[NAME] = JQUERY_NO_CONFLICT;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     return Toast._jQueryInterface;
   };
@@ -6457,7 +7848,11 @@
   Object.defineProperty(exports, '__esModule', { value: true });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 })));
+=======
+}));
+>>>>>>> danhmuc_list
 =======
 }));
 >>>>>>> danhmuc_list

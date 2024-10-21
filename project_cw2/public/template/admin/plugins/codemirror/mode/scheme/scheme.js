@@ -4,6 +4,10 @@
 /**
  * Author: Koh Zi Han, based on implementation by Koh Zi Chun
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+ * Improved by: Jakub T. Jankiewicz
+>>>>>>> danhmuc_list
 =======
  * Improved by: Jakub T. Jankiewicz
 >>>>>>> danhmuc_list
@@ -22,7 +26,11 @@
 CodeMirror.defineMode("scheme", function () {
     var BUILTIN = "builtin", COMMENT = "comment", STRING = "string",
 <<<<<<< HEAD
+<<<<<<< HEAD
         ATOM = "atom", NUMBER = "number", BRACKET = "bracket";
+=======
+        SYMBOL = "symbol", ATOM = "atom", NUMBER = "number", BRACKET = "bracket";
+>>>>>>> danhmuc_list
 =======
         SYMBOL = "symbol", ATOM = "atom", NUMBER = "number", BRACKET = "bracket";
 >>>>>>> danhmuc_list
@@ -76,7 +84,10 @@ CodeMirror.defineMode("scheme", function () {
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
     function processEscapedSequence(stream, options) {
         var next, escaped = false;
         while ((next = stream.next()) != null) {
@@ -89,6 +100,9 @@ CodeMirror.defineMode("scheme", function () {
         }
     }
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     return {
         startState: function () {
@@ -116,6 +130,7 @@ CodeMirror.defineMode("scheme", function () {
             switch(state.mode){
                 case "string": // multi-line string parsing mode
 <<<<<<< HEAD
+<<<<<<< HEAD
                     var next, escaped = false;
                     while ((next = stream.next()) != null) {
                         if (next == "\"" && !escaped) {
@@ -128,6 +143,8 @@ CodeMirror.defineMode("scheme", function () {
                     returnType = STRING; // continue on in scheme-string mode
                     break;
 =======
+=======
+>>>>>>> danhmuc_list
                     processEscapedSequence(stream, {
                         token: "\"",
                         state: state
@@ -141,6 +158,9 @@ CodeMirror.defineMode("scheme", function () {
                     });
                     returnType = SYMBOL; // continue on in scheme-symbol mode
                     break;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                 case "comment": // comment parsing mode
                     var next, maybeEnd = false;
@@ -183,6 +203,12 @@ CodeMirror.defineMode("scheme", function () {
                             returnType = ATOM;
                         }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                    } else if (ch == '|') {
+                        state.mode = "symbol";
+                        returnType = SYMBOL;
+>>>>>>> danhmuc_list
 =======
                     } else if (ch == '|') {
                         state.mode = "symbol";
@@ -301,6 +327,10 @@ CodeMirror.defineMode("scheme", function () {
         },
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        fold: "brace-paren",
+>>>>>>> danhmuc_list
 =======
         fold: "brace-paren",
 >>>>>>> danhmuc_list

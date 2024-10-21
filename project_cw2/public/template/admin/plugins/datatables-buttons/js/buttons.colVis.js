@@ -41,21 +41,31 @@ $.extend( DataTable.ext.buttons, {
 	// A collection of column visibility buttons
 	colvis: function ( dt, conf ) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 		return {
 			extend: 'collection',
 =======
+=======
+>>>>>>> danhmuc_list
 		var node = null;
 		var buttonConf = {
 			extend: 'collection',
 			init: function ( dt, n ) {
 				node = n;
 			},
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			text: function ( dt ) {
 				return dt.i18n( 'buttons.colvis', 'Column visibility' );
 			},
 			className: 'buttons-colvis',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+			closeButton: false,
+>>>>>>> danhmuc_list
 =======
 			closeButton: false,
 >>>>>>> danhmuc_list
@@ -66,7 +76,10 @@ $.extend( DataTable.ext.buttons, {
 			} ]
 		};
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 
 		// Rebuild the collection with the new column structure if columns are reordered
 		dt.on( 'column-reorder.dt'+conf.namespace, function (e, settings, details) {
@@ -80,6 +93,9 @@ $.extend( DataTable.ext.buttons, {
 		});
 
 		return buttonConf;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	},
 
@@ -147,12 +163,18 @@ $.extend( DataTable.ext.buttons, {
 				} )
 				.on( 'column-reorder.dt'+conf.namespace, function (e, settings, details) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 					// Button has been removed from the DOM
 					if ( conf.destroying ) {
 						return;
 					}
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 					if ( dt.columns( conf.columns ).count() !== 1 ) {
 						return;

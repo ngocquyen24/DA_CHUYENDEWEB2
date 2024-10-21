@@ -444,7 +444,12 @@ CodeMirror.defineMode("css", function(config, parserConfig) {
     "min-resolution", "max-resolution", "scan", "grid", "orientation",
     "device-pixel-ratio", "min-device-pixel-ratio", "max-device-pixel-ratio",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "pointer", "any-pointer", "hover", "any-hover", "prefers-color-scheme"
+=======
+    "pointer", "any-pointer", "hover", "any-hover", "prefers-color-scheme",
+    "dynamic-range", "video-dynamic-range"
+>>>>>>> danhmuc_list
 =======
     "pointer", "any-pointer", "hover", "any-hover", "prefers-color-scheme",
     "dynamic-range", "video-dynamic-range"
@@ -455,7 +460,12 @@ CodeMirror.defineMode("css", function(config, parserConfig) {
     "landscape", "portrait", "none", "coarse", "fine", "on-demand", "hover",
     "interlace", "progressive",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "dark", "light"
+=======
+    "dark", "light",
+    "standard", "high"
+>>>>>>> danhmuc_list
 =======
     "dark", "light",
     "standard", "high"
@@ -493,7 +503,11 @@ CodeMirror.defineMode("css", function(config, parserConfig) {
     "drop-initial-after-adjust", "drop-initial-after-align",
     "drop-initial-before-adjust", "drop-initial-before-align", "drop-initial-size",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "drop-initial-value", "elevation", "empty-cells", "fit", "fit-position",
+=======
+    "drop-initial-value", "elevation", "empty-cells", "fit", "fit-content", "fit-position",
+>>>>>>> danhmuc_list
 =======
     "drop-initial-value", "elevation", "empty-cells", "fit", "fit-content", "fit-position",
 >>>>>>> danhmuc_list
@@ -579,7 +593,11 @@ CodeMirror.defineMode("css", function(config, parserConfig) {
 
   var nonStandardPropertyKeywords_ = [
 <<<<<<< HEAD
+<<<<<<< HEAD
     "border-block", "border-block-color", "border-block-end",
+=======
+    "accent-color", "aspect-ratio", "border-block", "border-block-color", "border-block-end",
+>>>>>>> danhmuc_list
 =======
     "accent-color", "aspect-ratio", "border-block", "border-block-color", "border-block-end",
 >>>>>>> danhmuc_list
@@ -591,9 +609,15 @@ CodeMirror.defineMode("css", function(config, parserConfig) {
     "border-inline-end-width", "border-inline-start", "border-inline-start-color",
     "border-inline-start-style", "border-inline-start-width",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "border-inline-style", "border-inline-width", "margin-block",
     "margin-block-end", "margin-block-start", "margin-inline", "margin-inline-end",
     "margin-inline-start", "padding-block", "padding-block-end",
+=======
+    "border-inline-style", "border-inline-width", "content-visibility", "margin-block",
+    "margin-block-end", "margin-block-start", "margin-inline", "margin-inline-end",
+    "margin-inline-start", "overflow-anchor", "overscroll-behavior", "padding-block", "padding-block-end",
+>>>>>>> danhmuc_list
 =======
     "border-inline-style", "border-inline-width", "content-visibility", "margin-block",
     "margin-block-end", "margin-block-start", "margin-inline", "margin-inline-end",
@@ -623,23 +647,34 @@ CodeMirror.defineMode("css", function(config, parserConfig) {
     "burlywood", "cadetblue", "chartreuse", "chocolate", "coral", "cornflowerblue",
     "cornsilk", "crimson", "cyan", "darkblue", "darkcyan", "darkgoldenrod",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "darkgray", "darkgreen", "darkkhaki", "darkmagenta", "darkolivegreen",
     "darkorange", "darkorchid", "darkred", "darksalmon", "darkseagreen",
     "darkslateblue", "darkslategray", "darkturquoise", "darkviolet",
     "deeppink", "deepskyblue", "dimgray", "dodgerblue", "firebrick",
 =======
+=======
+>>>>>>> danhmuc_list
     "darkgray", "darkgreen", "darkgrey", "darkkhaki", "darkmagenta", "darkolivegreen",
     "darkorange", "darkorchid", "darkred", "darksalmon", "darkseagreen",
     "darkslateblue", "darkslategray", "darkslategrey", "darkturquoise", "darkviolet",
     "deeppink", "deepskyblue", "dimgray", "dimgrey", "dodgerblue", "firebrick",
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     "floralwhite", "forestgreen", "fuchsia", "gainsboro", "ghostwhite",
     "gold", "goldenrod", "gray", "grey", "green", "greenyellow", "honeydew",
     "hotpink", "indianred", "indigo", "ivory", "khaki", "lavender",
     "lavenderblush", "lawngreen", "lemonchiffon", "lightblue", "lightcoral",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "lightcyan", "lightgoldenrodyellow", "lightgray", "lightgreen", "lightpink",
     "lightsalmon", "lightseagreen", "lightskyblue", "lightslategray",
+=======
+    "lightcyan", "lightgoldenrodyellow", "lightgray", "lightgreen", "lightgrey", "lightpink",
+    "lightsalmon", "lightseagreen", "lightskyblue", "lightslategray", "lightslategrey",
+>>>>>>> danhmuc_list
 =======
     "lightcyan", "lightgoldenrodyellow", "lightgray", "lightgreen", "lightgrey", "lightpink",
     "lightsalmon", "lightseagreen", "lightskyblue", "lightslategray", "lightslategrey",
@@ -654,7 +689,11 @@ CodeMirror.defineMode("css", function(config, parserConfig) {
     "purple", "rebeccapurple", "red", "rosybrown", "royalblue", "saddlebrown",
     "salmon", "sandybrown", "seagreen", "seashell", "sienna", "silver", "skyblue",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "slateblue", "slategray", "snow", "springgreen", "steelblue", "tan",
+=======
+    "slateblue", "slategray", "slategrey", "snow", "springgreen", "steelblue", "tan",
+>>>>>>> danhmuc_list
 =======
     "slateblue", "slategray", "slategrey", "snow", "springgreen", "steelblue", "tan",
 >>>>>>> danhmuc_list
@@ -669,8 +708,13 @@ CodeMirror.defineMode("css", function(config, parserConfig) {
     "arabic-indic", "armenian", "asterisks", "attr", "auto", "auto-flow", "avoid", "avoid-column", "avoid-page",
     "avoid-region", "axis-pan", "background", "backwards", "baseline", "below", "bidi-override", "binary",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "bengali", "blink", "block", "block-axis", "bold", "bolder", "border", "border-box",
     "both", "bottom", "break", "break-all", "break-word", "bullets", "button", "button-bevel",
+=======
+    "bengali", "blink", "block", "block-axis", "blur", "bold", "bolder", "border", "border-box",
+    "both", "bottom", "break", "break-all", "break-word", "brightness", "bullets", "button", "button-bevel",
+>>>>>>> danhmuc_list
 =======
     "bengali", "blink", "block", "block-axis", "blur", "bold", "bolder", "border", "border-box",
     "both", "bottom", "break", "break-all", "break-word", "brightness", "bullets", "button", "button-bevel",
@@ -681,9 +725,15 @@ CodeMirror.defineMode("css", function(config, parserConfig) {
     "cjk-heavenly-stem", "cjk-ideographic", "clear", "clip", "close-quote",
     "col-resize", "collapse", "color", "color-burn", "color-dodge", "column", "column-reverse",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "compact", "condensed", "contain", "content", "contents",
     "content-box", "context-menu", "continuous", "copy", "counter", "counters", "cover", "crop",
     "cross", "crosshair", "currentcolor", "cursive", "cyclic", "darken", "dashed", "decimal",
+=======
+    "compact", "condensed", "conic-gradient", "contain", "content", "contents",
+    "content-box", "context-menu", "continuous", "contrast", "copy", "counter", "counters", "cover", "crop",
+    "cross", "crosshair", "cubic-bezier", "currentcolor", "cursive", "cyclic", "darken", "dashed", "decimal",
+>>>>>>> danhmuc_list
 =======
     "compact", "condensed", "conic-gradient", "contain", "content", "contents",
     "content-box", "context-menu", "continuous", "contrast", "copy", "counter", "counters", "cover", "crop",
@@ -694,7 +744,11 @@ CodeMirror.defineMode("css", function(config, parserConfig) {
     "disc", "discard", "disclosure-closed", "disclosure-open", "document",
     "dot-dash", "dot-dot-dash",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "dotted", "double", "down", "e-resize", "ease", "ease-in", "ease-in-out", "ease-out",
+=======
+    "dotted", "double", "down", "drop-shadow", "e-resize", "ease", "ease-in", "ease-in-out", "ease-out",
+>>>>>>> danhmuc_list
 =======
     "dotted", "double", "down", "drop-shadow", "e-resize", "ease", "ease-in", "ease-in-out", "ease-out",
 >>>>>>> danhmuc_list
@@ -708,15 +762,21 @@ CodeMirror.defineMode("css", function(config, parserConfig) {
     "ethiopic-numeric", "ew-resize", "exclusion", "expanded", "extends", "extra-condensed",
     "extra-expanded", "fantasy", "fast", "fill", "fill-box", "fixed", "flat", "flex", "flex-end", "flex-start", "footnotes",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "forwards", "from", "geometricPrecision", "georgian", "graytext", "grid", "groove",
     "gujarati", "gurmukhi", "hand", "hangul", "hangul-consonant", "hard-light", "hebrew",
     "help", "hidden", "hide", "higher", "highlight", "highlighttext",
     "hiragana", "hiragana-iroha", "horizontal", "hsl", "hsla", "hue", "icon", "ignore",
 =======
+=======
+>>>>>>> danhmuc_list
     "forwards", "from", "geometricPrecision", "georgian", "grayscale", "graytext", "grid", "groove",
     "gujarati", "gurmukhi", "hand", "hangul", "hangul-consonant", "hard-light", "hebrew",
     "help", "hidden", "hide", "higher", "highlight", "highlighttext",
     "hiragana", "hiragana-iroha", "horizontal", "hsl", "hsla", "hue", "hue-rotate", "icon", "ignore",
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     "inactiveborder", "inactivecaption", "inactivecaptiontext", "infinite",
     "infobackground", "infotext", "inherit", "initial", "inline", "inline-axis",
@@ -748,6 +808,7 @@ CodeMirror.defineMode("css", function(config, parserConfig) {
     "progress", "push-button", "radial-gradient", "radio", "read-only",
     "read-write", "read-write-plaintext-only", "rectangle", "region",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "relative", "repeat", "repeating-linear-gradient",
     "repeating-radial-gradient", "repeat-x", "repeat-y", "reset", "reverse",
     "rgb", "rgba", "ridge", "right", "rotate", "rotate3d", "rotateX", "rotateY",
@@ -758,6 +819,8 @@ CodeMirror.defineMode("css", function(config, parserConfig) {
     "searchfield-results-button", "searchfield-results-decoration", "self-start", "self-end",
     "semi-condensed", "semi-expanded", "separate", "serif", "show", "sidama",
 =======
+=======
+>>>>>>> danhmuc_list
     "relative", "repeat", "repeating-linear-gradient", "repeating-radial-gradient",
     "repeating-conic-gradient", "repeat-x", "repeat-y", "reset", "reverse",
     "rgb", "rgba", "ridge", "right", "rotate", "rotate3d", "rotateX", "rotateY",
@@ -767,6 +830,9 @@ CodeMirror.defineMode("css", function(config, parserConfig) {
     "searchfield-cancel-button", "searchfield-decoration",
     "searchfield-results-button", "searchfield-results-decoration", "self-start", "self-end",
     "semi-condensed", "semi-expanded", "separate", "sepia", "serif", "show", "sidama",
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     "simp-chinese-formal", "simp-chinese-informal", "single",
     "skew", "skewX", "skewY", "skip-white-space", "slide", "slider-horizontal",

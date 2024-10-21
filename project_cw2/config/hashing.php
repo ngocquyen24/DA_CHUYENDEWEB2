@@ -47,6 +47,7 @@ return [
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         'memory' => 65536,
         'threads' => 1,
         'time' => 4,
@@ -60,6 +61,11 @@ return [
         'threads' => 1,
         'time' => 4,
 >>>>>>> Login_Register
+=======
+        'memory' => 65536,
+        'threads' => 1,
+        'time' => 4,
+>>>>>>> danhmuc_list
 =======
         'memory' => 65536,
         'threads' => 1,

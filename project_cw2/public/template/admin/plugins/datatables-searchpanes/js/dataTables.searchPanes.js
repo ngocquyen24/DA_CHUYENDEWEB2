@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*! SearchPanes 1.2.1
+=======
+/*! SearchPanes 1.4.0
+>>>>>>> danhmuc_list
 =======
 /*! SearchPanes 1.4.0
 >>>>>>> danhmuc_list
@@ -10,21 +14,31 @@
 
     var $;
 <<<<<<< HEAD
+<<<<<<< HEAD
     var DataTable;
     function setJQuery(jq) {
         $ = jq;
         DataTable = jq.fn.dataTable;
 =======
+=======
+>>>>>>> danhmuc_list
     var dataTable;
     function setJQuery(jq) {
         $ = jq;
         dataTable = jq.fn.dataTable;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     }
     var SearchPane = /** @class */ (function () {
         /**
          * Creates the panes, sets up the search function
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+         *
+>>>>>>> danhmuc_list
 =======
          *
 >>>>>>> danhmuc_list
@@ -38,6 +52,7 @@
             if (panes === void 0) { panes = null; }
             // Check that the required version of DataTables is included
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (!DataTable || !DataTable.versionCheck || !DataTable.versionCheck('1.10.0')) {
                 throw new Error('SearchPane requires DataTables 1.10 or newer');
             }
@@ -50,6 +65,8 @@
             // Get options from user
             this.c = $.extend(true, {}, SearchPane.defaults, opts);
 =======
+=======
+>>>>>>> danhmuc_list
             if (!dataTable || !dataTable.versionCheck || !dataTable.versionCheck('1.10.0')) {
                 throw new Error('SearchPane requires DataTables 1.10 or newer');
             }
@@ -65,6 +82,9 @@
             if (opts !== undefined && opts.hideCount !== undefined && opts.viewCount === undefined) {
                 this.c.viewCount = !this.c.hideCount;
             }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             this.customPaneSettings = panes;
             this.s = {
@@ -77,6 +97,11 @@
                 dtPane: undefined,
                 filteringActive: false,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                firstSet: true,
+                forceViewTotal: false,
+>>>>>>> danhmuc_list
 =======
                 firstSet: true,
                 forceViewTotal: false,
@@ -116,11 +141,14 @@
                 buttonGroup: $('<div/>').addClass(this.classes.buttonGroup),
                 clear: $('<button type="button">&#215;</button>')
 <<<<<<< HEAD
+<<<<<<< HEAD
                     .addClass(this.classes.dull)
                     .addClass(this.classes.paneButton)
                     .addClass(this.classes.clearButton),
                 container: $('<div/>').addClass(this.classes.container).addClass(this.classes.layout +
 =======
+=======
+>>>>>>> danhmuc_list
                     .addClass(this.classes.disabledButton)
                     .attr('disabled', 'true')
                     .addClass(this.classes.paneButton)
@@ -131,6 +159,9 @@
                 container: $('<div/>')
                     .addClass(this.classes.container)
                     .addClass(this.classes.layout +
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                     (layVal < 10 ? layout : layout.split('-')[0] + '-9')),
                 countButton: $('<button type="button"></button>')
@@ -142,7 +173,13 @@
                         : this.customPaneSettings.header || 'Custom Pane') + '</th><th/></tr></thead></table>'),
                 lower: $('<div/>').addClass(this.classes.subRow2).addClass(this.classes.narrowButton),
 <<<<<<< HEAD
+<<<<<<< HEAD
                 nameButton: $('<button type="button"></button>').addClass(this.classes.paneButton).addClass(this.classes.nameButton),
+=======
+                nameButton: $('<button type="button"></button>')
+                    .addClass(this.classes.paneButton)
+                    .addClass(this.classes.nameButton),
+>>>>>>> danhmuc_list
 =======
                 nameButton: $('<button type="button"></button>')
                     .addClass(this.classes.paneButton)
@@ -164,9 +201,15 @@
             var colOpts = this.s.colOpts;
             var clear = $('<button type="button">X</button>').addClass(this.classes.paneButton);
 <<<<<<< HEAD
+<<<<<<< HEAD
             $(clear).text(table.i18n('searchPanes.clearPane', 'X'));
             this.dom.container.addClass(colOpts.className);
             this.dom.container.addClass((this.customPaneSettings !== null && this.customPaneSettings.className !== undefined)
+=======
+            clear.text(table.i18n('searchPanes.clearPane', this.c.i18n.clearPane));
+            this.dom.container.addClass(colOpts.className);
+            this.dom.container.addClass(this.customPaneSettings !== null && this.customPaneSettings.className !== undefined
+>>>>>>> danhmuc_list
 =======
             clear.text(table.i18n('searchPanes.clearPane', this.c.i18n.clearPane));
             this.dom.container.addClass(colOpts.className);
@@ -206,6 +249,10 @@
                         filter = _this.s.rowData.filterMap.get(dataIndex);
                         if (filter instanceof $.fn.dataTable.Api) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                            // eslint-disable-next-line no-extra-parens
+>>>>>>> danhmuc_list
 =======
                             // eslint-disable-next-line no-extra-parens
 >>>>>>> danhmuc_list
@@ -219,8 +266,13 @@
             // If the clear button for this pane is clicked clear the selections
             if (this.c.clear) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 $(clear).on('click', function () {
                     var searches = _this.dom.container.find(_this.classes.search);
+=======
+                clear.on('click', function () {
+                    var searches = _this.dom.container.find('.' + _this.classes.search.replace(/\s+/g, '.'));
+>>>>>>> danhmuc_list
 =======
                 clear.on('click', function () {
                     var searches = _this.dom.container.find('.' + _this.classes.search.replace(/\s+/g, '.'));
@@ -237,6 +289,7 @@
             // Equally this may occur when the table is resized.
             table.on('draw.dtsp', function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 _this._adjustTopRow();
             });
             table.on('buttons-action', function () {
@@ -246,11 +299,16 @@
                 _this._adjustTopRow();
             }));
 =======
+=======
+>>>>>>> danhmuc_list
                 _this.adjustTopRow();
             });
             table.on('buttons-action', function () {
                 _this.adjustTopRow();
             });
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             // When column-reorder is present and the columns are moved, it is necessary to
             //  reassign all of the panes indexes to the new index of the column.
@@ -261,7 +319,10 @@
         }
         /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
          * Adds a row to the panes table
          *
          * @param display the value to be displayed to the user
@@ -318,6 +379,9 @@
             }
         };
         /**
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
          * In the case of a rebuild there is potential for new data to have been included or removed
          * so all of the rowData must be reset as a precaution.
@@ -345,6 +409,7 @@
         };
         /**
 <<<<<<< HEAD
+<<<<<<< HEAD
          * Strips all of the SearchPanes elements from the document and turns all of the listeners for the buttons off
          */
         SearchPane.prototype.destroy = function () {
@@ -356,6 +421,8 @@
             $(this.dom.searchButton).off('.dtsp');
             $(this.dom.container).remove();
 =======
+=======
+>>>>>>> danhmuc_list
          * Collapses the pane so that only the header is displayed
          */
         SearchPane.prototype.collapse = function () {
@@ -388,6 +455,9 @@
             this.dom.clear.off('.dtsp');
             this.dom.searchButton.off('.dtsp');
             this.dom.container.remove();
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             var searchIdx = $.fn.dataTable.ext.search.indexOf(this.s.searchFunction);
             while (searchIdx !== -1) {
@@ -402,7 +472,10 @@
         };
         /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
          * Getting the legacy message is a little complex due a legacy parameter
          */
         SearchPane.prototype.emptyMessage = function () {
@@ -418,6 +491,9 @@
             return this.s.dt.i18n('searchPanes.emptyMessage', def);
         };
         /**
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
          * Updates the number of filters that have been applied in the title
          */
@@ -429,6 +505,10 @@
         /**
          * Rebuilds the panes from the start having deleted the old ones
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+         *
+>>>>>>> danhmuc_list
 =======
          *
 >>>>>>> danhmuc_list
@@ -458,7 +538,11 @@
                 }
                 this.s.dtPane.clear().destroy();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 prevEl = $(this.dom.container).prev();
+=======
+                prevEl = this.dom.container.prev();
+>>>>>>> danhmuc_list
 =======
                 prevEl = this.dom.container.prev();
 >>>>>>> danhmuc_list
@@ -479,11 +563,14 @@
         SearchPane.prototype.removePane = function () {
             this.s.displayed = false;
 <<<<<<< HEAD
+<<<<<<< HEAD
             $(this.dom.container).hide();
         };
         /**
          * Sets the cascadeRegen property of the pane. Accessible from above because as SearchPanes.ts deals with the rebuilds.
 =======
+=======
+>>>>>>> danhmuc_list
             this.dom.container.hide();
         };
         /**
@@ -510,6 +597,9 @@
          * Sets the cascadeRegen property of the pane. Accessible from above because as SearchPanes.ts
          * deals with the rebuilds.
          *
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
          * @param val the boolean value that the cascadeRegen property is to be set to
          */
@@ -521,6 +611,10 @@
          * In setting this to true for the clearing of the panes selection on the deselects it forces the pane to
          * repopulate from the entire dataset not just the displayed values.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+         *
+>>>>>>> danhmuc_list
 =======
          *
 >>>>>>> danhmuc_list
@@ -531,8 +625,11 @@
         };
         /**
 <<<<<<< HEAD
+<<<<<<< HEAD
          * Updates the values of all of the panes
 =======
+=======
+>>>>>>> danhmuc_list
          * Expands the pane from the collapsed state
          */
         SearchPane.prototype.show = function () {
@@ -549,6 +646,9 @@
         /**
          * Updates the values of all of the panes
          *
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
          * @param draw whether this has been triggered by a draw event or not
          */
@@ -561,7 +661,11 @@
         /**
          * Updates the panes if one of the options to do so has been set to true
 <<<<<<< HEAD
+<<<<<<< HEAD
          *   rather than the filtered message when using viewTotal.
+=======
+         * rather than the filtered message when using viewTotal.
+>>>>>>> danhmuc_list
 =======
          * rather than the filtered message when using viewTotal.
 >>>>>>> danhmuc_list
@@ -587,6 +691,10 @@
             // When an item is selected on the pane, add these to the array which holds selected items.
             // Custom search will perform.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            this.s.dtPane.off('select.dtsp');
+>>>>>>> danhmuc_list
 =======
             this.s.dtPane.off('select.dtsp');
 >>>>>>> danhmuc_list
@@ -600,6 +708,7 @@
                         _this.s.dt.draw(false);
                     }
                 }
+<<<<<<< HEAD
 <<<<<<< HEAD
                 else {
                     $(_this.dom.clear).removeClass(_this.classes.dull);
@@ -615,6 +724,8 @@
             this.s.dtPane.on('deselect.dtsp', function () {
                 t0 = setTimeout(function () {
 =======
+=======
+>>>>>>> danhmuc_list
                 else if (!_this.s.updating) {
                     _this.s.selectPresent = true;
                     _this._makeSelection();
@@ -628,6 +739,9 @@
             this.s.dtPane.on('deselect.dtsp', function () {
                 t0 = setTimeout(function () {
                     _this.s.scrollTop = $(_this.s.dtPane.table().node()).parent()[0].scrollTop;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                     if (_this.s.dt.page.info().serverSide && !_this.s.updating) {
                         if (!_this.s.serverSelecting) {
@@ -638,6 +752,7 @@
                     }
                     else {
                         _this.s.deselect = true;
+<<<<<<< HEAD
 <<<<<<< HEAD
                         if (_this.s.dtPane.rows({ selected: true }).data().toArray().length === 0) {
                             $(_this.dom.clear).addClass(_this.classes.dull);
@@ -702,6 +817,8 @@
                 var currentOrder = _this.s.dtPane.order()[0][1];
                 _this.s.dtPane.order([0, currentOrder === 'asc' ? 'desc' : 'asc']).draw();
 =======
+=======
+>>>>>>> danhmuc_list
                         _this._makeSelection();
                         _this.s.deselect = false;
                     }
@@ -780,11 +897,15 @@
                 var currentOrder = _this.s.dtPane.order()[0][1];
                 _this.s.dtPane.order([0, currentOrder === 'asc' ? 'desc' : 'asc']).draw();
                 // This state save is required so that the ordering of the panes is maintained
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                 _this.s.dt.state.save();
             });
             // When the button to order by the number of entries in the column is clicked then
             //  change the ordering to whatever it isn't currently
+<<<<<<< HEAD
 <<<<<<< HEAD
             $(this.dom.countButton).on('click.dtsp', function () {
                 var currentOrder = _this.s.dtPane.order()[0][1];
@@ -795,6 +916,8 @@
             $(this.dom.clear).on('click.dtsp', function () {
                 var searches = _this.dom.container.find('.' + _this.classes.search);
 =======
+=======
+>>>>>>> danhmuc_list
             this.dom.countButton.off('click.dtsp');
             this.dom.countButton.on('click.dtsp', function () {
                 var currentOrder = _this.s.dtPane.order()[0][1];
@@ -828,6 +951,9 @@
             this.dom.clear.off('click.dtsp');
             this.dom.clear.on('click.dtsp', function () {
                 var searches = _this.dom.container.find('.' + _this.classes.search.replace(/ /g, '.'));
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                 searches.each(function () {
                     // set the value of the search box to be an empty string and then search on that, effectively reseting
@@ -837,6 +963,7 @@
                 _this.clearPane();
             });
             // When the search button is clicked then draw focus to the search box
+<<<<<<< HEAD
 <<<<<<< HEAD
             $(this.dom.searchButton).on('click.dtsp', function () {
                 $(_this.dom.searchBox).focus();
@@ -850,6 +977,8 @@
             // Make sure to save the state once the pane has been built
             this.s.dt.state.save();
 =======
+=======
+>>>>>>> danhmuc_list
             this.dom.searchButton.off('click.dtsp');
             this.dom.searchButton.on('click.dtsp', function () {
                 _this.dom.searchBox.focus();
@@ -871,12 +1000,19 @@
                 // This state save is required so that the searching on the panes is maintained
                 _this.s.dt.state.save();
             });
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             return true;
         };
         /**
          * Takes in potentially undetected rows and adds them to the array if they are not yet featured
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+         *
+>>>>>>> danhmuc_list
 =======
          *
 >>>>>>> danhmuc_list
@@ -890,9 +1026,15 @@
         SearchPane.prototype._addOption = function (filter, display, sort, type, arrayFilter, bins) {
             // If the filter is an array then take a note of this, and add the elements to the arrayFilter array
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (Array.isArray(filter) || filter instanceof DataTable.Api) {
                 // Convert to an array so that we can work with it
                 if (filter instanceof DataTable.Api) {
+=======
+            if (Array.isArray(filter) || filter instanceof dataTable.Api) {
+                // Convert to an array so that we can work with it
+                if (filter instanceof dataTable.Api) {
+>>>>>>> danhmuc_list
 =======
             if (Array.isArray(filter) || filter instanceof dataTable.Api) {
                 // Convert to an array so that we can work with it
@@ -954,6 +1096,7 @@
             }
         };
         /**
+<<<<<<< HEAD
 <<<<<<< HEAD
          * Adds a row to the panes table
          * @param display the value to be displayed to the user
@@ -1021,6 +1164,10 @@
          * Method to construct the actual pane.
          *
 >>>>>>> danhmuc_list
+=======
+         * Method to construct the actual pane.
+         *
+>>>>>>> danhmuc_list
          * @param selectedRows previously selected Rows to be reselected
          * @last boolean to indicate whether this pane was the last one to have a selection made
          */
@@ -1039,8 +1186,13 @@
             var rowData = this.s.rowData;
             // Other Variables
 <<<<<<< HEAD
+<<<<<<< HEAD
             var countMessage = table.i18n('searchPanes.count', '{total}');
             var filteredMessage = table.i18n('searchPanes.countFiltered', '{shown} ({total})');
+=======
+            var countMessage = table.i18n('searchPanes.count', this.c.i18n.count);
+            var filteredMessage = table.i18n('searchPanes.countFiltered', this.c.i18n.countFiltered);
+>>>>>>> danhmuc_list
 =======
             var countMessage = table.i18n('searchPanes.count', this.c.i18n.count);
             var filteredMessage = table.i18n('searchPanes.countFiltered', this.c.i18n.countFiltered);
@@ -1063,8 +1215,13 @@
                 }
                 // Perform checks that do not require populate pane to run
 <<<<<<< HEAD
+<<<<<<< HEAD
                 if ((colOpts.show === false
                     || (colOpts.show !== undefined && colOpts.show !== true)) &&
+=======
+                if ((colOpts.show === false ||
+                    colOpts.show !== undefined && colOpts.show !== true) &&
+>>>>>>> danhmuc_list
 =======
                 if ((colOpts.show === false ||
                     colOpts.show !== undefined && colOpts.show !== true) &&
@@ -1087,6 +1244,7 @@
                         this.s.rowData.totalOptions = 0;
                         this._detailsPane();
 <<<<<<< HEAD
+<<<<<<< HEAD
                         // If the index is not found then no data has been added to the state for this pane,
                         //  which will only occur if it has previously failed to meet the criteria to be
                         //  displayed, therefore we can just hide it again here
@@ -1097,11 +1255,14 @@
                         }
 =======
 >>>>>>> danhmuc_list
+=======
+>>>>>>> danhmuc_list
                         rowData.arrayOriginal = rowData.arrayTotals;
                         rowData.binsOriginal = rowData.binsTotal;
                     }
                     var binLength = Object.keys(rowData.binsOriginal).length;
                     var uniqueRatio = this._uniqueRatio(binLength, table.rows()[0].length);
+<<<<<<< HEAD
 <<<<<<< HEAD
                     // Don't show the pane if there isn't enough variance in the data, or there is only 1 entry for that pane
                     if (this.s.displayed === false && ((colOpts.show === undefined && colOpts.threshold === null ?
@@ -1109,6 +1270,8 @@
                         uniqueRatio > colOpts.threshold)
                         || (colOpts.show !== true && binLength <= 1))) {
 =======
+=======
+>>>>>>> danhmuc_list
                     // Don't show the pane if there isn't enough variance in the data, or there is only 1 entry
                     //  for that pane
                     if (this.s.displayed === false &&
@@ -1116,6 +1279,9 @@
                             uniqueRatio > this.c.threshold :
                             uniqueRatio > colOpts.threshold) ||
                             colOpts.show !== true && binLength <= 1)) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                         this.dom.container.addClass(this.classes.hidden);
                         this.s.displayed = false;
@@ -1161,18 +1327,24 @@
                     var binLength = Object.keys(rowData.binsTotal).length;
                     var uniqueRatio = this._uniqueRatio(binLength, this.s.tableLength);
 <<<<<<< HEAD
+<<<<<<< HEAD
                     // Don't show the pane if there isn't enough variance in the data, or there is only 1 entry for that pane
                     if (this.s.displayed === false && ((colOpts.show === undefined && colOpts.threshold === null ?
                         uniqueRatio > this.c.threshold :
                         uniqueRatio > colOpts.threshold)
                         || (colOpts.show !== true && binLength <= 1))) {
 =======
+=======
+>>>>>>> danhmuc_list
                     // Don't show the pane if there isnt enough variance in the data, or there is only 1 entry for that pane
                     if (this.s.displayed === false &&
                         ((colOpts.show === undefined && colOpts.threshold === null ?
                             uniqueRatio > this.c.threshold :
                             uniqueRatio > colOpts.threshold) ||
                             colOpts.show !== true && binLength <= 1)) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                         this.dom.container.addClass(this.classes.hidden);
                         this.s.displayed = false;
@@ -1201,25 +1373,37 @@
             }
             // Add the container to the document in its original location
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (prevEl !== null && $(this.dom.panesContainer).has(prevEl).length > 0) {
                 $(this.dom.container).insertAfter(prevEl);
             }
             else {
                 $(this.dom.panesContainer).prepend(this.dom.container);
 =======
+=======
+>>>>>>> danhmuc_list
             if (prevEl !== null && this.dom.panesContainer.has(prevEl).length > 0) {
                 this.dom.container.insertAfter(prevEl);
             }
             else {
                 this.dom.panesContainer.prepend(this.dom.container);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             }
             // Declare the datatable for the pane
             var errMode = $.fn.dataTable.ext.errMode;
             $.fn.dataTable.ext.errMode = 'none';
 <<<<<<< HEAD
+<<<<<<< HEAD
             var haveScroller = DataTable.Scroller;
             this.s.dtPane = $(this.dom.dtP).DataTable($.extend(true, {
+=======
+            // eslint-disable-next-line no-extra-parens
+            var haveScroller = dataTable.Scroller;
+            this.s.dtPane = this.dom.dtP.DataTable($.extend(true, {
+>>>>>>> danhmuc_list
 =======
             // eslint-disable-next-line no-extra-parens
             var haveScroller = dataTable.Scroller;
@@ -1237,6 +1421,7 @@
                                 return row.type;
                             }
                             var message;
+<<<<<<< HEAD
 <<<<<<< HEAD
                             (_this.s.filteringActive || _this.s.showFiltered) && _this.c.viewTotal
                                 ? message = filteredMessage.replace(/{total}/, row.total)
@@ -1257,6 +1442,8 @@
                             return '<div class="' + _this.classes.nameCont + '"><span title="' +
                                 (typeof data === 'string' && data.match(/<[^>]*>/) !== null ? data.replace(/<[^>]*>/g, '') : data) +
 =======
+=======
+>>>>>>> danhmuc_list
                             message =
                                 (_this.s.filteringActive || _this.s.showFiltered) && _this.c.viewTotal ||
                                     _this.c.viewTotal && _this.s.forceViewTotal ?
@@ -1285,6 +1472,9 @@
                                 (typeof data === 'string' && data.match(/<[^>]*>/) !== null ?
                                     data.replace(/<[^>]*>/g, '') :
                                     data) +
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                                 '" class="' + _this.classes.name + '">' +
                                 data + '</span>' +
@@ -1293,7 +1483,12 @@
                         targets: 0,
                         // Accessing the private datatables property to set type based on the original table.
 <<<<<<< HEAD
+<<<<<<< HEAD
                         // This is null if not defined by the user, meaning that automatic type detection would take place
+=======
+                        // This is null if not defined by the user, meaning that automatic type detection
+                        //  would take place
+>>>>>>> danhmuc_list
 =======
                         // This is null if not defined by the user, meaning that automatic type detection
                         //  would take place
@@ -1307,6 +1502,10 @@
                         data: 'shown',
                         orderData: [1, 2],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                        searchable: false,
+>>>>>>> danhmuc_list
 =======
                         searchable: false,
 >>>>>>> danhmuc_list
@@ -1316,6 +1515,10 @@
                     {
                         data: 'total',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                        searchable: false,
+>>>>>>> danhmuc_list
 =======
                         searchable: false,
 >>>>>>> danhmuc_list
@@ -1333,6 +1536,7 @@
                 scroller: haveScroller ? true : false,
                 select: true,
                 stateSave: table.settings()[0].oFeatures.bStateSave ? true : false
+<<<<<<< HEAD
 <<<<<<< HEAD
             }, this.c.dtOpts, colOpts !== undefined ? colOpts.dtOpts : {}, (this.s.colOpts.options !== undefined || !this.colExists)
                 ? {
@@ -1352,6 +1556,8 @@
                     : this.customPaneSettings.header || 'Custom Pane');
             // As the pane table is not in the document yet we must initialise select ourselves
 =======
+=======
+>>>>>>> danhmuc_list
             }, this.c.dtOpts, colOpts !== undefined ? colOpts.dtOpts : {}, this.s.colOpts.options !== undefined || !this.colExists ?
                 {
                     createdRow: function (row, data, dataIndex) {
@@ -1387,6 +1593,9 @@
             this.dom.searchBox.attr('placeholder', headerText);
             // As the pane table is not in the document yet we must initialise select ourselves
             // eslint-disable-next-line no-extra-parens
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             $.fn.dataTable.select.init(this.s.dtPane);
             $.fn.dataTable.ext.errMode = errMode;
@@ -1415,15 +1624,21 @@
                     if (this.s.dt.page.info().serverSide &&
                         (!this.c.cascadePanes ||
 <<<<<<< HEAD
+<<<<<<< HEAD
                             (this.c.cascadePanes && rowData.bins[rowData.arrayFilter[i].filter] !== 0) ||
                             (this.c.cascadePanes && init !== null) ||
                             selected)) {
                         var row = this._addRow(rowData.arrayFilter[i].display, rowData.arrayFilter[i].filter, init ?
 =======
+=======
+>>>>>>> danhmuc_list
                             this.c.cascadePanes && rowData.bins[rowData.arrayFilter[i].filter] !== 0 ||
                             this.c.cascadePanes && init !== null ||
                             selected)) {
                         var row = this.addRow(rowData.arrayFilter[i].display, rowData.arrayFilter[i].filter, init ?
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                             rowData.binsTotal[rowData.arrayFilter[i].filter] :
                             rowData.bins[rowData.arrayFilter[i].filter], this.c.viewTotal || init
@@ -1442,6 +1657,7 @@
                         rowData.arrayFilter[i] &&
                         (rowData.bins[rowData.arrayFilter[i].filter] !== undefined || !this.c.cascadePanes)) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                         this._addRow(rowData.arrayFilter[i].display, rowData.arrayFilter[i].filter, rowData.bins[rowData.arrayFilter[i].filter], rowData.binsTotal[rowData.arrayFilter[i].filter], rowData.arrayFilter[i].sort, rowData.arrayFilter[i].type);
                     }
                     else if (!this.s.dt.page.info().serverSide) {
@@ -1455,6 +1671,8 @@
             if (colOpts.options !== undefined ||
                 (this.customPaneSettings !== null && this.customPaneSettings.options !== undefined)) {
 =======
+=======
+>>>>>>> danhmuc_list
                         this.addRow(rowData.arrayFilter[i].display, rowData.arrayFilter[i].filter, rowData.bins[rowData.arrayFilter[i].filter], rowData.binsTotal[rowData.arrayFilter[i].filter], rowData.arrayFilter[i].sort, rowData.arrayFilter[i].type);
                     }
                     else if (!this.s.dt.page.info().serverSide) {
@@ -1468,13 +1686,21 @@
             // If there are custom options set or it is a custom pane then get them
             if (colOpts.options !== undefined ||
                 this.customPaneSettings !== null && this.customPaneSettings.options !== undefined) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                 this._getComparisonRows();
             }
             // Display the pane
             this.s.dtPane.draw();
 <<<<<<< HEAD
+<<<<<<< HEAD
             this._adjustTopRow();
+=======
+            this.s.dtPane.table().node().parentNode.scrollTop = this.s.scrollTop;
+            this.adjustTopRow();
+>>>>>>> danhmuc_list
 =======
             this.s.dtPane.table().node().parentNode.scrollTop = this.s.scrollTop;
             this.adjustTopRow();
@@ -1489,13 +1715,19 @@
                     for (var _g = 0, _h = this.s.dtPane.rows().indexes().toArray(); _g < _h.length; _g++) {
                         var row = _h[_g];
 <<<<<<< HEAD
+<<<<<<< HEAD
                         if (this.s.dtPane.row(row).data() !== undefined && selection.filter === this.s.dtPane.row(row).data().filter) {
                             // If this is happening when serverSide processing is happening then different behaviour is needed
 =======
+=======
+>>>>>>> danhmuc_list
                         if (this.s.dtPane.row(row).data() !== undefined &&
                             selection.filter === this.s.dtPane.row(row).data().filter) {
                             // If this is happening when serverSide processing is happening then
                             //  different behaviour is needed
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                             if (this.s.dt.page.info().serverSide) {
                                 this.s.serverSelecting = true;
@@ -1512,8 +1744,11 @@
             //  If SSP and the table is ready, apply the search for the pane
             if (this.s.dt.page.info().serverSide) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 this.s.dtPane.search($(this.dom.searchBox).val()).draw();
 =======
+=======
+>>>>>>> danhmuc_list
                 this.s.dtPane.search(this.dom.searchBox.val()).draw();
             }
             if ((this.c.initCollapsed && this.s.colOpts.initCollapsed !== false ||
@@ -1521,6 +1756,9 @@
                 (this.c.collapse && this.s.colOpts.collapse !== false ||
                     this.s.colOpts.collapse)) {
                 this.collapse();
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             }
             // Reload the selection, searchbox entry and ordering from the previous state
@@ -1537,6 +1775,7 @@
                     var pane = _k[_j];
                     if (pane.id === this.s.index) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                         $(this.dom.searchBox).val(pane.searchTerm);
                         $(this.dom.searchBox).trigger('input');
                         this.s.dtPane.order(pane.order).draw();
@@ -1546,6 +1785,8 @@
             // Make sure to save the state once the pane has been built
             this.s.dt.state.save();
 =======
+=======
+>>>>>>> danhmuc_list
                         // Save some time by only triggering an input if there is a value
                         if (pane.searchTerm && pane.searchTerm.length > 0) {
                             this.dom.searchBox.val(pane.searchTerm);
@@ -1562,6 +1803,9 @@
                     }
                 }
             }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             return true;
         };
@@ -1588,6 +1832,7 @@
             var container = this.dom.container;
             var colOpts = this.s.colOpts;
             var layVal = parseInt(this.c.layout.split('-')[1], 10);
+<<<<<<< HEAD
 <<<<<<< HEAD
             //  Empty everything to start again
             $(this.dom.topRow).empty();
@@ -1617,6 +1862,8 @@
             }
             $(this.dom.searchBox).appendTo(this.dom.searchCont);
 =======
+=======
+>>>>>>> danhmuc_list
             // Empty everything to start again
             this.dom.topRow.empty();
             this.dom.dtP.empty();
@@ -1644,11 +1891,15 @@
                     .attr('disabled', 'true');
             }
             this.dom.searchBox.appendTo(this.dom.searchCont);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             // Create the contents of the searchCont div. Worth noting that this function will change when using semantic ui
             this._searchContSetup();
             // If the clear button is allowed to show then display it
             if (this.c.clear && this.c.controls && colOpts.controls) {
+<<<<<<< HEAD
 <<<<<<< HEAD
                 $(this.dom.clear).appendTo(this.dom.buttonGroup);
             }
@@ -1659,6 +1910,8 @@
             if (!this.c.hideCount &&
                 !colOpts.hideCount &&
 =======
+=======
+>>>>>>> danhmuc_list
                 this.dom.clear.appendTo(this.dom.buttonGroup);
             }
             if (this.c.orderable && colOpts.orderable && this.c.controls && colOpts.controls) {
@@ -1667,11 +1920,15 @@
             // If the count column is hidden then don't display the ordering button for it
             if (this.c.viewCount &&
                 colOpts.viewCount &&
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                 this.c.orderable &&
                 colOpts.orderable &&
                 this.c.controls &&
                 colOpts.controls) {
+<<<<<<< HEAD
 <<<<<<< HEAD
                 $(this.dom.countButton).appendTo(this.dom.buttonGroup);
             }
@@ -1682,6 +1939,8 @@
         /**
          * Gets the options for the row for the customPanes
 =======
+=======
+>>>>>>> danhmuc_list
                 this.dom.countButton.appendTo(this.dom.buttonGroup);
             }
             if ((this.c.collapse && this.s.colOpts.collapse !== false ||
@@ -1696,6 +1955,9 @@
         /**
          * Gets the options for the row for the customPanes
          *
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
          * @returns {object} The options for the row extended to include the options from the user.
          */
@@ -1712,6 +1974,10 @@
         /**
          * Adds the custom options to the pane
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+         *
+>>>>>>> danhmuc_list
 =======
          *
 >>>>>>> danhmuc_list
@@ -1739,7 +2005,13 @@
                 var comp = options_1[_i];
                 // Initialise the object which is to be placed in the row
 <<<<<<< HEAD
+<<<<<<< HEAD
                 var insert = comp.label !== '' ? comp.label : this.c.emptyMessage;
+=======
+                var insert = comp.label !== '' ?
+                    comp.label :
+                    this.emptyMessage();
+>>>>>>> danhmuc_list
 =======
                 var insert = comp.label !== '' ?
                     comp.label :
@@ -1775,8 +2047,13 @@
                 }
                 // If cascadePanes is not active or if it is and the comparisonObj should be shown then add it to the pane
 <<<<<<< HEAD
+<<<<<<< HEAD
                 if (!this.c.cascadePanes || (this.c.cascadePanes && comparisonObj.shown !== 0)) {
                     rows.push(this._addRow(comparisonObj.display, comparisonObj.filter, comparisonObj.shown, comparisonObj.total, comparisonObj.sort, comparisonObj.type, comparisonObj.className));
+=======
+                if (!this.c.cascadePanes || this.c.cascadePanes && comparisonObj.shown !== 0) {
+                    rows.push(this.addRow(comparisonObj.display, comparisonObj.filter, comparisonObj.shown, comparisonObj.total, comparisonObj.sort, comparisonObj.type, comparisonObj.className));
+>>>>>>> danhmuc_list
 =======
                 if (!this.c.cascadePanes || this.c.cascadePanes && comparisonObj.shown !== 0) {
                     rows.push(this.addRow(comparisonObj.display, comparisonObj.filter, comparisonObj.shown, comparisonObj.total, comparisonObj.sort, comparisonObj.type, comparisonObj.className));
@@ -1788,6 +2065,10 @@
         /**
          * Gets the options for the row for the customPanes
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+         *
+>>>>>>> danhmuc_list
 =======
          *
 >>>>>>> danhmuc_list
@@ -1798,7 +2079,13 @@
             // We need to reset the thresholds as if they have a value in colOpts then that value will be used
             var defaultMutator = {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 emptyMessage: false,
+=======
+                collapse: null,
+                emptyMessage: false,
+                initCollapsed: null,
+>>>>>>> danhmuc_list
 =======
                 collapse: null,
                 emptyMessage: false,
@@ -1810,11 +2097,14 @@
                 threshold: null
             };
 <<<<<<< HEAD
+<<<<<<< HEAD
             return $.extend(true, {}, SearchPane.defaults, defaultMutator, table.settings()[0].aoColumns[this.s.index].searchPanes);
         };
         /**
          * This method allows for changes to the panes and table to be made when a selection or a deselection occurs
 =======
+=======
+>>>>>>> danhmuc_list
             var columnOptions = table.settings()[0].aoColumns[this.s.index].searchPanes;
             var colOpts = $.extend(true, {}, SearchPane.defaults, defaultMutator, columnOptions);
             if (columnOptions !== undefined &&
@@ -1827,6 +2117,9 @@
         /**
          * This method allows for changes to the panes and table to be made when a selection or a deselection occurs
          *
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
          * @param select Denotes whether a selection has been made or not
          */
@@ -1839,6 +2132,10 @@
         /**
          * Fill the array with the values that are currently being displayed in the table
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+         *
+>>>>>>> danhmuc_list
 =======
          *
 >>>>>>> danhmuc_list
@@ -1852,7 +2149,12 @@
             var settings = this.s.dt.settings()[0];
             // If cascadePanes or viewTotal are active it is necessary to get the data which is currently
 <<<<<<< HEAD
+<<<<<<< HEAD
             //  being displayed for their functionality. Also make sure that this was not the last pane to have a selection made
+=======
+            // being displayed for their functionality.
+            // Also make sure that this was not the last pane to have a selection made
+>>>>>>> danhmuc_list
 =======
             // being displayed for their functionality.
             // Also make sure that this was not the last pane to have a selection made
@@ -1870,6 +2172,10 @@
         /**
          * Populates an array with all of the data for the table
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+         *
+>>>>>>> danhmuc_list
 =======
          *
 >>>>>>> danhmuc_list
@@ -1882,7 +2188,11 @@
             var colOpts = this.s.colOpts;
             // Retrieve the rendered data from the cell using the fnGetCellData function
 <<<<<<< HEAD
+<<<<<<< HEAD
             //  rather than the cell().render API method for optimisation
+=======
+            // rather than the cell().render API method for optimisation
+>>>>>>> danhmuc_list
 =======
             // rather than the cell().render API method for optimisation
 >>>>>>> danhmuc_list
@@ -1916,6 +2226,10 @@
         /**
          * Reloads all of the previous selects into the panes
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+         *
+>>>>>>> danhmuc_list
 =======
          *
 >>>>>>> danhmuc_list
@@ -1957,6 +2271,10 @@
         /**
          * This method decides whether a row should contribute to the pane or not
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+         *
+>>>>>>> danhmuc_list
 =======
          *
 >>>>>>> danhmuc_list
@@ -1970,6 +2288,7 @@
             for (var _i = 0, _a = this.selections; _i < _a.length; _i++) {
                 var colSelect = _a[_i];
 <<<<<<< HEAD
+<<<<<<< HEAD
                 if (typeof colSelect.filter === 'string') {
                     // The filter value will not have the &amp; in place but a &,
                     //  so we need to do a replace to make sure that they will match
@@ -1979,6 +2298,8 @@
                 if (Array.isArray(filter)) {
                     if (filter.indexOf(colSelect.filter) !== -1) {
 =======
+=======
+>>>>>>> danhmuc_list
                 if (typeof colSelect.filter === 'string' && typeof filter === 'string') {
                     // The filter value will not have the &amp; in place but a &,
                     // so we need to do a replace to make sure that they will match
@@ -1991,6 +2312,9 @@
                 // if the filter is an array then is the column present in it
                 if (Array.isArray(filter)) {
                     if (filter.includes(colSelect.filter)) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                         return true;
                     }
@@ -2004,7 +2328,11 @@
                     }
                     // If the combiner is an "and" then we need to check against all possible selections
 <<<<<<< HEAD
+<<<<<<< HEAD
                     //  so if it fails here then the and is not met and return false
+=======
+                    // so if it fails here then the and is not met and return false
+>>>>>>> danhmuc_list
 =======
                     // so if it fails here then the and is not met and return false
 >>>>>>> danhmuc_list
@@ -2014,23 +2342,33 @@
                 }
                 // otherwise if the two filter values are equal then return true
 <<<<<<< HEAD
+<<<<<<< HEAD
                 // Loose type checking incase number type in column comparing to a string
                 else if ((filter === colSelect.filter) ||
                     (!(typeof filter === 'string' && filter.length === 0) && filter == colSelect.filter) ||
                     (colSelect.filter === null && typeof filter === 'string' && filter === '')) {
 =======
+=======
+>>>>>>> danhmuc_list
                 else if (filter === colSelect.filter ||
                     // Loose type checking incase number type in column comparing to a string
                     // eslint-disable-next-line eqeqeq
                     !(typeof filter === 'string' && filter.length === 0) && filter == colSelect.filter ||
                     colSelect.filter === null && typeof filter === 'string' && filter === '') {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                     return true;
                 }
             }
             // If the combiner is an and then we need to check against all possible selections
 <<<<<<< HEAD
+<<<<<<< HEAD
             //  so return true here if so because it would have returned false earlier if it had failed
+=======
+            // so return true here if so because it would have returned false earlier if it had failed
+>>>>>>> danhmuc_list
 =======
             // so return true here if so because it would have returned false earlier if it had failed
 >>>>>>> danhmuc_list
@@ -2050,6 +2388,7 @@
         SearchPane.prototype._searchContSetup = function () {
             if (this.c.controls && this.s.colOpts.controls) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 $(this.dom.searchButton).appendTo(this.dom.searchLabelCont);
             }
             if (!(this.c.dtOpts.searching === false ||
@@ -2060,6 +2399,8 @@
                     !this.customPaneSettings.dtOpts.searching))) {
                 $(this.dom.searchLabelCont).appendTo(this.dom.searchCont);
 =======
+=======
+>>>>>>> danhmuc_list
                 this.dom.searchButton.appendTo(this.dom.searchLabelCont);
             }
             if (!(this.c.dtOpts.searching === false ||
@@ -2069,6 +2410,9 @@
                     this.customPaneSettings.dtOpts.searching !== undefined &&
                     !this.customPaneSettings.dtOpts.searching)) {
                 this.dom.searchLabelCont.appendTo(this.dom.searchCont);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             }
         };
@@ -2080,9 +2424,13 @@
             this.s.updating = true;
             var filters = this.s.dtPane.rows({ selected: true }).data().pluck('filter').toArray();
 <<<<<<< HEAD
+<<<<<<< HEAD
             var nullIndex = filters.indexOf(this.s.colOpts.emptyMessage !== false ?
                 this.s.colOpts.emptyMessage :
                 this.c.emptyMessage);
+=======
+            var nullIndex = filters.indexOf(this.emptyMessage());
+>>>>>>> danhmuc_list
 =======
             var nullIndex = filters.indexOf(this.emptyMessage());
 >>>>>>> danhmuc_list
@@ -2103,6 +2451,10 @@
         /**
          * Finds the ratio of the number of different options in the table to the number of rows
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+         *
+>>>>>>> danhmuc_list
 =======
          *
 >>>>>>> danhmuc_list
@@ -2113,8 +2465,13 @@
         SearchPane.prototype._uniqueRatio = function (bins, rowCount) {
             if (rowCount > 0 &&
 <<<<<<< HEAD
+<<<<<<< HEAD
                 ((this.s.rowData.totalOptions > 0 && !this.s.dt.page.info().serverSide) ||
                     (this.s.dt.page.info().serverSide && this.s.tableLength > 0))) {
+=======
+                (this.s.rowData.totalOptions > 0 && !this.s.dt.page.info().serverSide ||
+                    this.s.dt.page.info().serverSide && this.s.tableLength > 0)) {
+>>>>>>> danhmuc_list
 =======
                 (this.s.rowData.totalOptions > 0 && !this.s.dt.page.info().serverSide ||
                     this.s.dt.page.info().serverSide && this.s.tableLength > 0)) {
@@ -2128,6 +2485,10 @@
         /**
          * updates the options within the pane
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+         *
+>>>>>>> danhmuc_list
 =======
          *
 >>>>>>> danhmuc_list
@@ -2141,15 +2502,21 @@
                 this.s.dtPane !== undefined &&
                 (!this.s.filteringActive || this.c.cascadePanes || draw === true) &&
 <<<<<<< HEAD
+<<<<<<< HEAD
                 (this.c.cascadePanes !== true || this.s.selectPresent !== true) && (!this.s.lastSelect || !this.s.lastCascade)) {
                 var colOpts = this.s.colOpts;
                 var selected = this.s.dtPane.rows({ selected: true }).data().toArray();
                 var scrollTop = $(this.s.dtPane.table().node()).parent()[0].scrollTop;
 =======
+=======
+>>>>>>> danhmuc_list
                 (this.c.cascadePanes !== true || this.s.selectPresent !== true) &&
                 (!this.s.lastSelect || !this.s.lastCascade)) {
                 var colOpts = this.s.colOpts;
                 var selected = this.s.dtPane.rows({ selected: true }).data().toArray();
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                 var rowData = this.s.rowData;
                 // Clear the pane in preparation for adding the updated search options
@@ -2159,6 +2526,7 @@
                     // Only run populatePane if the data has not been collected yet
                     if (rowData.arrayFilter.length === 0) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                         this._populatePane();
                     }
                     // If cascadePanes is active and the table has returned to its default state then
@@ -2166,6 +2534,8 @@
                     else if (this.c.cascadePanes
                         && this.s.dt.rows().data().toArray().length === this.s.dt.rows({ search: 'applied' }).data().toArray().length) {
 =======
+=======
+>>>>>>> danhmuc_list
                         this._populatePane(!this.s.filteringActive);
                     }
                     // If cascadePanes is active and the table has returned to its default state then
@@ -2173,6 +2543,9 @@
                     else if (this.c.cascadePanes &&
                         this.s.dt.rows().data().toArray().length ===
                             this.s.dt.rows({ search: 'applied' }).data().toArray().length) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                         rowData.arrayFilter = rowData.arrayOriginal;
                         rowData.bins = rowData.binsOriginal;
@@ -2180,7 +2553,11 @@
                     // Otherwise if viewTotal or cascadePanes is active then the data from the table must be read.
                     else if (this.c.viewTotal || this.c.cascadePanes) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                         this._populatePane();
+=======
+                        this._populatePane(!this.s.filteringActive);
+>>>>>>> danhmuc_list
 =======
                         this._populatePane(!this.s.filteringActive);
 >>>>>>> danhmuc_list
@@ -2197,6 +2574,7 @@
                     }
                     var _loop_1 = function (dataP) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                         // If both view Total and cascadePanes have been selected and the count of the row is not 0 then add it to pane
                         // Do this also if the viewTotal option has been selected and cascadePanes has not
                         if (dataP && ((rowData.bins[dataP.filter] !== undefined && rowData.bins[dataP.filter] !== 0 && this_1.c.cascadePanes)
@@ -2211,6 +2589,8 @@
                                 : rowData.bins[dataP.filter], dataP.sort, dataP.type);
                             // Find out if the filter was selected in the previous search, if so select it and remove from array.
 =======
+=======
+>>>>>>> danhmuc_list
                         // If both view Total and cascadePanes have been selected and the count of the row
                         // is not 0 then add it to pane
                         // Do this also if the viewTotal option has been selected and cascadePanes has not
@@ -2229,6 +2609,9 @@
                                 rowData.bins[dataP.filter], dataP.sort, dataP.type);
                             // Find out if the filter was selected in the previous search,
                             // if so select it and remove from array.
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                             var selectIndex = selected.findIndex(function (element) {
                                 return element.filter === dataP.filter;
@@ -2246,9 +2629,15 @@
                     }
                 }
 <<<<<<< HEAD
+<<<<<<< HEAD
                 if ((colOpts.searchPanes !== undefined && colOpts.searchPanes.options !== undefined) ||
                     colOpts.options !== undefined ||
                     (this.customPaneSettings !== null && this.customPaneSettings.options !== undefined)) {
+=======
+                if (colOpts.searchPanes !== undefined && colOpts.searchPanes.options !== undefined ||
+                    colOpts.options !== undefined ||
+                    this.customPaneSettings !== null && this.customPaneSettings.options !== undefined) {
+>>>>>>> danhmuc_list
 =======
                 if (colOpts.searchPanes !== undefined && colOpts.searchPanes.options !== undefined ||
                     colOpts.options !== undefined ||
@@ -2276,7 +2665,11 @@
                 for (var _c = 0, selected_1 = selected; _c < selected_1.length; _c++) {
                     var selectedEl = selected_1[_c];
 <<<<<<< HEAD
+<<<<<<< HEAD
                     var row = this._addRow(selectedEl.display, selectedEl.filter, 0, this.c.viewTotal
+=======
+                    var row = this.addRow(selectedEl.display, selectedEl.filter, 0, this.c.viewTotal
+>>>>>>> danhmuc_list
 =======
                     var row = this.addRow(selectedEl.display, selectedEl.filter, 0, this.c.viewTotal
 >>>>>>> danhmuc_list
@@ -2288,18 +2681,24 @@
                 }
                 this.s.dtPane.draw();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 this.s.dtPane.table().node().parentNode.scrollTop = scrollTop;
             }
         };
         SearchPane.version = '1.1.0';
         SearchPane.classes = {
 =======
+=======
+>>>>>>> danhmuc_list
                 this.s.dtPane.table().node().parentNode.scrollTop = this.s.scrollTop;
             }
         };
         SearchPane.version = '1.3.0';
         SearchPane.classes = {
             bordered: 'dtsp-bordered',
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             buttonGroup: 'dtsp-buttonGroup',
             buttonSub: 'dtsp-buttonSub',
@@ -2307,16 +2706,22 @@
             clearAll: 'dtsp-clearAll',
             clearButton: 'clearButton',
 <<<<<<< HEAD
+<<<<<<< HEAD
             container: 'dtsp-searchPane',
             countButton: 'dtsp-countButton',
             disabledButton: 'dtsp-disabledButton',
             dull: 'dtsp-dull',
 =======
+=======
+>>>>>>> danhmuc_list
             collapseAll: 'dtsp-collapseAll',
             collapseButton: 'dtsp-collapseButton',
             container: 'dtsp-searchPane',
             countButton: 'dtsp-countButton',
             disabledButton: 'dtsp-disabledButton',
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             hidden: 'dtsp-hidden',
             hide: 'dtsp-hide',
@@ -2329,6 +2734,10 @@
             paneInputButton: 'dtsp-paneInputButton',
             pill: 'dtsp-pill',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            rotated: 'dtsp-rotated',
+>>>>>>> danhmuc_list
 =======
             rotated: 'dtsp-rotated',
 >>>>>>> danhmuc_list
@@ -2349,6 +2758,7 @@
             cascadePanes: false,
             clear: true,
 <<<<<<< HEAD
+<<<<<<< HEAD
             combiner: 'or',
             controls: true,
             container: function (dt) {
@@ -2359,6 +2769,8 @@
             hideCount: false,
             layout: 'columns-3',
 =======
+=======
+>>>>>>> danhmuc_list
             collapse: true,
             combiner: 'or',
             container: function (dt) {
@@ -2376,6 +2788,9 @@
             },
             initCollapsed: false,
             layout: 'auto',
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             name: undefined,
             orderable: true,
@@ -2388,17 +2803,23 @@
                 sort: 'sort',
                 threshold: 0.6,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 type: 'type'
             },
             preSelect: [],
             threshold: 0.6,
 =======
+=======
+>>>>>>> danhmuc_list
                 type: 'type',
                 viewCount: true
             },
             preSelect: [],
             threshold: 0.6,
             viewCount: true,
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             viewTotal: false
         };
@@ -2407,15 +2828,21 @@
 
     var $$1;
 <<<<<<< HEAD
+<<<<<<< HEAD
     var DataTable$1;
     function setJQuery$1(jq) {
         $$1 = jq;
         DataTable$1 = jq.fn.dataTable;
 =======
+=======
+>>>>>>> danhmuc_list
     var dataTable$1;
     function setJQuery$1(jq) {
         $$1 = jq;
         dataTable$1 = jq.fn.dataTable;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
     }
     var SearchPanes = /** @class */ (function () {
@@ -2424,6 +2851,7 @@
             if (fromInit === void 0) { fromInit = false; }
             this.regenerating = false;
             // Check that the required version of DataTables is included
+<<<<<<< HEAD
 <<<<<<< HEAD
             if (!DataTable$1 || !DataTable$1.versionCheck || !DataTable$1.versionCheck('1.10.0')) {
                 throw new Error('SearchPane requires DataTables 1.10 or newer');
@@ -2434,6 +2862,8 @@
             }
             var table = new DataTable$1.Api(paneSettings);
 =======
+=======
+>>>>>>> danhmuc_list
             if (!dataTable$1 || !dataTable$1.versionCheck || !dataTable$1.versionCheck('1.10.0')) {
                 throw new Error('SearchPane requires DataTables 1.10 or newer');
             }
@@ -2443,6 +2873,9 @@
                 throw new Error('SearchPane requires Select');
             }
             var table = new dataTable$1.Api(paneSettings);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             this.classes = $$1.extend(true, {}, SearchPanes.classes);
             // Get options from user
@@ -2451,11 +2884,14 @@
             this.dom = {
                 clearAll: $$1('<button type="button">Clear All</button>').addClass(this.classes.clearAll),
 <<<<<<< HEAD
+<<<<<<< HEAD
                 container: $$1('<div/>').addClass(this.classes.panes).text(table.i18n('searchPanes.loadMessage', 'Loading Search Panes...')),
                 emptyMessage: $$1('<div/>').addClass(this.classes.emptyMessage),
                 options: $$1('<div/>').addClass(this.classes.container),
                 panes: $$1('<div/>').addClass(this.classes.container),
 =======
+=======
+>>>>>>> danhmuc_list
                 collapseAll: $$1('<button type="button">Collapse All</button>').addClass(this.classes.collapseAll),
                 container: $$1('<div/>').addClass(this.classes.panes).text(table.i18n('searchPanes.loadMessage', this.c.i18n.loadMessage)),
                 emptyMessage: $$1('<div/>').addClass(this.classes.emptyMessage),
@@ -2465,6 +2901,9 @@
                     .addClass(this.classes.showAll)
                     .addClass(this.classes.disabledButton)
                     .attr('disabled', 'true'),
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                 title: $$1('<div/>').addClass(this.classes.title),
                 titleRow: $$1('<div/>').addClass(this.classes.titleRow),
@@ -2477,6 +2916,10 @@
                 filterPane: -1,
                 page: 0,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                paging: false,
+>>>>>>> danhmuc_list
 =======
                 paging: false,
 >>>>>>> danhmuc_list
@@ -2496,6 +2939,12 @@
                         data.searchPanes = {};
                     }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                    if (data.searchPanes_null === undefined) {
+                        data.searchPanes_null = {};
+                    }
+>>>>>>> danhmuc_list
 =======
                     if (data.searchPanes_null === undefined) {
                         data.searchPanes_null = {};
@@ -2508,9 +2957,12 @@
                             data.searchPanes[src] = {};
                         }
 <<<<<<< HEAD
+<<<<<<< HEAD
                         for (var i = 0; i < selection.rows.length; i++) {
                             data.searchPanes[src][i] = selection.rows[i].filter;
 =======
+=======
+>>>>>>> danhmuc_list
                         if (data.searchPanes_null[src] === undefined) {
                             data.searchPanes_null[src] = {};
                         }
@@ -2519,6 +2971,9 @@
                             if (data.searchPanes[src][i] === null) {
                                 data.searchPanes_null[src][i] = true;
                             }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                         }
                     }
@@ -2535,7 +2990,13 @@
             });
             table.settings()[0]._searchPanes = this;
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.dom.clearAll.text(table.i18n('searchPanes.clearMessage', 'Clear All'));
+=======
+            this.dom.clearAll.text(table.i18n('searchPanes.clearMessage', this.c.i18n.clearMessage));
+            this.dom.collapseAll.text(table.i18n('searchPanes.collapseMessage', this.c.i18n.collapseMessage));
+            this.dom.showAll.text(table.i18n('searchPanes.showMessage', this.c.i18n.showMessage));
+>>>>>>> danhmuc_list
 =======
             this.dom.clearAll.text(table.i18n('searchPanes.clearMessage', this.c.i18n.clearMessage));
             this.dom.collapseAll.text(table.i18n('searchPanes.collapseMessage', this.c.i18n.collapseMessage));
@@ -2557,9 +3018,15 @@
         SearchPanes.prototype.clearSelections = function () {
             // Load in all of the searchBoxes in the documents
 <<<<<<< HEAD
+<<<<<<< HEAD
             var searches = this.dom.container.find(this.classes.search);
             // For each searchBox set the input text to be empty and then trigger
             //  an input on them so that they no longer filter the panes
+=======
+            var searches = this.dom.container.find('.' + this.classes.search.replace(/\s+/g, '.'));
+            // For each searchBox set the input text to be empty and then trigger
+            // an input on them so that they no longer filter the panes
+>>>>>>> danhmuc_list
 =======
             var searches = this.dom.container.find('.' + this.classes.search.replace(/\s+/g, '.'));
             // For each searchBox set the input text to be empty and then trigger
@@ -2571,6 +3038,11 @@
             });
             var returnArray = [];
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            // Clear the selectionList to prevent cascadePanes from reselecting rows
+            this.s.selectionList = [];
+>>>>>>> danhmuc_list
 =======
             // Clear the selectionList to prevent cascadePanes from reselecting rows
             this.s.selectionList = [];
@@ -2583,7 +3055,10 @@
                 }
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.s.dt.draw();
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
             return returnArray;
@@ -2601,7 +3076,11 @@
             if (targetIdx === void 0) { targetIdx = false; }
             if (maintainSelection === void 0) { maintainSelection = false; }
 <<<<<<< HEAD
+<<<<<<< HEAD
             $$1(this.dom.emptyMessage).remove();
+=======
+            this.dom.emptyMessage.remove();
+>>>>>>> danhmuc_list
 =======
             this.dom.emptyMessage.remove();
 >>>>>>> danhmuc_list
@@ -2610,7 +3089,11 @@
             // Rebuild each pane individually, if a specific pane has been selected then only rebuild that one
             if (targetIdx === false) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 $$1(this.dom.panes).empty();
+=======
+                this.dom.panes.empty();
+>>>>>>> danhmuc_list
 =======
                 this.dom.panes.empty();
 >>>>>>> danhmuc_list
@@ -2629,11 +3112,15 @@
                     this.s.serverData :
                     undefined, null, maintainSelection));
 <<<<<<< HEAD
+<<<<<<< HEAD
                 $$1(this.dom.panes).append(pane.dom.container);
             }
             // Only need to trigger a search if it is not server side processing
             if (!this.s.dt.page.info().serverSide) {
                 this.s.dt.draw();
+=======
+                this.dom.panes.append(pane.dom.container);
+>>>>>>> danhmuc_list
 =======
                 this.dom.panes.append(pane.dom.container);
 >>>>>>> danhmuc_list
@@ -2648,13 +3135,19 @@
             this._updateFilterCount();
             this._attachPaneContainer();
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.s.dt.draw();
 =======
+=======
+>>>>>>> danhmuc_list
             // If the selections are to be maintained, then it is safe to assume that paging is also to be maintained
             // Otherwise, the paging should be reset
             this.s.dt.draw(!maintainSelection);
             // Resize the panes incase there has been a change
             this.resizePanes();
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             // If a single pane has been rebuilt then return only that pane
             if (returnArray.length === 1) {
@@ -2676,6 +3169,7 @@
                 var filterActive = true;
                 var filterPane = this.s.filterPane;
 <<<<<<< HEAD
+<<<<<<< HEAD
                 // If the number of rows currently visible is equal to the number of rows in the table
                 //  then there can't be any filtering taking place
                 if (table.rows({ search: 'applied' }).data().toArray().length === table.rows().data().toArray().length) {
@@ -2693,6 +3187,8 @@
                                 for (var _b = 0, _c = this.s.selectionList; _b < _c.length; _b++) {
                                     var selection = _c[_b];
 =======
+=======
+>>>>>>> danhmuc_list
                 var selectTotal = null;
                 for (var _i = 0, _a = this.s.panes; _i < _a.length; _i++) {
                     var pane = _a[_i];
@@ -2717,6 +3213,9 @@
                             if (selectLength === 0) {
                                 for (var _d = 0, _e = this.s.selectionList; _d < _e.length; _d++) {
                                     var selection = _e[_d];
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                                     if (selection.index === pane.s.index && selection.rows.length !== 0) {
                                         selectLength = selection.rows.length;
@@ -2724,7 +3223,12 @@
                                 }
                             }
 <<<<<<< HEAD
+<<<<<<< HEAD
                             // If filterPane === -1 then a pane with a selection has not been found yet, so set filterPane to that panes index
+=======
+                            // If filterPane === -1 then a pane with a selection has not been found yet,
+                            // so set filterPane to that panes index
+>>>>>>> danhmuc_list
 =======
                             // If filterPane === -1 then a pane with a selection has not been found yet,
                             // so set filterPane to that panes index
@@ -2734,7 +3238,11 @@
                             }
                             // Then if another pane is found with a selection then set filterPane to null to
 <<<<<<< HEAD
+<<<<<<< HEAD
                             //  show that multiple panes have selections present
+=======
+                            // show that multiple panes have selections present
+>>>>>>> danhmuc_list
 =======
                             // show that multiple panes have selections present
 >>>>>>> danhmuc_list
@@ -2744,17 +3252,24 @@
                         }
                     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
                     // If the searchbox is in place and filtering is applied then need to cascade down anyway
                     if (selectTotal === 0) {
                         filterPane = null;
                     }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                 }
                 var deselectIdx = void 0;
                 var newSelectionList = [];
                 // Don't run this if it is due to the panes regenerating
                 if (!this.regenerating) {
+<<<<<<< HEAD
 <<<<<<< HEAD
                     for (var _d = 0, _e = this.s.panes; _d < _e.length; _d++) {
                         var pane = _e[_d];
@@ -2763,6 +3278,8 @@
                             this.s.selectionList.push({ index: pane.s.index, rows: pane.s.dtPane.rows({ selected: true }).data().toArray(), protect: false });
                             table.state.save();
 =======
+=======
+>>>>>>> danhmuc_list
                     for (var _f = 0, _g = this.s.panes; _f < _g.length; _f++) {
                         var pane = _g[_f];
                         // Identify the pane where a selection or deselection has been made and add it to the list.
@@ -2772,6 +3289,9 @@
                                 protect: false,
                                 rows: pane.s.dtPane.rows({ selected: true }).data().toArray()
                             });
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                             break;
                         }
@@ -2780,13 +3300,19 @@
                             var selectedData = pane.s.dtPane.rows({ selected: true }).data().toArray();
                             if (selectedData.length > 0) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 this.s.selectionList.push({ index: pane.s.index, rows: selectedData, protect: true });
 =======
+=======
+>>>>>>> danhmuc_list
                                 this.s.selectionList.push({
                                     index: pane.s.index,
                                     protect: true,
                                     rows: selectedData
                                 });
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                             }
                         }
@@ -2794,9 +3320,15 @@
                     if (this.s.selectionList.length > 0) {
                         var last = this.s.selectionList[this.s.selectionList.length - 1].index;
 <<<<<<< HEAD
+<<<<<<< HEAD
                         for (var _f = 0, _g = this.s.panes; _f < _g.length; _f++) {
                             var pane = _g[_f];
                             pane.s.lastSelect = (pane.s.index === last);
+=======
+                        for (var _h = 0, _j = this.s.panes; _h < _j.length; _h++) {
+                            var pane = _j[_h];
+                            pane.s.lastSelect = pane.s.index === last;
+>>>>>>> danhmuc_list
 =======
                         for (var _h = 0, _j = this.s.panes; _h < _j.length; _h++) {
                             var pane = _j[_h];
@@ -2823,6 +3355,7 @@
                     }
                     var solePane = -1;
 <<<<<<< HEAD
+<<<<<<< HEAD
                     if (newSelectionList.length === 1) {
                         solePane = newSelectionList[0].index;
                     }
@@ -2834,6 +3367,8 @@
                             pane.s.filteringActive = true;
                             if ((filterPane !== -1 && filterPane !== null && filterPane === pane.s.index) ||
 =======
+=======
+>>>>>>> danhmuc_list
                     if (newSelectionList.length === 1 && selectTotal !== null && selectTotal !== 0) {
                         solePane = newSelectionList[0].index;
                     }
@@ -2844,6 +3379,9 @@
                             var tempFilter = true;
                             pane.s.filteringActive = true;
                             if (filterPane !== -1 && filterPane !== null && filterPane === pane.s.index ||
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                                 filterActive === false ||
                                 pane.s.index === solePane) {
@@ -2853,6 +3391,7 @@
                             pane.updatePane(!tempFilter ? false : filterActive);
                         }
                     }
+<<<<<<< HEAD
 <<<<<<< HEAD
                     // Update the label that shows how many filters are in place
                     this._updateFilterCount();
@@ -2864,6 +3403,8 @@
                             var pane = _l[_k];
                             pane.s.lastSelect = (pane.s.index === last);
 =======
+=======
+>>>>>>> danhmuc_list
                     // If the length of the selections are different then some of them have been
                     // removed and a deselect has occured
                     if (newSelectionList.length > 0 && (newSelectionList.length < this.s.selectionList.length || rebuild)) {
@@ -2872,11 +3413,15 @@
                         for (var _m = 0, _o = this.s.panes; _m < _o.length; _m++) {
                             var pane = _o[_m];
                             pane.s.lastSelect = pane.s.index === last;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                         }
                     }
                     else if (newSelectionList.length > 0) {
                         // Update all of the other panes as you would just making a normal selection
+<<<<<<< HEAD
 <<<<<<< HEAD
                         for (var _m = 0, _o = this.s.panes; _m < _o.length; _m++) {
                             var paneUpdate = _o[_m];
@@ -2885,6 +3430,8 @@
                                 paneUpdate.s.filteringActive = true;
                                 if ((filterPane !== -1 && filterPane !== null && filterPane === paneUpdate.s.index) || filterActive === false) {
 =======
+=======
+>>>>>>> danhmuc_list
                         for (var _p = 0, _q = this.s.panes; _p < _q.length; _p++) {
                             var paneUpdate = _q[_p];
                             if (paneUpdate.s.dtPane !== undefined) {
@@ -2893,6 +3440,9 @@
                                 if (filterPane !== -1 && filterPane !== null && filterPane === paneUpdate.s.index ||
                                     filterActive === false ||
                                     paneUpdate.s.index === solePane) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                                     tempFilter = false;
                                     paneUpdate.s.filteringActive = false;
@@ -2901,6 +3451,7 @@
                             }
                         }
                     }
+<<<<<<< HEAD
 <<<<<<< HEAD
                 }
                 else {
@@ -2915,6 +3466,8 @@
                             pane.s.filteringActive = true;
                             if ((filterPane !== -1 && filterPane !== null && filterPane === pane.s.index) ||
 =======
+=======
+>>>>>>> danhmuc_list
                     // Update the label that shows how many filters are in place
                     this._updateFilterCount();
                 }
@@ -2929,6 +3482,9 @@
                             var tempFilter = true;
                             pane.s.filteringActive = true;
                             if (filterPane !== -1 && filterPane !== null && filterPane === pane.s.index ||
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                                 filterActive === false ||
                                 pane.s.index === solePane) {
@@ -2942,7 +3498,11 @@
                     this._updateFilterCount();
                 }
 <<<<<<< HEAD
+<<<<<<< HEAD
                 if (!filterActive) {
+=======
+                if (!filterActive || selectTotal === 0) {
+>>>>>>> danhmuc_list
 =======
                 if (!filterActive || selectTotal === 0) {
 >>>>>>> danhmuc_list
@@ -2952,7 +3512,10 @@
         };
         /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
          * Resizes all of the panes
          */
         SearchPanes.prototype.resizePanes = function () {
@@ -3011,11 +3574,15 @@
             return this;
         };
         /**
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
          * Attach the panes, buttons and title to the document
          */
         SearchPanes.prototype._attach = function () {
             var _this = this;
+<<<<<<< HEAD
 <<<<<<< HEAD
             $$1(this.dom.container).removeClass(this.classes.hide);
             $$1(this.dom.titleRow).removeClass(this.classes.hide);
@@ -3039,6 +3606,8 @@
             if ($$1('div.' + this.classes.container).length === 0) {
                 $$1(this.dom.container).prependTo(this.s.dt);
 =======
+=======
+>>>>>>> danhmuc_list
             this.dom.container.removeClass(this.classes.hide);
             this.dom.titleRow.removeClass(this.classes.hide);
             this.dom.titleRow.remove();
@@ -3063,6 +3632,9 @@
             this.dom.panes.appendTo(this.dom.container);
             if ($$1('div.' + this.classes.container).length === 0) {
                 this.dom.container.prependTo(this.s.dt);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             }
             return this.dom.container;
@@ -3071,6 +3643,7 @@
          * Attach the top row containing the filter count and clear all button
          */
         SearchPanes.prototype._attachExtras = function () {
+<<<<<<< HEAD
 <<<<<<< HEAD
             $$1(this.dom.container).removeClass(this.classes.hide);
             $$1(this.dom.titleRow).removeClass(this.classes.hide);
@@ -3082,6 +3655,8 @@
             }
             $$1(this.dom.titleRow).appendTo(this.dom.container);
 =======
+=======
+>>>>>>> danhmuc_list
             this.dom.container.removeClass(this.classes.hide);
             this.dom.titleRow.removeClass(this.classes.hide);
             this.dom.titleRow.remove();
@@ -3096,13 +3671,20 @@
                 this.dom.collapseAll.appendTo(this.dom.titleRow);
             }
             this.dom.titleRow.appendTo(this.dom.container);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             return this.dom.container;
         };
         /**
          * If there are no panes to display then this method is called to either
 <<<<<<< HEAD
+<<<<<<< HEAD
          *   display a message in their place or hide them completely.
+=======
+         * display a message in their place or hide them completely.
+>>>>>>> danhmuc_list
 =======
          * display a message in their place or hide them completely.
 >>>>>>> danhmuc_list
@@ -3112,7 +3694,11 @@
             var message;
             try {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 message = this.s.dt.i18n('searchPanes.emptyPanes', 'No SearchPanes');
+=======
+                message = this.s.dt.i18n('searchPanes.emptyPanes', this.c.i18n.emptyPanes);
+>>>>>>> danhmuc_list
 =======
                 message = this.s.dt.i18n('searchPanes.emptyPanes', this.c.i18n.emptyPanes);
 >>>>>>> danhmuc_list
@@ -3121,6 +3707,7 @@
                 message = null;
             }
             // If the message is an empty string then searchPanes.emptyPanes is undefined,
+<<<<<<< HEAD
 <<<<<<< HEAD
             //  therefore the pane container should be removed from the display
             if (message === null) {
@@ -3135,6 +3722,8 @@
             // Otherwise display the message
             $$1(this.dom.emptyMessage).text(message);
 =======
+=======
+>>>>>>> danhmuc_list
             // therefore the pane container should be removed from the display
             if (message === null) {
                 this.dom.container.addClass(this.classes.hide);
@@ -3147,6 +3736,9 @@
             }
             // Otherwise display the message
             this.dom.emptyMessage.text(message);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             this.dom.emptyMessage.appendTo(this.dom.container);
             return this.dom.container;
@@ -3168,19 +3760,26 @@
         /**
          * Prepares the panes for selections to be made when cascade is active and a deselect has occured
 <<<<<<< HEAD
+<<<<<<< HEAD
          * @param newSelectionList the list of selections which are to be made
          */
         SearchPanes.prototype._cascadeRegen = function (newSelectionList) {
 =======
+=======
+>>>>>>> danhmuc_list
          *
          * @param newSelectionList the list of selections which are to be made
          */
         SearchPanes.prototype._cascadeRegen = function (newSelectionList, selectTotal) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             // Set this to true so that the actions taken do not cause this to run until it is finished
             this.regenerating = true;
             // If only one pane has been selected then take note of its index
             var solePane = -1;
+<<<<<<< HEAD
 <<<<<<< HEAD
             if (newSelectionList.length === 1) {
                 solePane = newSelectionList[0].index;
@@ -3188,11 +3787,16 @@
             // Let the pane know that a cascadeRegen is taking place to avoid unexpected behaviour
             //  and clear all of the previous selections in the pane
 =======
+=======
+>>>>>>> danhmuc_list
             if (newSelectionList.length === 1 && selectTotal !== null && selectTotal !== 0) {
                 solePane = newSelectionList[0].index;
             }
             // Let the pane know that a cascadeRegen is taking place to avoid unexpected behaviour
             // and clear all of the previous selections in the pane
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             for (var _i = 0, _a = this.s.panes; _i < _a.length; _i++) {
                 var pane = _a[_i];
@@ -3200,7 +3804,11 @@
                 pane.setClear(true);
                 // If this is the same as the pane with the only selection then pass it as a parameter into clearPane
 <<<<<<< HEAD
+<<<<<<< HEAD
                 if ((pane.s.dtPane !== undefined && pane.s.index === solePane) || pane.s.dtPane !== undefined) {
+=======
+                if (pane.s.dtPane !== undefined && pane.s.index === solePane || pane.s.dtPane !== undefined) {
+>>>>>>> danhmuc_list
 =======
                 if (pane.s.dtPane !== undefined && pane.s.index === solePane || pane.s.dtPane !== undefined) {
 >>>>>>> danhmuc_list
@@ -3209,7 +3817,10 @@
                 pane.setClear(false);
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
             // Rebin panes
             this.s.dt.draw();
             // While all of the selections have been removed, check the table lengths
@@ -3226,6 +3837,9 @@
                 var pane = _e[_d];
                 pane.updatePane(true);
             }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             // Remake Selections
             this._makeCascadeSelections(newSelectionList);
@@ -3233,12 +3847,15 @@
             this.s.selectionList = newSelectionList;
             // The regeneration of selections is over so set it back to false
 <<<<<<< HEAD
+<<<<<<< HEAD
             for (var _b = 0, _c = this.s.panes; _b < _c.length; _b++) {
                 var pane = _c[_b];
                 pane.setCascadeRegen(false);
             }
             this.regenerating = false;
 =======
+=======
+>>>>>>> danhmuc_list
             for (var _f = 0, _g = this.s.panes; _f < _g.length; _f++) {
                 var pane = _g[_f];
                 pane.setCascadeRegen(false);
@@ -3251,6 +3868,9 @@
                     pane.s.forceViewTotal = false;
                 }
             }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         };
         /**
@@ -3262,6 +3882,12 @@
                 var pane = _a[_i];
                 if (pane.s.displayed === true) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                    // Ensure that the empty message is removed if a pane is displayed
+                    this.dom.emptyMessage.remove();
+                    this.dom.titleRow.removeClass(this.classes.hide);
+>>>>>>> danhmuc_list
 =======
                     // Ensure that the empty message is removed if a pane is displayed
                     this.dom.emptyMessage.remove();
@@ -3275,7 +3901,10 @@
         };
         /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
          * Checks which panes are collapsed and then performs relevant actions to the collapse/show all buttons
          *
          * @param pane The pane to be checked
@@ -3318,6 +3947,9 @@
             }
         };
         /**
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
          * Gets the selection list from the previous state and stores it in the selectionList Property
          */
@@ -3329,6 +3961,7 @@
         };
         /**
          * Makes all of the selections when cascade is active
+<<<<<<< HEAD
 <<<<<<< HEAD
          * @param newSelectionList the list of selections to be made, in the order they were originally selected
          */
@@ -3344,6 +3977,8 @@
                         }
                         // if there are any selections currently in the pane then deselect them as we are about to make our new selections
 =======
+=======
+>>>>>>> danhmuc_list
          *
          * @param newSelectionList the list of selections to be made, in the order they were originally selected
          */
@@ -3361,6 +3996,9 @@
                         }
                         // if there are any selections currently in the pane then
                         // deselect them as we are about to make our new selections
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                         if (pane.s.dtPane.rows({ selected: true }).data().toArray().length > 0 && pane.s.dtPane !== undefined) {
                             pane.setClear(true);
@@ -3369,6 +4007,10 @@
                         }
                         var _loop_2 = function (row) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                            var found = false;
+>>>>>>> danhmuc_list
 =======
                             var found = false;
 >>>>>>> danhmuc_list
@@ -3377,10 +4019,13 @@
                                     row !== undefined &&
                                     pane.s.dtPane.row(rowIdx).data().filter === row.filter) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                                     pane.s.dtPane.row(rowIdx).select();
                                 }
                             });
 =======
+=======
+>>>>>>> danhmuc_list
                                     found = true;
                                     pane.s.dtPane.row(rowIdx).select();
                                 }
@@ -3389,6 +4034,9 @@
                                 var newRow = pane.addRow(row.display, row.filter, 0, row.total, row.sort, row.type, row.className);
                                 newRow.select();
                             }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                         };
                         // select every row in the pane that was selected previously
@@ -3396,6 +4044,7 @@
                             var row = _a[_i];
                             _loop_2(row);
                         }
+<<<<<<< HEAD
 <<<<<<< HEAD
                         // Update the label that shows how many filters are in place
                         this_1._updateFilterCount();
@@ -3406,6 +4055,8 @@
                 // As the selections may have been made across the panes in a different order to the pane index we must identify
                 //  which pane has the index of the selection. This is also important for colreorder etc
 =======
+=======
+>>>>>>> danhmuc_list
                         pane.s.scrollTop = $$1(pane.s.dtPane.table().node()).parent()[0].scrollTop;
                         pane.s.dtPane.draw();
                         pane.s.dtPane.table().node().parentNode.scrollTop = pane.s.scrollTop;
@@ -3415,6 +4066,9 @@
                 // As the selections may have been made across the panes
                 // in a different order to the pane index we must identify
                 // which pane has the index of the selection. This is also important for colreorder etc
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                 for (var _i = 0, _a = this.s.panes; _i < _a.length; _i++) {
                     var pane = _a[_i];
@@ -3422,8 +4076,11 @@
                 }
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
             // Make sure that the state is saved after all of these selections
             this.s.dt.state.save();
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
         };
@@ -3431,7 +4088,12 @@
          * Declares the instances of individual searchpanes dependant on the number of columns.
          * It is necessary to run this once preInit has completed otherwise no panes will be
 <<<<<<< HEAD
+<<<<<<< HEAD
          *  created as the column count will be 0.
+=======
+         * created as the column count will be 0.
+         *
+>>>>>>> danhmuc_list
 =======
          * created as the column count will be 0.
          *
@@ -3460,9 +4122,13 @@
             if (this.c.order.length > 0) {
                 // Make a new Array of panes based upon the order
 <<<<<<< HEAD
+<<<<<<< HEAD
                 var newPanes = this.c.order.map(function (name, index, values) {
                     return _this._findPane(name);
                 });
+=======
+                var newPanes = this.c.order.map(function (name, index, values) { return _this._findPane(name); });
+>>>>>>> danhmuc_list
 =======
                 var newPanes = this.c.order.map(function (name, index, values) { return _this._findPane(name); });
 >>>>>>> danhmuc_list
@@ -3481,8 +4147,14 @@
             }
             else {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 // Otherwise add the paneStartup function to the list of functions that are to be run when the table is initialised
                 // This will garauntee that the panes are initialised before the init event and init Complete callback is fired
+=======
+                // Otherwise add the paneStartup function to the list of functions
+                // that are to be run when the table is initialised. This will garauntee that the
+                // panes are initialised before the init event and init Complete callback is fired
+>>>>>>> danhmuc_list
 =======
                 // Otherwise add the paneStartup function to the list of functions
                 // that are to be run when the table is initialised. This will garauntee that the
@@ -3496,6 +4168,10 @@
         /**
          * Finds a pane based upon the name of that pane
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+         *
+>>>>>>> danhmuc_list
 =======
          *
 >>>>>>> danhmuc_list
@@ -3522,14 +4198,20 @@
                 // Identify the pane where a selection or deselection has been made and add it to the list.
                 if (pane.s.selectPresent) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     this.s.selectionList.push({ index: pane.s.index, rows: pane.s.dtPane.rows({ selected: true }).data().toArray(), protect: false });
                     table.state.save();
 =======
+=======
+>>>>>>> danhmuc_list
                     this.s.selectionList.push({
                         index: pane.s.index,
                         protect: false,
                         rows: pane.s.dtPane.rows({ selected: true }).data().toArray()
                     });
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                     pane.s.selectPresent = false;
                     selectPresent = true;
@@ -3539,13 +4221,19 @@
                     var selectedData = pane.s.dtPane.rows({ selected: true }).data().toArray();
                     if (selectedData.length > 0) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                         this.s.selectionList.push({ index: pane.s.index, rows: selectedData, protect: true });
 =======
+=======
+>>>>>>> danhmuc_list
                         this.s.selectionList.push({
                             index: pane.s.index,
                             protect: true,
                             rows: selectedData
                         });
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                     }
                     selectPresent = true;
@@ -3601,7 +4289,11 @@
                 for (var _f = 0, _g = this.s.panes; _f < _g.length; _f++) {
                     var pane = _g[_f];
 <<<<<<< HEAD
+<<<<<<< HEAD
                     pane.s.lastSelect = (pane.s.index === last);
+=======
+                    pane.s.lastSelect = pane.s.index === last;
+>>>>>>> danhmuc_list
 =======
                     pane.s.lastSelect = pane.s.index === last;
 >>>>>>> danhmuc_list
@@ -3618,7 +4310,11 @@
                 }
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
             $$1(this.dom.panes).empty();
+=======
+            this.dom.panes.empty();
+>>>>>>> danhmuc_list
 =======
             this.dom.panes.empty();
 >>>>>>> danhmuc_list
@@ -3633,6 +4329,7 @@
                 }
                 // append all of the panes and enable select
 <<<<<<< HEAD
+<<<<<<< HEAD
                 $$1(this.dom.panes).append(pane.dom.container);
                 if (pane.s.dtPane !== undefined) {
                     $$1(pane.s.dtPane.table().node()).parent()[0].scrollTop = pane.s.scrollTop;
@@ -3643,6 +4340,8 @@
             if (!this.s.dt.page.info().serverSide) {
                 this.s.dt.draw();
 =======
+=======
+>>>>>>> danhmuc_list
                 this.dom.panes.append(pane.dom.container);
                 if (pane.s.dtPane !== undefined) {
                     $$1(pane.s.dtPane.table().node()).parent()[0].scrollTop = pane.s.scrollTop;
@@ -3684,12 +4383,19 @@
             for (var _i = 0, _a = this.s.panes; _i < _a.length; _i++) {
                 var pane = _a[_i];
                 pane.show();
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             }
         };
         /**
          * Initialises the tables previous/preset selections and initialises callbacks for events
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+         *
+>>>>>>> danhmuc_list
 =======
          *
 >>>>>>> danhmuc_list
@@ -3698,17 +4404,23 @@
         SearchPanes.prototype._startup = function (table) {
             var _this = this;
 <<<<<<< HEAD
+<<<<<<< HEAD
             $$1(this.dom.container).text('');
             // Attach clear button and title bar to the document
             this._attachExtras();
             $$1(this.dom.container).append(this.dom.panes);
             $$1(this.dom.panes).empty();
 =======
+=======
+>>>>>>> danhmuc_list
             this.dom.container.text('');
             // Attach clear button and title bar to the document
             this._attachExtras();
             this.dom.container.append(this.dom.panes);
             this.dom.panes.empty();
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             var loadedFilter = this.s.dt.state.loaded();
             if (this.c.viewTotal && !this.c.cascadePanes) {
@@ -3736,6 +4448,7 @@
                 var pane = _e[_d];
                 pane.rebuildPane(undefined, Object.keys(this.s.serverData).length > 0 ? this.s.serverData : undefined);
 <<<<<<< HEAD
+<<<<<<< HEAD
                 $$1(this.dom.panes).append(pane.dom.container);
             }
             // Only need to trigger a search if it is not server side processing
@@ -3746,6 +4459,8 @@
             if (!this.s.stateRead && loadedFilter !== null && loadedFilter !== undefined) {
                 this.s.dt.page((loadedFilter.start / this.s.dt.page.len()));
 =======
+=======
+>>>>>>> danhmuc_list
                 this.dom.panes.append(pane.dom.container);
             }
             // If the layout is set to auto then the panes need to be resized to their best fit
@@ -3755,6 +4470,9 @@
             // Reset the paging if that has been saved in the state
             if (!this.s.stateRead && loadedFilter !== null && loadedFilter !== undefined) {
                 this.s.dt.page(loadedFilter.start / this.s.dt.page.len());
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                 this.s.dt.draw('page');
             }
@@ -3765,6 +4483,7 @@
                     pane.updatePane();
                 }
             }
+<<<<<<< HEAD
 <<<<<<< HEAD
             this._updateFilterCount();
             this._checkMessage();
@@ -3780,6 +4499,8 @@
                 _this.s.filterPane = -1;
             });
 =======
+=======
+>>>>>>> danhmuc_list
             this._checkMessage();
             // When a draw is called on the DataTable, update all of the panes incase the data in the DataTable has changed
             table.on('preDraw.dtsps', function () {
@@ -3801,6 +4522,9 @@
             $$1(window).on('resize.dtsp', dataTable$1.util.throttle(function () {
                 _this.resizePanes();
             }));
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             // Whenever a state save occurs store the selection list in the state object
             this.s.dt.on('stateSaveParams.dtsp', function (e, settings, data) {
@@ -3810,12 +4534,15 @@
                 data.searchPanes.selectionList = _this.s.selectionList;
             });
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (this.s.dt.page.info().serverSide) {
                 table.off('page');
                 table.on('page', function () {
                     _this.s.page = _this.s.dt.page();
                 });
 =======
+=======
+>>>>>>> danhmuc_list
             // Listener for paging on main table
             table.off('page');
             table.on('page', function () {
@@ -3823,6 +4550,9 @@
                 _this.s.page = _this.s.dt.page();
             });
             if (this.s.dt.page.info().serverSide) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                 table.off('preXhr.dt');
                 table.on('preXhr.dt', function (e, settings, data) {
@@ -3830,6 +4560,12 @@
                         data.searchPanes = {};
                     }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                    if (data.searchPanes_null === undefined) {
+                        data.searchPanes_null = {};
+                    }
+>>>>>>> danhmuc_list
 =======
                     if (data.searchPanes_null === undefined) {
                         data.searchPanes_null = {};
@@ -3844,6 +4580,12 @@
                             data.searchPanes[src] = {};
                         }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                        if (data.searchPanes_null[src] === undefined) {
+                            data.searchPanes_null[src] = {};
+                        }
+>>>>>>> danhmuc_list
 =======
                         if (data.searchPanes_null[src] === undefined) {
                             data.searchPanes_null[src] = {};
@@ -3854,6 +4596,12 @@
                             for (var i = 0; i < rowData.length; i++) {
                                 data.searchPanes[src][i] = rowData[i].filter;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                                if (data.searchPanes[src][i] === null) {
+                                    data.searchPanes_null[src][i] = true;
+                                }
+>>>>>>> danhmuc_list
 =======
                                 if (data.searchPanes[src][i] === null) {
                                     data.searchPanes_null[src][i] = true;
@@ -3865,6 +4613,7 @@
                     }
                     if (_this.c.viewTotal) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                         _this._prepViewTotal();
                     }
                     // If there is a filter to be applied, then we need to read from the start of the result set
@@ -3872,6 +4621,8 @@
                     if (filterCount > 0) {
                         // If the number of filters has changed we need to read from the start of the result set and reset the paging
 =======
+=======
+>>>>>>> danhmuc_list
                         _this._prepViewTotal(filterCount);
                     }
                     // If there is a filter to be applied, then we need to read from the start of the result set
@@ -3879,6 +4630,9 @@
                     if (filterCount > 0) {
                         // If the number of filters has changed we need to read from the start of the
                         // result set and reset the paging
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                         if (filterCount !== _this.s.filterCount) {
                             data.start = 0;
@@ -3905,6 +4659,12 @@
             // so we need to rebuild the panes
             this.s.dt.on('xhr', function (e, settings, json, xhr) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                if (settings.nTable !== _this.s.dt.table().node()) {
+                    return;
+                }
+>>>>>>> danhmuc_list
 =======
                 if (settings.nTable !== _this.s.dt.table().node()) {
                     return;
@@ -3919,6 +4679,7 @@
                         var page = _this.s.dt.page();
                         processing = true;
 <<<<<<< HEAD
+<<<<<<< HEAD
                         $$1(_this.dom.panes).empty();
                         for (var _i = 0, _a = _this.s.panes; _i < _a.length; _i++) {
                             var pane = _a[_i];
@@ -3929,6 +4690,8 @@
                                 false, undefined, undefined, true);
                             $$1(_this.dom.panes).append(pane.dom.container);
 =======
+=======
+>>>>>>> danhmuc_list
                         _this.s.updating = true;
                         _this.dom.panes.empty();
                         for (var _i = 0, _a = _this.s.panes; _i < _a.length; _i++) {
@@ -3940,12 +4703,19 @@
                                 pane.s.index === _this.s.selectionList[_this.s.selectionList.length - 1].index :
                                 false, undefined, undefined, true);
                             _this.dom.panes.append(pane.dom.container);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                         }
                         if (!_this.s.dt.page.info().serverSide) {
                             _this.s.dt.draw();
                         }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                        _this.s.updating = false;
+>>>>>>> danhmuc_list
 =======
                         _this.s.updating = false;
 >>>>>>> danhmuc_list
@@ -3958,7 +4728,13 @@
                         _this._checkMessage();
                         _this.s.dt.one('draw', function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
                             _this.s.dt.page(page).draw(false);
+=======
+                            _this.s.updating = true;
+                            _this.s.dt.page(page).draw(false);
+                            _this.s.updating = false;
+>>>>>>> danhmuc_list
 =======
                             _this.s.updating = true;
                             _this.s.dt.page(page).draw(false);
@@ -3974,6 +4750,7 @@
                 if (pane !== undefined &&
                     pane.s.dtPane !== undefined &&
 <<<<<<< HEAD
+<<<<<<< HEAD
                     ((pane.s.colOpts.preSelect !== undefined && pane.s.colOpts.preSelect.length > 0) ||
                         (pane.customPaneSettings !== null &&
                             pane.customPaneSettings.preSelect !== undefined &&
@@ -3985,6 +4762,8 @@
                                 pane.customPaneSettings.preSelect !== undefined &&
                                 pane.customPaneSettings.preSelect.indexOf(pane.s.dtPane.cell(i, 0).data()) !== -1)) {
 =======
+=======
+>>>>>>> danhmuc_list
                     (pane.s.colOpts.preSelect !== undefined && pane.s.colOpts.preSelect.length > 0 ||
                         pane.customPaneSettings !== null &&
                             pane.customPaneSettings.preSelect !== undefined &&
@@ -3995,6 +4774,9 @@
                             pane.customPaneSettings !== null &&
                                 pane.customPaneSettings.preSelect !== undefined &&
                                 pane.customPaneSettings.preSelect.includes(pane.s.dtPane.cell(i, 0).data())) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                             pane.s.dtPane.row(i).select();
                         }
@@ -4007,7 +4789,11 @@
                 for (var _k = 0, _l = this.s.panes; _k < _l.length; _k++) {
                     var pane = _l[_k];
 <<<<<<< HEAD
+<<<<<<< HEAD
                     pane.s.lastSelect = (pane.s.index === last);
+=======
+                    pane.s.lastSelect = pane.s.index === last;
+>>>>>>> danhmuc_list
 =======
                     pane.s.lastSelect = pane.s.index === last;
 >>>>>>> danhmuc_list
@@ -4016,7 +4802,11 @@
             // If cascadePanes is active then make the previous selections in the order they were previously
             if (this.s.selectionList.length > 0 && this.c.cascadePanes) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 this._cascadeRegen(this.s.selectionList);
+=======
+                this._cascadeRegen(this.s.selectionList, this.s.selectionList.length);
+>>>>>>> danhmuc_list
 =======
                 this._cascadeRegen(this.s.selectionList, this.s.selectionList.length);
 >>>>>>> danhmuc_list
@@ -4031,6 +4821,7 @@
                 }
                 table.off('.dtsps');
 <<<<<<< HEAD
+<<<<<<< HEAD
                 $$1(_this.dom.clearAll).off('.dtsps');
                 $$1(_this.dom.container).remove();
                 _this.clearSelections();
@@ -4039,6 +4830,8 @@
             if (this.c.clear) {
                 $$1(this.dom.clearAll).on('click.dtsps', function () {
 =======
+=======
+>>>>>>> danhmuc_list
                 _this.dom.collapseAll.off('.dtsps');
                 _this.dom.showAll.off('.dtsps');
                 _this.dom.clearAll.off('.dtsps');
@@ -4051,19 +4844,28 @@
             // When the clear All button has been pressed clear all of the selections in the panes
             if (this.c.clear) {
                 this.dom.clearAll.on('click.dtsps', function () {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                     _this.clearSelections();
                 });
             }
             table.settings()[0]._searchPanes = this;
 <<<<<<< HEAD
+<<<<<<< HEAD
         };
         SearchPanes.prototype._prepViewTotal = function () {
 =======
+=======
+>>>>>>> danhmuc_list
             // This state save is required so that state is maintained over multiple refreshes if no actions are made
             this.s.dt.state.save();
         };
         SearchPanes.prototype._prepViewTotal = function (selectTotal) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             var filterPane = this.s.filterPane;
             var filterActive = false;
@@ -4072,7 +4874,12 @@
                 if (pane.s.dtPane !== undefined) {
                     var selectLength = pane.s.dtPane.rows({ selected: true }).data().toArray().length;
 <<<<<<< HEAD
+<<<<<<< HEAD
                     // If filterPane === -1 then a pane with a selection has not been found yet, so set filterPane to that panes index
+=======
+                    // If filterPane === -1 then a pane with a selection has not been found yet,
+                    // so set filterPane to that panes index
+>>>>>>> danhmuc_list
 =======
                     // If filterPane === -1 then a pane with a selection has not been found yet,
                     // so set filterPane to that panes index
@@ -4083,7 +4890,11 @@
                     }
                     // Then if another pane is found with a selection then set filterPane to null to
 <<<<<<< HEAD
+<<<<<<< HEAD
                     //  show that multiple panes have selections present
+=======
+                    // show that multiple panes have selections present
+>>>>>>> danhmuc_list
 =======
                     // show that multiple panes have selections present
 >>>>>>> danhmuc_list
@@ -4093,6 +4904,12 @@
                 }
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            if (selectTotal !== null && selectTotal !== 0) {
+                filterPane = null;
+            }
+>>>>>>> danhmuc_list
 =======
             if (selectTotal !== null && selectTotal !== 0) {
                 filterPane = null;
@@ -4104,7 +4921,12 @@
                 if (pane.s.dtPane !== undefined) {
                     pane.s.filteringActive = true;
 <<<<<<< HEAD
+<<<<<<< HEAD
                     if ((filterPane !== -1 && filterPane !== null && filterPane === pane.s.index) || filterActive === false) {
+=======
+                    if (filterPane !== -1 && filterPane !== null && filterPane === pane.s.index ||
+                        filterActive === false) {
+>>>>>>> danhmuc_list
 =======
                     if (filterPane !== -1 && filterPane !== null && filterPane === pane.s.index ||
                         filterActive === false) {
@@ -4128,12 +4950,15 @@
             }
             // Run the message through the internationalisation method to improve readability
 <<<<<<< HEAD
+<<<<<<< HEAD
             var message = this.s.dt.i18n('searchPanes.title', 'Filters Active - %d', filterCount);
             $$1(this.dom.title).text(message);
             if (this.c.filterChanged !== undefined && typeof this.c.filterChanged === 'function') {
                 this.c.filterChanged.call(this.s.dt, filterCount);
             }
 =======
+=======
+>>>>>>> danhmuc_list
             var message = this.s.dt.i18n('searchPanes.title', this.c.i18n.title, filterCount);
             this.dom.title.text(message);
             if (this.c.filterChanged !== undefined && typeof this.c.filterChanged === 'function') {
@@ -4145,6 +4970,9 @@
             else {
                 this.dom.clearAll.removeClass(this.classes.disabledButton).removeAttr('disabled');
             }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         };
         /**
@@ -4155,6 +4983,7 @@
             for (var _i = 0, _a = this.s.panes; _i < _a.length; _i++) {
                 var pane = _a[_i];
                 if (pane.s.dtPane !== undefined) {
+<<<<<<< HEAD
 <<<<<<< HEAD
                     this.s.selectionList.push({ index: pane.s.index, rows: pane.s.dtPane.rows({ selected: true }).data().toArray(), protect: false });
                 }
@@ -4167,6 +4996,8 @@
             clearAll: 'dtsp-clearAll',
             container: 'dtsp-searchPanes',
 =======
+=======
+>>>>>>> danhmuc_list
                     this.s.selectionList.push({
                         index: pane.s.index,
                         protect: false,
@@ -4182,12 +5013,19 @@
             collapseAll: 'dtsp-collapseAll',
             container: 'dtsp-searchPanes',
             disabledButton: 'dtsp-disabledButton',
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             emptyMessage: 'dtsp-emptyMessage',
             hide: 'dtsp-hidden',
             panes: 'dtsp-panesContainer',
             search: 'dtsp-search',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            showAll: 'dtsp-showAll',
+>>>>>>> danhmuc_list
 =======
             showAll: 'dtsp-showAll',
 >>>>>>> danhmuc_list
@@ -4199,6 +5037,7 @@
             cascadePanes: false,
             clear: true,
 <<<<<<< HEAD
+<<<<<<< HEAD
             container: function (dt) {
                 return dt.table().container();
             },
@@ -4206,6 +5045,8 @@
             filterChanged: undefined,
             layout: 'columns-3',
 =======
+=======
+>>>>>>> danhmuc_list
             collapse: true,
             columns: [],
             container: function (dt) {
@@ -4229,6 +5070,9 @@
                 title: 'Filters Active - %d'
             },
             layout: 'auto',
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             order: [],
             panes: [],
@@ -4238,7 +5082,11 @@
     }());
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     /*! SearchPanes 1.2.1
+=======
+    /*! SearchPanes 1.4.0
+>>>>>>> danhmuc_list
 =======
     /*! SearchPanes 1.4.0
 >>>>>>> danhmuc_list
@@ -4262,6 +5110,10 @@
                 }
                 if (!$ || !$.fn.dataTable) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                    // eslint-disable-next-line @typescript-eslint/no-var-requires
+>>>>>>> danhmuc_list
 =======
                     // eslint-disable-next-line @typescript-eslint/no-var-requires
 >>>>>>> danhmuc_list
@@ -4273,6 +5125,10 @@
         else {
             // Browser - assume jQuery has already been loaded
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            // eslint-disable-next-line no-extra-parens
+>>>>>>> danhmuc_list
 =======
             // eslint-disable-next-line no-extra-parens
 >>>>>>> danhmuc_list
@@ -4282,12 +5138,15 @@
         setJQuery($);
         setJQuery$1($);
 <<<<<<< HEAD
+<<<<<<< HEAD
         var DataTable = $.fn.dataTable;
         $.fn.dataTable.SearchPanes = SearchPanes;
         $.fn.DataTable.SearchPanes = SearchPanes;
         $.fn.dataTable.SearchPane = SearchPane;
         $.fn.DataTable.SearchPane = SearchPane;
 =======
+=======
+>>>>>>> danhmuc_list
         var dataTable = $.fn.dataTable;
         // eslint-disable-next-line no-extra-parens
         $.fn.dataTable.SearchPanes = SearchPanes;
@@ -4298,6 +5157,9 @@
         // eslint-disable-next-line no-extra-parens
         $.fn.DataTable.SearchPane = SearchPane;
         // eslint-disable-next-line no-extra-parens
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         var apiRegister = $.fn.dataTable.Api.register;
         apiRegister('searchPanes()', function () {
@@ -4318,13 +5180,19 @@
             });
         });
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
         apiRegister('searchPanes.resizePanes()', function () {
             var ctx = this.context[0];
             return ctx._searchPanes ?
                 ctx._searchPanes.resizePanes() :
                 null;
         });
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         apiRegister('searchPanes.container()', function () {
             var ctx = this.context[0];
@@ -4334,15 +5202,21 @@
         });
         $.fn.dataTable.ext.buttons.searchPanesClear = {
 <<<<<<< HEAD
+<<<<<<< HEAD
             text: 'Clear Panes',
             action: function (e, dt, node, config) {
                 dt.searchPanes.clearSelections();
             }
 =======
+=======
+>>>>>>> danhmuc_list
             action: function (e, dt, node, config) {
                 dt.searchPanes.clearSelections();
             },
             text: 'Clear Panes'
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         };
         $.fn.dataTable.ext.buttons.searchPanes = {
@@ -4358,11 +5232,14 @@
                 var panes = new $.fn.dataTable.SearchPanes(dt, $.extend({
                     filterChanged: function (count) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                         dt.button(node).text(dt.i18n('searchPanes.collapse', { 0: 'SearchPanes', _: 'SearchPanes (%d)' }, count));
                     }
                 }, config.config));
                 var message = dt.i18n('searchPanes.collapse', 'SearchPanes', 0);
 =======
+=======
+>>>>>>> danhmuc_list
                         // console.log(dt.context[0])
                         dt.button(node).text(dt.i18n('searchPanes.collapse', dt.context[0].oLanguage.searchPanes !== undefined ?
                             dt.context[0].oLanguage.searchPanes.collapse :
@@ -4370,6 +5247,9 @@
                     }
                 }, config.config));
                 var message = dt.i18n('searchPanes.collapse', panes.c.i18n.collapse, 0);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                 dt.button(node).text(message);
                 config._panes = panes;
@@ -4377,11 +5257,14 @@
             text: 'Search Panes'
         };
 <<<<<<< HEAD
+<<<<<<< HEAD
         function _init(settings, fromPre) {
             if (fromPre === void 0) { fromPre = false; }
             var api = new DataTable.Api(settings);
             var opts = api.init().searchPanes || DataTable.defaults.searchPanes;
 =======
+=======
+>>>>>>> danhmuc_list
         function _init(settings, options, fromPre) {
             if (options === void 0) { options = null; }
             if (fromPre === void 0) { fromPre = false; }
@@ -4389,6 +5272,9 @@
             var opts = options
                 ? options
                 : api.init().searchPanes || dataTable.defaults.searchPanes;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             var searchPanes = new SearchPanes(api, opts, fromPre);
             var node = searchPanes.getNode();
@@ -4402,9 +5288,15 @@
             }
             if (settings.oInit.searchPanes ||
 <<<<<<< HEAD
+<<<<<<< HEAD
                 DataTable.defaults.searchPanes) {
                 if (!settings._searchPanes) {
                     _init(settings, true);
+=======
+                dataTable.defaults.searchPanes) {
+                if (!settings._searchPanes) {
+                    _init(settings, null, true);
+>>>>>>> danhmuc_list
 =======
                 dataTable.defaults.searchPanes) {
                 if (!settings._searchPanes) {
@@ -4415,7 +5307,11 @@
         });
         // DataTables `dom` feature option
 <<<<<<< HEAD
+<<<<<<< HEAD
         DataTable.ext.feature.push({
+=======
+        dataTable.ext.feature.push({
+>>>>>>> danhmuc_list
 =======
         dataTable.ext.feature.push({
 >>>>>>> danhmuc_list
@@ -4424,8 +5320,13 @@
         });
         // DataTables 2 layout feature
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (DataTable.ext.features) {
             DataTable.ext.features.register('searchPanes', _init);
+=======
+        if (dataTable.ext.features) {
+            dataTable.ext.features.register('searchPanes', _init);
+>>>>>>> danhmuc_list
 =======
         if (dataTable.ext.features) {
             dataTable.ext.features.register('searchPanes', _init);

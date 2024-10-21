@@ -138,7 +138,10 @@ DataTable.ext.buttons.print = {
 		// Open a new window for the printable table
 		var win = window.open( '', '' );
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 
 		if (! win) {
 			dt.buttons.info(
@@ -150,6 +153,9 @@ DataTable.ext.buttons.print = {
 			return;
 		}
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		win.document.close();
 

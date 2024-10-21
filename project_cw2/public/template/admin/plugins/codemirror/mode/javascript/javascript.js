@@ -17,6 +17,10 @@ CodeMirror.defineMode("javascript", function(config, parserConfig) {
   var jsonldMode = parserConfig.jsonld;
   var jsonMode = parserConfig.json || jsonldMode;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  var trackScope = parserConfig.trackScope !== false
+>>>>>>> danhmuc_list
 =======
   var trackScope = parserConfig.trackScope !== false
 >>>>>>> danhmuc_list
@@ -236,6 +240,10 @@ CodeMirror.defineMode("javascript", function(config, parserConfig) {
 
   function inScope(state, varname) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    if (!trackScope) return false
+>>>>>>> danhmuc_list
 =======
     if (!trackScope) return false
 >>>>>>> danhmuc_list
@@ -286,6 +294,10 @@ CodeMirror.defineMode("javascript", function(config, parserConfig) {
     var state = cx.state;
     cx.marked = "def";
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    if (!trackScope) return
+>>>>>>> danhmuc_list
 =======
     if (!trackScope) return
 >>>>>>> danhmuc_list
@@ -340,6 +352,10 @@ CodeMirror.defineMode("javascript", function(config, parserConfig) {
     cx.state.localVars = null
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  pushcontext.lex = pushblockcontext.lex = true
+>>>>>>> danhmuc_list
 =======
   pushcontext.lex = pushblockcontext.lex = true
 >>>>>>> danhmuc_list
@@ -393,7 +409,11 @@ CodeMirror.defineMode("javascript", function(config, parserConfig) {
     }
     if (type == "function") return cont(functiondef);
 <<<<<<< HEAD
+<<<<<<< HEAD
     if (type == "for") return cont(pushlex("form"), forspec, statement, poplex);
+=======
+    if (type == "for") return cont(pushlex("form"), pushblockcontext, forspec, statement, popcontext, poplex);
+>>>>>>> danhmuc_list
 =======
     if (type == "for") return cont(pushlex("form"), pushblockcontext, forspec, statement, popcontext, poplex);
 >>>>>>> danhmuc_list
@@ -500,7 +520,11 @@ CodeMirror.defineMode("javascript", function(config, parserConfig) {
     if (type != "quasi") return pass();
     if (value.slice(value.length - 2) != "${") return cont(quasi);
 <<<<<<< HEAD
+<<<<<<< HEAD
     return cont(expression, continueQuasi);
+=======
+    return cont(maybeexpression, continueQuasi);
+>>>>>>> danhmuc_list
 =======
     return cont(maybeexpression, continueQuasi);
 >>>>>>> danhmuc_list
@@ -644,6 +668,10 @@ CodeMirror.defineMode("javascript", function(config, parserConfig) {
     if (type == "(") return cont(commasep(typearg, ")"), maybeReturnType, afterType)
     if (type == "<") return cont(commasep(typeexpr, ">"), typeexpr)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    if (type == "quasi") { return pass(quasiType, afterType); }
+>>>>>>> danhmuc_list
 =======
     if (type == "quasi") { return pass(quasiType, afterType); }
 >>>>>>> danhmuc_list
@@ -673,7 +701,10 @@ CodeMirror.defineMode("javascript", function(config, parserConfig) {
     }
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
   function quasiType(type, value) {
     if (type != "quasi") return pass();
     if (value.slice(value.length - 2) != "${") return cont(quasiType);
@@ -686,6 +717,9 @@ CodeMirror.defineMode("javascript", function(config, parserConfig) {
       return cont(quasiType);
     }
   }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   function typearg(type, value) {
     if (type == "variable" && cx.stream.match(/^\s*[?:]/, false) || value == "?") return cont(typearg)
@@ -827,6 +861,10 @@ CodeMirror.defineMode("javascript", function(config, parserConfig) {
   }
   function classfield(type, value) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    if (value == "!") return cont(classfield)
+>>>>>>> danhmuc_list
 =======
     if (value == "!") return cont(classfield)
 >>>>>>> danhmuc_list
@@ -931,7 +969,11 @@ CodeMirror.defineMode("javascript", function(config, parserConfig) {
         var c = state.cc[i];
         if (c == poplex) lexical = lexical.prev;
 <<<<<<< HEAD
+<<<<<<< HEAD
         else if (c != maybeelse) break;
+=======
+        else if (c != maybeelse && c != popcontext) break;
+>>>>>>> danhmuc_list
 =======
         else if (c != maybeelse && c != popcontext) break;
 >>>>>>> danhmuc_list
@@ -972,8 +1014,12 @@ CodeMirror.defineMode("javascript", function(config, parserConfig) {
 
     skipExpression: function(state) {
 <<<<<<< HEAD
+<<<<<<< HEAD
       var top = state.cc[state.cc.length - 1]
       if (top == expression || top == expressionNoComma) state.cc.pop()
+=======
+      parseJS(state, "atom", "atom", "true", new CodeMirror.StringStream("", 2, null))
+>>>>>>> danhmuc_list
 =======
       parseJS(state, "atom", "atom", "true", new CodeMirror.StringStream("", 2, null))
 >>>>>>> danhmuc_list

@@ -73,7 +73,11 @@ return [
     */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     'connection' => env('SESSION_CONNECTION', null),
+=======
+    'connection' => env('SESSION_CONNECTION'),
+>>>>>>> danhmuc_list
 =======
     'connection' => env('SESSION_CONNECTION'),
 >>>>>>> danhmuc_list
@@ -105,7 +109,11 @@ return [
     */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     'store' => env('SESSION_STORE', null),
+=======
+    'store' => env('SESSION_STORE'),
+>>>>>>> danhmuc_list
 =======
     'store' => env('SESSION_STORE'),
 >>>>>>> danhmuc_list
@@ -164,7 +172,11 @@ return [
     */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     'domain' => env('SESSION_DOMAIN', null),
+=======
+    'domain' => env('SESSION_DOMAIN'),
+>>>>>>> danhmuc_list
 =======
     'domain' => env('SESSION_DOMAIN'),
 >>>>>>> danhmuc_list

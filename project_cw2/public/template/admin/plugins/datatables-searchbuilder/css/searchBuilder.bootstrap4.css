@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 div.dt-datetime {
   position: absolute;
   background-color: white;
@@ -209,6 +210,8 @@ div.dt-datetime-error {
 div.dt-button-collection {
   overflow: visible !important;
 =======
+=======
+>>>>>>> danhmuc_list
 div.dt-button-collection {
   overflow: visible !important;
   z-index: 2002 !important;
@@ -221,6 +224,9 @@ div.dt-button-collection div.dtsb-searchBuilder {
 
 div.dt-button-collection.dtb-collection-closeable div.dtsb-titleRow {
   padding-right: 40px;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 }
 
@@ -251,6 +257,12 @@ div.dtsb-searchBuilder div.dtsb-titleRow div.dtsb-title {
   padding-top: 6px;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+div.dtsb-searchBuilder div.dtsb-titleRow div.dtsb-title:empty {
+  display: inline;
+}
+>>>>>>> danhmuc_list
 =======
 div.dtsb-searchBuilder div.dtsb-titleRow div.dtsb-title:empty {
   display: inline;
@@ -292,6 +304,10 @@ div.dtsb-searchBuilder div.dtsb-group div.dtsb-criteria input.dtsb-input {
   margin-right: 0.8em;
   max-width: 20em;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  background-color: rgba(200, 200, 200, 0.3);
+>>>>>>> danhmuc_list
 =======
   background-color: rgba(200, 200, 200, 0.3);
 >>>>>>> danhmuc_list
@@ -355,7 +371,11 @@ div.dtsb-searchBuilder div.dtsb-group div.dtsb-logicContainer button.dtsb-logic 
   flex-grow: 1;
   flex-shrink: 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
   flex-basis: 40px;
+=======
+  flex-basis: 3em;
+>>>>>>> danhmuc_list
 =======
   flex-basis: 3em;
 >>>>>>> danhmuc_list
@@ -365,10 +385,13 @@ div.dtsb-searchBuilder div.dtsb-group div.dtsb-logicContainer button.dtsb-clearG
   border: none;
   border-radius: 0px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   width: 30px;
   margin: 0px;
 }
 =======
+=======
+>>>>>>> danhmuc_list
   width: 2em;
   margin: 0px;
 }
@@ -377,4 +400,7 @@ div.dt-button-collection div.dtsb-searchBuilder {
   padding-left: 10px;
   padding-right: 10px;
 }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list

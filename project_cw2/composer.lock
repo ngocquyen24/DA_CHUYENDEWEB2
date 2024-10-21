@@ -7,6 +7,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "content-hash": "c61ff82cbf0142a401a48a8161e1595a",
 =======
     "content-hash": "fc5e8b2ec2be6e91b46b1c4049573244",
@@ -77,6 +78,11 @@
     "packages": [
         {
 >>>>>>> danhmuc_list
+=======
+    "content-hash": "bfe12996eeecb6fdc8713a9fd9d431f8",
+    "packages": [
+        {
+>>>>>>> danhmuc_list
             "name": "brick/math",
             "version": "0.12.1",
             "source": {
@@ -139,6 +145,7 @@
         {
             "name": "carbonphp/carbon-doctrine-types",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "version": "3.2.0",
             "source": {
                 "type": "git",
@@ -160,6 +167,8 @@
             "require-dev": {
                 "doctrine/dbal": "^4.0.0",
 =======
+=======
+>>>>>>> danhmuc_list
             "version": "2.1.0",
             "source": {
                 "type": "git",
@@ -180,6 +189,9 @@
             },
             "require-dev": {
                 "doctrine/dbal": "^3.7.0",
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                 "nesbot/carbon": "^2.71.0 || ^3.0.0",
                 "phpunit/phpunit": "^10.3"
@@ -211,7 +223,11 @@
             "support": {
                 "issues": "https://github.com/CarbonPHP/carbon-doctrine-types/issues",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/CarbonPHP/carbon-doctrine-types/tree/3.2.0"
+=======
+                "source": "https://github.com/CarbonPHP/carbon-doctrine-types/tree/2.1.0"
+>>>>>>> danhmuc_list
 =======
                 "source": "https://github.com/CarbonPHP/carbon-doctrine-types/tree/2.1.0"
 >>>>>>> danhmuc_list
@@ -230,6 +246,7 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
             "time": "2024-02-09T16:56:22+00:00"
         },
@@ -252,10 +269,15 @@
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> danhmuc_list
             "time": "2023-12-11T17:09:12+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             "version": "v3.0.2",
             "source": {
@@ -268,9 +290,12 @@
                 "url": "https://api.github.com/repos/dflydev/dflydev-dot-access-data/zipball/f41715465d65213d644d3141a6a93081be5d3549",
                 "reference": "f41715465d65213d644d3141a6a93081be5d3549",
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/them_slide
 =======
 >>>>>>> Login_Register
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
                 "shasum": ""
@@ -335,6 +360,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/dflydev/dflydev-dot-access-data/tree/v3.0.3"
             },
             "time": "2024-07-08T12:26:09+00:00"
@@ -348,6 +374,11 @@
             },
             "time": "2024-07-08T12:26:09+00:00"
 >>>>>>> Login_Register
+=======
+                "source": "https://github.com/dflydev/dflydev-dot-access-data/tree/v3.0.2"
+            },
+            "time": "2022-10-27T11:44:00+00:00"
+>>>>>>> danhmuc_list
 =======
                 "source": "https://github.com/dflydev/dflydev-dot-access-data/tree/v3.0.2"
             },
@@ -448,6 +479,7 @@
         {
             "name": "doctrine/lexer",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "version": "1.2.3",
             "source": {
                 "type": "git",
@@ -469,6 +501,8 @@
                 "phpunit/phpunit": "^7.5 || ^8.5 || ^9.5",
                 "vimeo/psalm": "^4.11"
 =======
+=======
+>>>>>>> danhmuc_list
             "version": "3.0.1",
             "source": {
                 "type": "git",
@@ -490,13 +524,20 @@
                 "phpunit/phpunit": "^10.5",
                 "psalm/plugin-phpunit": "^0.18.3",
                 "vimeo/psalm": "^5.21"
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "Doctrine\\Common\\Lexer\\": "lib/Doctrine/Common/Lexer"
+=======
+                    "Doctrine\\Common\\Lexer\\": "src"
+>>>>>>> danhmuc_list
 =======
                     "Doctrine\\Common\\Lexer\\": "src"
 >>>>>>> danhmuc_list
@@ -532,7 +573,11 @@
             "support": {
                 "issues": "https://github.com/doctrine/lexer/issues",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/doctrine/lexer/tree/1.2.3"
+=======
+                "source": "https://github.com/doctrine/lexer/tree/3.0.1"
+>>>>>>> danhmuc_list
 =======
                 "source": "https://github.com/doctrine/lexer/tree/3.0.1"
 >>>>>>> danhmuc_list
@@ -551,6 +596,7 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
             "time": "2022-02-28T11:07:21+00:00"
         },
@@ -573,10 +619,15 @@
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> danhmuc_list
             "time": "2024-02-05T11:56:58+00:00"
         },
         {
             "name": "dragonmantank/cron-expression",
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             "version": "v3.3.3",
             "source": {
@@ -589,9 +640,12 @@
                 "url": "https://api.github.com/repos/dragonmantank/cron-expression/zipball/adfb1f505deb6384dc8b39804c5065dd3c8c8c0a",
                 "reference": "adfb1f505deb6384dc8b39804c5065dd3c8c8c0a",
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/them_slide
 =======
 >>>>>>> Login_Register
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
                 "shasum": ""
@@ -609,6 +663,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Login_Register
                 "phpunit/phpunit": "^7.0|^8.0|^9.0"
@@ -623,14 +678,19 @@
 =======
 =======
 >>>>>>> danhmuc_list
+=======
+>>>>>>> danhmuc_list
                 "phpstan/phpstan-webmozart-assert": "^1.0",
                 "phpunit/phpunit": "^7.0|^8.0|^9.0"
             },
             "type": "library",
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/them_slide
 =======
 >>>>>>> Login_Register
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
             "autoload": {
@@ -659,6 +719,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/dragonmantank/cron-expression/tree/v3.4.0"
 =======
                 "source": "https://github.com/dragonmantank/cron-expression/tree/v3.3.3"
@@ -669,6 +730,9 @@
 =======
                 "source": "https://github.com/dragonmantank/cron-expression/tree/v3.3.3"
 >>>>>>> danhmuc_list
+=======
+                "source": "https://github.com/dragonmantank/cron-expression/tree/v3.3.3"
+>>>>>>> danhmuc_list
             },
             "funding": [
                 {
@@ -676,6 +740,7 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -711,6 +776,8 @@
                 "phpunit/phpunit": "^4.8.36|^7.5.15",
                 "satooshi/php-coveralls": "^1.0.1"
 =======
+=======
+>>>>>>> danhmuc_list
             "time": "2023-08-10T19:36:49+00:00"
         },
         {
@@ -735,6 +802,9 @@
             "require-dev": {
                 "phpunit/phpunit": "^10.2",
                 "vimeo/psalm": "^5.12"
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             },
             "suggest": {
@@ -744,7 +814,11 @@
             "extra": {
                 "branch-alias": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "dev-master": "2.1.x-dev"
+=======
+                    "dev-master": "4.0.x-dev"
+>>>>>>> danhmuc_list
 =======
                     "dev-master": "4.0.x-dev"
 >>>>>>> danhmuc_list
@@ -776,7 +850,11 @@
             "support": {
                 "issues": "https://github.com/egulias/EmailValidator/issues",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/egulias/EmailValidator/tree/2.1.25"
+=======
+                "source": "https://github.com/egulias/EmailValidator/tree/4.0.2"
+>>>>>>> danhmuc_list
 =======
                 "source": "https://github.com/egulias/EmailValidator/tree/4.0.2"
 >>>>>>> danhmuc_list
@@ -787,6 +865,7 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
             "time": "2020-12-29T14:50:06+00:00"
         },
@@ -879,6 +958,8 @@
                 "orchestra/testbench-dusk": "^4|^5|^6|^7",
                 "phpunit/phpunit": "^6|^7|^8|^9",
 =======
+=======
+>>>>>>> danhmuc_list
             "time": "2023-10-06T06:47:41+00:00"
         },
         {
@@ -902,6 +983,9 @@
             "require-dev": {
                 "phpstan/phpstan": "^1.4",
                 "phpunit/phpunit": "^9",
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                 "squizlabs/php_codesniffer": "^3.5"
             },
@@ -909,12 +993,16 @@
             "extra": {
                 "branch-alias": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "dev-master": "2.1-dev"
                 },
                 "laravel": {
                     "providers": [
                         "Fruitcake\\Cors\\CorsServiceProvider"
                     ]
+=======
+                    "dev-master": "1.2-dev"
+>>>>>>> danhmuc_list
 =======
                     "dev-master": "1.2-dev"
 >>>>>>> danhmuc_list
@@ -936,6 +1024,7 @@
                 },
                 {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "name": "Barry vd. Heuvel",
                     "email": "barryvdh@gmail.com"
                 }
@@ -951,6 +1040,8 @@
                 "issues": "https://github.com/fruitcake/laravel-cors/issues",
                 "source": "https://github.com/fruitcake/laravel-cors/tree/v2.2.0"
 =======
+=======
+>>>>>>> danhmuc_list
                     "name": "Barryvdh",
                     "email": "barryvdh@gmail.com"
                 }
@@ -965,6 +1056,9 @@
             "support": {
                 "issues": "https://github.com/fruitcake/php-cors/issues",
                 "source": "https://github.com/fruitcake/php-cors/tree/v1.3.0"
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             },
             "funding": [
@@ -977,6 +1071,7 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
             "abandoned": true,
             "time": "2022-02-23T14:25:13+00:00"
@@ -1000,10 +1095,15 @@
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> danhmuc_list
             "time": "2023-10-12T05:21:21+00:00"
         },
         {
             "name": "graham-campbell/result-type",
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             "version": "v1.1.2",
             "source": {
@@ -1016,15 +1116,19 @@
                 "url": "https://api.github.com/repos/GrahamCampbell/Result-Type/zipball/fbd48bce38f73f8a4ec8583362e732e4095e5862",
                 "reference": "fbd48bce38f73f8a4ec8583362e732e4095e5862",
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/them_slide
 =======
 >>>>>>> Login_Register
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
                 "shasum": ""
             },
             "require": {
                 "php": "^7.2.5 || ^8.0",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1038,14 +1142,19 @@
 =======
 =======
 >>>>>>> danhmuc_list
+=======
+>>>>>>> danhmuc_list
                 "phpoption/phpoption": "^1.9.2"
             },
             "require-dev": {
                 "phpunit/phpunit": "^8.5.34 || ^9.6.13 || ^10.4.2"
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/them_slide
 =======
 >>>>>>> Login_Register
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
             },
@@ -1079,6 +1188,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/GrahamCampbell/Result-Type/tree/v1.1.3"
 =======
                 "source": "https://github.com/GrahamCampbell/Result-Type/tree/v1.1.2"
@@ -1086,6 +1196,9 @@
 =======
                 "source": "https://github.com/GrahamCampbell/Result-Type/tree/v1.1.3"
 >>>>>>> Login_Register
+=======
+                "source": "https://github.com/GrahamCampbell/Result-Type/tree/v1.1.2"
+>>>>>>> danhmuc_list
 =======
                 "source": "https://github.com/GrahamCampbell/Result-Type/tree/v1.1.2"
 >>>>>>> danhmuc_list
@@ -1100,6 +1213,7 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1123,6 +1237,8 @@
 =======
 =======
 >>>>>>> danhmuc_list
+=======
+>>>>>>> danhmuc_list
             "time": "2023-11-12T22:16:48+00:00"
         },
         {
@@ -1138,15 +1254,19 @@
                 "url": "https://api.github.com/repos/guzzle/guzzle/zipball/41042bc7ab002487b876a0683fc8dce04ddce104",
                 "reference": "41042bc7ab002487b876a0683fc8dce04ddce104",
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/them_slide
 =======
 >>>>>>> Login_Register
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1160,6 +1280,10 @@
                 "guzzlehttp/promises": "^1.5.3 || ^2.0.3",
                 "guzzlehttp/psr7": "^2.7.0",
 >>>>>>> Login_Register
+=======
+                "guzzlehttp/promises": "^1.5.3 || ^2.0.1",
+                "guzzlehttp/psr7": "^1.9.1 || ^2.5.1",
+>>>>>>> danhmuc_list
 =======
                 "guzzlehttp/promises": "^1.5.3 || ^2.0.1",
                 "guzzlehttp/psr7": "^1.9.1 || ^2.5.1",
@@ -1177,6 +1301,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "guzzle/client-integration-tests": "3.0.2",
                 "php-http/message-factory": "^1.1",
                 "phpunit/phpunit": "^8.5.39 || ^9.6.20",
@@ -1190,6 +1315,11 @@
                 "php-http/message-factory": "^1.1",
                 "phpunit/phpunit": "^8.5.39 || ^9.6.20",
 >>>>>>> Login_Register
+=======
+                "php-http/client-integration-tests": "dev-master#2c025848417c1135031fdf9c728ee53d0a7ceaee as 3.0.999",
+                "php-http/message-factory": "^1.1",
+                "phpunit/phpunit": "^8.5.36 || ^9.6.15",
+>>>>>>> danhmuc_list
 =======
                 "php-http/client-integration-tests": "dev-master#2c025848417c1135031fdf9c728ee53d0a7ceaee as 3.0.999",
                 "php-http/message-factory": "^1.1",
@@ -1275,6 +1405,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/guzzle/guzzle/tree/7.9.2"
 =======
                 "source": "https://github.com/guzzle/guzzle/tree/7.8.1"
@@ -1282,6 +1413,9 @@
 =======
                 "source": "https://github.com/guzzle/guzzle/tree/7.9.2"
 >>>>>>> Login_Register
+=======
+                "source": "https://github.com/guzzle/guzzle/tree/7.8.1"
+>>>>>>> danhmuc_list
 =======
                 "source": "https://github.com/guzzle/guzzle/tree/7.8.1"
 >>>>>>> danhmuc_list
@@ -1300,6 +1434,7 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1323,6 +1458,8 @@
 =======
 =======
 >>>>>>> danhmuc_list
+=======
+>>>>>>> danhmuc_list
             "time": "2023-12-03T20:35:24+00:00"
         },
         {
@@ -1338,9 +1475,12 @@
                 "url": "https://api.github.com/repos/guzzle/promises/zipball/bbff78d96034045e58e13dedd6ad91b5d1253223",
                 "reference": "bbff78d96034045e58e13dedd6ad91b5d1253223",
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/them_slide
 =======
 >>>>>>> Login_Register
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
                 "shasum": ""
@@ -1353,6 +1493,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "phpunit/phpunit": "^8.5.39 || ^9.6.20"
 =======
                 "phpunit/phpunit": "^8.5.36 || ^9.6.15"
@@ -1360,6 +1501,9 @@
 =======
                 "phpunit/phpunit": "^8.5.39 || ^9.6.20"
 >>>>>>> Login_Register
+=======
+                "phpunit/phpunit": "^8.5.36 || ^9.6.15"
+>>>>>>> danhmuc_list
 =======
                 "phpunit/phpunit": "^8.5.36 || ^9.6.15"
 >>>>>>> danhmuc_list
@@ -1411,6 +1555,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/guzzle/promises/tree/2.0.4"
 =======
                 "source": "https://github.com/guzzle/promises/tree/2.0.2"
@@ -1418,6 +1563,9 @@
 =======
                 "source": "https://github.com/guzzle/promises/tree/2.0.4"
 >>>>>>> Login_Register
+=======
+                "source": "https://github.com/guzzle/promises/tree/2.0.2"
+>>>>>>> danhmuc_list
 =======
                 "source": "https://github.com/guzzle/promises/tree/2.0.2"
 >>>>>>> danhmuc_list
@@ -1436,6 +1584,7 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1459,6 +1608,8 @@
 =======
 =======
 >>>>>>> danhmuc_list
+=======
+>>>>>>> danhmuc_list
             "time": "2023-12-03T20:19:20+00:00"
         },
         {
@@ -1474,9 +1625,12 @@
                 "url": "https://api.github.com/repos/guzzle/psr7/zipball/45b30f99ac27b5ca93cb4831afe16285f57b8221",
                 "reference": "45b30f99ac27b5ca93cb4831afe16285f57b8221",
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/them_slide
 =======
 >>>>>>> Login_Register
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
                 "shasum": ""
@@ -1496,6 +1650,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "http-interop/http-factory-tests": "0.9.0",
                 "phpunit/phpunit": "^8.5.39 || ^9.6.20"
 =======
@@ -1506,6 +1661,10 @@
                 "http-interop/http-factory-tests": "0.9.0",
                 "phpunit/phpunit": "^8.5.39 || ^9.6.20"
 >>>>>>> Login_Register
+=======
+                "http-interop/http-factory-tests": "^0.9",
+                "phpunit/phpunit": "^8.5.36 || ^9.6.15"
+>>>>>>> danhmuc_list
 =======
                 "http-interop/http-factory-tests": "^0.9",
                 "phpunit/phpunit": "^8.5.36 || ^9.6.15"
@@ -1583,6 +1742,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/guzzle/psr7/tree/2.7.0"
 =======
                 "source": "https://github.com/guzzle/psr7/tree/2.6.2"
@@ -1590,6 +1750,9 @@
 =======
                 "source": "https://github.com/guzzle/psr7/tree/2.7.0"
 >>>>>>> Login_Register
+=======
+                "source": "https://github.com/guzzle/psr7/tree/2.6.2"
+>>>>>>> danhmuc_list
 =======
                 "source": "https://github.com/guzzle/psr7/tree/2.6.2"
 >>>>>>> danhmuc_list
@@ -1608,6 +1771,7 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1672,6 +1836,8 @@
                 "psr/container-implementation": "1.0",
                 "psr/simple-cache-implementation": "1.0"
 =======
+=======
+>>>>>>> danhmuc_list
             "time": "2023-12-03T20:05:35+00:00"
         },
         {
@@ -1826,6 +1992,9 @@
             "provide": {
                 "psr/container-implementation": "1.1|2.0",
                 "psr/simple-cache-implementation": "1.0|2.0|3.0"
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             },
             "replace": {
@@ -1835,6 +2004,10 @@
                 "illuminate/cache": "self.version",
                 "illuminate/collections": "self.version",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                "illuminate/conditionable": "self.version",
+>>>>>>> danhmuc_list
 =======
                 "illuminate/conditionable": "self.version",
 >>>>>>> danhmuc_list
@@ -1856,6 +2029,10 @@
                 "illuminate/pagination": "self.version",
                 "illuminate/pipeline": "self.version",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                "illuminate/process": "self.version",
+>>>>>>> danhmuc_list
 =======
                 "illuminate/process": "self.version",
 >>>>>>> danhmuc_list
@@ -1870,6 +2047,7 @@
                 "illuminate/view": "self.version"
             },
             "require-dev": {
+<<<<<<< HEAD
 <<<<<<< HEAD
                 "aws/aws-sdk-php": "^3.198.1",
                 "doctrine/dbal": "^2.13.3|^3.1.4",
@@ -1894,6 +2072,8 @@
                 "ext-memcached": "Required to use the memcache cache driver.",
                 "ext-pcntl": "Required to use all features of the queue worker.",
 =======
+=======
+>>>>>>> danhmuc_list
                 "ably/ably-php": "^1.0",
                 "aws/aws-sdk-php": "^3.235.5",
                 "doctrine/dbal": "^3.5.1",
@@ -1928,11 +2108,15 @@
                 "ext-memcached": "Required to use the memcache cache driver.",
                 "ext-pcntl": "Required to use all features of the queue worker and console signal trapping.",
                 "ext-pdo": "Required to use all database features.",
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                 "ext-posix": "Required to use all features of the queue worker.",
                 "ext-redis": "Required to use the Redis cache and queue drivers (^4.0|^5.0).",
                 "fakerphp/faker": "Required to use the eloquent factory builder (^1.9.1).",
                 "filp/whoops": "Required for friendly error pages in development (^2.14.3).",
+<<<<<<< HEAD
 <<<<<<< HEAD
                 "guzzlehttp/guzzle": "Required to use the HTTP Client, Mailgun mail driver and the ping methods on schedules (^6.5.5|^7.0.1).",
                 "laravel/tinker": "Required to use the tinker console command (^2.0).",
@@ -1951,6 +2135,8 @@
                 "symfony/psr-http-message-bridge": "Required to use PSR-7 bridging features (^2.0).",
                 "wildbit/swiftmailer-postmark": "Required to use Postmark mail driver (^3.0)."
 =======
+=======
+>>>>>>> danhmuc_list
                 "guzzlehttp/guzzle": "Required to use the HTTP Client and the ping methods on schedules (^7.5).",
                 "laravel/tinker": "Required to use the tinker console command (^2.0).",
                 "league/flysystem-aws-s3-v3": "Required to use the Flysystem S3 driver (^3.0).",
@@ -1971,13 +2157,20 @@
                 "symfony/mailgun-mailer": "Required to enable support for the Mailgun mail transport (^6.2).",
                 "symfony/postmark-mailer": "Required to enable support for the Postmark mail transport (^6.2).",
                 "symfony/psr-http-message-bridge": "Required to use PSR-7 bridging features (^2.0)."
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "dev-master": "8.x-dev"
+=======
+                    "dev-master": "10.x-dev"
+>>>>>>> danhmuc_list
 =======
                     "dev-master": "10.x-dev"
 >>>>>>> danhmuc_list
@@ -1988,6 +2181,10 @@
                     "src/Illuminate/Collections/helpers.php",
                     "src/Illuminate/Events/functions.php",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                    "src/Illuminate/Filesystem/functions.php",
+>>>>>>> danhmuc_list
 =======
                     "src/Illuminate/Filesystem/functions.php",
 >>>>>>> danhmuc_list
@@ -1999,7 +2196,12 @@
                     "Illuminate\\Support\\": [
                         "src/Illuminate/Macroable/",
 <<<<<<< HEAD
+<<<<<<< HEAD
                         "src/Illuminate/Collections/"
+=======
+                        "src/Illuminate/Collections/",
+                        "src/Illuminate/Conditionable/"
+>>>>>>> danhmuc_list
 =======
                         "src/Illuminate/Collections/",
                         "src/Illuminate/Conditionable/"
@@ -2027,6 +2229,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
+<<<<<<< HEAD
 <<<<<<< HEAD
             "time": "2022-12-08T15:28:55+00:00"
         },
@@ -2061,6 +2264,8 @@
                 "orchestra/testbench": "^4.0|^5.0|^6.0|^7.0",
                 "phpunit/phpunit": "^8.0|^9.3"
 =======
+=======
+>>>>>>> danhmuc_list
             "time": "2024-04-30T12:52:59+00:00"
         },
         {
@@ -2095,14 +2300,20 @@
             },
             "suggest": {
                 "ext-pcntl": "Required for the spinner to be animated."
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "dev-master": "2.x-dev"
 =======
+=======
+>>>>>>> danhmuc_list
                     "dev-main": "0.1.x-dev"
                 }
             },
@@ -2157,6 +2368,9 @@
             "extra": {
                 "branch-alias": {
                     "dev-master": "3.x-dev"
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                 },
                 "laravel": {
@@ -2191,6 +2405,7 @@
                 "source": "https://github.com/laravel/sanctum"
             },
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2022-04-08T13:39:49+00:00"
         },
         {
@@ -2209,10 +2424,15 @@
 =======
             "name": "laravel/serializable-closure",
 =======
+=======
+>>>>>>> danhmuc_list
             "time": "2023-12-19T18:44:48+00:00"
         },
         {
             "name": "laravel/serializable-closure",
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             "version": "v1.3.3",
             "source": {
@@ -2225,9 +2445,12 @@
                 "url": "https://api.github.com/repos/laravel/serializable-closure/zipball/3dbf8a8e914634c48d389c1234552666b3d43754",
                 "reference": "3dbf8a8e914634c48d389c1234552666b3d43754",
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/them_slide
 =======
 >>>>>>> Login_Register
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
                 "shasum": ""
@@ -2236,6 +2459,7 @@
                 "php": "^7.3|^8.0"
             },
             "require-dev": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2250,14 +2474,19 @@
 =======
 =======
 >>>>>>> danhmuc_list
+=======
+>>>>>>> danhmuc_list
                 "nesbot/carbon": "^2.61",
                 "pestphp/pest": "^1.21.3",
                 "phpstan/phpstan": "^1.8.2",
                 "symfony/var-dumper": "^5.4.11"
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/them_slide
 =======
 >>>>>>> Login_Register
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
             },
@@ -2299,6 +2528,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Login_Register
             "time": "2024-09-23T13:33:08+00:00"
@@ -2319,6 +2549,8 @@
 =======
 =======
 >>>>>>> danhmuc_list
+=======
+>>>>>>> danhmuc_list
             "time": "2023-11-08T14:08:06+00:00"
         },
         {
@@ -2334,9 +2566,12 @@
                 "url": "https://api.github.com/repos/laravel/tinker/zipball/502e0fe3f0415d06d5db1f83a472f0f3b754bafe",
                 "reference": "502e0fe3f0415d06d5db1f83a472f0f3b754bafe",
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/them_slide
 =======
 >>>>>>> Login_Register
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
                 "shasum": ""
@@ -2392,6 +2627,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Login_Register
                 "source": "https://github.com/laravel/tinker/tree/v2.10.0"
@@ -2414,6 +2650,8 @@
 =======
 =======
 >>>>>>> danhmuc_list
+=======
+>>>>>>> danhmuc_list
                 "source": "https://github.com/laravel/tinker/tree/v2.9.0"
             },
             "time": "2024-01-04T16:10:04+00:00"
@@ -2431,9 +2669,12 @@
                 "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/91c24291965bd6d7c46c46a12ba7492f83b1cadf",
                 "reference": "91c24291965bd6d7c46c46a12ba7492f83b1cadf",
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/them_slide
 =======
 >>>>>>> Login_Register
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
                 "shasum": ""
@@ -2451,6 +2692,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "commonmark/cmark": "0.31.1",
                 "commonmark/commonmark.js": "0.31.1",
 =======
@@ -2461,6 +2703,10 @@
                 "commonmark/cmark": "0.31.1",
                 "commonmark/commonmark.js": "0.31.1",
 >>>>>>> Login_Register
+=======
+                "commonmark/cmark": "0.30.3",
+                "commonmark/commonmark.js": "0.30.0",
+>>>>>>> danhmuc_list
 =======
                 "commonmark/cmark": "0.30.3",
                 "commonmark/commonmark.js": "0.30.0",
@@ -2489,6 +2735,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "dev-main": "2.6-dev"
 =======
                     "dev-main": "2.5-dev"
@@ -2496,6 +2743,9 @@
 =======
                     "dev-main": "2.6-dev"
 >>>>>>> Login_Register
+=======
+                    "dev-main": "2.5-dev"
+>>>>>>> danhmuc_list
 =======
                     "dev-main": "2.5-dev"
 >>>>>>> danhmuc_list
@@ -2558,6 +2808,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2024-08-16T11:46:16+00:00"
 =======
             "time": "2024-02-02T11:59:32+00:00"
@@ -2565,6 +2816,9 @@
 =======
             "time": "2024-08-16T11:46:16+00:00"
 >>>>>>> Login_Register
+=======
+            "time": "2024-02-02T11:59:32+00:00"
+>>>>>>> danhmuc_list
 =======
             "time": "2024-02-02T11:59:32+00:00"
 >>>>>>> danhmuc_list
@@ -2654,6 +2908,7 @@
         {
             "name": "league/flysystem",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "version": "1.1.10",
             "source": {
                 "type": "git",
@@ -2703,6 +2958,8 @@
                 "psr-4": {
                     "League\\Flysystem\\": "src/"
 =======
+=======
+>>>>>>> danhmuc_list
             "version": "3.27.0",
             "source": {
                 "type": "git",
@@ -2749,6 +3006,9 @@
             "autoload": {
                 "psr-4": {
                     "League\\Flysystem\\": "src"
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                 }
             },
@@ -2759,6 +3019,7 @@
             "authors": [
                 {
                     "name": "Frank de Jonge",
+<<<<<<< HEAD
 <<<<<<< HEAD
                     "email": "info@frenky.net"
                 }
@@ -2774,6 +3035,8 @@
                 "dropbox",
                 "file systems",
 =======
+=======
+>>>>>>> danhmuc_list
                     "email": "info@frankdejonge.nl"
                 }
             ],
@@ -2783,14 +3046,20 @@
                 "aws",
                 "cloud",
                 "file",
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                 "files",
                 "filesystem",
                 "filesystems",
                 "ftp",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "rackspace",
                 "remote",
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
                 "s3",
@@ -2799,6 +3068,7 @@
             ],
             "support": {
                 "issues": "https://github.com/thephpleague/flysystem/issues",
+<<<<<<< HEAD
 <<<<<<< HEAD
                 "source": "https://github.com/thephpleague/flysystem/tree/1.1.10"
             },
@@ -2829,6 +3099,8 @@
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> danhmuc_list
                 "source": "https://github.com/thephpleague/flysystem/tree/3.27.0"
             },
             "funding": [
@@ -2904,6 +3176,9 @@
         },
         {
             "name": "league/mime-type-detection",
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             "version": "1.15.0",
             "source": {
@@ -2916,9 +3191,12 @@
                 "url": "https://api.github.com/repos/thephpleague/mime-type-detection/zipball/ce0f4d1e8a6f4eb0ddff33f57c69c50fd09f4301",
                 "reference": "ce0f4d1e8a6f4eb0ddff33f57c69c50fd09f4301",
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/them_slide
 =======
 >>>>>>> Login_Register
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
                 "shasum": ""
@@ -2954,6 +3232,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/thephpleague/mime-type-detection/tree/1.16.0"
 =======
                 "source": "https://github.com/thephpleague/mime-type-detection/tree/1.15.0"
@@ -2961,6 +3240,9 @@
 =======
                 "source": "https://github.com/thephpleague/mime-type-detection/tree/1.16.0"
 >>>>>>> Login_Register
+=======
+                "source": "https://github.com/thephpleague/mime-type-detection/tree/1.15.0"
+>>>>>>> danhmuc_list
 =======
                 "source": "https://github.com/thephpleague/mime-type-detection/tree/1.15.0"
 >>>>>>> danhmuc_list
@@ -2975,6 +3257,7 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3025,6 +3308,8 @@
                 "ruflin/elastica": "^7",
                 "swiftmailer/swiftmailer": "^5.3|^6.0",
 =======
+=======
+>>>>>>> danhmuc_list
             "time": "2024-01-28T23:22:08+00:00"
         },
         {
@@ -3064,6 +3349,9 @@
                 "phpunit/phpunit": "^10.5.17",
                 "predis/predis": "^1.1 || ^2",
                 "ruflin/elastica": "^7",
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                 "symfony/mailer": "^5.4 || ^6",
                 "symfony/mime": "^5.4 || ^6"
@@ -3088,7 +3376,11 @@
             "extra": {
                 "branch-alias": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "dev-main": "2.x-dev"
+=======
+                    "dev-main": "3.x-dev"
+>>>>>>> danhmuc_list
 =======
                     "dev-main": "3.x-dev"
 >>>>>>> danhmuc_list
@@ -3120,7 +3412,11 @@
             "support": {
                 "issues": "https://github.com/Seldaek/monolog/issues",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/Seldaek/monolog/tree/2.9.3"
+=======
+                "source": "https://github.com/Seldaek/monolog/tree/3.6.0"
+>>>>>>> danhmuc_list
 =======
                 "source": "https://github.com/Seldaek/monolog/tree/3.6.0"
 >>>>>>> danhmuc_list
@@ -3135,6 +3431,7 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
             "time": "2024-04-12T20:52:51+00:00"
         },
@@ -3157,10 +3454,15 @@
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> danhmuc_list
             "time": "2024-04-12T21:02:21+00:00"
         },
         {
             "name": "nesbot/carbon",
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             "version": "2.72.3",
             "source": {
@@ -3173,9 +3475,12 @@
                 "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/0c6fd108360c562f6e4fd1dedb8233b423e91c83",
                 "reference": "0c6fd108360c562f6e4fd1dedb8233b423e91c83",
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/them_slide
 =======
 >>>>>>> Login_Register
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
                 "shasum": ""
@@ -3214,6 +3519,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "dev-master": "3.x-dev",
                     "dev-2.x": "2.x-dev"
 =======
@@ -3224,6 +3530,10 @@
                     "dev-master": "3.x-dev",
                     "dev-2.x": "2.x-dev"
 >>>>>>> Login_Register
+=======
+                    "dev-3.x": "3.x-dev",
+                    "dev-master": "2.x-dev"
+>>>>>>> danhmuc_list
 =======
                     "dev-3.x": "3.x-dev",
                     "dev-master": "2.x-dev"
@@ -3289,6 +3599,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Login_Register
             "time": "2024-06-03T19:18:41+00:00"
@@ -3309,6 +3620,8 @@
 =======
 =======
 >>>>>>> danhmuc_list
+=======
+>>>>>>> danhmuc_list
             "time": "2024-01-25T10:35:09+00:00"
         },
         {
@@ -3324,15 +3637,19 @@
                 "url": "https://api.github.com/repos/nette/schema/zipball/a6d3a6d1f545f01ef38e60f375d1cf1f4de98188",
                 "reference": "a6d3a6d1f545f01ef38e60f375d1cf1f4de98188",
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/them_slide
 =======
 >>>>>>> Login_Register
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
                 "shasum": ""
             },
             "require": {
                 "nette/utils": "^4.0",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3346,14 +3663,19 @@
 =======
 =======
 >>>>>>> danhmuc_list
+=======
+>>>>>>> danhmuc_list
                 "php": "8.1 - 8.3"
             },
             "require-dev": {
                 "nette/tester": "^2.4",
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/them_slide
 =======
 >>>>>>> Login_Register
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
                 "phpstan/phpstan-nette": "^1.0",
@@ -3397,6 +3719,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Login_Register
                 "source": "https://github.com/nette/schema/tree/v1.3.2"
@@ -3423,6 +3746,8 @@
 =======
 =======
 >>>>>>> danhmuc_list
+=======
+>>>>>>> danhmuc_list
                 "source": "https://github.com/nette/schema/tree/v1.3.0"
             },
             "time": "2023-12-11T11:54:22+00:00"
@@ -3444,9 +3769,12 @@
             "require": {
                 "php": ">=8.0 <8.4"
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/them_slide
 =======
 >>>>>>> Login_Register
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
             },
@@ -3518,6 +3846,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Login_Register
                 "source": "https://github.com/nette/utils/tree/v4.0.5"
@@ -3540,6 +3869,8 @@
 =======
 =======
 >>>>>>> danhmuc_list
+=======
+>>>>>>> danhmuc_list
                 "source": "https://github.com/nette/utils/tree/v4.0.4"
             },
             "time": "2024-01-17T16:50:36+00:00"
@@ -3557,9 +3888,12 @@
                 "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/139676794dc1e9231bf7bcd123cfc0c99182cb13",
                 "reference": "139676794dc1e9231bf7bcd123cfc0c99182cb13",
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/them_slide
 =======
 >>>>>>> Login_Register
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
                 "shasum": ""
@@ -3575,6 +3909,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "phpunit/phpunit": "^9.0"
 =======
                 "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0"
@@ -3582,6 +3917,9 @@
 =======
                 "phpunit/phpunit": "^9.0"
 >>>>>>> Login_Register
+=======
+                "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0"
+>>>>>>> danhmuc_list
 =======
                 "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0"
 >>>>>>> danhmuc_list
@@ -3616,6 +3954,7 @@
             ],
             "support": {
                 "issues": "https://github.com/nikic/PHP-Parser/issues",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3659,6 +3998,8 @@
                 "branch-alias": {
                     "dev-master": "3.6.x-dev"
 =======
+=======
+>>>>>>> danhmuc_list
                 "source": "https://github.com/nikic/PHP-Parser/tree/v5.0.2"
             },
             "time": "2024-03-05T20:51:40+00:00"
@@ -3700,21 +4041,30 @@
                     "providers": [
                         "Termwind\\Laravel\\TermwindServiceProvider"
                     ]
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                 }
             },
             "autoload": {
                 "files": [
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "functions.php"
                 ],
                 "psr-4": {
                     "Opis\\Closure\\": "src/"
 =======
+=======
+>>>>>>> danhmuc_list
                     "src/Functions.php"
                 ],
                 "psr-4": {
                     "Termwind\\": "src/"
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                 }
             },
@@ -3724,6 +4074,7 @@
             ],
             "authors": [
                 {
+<<<<<<< HEAD
 <<<<<<< HEAD
                     "name": "Marius Sarca",
                     "email": "marius.sarca@gmail.com"
@@ -3768,6 +4119,8 @@
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> danhmuc_list
                     "name": "Nuno Maduro",
                     "email": "enunomaduro@gmail.com"
                 }
@@ -3803,6 +4156,9 @@
         },
         {
             "name": "phpoption/phpoption",
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             "version": "1.9.2",
             "source": {
@@ -3815,9 +4171,12 @@
                 "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/80735db690fe4fc5c76dfa7f9b770634285fa820",
                 "reference": "80735db690fe4fc5c76dfa7f9b770634285fa820",
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/them_slide
 =======
 >>>>>>> Login_Register
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
                 "shasum": ""
@@ -3830,6 +4189,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "phpunit/phpunit": "^8.5.39 || ^9.6.20 || ^10.5.28"
 =======
                 "phpunit/phpunit": "^8.5.34 || ^9.6.13 || ^10.4.2"
@@ -3837,6 +4197,9 @@
 =======
                 "phpunit/phpunit": "^8.5.39 || ^9.6.20 || ^10.5.28"
 >>>>>>> Login_Register
+=======
+                "phpunit/phpunit": "^8.5.34 || ^9.6.13 || ^10.4.2"
+>>>>>>> danhmuc_list
 =======
                 "phpunit/phpunit": "^8.5.34 || ^9.6.13 || ^10.4.2"
 >>>>>>> danhmuc_list
@@ -3848,6 +4211,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "forward-command": false
 =======
                     "forward-command": true
@@ -3855,6 +4219,9 @@
 =======
                     "forward-command": false
 >>>>>>> Login_Register
+=======
+                    "forward-command": true
+>>>>>>> danhmuc_list
 =======
                     "forward-command": true
 >>>>>>> danhmuc_list
@@ -3896,6 +4263,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/schmittjoh/php-option/tree/1.9.3"
 =======
                 "source": "https://github.com/schmittjoh/php-option/tree/1.9.2"
@@ -3903,6 +4271,9 @@
 =======
                 "source": "https://github.com/schmittjoh/php-option/tree/1.9.3"
 >>>>>>> Login_Register
+=======
+                "source": "https://github.com/schmittjoh/php-option/tree/1.9.2"
+>>>>>>> danhmuc_list
 =======
                 "source": "https://github.com/schmittjoh/php-option/tree/1.9.2"
 >>>>>>> danhmuc_list
@@ -3920,6 +4291,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2024-07-20T21:41:07+00:00"
 =======
             "time": "2023-11-12T21:59:55+00:00"
@@ -3927,6 +4299,9 @@
 =======
             "time": "2024-07-20T21:41:07+00:00"
 >>>>>>> Login_Register
+=======
+            "time": "2023-11-12T21:59:55+00:00"
+>>>>>>> danhmuc_list
 =======
             "time": "2023-11-12T21:59:55+00:00"
 >>>>>>> danhmuc_list
@@ -3982,6 +4357,7 @@
         {
             "name": "psr/container",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "version": "1.1.2",
             "source": {
                 "type": "git",
@@ -3993,6 +4369,8 @@
                 "url": "https://api.github.com/repos/php-fig/container/zipball/513e0666f7216c7459170d56df27dfcefe1689ea",
                 "reference": "513e0666f7216c7459170d56df27dfcefe1689ea",
 =======
+=======
+>>>>>>> danhmuc_list
             "version": "2.0.2",
             "source": {
                 "type": "git",
@@ -4003,6 +4381,9 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/php-fig/container/zipball/c71ecc56dfe541dbd90c5360474fbc405f8d5963",
                 "reference": "c71ecc56dfe541dbd90c5360474fbc405f8d5963",
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                 "shasum": ""
             },
@@ -4011,12 +4392,18 @@
             },
             "type": "library",
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
             "extra": {
                 "branch-alias": {
                     "dev-master": "2.0.x-dev"
                 }
             },
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             "autoload": {
                 "psr-4": {
@@ -4045,9 +4432,15 @@
             "support": {
                 "issues": "https://github.com/php-fig/container/issues",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/php-fig/container/tree/1.1.2"
             },
             "time": "2021-11-05T16:50:12+00:00"
+=======
+                "source": "https://github.com/php-fig/container/tree/2.0.2"
+            },
+            "time": "2021-11-05T16:47:00+00:00"
+>>>>>>> danhmuc_list
 =======
                 "source": "https://github.com/php-fig/container/tree/2.0.2"
             },
@@ -4267,6 +4660,7 @@
         {
             "name": "psr/log",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "version": "2.0.0",
             "source": {
                 "type": "git",
@@ -4278,6 +4672,8 @@
                 "url": "https://api.github.com/repos/php-fig/log/zipball/ef29f6d262798707a9edd554e2b82517ef3a9376",
                 "reference": "ef29f6d262798707a9edd554e2b82517ef3a9376",
 =======
+=======
+>>>>>>> danhmuc_list
             "version": "3.0.0",
             "source": {
                 "type": "git",
@@ -4288,6 +4684,9 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/php-fig/log/zipball/fe5ea303b0887d5caefd3d431c3e61ad47037001",
                 "reference": "fe5ea303b0887d5caefd3d431c3e61ad47037001",
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                 "shasum": ""
             },
@@ -4298,7 +4697,11 @@
             "extra": {
                 "branch-alias": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "dev-master": "2.0.x-dev"
+=======
+                    "dev-master": "3.x-dev"
+>>>>>>> danhmuc_list
 =======
                     "dev-master": "3.x-dev"
 >>>>>>> danhmuc_list
@@ -4328,6 +4731,7 @@
             ],
             "support": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/php-fig/log/tree/2.0.0"
             },
             "time": "2021-07-14T16:41:46+00:00"
@@ -4349,6 +4753,8 @@
             "require": {
                 "php": ">=5.3.0"
 =======
+=======
+>>>>>>> danhmuc_list
                 "source": "https://github.com/php-fig/log/tree/3.0.0"
             },
             "time": "2021-07-14T16:46:02+00:00"
@@ -4369,13 +4775,20 @@
             },
             "require": {
                 "php": ">=8.0.0"
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "dev-master": "1.0.x-dev"
+=======
+                    "dev-master": "3.0.x-dev"
+>>>>>>> danhmuc_list
 =======
                     "dev-master": "3.0.x-dev"
 >>>>>>> danhmuc_list
@@ -4394,7 +4807,11 @@
                 {
                     "name": "PHP-FIG",
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "homepage": "http://www.php-fig.org/"
+=======
+                    "homepage": "https://www.php-fig.org/"
+>>>>>>> danhmuc_list
 =======
                     "homepage": "https://www.php-fig.org/"
 >>>>>>> danhmuc_list
@@ -4409,6 +4826,7 @@
                 "simple-cache"
             ],
             "support": {
+<<<<<<< HEAD
 <<<<<<< HEAD
                 "source": "https://github.com/php-fig/simple-cache/tree/master"
             },
@@ -4433,12 +4851,17 @@
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> danhmuc_list
                 "source": "https://github.com/php-fig/simple-cache/tree/3.0.0"
             },
             "time": "2021-10-29T13:26:27+00:00"
         },
         {
             "name": "psy/psysh",
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             "version": "v0.12.3",
             "source": {
@@ -4451,9 +4874,12 @@
                 "url": "https://api.github.com/repos/bobthecow/psysh/zipball/b6b6cce7d3ee8fbf31843edce5e8f5a72eff4a73",
                 "reference": "b6b6cce7d3ee8fbf31843edce5e8f5a72eff4a73",
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/them_slide
 =======
 >>>>>>> Login_Register
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
                 "shasum": ""
@@ -4522,6 +4948,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/bobthecow/psysh/tree/v0.12.4"
             },
             "time": "2024-06-10T01:18:23+00:00"
@@ -4535,6 +4962,11 @@
             },
             "time": "2024-06-10T01:18:23+00:00"
 >>>>>>> Login_Register
+=======
+                "source": "https://github.com/bobthecow/psysh/tree/v0.12.3"
+            },
+            "time": "2024-04-02T15:57:53+00:00"
+>>>>>>> danhmuc_list
 =======
                 "source": "https://github.com/bobthecow/psysh/tree/v0.12.3"
             },
@@ -4768,6 +5200,7 @@
         },
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
             "name": "swiftmailer/swiftmailer",
             "version": "v6.3.0",
             "source": {
@@ -4911,6 +5344,8 @@
                 "symfony/lock": "",
                 "symfony/process": ""
 =======
+=======
+>>>>>>> danhmuc_list
             "name": "symfony/console",
             "version": "v6.4.7",
             "source": {
@@ -4953,6 +5388,9 @@
                 "symfony/process": "^5.4|^6.0|^7.0",
                 "symfony/stopwatch": "^5.4|^6.0|^7.0",
                 "symfony/var-dumper": "^5.4|^6.0|^7.0"
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             },
             "type": "library",
@@ -4990,6 +5428,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/console/tree/v5.4.44"
 =======
                 "source": "https://github.com/symfony/console/tree/v5.4.39"
@@ -4997,6 +5436,9 @@
 =======
                 "source": "https://github.com/symfony/console/tree/v5.4.44"
 >>>>>>> Login_Register
+=======
+                "source": "https://github.com/symfony/console/tree/v6.4.7"
+>>>>>>> danhmuc_list
 =======
                 "source": "https://github.com/symfony/console/tree/v6.4.7"
 >>>>>>> danhmuc_list
@@ -5015,6 +5457,7 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -5040,6 +5483,9 @@
 =======
             "time": "2024-04-18T09:22:46+00:00"
 >>>>>>> danhmuc_list
+=======
+            "time": "2024-04-18T09:22:46+00:00"
+>>>>>>> danhmuc_list
         },
         {
             "name": "symfony/css-selector",
@@ -5054,9 +5500,12 @@
                 "url": "https://api.github.com/repos/symfony/css-selector/zipball/b08a4ad89e84b29cec285b7b1f781a7ae51cf4bc",
                 "reference": "b08a4ad89e84b29cec285b7b1f781a7ae51cf4bc",
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/them_slide
 =======
 >>>>>>> Login_Register
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
                 "shasum": ""
@@ -5097,6 +5546,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/css-selector/tree/v7.1.1"
 =======
                 "source": "https://github.com/symfony/css-selector/tree/v7.0.7"
@@ -5104,6 +5554,9 @@
 =======
                 "source": "https://github.com/symfony/css-selector/tree/v7.1.1"
 >>>>>>> Login_Register
+=======
+                "source": "https://github.com/symfony/css-selector/tree/v7.0.7"
+>>>>>>> danhmuc_list
 =======
                 "source": "https://github.com/symfony/css-selector/tree/v7.0.7"
 >>>>>>> danhmuc_list
@@ -5125,6 +5578,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2024-05-31T14:57:53+00:00"
 =======
             "time": "2024-04-18T09:29:19+00:00"
@@ -5132,6 +5586,9 @@
 =======
             "time": "2024-05-31T14:57:53+00:00"
 >>>>>>> Login_Register
+=======
+            "time": "2024-04-18T09:29:19+00:00"
+>>>>>>> danhmuc_list
 =======
             "time": "2024-04-18T09:29:19+00:00"
 >>>>>>> danhmuc_list
@@ -5208,6 +5665,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Login_Register
             "version": "v5.4.42",
@@ -5247,6 +5705,8 @@
                 "symfony/http-kernel": "^4.4|^5.0|^6.0",
                 "symfony/serializer": "^4.4|^5.0|^6.0"
 =======
+=======
+>>>>>>> danhmuc_list
             "version": "v6.4.7",
             "source": {
                 "type": "git",
@@ -5272,6 +5732,9 @@
                 "symfony/deprecation-contracts": "^2.5|^3",
                 "symfony/http-kernel": "^6.4|^7.0",
                 "symfony/serializer": "^5.4|^6.0|^7.0"
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             },
             "bin": [
@@ -5306,6 +5769,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/error-handler/tree/v5.4.42"
 =======
                 "source": "https://github.com/symfony/error-handler/tree/v5.4.39"
@@ -5313,6 +5777,9 @@
 =======
                 "source": "https://github.com/symfony/error-handler/tree/v5.4.42"
 >>>>>>> Login_Register
+=======
+                "source": "https://github.com/symfony/error-handler/tree/v6.4.7"
+>>>>>>> danhmuc_list
 =======
                 "source": "https://github.com/symfony/error-handler/tree/v6.4.7"
 >>>>>>> danhmuc_list
@@ -5331,6 +5798,7 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -5378,6 +5846,8 @@
             "conflict": {
                 "symfony/dependency-injection": "<5.4",
 =======
+=======
+>>>>>>> danhmuc_list
             "time": "2024-04-18T09:22:46+00:00"
         },
         {
@@ -5400,6 +5870,9 @@
             },
             "conflict": {
                 "symfony/dependency-injection": "<6.4",
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                 "symfony/service-contracts": "<2.5"
             },
@@ -5410,6 +5883,7 @@
             "require-dev": {
                 "psr/log": "^1|^2|^3",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "symfony/config": "^5.4|^6.0|^7.0",
                 "symfony/dependency-injection": "^5.4|^6.0|^7.0",
                 "symfony/error-handler": "^5.4|^6.0|^7.0",
@@ -5418,6 +5892,8 @@
                 "symfony/service-contracts": "^2.5|^3",
                 "symfony/stopwatch": "^5.4|^6.0|^7.0"
 =======
+=======
+>>>>>>> danhmuc_list
                 "symfony/config": "^6.4|^7.0",
                 "symfony/dependency-injection": "^6.4|^7.0",
                 "symfony/error-handler": "^6.4|^7.0",
@@ -5425,6 +5901,9 @@
                 "symfony/http-foundation": "^6.4|^7.0",
                 "symfony/service-contracts": "^2.5|^3",
                 "symfony/stopwatch": "^6.4|^7.0"
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             },
             "type": "library",
@@ -5456,6 +5935,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/event-dispatcher/tree/v6.4.8"
 =======
                 "source": "https://github.com/symfony/event-dispatcher/tree/v6.4.7"
@@ -5463,6 +5943,9 @@
 =======
                 "source": "https://github.com/symfony/event-dispatcher/tree/v6.4.8"
 >>>>>>> Login_Register
+=======
+                "source": "https://github.com/symfony/event-dispatcher/tree/v7.0.7"
+>>>>>>> danhmuc_list
 =======
                 "source": "https://github.com/symfony/event-dispatcher/tree/v7.0.7"
 >>>>>>> danhmuc_list
@@ -5484,6 +5967,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2024-05-31T14:49:08+00:00"
 =======
             "time": "2024-04-18T09:22:46+00:00"
@@ -5491,6 +5975,9 @@
 =======
             "time": "2024-05-31T14:49:08+00:00"
 >>>>>>> Login_Register
+=======
+            "time": "2024-04-18T09:29:19+00:00"
+>>>>>>> danhmuc_list
 =======
             "time": "2024-04-18T09:29:19+00:00"
 >>>>>>> danhmuc_list
@@ -5576,6 +6063,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Login_Register
             "version": "v5.4.43",
@@ -5610,6 +6098,8 @@
                 "symfony/deprecation-contracts": "^2.1|^3",
                 "symfony/polyfill-php80": "^1.16"
 =======
+=======
+>>>>>>> danhmuc_list
             "version": "v6.4.7",
             "source": {
                 "type": "git",
@@ -5627,6 +6117,9 @@
             },
             "require-dev": {
                 "symfony/filesystem": "^6.0|^7.0"
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             },
             "type": "library",
@@ -5658,6 +6151,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/finder/tree/v5.4.43"
 =======
                 "source": "https://github.com/symfony/finder/tree/v5.4.39"
@@ -5665,6 +6159,9 @@
 =======
                 "source": "https://github.com/symfony/finder/tree/v5.4.43"
 >>>>>>> Login_Register
+=======
+                "source": "https://github.com/symfony/finder/tree/v6.4.7"
+>>>>>>> danhmuc_list
 =======
                 "source": "https://github.com/symfony/finder/tree/v6.4.7"
 >>>>>>> danhmuc_list
@@ -5683,6 +6180,7 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -5749,6 +6247,8 @@
             "suggest": {
                 "symfony/mime": "To use the file extension guesser"
 =======
+=======
+>>>>>>> danhmuc_list
             "time": "2024-04-23T10:36:43+00:00"
         },
         {
@@ -5783,6 +6283,9 @@
                 "symfony/http-kernel": "^5.4.12|^6.0.12|^6.1.4|^7.0",
                 "symfony/mime": "^5.4|^6.0|^7.0",
                 "symfony/rate-limiter": "^5.4|^6.0|^7.0"
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             },
             "type": "library",
@@ -5814,6 +6317,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/http-foundation/tree/v5.4.44"
 =======
                 "source": "https://github.com/symfony/http-foundation/tree/v5.4.39"
@@ -5821,6 +6325,9 @@
 =======
                 "source": "https://github.com/symfony/http-foundation/tree/v5.4.44"
 >>>>>>> Login_Register
+=======
+                "source": "https://github.com/symfony/http-foundation/tree/v6.4.7"
+>>>>>>> danhmuc_list
 =======
                 "source": "https://github.com/symfony/http-foundation/tree/v6.4.7"
 >>>>>>> danhmuc_list
@@ -5839,6 +6346,7 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -5935,6 +6443,8 @@
                 "symfony/dependency-injection": ""
             },
 =======
+=======
+>>>>>>> danhmuc_list
             "time": "2024-04-18T09:22:46+00:00"
         },
         {
@@ -6007,6 +6517,9 @@
                 "symfony/var-exporter": "^6.2|^7.0",
                 "twig/twig": "^2.13|^3.0.4"
             },
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             "type": "library",
             "autoload": {
@@ -6037,6 +6550,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/http-kernel/tree/v5.4.44"
 =======
                 "source": "https://github.com/symfony/http-kernel/tree/v5.4.39"
@@ -6044,6 +6558,9 @@
 =======
                 "source": "https://github.com/symfony/http-kernel/tree/v5.4.44"
 >>>>>>> Login_Register
+=======
+                "source": "https://github.com/symfony/http-kernel/tree/v6.4.7"
+>>>>>>> danhmuc_list
 =======
                 "source": "https://github.com/symfony/http-kernel/tree/v6.4.7"
 >>>>>>> danhmuc_list
@@ -6062,6 +6579,7 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -6109,6 +6627,8 @@
                 "symfony/polyfill-mbstring": "^1.0",
                 "symfony/polyfill-php80": "^1.16"
 =======
+=======
+>>>>>>> danhmuc_list
             "time": "2024-04-29T11:24:44+00:00"
         },
         {
@@ -6210,12 +6730,16 @@
                 "symfony/deprecation-contracts": "^2.5|^3",
                 "symfony/polyfill-intl-idn": "^1.10",
                 "symfony/polyfill-mbstring": "^1.0"
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             },
             "conflict": {
                 "egulias/email-validator": "~3.0.0",
                 "phpdocumentor/reflection-docblock": "<3.2.2",
                 "phpdocumentor/type-resolver": "<1.4.0",
+<<<<<<< HEAD
 <<<<<<< HEAD
                 "symfony/mailer": "<4.4",
                 "symfony/serializer": "<5.4.35|>=6,<6.3.12|>=6.4,<6.4.3"
@@ -6229,6 +6753,8 @@
                 "symfony/property-info": "^4.4|^5.1|^6.0",
                 "symfony/serializer": "^5.4.35|~6.3.12|^6.4.3"
 =======
+=======
+>>>>>>> danhmuc_list
                 "symfony/mailer": "<5.4",
                 "symfony/serializer": "<6.3.2"
             },
@@ -6241,6 +6767,9 @@
                 "symfony/property-access": "^5.4|^6.0|^7.0",
                 "symfony/property-info": "^5.4|^6.0|^7.0",
                 "symfony/serializer": "^6.3.2|^7.0"
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             },
             "type": "library",
@@ -6276,6 +6805,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/mime/tree/v5.4.43"
 =======
                 "source": "https://github.com/symfony/mime/tree/v5.4.39"
@@ -6283,6 +6813,9 @@
 =======
                 "source": "https://github.com/symfony/mime/tree/v5.4.43"
 >>>>>>> Login_Register
+=======
+                "source": "https://github.com/symfony/mime/tree/v6.4.7"
+>>>>>>> danhmuc_list
 =======
                 "source": "https://github.com/symfony/mime/tree/v6.4.7"
 >>>>>>> danhmuc_list
@@ -6301,6 +6834,7 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -6330,6 +6864,9 @@
 =======
             "time": "2024-04-18T09:22:46+00:00"
 >>>>>>> danhmuc_list
+=======
+            "time": "2024-04-18T09:22:46+00:00"
+>>>>>>> danhmuc_list
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -6348,9 +6885,12 @@
             "require": {
                 "php": ">=7.1"
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/them_slide
 =======
 >>>>>>> Login_Register
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
             },
@@ -6401,6 +6941,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/polyfill-ctype/tree/v1.31.0"
 =======
                 "source": "https://github.com/symfony/polyfill-ctype/tree/v1.29.0"
@@ -6408,6 +6949,9 @@
 =======
                 "source": "https://github.com/symfony/polyfill-ctype/tree/v1.31.0"
 >>>>>>> Login_Register
+=======
+                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.29.0"
+>>>>>>> danhmuc_list
 =======
                 "source": "https://github.com/symfony/polyfill-ctype/tree/v1.29.0"
 >>>>>>> danhmuc_list
@@ -6426,6 +6970,7 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -6568,6 +7113,8 @@
 =======
 =======
 >>>>>>> danhmuc_list
+=======
+>>>>>>> danhmuc_list
             "time": "2024-01-29T20:11:03+00:00"
         },
         {
@@ -6587,9 +7134,12 @@
             "require": {
                 "php": ">=7.1"
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/them_slide
 =======
 >>>>>>> Login_Register
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
             },
@@ -6639,6 +7189,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/polyfill-intl-grapheme/tree/v1.31.0"
 =======
                 "source": "https://github.com/symfony/polyfill-intl-grapheme/tree/v1.29.0"
@@ -6646,6 +7197,9 @@
 =======
                 "source": "https://github.com/symfony/polyfill-intl-grapheme/tree/v1.31.0"
 >>>>>>> Login_Register
+=======
+                "source": "https://github.com/symfony/polyfill-intl-grapheme/tree/v1.29.0"
+>>>>>>> danhmuc_list
 =======
                 "source": "https://github.com/symfony/polyfill-intl-grapheme/tree/v1.29.0"
 >>>>>>> danhmuc_list
@@ -6664,6 +7218,7 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -6692,6 +7247,8 @@
 =======
 =======
 >>>>>>> danhmuc_list
+=======
+>>>>>>> danhmuc_list
             "time": "2024-01-29T20:11:03+00:00"
         },
         {
@@ -6713,9 +7270,12 @@
                 "symfony/polyfill-intl-normalizer": "^1.10",
                 "symfony/polyfill-php72": "^1.10"
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/them_slide
 =======
 >>>>>>> Login_Register
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
             },
@@ -6769,6 +7329,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/polyfill-intl-idn/tree/v1.31.0"
 =======
                 "source": "https://github.com/symfony/polyfill-intl-idn/tree/v1.29.0"
@@ -6776,6 +7337,9 @@
 =======
                 "source": "https://github.com/symfony/polyfill-intl-idn/tree/v1.31.0"
 >>>>>>> Login_Register
+=======
+                "source": "https://github.com/symfony/polyfill-intl-idn/tree/v1.29.0"
+>>>>>>> danhmuc_list
 =======
                 "source": "https://github.com/symfony/polyfill-intl-idn/tree/v1.29.0"
 >>>>>>> danhmuc_list
@@ -6794,6 +7358,7 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -6821,6 +7386,8 @@
 =======
 =======
 >>>>>>> danhmuc_list
+=======
+>>>>>>> danhmuc_list
             "time": "2024-01-29T20:11:03+00:00"
         },
         {
@@ -6840,9 +7407,12 @@
             "require": {
                 "php": ">=7.1"
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/them_slide
 =======
 >>>>>>> Login_Register
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
             },
@@ -6895,6 +7465,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/polyfill-intl-normalizer/tree/v1.31.0"
 =======
                 "source": "https://github.com/symfony/polyfill-intl-normalizer/tree/v1.29.0"
@@ -6902,6 +7473,9 @@
 =======
                 "source": "https://github.com/symfony/polyfill-intl-normalizer/tree/v1.31.0"
 >>>>>>> Login_Register
+=======
+                "source": "https://github.com/symfony/polyfill-intl-normalizer/tree/v1.29.0"
+>>>>>>> danhmuc_list
 =======
                 "source": "https://github.com/symfony/polyfill-intl-normalizer/tree/v1.29.0"
 >>>>>>> danhmuc_list
@@ -6920,6 +7494,7 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -6947,6 +7522,8 @@
 =======
 =======
 >>>>>>> danhmuc_list
+=======
+>>>>>>> danhmuc_list
             "time": "2024-01-29T20:11:03+00:00"
         },
         {
@@ -6966,9 +7543,12 @@
             "require": {
                 "php": ">=7.1"
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/them_slide
 =======
 >>>>>>> Login_Register
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
             },
@@ -7020,6 +7600,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.31.0"
 =======
                 "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.29.0"
@@ -7027,6 +7608,9 @@
 =======
                 "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.31.0"
 >>>>>>> Login_Register
+=======
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.29.0"
+>>>>>>> danhmuc_list
 =======
                 "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.29.0"
 >>>>>>> danhmuc_list
@@ -7045,6 +7629,7 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -7070,6 +7655,8 @@
                 "php": ">=7.2"
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
             "time": "2024-01-29T20:11:03+00:00"
@@ -7148,6 +7735,7 @@
             "time": "2024-01-29T20:11:03+00:00"
         },
         {
+<<<<<<< HEAD
 <<<<<<< HEAD
             "name": "symfony/polyfill-php73",
             "version": "v1.29.0",
@@ -7262,6 +7850,8 @@
         {
 =======
 >>>>>>> danhmuc_list
+=======
+>>>>>>> danhmuc_list
             "name": "symfony/polyfill-php80",
             "version": "v1.29.0",
             "source": {
@@ -7278,9 +7868,12 @@
             "require": {
                 "php": ">=7.1"
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/them_slide
 =======
 >>>>>>> Login_Register
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
             },
@@ -7332,6 +7925,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/polyfill-php80/tree/v1.31.0"
 =======
                 "source": "https://github.com/symfony/polyfill-php80/tree/v1.29.0"
@@ -7339,6 +7933,9 @@
 =======
                 "source": "https://github.com/symfony/polyfill-php80/tree/v1.31.0"
 >>>>>>> Login_Register
+=======
+                "source": "https://github.com/symfony/polyfill-php80/tree/v1.29.0"
+>>>>>>> danhmuc_list
 =======
                 "source": "https://github.com/symfony/polyfill-php80/tree/v1.29.0"
 >>>>>>> danhmuc_list
@@ -7357,6 +7954,7 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -7379,6 +7977,8 @@
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> danhmuc_list
             "time": "2024-01-29T20:11:03+00:00"
         },
         {
@@ -7535,11 +8135,15 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             "time": "2024-01-29T20:11:03+00:00"
         },
         {
             "name": "symfony/process",
+<<<<<<< HEAD
 <<<<<<< HEAD
             "version": "v5.4.39",
             "source": {
@@ -7560,6 +8164,8 @@
                 "php": ">=7.2.5",
                 "symfony/polyfill-php80": "^1.16"
 =======
+=======
+>>>>>>> danhmuc_list
             "version": "v6.4.7",
             "source": {
                 "type": "git",
@@ -7574,6 +8180,9 @@
             },
             "require": {
                 "php": ">=8.1"
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             },
             "type": "library",
@@ -7605,6 +8214,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/process/tree/v5.4.44"
 =======
                 "source": "https://github.com/symfony/process/tree/v5.4.39"
@@ -7612,6 +8222,9 @@
 =======
                 "source": "https://github.com/symfony/process/tree/v5.4.44"
 >>>>>>> Login_Register
+=======
+                "source": "https://github.com/symfony/process/tree/v6.4.7"
+>>>>>>> danhmuc_list
 =======
                 "source": "https://github.com/symfony/process/tree/v6.4.7"
 >>>>>>> danhmuc_list
@@ -7630,6 +8243,7 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -7681,6 +8295,8 @@
                 "symfony/dependency-injection": "<4.4",
                 "symfony/yaml": "<4.4"
 =======
+=======
+>>>>>>> danhmuc_list
             "time": "2024-04-18T09:22:46+00:00"
         },
         {
@@ -7706,11 +8322,15 @@
                 "symfony/config": "<6.2",
                 "symfony/dependency-injection": "<5.4",
                 "symfony/yaml": "<5.4"
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             },
             "require-dev": {
                 "doctrine/annotations": "^1.12|^2",
                 "psr/log": "^1|^2|^3",
+<<<<<<< HEAD
 <<<<<<< HEAD
                 "symfony/config": "^5.3|^6.0",
                 "symfony/dependency-injection": "^4.4|^5.0|^6.0",
@@ -7724,11 +8344,16 @@
                 "symfony/http-foundation": "For using a Symfony Request object",
                 "symfony/yaml": "For using the YAML loader"
 =======
+=======
+>>>>>>> danhmuc_list
                 "symfony/config": "^6.2|^7.0",
                 "symfony/dependency-injection": "^5.4|^6.0|^7.0",
                 "symfony/expression-language": "^5.4|^6.0|^7.0",
                 "symfony/http-foundation": "^5.4|^6.0|^7.0",
                 "symfony/yaml": "^5.4|^6.0|^7.0"
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             },
             "type": "library",
@@ -7766,6 +8391,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/routing/tree/v5.4.43"
 =======
                 "source": "https://github.com/symfony/routing/tree/v5.4.39"
@@ -7773,6 +8399,9 @@
 =======
                 "source": "https://github.com/symfony/routing/tree/v5.4.43"
 >>>>>>> Login_Register
+=======
+                "source": "https://github.com/symfony/routing/tree/v6.4.7"
+>>>>>>> danhmuc_list
 =======
                 "source": "https://github.com/symfony/routing/tree/v6.4.7"
 >>>>>>> danhmuc_list
@@ -7794,6 +8423,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2024-08-27T06:36:52+00:00"
 =======
             "time": "2024-04-18T08:26:06+00:00"
@@ -7801,6 +8431,9 @@
 =======
             "time": "2024-08-27T06:36:52+00:00"
 >>>>>>> Login_Register
+=======
+            "time": "2024-04-18T09:22:46+00:00"
+>>>>>>> danhmuc_list
 =======
             "time": "2024-04-18T09:22:46+00:00"
 >>>>>>> danhmuc_list
@@ -7893,6 +8526,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Login_Register
             "version": "v6.4.12",
@@ -7925,6 +8559,8 @@
             "require": {
                 "php": ">=8.1",
 =======
+=======
+>>>>>>> danhmuc_list
             "version": "v7.0.7",
             "source": {
                 "type": "git",
@@ -7939,6 +8575,9 @@
             },
             "require": {
                 "php": ">=8.2",
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                 "symfony/polyfill-ctype": "~1.8",
                 "symfony/polyfill-intl-grapheme": "~1.0",
@@ -7950,17 +8589,23 @@
             },
             "require-dev": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "symfony/error-handler": "^5.4|^6.0|^7.0",
                 "symfony/http-client": "^5.4|^6.0|^7.0",
                 "symfony/intl": "^6.2|^7.0",
                 "symfony/translation-contracts": "^2.5|^3.0",
                 "symfony/var-exporter": "^5.4|^6.0|^7.0"
 =======
+=======
+>>>>>>> danhmuc_list
                 "symfony/error-handler": "^6.4|^7.0",
                 "symfony/http-client": "^6.4|^7.0",
                 "symfony/intl": "^6.4|^7.0",
                 "symfony/translation-contracts": "^2.5|^3.0",
                 "symfony/var-exporter": "^6.4|^7.0"
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             },
             "type": "library",
@@ -8003,6 +8648,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/string/tree/v6.4.12"
 =======
                 "source": "https://github.com/symfony/string/tree/v6.4.7"
@@ -8010,6 +8656,9 @@
 =======
                 "source": "https://github.com/symfony/string/tree/v6.4.12"
 >>>>>>> Login_Register
+=======
+                "source": "https://github.com/symfony/string/tree/v7.0.7"
+>>>>>>> danhmuc_list
 =======
                 "source": "https://github.com/symfony/string/tree/v7.0.7"
 >>>>>>> danhmuc_list
@@ -8028,6 +8677,7 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8053,6 +8703,9 @@
 =======
             "time": "2024-04-18T09:29:19+00:00"
 >>>>>>> danhmuc_list
+=======
+            "time": "2024-04-18T09:29:19+00:00"
+>>>>>>> danhmuc_list
         },
         {
             "name": "symfony/translation",
@@ -8067,9 +8720,12 @@
                 "url": "https://api.github.com/repos/symfony/translation/zipball/7495687c58bfd88b7883823747b0656d90679123",
                 "reference": "7495687c58bfd88b7883823747b0656d90679123",
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/them_slide
 =======
 >>>>>>> Login_Register
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
                 "shasum": ""
@@ -8140,6 +8796,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/translation/tree/v6.4.12"
 =======
                 "source": "https://github.com/symfony/translation/tree/v6.4.7"
@@ -8147,6 +8804,9 @@
 =======
                 "source": "https://github.com/symfony/translation/tree/v6.4.12"
 >>>>>>> Login_Register
+=======
+                "source": "https://github.com/symfony/translation/tree/v6.4.7"
+>>>>>>> danhmuc_list
 =======
                 "source": "https://github.com/symfony/translation/tree/v6.4.7"
 >>>>>>> danhmuc_list
@@ -8168,6 +8828,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2024-09-16T06:02:54+00:00"
 =======
             "time": "2024-04-18T09:22:46+00:00"
@@ -8175,6 +8836,9 @@
 =======
             "time": "2024-09-16T06:02:54+00:00"
 >>>>>>> Login_Register
+=======
+            "time": "2024-04-18T09:22:46+00:00"
+>>>>>>> danhmuc_list
 =======
             "time": "2024-04-18T09:22:46+00:00"
 >>>>>>> danhmuc_list
@@ -8259,6 +8923,7 @@
         },
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
             "name": "symfony/var-dumper",
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8313,6 +8978,8 @@
                 "symfony/console": "To use the ServerDumpCommand and/or the bin/var-dump-server script"
             },
 =======
+=======
+>>>>>>> danhmuc_list
             "name": "symfony/uid",
             "version": "v6.4.7",
             "source": {
@@ -8417,6 +9084,9 @@
                 "symfony/uid": "^5.4|^6.0|^7.0",
                 "twig/twig": "^2.13|^3.0.4"
             },
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             "bin": [
                 "Resources/bin/var-dump-server"
@@ -8457,6 +9127,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/var-dumper/tree/v5.4.43"
 =======
                 "source": "https://github.com/symfony/var-dumper/tree/v5.4.39"
@@ -8464,6 +9135,9 @@
 =======
                 "source": "https://github.com/symfony/var-dumper/tree/v5.4.43"
 >>>>>>> Login_Register
+=======
+                "source": "https://github.com/symfony/var-dumper/tree/v6.4.7"
+>>>>>>> danhmuc_list
 =======
                 "source": "https://github.com/symfony/var-dumper/tree/v6.4.7"
 >>>>>>> danhmuc_list
@@ -8485,6 +9159,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2024-08-30T16:01:46+00:00"
 =======
             "time": "2024-04-18T08:26:06+00:00"
@@ -8492,6 +9167,9 @@
 =======
             "time": "2024-08-30T16:01:46+00:00"
 >>>>>>> Login_Register
+=======
+            "time": "2024-04-18T09:22:46+00:00"
+>>>>>>> danhmuc_list
 =======
             "time": "2024-04-18T09:22:46+00:00"
 >>>>>>> danhmuc_list
@@ -8554,6 +9232,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Login_Register
             "version": "v5.6.1",
@@ -8570,6 +9249,8 @@
 =======
 =======
 >>>>>>> danhmuc_list
+=======
+>>>>>>> danhmuc_list
             "version": "v5.6.0",
             "source": {
                 "type": "git",
@@ -8581,15 +9262,19 @@
                 "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/2cf9fb6054c2bb1d59d1f3817706ecdb9d2934c4",
                 "reference": "2cf9fb6054c2bb1d59d1f3817706ecdb9d2934c4",
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/them_slide
 =======
 >>>>>>> Login_Register
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
                 "shasum": ""
             },
             "require": {
                 "ext-pcre": "*",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8606,6 +9291,11 @@
                 "php": "^7.2.5 || ^8.0",
                 "phpoption/phpoption": "^1.9.3",
 >>>>>>> Login_Register
+=======
+                "graham-campbell/result-type": "^1.1.2",
+                "php": "^7.2.5 || ^8.0",
+                "phpoption/phpoption": "^1.9.2",
+>>>>>>> danhmuc_list
 =======
                 "graham-campbell/result-type": "^1.1.2",
                 "php": "^7.2.5 || ^8.0",
@@ -8630,6 +9320,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "forward-command": false
 =======
                     "forward-command": true
@@ -8637,6 +9328,9 @@
 =======
                     "forward-command": false
 >>>>>>> Login_Register
+=======
+                    "forward-command": true
+>>>>>>> danhmuc_list
 =======
                     "forward-command": true
 >>>>>>> danhmuc_list
@@ -8677,6 +9371,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/vlucas/phpdotenv/tree/v5.6.1"
 =======
                 "source": "https://github.com/vlucas/phpdotenv/tree/v5.6.0"
@@ -8684,6 +9379,9 @@
 =======
                 "source": "https://github.com/vlucas/phpdotenv/tree/v5.6.1"
 >>>>>>> Login_Register
+=======
+                "source": "https://github.com/vlucas/phpdotenv/tree/v5.6.0"
+>>>>>>> danhmuc_list
 =======
                 "source": "https://github.com/vlucas/phpdotenv/tree/v5.6.0"
 >>>>>>> danhmuc_list
@@ -8698,6 +9396,7 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -8722,6 +9421,8 @@
                 "url": "https://api.github.com/repos/voku/portable-ascii/zipball/87337c91b9dfacee02452244ee14ab3c43bc485a",
                 "reference": "87337c91b9dfacee02452244ee14ab3c43bc485a",
 =======
+=======
+>>>>>>> danhmuc_list
             "time": "2023-11-12T22:43:29+00:00"
         },
         {
@@ -8736,6 +9437,9 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/voku/portable-ascii/zipball/b56450eed252f6801410d810c8e1727224ae0743",
                 "reference": "b56450eed252f6801410d810c8e1727224ae0743",
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                 "shasum": ""
             },
@@ -8774,7 +9478,11 @@
             "support": {
                 "issues": "https://github.com/voku/portable-ascii/issues",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/voku/portable-ascii/tree/1.6.1"
+=======
+                "source": "https://github.com/voku/portable-ascii/tree/2.0.1"
+>>>>>>> danhmuc_list
 =======
                 "source": "https://github.com/voku/portable-ascii/tree/2.0.1"
 >>>>>>> danhmuc_list
@@ -8802,7 +9510,11 @@
                 }
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2022-01-24T18:55:24+00:00"
+=======
+            "time": "2022-03-08T17:03:00+00:00"
+>>>>>>> danhmuc_list
 =======
             "time": "2022-03-08T17:03:00+00:00"
 >>>>>>> danhmuc_list
@@ -8868,6 +9580,7 @@
     ],
     "packages-dev": [
         {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9227,6 +9940,8 @@
         {
 =======
 >>>>>>> danhmuc_list
+=======
+>>>>>>> danhmuc_list
             "name": "fakerphp/faker",
             "version": "v1.23.1",
             "source": {
@@ -9294,6 +10009,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Login_Register
             "version": "2.16.0",
@@ -9320,6 +10036,8 @@
 =======
 =======
 >>>>>>> danhmuc_list
+=======
+>>>>>>> danhmuc_list
             "version": "2.15.4",
             "source": {
                 "type": "git",
@@ -9341,9 +10059,12 @@
                 "phpunit/phpunit": "^4.8.36 || ^5.7.27 || ^6.5.14 || ^7.5.20 || ^8.5.8 || ^9.3.3",
                 "symfony/var-dumper": "^2.6 || ^3.0 || ^4.0 || ^5.0"
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/them_slide
 =======
 >>>>>>> Login_Register
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
             },
@@ -9388,6 +10109,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/filp/whoops/tree/2.16.0"
 =======
                 "source": "https://github.com/filp/whoops/tree/2.15.4"
@@ -9395,6 +10117,9 @@
 =======
                 "source": "https://github.com/filp/whoops/tree/2.16.0"
 >>>>>>> Login_Register
+=======
+                "source": "https://github.com/filp/whoops/tree/2.15.4"
+>>>>>>> danhmuc_list
 =======
                 "source": "https://github.com/filp/whoops/tree/2.15.4"
 >>>>>>> danhmuc_list
@@ -9408,6 +10133,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2024-09-25T12:00:00+00:00"
 =======
             "time": "2023-11-03T12:00:00+00:00"
@@ -9415,6 +10141,9 @@
 =======
             "time": "2024-09-25T12:00:00+00:00"
 >>>>>>> Login_Register
+=======
+            "time": "2023-11-03T12:00:00+00:00"
+>>>>>>> danhmuc_list
 =======
             "time": "2023-11-03T12:00:00+00:00"
 >>>>>>> danhmuc_list
@@ -9472,6 +10201,7 @@
         },
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
             "name": "laravel/sail",
             "version": "v1.25.0",
             "source": {
@@ -9495,6 +10225,8 @@
             "require-dev": {
                 "orchestra/testbench": "^6.0|^7.0|^8.0",
 =======
+=======
+>>>>>>> danhmuc_list
             "name": "laravel/pint",
             "version": "v1.15.3",
             "source": {
@@ -9584,6 +10316,9 @@
             },
             "require-dev": {
                 "orchestra/testbench": "^7.0|^8.0|^9.0",
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                 "phpstan/phpstan": "^1.10"
             },
@@ -9593,9 +10328,12 @@
             "type": "library",
             "extra": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "branch-alias": {
                     "dev-master": "1.x-dev"
                 },
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
                 "laravel": {
@@ -9628,6 +10366,7 @@
                 "issues": "https://github.com/laravel/sail/issues",
                 "source": "https://github.com/laravel/sail"
             },
+<<<<<<< HEAD
 <<<<<<< HEAD
             "time": "2023-09-11T17:37:09+00:00"
         },
@@ -9718,6 +10457,8 @@
                 "url": "https://api.github.com/repos/mockery/mockery/zipball/1f4efdd7d3beafe9807b08156dfcb176d18f1699",
                 "reference": "1f4efdd7d3beafe9807b08156dfcb176d18f1699",
 =======
+=======
+>>>>>>> danhmuc_list
             "time": "2024-03-20T20:09:31+00:00"
         },
         {
@@ -9732,6 +10473,9 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/mockery/mockery/zipball/81a161d0b135df89951abd52296adf97deb0723d",
                 "reference": "81a161d0b135df89951abd52296adf97deb0723d",
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                 "shasum": ""
             },
@@ -9803,6 +10547,7 @@
                 "source": "https://github.com/mockery/mockery"
             },
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2024-05-16T03:13:13+00:00"
         },
         {
@@ -9824,10 +10569,15 @@
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> danhmuc_list
             "time": "2024-03-21T18:34:15+00:00"
         },
         {
             "name": "myclabs/deep-copy",
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             "version": "1.11.1",
             "source": {
@@ -9840,9 +10590,12 @@
                 "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/7284c22080590fb39f2ffa3e9057f10a4ddd0e0c",
                 "reference": "7284c22080590fb39f2ffa3e9057f10a4ddd0e0c",
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/them_slide
 =======
 >>>>>>> Login_Register
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
                 "shasum": ""
@@ -9855,6 +10608,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "doctrine/common": "<2.13.3 || >=3 <3.2.2"
 =======
                 "doctrine/common": "<2.13.3 || >=3,<3.2.2"
@@ -9865,10 +10619,14 @@
 =======
                 "doctrine/common": "<2.13.3 || >=3,<3.2.2"
 >>>>>>> danhmuc_list
+=======
+                "doctrine/common": "<2.13.3 || >=3,<3.2.2"
+>>>>>>> danhmuc_list
             },
             "require-dev": {
                 "doctrine/collections": "^1.6.8",
                 "doctrine/common": "^2.13.3 || ^3.2.2",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9878,6 +10636,8 @@
 =======
                 "phpspec/prophecy": "^1.10",
 >>>>>>> Login_Register
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
                 "phpunit/phpunit": "^7.5.20 || ^8.5.23 || ^9.5.13"
@@ -9908,6 +10668,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/myclabs/DeepCopy/tree/1.12.0"
 =======
                 "source": "https://github.com/myclabs/DeepCopy/tree/1.11.1"
@@ -9918,6 +10679,9 @@
 =======
                 "source": "https://github.com/myclabs/DeepCopy/tree/1.11.1"
 >>>>>>> danhmuc_list
+=======
+                "source": "https://github.com/myclabs/DeepCopy/tree/1.11.1"
+>>>>>>> danhmuc_list
             },
             "funding": [
                 {
@@ -9925,6 +10689,7 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -9967,6 +10732,8 @@
                 "phpstan/phpstan": "^0.12.64",
                 "phpunit/phpunit": "^9.5.0"
 =======
+=======
+>>>>>>> danhmuc_list
             "time": "2023-03-08T13:26:56+00:00"
         },
         {
@@ -10005,6 +10772,9 @@
                 "phpunit/phpunit": "^10.4.1",
                 "sebastian/environment": "^6.0.1",
                 "spatie/laravel-ignition": "^2.3.1"
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             },
             "type": "library",
@@ -10017,6 +10787,12 @@
             },
             "autoload": {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                "files": [
+                    "./src/Adapters/Phpunit/Autoload.php"
+                ],
+>>>>>>> danhmuc_list
 =======
                 "files": [
                     "./src/Adapters/Phpunit/Autoload.php"
@@ -10068,7 +10844,11 @@
                 }
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2022-01-10T16:22:52+00:00"
+=======
+            "time": "2023-10-11T15:45:01+00:00"
+>>>>>>> danhmuc_list
 =======
             "time": "2023-10-11T15:45:01+00:00"
 >>>>>>> danhmuc_list
@@ -10196,6 +10976,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Login_Register
             "version": "9.2.32",
@@ -10224,6 +11005,8 @@
 =======
 >>>>>>> Login_Register
 =======
+=======
+>>>>>>> danhmuc_list
             "version": "10.1.14",
             "source": {
                 "type": "git",
@@ -10234,6 +11017,9 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/e3f51450ebffe8e0efdf7346ae966a656f7d5e5b",
                 "reference": "e3f51450ebffe8e0efdf7346ae966a656f7d5e5b",
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                 "shasum": ""
             },
@@ -10241,6 +11027,7 @@
                 "ext-dom": "*",
                 "ext-libxml": "*",
                 "ext-xmlwriter": "*",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10278,6 +11065,8 @@
 =======
 >>>>>>> Login_Register
 =======
+=======
+>>>>>>> danhmuc_list
                 "nikic/php-parser": "^4.18 || ^5.0",
                 "php": ">=8.1",
                 "phpunit/php-file-iterator": "^4.0",
@@ -10291,6 +11080,9 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "^10.1"
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             },
             "suggest": {
@@ -10303,6 +11095,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "dev-main": "9.2.x-dev"
 =======
                     "dev-master": "9.2-dev"
@@ -10310,6 +11103,9 @@
 =======
                     "dev-main": "9.2.x-dev"
 >>>>>>> Login_Register
+=======
+                    "dev-main": "10.1-dev"
+>>>>>>> danhmuc_list
 =======
                     "dev-main": "10.1-dev"
 >>>>>>> danhmuc_list
@@ -10344,6 +11140,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/9.2.32"
 =======
                 "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/9.2.31"
@@ -10354,6 +11151,9 @@
 =======
                 "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/10.1.14"
 >>>>>>> danhmuc_list
+=======
+                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/10.1.14"
+>>>>>>> danhmuc_list
             },
             "funding": [
                 {
@@ -10361,6 +11161,7 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10392,6 +11193,8 @@
             "require-dev": {
                 "phpunit/phpunit": "^9.3"
 =======
+=======
+>>>>>>> danhmuc_list
             "time": "2024-03-12T15:33:41+00:00"
         },
         {
@@ -10413,13 +11216,20 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "^10.0"
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "dev-master": "3.0-dev"
+=======
+                    "dev-main": "4.0-dev"
+>>>>>>> danhmuc_list
 =======
                     "dev-main": "4.0-dev"
 >>>>>>> danhmuc_list
@@ -10450,7 +11260,12 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-file-iterator/issues",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/php-file-iterator/tree/3.0.6"
+=======
+                "security": "https://github.com/sebastianbergmann/php-file-iterator/security/policy",
+                "source": "https://github.com/sebastianbergmann/php-file-iterator/tree/4.1.0"
+>>>>>>> danhmuc_list
 =======
                 "security": "https://github.com/sebastianbergmann/php-file-iterator/security/policy",
                 "source": "https://github.com/sebastianbergmann/php-file-iterator/tree/4.1.0"
@@ -10462,6 +11277,7 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
             "time": "2021-12-02T12:48:52+00:00"
         },
@@ -10486,6 +11302,8 @@
                 "ext-pcntl": "*",
                 "phpunit/phpunit": "^9.3"
 =======
+=======
+>>>>>>> danhmuc_list
             "time": "2023-08-31T06:24:48+00:00"
         },
         {
@@ -10508,6 +11326,9 @@
             "require-dev": {
                 "ext-pcntl": "*",
                 "phpunit/phpunit": "^10.0"
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             },
             "suggest": {
@@ -10517,7 +11338,11 @@
             "extra": {
                 "branch-alias": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "dev-master": "3.1-dev"
+=======
+                    "dev-main": "4.0-dev"
+>>>>>>> danhmuc_list
 =======
                     "dev-main": "4.0-dev"
 >>>>>>> danhmuc_list
@@ -10547,7 +11372,11 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-invoker/issues",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/php-invoker/tree/3.1.1"
+=======
+                "source": "https://github.com/sebastianbergmann/php-invoker/tree/4.0.0"
+>>>>>>> danhmuc_list
 =======
                 "source": "https://github.com/sebastianbergmann/php-invoker/tree/4.0.0"
 >>>>>>> danhmuc_list
@@ -10558,6 +11387,7 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
             "time": "2020-09-28T05:58:55+00:00"
         },
@@ -10581,6 +11411,8 @@
             "require-dev": {
                 "phpunit/phpunit": "^9.3"
 =======
+=======
+>>>>>>> danhmuc_list
             "time": "2023-02-03T06:56:09+00:00"
         },
         {
@@ -10602,13 +11434,20 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "^10.0"
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "dev-master": "2.0-dev"
+=======
+                    "dev-main": "3.0-dev"
+>>>>>>> danhmuc_list
 =======
                     "dev-main": "3.0-dev"
 >>>>>>> danhmuc_list
@@ -10638,7 +11477,12 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-text-template/issues",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/php-text-template/tree/2.0.4"
+=======
+                "security": "https://github.com/sebastianbergmann/php-text-template/security/policy",
+                "source": "https://github.com/sebastianbergmann/php-text-template/tree/3.0.1"
+>>>>>>> danhmuc_list
 =======
                 "security": "https://github.com/sebastianbergmann/php-text-template/security/policy",
                 "source": "https://github.com/sebastianbergmann/php-text-template/tree/3.0.1"
@@ -10650,6 +11494,7 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
             "time": "2020-10-26T05:33:50+00:00"
         },
@@ -10673,6 +11518,8 @@
             "require-dev": {
                 "phpunit/phpunit": "^9.3"
 =======
+=======
+>>>>>>> danhmuc_list
             "time": "2023-08-31T14:07:24+00:00"
         },
         {
@@ -10694,13 +11541,20 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "^10.0"
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "dev-master": "5.0-dev"
+=======
+                    "dev-main": "6.0-dev"
+>>>>>>> danhmuc_list
 =======
                     "dev-main": "6.0-dev"
 >>>>>>> danhmuc_list
@@ -10730,7 +11584,11 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-timer/issues",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/php-timer/tree/5.0.3"
+=======
+                "source": "https://github.com/sebastianbergmann/php-timer/tree/6.0.0"
+>>>>>>> danhmuc_list
 =======
                 "source": "https://github.com/sebastianbergmann/php-timer/tree/6.0.0"
 >>>>>>> danhmuc_list
@@ -10741,6 +11599,7 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
             "time": "2020-10-26T13:16:10+00:00"
         },
@@ -10784,6 +11643,8 @@
 =======
 >>>>>>> Login_Register
 =======
+=======
+>>>>>>> danhmuc_list
             "time": "2023-02-03T06:57:52+00:00"
         },
         {
@@ -10801,6 +11662,9 @@
                 "shasum": ""
             },
             "require": {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                 "ext-dom": "*",
                 "ext-json": "*",
@@ -10808,6 +11672,7 @@
                 "ext-mbstring": "*",
                 "ext-xml": "*",
                 "ext-xmlwriter": "*",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10862,6 +11727,8 @@
                 "ext-soap": "To be able to generate mocks based on WSDL files",
                 "ext-xdebug": "PHP extension that provides line coverage as well as branch and path coverage"
 =======
+=======
+>>>>>>> danhmuc_list
                 "myclabs/deep-copy": "^1.10.1",
                 "phar-io/manifest": "^2.0.3",
                 "phar-io/version": "^3.0.2",
@@ -10885,6 +11752,9 @@
             },
             "suggest": {
                 "ext-soap": "To be able to generate mocks based on WSDL files"
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             },
             "bin": [
@@ -10894,7 +11764,11 @@
             "extra": {
                 "branch-alias": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "dev-master": "9.6-dev"
+=======
+                    "dev-main": "10.5-dev"
+>>>>>>> danhmuc_list
 =======
                     "dev-main": "10.5-dev"
 >>>>>>> danhmuc_list
@@ -10932,6 +11806,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/phpunit/tree/9.6.21"
 =======
                 "source": "https://github.com/sebastianbergmann/phpunit/tree/9.6.19"
@@ -10939,6 +11814,9 @@
 =======
                 "source": "https://github.com/sebastianbergmann/phpunit/tree/9.6.21"
 >>>>>>> Login_Register
+=======
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.5.20"
+>>>>>>> danhmuc_list
 =======
                 "source": "https://github.com/sebastianbergmann/phpunit/tree/10.5.20"
 >>>>>>> danhmuc_list
@@ -10957,6 +11835,7 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10988,6 +11867,8 @@
             "require-dev": {
                 "phpunit/phpunit": "^9.3"
 =======
+=======
+>>>>>>> danhmuc_list
             "time": "2024-04-24T06:32:35+00:00"
         },
         {
@@ -11009,13 +11890,20 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "^10.0"
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "dev-master": "1.0-dev"
+=======
+                    "dev-main": "2.0-dev"
+>>>>>>> danhmuc_list
 =======
                     "dev-main": "2.0-dev"
 >>>>>>> danhmuc_list
@@ -11042,7 +11930,12 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/cli-parser/issues",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/cli-parser/tree/1.0.2"
+=======
+                "security": "https://github.com/sebastianbergmann/cli-parser/security/policy",
+                "source": "https://github.com/sebastianbergmann/cli-parser/tree/2.0.1"
+>>>>>>> danhmuc_list
 =======
                 "security": "https://github.com/sebastianbergmann/cli-parser/security/policy",
                 "source": "https://github.com/sebastianbergmann/cli-parser/tree/2.0.1"
@@ -11054,6 +11947,7 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
             "time": "2024-03-02T06:27:43+00:00"
         },
@@ -11077,6 +11971,8 @@
             "require-dev": {
                 "phpunit/phpunit": "^9.3"
 =======
+=======
+>>>>>>> danhmuc_list
             "time": "2024-03-02T07:12:49+00:00"
         },
         {
@@ -11098,13 +11994,20 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "^10.0"
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "dev-master": "1.0-dev"
+=======
+                    "dev-main": "2.0-dev"
+>>>>>>> danhmuc_list
 =======
                     "dev-main": "2.0-dev"
 >>>>>>> danhmuc_list
@@ -11131,7 +12034,11 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/code-unit/issues",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/code-unit/tree/1.0.8"
+=======
+                "source": "https://github.com/sebastianbergmann/code-unit/tree/2.0.0"
+>>>>>>> danhmuc_list
 =======
                 "source": "https://github.com/sebastianbergmann/code-unit/tree/2.0.0"
 >>>>>>> danhmuc_list
@@ -11142,6 +12049,7 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
             "time": "2020-10-26T13:08:54+00:00"
         },
@@ -11165,6 +12073,8 @@
             "require-dev": {
                 "phpunit/phpunit": "^9.3"
 =======
+=======
+>>>>>>> danhmuc_list
             "time": "2023-02-03T06:58:43+00:00"
         },
         {
@@ -11186,13 +12096,20 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "^10.0"
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "dev-master": "2.0-dev"
+=======
+                    "dev-main": "3.0-dev"
+>>>>>>> danhmuc_list
 =======
                     "dev-main": "3.0-dev"
 >>>>>>> danhmuc_list
@@ -11218,7 +12135,11 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/code-unit-reverse-lookup/issues",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/code-unit-reverse-lookup/tree/2.0.3"
+=======
+                "source": "https://github.com/sebastianbergmann/code-unit-reverse-lookup/tree/3.0.0"
+>>>>>>> danhmuc_list
 =======
                 "source": "https://github.com/sebastianbergmann/code-unit-reverse-lookup/tree/3.0.0"
 >>>>>>> danhmuc_list
@@ -11229,6 +12150,7 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
             "time": "2020-09-28T05:30:19+00:00"
         },
@@ -11254,6 +12176,8 @@
             "require-dev": {
                 "phpunit/phpunit": "^9.3"
 =======
+=======
+>>>>>>> danhmuc_list
             "time": "2023-02-03T06:59:15+00:00"
         },
         {
@@ -11279,13 +12203,20 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "^10.3"
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "dev-master": "4.0-dev"
+=======
+                    "dev-main": "5.0-dev"
+>>>>>>> danhmuc_list
 =======
                     "dev-main": "5.0-dev"
 >>>>>>> danhmuc_list
@@ -11328,7 +12259,12 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/comparator/issues",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/comparator/tree/4.0.8"
+=======
+                "security": "https://github.com/sebastianbergmann/comparator/security/policy",
+                "source": "https://github.com/sebastianbergmann/comparator/tree/5.0.1"
+>>>>>>> danhmuc_list
 =======
                 "security": "https://github.com/sebastianbergmann/comparator/security/policy",
                 "source": "https://github.com/sebastianbergmann/comparator/tree/5.0.1"
@@ -11340,6 +12276,7 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
             "time": "2022-09-14T12:41:17+00:00"
         },
@@ -11356,6 +12293,8 @@
                 "url": "https://api.github.com/repos/sebastianbergmann/complexity/zipball/25f207c40d62b8b7aa32f5ab026c53561964053a",
                 "reference": "25f207c40d62b8b7aa32f5ab026c53561964053a",
 =======
+=======
+>>>>>>> danhmuc_list
             "time": "2023-08-14T13:18:12+00:00"
         },
         {
@@ -11370,28 +12309,41 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/complexity/zipball/68ff824baeae169ec9f2137158ee529584553799",
                 "reference": "68ff824baeae169ec9f2137158ee529584553799",
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                 "shasum": ""
             },
             "require": {
                 "nikic/php-parser": "^4.18 || ^5.0",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "php": ">=7.3"
             },
             "require-dev": {
                 "phpunit/phpunit": "^9.3"
 =======
+=======
+>>>>>>> danhmuc_list
                 "php": ">=8.1"
             },
             "require-dev": {
                 "phpunit/phpunit": "^10.0"
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "dev-master": "2.0-dev"
+=======
+                    "dev-main": "3.2-dev"
+>>>>>>> danhmuc_list
 =======
                     "dev-main": "3.2-dev"
 >>>>>>> danhmuc_list
@@ -11418,7 +12370,12 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/complexity/issues",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/complexity/tree/2.0.3"
+=======
+                "security": "https://github.com/sebastianbergmann/complexity/security/policy",
+                "source": "https://github.com/sebastianbergmann/complexity/tree/3.2.0"
+>>>>>>> danhmuc_list
 =======
                 "security": "https://github.com/sebastianbergmann/complexity/security/policy",
                 "source": "https://github.com/sebastianbergmann/complexity/tree/3.2.0"
@@ -11430,6 +12387,7 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
             "time": "2023-12-22T06:19:30+00:00"
         },
@@ -11454,6 +12412,8 @@
                 "phpunit/phpunit": "^9.3",
                 "symfony/process": "^4.2 || ^5"
 =======
+=======
+>>>>>>> danhmuc_list
             "time": "2023-12-21T08:37:17+00:00"
         },
         {
@@ -11476,13 +12436,20 @@
             "require-dev": {
                 "phpunit/phpunit": "^10.0",
                 "symfony/process": "^6.4"
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "dev-master": "4.0-dev"
+=======
+                    "dev-main": "5.1-dev"
+>>>>>>> danhmuc_list
 =======
                     "dev-main": "5.1-dev"
 >>>>>>> danhmuc_list
@@ -11518,7 +12485,12 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/diff/issues",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/diff/tree/4.0.6"
+=======
+                "security": "https://github.com/sebastianbergmann/diff/security/policy",
+                "source": "https://github.com/sebastianbergmann/diff/tree/5.1.1"
+>>>>>>> danhmuc_list
 =======
                 "security": "https://github.com/sebastianbergmann/diff/security/policy",
                 "source": "https://github.com/sebastianbergmann/diff/tree/5.1.1"
@@ -11530,6 +12502,7 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
             "time": "2024-03-02T06:30:58+00:00"
         },
@@ -11553,6 +12526,8 @@
             "require-dev": {
                 "phpunit/phpunit": "^9.3"
 =======
+=======
+>>>>>>> danhmuc_list
             "time": "2024-03-02T07:15:17+00:00"
         },
         {
@@ -11574,6 +12549,9 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "^10.0"
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             },
             "suggest": {
@@ -11583,7 +12561,11 @@
             "extra": {
                 "branch-alias": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "dev-master": "5.1-dev"
+=======
+                    "dev-main": "6.1-dev"
+>>>>>>> danhmuc_list
 =======
                     "dev-main": "6.1-dev"
 >>>>>>> danhmuc_list
@@ -11606,7 +12588,11 @@
             ],
             "description": "Provides functionality to handle HHVM/PHP environments",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "homepage": "http://www.github.com/sebastianbergmann/environment",
+=======
+            "homepage": "https://github.com/sebastianbergmann/environment",
+>>>>>>> danhmuc_list
 =======
             "homepage": "https://github.com/sebastianbergmann/environment",
 >>>>>>> danhmuc_list
@@ -11618,7 +12604,12 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/environment/issues",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/environment/tree/5.1.5"
+=======
+                "security": "https://github.com/sebastianbergmann/environment/security/policy",
+                "source": "https://github.com/sebastianbergmann/environment/tree/6.1.0"
+>>>>>>> danhmuc_list
 =======
                 "security": "https://github.com/sebastianbergmann/environment/security/policy",
                 "source": "https://github.com/sebastianbergmann/environment/tree/6.1.0"
@@ -11630,6 +12621,7 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
             "time": "2023-02-03T06:03:51+00:00"
         },
@@ -11655,6 +12647,8 @@
                 "ext-mbstring": "*",
                 "phpunit/phpunit": "^9.3"
 =======
+=======
+>>>>>>> danhmuc_list
             "time": "2024-03-23T08:47:14+00:00"
         },
         {
@@ -11678,13 +12672,20 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "^10.0"
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "dev-master": "4.0-dev"
+=======
+                    "dev-main": "5.1-dev"
+>>>>>>> danhmuc_list
 =======
                     "dev-main": "5.1-dev"
 >>>>>>> danhmuc_list
@@ -11730,7 +12731,12 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/exporter/issues",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/exporter/tree/4.0.6"
+=======
+                "security": "https://github.com/sebastianbergmann/exporter/security/policy",
+                "source": "https://github.com/sebastianbergmann/exporter/tree/5.1.2"
+>>>>>>> danhmuc_list
 =======
                 "security": "https://github.com/sebastianbergmann/exporter/security/policy",
                 "source": "https://github.com/sebastianbergmann/exporter/tree/5.1.2"
@@ -11742,6 +12748,7 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
             "time": "2024-03-02T06:33:00+00:00"
         },
@@ -11771,6 +12778,8 @@
             "suggest": {
                 "ext-uopz": "*"
 =======
+=======
+>>>>>>> danhmuc_list
             "time": "2024-03-02T07:17:12+00:00"
         },
         {
@@ -11795,13 +12804,20 @@
             "require-dev": {
                 "ext-dom": "*",
                 "phpunit/phpunit": "^10.0"
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "dev-master": "5.0-dev"
+=======
+                    "dev-main": "6.0-dev"
+>>>>>>> danhmuc_list
 =======
                     "dev-main": "6.0-dev"
 >>>>>>> danhmuc_list
@@ -11824,7 +12840,11 @@
             ],
             "description": "Snapshotting of global state",
 <<<<<<< HEAD
+<<<<<<< HEAD
             "homepage": "http://www.github.com/sebastianbergmann/global-state",
+=======
+            "homepage": "https://www.github.com/sebastianbergmann/global-state",
+>>>>>>> danhmuc_list
 =======
             "homepage": "https://www.github.com/sebastianbergmann/global-state",
 >>>>>>> danhmuc_list
@@ -11834,7 +12854,12 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/global-state/issues",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/global-state/tree/5.0.7"
+=======
+                "security": "https://github.com/sebastianbergmann/global-state/security/policy",
+                "source": "https://github.com/sebastianbergmann/global-state/tree/6.0.2"
+>>>>>>> danhmuc_list
 =======
                 "security": "https://github.com/sebastianbergmann/global-state/security/policy",
                 "source": "https://github.com/sebastianbergmann/global-state/tree/6.0.2"
@@ -11846,6 +12871,7 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
             "time": "2024-03-02T06:35:11+00:00"
         },
@@ -11862,6 +12888,8 @@
                 "url": "https://api.github.com/repos/sebastianbergmann/lines-of-code/zipball/e1e4a170560925c26d424b6a03aed157e7dcc5c5",
                 "reference": "e1e4a170560925c26d424b6a03aed157e7dcc5c5",
 =======
+=======
+>>>>>>> danhmuc_list
             "time": "2024-03-02T07:19:19+00:00"
         },
         {
@@ -11876,28 +12904,41 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/lines-of-code/zipball/856e7f6a75a84e339195d48c556f23be2ebf75d0",
                 "reference": "856e7f6a75a84e339195d48c556f23be2ebf75d0",
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                 "shasum": ""
             },
             "require": {
                 "nikic/php-parser": "^4.18 || ^5.0",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "php": ">=7.3"
             },
             "require-dev": {
                 "phpunit/phpunit": "^9.3"
 =======
+=======
+>>>>>>> danhmuc_list
                 "php": ">=8.1"
             },
             "require-dev": {
                 "phpunit/phpunit": "^10.0"
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "dev-master": "1.0-dev"
+=======
+                    "dev-main": "2.0-dev"
+>>>>>>> danhmuc_list
 =======
                     "dev-main": "2.0-dev"
 >>>>>>> danhmuc_list
@@ -11924,7 +12965,12 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/lines-of-code/issues",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/lines-of-code/tree/1.0.4"
+=======
+                "security": "https://github.com/sebastianbergmann/lines-of-code/security/policy",
+                "source": "https://github.com/sebastianbergmann/lines-of-code/tree/2.0.2"
+>>>>>>> danhmuc_list
 =======
                 "security": "https://github.com/sebastianbergmann/lines-of-code/security/policy",
                 "source": "https://github.com/sebastianbergmann/lines-of-code/tree/2.0.2"
@@ -11936,6 +12982,7 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
             "time": "2023-12-22T06:20:34+00:00"
         },
@@ -11961,6 +13008,8 @@
             "require-dev": {
                 "phpunit/phpunit": "^9.3"
 =======
+=======
+>>>>>>> danhmuc_list
             "time": "2023-12-21T08:38:20+00:00"
         },
         {
@@ -11984,13 +13033,20 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "^10.0"
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "dev-master": "4.0-dev"
+=======
+                    "dev-main": "5.0-dev"
+>>>>>>> danhmuc_list
 =======
                     "dev-main": "5.0-dev"
 >>>>>>> danhmuc_list
@@ -12016,7 +13072,11 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/object-enumerator/issues",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/object-enumerator/tree/4.0.4"
+=======
+                "source": "https://github.com/sebastianbergmann/object-enumerator/tree/5.0.0"
+>>>>>>> danhmuc_list
 =======
                 "source": "https://github.com/sebastianbergmann/object-enumerator/tree/5.0.0"
 >>>>>>> danhmuc_list
@@ -12027,6 +13087,7 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
             "time": "2020-10-26T13:12:34+00:00"
         },
@@ -12050,6 +13111,8 @@
             "require-dev": {
                 "phpunit/phpunit": "^9.3"
 =======
+=======
+>>>>>>> danhmuc_list
             "time": "2023-02-03T07:08:32+00:00"
         },
         {
@@ -12071,13 +13134,20 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "^10.0"
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "dev-master": "2.0-dev"
+=======
+                    "dev-main": "3.0-dev"
+>>>>>>> danhmuc_list
 =======
                     "dev-main": "3.0-dev"
 >>>>>>> danhmuc_list
@@ -12103,7 +13173,11 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/object-reflector/issues",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/object-reflector/tree/2.0.4"
+=======
+                "source": "https://github.com/sebastianbergmann/object-reflector/tree/3.0.0"
+>>>>>>> danhmuc_list
 =======
                 "source": "https://github.com/sebastianbergmann/object-reflector/tree/3.0.0"
 >>>>>>> danhmuc_list
@@ -12114,6 +13188,7 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
             "time": "2020-10-26T13:14:26+00:00"
         },
@@ -12137,6 +13212,8 @@
             "require-dev": {
                 "phpunit/phpunit": "^9.3"
 =======
+=======
+>>>>>>> danhmuc_list
             "time": "2023-02-03T07:06:18+00:00"
         },
         {
@@ -12158,13 +13235,20 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "^10.0"
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "dev-master": "4.0-dev"
+=======
+                    "dev-main": "5.0-dev"
+>>>>>>> danhmuc_list
 =======
                     "dev-main": "5.0-dev"
 >>>>>>> danhmuc_list
@@ -12198,7 +13282,11 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/recursion-context/issues",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/recursion-context/tree/4.0.5"
+=======
+                "source": "https://github.com/sebastianbergmann/recursion-context/tree/5.0.0"
+>>>>>>> danhmuc_list
 =======
                 "source": "https://github.com/sebastianbergmann/recursion-context/tree/5.0.0"
 >>>>>>> danhmuc_list
@@ -12209,6 +13297,7 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
             "time": "2023-02-03T06:07:39+00:00"
         },
@@ -12286,6 +13375,8 @@
             "require-dev": {
                 "phpunit/phpunit": "^9.5"
 =======
+=======
+>>>>>>> danhmuc_list
             "time": "2023-02-03T07:05:40+00:00"
         },
         {
@@ -12307,13 +13398,20 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "^10.0"
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "dev-master": "3.2-dev"
+=======
+                    "dev-main": "4.0-dev"
+>>>>>>> danhmuc_list
 =======
                     "dev-main": "4.0-dev"
 >>>>>>> danhmuc_list
@@ -12340,7 +13438,11 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/type/issues",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/type/tree/3.2.1"
+=======
+                "source": "https://github.com/sebastianbergmann/type/tree/4.0.0"
+>>>>>>> danhmuc_list
 =======
                 "source": "https://github.com/sebastianbergmann/type/tree/4.0.0"
 >>>>>>> danhmuc_list
@@ -12351,6 +13453,7 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
             "time": "2023-02-03T06:13:03+00:00"
         },
@@ -12371,6 +13474,8 @@
             "require": {
                 "php": ">=7.3"
 =======
+=======
+>>>>>>> danhmuc_list
             "time": "2023-02-03T07:10:45+00:00"
         },
         {
@@ -12389,13 +13494,20 @@
             },
             "require": {
                 "php": ">=8.1"
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     "dev-master": "3.0-dev"
+=======
+                    "dev-main": "4.0-dev"
+>>>>>>> danhmuc_list
 =======
                     "dev-main": "4.0-dev"
 >>>>>>> danhmuc_list
@@ -12422,7 +13534,11 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/version/issues",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/sebastianbergmann/version/tree/3.0.2"
+=======
+                "source": "https://github.com/sebastianbergmann/version/tree/4.0.1"
+>>>>>>> danhmuc_list
 =======
                 "source": "https://github.com/sebastianbergmann/version/tree/4.0.1"
 >>>>>>> danhmuc_list
@@ -12433,6 +13549,7 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
             "time": "2020-09-28T06:39:44+00:00"
         },
@@ -12480,6 +13597,8 @@
             "require-dev": {
                 "symfony/console": "^5.4|^6.0|^7.0"
 =======
+=======
+>>>>>>> danhmuc_list
             "time": "2023-02-07T11:34:05+00:00"
         },
         {
@@ -12812,6 +13931,9 @@
             },
             "require-dev": {
                 "symfony/console": "^6.4|^7.0"
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             },
             "bin": [
@@ -12846,6 +13968,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/yaml/tree/v6.4.12"
 =======
                 "source": "https://github.com/symfony/yaml/tree/v6.4.7"
@@ -12853,6 +13976,9 @@
 =======
                 "source": "https://github.com/symfony/yaml/tree/v6.4.12"
 >>>>>>> Login_Register
+=======
+                "source": "https://github.com/symfony/yaml/tree/v7.0.7"
+>>>>>>> danhmuc_list
 =======
                 "source": "https://github.com/symfony/yaml/tree/v7.0.7"
 >>>>>>> danhmuc_list
@@ -12874,6 +14000,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             "time": "2024-09-17T12:47:12+00:00"
 =======
             "time": "2024-04-28T10:28:08+00:00"
@@ -12881,6 +14008,9 @@
 =======
             "time": "2024-09-17T12:47:12+00:00"
 >>>>>>> Login_Register
+=======
+            "time": "2024-04-28T11:44:19+00:00"
+>>>>>>> danhmuc_list
 =======
             "time": "2024-04-28T11:44:19+00:00"
 >>>>>>> danhmuc_list
@@ -12938,7 +14068,11 @@
     ],
     "aliases": [],
 <<<<<<< HEAD
+<<<<<<< HEAD
     "minimum-stability": "dev",
+=======
+    "minimum-stability": "stable",
+>>>>>>> danhmuc_list
 =======
     "minimum-stability": "stable",
 >>>>>>> danhmuc_list
@@ -12947,7 +14081,11 @@
     "prefer-lowest": false,
     "platform": {
 <<<<<<< HEAD
+<<<<<<< HEAD
         "php": "^7.3|^8.0"
+=======
+        "php": "^8.1"
+>>>>>>> danhmuc_list
 =======
         "php": "^8.1"
 >>>>>>> danhmuc_list

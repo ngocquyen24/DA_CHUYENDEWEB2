@@ -28,7 +28,10 @@
   }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 div.dataTables_wrapper {
   position: relative;
 }
@@ -37,6 +40,9 @@ div.dt-buttons {
   position: initial;
 }
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 div.dt-button-info {
   position: fixed;
@@ -48,7 +54,11 @@ div.dt-button-info {
   background-color: white;
   border: 2px solid #111;
 <<<<<<< HEAD
+<<<<<<< HEAD
   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+=======
+  box-shadow: 3px 4px 10px 1px rgba(0, 0, 0, 0.3);
+>>>>>>> danhmuc_list
 =======
   box-shadow: 3px 4px 10px 1px rgba(0, 0, 0, 0.3);
 >>>>>>> danhmuc_list
@@ -68,10 +78,13 @@ div.dt-button-info > div {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 div.dt-button-collection-title {
   text-align: center;
   padding: 0.3em 0 0.5em;
 =======
+=======
+>>>>>>> danhmuc_list
 div.dtb-popover-close {
   position: absolute;
   top: 10px;
@@ -95,6 +108,9 @@ div.dt-button-collection-title {
   padding: 0.3em 0 0.5em;
   margin-left: 0.5em;
   margin-right: 0.5em;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   font-size: 0.9em;
 }
@@ -103,6 +119,7 @@ div.dt-button-collection-title:empty {
   display: none;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 div.dt-button-collection {
   position: absolute;
@@ -124,6 +141,8 @@ div.dt-button-collection.fixed {
   margin-left: -75px;
   border-radius: 0;
 =======
+=======
+>>>>>>> danhmuc_list
 span.dt-button-spacer {
   display: inline-block;
   margin: 0.5em;
@@ -185,6 +204,9 @@ div.dt-button-collection.fixed {
   margin-left: -75px;
   border-radius: 5px;
   background-color: white;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 }
 div.dt-button-collection.fixed.two-column {
@@ -197,8 +219,11 @@ div.dt-button-collection.fixed.four-column {
   margin-left: -300px;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 div.dt-button-collection > :last-child {
 =======
+=======
+>>>>>>> danhmuc_list
 div.dt-button-collection.fixed.columns {
   margin-left: -409px;
 }
@@ -222,6 +247,9 @@ div.dt-button-collection.fixed > :last-child {
   overflow: auto;
 }
 div.dt-button-collection.two-column > :last-child, div.dt-button-collection.three-column > :last-child, div.dt-button-collection.four-column > :last-child {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   display: block !important;
   -webkit-column-gap: 8px;
@@ -231,7 +259,11 @@ div.dt-button-collection.two-column > :last-child, div.dt-button-collection.thre
   column-gap: 8px;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 div.dt-button-collection > :last-child > * {
+=======
+div.dt-button-collection.two-column > :last-child > *, div.dt-button-collection.three-column > :last-child > *, div.dt-button-collection.four-column > :last-child > * {
+>>>>>>> danhmuc_list
 =======
 div.dt-button-collection.two-column > :last-child > *, div.dt-button-collection.three-column > :last-child > *, div.dt-button-collection.four-column > :last-child > * {
 >>>>>>> danhmuc_list
@@ -244,10 +276,13 @@ div.dt-button-collection.two-column {
 div.dt-button-collection.two-column > :last-child {
   padding-bottom: 1px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-column-count: 2;
   -moz-column-count: 2;
   -ms-column-count: 2;
   -o-column-count: 2;
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
   column-count: 2;
@@ -258,10 +293,13 @@ div.dt-button-collection.three-column {
 div.dt-button-collection.three-column > :last-child {
   padding-bottom: 1px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-column-count: 3;
   -moz-column-count: 3;
   -ms-column-count: 3;
   -o-column-count: 3;
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
   column-count: 3;
@@ -272,10 +310,13 @@ div.dt-button-collection.four-column {
 div.dt-button-collection.four-column > :last-child {
   padding-bottom: 1px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   -webkit-column-count: 4;
   -moz-column-count: 4;
   -ms-column-count: 4;
   -o-column-count: 4;
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
   column-count: 4;
@@ -284,9 +325,12 @@ div.dt-button-collection .dt-button {
   border-radius: 0;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 div.dt-button-collection.fixed {
   max-width: none;
 =======
+=======
+>>>>>>> danhmuc_list
 div.dt-button-collection.columns {
   width: auto;
 }
@@ -333,13 +377,19 @@ div.dt-button-collection.columns.dtb-b1 .dt-button {
   div.dt-button-collection.columns > :last-child {
     width: 200px;
   }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 }
 div.dt-button-collection.fixed:before, div.dt-button-collection.fixed:after {
   display: none;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 div.dt-button-collection .btn-group {
   flex: 1 1 auto;
 }
@@ -370,6 +420,9 @@ div.dt-button-collection button.dt-btn-split-drop-button:hover {
 div.dt-button-collection button.dt-btn-split-drop-button:active {
   background-color: #007bff !important;
 }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 div.dt-button-background {
@@ -420,7 +473,10 @@ div.dt-buttons a.btn.processing:after {
   -moz-animation: dtb-spinner 1500ms infinite linear;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 div.dt-buttons div.btn-group {
   position: initial;
 }
@@ -498,4 +554,7 @@ div.dt-button-collection span.dt-button-spacer {
   padding-left: 1rem !important;
   text-align: left;
 }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list

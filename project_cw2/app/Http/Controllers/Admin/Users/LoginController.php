@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin\Users;
 
 use App\Http\Controllers\Controller;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use App\Models\User;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Http\Request;
@@ -12,10 +13,15 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Str;
 =======
+=======
+>>>>>>> danhmuc_list
 use Illuminate\Support\Facades\Session;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 
@@ -24,7 +30,11 @@ class LoginController extends Controller
     public function index(){
         return view('admin.users.login',[
 <<<<<<< HEAD
+<<<<<<< HEAD
             'title' => 'Admin'
+=======
+            'title' => 'Đăng nhập hệ thống'
+>>>>>>> danhmuc_list
 =======
             'title' => 'Đăng nhập hệ thống'
 >>>>>>> danhmuc_list
@@ -43,7 +53,11 @@ class LoginController extends Controller
        if(Auth::attempt(['email' => $request->input('email'),
             'password' => $request->input('password'),
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+            
+>>>>>>> danhmuc_list
 =======
             
 >>>>>>> danhmuc_list
@@ -54,6 +68,7 @@ class LoginController extends Controller
 
        return redirect()->back();
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     public function indexRegister(){
@@ -133,6 +148,8 @@ class LoginController extends Controller
     // }
 
 
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 }

@@ -5,6 +5,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 class CreatePersonalAccessTokensTable extends Migration
 {
     /**
@@ -22,6 +23,8 @@ class CreatePersonalAccessTokensTable extends Migration
             $table->text('abilities')->nullable();
             $table->timestamp('last_used_at')->nullable();
 =======
+=======
+>>>>>>> danhmuc_list
 return new class extends Migration
 {
     /**
@@ -37,6 +40,9 @@ return new class extends Migration
             $table->text('abilities')->nullable();
             $table->timestamp('last_used_at')->nullable();
             $table->timestamp('expires_at')->nullable();
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             $table->timestamps();
         });
@@ -44,6 +50,7 @@ return new class extends Migration
 
     /**
      * Reverse the migrations.
+<<<<<<< HEAD
 <<<<<<< HEAD
      *
      * @return void
@@ -54,10 +61,15 @@ return new class extends Migration
     }
 }
 =======
+=======
+>>>>>>> danhmuc_list
      */
     public function down(): void
     {
         Schema::dropIfExists('personal_access_tokens');
     }
 };
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="flag-icon-css-nz" viewBox="0 0 640 480">
   <defs>
     <clipPath id="nz-c">
@@ -40,6 +41,8 @@
   <path fill="#fff" d="M151.7 0v79.4H0V140h151.7v79.4h60.7v-79.3H364V79.4H212.4V0z" clip-path="url(#nz-c)" color="#000" font-family="sans-serif" font-weight="400" overflow="visible" style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;isolation:auto;mix-blend-mode:normal"/>
   <path fill="#cc142b" d="M163.8 0v91.5H0v36.4h163.8v91.5h36.4V128h163.9V91.5H200.2V0z" color="#000" font-family="sans-serif" font-weight="400" overflow="visible" style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;isolation:auto;mix-blend-mode:normal"/>
 =======
+=======
+>>>>>>> danhmuc_list
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="flag-icons-nz" viewBox="0 0 640 480">
   <defs id="defs30">
     <clipPath id="nz-c">
@@ -81,5 +84,8 @@
   <path id="path1596" fill="#c8102e" stroke-width=".5" d="M212 140.5 320 220v20l-135.5-99.5zm-92 10 3 17.5-96 72H0zM320 0v1.5l-124.5 94 1-22L295 0zM0 0l119.5 88h-30L0 21z"/>
   <path id="path1598" fill="#fff" stroke-width=".5" d="M120.5 0v240h80V0zM0 80v80h320V80z"/>
   <path id="path1600" fill="#c8102e" stroke-width=".5" d="M0 96.5v48h320v-48zM136.5 0v240h48V0z"/>
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 </svg>

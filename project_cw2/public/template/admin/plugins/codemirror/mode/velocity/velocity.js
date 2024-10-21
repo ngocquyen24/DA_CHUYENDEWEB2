@@ -83,6 +83,10 @@ CodeMirror.defineMode("velocity", function() {
         // variable?
         else if (ch == "$") {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            stream.eat("!");
+>>>>>>> danhmuc_list
 =======
             stream.eat("!");
 >>>>>>> danhmuc_list

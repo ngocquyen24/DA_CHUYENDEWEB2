@@ -5,7 +5,11 @@
 * uPlot.js (μPlot)
 * A small, fast chart for time series, lines, areas, ohlc & bars
 <<<<<<< HEAD
+<<<<<<< HEAD
 * https://github.com/leeoniya/uPlot (v1.6.7)
+=======
+* https://github.com/leeoniya/uPlot (v1.6.18)
+>>>>>>> danhmuc_list
 =======
 * https://github.com/leeoniya/uPlot (v1.6.18)
 >>>>>>> danhmuc_list
@@ -14,6 +18,7 @@
 var uPlot = (function () {
 	'use strict';
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	var FEAT_TIME          = true;
 
@@ -38,6 +43,8 @@ var uPlot = (function () {
 		hi = hi || arr.length - 1;
 		var bitwise = hi <= 2147483647;
 =======
+=======
+>>>>>>> danhmuc_list
 	const FEAT_TIME          = true;
 
 	// binary search for index of closest value
@@ -46,12 +53,16 @@ var uPlot = (function () {
 		lo = lo || 0;
 		hi = hi || arr.length - 1;
 		let bitwise = hi <= 2147483647;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 		while (hi - lo > 1) {
 			mid = bitwise ? (lo + hi) >> 1 : floor((lo + hi) / 2);
 
 			if (arr[mid] < num)
+<<<<<<< HEAD
 <<<<<<< HEAD
 				{ lo = mid; }
 			else
@@ -61,6 +72,8 @@ var uPlot = (function () {
 		if (num - arr[lo] <= arr[hi] - num)
 			{ return lo; }
 =======
+=======
+>>>>>>> danhmuc_list
 				lo = mid;
 			else
 				hi = mid;
@@ -68,6 +81,9 @@ var uPlot = (function () {
 
 		if (num - arr[lo] <= arr[hi] - num)
 			return lo;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 		return hi;
@@ -75,9 +91,15 @@ var uPlot = (function () {
 
 	function nonNullIdx(data, _i0, _i1, dir) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 		for (var i = dir == 1 ? _i0 : _i1; i >= _i0 && i <= _i1; i += dir) {
 			if (data[i] != null)
 				{ return i; }
+=======
+		for (let i = dir == 1 ? _i0 : _i1; i >= _i0 && i <= _i1; i += dir) {
+			if (data[i] != null)
+				return i;
+>>>>>>> danhmuc_list
 =======
 		for (let i = dir == 1 ? _i0 : _i1; i >= _i0 && i <= _i1; i += dir) {
 			if (data[i] != null)
@@ -92,8 +114,13 @@ var uPlot = (function () {
 	//	console.log("getMinMax()");
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		var _min = inf;
 		var _max = -inf;
+=======
+		let _min = inf;
+		let _max = -inf;
+>>>>>>> danhmuc_list
 =======
 		let _min = inf;
 		let _max = -inf;
@@ -109,7 +136,11 @@ var uPlot = (function () {
 		}
 		else {
 <<<<<<< HEAD
+<<<<<<< HEAD
 			for (var i = _i0; i <= _i1; i++) {
+=======
+			for (let i = _i0; i <= _i1; i++) {
+>>>>>>> danhmuc_list
 =======
 			for (let i = _i0; i <= _i1; i++) {
 >>>>>>> danhmuc_list
@@ -127,15 +158,21 @@ var uPlot = (function () {
 	//	console.log("getMinMax()");
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		var _min = inf;
 		var _max = -inf;
 
 		for (var i = _i0; i <= _i1; i++) {
 =======
+=======
+>>>>>>> danhmuc_list
 		let _min = inf;
 		let _max = -inf;
 
 		for (let i = _i0; i <= _i1; i++) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			if (data[i] > 0) {
 				_min = min(_min, data[i]);
@@ -146,16 +183,22 @@ var uPlot = (function () {
 		return [
 			_min ==  inf ?  1 : _min,
 <<<<<<< HEAD
+<<<<<<< HEAD
 			_max == -inf ? 10 : _max ];
 	}
 
 	var _fixedTuple = [0, 0];
 =======
+=======
+>>>>>>> danhmuc_list
 			_max == -inf ? 10 : _max,
 		];
 	}
 
 	const _fixedTuple = [0, 0];
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 	function fixIncr(minIncr, maxIncr, minExp, maxExp) {
@@ -165,6 +208,7 @@ var uPlot = (function () {
 	}
 
 	function rangeLog(min, max, base, fullMags) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 		var logFn = base == 10 ? log10 : log2;
@@ -176,6 +220,8 @@ var uPlot = (function () {
 
 		var minExp, maxExp, minMaxIncrs;
 =======
+=======
+>>>>>>> danhmuc_list
 		let minSign = sign(min);
 
 		let logFn = base == 10 ? log10 : log2;
@@ -192,6 +238,9 @@ var uPlot = (function () {
 		}
 
 		let minExp, maxExp, minMaxIncrs;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 		if (fullMags) {
@@ -218,6 +267,7 @@ var uPlot = (function () {
 
 	function rangeAsinh(min, max, base, fullMags) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 		var minMax = rangeLog(min, max, base, fullMags);
 
 		if (min == 0)
@@ -226,6 +276,8 @@ var uPlot = (function () {
 		if (max == 0)
 			{ minMax[1] = 0; }
 =======
+=======
+>>>>>>> danhmuc_list
 		let minMax = rangeLog(min, max, base, fullMags);
 
 		if (min == 0)
@@ -233,14 +285,20 @@ var uPlot = (function () {
 
 		if (max == 0)
 			minMax[1] = 0;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 		return minMax;
 	}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	var _eqRangePart = {
 =======
+=======
+>>>>>>> danhmuc_list
 	const rangePad = 0.1;
 
 	const autoRangePart = {
@@ -249,6 +307,9 @@ var uPlot = (function () {
 	};
 
 	const _eqRangePart = {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		pad:  0,
 		soft: null,
@@ -256,7 +317,11 @@ var uPlot = (function () {
 	};
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	var _eqRange = {
+=======
+	const _eqRange = {
+>>>>>>> danhmuc_list
 =======
 	const _eqRange = {
 >>>>>>> danhmuc_list
@@ -269,7 +334,11 @@ var uPlot = (function () {
 	function rangeNum(_min, _max, mult, extra) {
 		if (isObj(mult))
 <<<<<<< HEAD
+<<<<<<< HEAD
 			{ return _rangeNum(_min, _max, mult); }
+=======
+			return _rangeNum(_min, _max, mult);
+>>>>>>> danhmuc_list
 =======
 			return _rangeNum(_min, _max, mult);
 >>>>>>> danhmuc_list
@@ -286,6 +355,7 @@ var uPlot = (function () {
 		return lh == null ? rh : lh;
 	}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	function _rangeNum(_min, _max, cfg) {
 		var cmin = cfg.min;
@@ -321,6 +391,8 @@ var uPlot = (function () {
 		if (minLim == maxLim && minLim == 0)
 			{ maxLim = 100; }
 =======
+=======
+>>>>>>> danhmuc_list
 	// checks if given index range in an array contains a non-null value
 	// aka a range-bounded Array.some()
 	function hasData(data, idx0, idx1) {
@@ -392,12 +464,16 @@ var uPlot = (function () {
 
 		if (minLim == maxLim && minLim == 0)
 			maxLim = 100;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 		return [minLim, maxLim];
 	}
 
 	// alternative: https://stackoverflow.com/a/2254896
+<<<<<<< HEAD
 <<<<<<< HEAD
 	var fmtNum = new Intl.NumberFormat(navigator.language).format;
 
@@ -427,6 +503,8 @@ var uPlot = (function () {
 
 	var inf = Infinity;
 =======
+=======
+>>>>>>> danhmuc_list
 	const fmtNum = new Intl.NumberFormat(navigator.language).format;
 
 	const M = Math;
@@ -451,6 +529,9 @@ var uPlot = (function () {
 	function numIntDigits(x) {
 		return (log10((x ^ (x >> 31)) - (x >> 31)) | 0) + 1;
 	}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 	function incrRound(num, incr) {
@@ -466,12 +547,15 @@ var uPlot = (function () {
 	}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	var retArg1 = (_0, _1) => _1;
 
 	var retNull = _ => null;
 
 	var retTrue = _ => true;
 =======
+=======
+>>>>>>> danhmuc_list
 	const retArg0 = _0 => _0;
 
 	const retArg1 = (_0, _1) => _1;
@@ -481,6 +565,9 @@ var uPlot = (function () {
 	const retTrue = _ => true;
 
 	const retEq = (a, b) => a == b;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 	function incrRoundUp(num, incr) {
@@ -493,15 +580,21 @@ var uPlot = (function () {
 
 	function roundDec(val, dec) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 		return round(val * (dec = Math.pow( 10, dec ))) / dec;
 	}
 
 	var fixedDec = new Map();
 =======
+=======
+>>>>>>> danhmuc_list
 		return round(val * (dec = 10**dec)) / dec;
 	}
 
 	const fixedDec = new Map();
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 	function guessDec(num) {
@@ -509,6 +602,7 @@ var uPlot = (function () {
 	}
 
 	function genIncrs(base, minExp, maxExp, mults) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 		var incrs = [];
 
@@ -523,6 +617,8 @@ var uPlot = (function () {
 				var dec = (_incr >= 0 && exp >= 0 ? 0 : expa) + (exp >= multDec[i] ? 0 : multDec[i]);
 				var incr = roundDec(_incr, dec);
 =======
+=======
+>>>>>>> danhmuc_list
 		let incrs = [];
 
 		let multDec = mults.map(guessDec);
@@ -535,6 +631,9 @@ var uPlot = (function () {
 				let _incr = mults[i] * mag;
 				let dec = (_incr >= 0 && exp >= 0 ? 0 : expa) + (exp >= multDec[i] ? 0 : multDec[i]);
 				let incr = roundDec(_incr, dec);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 				incrs.push(incr);
 				fixedDec.set(incr, dec);
@@ -547,16 +646,22 @@ var uPlot = (function () {
 	//export const assign = Object.assign;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	var EMPTY_OBJ = {};
 
 	var isArr = Array.isArray;
 =======
+=======
+>>>>>>> danhmuc_list
 	const EMPTY_OBJ = {};
 	const EMPTY_ARR = [];
 
 	const nullNullTuple = [null, null];
 
 	const isArr = Array.isArray;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 	function isStr(v) {
@@ -565,15 +670,21 @@ var uPlot = (function () {
 
 	function isObj(v) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 		var is = false;
 
 		if (v != null) {
 			var c = v.constructor;
 =======
+=======
+>>>>>>> danhmuc_list
 		let is = false;
 
 		if (v != null) {
 			let c = v.constructor;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			is = c == null || c == Object;
 		}
@@ -585,6 +696,7 @@ var uPlot = (function () {
 		return v != null && typeof v == 'object';
 	}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	function copy(o, _isObj) {
 		_isObj = _isObj || isObj;
@@ -601,6 +713,8 @@ var uPlot = (function () {
 		else
 			{ out = o; }
 =======
+=======
+>>>>>>> danhmuc_list
 	function copy(o, _isObj = isObj) {
 		let out;
 
@@ -622,12 +736,16 @@ var uPlot = (function () {
 		}
 		else
 			out = o;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 		return out;
 	}
 
 	function assign(targ) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 		var args = arguments;
 
@@ -640,6 +758,8 @@ var uPlot = (function () {
 				else
 					{ targ[key] = copy(src[key]); }
 =======
+=======
+>>>>>>> danhmuc_list
 		let args = arguments;
 
 		for (let i = 1; i < args.length; i++) {
@@ -650,6 +770,9 @@ var uPlot = (function () {
 					assign(targ[key], copy(src[key]));
 				else
 					targ[key] = copy(src[key]);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			}
 		}
@@ -658,6 +781,7 @@ var uPlot = (function () {
 	}
 
 	// nullModes
+<<<<<<< HEAD
 <<<<<<< HEAD
 	var NULL_REMOVE = 0;  // nulls are converted to undefined (e.g. for spanGaps: true)
 	var NULL_RETAIN = 1;  // nulls are retained, with alignment artifacts set to undefined (default)
@@ -668,6 +792,8 @@ var uPlot = (function () {
 		for (var i = 0, xi = (void 0), lastNullIdx = -1; i < nullIdxs.length; i++) {
 			var nullIdx = nullIdxs[i];
 =======
+=======
+>>>>>>> danhmuc_list
 	const NULL_REMOVE = 0;  // nulls are converted to undefined (e.g. for spanGaps: true)
 	const NULL_RETAIN = 1;  // nulls are retained, with alignment artifacts set to undefined (default)
 	const NULL_EXPAND = 2;  // nulls are expanded to include any adjacent alignment artifacts
@@ -676,11 +802,15 @@ var uPlot = (function () {
 	function nullExpand(yVals, nullIdxs, alignedLen) {
 		for (let i = 0, xi, lastNullIdx = -1; i < nullIdxs.length; i++) {
 			let nullIdx = nullIdxs[i];
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 			if (nullIdx > lastNullIdx) {
 				xi = nullIdx - 1;
 				while (xi >= 0 && yVals[xi] == null)
+<<<<<<< HEAD
 <<<<<<< HEAD
 					{ yVals[xi--] = null; }
 
@@ -688,11 +818,16 @@ var uPlot = (function () {
 				while (xi < alignedLen && yVals[xi] == null)
 					{ yVals[lastNullIdx = xi++] = null; }
 =======
+=======
+>>>>>>> danhmuc_list
 					yVals[xi--] = null;
 
 				xi = nullIdx + 1;
 				while (xi < alignedLen && yVals[xi] == null)
 					yVals[lastNullIdx = xi++] = null;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			}
 		}
@@ -701,6 +836,7 @@ var uPlot = (function () {
 	// nullModes is a tables-matched array indicating how to treat nulls in each series
 	// output is sorted ASC on the joined field (table[0]) and duplicate join values are collapsed
 	function join(tables, nullModes) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 		var xVals = new Set();
 
@@ -741,6 +877,8 @@ var uPlot = (function () {
 
 					if (yVal == null) {
 =======
+=======
+>>>>>>> danhmuc_list
 		let xVals = new Set();
 
 		for (let ti = 0; ti < tables.length; ti++) {
@@ -779,11 +917,15 @@ var uPlot = (function () {
 					let alignedIdx = xIdxs.get(xs[i]);
 
 					if (yVal === null) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 						if (nullMode != NULL_REMOVE) {
 							yVals[alignedIdx] = yVal;
 
 							if (nullMode == NULL_EXPAND)
+<<<<<<< HEAD
 <<<<<<< HEAD
 								{ nullIdxs.push(alignedIdx); }
 						}
@@ -791,11 +933,16 @@ var uPlot = (function () {
 					else
 						{ yVals[alignedIdx] = yVal; }
 =======
+=======
+>>>>>>> danhmuc_list
 								nullIdxs.push(alignedIdx);
 						}
 					}
 					else
 						yVals[alignedIdx] = yVal;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 				}
 
@@ -808,6 +955,7 @@ var uPlot = (function () {
 		return data;
 	}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	var microTask = typeof queueMicrotask == "undefined" ? fn => Promise.resolve().then(fn) : queueMicrotask;
 
@@ -860,6 +1008,8 @@ var uPlot = (function () {
 		if (c != null) {
 			var cl = el.classList;
 =======
+=======
+>>>>>>> danhmuc_list
 	const microTask = typeof queueMicrotask == "undefined" ? fn => Promise.resolve().then(fn) : queueMicrotask;
 
 	const WIDTH       = "width";
@@ -931,6 +1081,9 @@ var uPlot = (function () {
 	function addClass(el, c) {
 		if (c != null) {
 			let cl = el.classList;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			!cl.contains(c) && cl.add(c);
 		}
@@ -938,7 +1091,11 @@ var uPlot = (function () {
 
 	function remClass(el, c) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 		var cl = el.classList;
+=======
+		let cl = el.classList;
+>>>>>>> danhmuc_list
 =======
 		let cl = el.classList;
 >>>>>>> danhmuc_list
@@ -951,6 +1108,7 @@ var uPlot = (function () {
 
 	function placeTag(tag, cls, targ, refEl) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 		var el = doc.createElement(tag);
 
 		if (cls != null)
@@ -959,6 +1117,8 @@ var uPlot = (function () {
 		if (targ != null)
 			{ targ.insertBefore(el, refEl); }
 =======
+=======
+>>>>>>> danhmuc_list
 		let el = doc.createElement(tag);
 
 		if (cls != null)
@@ -966,6 +1126,9 @@ var uPlot = (function () {
 
 		if (targ != null)
 			targ.insertBefore(el, refEl);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 		return el;
@@ -975,6 +1138,7 @@ var uPlot = (function () {
 		return placeTag("div", cls, targ);
 	}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	function trans(el, xPos, yPos, xMax, yMax) {
 		el.style.transform = "translate(" + xPos + "px," + yPos + "px)";
@@ -997,6 +1161,8 @@ var uPlot = (function () {
 
 	var months = [
 =======
+=======
+>>>>>>> danhmuc_list
 	const xformCache = new WeakMap();
 
 	function elTrans(el, xPos, yPos, xMax, yMax) {
@@ -1056,6 +1222,9 @@ var uPlot = (function () {
 	setPxRatio();
 
 	const months = [
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		"January",
 		"February",
@@ -1069,14 +1238,20 @@ var uPlot = (function () {
 		"October",
 		"November",
 <<<<<<< HEAD
+<<<<<<< HEAD
 		"December" ];
 
 	var days = [
 =======
+=======
+>>>>>>> danhmuc_list
 		"December",
 	];
 
 	const days = [
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		"Sunday",
 		"Monday",
@@ -1085,7 +1260,12 @@ var uPlot = (function () {
 		"Thursday",
 		"Friday",
 <<<<<<< HEAD
+<<<<<<< HEAD
 		"Saturday" ];
+=======
+		"Saturday",
+	];
+>>>>>>> danhmuc_list
 =======
 		"Saturday",
 	];
@@ -1096,17 +1276,23 @@ var uPlot = (function () {
 	}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	var days3 = days.map(slice3);
 
 	var months3 = months.map(slice3);
 
 	var engNames = {
 =======
+=======
+>>>>>>> danhmuc_list
 	const days3 = days.map(slice3);
 
 	const months3 = months.map(slice3);
 
 	const engNames = {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		MMMM: months,
 		MMM:  months3,
@@ -1135,7 +1321,11 @@ var uPlot = (function () {
 	*/
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	var subs = {
+=======
+	const subs = {
+>>>>>>> danhmuc_list
 =======
 	const subs = {
 >>>>>>> danhmuc_list
@@ -1165,7 +1355,11 @@ var uPlot = (function () {
 		H:		d => d.getHours(),
 		// 9 (12hr, unpadded)
 <<<<<<< HEAD
+<<<<<<< HEAD
 		h:		d => {var h = d.getHours(); return h == 0 ? 12 : h > 12 ? h - 12 : h;},
+=======
+		h:		d => {let h = d.getHours(); return h == 0 ? 12 : h > 12 ? h - 12 : h;},
+>>>>>>> danhmuc_list
 =======
 		h:		d => {let h = d.getHours(); return h == 0 ? 12 : h > 12 ? h - 12 : h;},
 >>>>>>> danhmuc_list
@@ -1190,6 +1384,7 @@ var uPlot = (function () {
 	function fmtDate(tpl, names) {
 		names = names || engNames;
 <<<<<<< HEAD
+<<<<<<< HEAD
 		var parts = [];
 
 		var R = /\{([a-z]+)\}|[^{]+/gi, m;
@@ -1203,6 +1398,8 @@ var uPlot = (function () {
 			for (var i = 0; i < parts.length; i++)
 				{ out += typeof parts[i] == "string" ? parts[i] : parts[i](d, names); }
 =======
+=======
+>>>>>>> danhmuc_list
 		let parts = [];
 
 		let R = /\{([a-z]+)\}|[^{]+/gi, m;
@@ -1215,12 +1412,16 @@ var uPlot = (function () {
 
 			for (let i = 0; i < parts.length; i++)
 				out += typeof parts[i] == "string" ? parts[i] : parts[i](d, names);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 			return out;
 		}
 	}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	var localTz = new Intl.DateTimeFormat().resolvedOptions().timeZone;
 
@@ -1234,6 +1435,8 @@ var uPlot = (function () {
 		else if (tz == localTz)
 			{ date2 = date; }
 =======
+=======
+>>>>>>> danhmuc_list
 	const localTz = new Intl.DateTimeFormat().resolvedOptions().timeZone;
 
 	// https://stackoverflow.com/questions/15141762/how-to-initialize-a-javascript-date-to-a-particular-time-zone/53652131#53652131
@@ -1245,6 +1448,9 @@ var uPlot = (function () {
 			date2 = new Date(+date + date.getTimezoneOffset() * 6e4);
 		else if (tz == localTz)
 			date2 = date;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		else {
 			date2 = new Date(date.toLocaleString('en-US', {timeZone: tz}));
@@ -1258,6 +1464,7 @@ var uPlot = (function () {
 
 	// default formatters:
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	var onlyWhole = v => v % 1 == 0;
 
@@ -1293,6 +1500,8 @@ var uPlot = (function () {
 	function genTimeStuffs(ms) {
 		var	s  = ms * 1e3,
 =======
+=======
+>>>>>>> danhmuc_list
 	const onlyWhole = v => v % 1 == 0;
 
 	const allMults = [1,2,2.5,5];
@@ -1326,6 +1535,9 @@ var uPlot = (function () {
 
 	function genTimeStuffs(ms) {
 		let	s  = ms * 1e3,
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			m  = s  * 60,
 			h  = m  * 60,
@@ -1335,9 +1547,15 @@ var uPlot = (function () {
 
 		// min of 1e-3 prevents setting a temporal x ticks too small since Date objects cannot advance ticks smaller than 1ms
 <<<<<<< HEAD
+<<<<<<< HEAD
 		var subSecIncrs = ms == 1 ? genIncrs(10, 0, 3, allMults).filter(onlyWhole) : genIncrs(10, -3, 0, allMults);
 
 		var timeIncrs = subSecIncrs.concat([
+=======
+		let subSecIncrs = ms == 1 ? genIncrs(10, 0, 3, allMults).filter(onlyWhole) : genIncrs(10, -3, 0, allMults);
+
+		let timeIncrs = subSecIncrs.concat([
+>>>>>>> danhmuc_list
 =======
 		let subSecIncrs = ms == 1 ? genIncrs(10, 0, 3, allMults).filter(onlyWhole) : genIncrs(10, -3, 0, allMults);
 
@@ -1389,7 +1607,12 @@ var uPlot = (function () {
 			y * 25,
 			y * 50,
 <<<<<<< HEAD
+<<<<<<< HEAD
 			y * 100 ]);
+=======
+			y * 100,
+		]);
+>>>>>>> danhmuc_list
 =======
 			y * 100,
 		]);
@@ -1400,7 +1623,11 @@ var uPlot = (function () {
 		// [2-7]: rollover tick formats
 		// [8]:   mode: 0: replace [1] -> [2-7], 1: concat [1] + [2-7]
 <<<<<<< HEAD
+<<<<<<< HEAD
 		var _timeAxisStamps = [
+=======
+		const _timeAxisStamps = [
+>>>>>>> danhmuc_list
 =======
 		const _timeAxisStamps = [
 >>>>>>> danhmuc_list
@@ -1412,7 +1639,12 @@ var uPlot = (function () {
 			[m,           hmmaa,           NLmdyy,                 _,      NLmd,                 _,      _,        _,       1],
 			[s,           ss,              NLmdyy + " " + hmmaa,   _,      NLmd + " " + hmmaa,   _,      NLhmmaa,  _,       1],
 <<<<<<< HEAD
+<<<<<<< HEAD
 			[ms,          ss + ".{fff}",   NLmdyy + " " + hmmaa,   _,      NLmd + " " + hmmaa,   _,      NLhmmaa,  _,       1] ];
+=======
+			[ms,          ss + ".{fff}",   NLmdyy + " " + hmmaa,   _,      NLmd + " " + hmmaa,   _,      NLhmmaa,  _,       1],
+		];
+>>>>>>> danhmuc_list
 =======
 			[ms,          ss + ".{fff}",   NLmdyy + " " + hmmaa,   _,      NLmd + " " + hmmaa,   _,      NLhmmaa,  _,       1],
 		];
@@ -1424,6 +1656,7 @@ var uPlot = (function () {
 		// https://www.epochconverter.com/timezones
 		function timeAxisSplits(tzDate) {
 			return (self, axisIdx, scaleMin, scaleMax, foundIncr, foundSpace) => {
+<<<<<<< HEAD
 <<<<<<< HEAD
 				var splits = [];
 				var isYr = foundIncr >= y;
@@ -1488,6 +1721,8 @@ var uPlot = (function () {
 
 							split$1 -= dstShift * h;
 =======
+=======
+>>>>>>> danhmuc_list
 				let splits = [];
 				let isYr = foundIncr >= y;
 				let isMo = foundIncr >= mo && foundIncr < y;
@@ -1550,11 +1785,15 @@ var uPlot = (function () {
 								dstShift = -1;
 
 							split -= dstShift * h;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 							prevHour = (prevHour + incrHours) % 24;
 
 							// add a tick only if it's further than 70% of the min allowed label spacing
+<<<<<<< HEAD
 <<<<<<< HEAD
 							var prevSplit = splits[splits.length - 1];
 							var pctIncr = roundDec((split$1 - prevSplit) / foundIncr, 3);
@@ -1565,6 +1804,8 @@ var uPlot = (function () {
 						else
 							{ splits.push(split$1); }
 =======
+=======
+>>>>>>> danhmuc_list
 							let prevSplit = splits[splits.length - 1];
 							let pctIncr = roundDec((split - prevSplit) / foundIncr, 3);
 
@@ -1573,6 +1814,9 @@ var uPlot = (function () {
 						}
 						else
 							splits.push(split);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 					}
 				}
@@ -1584,6 +1828,7 @@ var uPlot = (function () {
 		return [
 			timeIncrs,
 			_timeAxisStamps,
+<<<<<<< HEAD
 <<<<<<< HEAD
 			timeAxisSplits ];
 	}
@@ -1597,12 +1842,17 @@ var uPlot = (function () {
 	var _timeAxisStampsS = ref$1[1];
 	var timeAxisSplitsS = ref$1[2];
 =======
+=======
+>>>>>>> danhmuc_list
 			timeAxisSplits,
 		];
 	}
 
 	const [ timeIncrsMs, _timeAxisStampsMs, timeAxisSplitsMs ] = genTimeStuffs(1);
 	const [ timeIncrsS,  _timeAxisStampsS,  timeAxisSplitsS  ] = genTimeStuffs(1e-3);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 	// base 2
@@ -1630,6 +1880,7 @@ var uPlot = (function () {
 	function timeAxisVals(tzDate, stamps) {
 		return (self, splits, axisIdx, foundSpace, foundIncr) => {
 <<<<<<< HEAD
+<<<<<<< HEAD
 			var s = stamps.find(s => foundIncr >= s[0]) || stamps[stamps.length - 1];
 
 			// these track boundaries when a full label is needed again
@@ -1652,6 +1903,8 @@ var uPlot = (function () {
 
 				var stamp = (
 =======
+=======
+>>>>>>> danhmuc_list
 			let s = stamps.find(s => foundIncr >= s[0]) || stamps[stamps.length - 1];
 
 			// these track boundaries when a full label is needed again
@@ -1673,6 +1926,9 @@ var uPlot = (function () {
 				let newSecs = date.getSeconds();
 
 				let stamp = (
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 					newYear != prevYear && s[2] ||
 					newMnth != prevMnth && s[3] ||
@@ -1698,7 +1954,11 @@ var uPlot = (function () {
 	// for when axis.values is defined as a static fmtDate template string
 	function timeAxisVal(tzDate, dateTpl) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 		var stamp = fmtDate(dateTpl);
+=======
+		let stamp = fmtDate(dateTpl);
+>>>>>>> danhmuc_list
 =======
 		let stamp = fmtDate(dateTpl);
 >>>>>>> danhmuc_list
@@ -1713,7 +1973,11 @@ var uPlot = (function () {
 		return fmtDate(stampCfg);
 	}
 <<<<<<< HEAD
+<<<<<<< HEAD
 	var _timeSeriesStamp = '{YYYY}-{MM}-{DD} {h}:{mm}{aa}';
+=======
+	const _timeSeriesStamp = '{YYYY}-{MM}-{DD} {h}:{mm}{aa}';
+>>>>>>> danhmuc_list
 =======
 	const _timeSeriesStamp = '{YYYY}-{MM}-{DD} {h}:{mm}{aa}';
 >>>>>>> danhmuc_list
@@ -1722,6 +1986,7 @@ var uPlot = (function () {
 		return (self, val) => stamp(tzDate(val));
 	}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	var legendWidth = 2;
 
@@ -1733,6 +1998,10 @@ var uPlot = (function () {
 	function legendStroke(self, seriesIdx) {
 		let s = self.series[seriesIdx];
 >>>>>>> danhmuc_list
+=======
+	function legendStroke(self, seriesIdx) {
+		let s = self.series[seriesIdx];
+>>>>>>> danhmuc_list
 		return s.width ? s.stroke(self, seriesIdx) : s.points.width ? s.points.stroke(self, seriesIdx) : null;
 	}
 
@@ -1740,6 +2009,7 @@ var uPlot = (function () {
 		return self.series[seriesIdx].fill(self, seriesIdx);
 	}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	function cursorPointShow(self, si) {
 		var o = self.cursor.points;
@@ -1765,6 +2035,8 @@ var uPlot = (function () {
 		setStylePx(pt, "marginTop", mar);
 
 =======
+=======
+>>>>>>> danhmuc_list
 	const legendOpts = {
 		show: true,
 		live: true,
@@ -1797,11 +2069,15 @@ var uPlot = (function () {
 		let width = o.width(self, si, size);
 		width && setStylePx(pt, "borderWidth", width);
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		return pt;
 	}
 
 	function cursorPointFill(self, si) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 		var s = self.series[si];
 		return s.stroke(self, si);
@@ -1816,6 +2092,8 @@ var uPlot = (function () {
 		var s = self.series[si];
 		return ptDia(s.width, 1);
 =======
+=======
+>>>>>>> danhmuc_list
 		let sp = self.series[si].points;
 		return sp._fill || sp._stroke;
 	}
@@ -1828,6 +2106,9 @@ var uPlot = (function () {
 	function cursorPointSize(self, si) {
 		let sp = self.series[si].points;
 		return ptDia(sp.width, 1);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	}
 
@@ -1836,7 +2117,11 @@ var uPlot = (function () {
 	}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	var moveTuple = [0,0];
+=======
+	const moveTuple = [0,0];
+>>>>>>> danhmuc_list
 =======
 	const moveTuple = [0,0];
 >>>>>>> danhmuc_list
@@ -1858,7 +2143,11 @@ var uPlot = (function () {
 	}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	var cursorOpts = {
+=======
+	const cursorOpts = {
+>>>>>>> danhmuc_list
 =======
 	const cursorOpts = {
 >>>>>>> danhmuc_list
@@ -1904,16 +2193,22 @@ var uPlot = (function () {
 		top: -10,
 		idx: null,
 <<<<<<< HEAD
+<<<<<<< HEAD
 		dataIdx: dataIdx,
 	};
 
 	var grid = {
 =======
+=======
+>>>>>>> danhmuc_list
 		dataIdx,
 		idxs: null,
 	};
 
 	const grid = {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		show: true,
 		stroke: "rgba(0,0,0,0.07)",
@@ -1923,6 +2218,7 @@ var uPlot = (function () {
 	};
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	var ticks = assign({}, grid, {size: 10});
 
 	var font      = '12px system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"';
@@ -1931,6 +2227,8 @@ var uPlot = (function () {
 
 	var xAxisOpts = {
 =======
+=======
+>>>>>>> danhmuc_list
 	const ticks = assign({}, grid, {size: 10});
 
 	const font      = '12px system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"';
@@ -1938,6 +2236,9 @@ var uPlot = (function () {
 	const lineMult = 1.5;		// font-size multiplier
 
 	const xAxisOpts = {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		show: true,
 		scale: "x",
@@ -1946,8 +2247,14 @@ var uPlot = (function () {
 		gap: 5,
 		size: 50,
 <<<<<<< HEAD
+<<<<<<< HEAD
 		labelSize: 30,
 		labelFont: labelFont,
+=======
+		labelGap: 0,
+		labelSize: 30,
+		labelFont,
+>>>>>>> danhmuc_list
 =======
 		labelGap: 0,
 		labelSize: 30,
@@ -1958,6 +2265,7 @@ var uPlot = (function () {
 	//	incrs: timeIncrs,
 	//	values: timeVals,
 	//	filter: retArg1,
+<<<<<<< HEAD
 <<<<<<< HEAD
 		grid: grid,
 		ticks: ticks,
@@ -1970,6 +2278,8 @@ var uPlot = (function () {
 
 	var xSeriesOpts = {
 =======
+=======
+>>>>>>> danhmuc_list
 		grid,
 		ticks,
 		font,
@@ -1980,6 +2290,9 @@ var uPlot = (function () {
 	const timeSeriesLabel = "Time";
 
 	const xSeriesOpts = {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		show: true,
 		scale: "x",
@@ -2000,6 +2313,7 @@ var uPlot = (function () {
 
 	function numAxisSplits(self, axisIdx, scaleMin, scaleMax, foundIncr, foundSpace, forceMin) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 		var splits = [];
 
 		var numDec = fixedDec.get(foundIncr) || 0;
@@ -2009,6 +2323,8 @@ var uPlot = (function () {
 		for (var val = scaleMin; val <= scaleMax; val = roundDec(val + foundIncr, numDec))
 			{ splits.push(Object.is(val, -0) ? 0 : val); }		// coalesces -0
 =======
+=======
+>>>>>>> danhmuc_list
 		let splits = [];
 
 		let numDec = fixedDec.get(foundIncr) || 0;
@@ -2017,6 +2333,9 @@ var uPlot = (function () {
 
 		for (let val = scaleMin; val <= scaleMax; val = roundDec(val + foundIncr, numDec))
 			splits.push(Object.is(val, -0) ? 0 : val);		// coalesces -0
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 		return splits;
@@ -2024,6 +2343,7 @@ var uPlot = (function () {
 
 	// this doesnt work for sin, which needs to come off from 0 independently in pos and neg dirs
 	function logAxisSplits(self, axisIdx, scaleMin, scaleMax, foundIncr, foundSpace, forceMin) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 		var splits = [];
 
@@ -2033,6 +2353,8 @@ var uPlot = (function () {
 
 		var exp = floor(logFn(scaleMin));
 =======
+=======
+>>>>>>> danhmuc_list
 		const splits = [];
 
 		const logBase = self.scales[self.axes[axisIdx].scale].log;
@@ -2040,15 +2362,24 @@ var uPlot = (function () {
 		const logFn = logBase == 10 ? log10 : log2;
 
 		const exp = floor(logFn(scaleMin));
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 		foundIncr = pow(logBase, exp);
 
 		if (exp < 0)
 <<<<<<< HEAD
+<<<<<<< HEAD
 			{ foundIncr = roundDec(foundIncr, -exp); }
 
 		var split = scaleMin;
+=======
+			foundIncr = roundDec(foundIncr, -exp);
+
+		let split = scaleMin;
+>>>>>>> danhmuc_list
 =======
 			foundIncr = roundDec(foundIncr, -exp);
 
@@ -2061,7 +2392,11 @@ var uPlot = (function () {
 
 			if (split >= foundIncr * logBase)
 <<<<<<< HEAD
+<<<<<<< HEAD
 				{ foundIncr = split; }
+=======
+				foundIncr = split;
+>>>>>>> danhmuc_list
 =======
 				foundIncr = split;
 >>>>>>> danhmuc_list
@@ -2073,6 +2408,7 @@ var uPlot = (function () {
 
 	function asinhAxisSplits(self, axisIdx, scaleMin, scaleMax, foundIncr, foundSpace, forceMin) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 		var sc = self.scales[self.axes[axisIdx].scale];
 
 		var linthresh = sc.asinh;
@@ -2081,6 +2417,8 @@ var uPlot = (function () {
 		var zero = scaleMax >= 0 && scaleMin <= 0 ? [0] : [];
 		var negSplits = scaleMin < -linthresh ? logAxisSplits(self, axisIdx, max(linthresh, -scaleMax), -scaleMin, foundIncr): [linthresh];
 =======
+=======
+>>>>>>> danhmuc_list
 		let sc = self.scales[self.axes[axisIdx].scale];
 
 		let linthresh = sc.asinh;
@@ -2088,11 +2426,15 @@ var uPlot = (function () {
 		let posSplits = scaleMax > linthresh ? logAxisSplits(self, axisIdx, max(linthresh, scaleMin), scaleMax, foundIncr) : [linthresh];
 		let zero = scaleMax >= 0 && scaleMin <= 0 ? [0] : [];
 		let negSplits = scaleMin < -linthresh ? logAxisSplits(self, axisIdx, max(linthresh, -scaleMax), -scaleMin, foundIncr): [linthresh];
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 		return negSplits.reverse().map(v => -v).concat(zero, posSplits);
 	}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	var RE_ALL   = /./;
 	var RE_12357 = /[12357]/;
@@ -2115,6 +2457,8 @@ var uPlot = (function () {
 
 		var re = (
 =======
+=======
+>>>>>>> danhmuc_list
 	const RE_ALL   = /./;
 	const RE_12357 = /[12357]/;
 	const RE_125   = /[125]/;
@@ -2135,6 +2479,9 @@ var uPlot = (function () {
 		let _10 = valToPos(10, scaleKey);
 
 		let re = (
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			valToPos(9, scaleKey) - _10 >= minSpace ? RE_ALL :
 			valToPos(7, scaleKey) - _10 >= minSpace ? RE_12357 :
@@ -2150,7 +2497,11 @@ var uPlot = (function () {
 	}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	var yAxisOpts = {
+=======
+	const yAxisOpts = {
+>>>>>>> danhmuc_list
 =======
 	const yAxisOpts = {
 >>>>>>> danhmuc_list
@@ -2161,8 +2512,14 @@ var uPlot = (function () {
 		gap: 5,
 		size: 50,
 <<<<<<< HEAD
+<<<<<<< HEAD
 		labelSize: 30,
 		labelFont: labelFont,
+=======
+		labelGap: 0,
+		labelSize: 30,
+		labelFont,
+>>>>>>> danhmuc_list
 =======
 		labelGap: 0,
 		labelSize: 30,
@@ -2174,9 +2531,15 @@ var uPlot = (function () {
 	//	values: (vals, space) => vals,
 	//	filter: retArg1,
 <<<<<<< HEAD
+<<<<<<< HEAD
 		grid: grid,
 		ticks: ticks,
 		font: font,
+=======
+		grid,
+		ticks,
+		font,
+>>>>>>> danhmuc_list
 =======
 		grid,
 		ticks,
@@ -2187,6 +2550,7 @@ var uPlot = (function () {
 
 	// takes stroke width
 	function ptDia(width, mult) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 		var dia = 3 + (width || 1) * 2;
 		return roundDec(dia * mult, 3);
@@ -2200,6 +2564,8 @@ var uPlot = (function () {
 		var maxPts = dim / (s.points.space * pxRatio);
 		var idxs = self.series[0].idxs;
 =======
+=======
+>>>>>>> danhmuc_list
 		let dia = 3 + (width || 1) * 2;
 		return roundDec(dia * mult, 3);
 	}
@@ -2214,11 +2580,15 @@ var uPlot = (function () {
 		let s = self.series[si];
 	//	const dia = ptDia(s.width, pxRatio);
 		let maxPts = dim / (s.points.space * pxRatio);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		return idxs[1] - idxs[0] <= maxPts;
 	}
 
 	function seriesFillTo(self, seriesIdx, dataMin, dataMax) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 		var scale = self.scales[self.series[seriesIdx].scale];
 		var isUpperBandEdge = self.bands && self.bands.some(b => b.series[0] == seriesIdx);
@@ -2227,6 +2597,8 @@ var uPlot = (function () {
 
 	var ySeriesOpts = {
 =======
+=======
+>>>>>>> danhmuc_list
 		let scale = self.scales[self.series[seriesIdx].scale];
 		let isUpperBandEdge = self.bands && self.bands.some(b => b.series[0] == seriesIdx);
 		return scale.distr == 3 || isUpperBandEdge ? scale.min : 0;
@@ -2253,11 +2625,15 @@ var uPlot = (function () {
 	};
 
 	const ySeriesOpts = {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		scale: "y",
 		auto: true,
 		sorted: 0,
 		show: true,
+<<<<<<< HEAD
 <<<<<<< HEAD
 		band: false,
 		spanGaps: false,
@@ -2265,6 +2641,8 @@ var uPlot = (function () {
 		points: {
 			show: seriesPoints,
 =======
+=======
+>>>>>>> danhmuc_list
 		spanGaps: false,
 		gaps: (self, seriesIdx, idx0, idx1, nullGaps) => nullGaps,
 		alpha: 1,
@@ -2272,6 +2650,9 @@ var uPlot = (function () {
 			show: seriesPointsShow,
 			filter: null,
 		//  paths:
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		//	stroke: "#000",
 		//	fill: "#fff",
@@ -2304,7 +2685,11 @@ var uPlot = (function () {
 	}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	var xScaleOpts = {
+=======
+	const xScaleOpts = {
+>>>>>>> danhmuc_list
 =======
 	const xScaleOpts = {
 >>>>>>> danhmuc_list
@@ -2320,7 +2705,11 @@ var uPlot = (function () {
 	};
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	var yScaleOpts = assign({}, xScaleOpts, {
+=======
+	const yScaleOpts = assign({}, xScaleOpts, {
+>>>>>>> danhmuc_list
 =======
 	const yScaleOpts = assign({}, xScaleOpts, {
 >>>>>>> danhmuc_list
@@ -2328,6 +2717,7 @@ var uPlot = (function () {
 		ori: 1,
 	});
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	var syncs = {};
 
@@ -2354,6 +2744,8 @@ var uPlot = (function () {
 			if (key != null)
 				{ syncs[key] = s; }
 =======
+=======
+>>>>>>> danhmuc_list
 	const syncs = {};
 
 	function _sync(key, opts) {
@@ -2377,12 +2769,16 @@ var uPlot = (function () {
 
 			if (key != null)
 				syncs[key] = s;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		}
 
 		return s;
 	}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	function orient(u, seriesIdx, cb) {
 		var series = u.series[seriesIdx];
@@ -2395,6 +2791,8 @@ var uPlot = (function () {
 			sx = scaleX,
 			sy = scales[series.scale],
 =======
+=======
+>>>>>>> danhmuc_list
 	const BAND_CLIP_FILL   = 1 << 0;
 	const BAND_CLIP_STROKE = 1 << 1;
 
@@ -2408,6 +2806,9 @@ var uPlot = (function () {
 			dy = u._data[seriesIdx],
 			sx = scaleX,
 			sy = u.mode == 2 ? scales[series.facets[1].scale] : scales[series.scale],
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			l = bbox.left,
 			t = bbox.top,
@@ -2434,7 +2835,11 @@ var uPlot = (function () {
 				rectH,
 				arcH,
 <<<<<<< HEAD
+<<<<<<< HEAD
 				bezierCurveToH
+=======
+				bezierCurveToH,
+>>>>>>> danhmuc_list
 =======
 				bezierCurveToH,
 >>>>>>> danhmuc_list
@@ -2456,7 +2861,11 @@ var uPlot = (function () {
 				rectV,
 				arcV,
 <<<<<<< HEAD
+<<<<<<< HEAD
 				bezierCurveToV
+=======
+				bezierCurveToV,
+>>>>>>> danhmuc_list
 =======
 				bezierCurveToV,
 >>>>>>> danhmuc_list
@@ -2468,17 +2877,23 @@ var uPlot = (function () {
 	function clipBandLine(self, seriesIdx, idx0, idx1, strokePath) {
 		return orient(self, seriesIdx, (series, dataX, dataY, scaleX, scaleY, valToPosX, valToPosY, xOff, yOff, xDim, yDim) => {
 <<<<<<< HEAD
+<<<<<<< HEAD
 			var dir = scaleX.dir * (scaleX.ori == 0 ? 1 : -1);
 			var lineTo = scaleX.ori == 0 ? lineToH : lineToV;
 
 			var frIdx, toIdx;
 =======
+=======
+>>>>>>> danhmuc_list
 			let pxRound = series.pxRound;
 
 			const dir = scaleX.dir * (scaleX.ori == 0 ? 1 : -1);
 			const lineTo = scaleX.ori == 0 ? lineToH : lineToV;
 
 			let frIdx, toIdx;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 			if (dir == 1) {
@@ -2492,6 +2907,7 @@ var uPlot = (function () {
 
 			// path start
 <<<<<<< HEAD
+<<<<<<< HEAD
 			var x0 = incrRound(valToPosX(dataX[frIdx], scaleX, xDim, xOff), 0.5);
 			var y0 = incrRound(valToPosY(dataY[frIdx], scaleY, yDim, yOff), 0.5);
 			// path end x
@@ -2501,6 +2917,8 @@ var uPlot = (function () {
 
 			var clip = new Path2D(strokePath);
 =======
+=======
+>>>>>>> danhmuc_list
 			let x0 = pxRound(valToPosX(dataX[frIdx], scaleX, xDim, xOff));
 			let y0 = pxRound(valToPosY(dataY[frIdx], scaleY, yDim, yOff));
 			// path end x
@@ -2509,6 +2927,9 @@ var uPlot = (function () {
 			let yLimit = pxRound(valToPosY(scaleY.max, scaleY, yDim, yOff));
 
 			let clip = new Path2D(strokePath);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 			lineTo(clip, x1, yLimit);
@@ -2521,7 +2942,11 @@ var uPlot = (function () {
 
 	function clipGaps(gaps, ori, plotLft, plotTop, plotWid, plotHgt) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 		var clip = null;
+=======
+		let clip = null;
+>>>>>>> danhmuc_list
 =======
 		let clip = null;
 >>>>>>> danhmuc_list
@@ -2530,6 +2955,7 @@ var uPlot = (function () {
 		if (gaps.length > 0) {
 			clip = new Path2D();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 			var rect = ori == 0 ? rectH : rectV;
 
@@ -2545,6 +2971,8 @@ var uPlot = (function () {
 
 			rect(clip, prevGapEnd, plotTop, plotLft + plotWid - prevGapEnd, plotTop + plotHgt);
 =======
+=======
+>>>>>>> danhmuc_list
 			const rect = ori == 0 ? rectH : rectV;
 
 			let prevGapEnd = plotLft;
@@ -2564,6 +2992,9 @@ var uPlot = (function () {
 			let w = plotLft + plotWid - prevGapEnd;
 
 			w > 0 && rect(clip, prevGapEnd, plotTop, w, plotTop + plotHgt);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		}
 
@@ -2571,6 +3002,7 @@ var uPlot = (function () {
 	}
 
 	function addGap(gaps, fromX, toX) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if (toX > fromX) {
 			var prevGap = gaps[gaps.length - 1];
@@ -2599,6 +3031,8 @@ var uPlot = (function () {
 				lineTo(stroke, accX, minY);
 				lineTo(stroke, accX, maxY);
 =======
+=======
+>>>>>>> danhmuc_list
 		let prevGap = gaps[gaps.length - 1];
 
 		if (prevGap && prevGap[0] == fromX)			// TODO: gaps must be encoded at stroke widths?
@@ -2724,6 +3158,9 @@ var uPlot = (function () {
 				if (inY != maxY && outY != maxY)
 					lineTo(stroke, accX, maxY);
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 				lineTo(stroke, accX, outY);
 			}
@@ -2731,8 +3168,13 @@ var uPlot = (function () {
 	}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	var drawAccH = _drawAcc(lineToH);
 	var drawAccV = _drawAcc(lineToV);
+=======
+	const drawAccH = _drawAcc(lineToH);
+	const drawAccV = _drawAcc(lineToV);
+>>>>>>> danhmuc_list
 =======
 	const drawAccH = _drawAcc(lineToH);
 	const drawAccV = _drawAcc(lineToV);
@@ -2742,7 +3184,13 @@ var uPlot = (function () {
 		return (u, seriesIdx, idx0, idx1) => {
 			return orient(u, seriesIdx, (series, dataX, dataY, scaleX, scaleY, valToPosX, valToPosY, xOff, yOff, xDim, yDim) => {
 <<<<<<< HEAD
+<<<<<<< HEAD
 				var lineTo, drawAcc;
+=======
+				let pxRound = series.pxRound;
+
+				let lineTo, drawAcc;
+>>>>>>> danhmuc_list
 =======
 				let pxRound = series.pxRound;
 
@@ -2758,6 +3206,7 @@ var uPlot = (function () {
 					drawAcc = drawAccV;
 				}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 				var dir = scaleX.dir * (scaleX.ori == 0 ? 1 : -1);
 
@@ -2792,6 +3241,8 @@ var uPlot = (function () {
 							if (minY == inf)
 								{ lineTo(stroke, x, outY); }
 =======
+=======
+>>>>>>> danhmuc_list
 				const dir = scaleX.dir * (scaleX.ori == 0 ? 1 : -1);
 
 				const _paths = {stroke: new Path2D(), fill: null, clip: null, band: null, gaps: null, flags: BAND_CLIP_FILL};
@@ -2827,11 +3278,15 @@ var uPlot = (function () {
 								lineTo(stroke, x, outY);
 								inY = outY;
 							}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 							minY = min(outY, minY);
 							maxY = max(outY, maxY);
 						}
+<<<<<<< HEAD
 <<<<<<< HEAD
 						else if (!accGaps && dataY[i] === null)
 							{ accGaps = true; }
@@ -2842,6 +3297,8 @@ var uPlot = (function () {
 						if (minY != inf) {
 							drawAcc(stroke, accX, minY, maxY, outY);
 =======
+=======
+>>>>>>> danhmuc_list
 						else if (dataY[i] === null)
 							accGaps = prevYNull = true;
 					}
@@ -2850,6 +3307,9 @@ var uPlot = (function () {
 
 						if (minY != inf) {
 							drawAcc(stroke, accX, minY, maxY, inY, outY);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 							outX = drawnAtX = accX;
 						}
@@ -2860,6 +3320,7 @@ var uPlot = (function () {
 
 						if (dataY[i] != null) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 							outY = round(valToPosY(dataY[i], scaleY, yDim, yOff));
 							lineTo(stroke, x, outY);
 							minY = maxY = outY;
@@ -2868,6 +3329,8 @@ var uPlot = (function () {
 							if (x - accX > 1 && dataY[i - dir] === null)
 								{ _addGap = true; }
 =======
+=======
+>>>>>>> danhmuc_list
 							outY = pxRound(valToPosY(dataY[i], scaleY, yDim, yOff));
 							lineTo(stroke, x, outY);
 							minY = maxY = inY = outY;
@@ -2877,6 +3340,9 @@ var uPlot = (function () {
 								_addGap = true;
 
 							prevYNull = false;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 						}
 						else {
@@ -2884,15 +3350,21 @@ var uPlot = (function () {
 							maxY = -inf;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 							if (!accGaps && dataY[i] === null)
 								{ accGaps = true; }
 =======
+=======
+>>>>>>> danhmuc_list
 							if (dataY[i] === null) {
 								accGaps = true;
 
 								if (x - accX > 1)
 									_addGap = true;
 							}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 						}
 
@@ -2904,6 +3376,7 @@ var uPlot = (function () {
 
 				if (minY != inf && minY != maxY && drawnAtX != accX)
 <<<<<<< HEAD
+<<<<<<< HEAD
 					{ drawAcc(stroke, accX, minY, maxY, outY); }
 
 				if (rgtX < xOff + xDim)
@@ -2914,6 +3387,8 @@ var uPlot = (function () {
 
 					var fillTo = round(valToPosY(series.fillTo(u, seriesIdx, series.min, series.max), scaleY, yDim, yOff));
 =======
+=======
+>>>>>>> danhmuc_list
 					drawAcc(stroke, accX, minY, maxY, inY, outY);
 
 				if (rgtX < xOff + xDim)
@@ -2923,6 +3398,9 @@ var uPlot = (function () {
 					let fill = _paths.fill = new Path2D(stroke);
 
 					let fillTo = pxRound(valToPosY(series.fillTo(u, seriesIdx, series.min, series.max), scaleY, yDim, yOff));
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 					lineTo(fill, rgtX, fillTo);
@@ -2930,13 +3408,19 @@ var uPlot = (function () {
 				}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 				if (!series.spanGaps)
 					{ _paths.clip = clipGaps(gaps, scaleX.ori, xOff, yOff, xDim, yDim); }
 =======
+=======
+>>>>>>> danhmuc_list
 				_paths.gaps = gaps = series.gaps(u, seriesIdx, idx0, idx1, gaps);
 
 				if (!series.spanGaps)
 					_paths.clip = clipGaps(gaps, scaleX.ori, xOff, yOff, xDim, yDim);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 				if (u.bands.length > 0) {
@@ -2951,11 +3435,14 @@ var uPlot = (function () {
 	}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	function spline(opts) {
 		return (u, seriesIdx, idx0, idx1) => {
 			return orient(u, seriesIdx, (series, dataX, dataY, scaleX, scaleY, valToPosX, valToPosY, xOff, yOff, xDim, yDim) => {
 				var moveTo, bezierCurveTo, lineTo;
 =======
+=======
+>>>>>>> danhmuc_list
 	function stepped(opts) {
 		const align = ifNull(opts.align, 1);
 		// whether to draw ascenders/descenders at null/gap bondaries
@@ -3259,6 +3746,9 @@ var uPlot = (function () {
 				let pxRound = series.pxRound;
 
 				let moveTo, bezierCurveTo, lineTo;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 				if (scaleX.ori == 0) {
@@ -3273,7 +3763,11 @@ var uPlot = (function () {
 				}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 				var _dir = 1 * scaleX.dir * (scaleX.ori == 0 ? 1 : -1);
+=======
+				const _dir = 1 * scaleX.dir * (scaleX.ori == 0 ? 1 : -1);
+>>>>>>> danhmuc_list
 =======
 				const _dir = 1 * scaleX.dir * (scaleX.ori == 0 ? 1 : -1);
 >>>>>>> danhmuc_list
@@ -3281,6 +3775,7 @@ var uPlot = (function () {
 				idx0 = nonNullIdx(dataY, idx0, idx1,  1);
 				idx1 = nonNullIdx(dataY, idx0, idx1, -1);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 				var gaps = [];
 				var inGap = false;
@@ -3295,6 +3790,8 @@ var uPlot = (function () {
 					var xVal = dataX[i];
 					var xPos = valToPosX(xVal, scaleX, xDim, xOff);
 =======
+=======
+>>>>>>> danhmuc_list
 				let gaps = [];
 				let inGap = false;
 				let firstXPos = pxRound(valToPosX(dataX[_dir == 1 ? idx0 : idx1], scaleX, xDim, xOff));
@@ -3307,6 +3804,9 @@ var uPlot = (function () {
 					let yVal = dataY[i];
 					let xVal = dataX[i];
 					let xPos = valToPosX(xVal, scaleX, xDim, xOff);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 					if (yVal == null) {
@@ -3328,6 +3828,7 @@ var uPlot = (function () {
 				}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 				var _paths = {stroke: catmullRomFitting(xCoords, yCoords, 0.5, moveTo, bezierCurveTo), fill: null, clip: null, band: null};
 				var stroke = _paths.stroke;
 
@@ -3337,6 +3838,8 @@ var uPlot = (function () {
 					var fillTo = series.fillTo(u, seriesIdx, series.min, series.max);
 					var minY = round(valToPosY(fillTo, scaleY, yDim, yOff));
 =======
+=======
+>>>>>>> danhmuc_list
 				const _paths = {stroke: interp(xCoords, yCoords, moveTo, lineTo, bezierCurveTo, pxRound), fill: null, clip: null, band: null, gaps: null, flags: BAND_CLIP_FILL};
 				const stroke = _paths.stroke;
 
@@ -3345,6 +3848,9 @@ var uPlot = (function () {
 
 					let fillTo = series.fillTo(u, seriesIdx, series.min, series.max);
 					let minY = pxRound(valToPosY(fillTo, scaleY, yDim, yOff));
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 					lineTo(fill, prevXPos, minY);
@@ -3352,13 +3858,19 @@ var uPlot = (function () {
 				}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 				if (!series.spanGaps)
 					{ _paths.clip = clipGaps(gaps, scaleX.ori, xOff, yOff, xDim, yDim); }
 =======
+=======
+>>>>>>> danhmuc_list
 				_paths.gaps = gaps = series.gaps(u, seriesIdx, idx0, idx1, gaps);
 
 				if (!series.spanGaps)
 					_paths.clip = clipGaps(gaps, scaleX.ori, xOff, yOff, xDim, yDim);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 				if (u.bands.length > 0) {
@@ -3384,6 +3896,7 @@ var uPlot = (function () {
 		};
 	}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	// adapted from https://gist.github.com/nicholaswmin/c2661eb11cad5671d816 (MIT)
 
@@ -3491,6 +4004,8 @@ var uPlot = (function () {
 
 			bezierCurveTo(path, bp1x, bp1y, bp2x, bp2y, p2x, p2y);
 =======
+=======
+>>>>>>> danhmuc_list
 	function monotoneCubic(opts) {
 		return splineInterp(_monotoneCubic);
 	}
@@ -3553,12 +4068,16 @@ var uPlot = (function () {
 					ys[i + 1],
 				);
 			}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		}
 
 		return path;
 	}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	function stepped(opts) {
 		var align = ifNull(opts.align, 1);
@@ -3750,6 +4269,8 @@ var uPlot = (function () {
 	}
 
 =======
+=======
+>>>>>>> danhmuc_list
 	const cursorPlots = new Set();
 
 	function invalidateRects() {
@@ -3773,11 +4294,15 @@ var uPlot = (function () {
 		return d.map((o, i) => i == 0 ? null : assign({}, xyo, o));  // todo: assign() will not merge facet arrays
 	}
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	function setDefault(o, i, xo, yo) {
 		return assign({}, (i == 0 ? xo : yo), o);
 	}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	var nullMinMax = [null, null];
 
@@ -3787,16 +4312,22 @@ var uPlot = (function () {
 
 	var snapTimeX = snapNumX;
 =======
+=======
+>>>>>>> danhmuc_list
 	function snapNumX(self, dataMin, dataMax) {
 		return dataMin == null ? nullNullTuple : [dataMin, dataMax];
 	}
 
 	const snapTimeX = snapNumX;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 	// this ensures that non-temporal/numeric y-axes get multiple-snapped padding added above/below
 	// TODO: also account for incrs when snapping to ensure top of axis gets a tick & value
 	function snapNumY(self, dataMin, dataMax) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 		return dataMin == null ? nullMinMax : rangeNum(dataMin, dataMax, 0.1, true);
 	}
@@ -3828,6 +4359,8 @@ var uPlot = (function () {
 				{ return [incrs[i], space]; }
 		}
 =======
+=======
+>>>>>>> danhmuc_list
 		return dataMin == null ? nullNullTuple : rangeNum(dataMin, dataMax, rangePad, true);
 	}
 
@@ -3858,12 +4391,16 @@ var uPlot = (function () {
 			if (foundSpace >= minSpace && intDigits + (foundIncr < 5 ? fixedDec.get(foundIncr) : 0) <= 17)
 				return [foundIncr, foundSpace];
 		} while (++incrIdx < incrs.length);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 		return [0, 0];
 	}
 
 	function pxRatioFont(font) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 		var fontSize;
 		font = font.replace(/(\d+)px/, (m, p1) => (fontSize = round(p1 * pxRatio)) + 'px');
@@ -3877,6 +4414,8 @@ var uPlot = (function () {
 		function getValPct(val, scale) {
 			var _val = (
 =======
+=======
+>>>>>>> danhmuc_list
 		let fontSize, fontSizeCss;
 		font = font.replace(/(\d+)px/, (m, p1) => (fontSize = round((fontSizeCss = +p1) * pxRatio)) + 'px');
 		return [font, fontSize, fontSizeCss];
@@ -3902,6 +4441,9 @@ var uPlot = (function () {
 		// TODO: cache denoms & mins scale.cache = {r, min, }
 		function getValPct(val, scale) {
 			let _val = (
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 				scale.distr == 3 ? log10(val > 0 ? val : scale.clamp(self, val, scale.min, scale.max, scale.key)) :
 				scale.distr == 4 ? asinh(val, scale.asinh) :
@@ -3913,7 +4455,11 @@ var uPlot = (function () {
 
 		function getHPos(val, scale, dim, off) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 			var pct = getValPct(val, scale);
+=======
+			let pct = getValPct(val, scale);
+>>>>>>> danhmuc_list
 =======
 			let pct = getValPct(val, scale);
 >>>>>>> danhmuc_list
@@ -3922,7 +4468,11 @@ var uPlot = (function () {
 
 		function getVPos(val, scale, dim, off) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 			var pct = getValPct(val, scale);
+=======
+			let pct = getValPct(val, scale);
+>>>>>>> danhmuc_list
 =======
 			let pct = getValPct(val, scale);
 >>>>>>> danhmuc_list
@@ -3937,6 +4487,7 @@ var uPlot = (function () {
 		self.valToPosV = getVPos;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		var ready = false;
 		self.status = 0;
 
@@ -3945,6 +4496,8 @@ var uPlot = (function () {
 		if (opts.id != null)
 			{ root.id = opts.id; }
 =======
+=======
+>>>>>>> danhmuc_list
 		let ready = false;
 		self.status = 0;
 
@@ -3952,11 +4505,15 @@ var uPlot = (function () {
 
 		if (opts.id != null)
 			root.id = opts.id;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 		addClass(root, opts.class);
 
 		if (opts.title) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 			var title = placeDiv(TITLE, root);
 			title.textContent = opts.title;
@@ -3986,6 +4543,8 @@ var uPlot = (function () {
 		var scales  = self.scales = {};
 		var bands   = self.bands  = opts.bands || [];
 =======
+=======
+>>>>>>> danhmuc_list
 			let title = placeDiv(TITLE, root);
 			title.textContent = opts.title;
 		}
@@ -4017,6 +4576,9 @@ var uPlot = (function () {
 		const axes    = self.axes   = setDefaults(opts.axes   || [], xAxisOpts,   yAxisOpts,    true);
 		const scales  = self.scales = {};
 		const bands   = self.bands  = opts.bands || [];
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 		bands.forEach(b => {
@@ -4024,9 +4586,15 @@ var uPlot = (function () {
 		});
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		var xScaleKey = series[0].scale;
 
 		var drawOrderMap = {
+=======
+		const xScaleKey = mode == 2 ? series[1].facets[0].scale : series[0].scale;
+
+		const drawOrderMap = {
+>>>>>>> danhmuc_list
 =======
 		const xScaleKey = mode == 2 ? series[1].facets[0].scale : series[0].scale;
 
@@ -4037,6 +4605,7 @@ var uPlot = (function () {
 		};
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		var drawOrder = (opts.drawOrder || ["axes", "series"]).map(key => drawOrderMap[key]);
 
 		function initScale(scaleKey) {
@@ -4045,6 +4614,8 @@ var uPlot = (function () {
 			if (sc == null) {
 				var scaleOpts = (opts.scales || EMPTY_OBJ)[scaleKey] || EMPTY_OBJ;
 =======
+=======
+>>>>>>> danhmuc_list
 		const drawOrder = (opts.drawOrder || ["axes", "series"]).map(key => drawOrderMap[key]);
 
 		function initScale(scaleKey) {
@@ -4052,6 +4623,9 @@ var uPlot = (function () {
 
 			if (sc == null) {
 				let scaleOpts = (opts.scales || EMPTY_OBJ)[scaleKey] || EMPTY_OBJ;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 				if (scaleOpts.from != null) {
@@ -4059,7 +4633,11 @@ var uPlot = (function () {
 					initScale(scaleOpts.from);
 					// dependent scales inherit
 <<<<<<< HEAD
+<<<<<<< HEAD
 					scales[scaleKey] = assign({}, scales[scaleOpts.from], scaleOpts);
+=======
+					scales[scaleKey] = assign({}, scales[scaleOpts.from], scaleOpts, {key: scaleKey});
+>>>>>>> danhmuc_list
 =======
 					scales[scaleKey] = assign({}, scales[scaleOpts.from], scaleOpts, {key: scaleKey});
 >>>>>>> danhmuc_list
@@ -4067,6 +4645,7 @@ var uPlot = (function () {
 				else {
 					sc = scales[scaleKey] = assign({}, (scaleKey == xScaleKey ? xScaleOpts : yScaleOpts), scaleOpts);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 					sc.key = scaleKey;
 
@@ -4081,6 +4660,8 @@ var uPlot = (function () {
 						// this is similar to snapNumY
 						rn = (self, dataMin, dataMax) => dataMin == null ? nullMinMax : rangeNum(dataMin, dataMax, cfg);
 =======
+=======
+>>>>>>> danhmuc_list
 					if (mode == 2)
 						sc.time = false;
 
@@ -4115,6 +4696,9 @@ var uPlot = (function () {
 							// this is similar to snapNumY
 							rn = (self, dataMin, dataMax) => dataMin == null ? nullNullTuple : rangeNum(dataMin, dataMax, cfg);
 						}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 					}
 
@@ -4137,22 +4721,29 @@ var uPlot = (function () {
 		initScale("y");
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		series.forEach(s => {
 			initScale(s.scale);
 		});
 =======
+=======
+>>>>>>> danhmuc_list
 		// TODO: init scales from facets in mode: 2
 		if (mode == 1) {
 			series.forEach(s => {
 				initScale(s.scale);
 			});
 		}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 		axes.forEach(a => {
 			initScale(a.scale);
 		});
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		for (var k in opts.scales)
 			{ initScale(k); }
@@ -4163,6 +4754,8 @@ var uPlot = (function () {
 
 		var valToPosX, valToPosY, moveTo, arc;
 =======
+=======
+>>>>>>> danhmuc_list
 		for (let k in opts.scales)
 			initScale(k);
 
@@ -4171,6 +4764,9 @@ var uPlot = (function () {
 		const xScaleDistr = scaleX.distr;
 
 		let valToPosX, valToPosY;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 		if (scaleX.ori == 0) {
@@ -4178,8 +4774,11 @@ var uPlot = (function () {
 			valToPosX = getHPos;
 			valToPosY = getVPos;
 <<<<<<< HEAD
+<<<<<<< HEAD
 			moveTo    = moveToH;
 			arc       = arcH;
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 			/*
@@ -4201,8 +4800,11 @@ var uPlot = (function () {
 			valToPosX = getVPos;
 			valToPosY = getHPos;
 <<<<<<< HEAD
+<<<<<<< HEAD
 			moveTo    = moveToV;
 			arc       = arcV;
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 			/*
@@ -4221,6 +4823,7 @@ var uPlot = (function () {
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		var pendScales = {};
 
 		// explicitly-set initial scales
@@ -4230,6 +4833,8 @@ var uPlot = (function () {
 			if (sc.min != null || sc.max != null) {
 				pendScales[k$1] = {min: sc.min, max: sc.max};
 =======
+=======
+>>>>>>> danhmuc_list
 		const pendScales = {};
 
 		// explicitly-set initial scales
@@ -4238,12 +4843,16 @@ var uPlot = (function () {
 
 			if (sc.min != null || sc.max != null) {
 				pendScales[k] = {min: sc.min, max: sc.max};
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 				sc.min = sc.max = null;
 			}
 		}
 
 	//	self.tz = opts.tz || Intl.DateTimeFormat().resolvedOptions().timeZone;
+<<<<<<< HEAD
 <<<<<<< HEAD
 		var _tzDate  = (opts.tzDate || (ts => new Date(ts / ms)));
 		var _fmtDate = (opts.fmtDate || fmtDate);
@@ -4267,6 +4876,8 @@ var uPlot = (function () {
 		var legendCols;
 		var multiValLegend = false;
 =======
+=======
+>>>>>>> danhmuc_list
 		const _tzDate  = (opts.tzDate || (ts => new Date(round(ts / ms))));
 		const _fmtDate = (opts.fmtDate || fmtDate);
 
@@ -4304,11 +4915,15 @@ var uPlot = (function () {
 			for (let k in legendCols)
 				NULL_LEGEND_VALUES[k] = "--";
 		}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 		if (showLegend) {
 			legendEl = placeTag("table", LEGEND, root);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 			var getMultiVals = series[1] ? series[1].values : null;
 			multiValLegend = getMultiVals != null;
@@ -4324,6 +4939,8 @@ var uPlot = (function () {
 			else {
 				legendCols = {_: 0};
 =======
+=======
+>>>>>>> danhmuc_list
 			if (multiValLegend) {
 				let head = placeTag("tr", LEGEND_THEAD, legendEl);
 				placeTag("th", null, head);
@@ -4332,12 +4949,16 @@ var uPlot = (function () {
 					placeTag("th", LEGEND_LABEL, head).textContent = key;
 			}
 			else {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 				addClass(legendEl, LEGEND_INLINE);
 				legend.live && addClass(legendEl, LEGEND_LIVE);
 			}
 		}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		function initLegendRow(s, i) {
 			if (i == 0 && (multiValLegend || !legend.live))
@@ -4347,6 +4968,8 @@ var uPlot = (function () {
 
 			var row = placeTag("tr", LEGEND_SERIES, legendEl, legendEl.childNodes[i]);
 =======
+=======
+>>>>>>> danhmuc_list
 		const son  = {show: true};
 		const soff = {show: false};
 
@@ -4357,11 +4980,15 @@ var uPlot = (function () {
 			let cells = [];
 
 			let row = placeTag("tr", LEGEND_SERIES, legendEl, legendEl.childNodes[i]);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 			addClass(row, s.class);
 
 			if (!s.show)
+<<<<<<< HEAD
 <<<<<<< HEAD
 				{ addClass(row, OFF); }
 
@@ -4388,6 +5015,8 @@ var uPlot = (function () {
 
 					setSeries(series.indexOf(s), {show: !s.show}, syncOpts.setSeries);
 =======
+=======
+>>>>>>> danhmuc_list
 				addClass(row, OFF);
 
 			let label = placeTag("th", null, row);
@@ -4428,6 +5057,9 @@ var uPlot = (function () {
 					}
 					else
 						setSeries(seriesIdx, {show: !s.show}, true, syncOpts.setSeries);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 				});
 
@@ -4435,9 +5067,15 @@ var uPlot = (function () {
 					onMouse(mouseenter, label, e => {
 						if (cursor._lock)
 <<<<<<< HEAD
+<<<<<<< HEAD
 							{ return; }
 
 						setSeries(series.indexOf(s), FOCUS_TRUE, syncOpts.setSeries);
+=======
+							return;
+
+						setSeries(series.indexOf(s), FOCUS_TRUE, true, syncOpts.setSeries);
+>>>>>>> danhmuc_list
 =======
 							return;
 
@@ -4448,6 +5086,7 @@ var uPlot = (function () {
 			}
 
 			for (var key in legendCols) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 				var v = placeTag("td", LEGEND_VALUE, row);
 				v.textContent = "--";
@@ -4463,6 +5102,8 @@ var uPlot = (function () {
 			var targListeners = mouseListeners.get(targ) || {};
 			var listener = cursor.bind[ev](self, targ, fn);
 =======
+=======
+>>>>>>> danhmuc_list
 				let v = placeTag("td", LEGEND_VALUE, row);
 				v.textContent = "--";
 				cells.push(v);
@@ -4476,6 +5117,9 @@ var uPlot = (function () {
 		function onMouse(ev, targ, fn) {
 			const targListeners = mouseListeners.get(targ) || {};
 			const listener = cursor.bind[ev](self, targ, fn);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 			if (listener) {
@@ -4485,6 +5129,7 @@ var uPlot = (function () {
 		}
 
 		function offMouse(ev, targ, fn) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 			var targListeners = mouseListeners.get(targ) || {};
 			off(ev, targ, targListeners[ev]);
@@ -4518,6 +5163,8 @@ var uPlot = (function () {
 			if (width != self.width || height != self.height)
 				{ calcSize(width, height); }
 =======
+=======
+>>>>>>> danhmuc_list
 			const targListeners = mouseListeners.get(targ) || {};
 
 			for (let k in targListeners) {
@@ -4557,6 +5204,9 @@ var uPlot = (function () {
 		function _setSize(width, height, force) {
 			if (force || (width != self.width || height != self.height))
 				calcSize(width, height);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 			resetYSeries(false);
@@ -4564,8 +5214,12 @@ var uPlot = (function () {
 			shouldConvergeSize = true;
 			shouldSetSize = true;
 <<<<<<< HEAD
+<<<<<<< HEAD
 			shouldSetCursor = true;
 			shouldSetLegend = true;
+=======
+			shouldSetCursor = shouldSetLegend = cursor.left >= 0;
+>>>>>>> danhmuc_list
 =======
 			shouldSetCursor = shouldSetLegend = cursor.left >= 0;
 >>>>>>> danhmuc_list
@@ -4583,7 +5237,11 @@ var uPlot = (function () {
 			calcAxesRects();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			var bb = self.bbox;
+=======
+			let bb = self.bbox;
+>>>>>>> danhmuc_list
 =======
 			let bb = self.bbox;
 >>>>>>> danhmuc_list
@@ -4597,11 +5255,14 @@ var uPlot = (function () {
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		function convergeSize() {
 			var converged = false;
 
 			var cycleNum = 0;
 =======
+=======
+>>>>>>> danhmuc_list
 		// ensures size calc convergence
 		const CYCLE_LIMIT = 3;
 
@@ -4609,21 +5270,30 @@ var uPlot = (function () {
 			let converged = false;
 
 			let cycleNum = 0;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 			while (!converged) {
 				cycleNum++;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 				var axesConverged = axesCalc(cycleNum);
 				var paddingConverged = paddingCalc(cycleNum);
 
 				converged = axesConverged && paddingConverged;
 =======
+=======
+>>>>>>> danhmuc_list
 				let axesConverged = axesCalc(cycleNum);
 				let paddingConverged = paddingCalc(cycleNum);
 
 				converged = cycleNum == CYCLE_LIMIT || (axesConverged && paddingConverged);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 				if (!converged) {
@@ -4634,10 +5304,14 @@ var uPlot = (function () {
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		function setSize(ref) {
 			var width = ref.width;
 			var height = ref.height;
 
+=======
+		function setSize({width, height}) {
+>>>>>>> danhmuc_list
 =======
 		function setSize({width, height}) {
 >>>>>>> danhmuc_list
@@ -4649,6 +5323,7 @@ var uPlot = (function () {
 		// accumulate axis offsets, reduce canvas width
 		function calcPlotRect() {
 			// easements for edge labels
+<<<<<<< HEAD
 <<<<<<< HEAD
 			var hasTopAxis = false;
 			var hasBtmAxis = false;
@@ -4664,6 +5339,8 @@ var uPlot = (function () {
 
 					var fullSize = _size + labelSize;
 =======
+=======
+>>>>>>> danhmuc_list
 			let hasTopAxis = false;
 			let hasBtmAxis = false;
 			let hasRgtAxis = false;
@@ -4676,6 +5353,9 @@ var uPlot = (function () {
 					let labelSize = axis.label != null ? axis.labelSize : 0;
 
 					let fullSize = _size + labelSize;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 					if (fullSize > 0) {
@@ -4688,7 +5368,11 @@ var uPlot = (function () {
 							}
 							else
 <<<<<<< HEAD
+<<<<<<< HEAD
 								{ hasRgtAxis = true; }
+=======
+								hasRgtAxis = true;
+>>>>>>> danhmuc_list
 =======
 								hasRgtAxis = true;
 >>>>>>> danhmuc_list
@@ -4702,7 +5386,11 @@ var uPlot = (function () {
 							}
 							else
 <<<<<<< HEAD
+<<<<<<< HEAD
 								{ hasBtmAxis = true; }
+=======
+								hasBtmAxis = true;
+>>>>>>> danhmuc_list
 =======
 								hasBtmAxis = true;
 >>>>>>> danhmuc_list
@@ -4728,6 +5416,7 @@ var uPlot = (function () {
 		function calcAxesRects() {
 			// will accum +
 <<<<<<< HEAD
+<<<<<<< HEAD
 			var off1 = plotLftCss + plotWidCss;
 			var off2 = plotTopCss + plotHgtCss;
 			// will accum -
@@ -4737,6 +5426,8 @@ var uPlot = (function () {
 			function incrOffset(side, size) {
 
 =======
+=======
+>>>>>>> danhmuc_list
 			let off1 = plotLftCss + plotWidCss;
 			let off2 = plotTopCss + plotHgtCss;
 			// will accum -
@@ -4744,6 +5435,9 @@ var uPlot = (function () {
 			let off0 = plotTopCss;
 
 			function incrOffset(side, size) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 				switch (side) {
 					case 1: off1 += size; return off1 - size;
@@ -4756,7 +5450,11 @@ var uPlot = (function () {
 			axes.forEach((axis, i) => {
 				if (axis.show && axis._show) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 					var side = axis.side;
+=======
+					let side = axis.side;
+>>>>>>> danhmuc_list
 =======
 					let side = axis.side;
 >>>>>>> danhmuc_list
@@ -4765,7 +5463,11 @@ var uPlot = (function () {
 
 					if (axis.label != null)
 <<<<<<< HEAD
+<<<<<<< HEAD
 						{ axis._lpos = incrOffset(side, axis.labelSize); }
+=======
+						axis._lpos = incrOffset(side, axis.labelSize);
+>>>>>>> danhmuc_list
 =======
 						axis._lpos = incrOffset(side, axis.labelSize);
 >>>>>>> danhmuc_list
@@ -4774,6 +5476,7 @@ var uPlot = (function () {
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		var cursor = (self.cursor = assign({}, cursorOpts, opts.cursor));
 
 		{
@@ -4781,6 +5484,8 @@ var uPlot = (function () {
 
 			var points = cursor.points;
 =======
+=======
+>>>>>>> danhmuc_list
 		const cursor = (self.cursor = assign({}, cursorOpts, {drag: {y: mode == 2}}, opts.cursor));
 
 		{
@@ -4789,6 +5494,9 @@ var uPlot = (function () {
 			cursor._lock = false;
 
 			let points = cursor.points;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 			points.show   = fnOrSelf(points.show);
@@ -4798,6 +5506,7 @@ var uPlot = (function () {
 			points.fill   = fnOrSelf(points.fill);
 		}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		var focus = self.focus = assign({}, opts.focus || {alpha: 0.3}, cursor.focus);
 		var cursorFocus = focus.prox >= 0;
@@ -4809,6 +5518,8 @@ var uPlot = (function () {
 			if (si > 0) {
 				var pt = cursor.points.show(self, si);
 =======
+=======
+>>>>>>> danhmuc_list
 		const focus = self.focus = assign({}, opts.focus || {alpha: 0.3}, cursor.focus);
 		const cursorFocus = focus.prox >= 0;
 
@@ -4818,13 +5529,20 @@ var uPlot = (function () {
 		function initCursorPt(s, si) {
 			if (si > 0) {
 				let pt = cursor.points.show(self, si);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 				if (pt) {
 					addClass(pt, CURSOR_PT);
 					addClass(pt, s.class);
 <<<<<<< HEAD
+<<<<<<< HEAD
 					trans(pt, -10, -10, plotWidCss, plotHgtCss);
+=======
+					elTrans(pt, -10, -10, plotWidCss, plotHgtCss);
+>>>>>>> danhmuc_list
 =======
 					elTrans(pt, -10, -10, plotWidCss, plotHgtCss);
 >>>>>>> danhmuc_list
@@ -4837,12 +5555,15 @@ var uPlot = (function () {
 
 		function initSeries(s, i) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 			var isTime = scales[s.scale].time;
 
 			var sv = s.value;
 			s.value = isTime ? (isStr(sv) ? timeSeriesVal(_tzDate, timeSeriesStamp(sv, _fmtDate)) : sv || _timeSeriesVal) : sv || numSeriesVal;
 			s.label = s.label || (isTime ? timeSeriesLabel : numSeriesLabel);
 =======
+=======
+>>>>>>> danhmuc_list
 			if (mode == 1 || i > 0) {
 				let isTime = mode == 1 && scales[s.scale].time;
 
@@ -4850,6 +5571,9 @@ var uPlot = (function () {
 				s.value = isTime ? (isStr(sv) ? timeSeriesVal(_tzDate, timeSeriesStamp(sv, _fmtDate)) : sv || _timeSeriesVal) : sv || numSeriesVal;
 				s.label = s.label || (isTime ? timeSeriesLabel : numSeriesLabel);
 			}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 			if (i > 0) {
@@ -4857,7 +5581,12 @@ var uPlot = (function () {
 				s.paths  = s.paths || linearPath || retNull;
 				s.fillTo = fnOrSelf(s.fillTo || seriesFillTo);
 <<<<<<< HEAD
+<<<<<<< HEAD
 				s.pxAlign = ifNull(s.pxAlign, true);
+=======
+				s.pxAlign = +ifNull(s.pxAlign, pxAlign);
+				s.pxRound = pxRoundGen(s.pxAlign);
+>>>>>>> danhmuc_list
 =======
 				s.pxAlign = +ifNull(s.pxAlign, pxAlign);
 				s.pxRound = pxRoundGen(s.pxAlign);
@@ -4868,8 +5597,13 @@ var uPlot = (function () {
 				s._stroke = s._fill = s._paths = s._focus = null;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 				var _ptDia = ptDia(s.width, 1);
 				var points = s.points = assign({}, {
+=======
+				let _ptDia = ptDia(s.width, 1);
+				let points = s.points = assign({}, {
+>>>>>>> danhmuc_list
 =======
 				let _ptDia = ptDia(s.width, 1);
 				let points = s.points = assign({}, {
@@ -4879,6 +5613,10 @@ var uPlot = (function () {
 					stroke: s.stroke,
 					space: _ptDia * 2,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+					paths: pointsPath,
+>>>>>>> danhmuc_list
 =======
 					paths: pointsPath,
 >>>>>>> danhmuc_list
@@ -4886,6 +5624,7 @@ var uPlot = (function () {
 					_fill: null,
 				}, s.points);
 				points.show   = fnOrSelf(points.show);
+<<<<<<< HEAD
 <<<<<<< HEAD
 				points.fill   = fnOrSelf(points.fill);
 				points.stroke = fnOrSelf(points.stroke);
@@ -4897,6 +5636,8 @@ var uPlot = (function () {
 			if (cursor.show) {
 				var pt = initCursorPt(s, i);
 =======
+=======
+>>>>>>> danhmuc_list
 				points.filter = fnOrSelf(points.filter);
 				points.fill   = fnOrSelf(points.fill);
 				points.stroke = fnOrSelf(points.stroke);
@@ -4915,6 +5656,9 @@ var uPlot = (function () {
 				activeIdxs.splice(i, 0, null);
 
 				let pt = initCursorPt(s, i);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 				pt && cursorPts.splice(i, 0, pt);
 			}
@@ -4933,9 +5677,12 @@ var uPlot = (function () {
 		function delSeries(i) {
 			series.splice(i, 1);
 <<<<<<< HEAD
+<<<<<<< HEAD
 			showLegend && legendRows.splice(i, 1)[0][0].parentNode.remove();
 			cursorPts.length > 1 && cursorPts.splice(i, 1)[0].remove();
 =======
+=======
+>>>>>>> danhmuc_list
 
 			if (showLegend) {
 				legend.values.splice(i, 1);
@@ -4951,6 +5698,9 @@ var uPlot = (function () {
 
 				cursorPts.length > 1 && cursorPts.splice(i, 1)[0].remove();
 			}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 			// TODO: de-init no-longer-needed scales?
@@ -4959,9 +5709,13 @@ var uPlot = (function () {
 		self.delSeries = delSeries;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		series.forEach(initSeries);
 
 		var sidesWithAxes = [false, false, false, false];
+=======
+		const sidesWithAxes = [false, false, false, false];
+>>>>>>> danhmuc_list
 =======
 		const sidesWithAxes = [false, false, false, false];
 >>>>>>> danhmuc_list
@@ -4971,9 +5725,15 @@ var uPlot = (function () {
 
 			if (axis.show) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 				var isVt = axis.side % 2;
 
 				var sc = scales[axis.scale];
+=======
+				let isVt = axis.side % 2;
+
+				let sc = scales[axis.scale];
+>>>>>>> danhmuc_list
 =======
 				let isVt = axis.side % 2;
 
@@ -4988,7 +5748,11 @@ var uPlot = (function () {
 
 				// also set defaults for incrs & values based on axis distr
 <<<<<<< HEAD
+<<<<<<< HEAD
 				var isTime = sc.time;
+=======
+				let isTime = sc.time;
+>>>>>>> danhmuc_list
 =======
 				let isTime = sc.time;
 >>>>>>> danhmuc_list
@@ -5004,6 +5768,7 @@ var uPlot = (function () {
 				axis.ticks.stroke = fnOrSelf(axis.ticks.stroke);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 				var av = axis.values;
 
 				axis.values = (
@@ -5011,6 +5776,8 @@ var uPlot = (function () {
 						isArr(av) ?
 							timeAxisVals(_tzDate, timeAxisStamps(av, _fmtDate)) :
 =======
+=======
+>>>>>>> danhmuc_list
 				let av = axis.values;
 
 				axis.values = (
@@ -5022,6 +5789,9 @@ var uPlot = (function () {
 						isArr(av) ?
 							timeAxisVals(_tzDate, timeAxisStamps(av, _fmtDate)) :
 						// fmtDate string tpl
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 						isStr(av) ?
 							timeAxisVal(_tzDate, av) :
@@ -5045,6 +5815,7 @@ var uPlot = (function () {
 
 				if (axis._size > 0)
 <<<<<<< HEAD
+<<<<<<< HEAD
 					{ sidesWithAxes[i] = true; }
 			}
 		}
@@ -5066,6 +5837,8 @@ var uPlot = (function () {
 			if (ori == 1 && (hasTopAxis || hasBtmAxis))
 				{ size = (side == 1 && !hasRgtAxis || side == 3 && !hasLftAxis ? round(yAxisOpts.size / 2) : 0); }
 =======
+=======
+>>>>>>> danhmuc_list
 					sidesWithAxes[i] = true;
 
 				axis._el = placeDiv(AXIS, wrap);
@@ -5085,11 +5858,15 @@ var uPlot = (function () {
 				size = (side == 0 && !hasTopAxis || side == 2 && !hasBtmAxis ? round(xAxisOpts.size / 3) : 0);
 			if (ori == 1 && (hasTopAxis || hasBtmAxis))
 				size = (side == 1 && !hasRgtAxis || side == 3 && !hasLftAxis ? round(yAxisOpts.size / 2) : 0);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 			return size;
 		}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		var padding = self.padding = (opts.padding || [autoPadSide,autoPadSide,autoPadSide,autoPadSide]).map(p => fnOrSelf(ifNull(p, autoPadSide)));
 		var _padding = self._padding = padding.map((p, i) => p(self, i, sidesWithAxes, 0));
@@ -5117,6 +5894,8 @@ var uPlot = (function () {
 			if (xScaleDistr == 2)
 				{ data[0] = data0.map((v, i) => i); }
 =======
+=======
+>>>>>>> danhmuc_list
 		const padding = self.padding = (opts.padding || [autoPadSide,autoPadSide,autoPadSide,autoPadSide]).map(p => fnOrSelf(ifNull(p, autoPadSide)));
 		const _padding = self._padding = padding.map((p, i) => p(self, i, sidesWithAxes, 0));
 
@@ -5149,6 +5928,9 @@ var uPlot = (function () {
 				if (xScaleDistr == 2)
 					data[0] = data0.map((v, i) => i);
 			}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 			self._data = data;
@@ -5159,6 +5941,7 @@ var uPlot = (function () {
 
 			if (_resetScales !== false) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 				var xsc = scaleX;
 
 				if (xsc.auto(self, viaAutoScaleX))
@@ -5166,12 +5949,17 @@ var uPlot = (function () {
 				else
 					{ _setScale(xScaleKey, xsc.min, xsc.max); }
 =======
+=======
+>>>>>>> danhmuc_list
 				let xsc = scaleX;
 
 				if (xsc.auto(self, viaAutoScaleX))
 					autoScaleX();
 				else
 					_setScale(xScaleKey, xsc.min, xsc.max);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 				shouldSetCursor = cursor.left >= 0;
@@ -5183,6 +5971,7 @@ var uPlot = (function () {
 		self.setData = setData;
 
 		function autoScaleX() {
+<<<<<<< HEAD
 <<<<<<< HEAD
 			var assign, assign$1, assign$2;
 
@@ -5217,6 +6006,8 @@ var uPlot = (function () {
 				i1 = idxs[1] = _max = null;
 			}
 =======
+=======
+>>>>>>> danhmuc_list
 			viaAutoScaleX = true;
 
 			let _min, _max;
@@ -5249,11 +6040,15 @@ var uPlot = (function () {
 					i1 = idxs[1] = _max = null;
 				}
 			}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 			_setScale(xScaleKey, _min, _max);
 		}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		function setCtxStyle(stroke, width, dash, cap, fill) {
 			ctx.strokeStyle = stroke || transparent;
@@ -5263,6 +6058,8 @@ var uPlot = (function () {
 			ctx.setLineDash(dash || []);
 			ctx.fillStyle = fill || transparent;
 =======
+=======
+>>>>>>> danhmuc_list
 		let ctxStroke, ctxFill, ctxWidth, ctxDash, ctxJoin, ctxCap, ctxFont, ctxAlign, ctxBaseline;
 		let ctxAlpha;
 
@@ -5304,6 +6101,9 @@ var uPlot = (function () {
 				wsc.min = min(wsc.min, facet.min = minMax[0]);
 				wsc.max = max(wsc.max, facet.max = minMax[1]);
 			}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		}
 
@@ -5312,17 +6112,23 @@ var uPlot = (function () {
 
 			// wip scales
 <<<<<<< HEAD
+<<<<<<< HEAD
 			var wipScales = copy(scales, fastIsObj);
 
 			for (var k in wipScales) {
 				var wsc = wipScales[k];
 				var psc = pendScales[k];
 =======
+=======
+>>>>>>> danhmuc_list
 			let wipScales = copy(scales, fastIsObj);
 
 			for (let k in wipScales) {
 				let wsc = wipScales[k];
 				let psc = pendScales[k];
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 				if (psc != null && psc.min != null) {
@@ -5331,17 +6137,23 @@ var uPlot = (function () {
 					// explicitly setting the x-scale invalidates everything (acts as redraw)
 					if (k == xScaleKey)
 <<<<<<< HEAD
+<<<<<<< HEAD
 						{ resetYSeries(true); }
 				}
 				else if (k != xScaleKey) {
 					if (dataLen == 0 && wsc.from == null) {
 						var minMax = wsc.range(self, null, null, k);
 =======
+=======
+>>>>>>> danhmuc_list
 						resetYSeries(true);
 				}
 				else if (k != xScaleKey || mode == 2) {
 					if (dataLen == 0 && wsc.from == null) {
 						let minMax = wsc.range(self, null, null, k);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 						wsc.min = minMax[0];
 						wsc.max = minMax[1];
@@ -5356,6 +6168,7 @@ var uPlot = (function () {
 			if (dataLen > 0) {
 				// pre-range y-scales from y series' data values
 				series.forEach((s, i) => {
+<<<<<<< HEAD
 <<<<<<< HEAD
 					var k = s.scale;
 					var wsc = wipScales[k];
@@ -5407,6 +6220,8 @@ var uPlot = (function () {
 						wsc$1.min = minMax$1[0];
 						wsc$1.max = minMax$1[1];
 =======
+=======
+>>>>>>> danhmuc_list
 					if (mode == 1) {
 						let k = s.scale;
 						let wsc = wipScales[k];
@@ -5470,12 +6285,16 @@ var uPlot = (function () {
 						);
 						wsc.min = minMax[0];
 						wsc.max = minMax[1];
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 					}
 				}
 			}
 
 			// range dependent scales
+<<<<<<< HEAD
 <<<<<<< HEAD
 			for (var k$2 in wipScales) {
 				var wsc$2 = wipScales[k$2];
@@ -5501,6 +6320,8 @@ var uPlot = (function () {
 
 					var distr = sc.distr;
 =======
+=======
+>>>>>>> danhmuc_list
 			for (let k in wipScales) {
 				let wsc = wipScales[k];
 
@@ -5529,13 +6350,20 @@ var uPlot = (function () {
 					sc.max = wsc.max;
 
 					let distr = sc.distr;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 					sc._min = distr == 3 ? log10(sc.min) : distr == 4 ? asinh(sc.min, sc.asinh) : sc.min;
 					sc._max = distr == 3 ? log10(sc.max) : distr == 4 ? asinh(sc.max, sc.asinh) : sc.max;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 					changed[k$3] = anyChanged = true;
+=======
+					changed[k] = anyChanged = true;
+>>>>>>> danhmuc_list
 =======
 					changed[k] = anyChanged = true;
 >>>>>>> danhmuc_list
@@ -5544,6 +6372,7 @@ var uPlot = (function () {
 
 			if (anyChanged) {
 				// invalidate paths of all series on changed scales
+<<<<<<< HEAD
 <<<<<<< HEAD
 				series.forEach(s => {
 					if (changed[s.scale])
@@ -5643,6 +6472,8 @@ var uPlot = (function () {
 
 			_pxAlign && ctx.translate(-offset, -offset);
 =======
+=======
+>>>>>>> danhmuc_list
 				series.forEach((s, i) => {
 					if (mode == 2) {
 						if (i > 0 && changed.y)
@@ -5665,11 +6496,15 @@ var uPlot = (function () {
 
 			for (let k in pendScales)
 				pendScales[k] = null;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		}
 
 		// grabs the nearest indices with y data outside of x-scale limits
 		function getOuterIdxs(ydata) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 			var _i0 = clamp(i0 - 1, 0, dataLen - 1);
 			var _i1 = clamp(i1 + 1, 0, dataLen - 1);
@@ -5680,6 +6515,8 @@ var uPlot = (function () {
 			while (ydata[_i1] == null && _i1 < dataLen - 1)
 				{ _i1++; }
 =======
+=======
+>>>>>>> danhmuc_list
 			let _i0 = clamp(i0 - 1, 0, dataLen - 1);
 			let _i1 = clamp(i1 + 1, 0, dataLen - 1);
 
@@ -5688,6 +6525,9 @@ var uPlot = (function () {
 
 			while (ydata[_i1] == null && _i1 < dataLen - 1)
 				_i1++;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 			return [_i0, _i1];
@@ -5698,7 +6538,11 @@ var uPlot = (function () {
 				series.forEach((s, i) => {
 					if (i > 0 && s.show && s._paths == null) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 						var _idxs = getOuterIdxs(data[i]);
+=======
+						let _idxs = getOuterIdxs(data[i]);
+>>>>>>> danhmuc_list
 =======
 						let _idxs = getOuterIdxs(data[i]);
 >>>>>>> danhmuc_list
@@ -5709,12 +6553,15 @@ var uPlot = (function () {
 				series.forEach((s, i) => {
 					if (i > 0 && s.show) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 						if (s._paths)
 							{ drawPath(i); }
 
 						if (s.points.show(self, i, i0, i1))
 							{ drawPoints(i); }
 =======
+=======
+>>>>>>> danhmuc_list
 						if (ctxAlpha != s.alpha)
 							ctx.globalAlpha = ctxAlpha = s.alpha;
 
@@ -5737,6 +6584,9 @@ var uPlot = (function () {
 
 						if (ctxAlpha != 1)
 							ctx.globalAlpha = ctxAlpha = 1;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 						fire("drawSeries", i);
@@ -5745,6 +6595,7 @@ var uPlot = (function () {
 			}
 		}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		function drawPath(si) {
 			var s = series[si];
@@ -5800,6 +6651,8 @@ var uPlot = (function () {
 		function fillStroke(si, strokeStyle, lineWidth, lineDash, lineCap, fillStyle, strokePath, fillPath) {
 			var didStrokeFill = false;
 =======
+=======
+>>>>>>> danhmuc_list
 		function cacheStrokeFill(si, _points) {
 			let s = _points ? series[si].points : series[si];
 
@@ -5856,6 +6709,9 @@ var uPlot = (function () {
 
 		function fillStroke(si, strokeStyle, lineWidth, lineDash, lineCap, fillStyle, strokePath, fillPath, flags, boundsClip, gapsClip) {
 			let didStrokeFill = false;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 			// for all bands where this series is the top edge, create upwards clips using the bottom edges
@@ -5863,6 +6719,7 @@ var uPlot = (function () {
 			bands.forEach((b, bi) => {
 				// isUpperEdge?
 				if (b.series[0] == si) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 					var lowerEdge = series[b.series[1]];
 
@@ -5882,6 +6739,8 @@ var uPlot = (function () {
 
 					ctx.restore();
 =======
+=======
+>>>>>>> danhmuc_list
 					let lowerEdge = series[b.series[1]];
 					let lowerData = data[b.series[1]];
 
@@ -5899,6 +6758,9 @@ var uPlot = (function () {
 						bandClip = null;
 
 					strokeFill(strokeStyle, lineWidth, lineDash, lineCap, _fillStyle, strokePath, fillPath, flags, boundsClip, gapsClip, gapsClip2, bandClip);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 					didStrokeFill = true;
@@ -5906,6 +6768,7 @@ var uPlot = (function () {
 			});
 
 			if (!didStrokeFill)
+<<<<<<< HEAD
 <<<<<<< HEAD
 				{ strokeFill(strokeStyle, lineWidth, lineDash, lineCap, fillStyle, strokePath, fillPath); }
 		}
@@ -5943,6 +6806,8 @@ var uPlot = (function () {
 
 			var x0, y0, x1, y1, pos1 = pos0 + (side == 0 || side == 3 ? -len : len);
 =======
+=======
+>>>>>>> danhmuc_list
 				strokeFill(strokeStyle, lineWidth, lineDash, lineCap, fillStyle, strokePath, fillPath, flags, boundsClip, gapsClip);
 		}
 
@@ -6037,6 +6902,9 @@ var uPlot = (function () {
 			ctx.beginPath();
 
 			let x0, y0, x1, y1, pos1 = pos0 + (side == 0 || side == 3 ? -len : len);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 			if (ori == 0) {
@@ -6048,6 +6916,7 @@ var uPlot = (function () {
 				x1 = pos1;
 			}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 			offs.forEach((off, i) => {
 				if (filts[i] == null)
@@ -6066,6 +6935,8 @@ var uPlot = (function () {
 
 			pxAlign && ctx.translate(-offset, -offset);
 =======
+=======
+>>>>>>> danhmuc_list
 			for (let i = 0; i < offs.length; i++) {
 				if (filts[i] != null) {
 					if (ori == 0)
@@ -6081,12 +6952,16 @@ var uPlot = (function () {
 			ctx.stroke();
 
 			pxAlign == 1 && ctx.translate(-offset, -offset);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		}
 
 		function axesCalc(cycleNum) {
 		//	log("axesCalc()", arguments);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 			var converged = true;
 
@@ -6096,6 +6971,8 @@ var uPlot = (function () {
 
 				var scale = scales[axis.scale];
 =======
+=======
+>>>>>>> danhmuc_list
 			let converged = true;
 
 			axes.forEach((axis, i) => {
@@ -6103,6 +6980,9 @@ var uPlot = (function () {
 					return;
 
 				let scale = scales[axis.scale];
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 				if (scale.min == null) {
@@ -6121,6 +7001,7 @@ var uPlot = (function () {
 					}
 				}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 				var side = axis.side;
 				var ori = side % 2;
@@ -6147,6 +7028,8 @@ var uPlot = (function () {
 
 				var values = axis._values = axis.values(self, axis.filter(self, splits, i, _space, incr), i, _space, incr);
 =======
+=======
+>>>>>>> danhmuc_list
 				let side = axis.side;
 				let ori = side % 2;
 
@@ -6168,13 +7051,20 @@ var uPlot = (function () {
 				let incr   = scale.distr == 2 ? data0[_splits[1]] - data0[_splits[0]] : _incr;
 
 				let values = axis._values = axis.values(self, axis.filter(self, splits, i, _space, incr), i, _space, incr);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 				// rotating of labels only supported on bottom x axis
 				axis._rotate = side == 2 ? axis.rotate(self, values, i, _space) : 0;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 				var oldSize = axis._size;
+=======
+				let oldSize = axis._size;
+>>>>>>> danhmuc_list
 =======
 				let oldSize = axis._size;
 >>>>>>> danhmuc_list
@@ -6183,7 +7073,11 @@ var uPlot = (function () {
 
 				if (oldSize != null && axis._size != oldSize)			// ready && ?
 <<<<<<< HEAD
+<<<<<<< HEAD
 					{ converged = false; }
+=======
+					converged = false;
+>>>>>>> danhmuc_list
 =======
 					converged = false;
 >>>>>>> danhmuc_list
@@ -6194,6 +7088,7 @@ var uPlot = (function () {
 
 		function paddingCalc(cycleNum) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 			var converged = true;
 
 			padding.forEach((p, i) => {
@@ -6202,6 +7097,8 @@ var uPlot = (function () {
 				if (_p != _padding[i])
 					{ converged = false; }
 =======
+=======
+>>>>>>> danhmuc_list
 			let converged = true;
 
 			padding.forEach((p, i) => {
@@ -6209,6 +7106,9 @@ var uPlot = (function () {
 
 				if (_p != _padding[i])
 					converged = false;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 				_padding[i] = _p;
@@ -6218,6 +7118,7 @@ var uPlot = (function () {
 		}
 
 		function drawAxesGrid() {
+<<<<<<< HEAD
 <<<<<<< HEAD
 			axes.forEach((axis, i) => {
 				if (!axis.show || !axis._show)
@@ -6297,6 +7198,8 @@ var uPlot = (function () {
 
 					var baseLpos = round(axis._lpos * pxRatio);
 =======
+=======
+>>>>>>> danhmuc_list
 			for (let i = 0; i < axes.length; i++) {
 				let axis = axes[i];
 
@@ -6320,6 +7223,9 @@ var uPlot = (function () {
 					setFontStyle(axis.labelFont[0], fillStyle, "center", side == 2 ? TOP : BOTTOM);
 
 					ctx.save();
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 					if (ori == 1) {
@@ -6328,7 +7234,11 @@ var uPlot = (function () {
 						ctx.translate(
 							baseLpos,
 <<<<<<< HEAD
+<<<<<<< HEAD
 							round(plotTop + plotHgt / 2)
+=======
+							round(plotTop + plotHgt / 2),
+>>>>>>> danhmuc_list
 =======
 							round(plotTop + plotHgt / 2),
 >>>>>>> danhmuc_list
@@ -6342,11 +7252,14 @@ var uPlot = (function () {
 					}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 					ctx.font         = axis.labelFont[0];
 				//	ctx.fillStyle    = axis.labelStroke || hexBlack;						// rgba?
 					ctx.textAlign    = "center";
 					ctx.textBaseline = side == 2 ? TOP : BOTTOM;
 
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
 					ctx.fillText(axis.label, x, y);
@@ -6355,7 +7268,10 @@ var uPlot = (function () {
 				}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 				let [_incr, _space] = axis._found;
 
 				if (_space == 0)
@@ -6433,6 +7349,9 @@ var uPlot = (function () {
 					}
 				}
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 				// ticks
 				if (ticks.show) {
@@ -6447,7 +7366,11 @@ var uPlot = (function () {
 						ticks.stroke(self, i),
 						ticks.dash,
 <<<<<<< HEAD
+<<<<<<< HEAD
 						ticks.cap
+=======
+						ticks.cap,
+>>>>>>> danhmuc_list
 =======
 						ticks.cap,
 >>>>>>> danhmuc_list
@@ -6456,7 +7379,11 @@ var uPlot = (function () {
 
 				// grid
 <<<<<<< HEAD
+<<<<<<< HEAD
 				var grid = axis.grid;
+=======
+				let grid = axis.grid;
+>>>>>>> danhmuc_list
 =======
 				let grid = axis.grid;
 >>>>>>> danhmuc_list
@@ -6473,15 +7400,21 @@ var uPlot = (function () {
 						grid.stroke(self, i),
 						grid.dash,
 <<<<<<< HEAD
+<<<<<<< HEAD
 						grid.cap
 					);
 				}
 			});
 =======
+=======
+>>>>>>> danhmuc_list
 						grid.cap,
 					);
 				}
 			}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 			fire("drawAxes");
@@ -6496,9 +7429,12 @@ var uPlot = (function () {
 
 					if (minMax) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 						s.min = null;
 						s.max = null;
 =======
+=======
+>>>>>>> danhmuc_list
 						if (mode == 1) {
 							s.min = null;
 							s.max = null;
@@ -6509,6 +7445,9 @@ var uPlot = (function () {
 								f.max = null;
 							});
 						}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 					}
 				}
@@ -6516,7 +7455,11 @@ var uPlot = (function () {
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		var queuedCommit = false;
+=======
+		let queuedCommit = false;
+>>>>>>> danhmuc_list
 =======
 		let queuedCommit = false;
 >>>>>>> danhmuc_list
@@ -6556,11 +7499,14 @@ var uPlot = (function () {
 				setStylePx(wrap, HEIGHT,  fullHgtCss);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 				can.width  = round(fullWidCss * pxRatio);
 				can.height = round(fullHgtCss * pxRatio);
 
 				syncRect();
 =======
+=======
+>>>>>>> danhmuc_list
 				// NOTE: mutating this during print preview in Chrome forces transparent
 				// canvas pixels to white, even when followed up with clearRect() below
 				can.width  = round(fullWidCss * pxRatio);
@@ -6590,6 +7536,9 @@ var uPlot = (function () {
 				ctxAlpha = 1;
 
 				syncRect(false);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 				fire("setSize");
@@ -6615,7 +7564,11 @@ var uPlot = (function () {
 
 			if (cursor.show && shouldSetCursor) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 				updateCursor();
+=======
+				updateCursor(null, true, false);
+>>>>>>> danhmuc_list
 =======
 				updateCursor(null, true, false);
 >>>>>>> danhmuc_list
@@ -6641,9 +7594,15 @@ var uPlot = (function () {
 
 			if (rebuildPaths !== false)
 <<<<<<< HEAD
+<<<<<<< HEAD
 				{ _setScale(xScaleKey, scaleX.min, scaleX.max); }
 			else
 				{ commit(); }
+=======
+				_setScale(xScaleKey, scaleX.min, scaleX.max);
+			else
+				commit();
+>>>>>>> danhmuc_list
 =======
 				_setScale(xScaleKey, scaleX.min, scaleX.max);
 			else
@@ -6656,17 +7615,23 @@ var uPlot = (function () {
 		// explicit, never re-ranged (is this actually true? for x and y)
 		function setScale(key, opts) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 			var sc = scales[key];
 
 			if (sc.from == null) {
 				if (dataLen == 0) {
 					var minMax = sc.range(self, opts.min, opts.max, key);
 =======
+=======
+>>>>>>> danhmuc_list
 			let sc = scales[key];
 
 			if (sc.from == null) {
 				if (dataLen == 0) {
 					let minMax = sc.range(self, opts.min, opts.max, key);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 					opts.min = minMax[0];
 					opts.max = minMax[1];
@@ -6674,7 +7639,11 @@ var uPlot = (function () {
 
 				if (opts.min > opts.max) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 					var _min = opts.min;
+=======
+					let _min = opts.min;
+>>>>>>> danhmuc_list
 =======
 					let _min = opts.min;
 >>>>>>> danhmuc_list
@@ -6684,7 +7653,11 @@ var uPlot = (function () {
 
 				if (dataLen > 1 && opts.min != null && opts.max != null && opts.max - opts.min < 1e-16)
 <<<<<<< HEAD
+<<<<<<< HEAD
 					{ return; }
+=======
+					return;
+>>>>>>> danhmuc_list
 =======
 					return;
 >>>>>>> danhmuc_list
@@ -6694,6 +7667,12 @@ var uPlot = (function () {
 						opts.min = closestIdx(opts.min, data[0]);
 						opts.max = closestIdx(opts.max, data[0]);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+						if (opts.min == opts.max)
+							opts.max++;
+>>>>>>> danhmuc_list
 =======
 
 						if (opts.min == opts.max)
@@ -6715,6 +7694,7 @@ var uPlot = (function () {
 
 	//	INTERACTION
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		var xCursor;
 		var yCursor;
@@ -6750,6 +7730,8 @@ var uPlot = (function () {
 			if (cursor.y)
 				{ yCursor = placeDiv(CURSOR_Y, over); }
 =======
+=======
+>>>>>>> danhmuc_list
 		let xCursor;
 		let yCursor;
 		let vCursor;
@@ -6783,6 +7765,9 @@ var uPlot = (function () {
 				xCursor = placeDiv(CURSOR_X, over);
 			if (cursor.y)
 				yCursor = placeDiv(CURSOR_Y, over);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 			if (scaleX.ori == 0) {
@@ -6799,7 +7784,11 @@ var uPlot = (function () {
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		var select = self.select = assign({
+=======
+		const select = self.select = assign({
+>>>>>>> danhmuc_list
 =======
 		const select = self.select = assign({
 >>>>>>> danhmuc_list
@@ -6812,6 +7801,7 @@ var uPlot = (function () {
 		}, opts.select);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		var selectDiv = select.show ? placeDiv(SELECT, select.over ? over : under) : null;
 
 		function setSelect(opts, _fire) {
@@ -6819,12 +7809,17 @@ var uPlot = (function () {
 				for (var prop in opts)
 					{ setStylePx(selectDiv, prop, select[prop] = opts[prop]); }
 =======
+=======
+>>>>>>> danhmuc_list
 		const selectDiv = select.show ? placeDiv(SELECT, select.over ? over : under) : null;
 
 		function setSelect(opts, _fire) {
 			if (select.show) {
 				for (let prop in opts)
 					setStylePx(selectDiv, prop, select[prop] = opts[prop]);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 				_fire !== false && fire("setSelect");
@@ -6835,6 +7830,7 @@ var uPlot = (function () {
 
 		function toggleDOM(i, onOff) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 			var s = series[i];
 			var label = showLegend ? legendRows[i][0].parentNode : null;
 
@@ -6844,6 +7840,8 @@ var uPlot = (function () {
 				label && addClass(label, OFF);
 				cursorPts.length > 1 && trans(cursorPts[i], -10, -10, plotWidCss, plotHgtCss);
 =======
+=======
+>>>>>>> danhmuc_list
 			let s = series[i];
 			let label = showLegend ? legendRows[i] : null;
 
@@ -6852,11 +7850,15 @@ var uPlot = (function () {
 			else {
 				label && addClass(label, OFF);
 				cursorPts.length > 1 && elTrans(cursorPts[i], -10, -10, plotWidCss, plotHgtCss);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			}
 		}
 
 		function _setScale(key, min, max) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 			setScale(key, {min: min, max: max});
 		}
@@ -6869,6 +7871,8 @@ var uPlot = (function () {
 			if (opts.focus != null)
 				{ setFocus(i); }
 =======
+=======
+>>>>>>> danhmuc_list
 			setScale(key, {min, max});
 		}
 
@@ -6879,12 +7883,16 @@ var uPlot = (function () {
 
 			if (opts.focus != null)
 				setFocus(i);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 			if (opts.show != null) {
 				s.show = opts.show;
 				toggleDOM(i, opts.show);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 				_setScale(s.scale, null, null);
 				commit();
@@ -6894,6 +7902,8 @@ var uPlot = (function () {
 
 			pub && pubSync("setSeries", self, i, opts);
 =======
+=======
+>>>>>>> danhmuc_list
 				_setScale(mode == 2 ? s.facets[1].scale : s.scale, null, null);
 				commit();
 			}
@@ -6901,13 +7911,19 @@ var uPlot = (function () {
 			_fire !== false && fire("setSeries", i, opts);
 
 			_pub && pubSync("setSeries", self, i, opts);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		}
 
 		self.setSeries = setSeries;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 		function setBand(bi, opts) {
 			assign(bands[bi], opts);
 		}
@@ -6929,11 +7945,15 @@ var uPlot = (function () {
 		self.setBand = setBand;
 		self.delBand = delBand;
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		function setAlpha(i, value) {
 			series[i].alpha = value;
 
 			if (cursor.show && cursorPts[i])
+<<<<<<< HEAD
 <<<<<<< HEAD
 				{ cursorPts[i].style.opacity = value; }
 
@@ -6948,6 +7968,8 @@ var uPlot = (function () {
 		var FOCUS_TRUE  = {focus: true};
 		var FOCUS_FALSE = {focus: false};
 =======
+=======
+>>>>>>> danhmuc_list
 				cursorPts[i].style.opacity = value;
 
 			if (showLegend && legendRows[i])
@@ -6960,12 +7982,16 @@ var uPlot = (function () {
 		let focusedSeries;
 		const FOCUS_TRUE  = {focus: true};
 		const FOCUS_FALSE = {focus: false};
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 		function setFocus(i) {
 			if (i != focusedSeries) {
 			//	log("setFocus()", arguments);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 				var allFocused = i == null;
 
@@ -6974,12 +8000,17 @@ var uPlot = (function () {
 				series.forEach((s, i2) => {
 					var isFocused = allFocused || i2 == 0 || i2 == i;
 =======
+=======
+>>>>>>> danhmuc_list
 				let allFocused = i == null;
 
 				let _setAlpha = focus.alpha != 1;
 
 				series.forEach((s, i2) => {
 					let isFocused = allFocused || i2 == 0 || i2 == i;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 					s._focus = allFocused ? null : isFocused;
 					_setAlpha && setAlpha(i2, isFocused ? 1 : focus.alpha);
@@ -6994,6 +8025,7 @@ var uPlot = (function () {
 			on(mouseleave, legendEl, e => {
 				if (cursor._lock)
 <<<<<<< HEAD
+<<<<<<< HEAD
 					{ return; }
 				setSeries(null, FOCUS_FALSE, syncOpts.setSeries);
 				updateCursor();
@@ -7005,6 +8037,8 @@ var uPlot = (function () {
 
 			var dim = plotWidCss;
 =======
+=======
+>>>>>>> danhmuc_list
 					return;
 				setSeries(null, FOCUS_FALSE, true, syncOpts.setSeries);
 				updateCursor(null, true, false);
@@ -7018,6 +8052,9 @@ var uPlot = (function () {
 				pos = pos / pxRatio - (sc.ori == 1 ? plotTopCss : plotLftCss);
 
 			let dim = plotWidCss;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 			if (sc.ori == 1) {
@@ -7026,6 +8063,7 @@ var uPlot = (function () {
 			}
 
 			if (sc.dir == -1)
+<<<<<<< HEAD
 <<<<<<< HEAD
 				{ pos = dim - pos; }
 
@@ -7037,6 +8075,8 @@ var uPlot = (function () {
 
 			var distr = sc.distr;
 =======
+=======
+>>>>>>> danhmuc_list
 				pos = dim - pos;
 
 			let _min = sc._min,
@@ -7046,6 +8086,9 @@ var uPlot = (function () {
 			let sv = _min + (_max - _min) * pct;
 
 			let distr = sc.distr;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 			return (
@@ -7056,8 +8099,13 @@ var uPlot = (function () {
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		function closestIdxFromXpos(pos) {
 			var v = posToVal(pos, xScaleKey);
+=======
+		function closestIdxFromXpos(pos, can) {
+			let v = posToVal(pos, xScaleKey, can);
+>>>>>>> danhmuc_list
 =======
 		function closestIdxFromXpos(pos, can) {
 			let v = posToVal(pos, xScaleKey, can);
@@ -7073,17 +8121,23 @@ var uPlot = (function () {
 			getHPos(val, scales[scale],
 				can ? plotWid : plotWidCss,
 <<<<<<< HEAD
+<<<<<<< HEAD
 				can ? plotLft : 0
 			) :
 			getVPos(val, scales[scale],
 				can ? plotHgt : plotHgtCss,
 				can ? plotTop : 0
 =======
+=======
+>>>>>>> danhmuc_list
 				can ? plotLft : 0,
 			) :
 			getVPos(val, scales[scale],
 				can ? plotHgt : plotHgtCss,
 				can ? plotTop : 0,
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			)
 		);
@@ -7097,17 +8151,23 @@ var uPlot = (function () {
 		self.batch = batch;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		(self.setCursor = opts => {
 			mouseLeft1 = opts.left;
 			mouseTop1 = opts.top;
 		//	assign(cursor, opts);
 			updateCursor();
 =======
+=======
+>>>>>>> danhmuc_list
 		(self.setCursor = (opts, _fire, _pub) => {
 			mouseLeft1 = opts.left;
 			mouseTop1 = opts.top;
 		//	assign(cursor, opts);
 			updateCursor(null, _fire, _pub);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		});
 
@@ -7122,6 +8182,7 @@ var uPlot = (function () {
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		var setSelX = scaleX.ori == 0 ? setSelH : setSelV;
 		var setSelY = scaleX.ori == 1 ? setSelH : setSelV;
 
@@ -7129,6 +8190,8 @@ var uPlot = (function () {
 			var assign;
 
 =======
+=======
+>>>>>>> danhmuc_list
 		let setSelX = scaleX.ori == 0 ? setSelH : setSelV;
 		let setSelY = scaleX.ori == 1 ? setSelH : setSelV;
 
@@ -7183,12 +8246,16 @@ var uPlot = (function () {
 		}
 
 		function updateCursor(src, _fire, _pub) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		//	ts == null && log("updateCursor()", arguments);
 
 			rawMouseLeft1 = mouseLeft1;
 			rawMouseTop1 = mouseTop1;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 			(assign = cursor.move(self, mouseLeft1, mouseTop1), mouseLeft1 = assign[0], mouseTop1 = assign[1]);
 
@@ -7203,6 +8270,8 @@ var uPlot = (function () {
 			// for nearest min/max indices results in this condition. cheap hack :D
 			var noDataInRange = i0 > i1;
 =======
+=======
+>>>>>>> danhmuc_list
 			[mouseLeft1, mouseTop1] = cursor.move(self, mouseLeft1, mouseTop1);
 
 			if (cursor.show) {
@@ -7215,14 +8284,22 @@ var uPlot = (function () {
 			// when zooming to an x scale range between datapoints the binary search
 			// for nearest min/max indices results in this condition. cheap hack :D
 			let noDataInRange = i0 > i1; // works for mode 1 only
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 			closestDist = inf;
 
 			// TODO: extract
 <<<<<<< HEAD
+<<<<<<< HEAD
 			var xDim = scaleX.ori == 0 ? plotWidCss : plotHgtCss;
 			var yDim = scaleX.ori == 1 ? plotWidCss : plotHgtCss;
+=======
+			let xDim = scaleX.ori == 0 ? plotWidCss : plotHgtCss;
+			let yDim = scaleX.ori == 1 ? plotWidCss : plotHgtCss;
+>>>>>>> danhmuc_list
 =======
 			let xDim = scaleX.ori == 0 ? plotWidCss : plotHgtCss;
 			let yDim = scaleX.ori == 1 ? plotWidCss : plotHgtCss;
@@ -7232,6 +8309,7 @@ var uPlot = (function () {
 			if (mouseLeft1 < 0 || dataLen == 0 || noDataInRange) {
 				idx = null;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 				for (var i = 0; i < series.length; i++) {
 					if (i > 0) {
@@ -7249,13 +8327,21 @@ var uPlot = (function () {
 					if (i > 0) {
 						cursorPts.length > 1 && elTrans(cursorPts[i], -10, -10, plotWidCss, plotHgtCss);
 >>>>>>> danhmuc_list
+=======
+				for (let i = 0; i < series.length; i++) {
+					if (i > 0) {
+						cursorPts.length > 1 && elTrans(cursorPts[i], -10, -10, plotWidCss, plotHgtCss);
+>>>>>>> danhmuc_list
 					}
 				}
 
 				if (cursorFocus)
 <<<<<<< HEAD
+<<<<<<< HEAD
 					{ setSeries(null, FOCUS_TRUE, syncOpts.setSeries); }
 =======
+=======
+>>>>>>> danhmuc_list
 					setSeries(null, FOCUS_TRUE, true, src == null && syncOpts.setSeries);
 
 				if (legend.live) {
@@ -7265,11 +8351,15 @@ var uPlot = (function () {
 					for (let i = 0; i < series.length; i++)
 						legend.values[i] = NULL_LEGEND_VALUES;
 				}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			}
 			else {
 			//	let pctY = 1 - (y / rect.height);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 				var mouseXPos = scaleX.ori == 0 ? mouseLeft1 : mouseTop1;
 
@@ -7301,6 +8391,8 @@ var uPlot = (function () {
 
 						var hPos = (void 0), vPos = (void 0);
 =======
+=======
+>>>>>>> danhmuc_list
 				let mouseXPos, valAtPosX, xPos;
 
 				if (mode == 1) {
@@ -7338,6 +8430,9 @@ var uPlot = (function () {
 						}
 
 						let hPos, vPos;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 						if (scaleX.ori == 0) {
@@ -7349,6 +8444,7 @@ var uPlot = (function () {
 							vPos = xPos2;
 						}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 						cursorPts.length > 1 && trans(cursorPts[i$1], hPos, vPos, plotWidCss, plotHgtCss);
 					}
@@ -7370,6 +8466,8 @@ var uPlot = (function () {
 
 				shouldSetLegend = false;
 =======
+=======
+>>>>>>> danhmuc_list
 						if (shouldSetLegend && cursorPts.length > 1) {
 							elColor(cursorPts[i], cursor.points.fill(self, i), cursor.points.stroke(self, i));
 
@@ -7414,12 +8512,16 @@ var uPlot = (function () {
 			if (shouldSetLegend) {
 				legend.idx = idx;
 				setLegend();
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			}
 
 			// nit: cursor.drag.setSelect is assumed always true
 			if (select.show && dragging) {
 				if (src != null) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 					var ref = syncOpts.scales;
 					var xKey = ref[0];
@@ -7443,6 +8545,8 @@ var uPlot = (function () {
 
 					if (xKey) {
 =======
+=======
+>>>>>>> danhmuc_list
 					let [xKey, yKey] = syncOpts.scales;
 					let [matchXKeys, matchYKeys] = syncOpts.match;
 					let [xKeySrc, yKeySrc] = src.cursor.sync.scales;
@@ -7463,6 +8567,9 @@ var uPlot = (function () {
 					let matchingY = yKey != null && matchYKeys(yKey, yKeySrc);
 
 					if (matchingX) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 						if (sori == 0) {
 							sOff = left;
@@ -7473,6 +8580,7 @@ var uPlot = (function () {
 							sDim = height;
 						}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 						sc = scales[xKey];
 
@@ -7487,6 +8595,8 @@ var uPlot = (function () {
 
 					if (yKey) {
 =======
+=======
+>>>>>>> danhmuc_list
 						if (dragX) {
 							sc = scales[xKey];
 
@@ -7503,6 +8613,9 @@ var uPlot = (function () {
 					}
 
 					if (matchingY) {
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 						if (sori == 1) {
 							sOff = left;
@@ -7513,6 +8626,7 @@ var uPlot = (function () {
 							sDim = height;
 						}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 						sc = scales[yKey];
 
@@ -7532,6 +8646,8 @@ var uPlot = (function () {
 					if (scaleX.ori == 1) {
 						var _rawDX = rawDX;
 =======
+=======
+>>>>>>> danhmuc_list
 						if (dragY) {
 							sc = scales[yKey];
 
@@ -7553,6 +8669,9 @@ var uPlot = (function () {
 
 					if (scaleX.ori == 1) {
 						let _rawDX = rawDX;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 						rawDX = rawDY;
 						rawDY = _rawDX;
@@ -7562,7 +8681,11 @@ var uPlot = (function () {
 					dragY = drag.y && rawDY >= drag.dist;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 					var uni = drag.uni;
+=======
+					let uni = drag.uni;
+>>>>>>> danhmuc_list
 =======
 					let uni = drag.uni;
 >>>>>>> danhmuc_list
@@ -7577,9 +8700,15 @@ var uPlot = (function () {
 							if (!dragX && !dragY) {
 								if (rawDY > rawDX)
 <<<<<<< HEAD
+<<<<<<< HEAD
 									{ dragY = true; }
 								else
 									{ dragX = true; }
+=======
+									dragY = true;
+								else
+									dragX = true;
+>>>>>>> danhmuc_list
 =======
 									dragY = true;
 								else
@@ -7591,9 +8720,15 @@ var uPlot = (function () {
 					else if (drag.x && drag.y && (dragX || dragY))
 						// if omni with no uni then both dragX / dragY should be true if either is true
 <<<<<<< HEAD
+<<<<<<< HEAD
 						{ dragX = dragY = true; }
 
 					var p0, p1;
+=======
+						dragX = dragY = true;
+
+					let p0, p1;
+>>>>>>> danhmuc_list
 =======
 						dragX = dragY = true;
 
@@ -7614,7 +8749,11 @@ var uPlot = (function () {
 
 						if (!dragY)
 <<<<<<< HEAD
+<<<<<<< HEAD
 							{ setSelY(0, yDim); }
+=======
+							setSelY(0, yDim);
+>>>>>>> danhmuc_list
 =======
 							setSelY(0, yDim);
 >>>>>>> danhmuc_list
@@ -7634,7 +8773,11 @@ var uPlot = (function () {
 
 						if (!dragX)
 <<<<<<< HEAD
+<<<<<<< HEAD
 							{ setSelX(0, xDim); }
+=======
+							setSelX(0, xDim);
+>>>>>>> danhmuc_list
 =======
 							setSelX(0, xDim);
 >>>>>>> danhmuc_list
@@ -7648,6 +8791,7 @@ var uPlot = (function () {
 				}
 			}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 			cursor.idx = idx;
 			cursor.left = mouseLeft1;
@@ -7675,6 +8819,8 @@ var uPlot = (function () {
 						else if (closestSeries != focusedSeries)
 							{ setSeries(closestSeries, FOCUS_TRUE, o); }
 =======
+=======
+>>>>>>> danhmuc_list
 			drag._x = dragX;
 			drag._y = dragY;
 
@@ -7703,11 +8849,15 @@ var uPlot = (function () {
 							setSeries(null, FOCUS_TRUE, true, shouldPub);
 						else if (closestSeries != focusedSeries)
 							setSeries(closestSeries, FOCUS_TRUE, true, shouldPub);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 					}
 				}
 			}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 			ready && fire("setCursor");
 		}
@@ -7717,6 +8867,8 @@ var uPlot = (function () {
 		function syncRect() {
 			rect = over.getBoundingClientRect();
 =======
+=======
+>>>>>>> danhmuc_list
 			ready && _fire !== false && fire("setCursor");
 		}
 
@@ -7729,13 +8881,20 @@ var uPlot = (function () {
 				rect = over.getBoundingClientRect();
 				fire("syncRect", rect);
 			}
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		}
 
 		function mouseMove(e, src, _l, _t, _w, _h, _i) {
 			if (cursor._lock)
 <<<<<<< HEAD
+<<<<<<< HEAD
 				{ return; }
+=======
+				return;
+>>>>>>> danhmuc_list
 =======
 				return;
 >>>>>>> danhmuc_list
@@ -7743,6 +8902,7 @@ var uPlot = (function () {
 			cacheMouse(e, src, _l, _t, _w, _h, _i, false, e != null);
 
 			if (e != null)
+<<<<<<< HEAD
 <<<<<<< HEAD
 				{ updateCursor(1); }
 			else
@@ -7752,6 +8912,8 @@ var uPlot = (function () {
 		function cacheMouse(e, src, _l, _t, _w, _h, _i, initial, snap) {
 			var assign;
 =======
+=======
+>>>>>>> danhmuc_list
 				updateCursor(null, true, true);
 			else
 				updateCursor(src, true, false);
@@ -7760,6 +8922,9 @@ var uPlot = (function () {
 		function cacheMouse(e, src, _l, _t, _w, _h, _i, initial, snap) {
 			if (rect == null)
 				syncRect(false);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 			if (e != null) {
@@ -7773,6 +8938,7 @@ var uPlot = (function () {
 					return;
 				}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 				var xDim = plotWidCss,
 					yDim = plotHgtCss,
@@ -7812,6 +8978,8 @@ var uPlot = (function () {
 					_l = _t;
 					_t = _l$1;
 =======
+=======
+>>>>>>> danhmuc_list
 				let [xKey, yKey] = syncOpts.scales;
 
 				let syncOptsSrc = src.cursor.sync;
@@ -7842,6 +9010,9 @@ var uPlot = (function () {
 					let __l = _l;
 					_l = _t;
 					_t = __l;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 				}
 			}
@@ -7849,15 +9020,21 @@ var uPlot = (function () {
 			if (snap) {
 				if (_l <= 1 || _l >= plotWidCss - 1)
 <<<<<<< HEAD
+<<<<<<< HEAD
 					{ _l = incrRound(_l, plotWidCss); }
 
 				if (_t <= 1 || _t >= plotHgtCss - 1)
 					{ _t = incrRound(_t, plotHgtCss); }
 =======
+=======
+>>>>>>> danhmuc_list
 					_l = incrRound(_l, plotWidCss);
 
 				if (_t <= 1 || _t >= plotHgtCss - 1)
 					_t = incrRound(_t, plotHgtCss);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			}
 
@@ -7866,7 +9043,11 @@ var uPlot = (function () {
 				rawMouseTop0 = _t;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 				(assign = cursor.move(self, _l, _t), mouseLeft0 = assign[0], mouseTop0 = assign[1]);
+=======
+				[mouseLeft0, mouseTop0] = cursor.move(self, _l, _t);
+>>>>>>> danhmuc_list
 =======
 				[mouseLeft0, mouseTop0] = cursor.move(self, _l, _t);
 >>>>>>> danhmuc_list
@@ -7902,12 +9083,18 @@ var uPlot = (function () {
 			cacheMouse(e, src, _l, _t, _w, _h, _i, false, true);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			var left = select.left;
 			var top = select.top;
 			var width = select.width;
 			var height = select.height;
 
 			var hasSelect = width > 0 || height > 0;
+=======
+			let { left, top, width, height } = select;
+
+			let hasSelect = width > 0 || height > 0;
+>>>>>>> danhmuc_list
 =======
 			let { left, top, width, height } = select;
 
@@ -7923,7 +9110,11 @@ var uPlot = (function () {
 			//	}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 				var xOff = left,
+=======
+				let xOff = left,
+>>>>>>> danhmuc_list
 =======
 				let xOff = left,
 >>>>>>> danhmuc_list
@@ -7947,8 +9138,13 @@ var uPlot = (function () {
 
 				if (dragY) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 					for (var k in scales) {
 						var sc = scales[k];
+=======
+					for (let k in scales) {
+						let sc = scales[k];
+>>>>>>> danhmuc_list
 =======
 					for (let k in scales) {
 						let sc = scales[k];
@@ -7970,7 +9166,11 @@ var uPlot = (function () {
 
 				if (!cursor._lock)
 <<<<<<< HEAD
+<<<<<<< HEAD
 					{ updateCursor(); }
+=======
+					updateCursor(null, true, false);
+>>>>>>> danhmuc_list
 =======
 					updateCursor(null, true, false);
 >>>>>>> danhmuc_list
@@ -7985,6 +9185,7 @@ var uPlot = (function () {
 		function mouseLeave(e, src, _l, _t, _w, _h, _i) {
 			if (!cursor._lock) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 				var _dragging = dragging;
 
 				if (dragging) {
@@ -7995,6 +9196,8 @@ var uPlot = (function () {
 
 					var dragH, dragV;
 =======
+=======
+>>>>>>> danhmuc_list
 				let _dragging = dragging;
 
 				if (dragging) {
@@ -8004,6 +9207,9 @@ var uPlot = (function () {
 					let snapProx = 10;
 
 					let dragH, dragV;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 					if (scaleX.ori == 0) {
@@ -8023,6 +9229,7 @@ var uPlot = (function () {
 
 					if (dragH && snapH)
 <<<<<<< HEAD
+<<<<<<< HEAD
 						{ mouseLeft1 = mouseLeft1 < mouseLeft0 ? 0 : plotWidCss; }
 
 					if (dragV && snapV)
@@ -8030,12 +9237,17 @@ var uPlot = (function () {
 
 					updateCursor(1);
 =======
+=======
+>>>>>>> danhmuc_list
 						mouseLeft1 = mouseLeft1 < mouseLeft0 ? 0 : plotWidCss;
 
 					if (dragV && snapV)
 						mouseTop1 = mouseTop1 < mouseTop0 ? 0 : plotHgtCss;
 
 					updateCursor(null, true, true);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 					dragging = false;
@@ -8046,15 +9258,21 @@ var uPlot = (function () {
 
 				// passing a non-null timestamp to force sync/mousemove event
 <<<<<<< HEAD
+<<<<<<< HEAD
 				updateCursor(1);
 
 				if (_dragging)
 					{ dragging = _dragging; }
 =======
+=======
+>>>>>>> danhmuc_list
 				updateCursor(null, true, true);
 
 				if (_dragging)
 					dragging = _dragging;
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			}
 		}
@@ -8066,12 +9284,15 @@ var uPlot = (function () {
 
 			if (e != null)
 <<<<<<< HEAD
+<<<<<<< HEAD
 				{ pubSync(dblclick, self, mouseLeft1, mouseTop1, plotWidCss, plotHgtCss, null); }
 		}
 
 		// internal pub/sub
 		var events = {};
 =======
+=======
+>>>>>>> danhmuc_list
 				pubSync(dblclick, self, mouseLeft1, mouseTop1, plotWidCss, plotHgtCss, null);
 		}
 
@@ -8084,6 +9305,9 @@ var uPlot = (function () {
 
 		// internal pub/sub
 		const events = {};
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 		events.mousedown = mouseDown;
@@ -8092,11 +9316,17 @@ var uPlot = (function () {
 		events.dblclick = dblClick;
 		events["setSeries"] = (e, src, idx, opts) => {
 <<<<<<< HEAD
+<<<<<<< HEAD
 			setSeries(idx, opts);
 		};
 
 		var deb;
 
+=======
+			setSeries(idx, opts, true, false);
+		};
+
+>>>>>>> danhmuc_list
 =======
 			setSeries(idx, opts, true, false);
 		};
@@ -8111,10 +9341,14 @@ var uPlot = (function () {
 			onMouse(dblclick, over, dblClick);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 			deb = debounce(syncRect, 100);
 
 			on(resize, win, deb);
 			on(scroll, win, deb);
+=======
+			cursorPlots.add(self);
+>>>>>>> danhmuc_list
 =======
 			cursorPlots.add(self);
 >>>>>>> danhmuc_list
@@ -8124,7 +9358,11 @@ var uPlot = (function () {
 
 		// external on/off
 <<<<<<< HEAD
+<<<<<<< HEAD
 		var hooks = self.hooks = opts.hooks || {};
+=======
+		const hooks = self.hooks = opts.hooks || {};
+>>>>>>> danhmuc_list
 =======
 		const hooks = self.hooks = opts.hooks || {};
 >>>>>>> danhmuc_list
@@ -8139,17 +9377,23 @@ var uPlot = (function () {
 
 		(opts.plugins || []).forEach(p => {
 <<<<<<< HEAD
+<<<<<<< HEAD
 			for (var evName in p.hooks)
 				{ hooks[evName] = (hooks[evName] || []).concat(p.hooks[evName]); }
 		});
 
 		var syncOpts = assign({
 =======
+=======
+>>>>>>> danhmuc_list
 			for (let evName in p.hooks)
 				hooks[evName] = (hooks[evName] || []).concat(p.hooks[evName]);
 		});
 
 		const syncOpts = assign({
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 			key: null,
 			setSeries: false,
@@ -8157,6 +9401,7 @@ var uPlot = (function () {
 				pub: retTrue,
 				sub: retTrue,
 			},
+<<<<<<< HEAD
 <<<<<<< HEAD
 			scales: [xScaleKey, null]
 		}, cursor.sync);
@@ -8169,6 +9414,8 @@ var uPlot = (function () {
 			if (syncOpts.filters.pub(type, src, x, y, w, h, i))
 				{ sync.pub(type, src, x, y, w, h, i); }
 =======
+=======
+>>>>>>> danhmuc_list
 			scales: [xScaleKey, series[1] ? series[1].scale : null],
 			match: [retEq, retEq],
 			values: [null, null],
@@ -8183,6 +9430,9 @@ var uPlot = (function () {
 		function pubSync(type, src, x, y, w, h, i) {
 			if (syncOpts.filters.pub(type, src, x, y, w, h, i))
 				sync.pub(type, src, x, y, w, h, i);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		}
 
@@ -8191,7 +9441,11 @@ var uPlot = (function () {
 		function pub(type, src, x, y, w, h, i) {
 			if (syncOpts.filters.sub(type, src, x, y, w, h, i))
 <<<<<<< HEAD
+<<<<<<< HEAD
 				{ events[type](null, src, x, y, w, h, i); }
+=======
+				events[type](null, src, x, y, w, h, i);
+>>>>>>> danhmuc_list
 =======
 				events[type](null, src, x, y, w, h, i);
 >>>>>>> danhmuc_list
@@ -8202,8 +9456,14 @@ var uPlot = (function () {
 		function destroy() {
 			sync.unsub(self);
 <<<<<<< HEAD
+<<<<<<< HEAD
 			off(resize, win, deb);
 			off(scroll, win, deb);
+=======
+			cursorPlots.delete(self);
+			mouseListeners.clear();
+			off(dppxchange, win, syncPxRatio);
+>>>>>>> danhmuc_list
 =======
 			cursorPlots.delete(self);
 			mouseListeners.clear();
@@ -8222,6 +9482,7 @@ var uPlot = (function () {
 
 			if (pendScales[xScaleKey])
 <<<<<<< HEAD
+<<<<<<< HEAD
 				{ setScale(xScaleKey, pendScales[xScaleKey]); }
 			else
 				{ autoScaleX(); }
@@ -8230,6 +9491,8 @@ var uPlot = (function () {
 
 			updateCursor();
 =======
+=======
+>>>>>>> danhmuc_list
 				setScale(xScaleKey, pendScales[xScaleKey]);
 			else
 				autoScaleX();
@@ -8237,17 +9500,26 @@ var uPlot = (function () {
 			_setSize(opts.width, opts.height);
 
 			updateCursor(null, true, false);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 			setSelect(select, false);
 		}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
 		series.forEach(initSeries);
 
 		axes.forEach(initAxis);
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 		if (then) {
 			if (then instanceof HTMLElement) {
@@ -8256,15 +9528,21 @@ var uPlot = (function () {
 			}
 			else
 <<<<<<< HEAD
+<<<<<<< HEAD
 				{ then(self, _init); }
 		}
 		else
 			{ _init(); }
 =======
+=======
+>>>>>>> danhmuc_list
 				then(self, _init);
 		}
 		else
 			_init();
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 
 		return self;
@@ -8295,6 +9573,7 @@ var uPlot = (function () {
 		uPlot.clipGaps = clipGaps;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		var paths = uPlot.paths = {};
 
 		(paths.linear  = linear);
@@ -8302,6 +9581,8 @@ var uPlot = (function () {
 		(paths.stepped = stepped);
 		(paths.bars    = bars);
 =======
+=======
+>>>>>>> danhmuc_list
 		let paths = uPlot.paths = {
 			points,
 		};
@@ -8310,13 +9591,20 @@ var uPlot = (function () {
 		(paths.stepped = stepped);
 		(paths.bars    = bars);
 		(paths.spline  = monotoneCubic);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 	}
 
 	return uPlot;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 }());
+=======
+})();
+>>>>>>> danhmuc_list
 =======
 })();
 >>>>>>> danhmuc_list

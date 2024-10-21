@@ -1,6 +1,7 @@
 /*!
  * 
 <<<<<<< HEAD
+<<<<<<< HEAD
  * Super simple wysiwyg editor v0.8.18
  * https://summernote.org
  * 
@@ -11,6 +12,8 @@
  * Date: 2020-05-20T16:47Z
  * 
 =======
+=======
+>>>>>>> danhmuc_list
  * Super simple WYSIWYG editor v0.8.20
  * https://summernote.org
  *
@@ -20,6 +23,9 @@
  *
  * Date: 2021-10-14T21:15Z
  *
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
  */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -31,6 +37,7 @@
 		var a = factory();
 		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
 	}
+<<<<<<< HEAD
 <<<<<<< HEAD
 })(window, function() {
 return /******/ (function(modules) { // webpackBootstrap
@@ -129,6 +136,11 @@ return /******/ (function(modules) { // webpackBootstrap
 return /******/ (() => { // webpackBootstrap
 var __webpack_exports__ = {};
 >>>>>>> danhmuc_list
+=======
+})(self, function() {
+return /******/ (() => { // webpackBootstrap
+var __webpack_exports__ = {};
+>>>>>>> danhmuc_list
 (function ($) {
   $.extend($.summernote.lang, {
     'sk-SK': {
@@ -139,6 +151,10 @@ var __webpack_exports__ = {};
         clear: 'Odstrániť štýl písma',
         height: 'Výška riadku',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        name: 'Názov',
+>>>>>>> danhmuc_list
 =======
         name: 'Názov',
 >>>>>>> danhmuc_list
@@ -157,6 +173,7 @@ var __webpack_exports__ = {};
         floatRight: 'Umiestniť doprava',
         floatNone: 'Bez zarovnania',
 <<<<<<< HEAD
+<<<<<<< HEAD
         shapeRounded: 'Shape: Rounded',
         shapeCircle: 'Shape: Circle',
         shapeThumbnail: 'Shape: Thumbnail',
@@ -170,6 +187,8 @@ var __webpack_exports__ = {};
         remove: 'Remove Image',
         original: 'Original'
 =======
+=======
+>>>>>>> danhmuc_list
         shapeRounded: 'Tvar: Zaoblené',
         shapeCircle: 'Tvar: Kruh',
         shapeThumbnail: 'Tvar: Náhľad',
@@ -182,6 +201,9 @@ var __webpack_exports__ = {};
         url: 'URL obrázku',
         removeMedia: 'Odstrániť obrázok',
         original: 'Originál'
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       },
       video: {
@@ -199,6 +221,7 @@ var __webpack_exports__ = {};
         textToDisplay: 'Zobrazovaný text',
         url: 'Na akú URL adresu má tento odkaz viesť?',
 <<<<<<< HEAD
+<<<<<<< HEAD
         openInNewWindow: 'Otvoriť v novom okne'
       },
       table: {
@@ -211,6 +234,8 @@ var __webpack_exports__ = {};
         delCol: 'Delete column',
         delTable: 'Delete table'
 =======
+=======
+>>>>>>> danhmuc_list
         openInNewWindow: 'Otvoriť v novom okne',
         useProtocol: 'Použiť predvolený protokol'
       },
@@ -223,6 +248,9 @@ var __webpack_exports__ = {};
         delRow: 'Odstrániť riadok',
         delCol: 'Odstrániť stĺpec',
         delTable: 'Odstrániť tabuľku'
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       },
       hr: {
@@ -275,6 +303,7 @@ var __webpack_exports__ = {};
         action: 'Akcia',
         paragraphFormatting: 'Formátovanie odseku',
 <<<<<<< HEAD
+<<<<<<< HEAD
         documentStyle: 'Štýl dokumentu'
       },
       help: {
@@ -297,6 +326,8 @@ var __webpack_exports__ = {};
         'outdent': 'Outdent on current paragraph',
         'indent': 'Indent on current paragraph',
 =======
+=======
+>>>>>>> danhmuc_list
         documentStyle: 'Štýl dokumentu',
         extraKeys: 'Ďalšie kombinácie'
       },
@@ -319,6 +350,9 @@ var __webpack_exports__ = {};
         'insertOrderedList': 'Číselný zoznam',
         'outdent': 'Zrušiť odsadenie aktuálneho odseku',
         'indent': 'Odsadiť aktuálny odsek',
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         'formatPara': 'Change current block\'s format as a paragraph(P tag)',
         'formatH1': 'Change current block\'s format as H1',
@@ -328,8 +362,13 @@ var __webpack_exports__ = {};
         'formatH5': 'Change current block\'s format as H5',
         'formatH6': 'Change current block\'s format as H6',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'insertHorizontalRule': 'Insert horizontal rule',
         'linkDialog.show': 'Show Link Dialog'
+=======
+        'insertHorizontalRule': 'Vložiť horizontálne pravidlo',
+        'linkDialog.show': 'Dialóg na zadanie odkazu'
+>>>>>>> danhmuc_list
 =======
         'insertHorizontalRule': 'Vložiť horizontálne pravidlo',
         'linkDialog.show': 'Dialóg na zadanie odkazu'
@@ -341,8 +380,13 @@ var __webpack_exports__ = {};
       },
       specialChar: {
 <<<<<<< HEAD
+<<<<<<< HEAD
         specialChar: 'SPECIAL CHARACTERS',
         select: 'Select Special characters'
+=======
+        specialChar: 'ŠPECIÁLNE ZNAKY',
+        select: 'Vybrať špeciálne znaky'
+>>>>>>> danhmuc_list
 =======
         specialChar: 'ŠPECIÁLNE ZNAKY',
         select: 'Vybrať špeciálne znaky'
@@ -352,15 +396,22 @@ var __webpack_exports__ = {};
   });
 })(jQuery);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 /***/ })
 
 /******/ });
 });
 =======
+=======
+>>>>>>> danhmuc_list
 /******/ 	return __webpack_exports__;
 /******/ })()
 ;
 });
+<<<<<<< HEAD
+//# sourceMappingURL=summernote-sk-SK.js.map
+>>>>>>> danhmuc_list
+=======
 //# sourceMappingURL=summernote-sk-SK.js.map
 >>>>>>> danhmuc_list

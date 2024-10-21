@@ -61,7 +61,11 @@ CodeMirror.defineMode('mllike', function(_config, parserConfig) {
     }
     if (ch === '(') {
 <<<<<<< HEAD
+<<<<<<< HEAD
       if (stream.eat('*')) {
+=======
+      if (stream.match(/^\*(?!\))/)) {
+>>>>>>> danhmuc_list
 =======
       if (stream.match(/^\*(?!\))/)) {
 >>>>>>> danhmuc_list

@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <svg xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-aw" viewBox="0 0 640 480">
+=======
+<svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-aw" viewBox="0 0 640 480">
+>>>>>>> danhmuc_list
 =======
 <svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-aw" viewBox="0 0 640 480">
 >>>>>>> danhmuc_list
@@ -12,6 +16,7 @@
     <path fill="#39c" d="M0 0v216h324V0H0z"/>
     <path fill="#ff0" d="M0 144v12h324v-12H0zm0 24v12h324v-12H0z"/>
   </g>
+<<<<<<< HEAD
 <<<<<<< HEAD
   <path fill="#9cc" d="M142.7 28l2.9 3-3-3zm-3 6l3 3-3-3m5.9 0l3 3-3-3z"/>
   <path fill="#ccf" d="M139.7 37l3 2.9-3-3m5.9 0l3 3-3-3z"/>
@@ -189,6 +194,8 @@
   <path fill="#ccf" d="M139.7 231.8l3 3-3-3m5.9 0l3 3-3-3z"/>
   <path fill="#9cc" d="M139.7 234.7l3 3-3-3m5.9 0l3 3-3-3m-3 6l3 2.9-3-3z"/>
 =======
+=======
+>>>>>>> danhmuc_list
   <path fill="#9cc" d="m142.7 28 2.9 3-3-3zm-3 6 3 3-3-3m5.9 0 3 3-3-3z"/>
   <path fill="#ccf" d="m139.7 37 3 2.9-3-3m5.9 0 3 3-3-3z"/>
   <path fill="#6cc" d="m136.7 42.8 3 3-3-3z"/>
@@ -364,5 +371,8 @@
   <path fill="#6cc" d="m148.6 225.9 2.9 3-3-3z"/>
   <path fill="#ccf" d="m139.7 231.8 3 3-3-3m5.9 0 3 3-3-3z"/>
   <path fill="#9cc" d="m139.7 234.7 3 3-3-3m5.9 0 3 3-3-3m-3 6 3 2.9-3-3z"/>
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
 </svg>

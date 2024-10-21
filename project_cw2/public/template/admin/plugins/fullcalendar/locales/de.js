@@ -2,12 +2,18 @@ FullCalendar.globalLocales.push(function () {
   'use strict';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
   function affix(buttonText) {
     return (buttonText === 'Tag' || buttonText === 'Monat') ? 'r' :
       buttonText === 'Jahr' ? 's' : ''
   }
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   var de = {
     code: 'de',
@@ -27,6 +33,10 @@ FullCalendar.globalLocales.push(function () {
     },
     weekText: 'KW',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    weekTextLong: 'Woche',
+>>>>>>> danhmuc_list
 =======
     weekTextLong: 'Woche',
 >>>>>>> danhmuc_list
@@ -36,7 +46,10 @@ FullCalendar.globalLocales.push(function () {
     },
     noEventsText: 'Keine Ereignisse anzuzeigen',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
     buttonHints: {
       prev(buttonText) {
         return `Vorherige${affix(buttonText)} ${buttonText}`
@@ -66,6 +79,9 @@ FullCalendar.globalLocales.push(function () {
     closeHint: 'Schließen',
     timeHint: 'Uhrzeit',
     eventHint: 'Ereignis',
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   };
 

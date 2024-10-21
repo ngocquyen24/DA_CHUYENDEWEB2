@@ -45,7 +45,10 @@
   'use strict';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> danhmuc_list
   var Pos = CodeMirror.Pos;
 
   function transformCursor(cm, range) {
@@ -67,6 +70,9 @@
     return range.head;
   }
 
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   var defaultKeymap = [
     // Key to key mapping. This goes first to make it possible to override
@@ -76,6 +82,11 @@
     { keys: '<Up>', type: 'keyToKey', toKeys: 'k' },
     { keys: '<Down>', type: 'keyToKey', toKeys: 'j' },
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    { keys: 'g<Up>', type: 'keyToKey', toKeys: 'gk' },
+    { keys: 'g<Down>', type: 'keyToKey', toKeys: 'gj' },
+>>>>>>> danhmuc_list
 =======
     { keys: 'g<Up>', type: 'keyToKey', toKeys: 'gk' },
     { keys: 'g<Down>', type: 'keyToKey', toKeys: 'gj' },
@@ -103,6 +114,10 @@
     { keys: '<PageDown>', type: 'keyToKey', toKeys: '<C-f>' },
     { keys: '<CR>', type: 'keyToKey', toKeys: 'j^', context: 'normal' },
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    { keys: '<Ins>', type: 'keyToKey', toKeys: 'i', context: 'normal'},
+>>>>>>> danhmuc_list
 =======
     { keys: '<Ins>', type: 'keyToKey', toKeys: 'i', context: 'normal'},
 >>>>>>> danhmuc_list
@@ -136,6 +151,12 @@
     { keys: 'gg', type: 'motion', motion: 'moveToLineOrEdgeOfDocument', motionArgs: { forward: false, explicitRepeat: true, linewise: true, toJumplist: true }},
     { keys: 'G', type: 'motion', motion: 'moveToLineOrEdgeOfDocument', motionArgs: { forward: true, explicitRepeat: true, linewise: true, toJumplist: true }},
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    {keys: "g$", type: "motion", motion: "moveToEndOfDisplayLine"},
+    {keys: "g^", type: "motion", motion: "moveToStartOfDisplayLine"},
+    {keys: "g0", type: "motion", motion: "moveToStartOfDisplayLine"},
+>>>>>>> danhmuc_list
 =======
     {keys: "g$", type: "motion", motion: "moveToEndOfDisplayLine"},
     {keys: "g^", type: "motion", motion: "moveToStartOfDisplayLine"},
@@ -194,6 +215,10 @@
     { keys: '~', type: 'operatorMotion', operator: 'changeCase', motion: 'moveByCharacters', motionArgs: { forward: true }, operatorArgs: { shouldMoveCursor: true }, context: 'normal'},
     { keys: '~', type: 'operator', operator: 'changeCase', context: 'visual'},
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    { keys: '<C-u>', type: 'operatorMotion', operator: 'delete', motion: 'moveToStartOfLine', context: 'insert' },
+>>>>>>> danhmuc_list
 =======
     { keys: '<C-u>', type: 'operatorMotion', operator: 'delete', motion: 'moveToStartOfLine', context: 'insert' },
 >>>>>>> danhmuc_list
@@ -292,8 +317,11 @@
   ];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   var Pos = CodeMirror.Pos;
 
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
   var Vim = function() {
@@ -312,6 +340,10 @@
       CodeMirror.off(cm.getInputField(), 'paste', getOnPasteFn(cm));
       cm.state.vim = null;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+      if (highlightTimeout) clearTimeout(highlightTimeout);
+>>>>>>> danhmuc_list
 =======
       if (highlightTimeout) clearTimeout(highlightTimeout);
 >>>>>>> danhmuc_list
@@ -320,11 +352,16 @@
     function detachVimMap(cm, next) {
       if (this == CodeMirror.keyMap.vim) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         CodeMirror.rmClass(cm.getWrapperElement(), "cm-fat-cursor");
         if (cm.getOption("inputStyle") == "contenteditable" && document.body.style.caretColor != null) {
           disableFatCursorMark(cm);
           cm.getInputField().style.caretColor = "";
         }
+=======
+        cm.options.$customCursor = null;
+        CodeMirror.rmClass(cm.getWrapperElement(), "cm-fat-cursor");
+>>>>>>> danhmuc_list
 =======
         cm.options.$customCursor = null;
         CodeMirror.rmClass(cm.getWrapperElement(), "cm-fat-cursor");
@@ -337,11 +374,17 @@
     function attachVimMap(cm, prev) {
       if (this == CodeMirror.keyMap.vim) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         CodeMirror.addClass(cm.getWrapperElement(), "cm-fat-cursor");
         if (cm.getOption("inputStyle") == "contenteditable" && document.body.style.caretColor != null) {
           enableFatCursorMark(cm);
           cm.getInputField().style.caretColor = "transparent";
         }
+=======
+        if (cm.curOp) cm.curOp.selectionChanged = true;
+        cm.options.$customCursor = transformCursor;
+        CodeMirror.addClass(cm.getWrapperElement(), "cm-fat-cursor");
+>>>>>>> danhmuc_list
 =======
         if (cm.curOp) cm.curOp.selectionChanged = true;
         cm.options.$customCursor = transformCursor;
@@ -353,6 +396,7 @@
         enterVimMode(cm);
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     function updateFatCursorMark(cm) {
       if (!cm.state.fatCursorMarks) return;
@@ -396,6 +440,8 @@
 
 =======
 >>>>>>> danhmuc_list
+=======
+>>>>>>> danhmuc_list
     // Deprecated, simply setting the keymap works again.
     CodeMirror.defineOption('vimMode', false, function(cm, val, prev) {
       if (val && cm.getOption("keyMap") != "vim")
@@ -412,7 +458,11 @@
         return false;
       }
 <<<<<<< HEAD
+<<<<<<< HEAD
       var cmd = CodeMirror.Vim.findKey(cm, vimKey);
+=======
+      var cmd = vimApi.findKey(cm, vimKey);
+>>>>>>> danhmuc_list
 =======
       var cmd = vimApi.findKey(cm, vimKey);
 >>>>>>> danhmuc_list
@@ -489,6 +539,12 @@
     var validMarks = [].concat(upperCaseAlphabet, lowerCaseAlphabet, numbers, ['<', '>']);
     var validRegisters = [].concat(upperCaseAlphabet, lowerCaseAlphabet, numbers, ['-', '"', '.', ':', '_', '/']);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    var upperCaseChars;
+    try { upperCaseChars = new RegExp("^[\\p{Lu}]$", "u"); }
+    catch (_) { upperCaseChars = /^[A-Z]$/; }
+>>>>>>> danhmuc_list
 =======
     var upperCaseChars;
     try { upperCaseChars = new RegExp("^[\\p{Lu}]$", "u"); }
@@ -509,7 +565,11 @@
     }
     function isUpperCase(k) {
 <<<<<<< HEAD
+<<<<<<< HEAD
       return (/^[A-Z]$/).test(k);
+=======
+      return upperCaseChars.test(k);
+>>>>>>> danhmuc_list
 =======
       return upperCaseChars.test(k);
 >>>>>>> danhmuc_list
@@ -737,7 +797,11 @@
           if (cm.openDialog) {
             this.onRecordingDone = cm.openDialog(
 <<<<<<< HEAD
+<<<<<<< HEAD
                 '(recording)['+registerName+']', null, {bottom:true});
+=======
+                document.createTextNode('(recording)['+registerName+']'), null, {bottom:true});
+>>>>>>> danhmuc_list
 =======
                 document.createTextNode('(recording)['+registerName+']'), null, {bottom:true});
 >>>>>>> danhmuc_list
@@ -771,8 +835,11 @@
           lastMotion: null,
           marks: {},
 <<<<<<< HEAD
+<<<<<<< HEAD
           // Mark for rendering fake cursor for visual mode.
           fakeCursor: null,
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
           insertMode: false,
@@ -847,7 +914,11 @@
       },
       unmap: function(lhs, ctx) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         exCommandDispatcher.unmap(lhs, ctx);
+=======
+        return exCommandDispatcher.unmap(lhs, ctx);
+>>>>>>> danhmuc_list
 =======
         return exCommandDispatcher.unmap(lhs, ctx);
 >>>>>>> danhmuc_list
@@ -991,7 +1062,11 @@
             key = match[0];
             keys = keys.substring(match.index + key.length);
 <<<<<<< HEAD
+<<<<<<< HEAD
             CodeMirror.Vim.handleKey(cm, key, 'mapping');
+=======
+            vimApi.handleKey(cm, key, 'mapping');
+>>>>>>> danhmuc_list
 =======
             vimApi.handleKey(cm, key, 'mapping');
 >>>>>>> danhmuc_list
@@ -1042,14 +1117,20 @@
           var context = vim.visualMode ? 'visual' :
                                          'normal';
 <<<<<<< HEAD
+<<<<<<< HEAD
           var match = commandDispatcher.matchCommand(keysMatcher[2] || keysMatcher[1], defaultKeymap, vim.inputState, context);
 =======
+=======
+>>>>>>> danhmuc_list
           var mainKey = keysMatcher[2] || keysMatcher[1];
           if (vim.inputState.operatorShortcut && vim.inputState.operatorShortcut.slice(-1) == mainKey) {
             // multikey operators act linewise by repeating only the last character
             mainKey = vim.inputState.operatorShortcut;
           }
           var match = commandDispatcher.matchCommand(mainKey, defaultKeymap, vim.inputState, context);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
           if (match.type == 'none') { clearInputState(cm); return false; }
           else if (match.type == 'partial') { return true; }
@@ -1087,7 +1168,11 @@
                 cm.state.vim = undefined;
                 maybeInitVimState(cm);
 <<<<<<< HEAD
+<<<<<<< HEAD
                 if (!CodeMirror.Vim.suppressErrorLogging) {
+=======
+                if (!vimApi.suppressErrorLogging) {
+>>>>>>> danhmuc_list
 =======
                 if (!vimApi.suppressErrorLogging) {
 >>>>>>> danhmuc_list
@@ -1415,6 +1500,12 @@
         inputState.operator = command.operator;
         inputState.operatorArgs = copyArgs(command.operatorArgs);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        if (command.keys.length > 1) {
+          inputState.operatorShortcut = command.keys;
+        }
+>>>>>>> danhmuc_list
 =======
         if (command.keys.length > 1) {
           inputState.operatorShortcut = command.keys;
@@ -1749,6 +1840,7 @@
             if (lastSel.visualLine) {
               // Linewise Visual mode: The same number of lines.
 <<<<<<< HEAD
+<<<<<<< HEAD
               newHead = Pos(oldAnchor.line + lineOffset, oldAnchor.ch);
             } else if (lastSel.visualBlock) {
               // Blockwise Visual mode: The same number of lines and columns.
@@ -1761,6 +1853,8 @@
               // last line the same number of characters as in the last line the last time.
               newHead = Pos(oldAnchor.line + lineOffset, oldAnchor.ch);
 =======
+=======
+>>>>>>> danhmuc_list
               newHead = new Pos(oldAnchor.line + lineOffset, oldAnchor.ch);
             } else if (lastSel.visualBlock) {
               // Blockwise Visual mode: The same number of lines and columns.
@@ -1772,6 +1866,9 @@
               // Normal Visual mode with several lines: The same number of lines, in the
               // last line the same number of characters as in the last line the last time.
               newHead = new Pos(oldAnchor.line + lineOffset, oldAnchor.ch);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             }
             vim.visualMode = true;
@@ -1813,7 +1910,11 @@
                 }
               } else if (mode == 'line') {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 ranges[0].head = Pos(ranges[0].head.line + 1, 0);
+=======
+                ranges[0].head = new Pos(ranges[0].head.line + 1, 0);
+>>>>>>> danhmuc_list
 =======
                 ranges[0].head = new Pos(ranges[0].head.line + 1, 0);
 >>>>>>> danhmuc_list
@@ -1879,7 +1980,11 @@
       moveToTopLine: function(cm, _head, motionArgs) {
         var line = getUserVisibleLines(cm).top + motionArgs.repeat -1;
 <<<<<<< HEAD
+<<<<<<< HEAD
         return Pos(line, findFirstNonWhiteSpaceCharacter(cm.getLine(line)));
+=======
+        return new Pos(line, findFirstNonWhiteSpaceCharacter(cm.getLine(line)));
+>>>>>>> danhmuc_list
 =======
         return new Pos(line, findFirstNonWhiteSpaceCharacter(cm.getLine(line)));
 >>>>>>> danhmuc_list
@@ -1888,17 +1993,23 @@
         var range = getUserVisibleLines(cm);
         var line = Math.floor((range.top + range.bottom) * 0.5);
 <<<<<<< HEAD
+<<<<<<< HEAD
         return Pos(line, findFirstNonWhiteSpaceCharacter(cm.getLine(line)));
       },
       moveToBottomLine: function(cm, _head, motionArgs) {
         var line = getUserVisibleLines(cm).bottom - motionArgs.repeat +1;
         return Pos(line, findFirstNonWhiteSpaceCharacter(cm.getLine(line)));
 =======
+=======
+>>>>>>> danhmuc_list
         return new Pos(line, findFirstNonWhiteSpaceCharacter(cm.getLine(line)));
       },
       moveToBottomLine: function(cm, _head, motionArgs) {
         var line = getUserVisibleLines(cm).bottom - motionArgs.repeat +1;
         return new Pos(line, findFirstNonWhiteSpaceCharacter(cm.getLine(line)));
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       },
       expandToLine: function(_cm, head, motionArgs) {
@@ -1906,7 +2017,11 @@
         // >1. Does not handle backward motion!
         var cur = head;
 <<<<<<< HEAD
+<<<<<<< HEAD
         return Pos(cur.line + motionArgs.repeat - 1, Infinity);
+=======
+        return new Pos(cur.line + motionArgs.repeat - 1, Infinity);
+>>>>>>> danhmuc_list
 =======
         return new Pos(cur.line + motionArgs.repeat - 1, Infinity);
 >>>>>>> danhmuc_list
@@ -1967,7 +2082,11 @@
         // the resulting selection is extended by 1 char. Let's shrink it so that only the
         // match is selected.
 <<<<<<< HEAD
+<<<<<<< HEAD
         var to = Pos(next[1].line, next[1].ch - 1);
+=======
+        var to = new Pos(next[1].line, next[1].ch - 1);
+>>>>>>> danhmuc_list
 =======
         var to = new Pos(next[1].line, next[1].ch - 1);
 >>>>>>> danhmuc_list
@@ -2020,8 +2139,13 @@
           var sel = vim.sel;
           return [
 <<<<<<< HEAD
+<<<<<<< HEAD
             clipCursorToContent(cm, Pos(sel.anchor.line, sel.head.ch)),
             clipCursorToContent(cm, Pos(sel.head.line, sel.anchor.ch))
+=======
+            clipCursorToContent(cm, new Pos(sel.anchor.line, sel.head.ch)),
+            clipCursorToContent(cm, new Pos(sel.head.line, sel.anchor.ch))
+>>>>>>> danhmuc_list
 =======
             clipCursorToContent(cm, new Pos(sel.anchor.line, sel.head.ch)),
             clipCursorToContent(cm, new Pos(sel.head.line, sel.anchor.ch))
@@ -2066,7 +2190,11 @@
           // the line if there is one, else it places the cursor at the end
           // of the line, regardless of whether a mark was found.
 <<<<<<< HEAD
+<<<<<<< HEAD
           best = Pos(best.line, findFirstNonWhiteSpaceCharacter(cm.getLine(best.line)));
+=======
+          best = new Pos(best.line, findFirstNonWhiteSpaceCharacter(cm.getLine(best.line)));
+>>>>>>> danhmuc_list
 =======
           best = new Pos(best.line, findFirstNonWhiteSpaceCharacter(cm.getLine(best.line)));
 >>>>>>> danhmuc_list
@@ -2078,7 +2206,11 @@
         var repeat = motionArgs.repeat;
         var ch = motionArgs.forward ? cur.ch + repeat : cur.ch - repeat;
 <<<<<<< HEAD
+<<<<<<< HEAD
         return Pos(cur.line, ch);
+=======
+        return new Pos(cur.line, ch);
+>>>>>>> danhmuc_list
 =======
         return new Pos(cur.line, ch);
 >>>>>>> danhmuc_list
@@ -2124,8 +2256,13 @@
           vim.lastHPos = endCh;
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         vim.lastHSPos = cm.charCoords(Pos(line, endCh),'div').left;
         return Pos(line, endCh);
+=======
+        vim.lastHSPos = cm.charCoords(new Pos(line, endCh),'div').left;
+        return new Pos(line, endCh);
+>>>>>>> danhmuc_list
 =======
         vim.lastHSPos = cm.charCoords(new Pos(line, endCh),'div').left;
         return new Pos(line, endCh);
@@ -2152,7 +2289,11 @@
             var res = cm.coordsChar(goalCoords, 'div');
           } else {
 <<<<<<< HEAD
+<<<<<<< HEAD
             var resCoords = cm.charCoords(Pos(cm.firstLine(), 0), 'div');
+=======
+            var resCoords = cm.charCoords(new Pos(cm.firstLine(), 0), 'div');
+>>>>>>> danhmuc_list
 =======
             var resCoords = cm.charCoords(new Pos(cm.firstLine(), 0), 'div');
 >>>>>>> danhmuc_list
@@ -2236,7 +2377,11 @@
         // whitespace-only lines
         var cursor = head;
 <<<<<<< HEAD
+<<<<<<< HEAD
         return Pos(cursor.line,
+=======
+        return new Pos(cursor.line,
+>>>>>>> danhmuc_list
 =======
         return new Pos(cursor.line,
 >>>>>>> danhmuc_list
@@ -2252,7 +2397,11 @@
           symbol = lineText.charAt(ch);
           if (symbol && isMatchableSymbol(symbol)) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             var style = cm.getTokenTypeAt(Pos(line, ch + 1));
+=======
+            var style = cm.getTokenTypeAt(new Pos(line, ch + 1));
+>>>>>>> danhmuc_list
 =======
             var style = cm.getTokenTypeAt(new Pos(line, ch + 1));
 >>>>>>> danhmuc_list
@@ -2265,7 +2414,11 @@
           // Only include angle brackets in analysis if they are being matched.
           var re = (ch === '<' || ch === '>') ? /[(){}[\]<>]/ : /[(){}[\]]/;
 <<<<<<< HEAD
+<<<<<<< HEAD
           var matched = cm.findMatchingBracket(Pos(line, ch), {bracketRegex: re});
+=======
+          var matched = cm.findMatchingBracket(new Pos(line, ch), {bracketRegex: re});
+>>>>>>> danhmuc_list
 =======
           var matched = cm.findMatchingBracket(new Pos(line, ch), {bracketRegex: re});
 >>>>>>> danhmuc_list
@@ -2276,7 +2429,11 @@
       },
       moveToStartOfLine: function(_cm, head) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return Pos(head.line, 0);
+=======
+        return new Pos(head.line, 0);
+>>>>>>> danhmuc_list
 =======
         return new Pos(head.line, 0);
 >>>>>>> danhmuc_list
@@ -2287,10 +2444,13 @@
           lineNum = motionArgs.repeat - cm.getOption('firstLineNumber');
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         return Pos(lineNum,
                    findFirstNonWhiteSpaceCharacter(cm.getLine(lineNum)));
       },
 =======
+=======
+>>>>>>> danhmuc_list
         return new Pos(lineNum,
                    findFirstNonWhiteSpaceCharacter(cm.getLine(lineNum)));
       },
@@ -2304,6 +2464,9 @@
         if (head.sticky == "before") head.ch--;
         return head;
       },
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       textObjectManipulation: function(cm, head, motionArgs, vim) {
         // TODO: lots of possible exceptions that can be thrown here. Try da(
@@ -2466,7 +2629,11 @@
               anchor.ch = 0;
             } else {
 <<<<<<< HEAD
+<<<<<<< HEAD
               anchor = Pos(anchor.line - 1, lineLength(cm, anchor.line - 1));
+=======
+              anchor = new Pos(anchor.line - 1, lineLength(cm, anchor.line - 1));
+>>>>>>> danhmuc_list
 =======
               anchor = new Pos(anchor.line - 1, lineLength(cm, anchor.line - 1));
 >>>>>>> danhmuc_list
@@ -2483,7 +2650,11 @@
           var replacement = fillArray('', ranges.length);
           cm.replaceSelections(replacement);
 <<<<<<< HEAD
+<<<<<<< HEAD
           finalHead = ranges[0].anchor;
+=======
+          finalHead = cursorMin(ranges[0].head, ranges[0].anchor);
+>>>>>>> danhmuc_list
 =======
           finalHead = cursorMin(ranges[0].head, ranges[0].anchor);
 >>>>>>> danhmuc_list
@@ -2621,7 +2792,11 @@
       scrollToCursor: function(cm, actionArgs) {
         var lineNum = cm.getCursor().line;
 <<<<<<< HEAD
+<<<<<<< HEAD
         var charCoords = cm.charCoords(Pos(lineNum, 0), 'local');
+=======
+        var charCoords = cm.charCoords(new Pos(lineNum, 0), 'local');
+>>>>>>> danhmuc_list
 =======
         var charCoords = cm.charCoords(new Pos(lineNum, 0), 'local');
 >>>>>>> danhmuc_list
@@ -2677,9 +2852,15 @@
         var height = cm.listSelections().length;
         if (insertAt == 'eol') {
 <<<<<<< HEAD
+<<<<<<< HEAD
           head = Pos(head.line, lineLength(cm, head.line));
         } else if (insertAt == 'bol') {
           head = Pos(head.line, 0);
+=======
+          head = new Pos(head.line, lineLength(cm, head.line));
+        } else if (insertAt == 'bol') {
+          head = new Pos(head.line, 0);
+>>>>>>> danhmuc_list
 =======
           head = new Pos(head.line, lineLength(cm, head.line));
         } else if (insertAt == 'bol') {
@@ -2697,15 +2878,21 @@
               head = sel.head;
             } else {
 <<<<<<< HEAD
+<<<<<<< HEAD
               head = Pos(sel.anchor.line, 0);
             }
           } else {
             head = Pos(
 =======
+=======
+>>>>>>> danhmuc_list
               head = new Pos(sel.anchor.line, 0);
             }
           } else {
             head = new Pos(
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                 Math.min(sel.head.line, sel.anchor.line),
                 Math.min(sel.head.ch, sel.anchor.ch));
@@ -2719,6 +2906,7 @@
               head = offsetCursor(sel.head, 0, 1);
             } else {
 <<<<<<< HEAD
+<<<<<<< HEAD
               head = Pos(sel.anchor.line, 0);
             }
           } else {
@@ -2726,12 +2914,17 @@
                 Math.min(sel.head.line, sel.anchor.line),
                 Math.max(sel.head.ch + 1, sel.anchor.ch));
 =======
+=======
+>>>>>>> danhmuc_list
               head = new Pos(sel.anchor.line, 0);
             }
           } else {
             head = new Pos(
                 Math.min(sel.head.line, sel.anchor.line),
                 Math.max(sel.head.ch, sel.anchor.ch) + 1);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
             height = Math.abs(sel.head.line - sel.anchor.line) + 1;
           }
@@ -2777,7 +2970,11 @@
           vim.visualBlock = !!actionArgs.blockwise;
           head = clipCursorToContent(
 <<<<<<< HEAD
+<<<<<<< HEAD
               cm, Pos(anchor.line, anchor.ch + repeat - 1));
+=======
+              cm, new Pos(anchor.line, anchor.ch + repeat - 1));
+>>>>>>> danhmuc_list
 =======
               cm, new Pos(anchor.line, anchor.ch + repeat - 1));
 >>>>>>> danhmuc_list
@@ -2844,7 +3041,11 @@
           var repeat = Math.max(actionArgs.repeat, 2);
           curStart = cm.getCursor();
 <<<<<<< HEAD
+<<<<<<< HEAD
           curEnd = clipCursorToContent(cm, Pos(curStart.line + repeat - 1,
+=======
+          curEnd = clipCursorToContent(cm, new Pos(curStart.line + repeat - 1,
+>>>>>>> danhmuc_list
 =======
           curEnd = clipCursorToContent(cm, new Pos(curStart.line + repeat - 1,
 >>>>>>> danhmuc_list
@@ -2854,7 +3055,11 @@
         for (var i = curStart.line; i < curEnd.line; i++) {
           finalCh = lineLength(cm, curStart.line);
 <<<<<<< HEAD
+<<<<<<< HEAD
           var tmp = Pos(curStart.line + 1,
+=======
+          var tmp = new Pos(curStart.line + 1,
+>>>>>>> danhmuc_list
 =======
           var tmp = new Pos(curStart.line + 1,
 >>>>>>> danhmuc_list
@@ -2866,7 +3071,11 @@
           cm.replaceRange(text, curStart, tmp);
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         var curFinalPos = Pos(curStart.line, finalCh);
+=======
+        var curFinalPos = new Pos(curStart.line, finalCh);
+>>>>>>> danhmuc_list
 =======
         var curFinalPos = new Pos(curStart.line, finalCh);
 >>>>>>> danhmuc_list
@@ -2881,7 +3090,11 @@
         if (insertAt.line === cm.firstLine() && !actionArgs.after) {
           // Special case for inserting newline before start of document.
 <<<<<<< HEAD
+<<<<<<< HEAD
           cm.replaceRange('\n', Pos(cm.firstLine(), 0));
+=======
+          cm.replaceRange('\n', new Pos(cm.firstLine(), 0));
+>>>>>>> danhmuc_list
 =======
           cm.replaceRange('\n', new Pos(cm.firstLine(), 0));
 >>>>>>> danhmuc_list
@@ -2986,7 +3199,11 @@
             cm.replaceSelections(emptyStrings);
             // Set new selections as per the block length of the yanked text
 <<<<<<< HEAD
+<<<<<<< HEAD
             selectionEnd = Pos(selectionStart.line + text.length-1, selectionStart.ch);
+=======
+            selectionEnd = new Pos(selectionStart.line + text.length-1, selectionStart.ch);
+>>>>>>> danhmuc_list
 =======
             selectionEnd = new Pos(selectionStart.line + text.length-1, selectionStart.ch);
 >>>>>>> danhmuc_list
@@ -3017,7 +3234,11 @@
               var line = cur.line+i;
               if (line > cm.lastLine()) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 cm.replaceRange('\n',  Pos(line, 0));
+=======
+                cm.replaceRange('\n',  new Pos(line, 0));
+>>>>>>> danhmuc_list
 =======
                 cm.replaceRange('\n',  new Pos(line, 0));
 >>>>>>> danhmuc_list
@@ -3029,7 +3250,11 @@
             }
             cm.setCursor(cur);
 <<<<<<< HEAD
+<<<<<<< HEAD
             selectBlock(cm, Pos(cur.line + text.length-1, cur.ch));
+=======
+            selectBlock(cm, new Pos(cur.line + text.length-1, cur.ch));
+>>>>>>> danhmuc_list
 =======
             selectBlock(cm, new Pos(cur.line + text.length-1, cur.ch));
 >>>>>>> danhmuc_list
@@ -3040,17 +3265,23 @@
             // Now fine tune the cursor to where we want it.
             if (linewise && actionArgs.after) {
 <<<<<<< HEAD
+<<<<<<< HEAD
               curPosFinal = Pos(
               cur.line + 1,
               findFirstNonWhiteSpaceCharacter(cm.getLine(cur.line + 1)));
             } else if (linewise && !actionArgs.after) {
               curPosFinal = Pos(
 =======
+=======
+>>>>>>> danhmuc_list
               curPosFinal = new Pos(
               cur.line + 1,
               findFirstNonWhiteSpaceCharacter(cm.getLine(cur.line + 1)));
             } else if (linewise && !actionArgs.after) {
               curPosFinal = new Pos(
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
                 cur.line,
                 findFirstNonWhiteSpaceCharacter(cm.getLine(cur.line)));
@@ -3100,7 +3331,11 @@
             replaceTo=line.length;
           }
 <<<<<<< HEAD
+<<<<<<< HEAD
           curEnd = Pos(curStart.line, replaceTo);
+=======
+          curEnd = new Pos(curStart.line, replaceTo);
+>>>>>>> danhmuc_list
 =======
           curEnd = new Pos(curStart.line, replaceTo);
 >>>>>>> danhmuc_list
@@ -3160,8 +3395,13 @@
             numberStr = baseStr + zeroPadding + numberStr;
           }
 <<<<<<< HEAD
+<<<<<<< HEAD
           var from = Pos(cur.line, start);
           var to = Pos(cur.line, end);
+=======
+          var from = new Pos(cur.line, start);
+          var to = new Pos(cur.line, end);
+>>>>>>> danhmuc_list
 =======
           var from = new Pos(cur.line, start);
           var to = new Pos(cur.line, end);
@@ -3171,7 +3411,11 @@
           return;
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         cm.setCursor(Pos(cur.line, start + numberStr.length - 1));
+=======
+        cm.setCursor(new Pos(cur.line, start + numberStr.length - 1));
+>>>>>>> danhmuc_list
 =======
         cm.setCursor(new Pos(cur.line, start + numberStr.length - 1));
 >>>>>>> danhmuc_list
@@ -3212,7 +3456,11 @@
       var maxCh = lineLength(cm, line) - 1 + !!includeLineBreak;
       var ch = Math.min(Math.max(0, cur.ch), maxCh);
 <<<<<<< HEAD
+<<<<<<< HEAD
       return Pos(line, ch);
+=======
+      return new Pos(line, ch);
+>>>>>>> danhmuc_list
 =======
       return new Pos(line, ch);
 >>>>>>> danhmuc_list
@@ -3232,7 +3480,11 @@
         offsetLine = offsetLine.line;
       }
 <<<<<<< HEAD
+<<<<<<< HEAD
       return Pos(cur.line + offsetLine, cur.ch + offsetCh);
+=======
+      return new Pos(cur.line + offsetLine, cur.ch + offsetCh);
+>>>>>>> danhmuc_list
 =======
       return new Pos(cur.line + offsetLine, cur.ch + offsetCh);
 >>>>>>> danhmuc_list
@@ -3296,7 +3548,11 @@
     }
     function copyCursor(cur) {
 <<<<<<< HEAD
+<<<<<<< HEAD
       return Pos(cur.line, cur.ch);
+=======
+      return new Pos(cur.line, cur.ch);
+>>>>>>> danhmuc_list
 =======
       return new Pos(cur.line, cur.ch);
 >>>>>>> danhmuc_list
@@ -3347,7 +3603,11 @@
       var endCh = lineLength(cm, lineNum);
       var spaces = new Array(column-endCh+1).join(' ');
 <<<<<<< HEAD
+<<<<<<< HEAD
       cm.setCursor(Pos(lineNum, endCh));
+=======
+      cm.setCursor(new Pos(lineNum, endCh));
+>>>>>>> danhmuc_list
 =======
       cm.setCursor(new Pos(lineNum, endCh));
 >>>>>>> danhmuc_list
@@ -3432,7 +3692,11 @@
           var width = block.width;
           var height = block.height;
 <<<<<<< HEAD
+<<<<<<< HEAD
           selectionEnd = Pos(selectionStart.line + height, selectionStart.ch + width);
+=======
+          selectionEnd = new Pos(selectionStart.line + height, selectionStart.ch + width);
+>>>>>>> danhmuc_list
 =======
           selectionEnd = new Pos(selectionStart.line + height, selectionStart.ch + width);
 >>>>>>> danhmuc_list
@@ -3441,8 +3705,13 @@
           // We do not want that in all cases, so we manually set selections.
           for (var i = selectionStart.line; i < selectionEnd.line; i++) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             var anchor = Pos(i, selectionStart.ch);
             var head = Pos(i, selectionEnd.ch);
+=======
+            var anchor = new Pos(i, selectionStart.ch);
+            var head = new Pos(i, selectionEnd.ch);
+>>>>>>> danhmuc_list
 =======
             var anchor = new Pos(i, selectionStart.ch);
             var head = new Pos(i, selectionEnd.ch);
@@ -3459,8 +3728,13 @@
           selectionEnd = {line: selectionEnd.line + line, ch: line ? selectionEnd.ch : ch + selectionEnd.ch};
           if (lastSelection.visualLine) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             selectionStart = Pos(selectionStart.line, 0);
             selectionEnd = Pos(selectionEnd.line, lineLength(cm, selectionEnd.line));
+=======
+            selectionStart = new Pos(selectionStart.line, 0);
+            selectionEnd = new Pos(selectionEnd.line, lineLength(cm, selectionEnd.line));
+>>>>>>> danhmuc_list
 =======
             selectionStart = new Pos(selectionStart.line, 0);
             selectionEnd = new Pos(selectionEnd.line, lineLength(cm, selectionEnd.line));
@@ -3514,7 +3788,11 @@
         head = offsetCursor(head, 0, -1);
         if (head.ch == -1 && head.line != cm.firstLine()) {
 <<<<<<< HEAD
+<<<<<<< HEAD
           head = Pos(head.line - 1, lineLength(cm, head.line - 1));
+=======
+          head = new Pos(head.line - 1, lineLength(cm, head.line - 1));
+>>>>>>> danhmuc_list
 =======
           head = new Pos(head.line - 1, lineLength(cm, head.line - 1));
 >>>>>>> danhmuc_list
@@ -3534,7 +3812,10 @@
       var cmSel = makeCmSelection(cm, sel, mode);
       cm.setSelections(cmSel.ranges, cmSel.primary);
 <<<<<<< HEAD
+<<<<<<< HEAD
       updateFakeCursor(cm);
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
     }
@@ -3570,15 +3851,21 @@
       } else if (mode == 'block') {
         var top = Math.min(anchor.line, head.line),
 <<<<<<< HEAD
+<<<<<<< HEAD
             left = Math.min(anchor.ch, head.ch),
             bottom = Math.max(anchor.line, head.line),
             right = Math.max(anchor.ch, head.ch) + 1;
 =======
+=======
+>>>>>>> danhmuc_list
             fromCh = anchor.ch,
             bottom = Math.max(anchor.line, head.line),
             toCh = head.ch;
         if (fromCh < toCh) { toCh += 1 }
         else { fromCh += 1 };
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
         var height = bottom - top + 1;
         var primary = head.line == top ? 0 : height - 1;
@@ -3586,8 +3873,13 @@
         for (var i = 0; i < height; i++) {
           ranges.push({
 <<<<<<< HEAD
+<<<<<<< HEAD
             anchor: Pos(top + i, left),
             head: Pos(top + i, right)
+=======
+            anchor: new Pos(top + i, fromCh),
+            head: new Pos(top + i, toCh)
+>>>>>>> danhmuc_list
 =======
             anchor: new Pos(top + i, fromCh),
             head: new Pos(top + i, toCh)
@@ -3626,7 +3918,10 @@
       vim.visualBlock = false;
       if (!vim.insertMode) CodeMirror.signal(cm, "vim-mode-change", {mode: "normal"});
 <<<<<<< HEAD
+<<<<<<< HEAD
       clearFakeCursor(vim);
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
     }
@@ -3717,7 +4012,11 @@
         }
       }
 <<<<<<< HEAD
+<<<<<<< HEAD
       return { start: Pos(cur.line, start), end: Pos(cur.line, end) };
+=======
+      return { start: new Pos(cur.line, start), end: new Pos(cur.line, end) };
+>>>>>>> danhmuc_list
 =======
       return { start: new Pos(cur.line, start), end: new Pos(cur.line, end) };
 >>>>>>> danhmuc_list
@@ -3895,7 +4194,11 @@
       }
       if (state.nextCh || state.curMoveThrough) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return Pos(line, state.index);
+=======
+        return new Pos(line, state.index);
+>>>>>>> danhmuc_list
 =======
         return new Pos(line, state.index);
 >>>>>>> danhmuc_list
@@ -4011,7 +4314,11 @@
         }
         words.push(word);
 <<<<<<< HEAD
+<<<<<<< HEAD
         cur = Pos(word.line, forward ? (word.to - 1) : word.from);
+=======
+        cur = new Pos(word.line, forward ? (word.to - 1) : word.from);
+>>>>>>> danhmuc_list
 =======
         cur = new Pos(word.line, forward ? (word.to - 1) : word.from);
 >>>>>>> danhmuc_list
@@ -4026,9 +4333,15 @@
           lastWord = words.pop();
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         return Pos(lastWord.line, lastWord.from);
       } else if (forward && wordEnd) {
         return Pos(lastWord.line, lastWord.to - 1);
+=======
+        return new Pos(lastWord.line, lastWord.from);
+      } else if (forward && wordEnd) {
+        return new Pos(lastWord.line, lastWord.to - 1);
+>>>>>>> danhmuc_list
 =======
         return new Pos(lastWord.line, lastWord.from);
       } else if (forward && wordEnd) {
@@ -4041,15 +4354,21 @@
           lastWord = words.pop();
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         return Pos(lastWord.line, lastWord.to);
       } else {
         // b
         return Pos(lastWord.line, lastWord.from);
 =======
+=======
+>>>>>>> danhmuc_list
         return new Pos(lastWord.line, lastWord.to);
       } else {
         // b
         return new Pos(lastWord.line, lastWord.from);
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       }
     }
@@ -4057,7 +4376,11 @@
     function moveToEol(cm, head, motionArgs, vim, keepHPos) {
       var cur = head;
 <<<<<<< HEAD
+<<<<<<< HEAD
       var retval= Pos(cur.line + motionArgs.repeat - 1, Infinity);
+=======
+      var retval= new Pos(cur.line + motionArgs.repeat - 1, Infinity);
+>>>>>>> danhmuc_list
 =======
       var retval= new Pos(cur.line + motionArgs.repeat - 1, Infinity);
 >>>>>>> danhmuc_list
@@ -4083,7 +4406,11 @@
         start = idx;
       }
 <<<<<<< HEAD
+<<<<<<< HEAD
       return Pos(cm.getCursor().line, idx);
+=======
+      return new Pos(cm.getCursor().line, idx);
+>>>>>>> danhmuc_list
 =======
       return new Pos(cm.getCursor().line, idx);
 >>>>>>> danhmuc_list
@@ -4094,7 +4421,11 @@
       // to the column we want to go to.
       var line = cm.getCursor().line;
 <<<<<<< HEAD
+<<<<<<< HEAD
       return clipCursorToContent(cm, Pos(line, repeat - 1));
+=======
+      return clipCursorToContent(cm, new Pos(line, repeat - 1));
+>>>>>>> danhmuc_list
 =======
       return clipCursorToContent(cm, new Pos(line, repeat - 1));
 >>>>>>> danhmuc_list
@@ -4350,7 +4681,11 @@
       }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       return Pos(curr_index.ln, curr_index.pos);
+=======
+      return new Pos(curr_index.ln, curr_index.pos);
+>>>>>>> danhmuc_list
 =======
       return new Pos(curr_index.ln, curr_index.pos);
 >>>>>>> danhmuc_list
@@ -4377,8 +4712,13 @@
       var offset = curChar === openSym ? 1 : 0;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       start = cm.scanForBracket(Pos(cur.line, cur.ch + offset), -1, undefined, {'bracketRegex': bracketRegexp});
       end = cm.scanForBracket(Pos(cur.line, cur.ch + offset), 1, undefined, {'bracketRegex': bracketRegexp});
+=======
+      start = cm.scanForBracket(new Pos(cur.line, cur.ch + offset), -1, undefined, {'bracketRegex': bracketRegexp});
+      end = cm.scanForBracket(new Pos(cur.line, cur.ch + offset), 1, undefined, {'bracketRegex': bracketRegexp});
+>>>>>>> danhmuc_list
 =======
       start = cm.scanForBracket(new Pos(cur.line, cur.ch + offset), -1, undefined, {'bracketRegex': bracketRegexp});
       end = cm.scanForBracket(new Pos(cur.line, cur.ch + offset), 1, undefined, {'bracketRegex': bracketRegexp});
@@ -4464,8 +4804,13 @@
 
       return {
 <<<<<<< HEAD
+<<<<<<< HEAD
         start: Pos(cur.line, start),
         end: Pos(cur.line, end)
+=======
+        start: new Pos(cur.line, start),
+        end: new Pos(cur.line, end)
+>>>>>>> danhmuc_list
 =======
         start: new Pos(cur.line, start),
         end: new Pos(cur.line, end)
@@ -4690,7 +5035,11 @@
       }
       var regexp = new RegExp(regexPart,
 <<<<<<< HEAD
+<<<<<<< HEAD
           (ignoreCase || forceIgnoreCase) ? 'i' : undefined);
+=======
+          (ignoreCase || forceIgnoreCase) ? 'im' : 'm');
+>>>>>>> danhmuc_list
 =======
           (ignoreCase || forceIgnoreCase) ? 'im' : 'm');
 >>>>>>> danhmuc_list
@@ -4724,7 +5073,11 @@
 
     function showConfirm(cm, template) {
 <<<<<<< HEAD
+<<<<<<< HEAD
       var pre = dom('pre', {$color: 'red'}, template);
+=======
+      var pre = dom('pre', {$color: 'red', class: 'cm-vim-message'}, template);
+>>>>>>> danhmuc_list
 =======
       var pre = dom('pre', {$color: 'red', class: 'cm-vim-message'}, template);
 >>>>>>> danhmuc_list
@@ -4746,7 +5099,10 @@
 
     function showPrompt(cm, options) {
 <<<<<<< HEAD
+<<<<<<< HEAD
       var shortText = (options.prefix || '') + ' ' + (options.desc || '');
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
       var template = makePrompt(options.prefix, options.desc);
@@ -4758,6 +5114,12 @@
       }
       else {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        var shortText = '';
+        if (typeof options.prefix != "string" && options.prefix) shortText += options.prefix.textContent;
+        if (options.desc) shortText += " " + options.desc;
+>>>>>>> danhmuc_list
 =======
         var shortText = '';
         if (typeof options.prefix != "string" && options.prefix) shortText += options.prefix.textContent;
@@ -4838,6 +5200,10 @@
       clearTimeout(highlightTimeout);
       highlightTimeout = setTimeout(function() {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        if (!cm.state.vim) return;
+>>>>>>> danhmuc_list
 =======
         if (!cm.state.vim) return;
 >>>>>>> danhmuc_list
@@ -4867,8 +5233,11 @@
         for (var i = 0; i < repeat; i++) {
           var found = cursor.find(prev);
 <<<<<<< HEAD
+<<<<<<< HEAD
           if (i == 0 && found && cursorEqual(cursor.from(), pos)) { found = cursor.find(prev); }
 =======
+=======
+>>>>>>> danhmuc_list
           if (i == 0 && found && cursorEqual(cursor.from(), pos)) {
             var lastEndPos = prev ? cursor.from() : cursor.to();
             found = cursor.find(prev);
@@ -4877,13 +5246,20 @@
                 found = cursor.find(prev);
             }
           }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
           if (!found) {
             // SearchCursor may have returned null because it hit EOF, wrap
             // around and try again.
             cursor = cm.getSearchCursor(query,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 (prev) ? Pos(cm.lastLine()) : Pos(cm.firstLine(), 0) );
+=======
+                (prev) ? new Pos(cm.lastLine()) : new Pos(cm.firstLine(), 0) );
+>>>>>>> danhmuc_list
 =======
                 (prev) ? new Pos(cm.lastLine()) : new Pos(cm.firstLine(), 0) );
 >>>>>>> danhmuc_list
@@ -4923,7 +5299,11 @@
             // around and try again.
             cursor = cm.getSearchCursor(query,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 (prev) ? Pos(cm.lastLine()) : Pos(cm.firstLine(), 0) );
+=======
+                (prev) ? new Pos(cm.lastLine()) : new Pos(cm.firstLine(), 0) );
+>>>>>>> danhmuc_list
 =======
                 (prev) ? new Pos(cm.lastLine()) : new Pos(cm.firstLine(), 0) );
 >>>>>>> danhmuc_list
@@ -4983,7 +5363,11 @@
     function getMarkPos(cm, vim, markName) {
       if (markName == '\'' || markName == '`') {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return vimGlobalState.jumpList.find(cm, -1) || Pos(0, 0);
+=======
+        return vimGlobalState.jumpList.find(cm, -1) || new Pos(0, 0);
+>>>>>>> danhmuc_list
 =======
         return vimGlobalState.jumpList.find(cm, -1) || new Pos(0, 0);
 >>>>>>> danhmuc_list
@@ -5052,7 +5436,11 @@
               // Handle Ex to Key mapping.
               for (var i = 0; i < command.toKeys.length; i++) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 CodeMirror.Vim.handleKey(cm, command.toKeys[i], 'mapping');
+=======
+                vimApi.handleKey(cm, command.toKeys[i], 'mapping');
+>>>>>>> danhmuc_list
 =======
                 vimApi.handleKey(cm, command.toKeys[i], 'mapping');
 >>>>>>> danhmuc_list
@@ -5231,7 +5619,11 @@
           if (this.commandMap_[commandName] && this.commandMap_[commandName].user) {
             delete this.commandMap_[commandName];
 <<<<<<< HEAD
+<<<<<<< HEAD
             return;
+=======
+            return true;
+>>>>>>> danhmuc_list
 =======
             return true;
 >>>>>>> danhmuc_list
@@ -5244,16 +5636,22 @@
                 && defaultKeymap[i].context === ctx) {
               defaultKeymap.splice(i, 1);
 <<<<<<< HEAD
+<<<<<<< HEAD
               return;
             }
           }
         }
         throw Error('No such mapping.');
 =======
+=======
+>>>>>>> danhmuc_list
               return true;
             }
           }
         }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       }
     };
@@ -5282,6 +5680,7 @@
       unmap: function(cm, params, ctx) {
         var mapArgs = params.args;
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (!mapArgs || mapArgs.length < 1) {
           if (cm) {
             showConfirm(cm, 'No such mapping: ' + params.input);
@@ -5290,11 +5689,16 @@
         }
         exCommandDispatcher.unmap(mapArgs[0], ctx);
 =======
+=======
+>>>>>>> danhmuc_list
         if (!mapArgs || mapArgs.length < 1 || !exCommandDispatcher.unmap(mapArgs[0], ctx)) {
           if (cm) {
             showConfirm(cm, 'No such mapping: ' + params.input);
           }
         }
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
       },
       move: function(cm, params) {
@@ -5424,8 +5828,13 @@
         var lineEnd = params.lineEnd || params.line || cm.lastLine();
         if (lineStart == lineEnd) { return; }
 <<<<<<< HEAD
+<<<<<<< HEAD
         var curStart = Pos(lineStart, 0);
         var curEnd = Pos(lineEnd, lineLength(cm, lineEnd));
+=======
+        var curStart = new Pos(lineStart, 0);
+        var curEnd = new Pos(lineEnd, lineLength(cm, lineEnd));
+>>>>>>> danhmuc_list
 =======
         var curStart = new Pos(lineStart, 0);
         var curEnd = new Pos(lineEnd, lineLength(cm, lineEnd));
@@ -5571,12 +5980,15 @@
           }
           replacePart = tokens[1];
 <<<<<<< HEAD
+<<<<<<< HEAD
           // If the pattern ends with $ (line boundary assertion), change $ to \n.
           // Caveat: this workaround cannot match on the last line of the document.
           if (/(^|[^\\])(\\\\)*\$$/.test(regexPart)) {
             regexPart = regexPart.slice(0, -1) + '\\n';
             replacePart = (replacePart || '') + '\n';
           }
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
           if (replacePart !== undefined) {
@@ -5645,7 +6057,11 @@
           lineEnd = lineStart + count - 1;
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         var startPos = clipCursorToContent(cm, Pos(lineStart, 0));
+=======
+        var startPos = clipCursorToContent(cm, new Pos(lineStart, 0));
+>>>>>>> danhmuc_list
 =======
         var startPos = clipCursorToContent(cm, new Pos(lineStart, 0));
 >>>>>>> danhmuc_list
@@ -5773,11 +6189,14 @@
         joined = modifiedLineNumber < unmodifiedLineNumber;
       }
 <<<<<<< HEAD
+<<<<<<< HEAD
       function next() {
         // The below only loops to skip over multiple occurrences on the same
         // line when 'global' is not true.
         while(searchCursor.findNext() &&
 =======
+=======
+>>>>>>> danhmuc_list
       function findNextValidMatch() {
         var lastMatchTo = lastPos && copyCursor(searchCursor.to());
         var match = searchCursor.findNext();
@@ -5790,6 +6209,9 @@
         // The below only loops to skip over multiple occurrences on the same
         // line when 'global' is not true.
         while(findNextValidMatch() &&
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
               isInRange(searchCursor.from(), lineStart, lineEnd)) {
           if (!global && searchCursor.from().line == modifiedLineNumber && !joined) {
@@ -5956,7 +6378,11 @@
           key = match[0];
           text = text.substring(match.index + key.length);
 <<<<<<< HEAD
+<<<<<<< HEAD
           CodeMirror.Vim.handleKey(cm, key, 'macro');
+=======
+          vimApi.handleKey(cm, key, 'macro');
+>>>>>>> danhmuc_list
 =======
           vimApi.handleKey(cm, key, 'macro');
 >>>>>>> danhmuc_list
@@ -6055,6 +6481,7 @@
         handleExternalSelection(cm, vim);
       }
 <<<<<<< HEAD
+<<<<<<< HEAD
       if (vim.visualMode) {
         updateFakeCursor(cm);
       }
@@ -6085,6 +6512,8 @@
         vim.fakeCursorBookmark.clear();
         vim.fakeCursorBookmark = null;
       }
+=======
+>>>>>>> danhmuc_list
 =======
 >>>>>>> danhmuc_list
     }
@@ -6229,8 +6658,12 @@
             CodeMirror.lookupKey(change.keyName, 'vim-insert', keyHandler);
           } else if (typeof change == "string") {
 <<<<<<< HEAD
+<<<<<<< HEAD
             var cur = cm.getCursor();
             cm.replaceRange(change, cur, cur);
+=======
+            cm.replaceSelection(change);
+>>>>>>> danhmuc_list
 =======
             cm.replaceSelection(change);
 >>>>>>> danhmuc_list
@@ -6239,6 +6672,10 @@
             var end = offsetCursor(start, 0, change[0].length);
             cm.replaceRange(change[0], start, end);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            cm.setCursor(end);
+>>>>>>> danhmuc_list
 =======
             cm.setCursor(end);
 >>>>>>> danhmuc_list

@@ -18,10 +18,13 @@ FullCalendar.globalLocales.push(function () {
     },
     weekText: 'Uke',
 <<<<<<< HEAD
+<<<<<<< HEAD
     allDayText: 'Hele dagen',
     moreLinkText: 'til',
     noEventsText: 'Ingen hendelser å vise',
 =======
+=======
+>>>>>>> danhmuc_list
     weekTextLong: 'Uke',
     allDayText: 'Hele dagen',
     moreLinkText: 'til',
@@ -36,6 +39,9 @@ FullCalendar.globalLocales.push(function () {
     moreLinkHint(eventCnt) {
       return `Vis ${eventCnt} flere hendelse${eventCnt === 1 ? '' : 'r'}`
     },
+<<<<<<< HEAD
+>>>>>>> danhmuc_list
+=======
 >>>>>>> danhmuc_list
   };
 
